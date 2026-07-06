@@ -1,0 +1,19 @@
+{
+  "name": "@torchlight-companion/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "pnpm build && electron .",
+    "start": "pnpm build && cross-env NODE_ENV=production electron .",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test test/*.test.mjs",
+    "lint": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.2",
+    "cross-env": "^10.1.0",
+    "electron": "40.10.6"
+  }
+}

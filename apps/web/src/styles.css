@@ -1,0 +1,134 @@
+:root {
+  --bg-panel: rgba(19, 13, 10, 0.82);
+  --line: #4a3323;
+  --accent: #ff8340;
+  --gold: #e3b94d;
+  --text: #f3e8da;
+  --muted: #ad9678;
+  --danger: #e5573f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--text);
+}
+
+.overlay {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  display: grid;
+  gap: 10px;
+  width: 300px;
+  user-select: none;
+}
+
+.hud-panel {
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 10px 14px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+}
+
+.hud-label {
+  display: block;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 2px;
+}
+
+.net-worth-value {
+  font-size: 1.6rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--gold);
+  text-shadow: 0 0 12px rgba(227, 185, 77, 0.35);
+}
+
+.run-value {
+  font-size: 1.2rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent);
+}
+
+.loot-list {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.loot-toast {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  background: rgba(0, 0, 0, 0.25);
+  border-left: 3px solid var(--accent);
+  border-radius: 3px;
+  font-size: 0.82rem;
+  animation: loot-toast-in 220ms ease-out;
+}
+
+@keyframes loot-toast-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.loot-quantity {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.loot-name {
+  flex: 1;
+  color: var(--text);
+}
+
+.loot-value {
+  color: var(--gold);
+  font-variant-numeric: tabular-nums;
+}
+
+.loot-empty {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-style: italic;
+  padding: 4px 8px;
+}
+
+.offline-banner {
+  background: rgba(229, 87, 63, 0.15);
+  border: 1px solid var(--danger);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 0.78rem;
+  margin: 0 0 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loot-toast {
+    animation: none;
+  }
+}
