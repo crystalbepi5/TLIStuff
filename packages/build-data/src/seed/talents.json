@@ -1,0 +1,46 @@
+[
+  {
+    "id": "selina-deep-current",
+    "name": "Deep Current",
+    "heroId": "selina-tide-whisper",
+    "description": "SS13 Selina trait. NOTE: seed approximation.",
+    "modifiers": [
+      { "stat": "increasedCold", "op": "increased", "value": 25 },
+      { "stat": "increasedCastSpeed", "op": "increased", "value": 8 }
+    ]
+  },
+  {
+    "id": "selina-undertow",
+    "name": "Undertow",
+    "heroId": "selina-tide-whisper",
+    "description": "SS13 Selina trait. NOTE: seed approximation.",
+    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.12 }]
+  },
+  {
+    "id": "gemma-molten-core",
+    "name": "Molten Core",
+    "heroId": "gemma-flaming-hammer",
+    "description": "NOTE: seed approximation.",
+    "modifiers": [
+      { "stat": "increasedFire", "op": "increased", "value": 25 },
+      { "stat": "increasedAttackSpeed", "op": "increased", "value": 8 }
+    ]
+  },
+  {
+    "id": "generic-lethality",
+    "name": "Lethality",
+    "heroId": "any",
+    "description": "Shared node. NOTE: seed approximation.",
+    "modifiers": [
+      { "stat": "critRate", "op": "flat", "value": 2 },
+      { "stat": "critDamage", "op": "flat", "value": 20 }
+    ]
+  },
+  {
+    "id": "generic-fortitude",
+    "name": "Fortitude",
+    "heroId": "any",
+    "description": "Shared node. NOTE: seed approximation.",
+    "modifiers": [{ "stat": "increasedLife", "op": "increased", "value": 15 }]
+  }
+]

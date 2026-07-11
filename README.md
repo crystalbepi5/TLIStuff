@@ -12,10 +12,22 @@ Architected to mirror the conventions of a separate ChaOS Forge IDE project: a p
 
 ## What it explicitly does *not* do yet
 
-Two originally-considered features are deferred to a later phase, on purpose:
+One originally-considered feature is deferred to a later phase, on purpose:
 
 - **Loot filter modifier** — Torchlight Infinite's filters are account-bound and shared via opaque "filter codes," not a local editable file (unlike Path of Exile's `.filter` format). The exact code format isn't publicly documented.
-- **Build helper** (skill/gear planner) — no public item/affix/skill dataset was found to build one against yet.
+
+## Build planner (new)
+
+The **build helper** — originally deferred for lack of a public item/affix/skill dataset — now ships as a working, if approximate, feature:
+
+- **`packages/build-data`** — a typed schema (heroes, active/support skills, affixes, gear bases, saved builds) plus a small hand-entered *seed* dataset. It includes SS13 "Afterlight" stubs (Tide Whisper Selina, Dance of the Deep).
+- **`packages/build-calc`** — a pure, fully-tested modifier engine implementing the standard ARPG damage pipeline (base → added flat → sum of *increased%* → product of *more%* → crit → rate) plus life/ES/resist/EHP defence.
+- **`apps/web`** — a **Build Planner** view: pick a hero, main skill, supports, gear, and **progression** (talent-tree nodes, Pact Spirits, and SS13 Memory Revival awakenings), and see DPS / crit / rate / per-element damage and defence recompute live. Reachable at the `#planner` URL hash (a normal opaque page, separate from the transparent overlay). Builds export/import as a base64 share code.
+
+### Honest caveats
+
+- **The numbers are approximations.** Torchlight Infinite publishes neither its data tables nor its damage formulas, so both the seed data and the formula are best guesses — treat DPS as a *relative* indicator, not in-game truth. This is surfaced in the UI and flagged throughout the source, the same way the log parser is.
+- **`packages/build-scraper`** is the intended path to real, complete data: it pulls the `__NEXT_DATA__` JSON that community databases (tli-hub.com, tlidb.com) embed and emits the `build-data` `Dataset` shape. Its site-agnostic core (fetch, extraction, assembly, validation) is tested; the site-specific field mapping is explicitly marked as needing verification against the live payload. **It must be run on your own machine** — the hosts it targets are unreachable from the web-based dev sandbox this was built in.
 
 ## Known limitation: the log parser is a best guess
 
@@ -29,8 +41,11 @@ If you're picking this up: get a real `UE_game.log` sample (enable logging in-ga
 packages/domain       — shared TypeScript types (LootEvent, MapRun, PriceEntry, ...)
 packages/db           — node:sqlite persistence layer
 packages/log-parser   — pure functions: log-line parsing + inventory-snapshot diffing
+packages/build-data   — build planner schema + seed dataset (heroes, skills, affixes, gear)
+packages/build-calc   — pure DPS / EHP modifier engine
+packages/build-scraper— community-DB ingestion into the build-data Dataset shape (run locally)
 apps/local-agent      — plain node:http backend: log tailer, snapshot + SSE endpoints
-apps/web              — Vite + React overlay UI
+apps/web              — Vite + React UI: transparent overlay (default) + build planner (#planner)
 apps/desktop          — Electron shell (transparent, click-through, always-on-top)
 ```
 

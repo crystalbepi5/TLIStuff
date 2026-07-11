@@ -45,6 +45,12 @@ importers:
 
   apps/web:
     dependencies:
+      '@torchlight-companion/build-calc':
+        specifier: workspace:*
+        version: link:../../packages/build-calc
+      '@torchlight-companion/build-data':
+        specifier: workspace:*
+        version: link:../../packages/build-data
       '@torchlight-companion/domain':
         specifier: workspace:*
         version: link:../../packages/domain
@@ -70,6 +76,32 @@ importers:
       vite:
         specifier: ^8.1.3
         version: 8.1.3(@types/node@24.13.2)
+
+  packages/build-calc:
+    dependencies:
+      '@torchlight-companion/build-data':
+        specifier: workspace:*
+        version: link:../build-data
+    devDependencies:
+      '@types/node':
+        specifier: ^24.13.2
+        version: 24.13.2
+
+  packages/build-data:
+    devDependencies:
+      '@types/node':
+        specifier: ^24.13.2
+        version: 24.13.2
+
+  packages/build-scraper:
+    dependencies:
+      '@torchlight-companion/build-data':
+        specifier: workspace:*
+        version: link:../build-data
+    devDependencies:
+      '@types/node':
+        specifier: ^24.13.2
+        version: 24.13.2
 
   packages/db:
     dependencies:

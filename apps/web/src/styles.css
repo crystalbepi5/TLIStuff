@@ -132,3 +132,245 @@ body {
     animation: none;
   }
 }
+
+/* ============================ Build Planner ============================ */
+/* A normal opaque page (hash route #planner), independent of the overlay. */
+
+.planner {
+  position: fixed;
+  inset: 0;
+  overflow-y: auto;
+  background: #17100b;
+  color: var(--text);
+  padding: 20px 24px 48px;
+  user-select: text;
+}
+
+.planner-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.planner-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--gold);
+}
+
+.planner-badge {
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px 8px;
+}
+
+.planner-nav-link {
+  margin-left: auto;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.planner-disclaimer {
+  font-size: 0.78rem;
+  color: var(--muted);
+  background: rgba(229, 87, 63, 0.1);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin: 12px 0 18px;
+}
+
+.planner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.planner-panel {
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.planner-panel h2 {
+  margin: 0 0 12px;
+  font-size: 1.05rem;
+  color: var(--accent);
+}
+
+.planner-panel h3 {
+  margin: 16px 0 8px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.field {
+  display: grid;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.field > span {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.planner select,
+.planner textarea {
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 6px 8px;
+  font: inherit;
+  width: 100%;
+}
+
+.checkbox-list {
+  display: grid;
+  gap: 6px;
+}
+
+.checkbox,
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.86rem;
+}
+
+.checkbox.is-disabled {
+  opacity: 0.45;
+}
+
+.req-tags {
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.gear-row {
+  display: grid;
+  gap: 6px;
+  padding: 8px 0;
+  border-top: 1px solid rgba(74, 51, 35, 0.5);
+}
+
+.gear-slot-name {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.affix-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  padding-left: 4px;
+}
+
+.stat-big {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 8px 0 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.stat-big .stat-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+.stat-big strong {
+  font-size: 2rem;
+  color: var(--gold);
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.stat-list li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.86rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-list li span {
+  color: var(--muted);
+}
+
+.el { text-transform: capitalize; }
+.el-fire { color: #ff7043; }
+.el-cold { color: #4fc3f7; }
+.el-lightning { color: #ffd54f; }
+.el-erosion { color: #a5d6a7; }
+.el-physical { color: #d7ccc8; }
+
+.warnings {
+  margin-top: 12px;
+  font-size: 0.8rem;
+}
+
+.warnings ul {
+  margin: 4px 0 0;
+  padding-left: 18px;
+  color: var(--gold);
+}
+
+.results-error {
+  color: var(--danger);
+  font-size: 0.85rem;
+}
+
+.share-panel {
+  margin-top: 16px;
+}
+
+.share-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.planner button {
+  background: var(--accent);
+  color: #1a0f08;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 14px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.planner button:hover {
+  filter: brightness(1.08);
+}
+
+.share-code {
+  min-height: 64px;
+  resize: vertical;
+  font-family: 'Cascadia Code', ui-monospace, monospace;
+  font-size: 0.78rem;
+}

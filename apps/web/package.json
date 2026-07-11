@@ -11,6 +11,8 @@
     "lint": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
+    "@torchlight-companion/build-calc": "workspace:*",
+    "@torchlight-companion/build-data": "workspace:*",
     "@torchlight-companion/domain": "workspace:*",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"

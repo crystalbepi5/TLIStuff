@@ -1,0 +1,30 @@
+[
+  {
+    "id": "dance-of-the-deep",
+    "name": "Dance of the Deep",
+    "season": "SS13",
+    "tags": ["spell", "area", "channelled"],
+    "baseDamage": { "cold": 420, "physical": 60 },
+    "baseRate": 3.0,
+    "baseCritRate": 6,
+    "supportSlots": 5
+  },
+  {
+    "id": "flame-slash",
+    "name": "Flame Slash",
+    "tags": ["attack", "melee", "area"],
+    "baseDamage": { "physical": 180, "fire": 120 },
+    "baseRate": 1.4,
+    "baseCritRate": 5,
+    "supportSlots": 5
+  },
+  {
+    "id": "storm-lance",
+    "name": "Storm Lance",
+    "tags": ["spell", "projectile"],
+    "baseDamage": { "lightning": 260 },
+    "baseRate": 2.2,
+    "baseCritRate": 5,
+    "supportSlots": 5
+  }
+]
