@@ -10,5 +10,6 @@ export { computeDefense, RESIST_CAP, type DefenseResult } from './defense.js';
 export {
   collectModifiers,
   evaluateBuild,
+  MAX_PACT_SPIRITS,
   type BuildReport
 } from './build.js';

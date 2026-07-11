@@ -18,3 +18,12 @@ test('index resolves the SS13 hero and skill', () => {
   assert.equal(selina.season, 'SS13');
   assert.ok(index.activeSkill('dance-of-the-deep'), 'expected Dance of the Deep');
 });
+
+test('index resolves talents, pact spirits and memories', () => {
+  const index = indexDataset(seedDataset);
+  assert.ok(index.talent('selina-deep-current'), 'expected a Selina talent');
+  assert.ok(index.pactSpirit('leviathan'), 'expected the Leviathan pact spirit');
+  const memory = index.memory('awakened-tide');
+  assert.ok(memory, 'expected an SS13 memory');
+  assert.equal(memory.season, 'SS13');
+});

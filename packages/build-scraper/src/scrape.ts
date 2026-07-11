@@ -22,7 +22,10 @@ import type {
   Dataset,
   GearBase,
   Hero,
-  SupportSkill
+  MemoryRevival,
+  PactSpirit,
+  SupportSkill,
+  Talent
 } from '@torchlight-companion/build-data';
 import { validateDataset } from '@torchlight-companion/build-data';
 import { pathToFileURL } from 'node:url';
@@ -37,6 +40,9 @@ export interface ScrapeConfig {
     supports: string;
     affixes: string;
     gearBases: string;
+    talents: string;
+    pactSpirits: string;
+    memories: string;
   };
   /** Optional User-Agent; some hosts reject the default. */
   userAgent?: string;
@@ -49,7 +55,10 @@ export const DEFAULT_CONFIG: ScrapeConfig = {
     skills: '/database/skills',
     supports: '/database/skills?type=support',
     affixes: '/database/affixes',
-    gearBases: '/database/items'
+    gearBases: '/database/items',
+    talents: '/database/talents',
+    pactSpirits: '/database/pact-spirits',
+    memories: '/database/memories'
   },
   userAgent:
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) torchlight-companion-scraper/0.1'
@@ -162,6 +171,31 @@ function mapGearBase(raw: Record<string, unknown>): GearBase {
   };
 }
 
+function mapTalent(raw: Record<string, unknown>): Talent {
+  return {
+    id: String(raw.id ?? raw.slug ?? raw.name),
+    name: String(raw.name ?? 'Unknown'),
+    heroId: raw.heroId ? String(raw.heroId) : 'any', // TODO: map raw hero scope
+    modifiers: [] // TODO
+  };
+}
+
+function mapPactSpirit(raw: Record<string, unknown>): PactSpirit {
+  return {
+    id: String(raw.id ?? raw.slug ?? raw.name),
+    name: String(raw.name ?? 'Unknown'),
+    modifiers: [] // TODO
+  };
+}
+
+function mapMemory(raw: Record<string, unknown>): MemoryRevival {
+  return {
+    id: String(raw.id ?? raw.slug ?? raw.name),
+    name: String(raw.name ?? 'Unknown'),
+    modifiers: [] // TODO
+  };
+}
+
 // ------------------------------ ASSEMBLY ----------------------------------
 
 export async function scrape(config: ScrapeConfig = DEFAULT_CONFIG): Promise<Dataset> {
@@ -174,13 +208,17 @@ export async function scrape(config: ScrapeConfig = DEFAULT_CONFIG): Promise<Dat
     return asArray(nextData);
   };
 
-  const [heroes, skills, supports, affixes, gearBases] = await Promise.all([
-    page(config.paths.heroes),
-    page(config.paths.skills),
-    page(config.paths.supports),
-    page(config.paths.affixes),
-    page(config.paths.gearBases)
-  ]);
+  const [heroes, skills, supports, affixes, gearBases, talents, pactSpirits, memories] =
+    await Promise.all([
+      page(config.paths.heroes),
+      page(config.paths.skills),
+      page(config.paths.supports),
+      page(config.paths.affixes),
+      page(config.paths.gearBases),
+      page(config.paths.talents),
+      page(config.paths.pactSpirits),
+      page(config.paths.memories)
+    ]);
 
   const dataset: Dataset = {
     meta: {
@@ -192,7 +230,10 @@ export async function scrape(config: ScrapeConfig = DEFAULT_CONFIG): Promise<Dat
     activeSkills: skills.map(mapSkill),
     supportSkills: supports.map(mapSupport),
     affixes: affixes.map(mapAffix),
-    gearBases: gearBases.map(mapGearBase)
+    gearBases: gearBases.map(mapGearBase),
+    talents: talents.map(mapTalent),
+    pactSpirits: pactSpirits.map(mapPactSpirit),
+    memories: memories.map(mapMemory)
   };
 
   const problems = validateDataset(dataset);

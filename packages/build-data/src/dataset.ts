@@ -4,7 +4,10 @@ import type {
   Dataset,
   GearBase,
   Hero,
-  SupportSkill
+  MemoryRevival,
+  PactSpirit,
+  SupportSkill,
+  Talent
 } from './schema.js';
 
 import heroes from './seed/heroes.json' with { type: 'json' };
@@ -12,6 +15,9 @@ import activeSkills from './seed/activeSkills.json' with { type: 'json' };
 import supportSkills from './seed/supportSkills.json' with { type: 'json' };
 import affixes from './seed/affixes.json' with { type: 'json' };
 import gearBases from './seed/gearBases.json' with { type: 'json' };
+import talents from './seed/talents.json' with { type: 'json' };
+import pactSpirits from './seed/pactSpirits.json' with { type: 'json' };
+import memories from './seed/memories.json' with { type: 'json' };
 
 /**
  * The bundled seed dataset. Hand-entered, approximate, and intentionally small
@@ -28,7 +34,10 @@ export const seedDataset: Dataset = {
   activeSkills: activeSkills as ActiveSkill[],
   supportSkills: supportSkills as SupportSkill[],
   affixes: affixes as Affix[],
-  gearBases: gearBases as GearBase[]
+  gearBases: gearBases as GearBase[],
+  talents: talents as Talent[],
+  pactSpirits: pactSpirits as PactSpirit[],
+  memories: memories as MemoryRevival[]
 };
 
 /** Indexed view over a dataset for O(1) lookups by id. */
@@ -39,6 +48,9 @@ export interface DatasetIndex {
   supportSkill(id: string): SupportSkill | undefined;
   affix(id: string): Affix | undefined;
   gearBase(id: string): GearBase | undefined;
+  talent(id: string): Talent | undefined;
+  pactSpirit(id: string): PactSpirit | undefined;
+  memory(id: string): MemoryRevival | undefined;
 }
 
 export function indexDataset(dataset: Dataset): DatasetIndex {
@@ -47,6 +59,9 @@ export function indexDataset(dataset: Dataset): DatasetIndex {
   const supports = new Map(dataset.supportSkills.map((s) => [s.id, s]));
   const affixes = new Map(dataset.affixes.map((a) => [a.id, a]));
   const gearBases = new Map(dataset.gearBases.map((g) => [g.id, g]));
+  const talents = new Map(dataset.talents.map((t) => [t.id, t]));
+  const pactSpirits = new Map(dataset.pactSpirits.map((p) => [p.id, p]));
+  const memories = new Map(dataset.memories.map((m) => [m.id, m]));
 
   return {
     dataset,
@@ -54,7 +69,10 @@ export function indexDataset(dataset: Dataset): DatasetIndex {
     activeSkill: (id) => actives.get(id),
     supportSkill: (id) => supports.get(id),
     affix: (id) => affixes.get(id),
-    gearBase: (id) => gearBases.get(id)
+    gearBase: (id) => gearBases.get(id),
+    talent: (id) => talents.get(id),
+    pactSpirit: (id) => pactSpirits.get(id),
+    memory: (id) => memories.get(id)
   };
 }
 

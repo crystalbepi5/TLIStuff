@@ -151,6 +151,40 @@ export interface GearBase {
   implicit: Modifier[];
 }
 
+/**
+ * A node in a hero's trait/talent tree. `heroId` scopes it to one hero, or
+ * `'any'` for shared nodes. Point budgets aren't modelled — a node is simply
+ * allocated or not.
+ */
+export interface Talent {
+  id: string;
+  name: string;
+  description?: string;
+  heroId: string | 'any';
+  modifiers: Modifier[];
+}
+
+/** A Pact Spirit the hero binds for passive bonuses. */
+export interface PactSpirit {
+  id: string;
+  name: string;
+  description?: string;
+  modifiers: Modifier[];
+}
+
+/**
+ * An SS13 "Memory Revival" awakening — items that boost affix values and unlock
+ * rare affixes. Modelled here as a selectable bundle of modifiers. NOTE: the
+ * real system's mechanics aren't public yet; seed entries are placeholders.
+ */
+export interface MemoryRevival {
+  id: string;
+  name: string;
+  description?: string;
+  modifiers: Modifier[];
+  season?: string;
+}
+
 /** The whole dataset, as loaded by the app and emitted by the scraper. */
 export interface Dataset {
   /** Provenance so the UI can show "seed data" vs. a real scrape, and when. */
@@ -165,6 +199,9 @@ export interface Dataset {
   supportSkills: SupportSkill[];
   affixes: Affix[];
   gearBases: GearBase[];
+  talents: Talent[];
+  pactSpirits: PactSpirit[];
+  memories: MemoryRevival[];
 }
 
 /** A piece of gear the player has assembled: a base plus chosen affixes. */
@@ -183,6 +220,12 @@ export interface Build {
   activeSkillId: string;
   supportIds: string[];
   gear: GearPiece[];
-  /** Free-form extra modifiers (talent tree, pact spirits, Memory Revival…). */
+  /** Allocated talent-tree nodes. */
+  talentIds: string[];
+  /** Bound Pact Spirits (capped by MAX_PACT_SPIRITS in build-calc). */
+  pactSpiritIds: string[];
+  /** Selected Memory Revival awakenings. */
+  memoryIds: string[];
+  /** Free-form extra modifiers — an escape hatch for anything not modelled. */
   extraModifiers: Modifier[];
 }

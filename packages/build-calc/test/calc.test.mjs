@@ -6,8 +6,26 @@ import {
   applyAggregate,
   computeDamage,
   computeDefense,
-  evaluateBuild
+  evaluateBuild,
+  MAX_PACT_SPIRITS
 } from '../dist/index.js';
+
+/** Minimal valid build with all modifier-source lists empty. */
+function baseBuild(overrides = {}) {
+  return {
+    id: 'b',
+    name: 'B',
+    heroId: 'selina-tide-whisper',
+    activeSkillId: 'dance-of-the-deep',
+    supportIds: [],
+    gear: [],
+    talentIds: [],
+    pactSpiritIds: [],
+    memoryIds: [],
+    extraModifiers: [],
+    ...overrides
+  };
+}
 
 test('aggregate sorts modifiers into flat / increased / more buckets', () => {
   const mods = [
@@ -101,18 +119,17 @@ test('computeDefense: resistances cap and health pool', () => {
 
 test('evaluateBuild: Selina + Dance of the Deep produces positive dps, no fatal warnings', () => {
   const index = indexDataset(seedDataset);
-  const build = {
-    id: 'b1',
+  const build = baseBuild({
     name: 'Cold Selina',
-    heroId: 'selina-tide-whisper',
-    activeSkillId: 'dance-of-the-deep',
     supportIds: ['elemental-boost', 'concentrated-effect', 'arcane-surge', 'deadly-aim'],
     gear: [
       { slot: 'weapon', baseId: 'tidecaller-staff', affixIds: ['of-frost'] },
       { slot: 'chest', baseId: 'silk-robe', affixIds: ['of-vitality', 'resolute'] }
     ],
-    extraModifiers: []
-  };
+    talentIds: ['selina-deep-current', 'generic-lethality'],
+    pactSpiritIds: ['leviathan'],
+    memoryIds: ['awakened-tide']
+  });
   const report = evaluateBuild(build, index);
   assert.ok(report.damage.dps > 0, 'expected positive dps');
   assert.ok(report.defense.healthPool > 0, 'expected positive health pool');
@@ -121,16 +138,41 @@ test('evaluateBuild: Selina + Dance of the Deep produces positive dps, no fatal 
 
 test('evaluateBuild: tag-mismatched support is dropped with a warning', () => {
   const index = indexDataset(seedDataset);
-  const build = {
-    id: 'b2',
-    name: 'Bad support',
-    heroId: 'selina-tide-whisper',
-    activeSkillId: 'dance-of-the-deep', // spell
-    supportIds: ['swift-strikes'], // requires 'attack'
-    gear: [],
-    extraModifiers: []
-  };
+  const build = baseBuild({ supportIds: ['swift-strikes'] }); // requires 'attack', skill is spell
   const report = evaluateBuild(build, index);
   assert.equal(report.warnings.length, 1);
   assert.match(report.warnings[0], /swift strikes/i);
+});
+
+test('evaluateBuild: talents, pact spirits and memories all raise dps', () => {
+  const index = indexDataset(seedDataset);
+  const bare = evaluateBuild(baseBuild(), index);
+  const withProgression = evaluateBuild(
+    baseBuild({
+      talentIds: ['selina-undertow'], // +12% more
+      pactSpiritIds: ['leviathan'], // +20% elemental
+      memoryIds: ['awakened-ruin'] // +10% more
+    }),
+    index
+  );
+  assert.ok(withProgression.damage.dps > bare.damage.dps, 'progression should increase dps');
+});
+
+test("evaluateBuild: another hero's talent is ignored with a warning", () => {
+  const index = indexDataset(seedDataset);
+  // Gemma's talent on a Selina build.
+  const report = evaluateBuild(baseBuild({ talentIds: ['gemma-molten-core'] }), index);
+  assert.equal(report.warnings.length, 1);
+  assert.match(report.warnings[0], /another hero/i);
+});
+
+test('evaluateBuild: pact spirits beyond the cap are ignored with a warning', () => {
+  const index = indexDataset(seedDataset);
+  const tooMany = ['leviathan', 'emberwing', 'stoneguard', 'voltaic-sprite'];
+  assert.ok(tooMany.length > MAX_PACT_SPIRITS);
+  const report = evaluateBuild(baseBuild({ pactSpiritIds: tooMany }), index);
+  assert.ok(
+    report.warnings.some((w) => /pact spirits bound/i.test(w)),
+    'expected a pact-spirit cap warning'
+  );
 });

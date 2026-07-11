@@ -6,7 +6,7 @@ import {
   type GearPiece,
   type GearSlot
 } from '@torchlight-companion/build-data';
-import { evaluateBuild } from '@torchlight-companion/build-calc';
+import { evaluateBuild, MAX_PACT_SPIRITS } from '@torchlight-companion/build-calc';
 
 const GEAR_SLOTS: GearSlot[] = [
   'weapon',
@@ -34,6 +34,9 @@ function defaultBuild(): Build {
     activeSkillId: seedDataset.activeSkills[0]?.id ?? '',
     supportIds: [],
     gear: [],
+    talentIds: [],
+    pactSpiritIds: [],
+    memoryIds: [],
     extraModifiers: []
   };
 }
@@ -42,8 +45,19 @@ function encodeBuild(build: Build): string {
   return btoa(encodeURIComponent(JSON.stringify(build)));
 }
 
+/** Decode a share code, backfilling any fields older codes may lack. */
 function decodeBuild(code: string): Build {
-  return JSON.parse(decodeURIComponent(atob(code.trim()))) as Build;
+  const parsed = JSON.parse(decodeURIComponent(atob(code.trim()))) as Partial<Build>;
+  return {
+    ...defaultBuild(),
+    ...parsed,
+    gear: parsed.gear ?? [],
+    supportIds: parsed.supportIds ?? [],
+    talentIds: parsed.talentIds ?? [],
+    pactSpiritIds: parsed.pactSpiritIds ?? [],
+    memoryIds: parsed.memoryIds ?? [],
+    extraModifiers: parsed.extraModifiers ?? []
+  };
 }
 
 export function BuildPlanner() {
@@ -72,6 +86,19 @@ export function BuildPlanner() {
       if (has) return { ...prev, supportIds: prev.supportIds.filter((s) => s !== id) };
       if (prev.supportIds.length >= supportSlots) return prev; // slots full
       return { ...prev, supportIds: [...prev.supportIds, id] };
+    });
+  }
+
+  function toggleInList(
+    key: 'talentIds' | 'pactSpiritIds' | 'memoryIds',
+    id: string,
+    cap?: number
+  ) {
+    setBuild((prev) => {
+      const list = prev[key];
+      if (list.includes(id)) return { ...prev, [key]: list.filter((x) => x !== id) };
+      if (cap !== undefined && list.length >= cap) return prev;
+      return { ...prev, [key]: [...list, id] };
     });
   }
 
@@ -105,7 +132,10 @@ export function BuildPlanner() {
           <h2>Character</h2>
           <label className="field">
             <span>Hero</span>
-            <select value={build.heroId} onChange={(e) => patch({ heroId: e.target.value })}>
+            <select
+              value={build.heroId}
+              onChange={(e) => patch({ heroId: e.target.value, talentIds: [] })}
+            >
               {seedDataset.heroes.map((h) => (
                 <option key={h.id} value={h.id}>
                   {h.name}
@@ -205,6 +235,63 @@ export function BuildPlanner() {
               </div>
             );
           })}
+        </section>
+
+        <section className="planner-panel">
+          <h2>Progression</h2>
+
+          <h3>Talents</h3>
+          <div className="checkbox-list">
+            {seedDataset.talents
+              .filter((t) => t.heroId === 'any' || t.heroId === build.heroId)
+              .map((t) => (
+                <label key={t.id} className="checkbox">
+                  <input
+                    type="checkbox"
+                    checked={build.talentIds.includes(t.id)}
+                    onChange={() => toggleInList('talentIds', t.id)}
+                  />
+                  <span>{t.name}</span>
+                  {t.heroId === 'any' && <em className="req-tags">shared</em>}
+                </label>
+              ))}
+          </div>
+
+          <h3>
+            Pact Spirits ({build.pactSpiritIds.length}/{MAX_PACT_SPIRITS})
+          </h3>
+          <div className="checkbox-list">
+            {seedDataset.pactSpirits.map((p) => {
+              const checked = build.pactSpiritIds.includes(p.id);
+              const disabled = !checked && build.pactSpiritIds.length >= MAX_PACT_SPIRITS;
+              return (
+                <label key={p.id} className={`checkbox ${disabled ? 'is-disabled' : ''}`}>
+                  <input
+                    type="checkbox"
+                    checked={checked}
+                    disabled={disabled}
+                    onChange={() => toggleInList('pactSpiritIds', p.id, MAX_PACT_SPIRITS)}
+                  />
+                  <span>{p.name}</span>
+                </label>
+              );
+            })}
+          </div>
+
+          <h3>Memory Revival</h3>
+          <div className="checkbox-list">
+            {seedDataset.memories.map((m) => (
+              <label key={m.id} className="checkbox">
+                <input
+                  type="checkbox"
+                  checked={build.memoryIds.includes(m.id)}
+                  onChange={() => toggleInList('memoryIds', m.id)}
+                />
+                <span>{m.name}</span>
+                {m.season && <em className="req-tags">{m.season}</em>}
+              </label>
+            ))}
+          </div>
         </section>
 
         <section className="planner-panel planner-results">

@@ -7,6 +7,9 @@ import type {
 import { computeDamage, type DamageResult } from './damage.js';
 import { computeDefense, type DefenseResult } from './defense.js';
 
+/** How many Pact Spirits a build may bind. Stand-in for the real limit. */
+export const MAX_PACT_SPIRITS = 3;
+
 export interface BuildReport {
   skill: ActiveSkill;
   /** Every modifier that applied to this build, after tag filtering. */
@@ -81,6 +84,37 @@ export function collectModifiers(
       continue;
     }
     raw.push(...support.modifiers);
+  }
+
+  for (const talentId of build.talentIds) {
+    const talent = index.talent(talentId);
+    if (!talent) {
+      warnings.push(`unknown talent: ${talentId}`);
+      continue;
+    }
+    if (talent.heroId !== 'any' && talent.heroId !== build.heroId) {
+      warnings.push(`talent '${talent.name}' belongs to another hero; ignored`);
+      continue;
+    }
+    raw.push(...talent.modifiers);
+  }
+
+  const boundSpirits = build.pactSpiritIds.slice(0, MAX_PACT_SPIRITS);
+  if (build.pactSpiritIds.length > MAX_PACT_SPIRITS) {
+    warnings.push(
+      `${build.pactSpiritIds.length} pact spirits bound but only ${MAX_PACT_SPIRITS} allowed; extras ignored`
+    );
+  }
+  for (const spiritId of boundSpirits) {
+    const spirit = index.pactSpirit(spiritId);
+    if (!spirit) warnings.push(`unknown pact spirit: ${spiritId}`);
+    else raw.push(...spirit.modifiers);
+  }
+
+  for (const memoryId of build.memoryIds) {
+    const memory = index.memory(memoryId);
+    if (!memory) warnings.push(`unknown memory: ${memoryId}`);
+    else raw.push(...memory.modifiers);
   }
 
   raw.push(...build.extraModifiers);

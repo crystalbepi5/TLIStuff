@@ -22,7 +22,7 @@ The **build helper** — originally deferred for lack of a public item/affix/ski
 
 - **`packages/build-data`** — a typed schema (heroes, active/support skills, affixes, gear bases, saved builds) plus a small hand-entered *seed* dataset. It includes SS13 "Afterlight" stubs (Tide Whisper Selina, Dance of the Deep).
 - **`packages/build-calc`** — a pure, fully-tested modifier engine implementing the standard ARPG damage pipeline (base → added flat → sum of *increased%* → product of *more%* → crit → rate) plus life/ES/resist/EHP defence.
-- **`apps/web`** — a **Build Planner** view: pick a hero, main skill, supports, and gear, and see DPS / crit / rate / per-element damage and defence recompute live. Reachable at the `#planner` URL hash (a normal opaque page, separate from the transparent overlay). Builds export/import as a base64 share code.
+- **`apps/web`** — a **Build Planner** view: pick a hero, main skill, supports, gear, and **progression** (talent-tree nodes, Pact Spirits, and SS13 Memory Revival awakenings), and see DPS / crit / rate / per-element damage and defence recompute live. Reachable at the `#planner` URL hash (a normal opaque page, separate from the transparent overlay). Builds export/import as a base64 share code.
 
 ### Honest caveats
 
