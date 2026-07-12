@@ -4,9 +4,13 @@ export {
   fetchPath,
   extractSlugs,
   indexSlugs,
+  firstCard,
   parseSkill,
   mapActiveSkill,
   scrapeActiveSkills,
+  parseModifiers,
+  parseSupport,
+  scrapeSupports,
   type TlidbConfig,
   type ParsedSkill
 } from './scrape.js';

@@ -9,7 +9,8 @@
     "build": "tsc -p tsconfig.json",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "node --test test/*.test.mjs",
-    "lint": "tsc -p tsconfig.json --noEmit"
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "scrape": "node dist/cli.js"
   },
   "dependencies": {
     "@torchlight-companion/build-data": "workspace:*",

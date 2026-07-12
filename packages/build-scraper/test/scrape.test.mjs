@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { parseSkill, mapActiveSkill, extractSlugs } from '../dist/index.js';
+import { parseSkill, mapActiveSkill, extractSlugs, parseModifiers } from '../dist/index.js';
 
 // Offline tests against saved tlidb fixtures — no network. The live scrape is
 // exercised separately (scrapeActiveSkills), which hits tlidb.com.
@@ -26,6 +26,36 @@ test('mapActiveSkill produces a valid ActiveSkill with mid-range base damage', (
   assert.ok(skill.baseDamage.fire && skill.baseDamage.fire > 0, 'expected fire base damage');
   assert.ok(skill.baseRate > 0);
   assert.ok(Array.isArray(skill.tags));
+});
+
+test('parseModifiers maps common tlidb effect phrasings to modifiers', () => {
+  // "additional damage" (generic) and element-specific "additional X damage" -> more
+  assert.deepEqual(parseModifiers('deals +32%~36% additional damage'), [
+    { stat: 'moreDamage', op: 'more', value: 0.34 }
+  ]);
+  assert.deepEqual(parseModifiers('10.3% additional Cold Damage for the supported skill'), [
+    { stat: 'moreDamage', op: 'more', value: 0.103 }
+  ]);
+  // added flat element damage, resistances, crit
+  assert.deepEqual(parseModifiers('Adds 20 - 24 Fire Damage'), [
+    { stat: 'addedFire', op: 'flat', value: 22 }
+  ]);
+  assert.deepEqual(parseModifiers('+24% Cold Resistance'), [
+    { stat: 'coldResist', op: 'flat', value: 24 }
+  ]);
+  assert.deepEqual(parseModifiers('+25% Critical Strike Damage'), [
+    { stat: 'critDamage', op: 'flat', value: 25 }
+  ]);
+});
+
+test('parseModifiers dedupes effects repeated in Simple + Details blocks', () => {
+  const mods = parseModifiers('+5% additional damage\n... details ...\n+5% additional damage');
+  assert.equal(mods.length, 1);
+});
+
+test('parseModifiers ignores unmodelled mechanics', () => {
+  // multistrike count, duration, conversion — no calc stat, so no modifier
+  assert.deepEqual(parseModifiers('+1 Multistrike count; +13% Duration'), []);
 });
 
 test('extractSlugs pulls entity slugs from a category page, filtered by the index', () => {

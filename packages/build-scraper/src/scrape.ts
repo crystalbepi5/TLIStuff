@@ -12,7 +12,17 @@
 import { parse, HTMLElement } from 'node-html-parser';
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import type { ActiveSkill, DamageTag, Element } from '@torchlight-companion/build-data';
+import type {
+  ActiveSkill,
+  DamageTag,
+  Dataset,
+  Element,
+  Modifier,
+  PactSpirit,
+  StatKey,
+  SupportSkill,
+  Talent
+} from '@torchlight-companion/build-data';
 
 export const BASE_URL = 'https://tlidb.com';
 
@@ -119,11 +129,15 @@ function toNumber(s: string): number {
   return Number(s.replace(/,/g, ''));
 }
 
+/** The primary entity card: the first `.card.ui_item` in document order (its
+ * current-season version), regardless of tab layout. */
+export function firstCard(html: string): HTMLElement | null {
+  return parse(html).querySelector('.card.ui_item');
+}
+
 /** Parse a tlidb skill entity page. Returns null if no skill card is present. */
 export function parseSkill(slug: string, html: string): ParsedSkill | null {
-  const root = parse(html);
-  const pane = root.querySelector('.tab-pane'); // first tab = the skill itself
-  const card = pane?.querySelector('.card.ui_item'); // first card = current version
+  const card = firstCard(html);
   if (!card) return null;
 
   const name = card.querySelector('.card-title')?.text.trim() || slug.replace(/_/g, ' ');
@@ -198,6 +212,170 @@ export function mapActiveSkill(p: ParsedSkill): ActiveSkill {
 }
 
 // ------------------------------ orchestration --------------------------------
+
+// ---------------------- text -> Modifier[] (supports/gear) --------------------
+
+const ELEMENT_WORDS = 'Physical|Fire|Cold|Lightning|Erosion';
+const RESIST_STAT: Record<string, StatKey> = {
+  Fire: 'fireResist',
+  Cold: 'coldResist',
+  Lightning: 'lightningResist',
+  Erosion: 'erosionResist'
+};
+const INCREASED_ELEMENT: Record<string, StatKey> = {
+  Physical: 'increasedPhysical',
+  Fire: 'increasedFire',
+  Cold: 'increasedCold',
+  Lightning: 'increasedLightning',
+  Erosion: 'increasedErosion'
+};
+
+function round(n: number, decimals: number): number {
+  const f = 10 ** decimals;
+  return Math.round(n * f) / f;
+}
+
+/** Midpoint of a captured number and an optional second (range) number. */
+function midpoint(a: string, b?: string): number {
+  const x = Number(a);
+  if (b === undefined) return x;
+  return round((x + Number(b)) / 2, 3);
+}
+
+const ADDED_ELEMENT: Record<string, StatKey> = {
+  Physical: 'addedPhysical',
+  Fire: 'addedFire',
+  Cold: 'addedCold',
+  Lightning: 'addedLightning',
+  Erosion: 'addedErosion'
+};
+
+interface Rule {
+  re: RegExp;
+  make(m: RegExpMatchArray): Modifier | null;
+}
+
+// Ordered rules. Each is scanned globally over the text; every match emits a
+// modifier. Effects relying on unmodelled mechanics (Terra Charge, Spell Burst,
+// stacks, conversions, "Skill Area") are intentionally not matched.
+const RULES: Rule[] = [
+  {
+    // "+32%~36% additional damage", "-6%~-3% additional damage", "+5% additional damage"
+    re: /([+-]?\d+(?:\.\d+)?)\s*%?\s*(?:~\s*([+-]?\d+(?:\.\d+)?)\s*%?)?\s+additional\s+damage/gi,
+    make: (m) => (m[1] ? { stat: 'moreDamage', op: 'more', value: round(midpoint(m[1], m[2]) / 100, 4) } : null)
+  },
+  {
+    // "10.3% additional Cold Damage", "+32%~36% additional Fire Damage"
+    // (element-specific "additional" damage — modelled as generic `more`, since
+    // supports are slotted on element-matching skills anyway).
+    re: new RegExp(
+      `([+-]?\\d+(?:\\.\\d+)?)\\s*%?\\s*(?:~\\s*([+-]?\\d+(?:\\.\\d+)?)\\s*%?)?\\s+additional\\s+(?:${ELEMENT_WORDS})\\s+Damage`,
+      'gi'
+    ),
+    make: (m) => (m[1] ? { stat: 'moreDamage', op: 'more', value: round(midpoint(m[1], m[2]) / 100, 4) } : null)
+  },
+  {
+    // "Adds 20-24 Cold Damage", "Adds 5-5 base Ignite Damage"
+    re: new RegExp(`Adds\\s+(\\d+(?:\\.\\d+)?)\\s*-\\s*(\\d+(?:\\.\\d+)?)\\s+(?:base\\s+)?(${ELEMENT_WORDS})\\s+Damage`, 'gi'),
+    make: (m) => {
+      const stat = m[3] ? ADDED_ELEMENT[capitalize(m[3])] : undefined;
+      return stat && m[1] && m[2] ? { stat, op: 'flat', value: midpoint(m[1], m[2]) } : null;
+    }
+  },
+  {
+    re: new RegExp(`([+-]?\\d+(?:\\.\\d+)?)%\\s+(${ELEMENT_WORDS})\\s+Damage\\b`, 'gi'),
+    make: (m) => {
+      const stat = m[2] ? INCREASED_ELEMENT[capitalize(m[2])] : undefined;
+      return stat && m[1] ? { stat, op: 'increased', value: Number(m[1]) } : null;
+    }
+  },
+  {
+    re: /([+-]?\d+(?:\.\d+)?)%\s+(Attack|Cast)\s+Speed/gi,
+    make: (m) =>
+      m[1] && m[2]
+        ? { stat: m[2].toLowerCase() === 'attack' ? 'increasedAttackSpeed' : 'increasedCastSpeed', op: 'increased', value: Number(m[1]) }
+        : null
+  },
+  {
+    re: /([+-]?\d+(?:\.\d+)?)%\s+Critical\s+Strike\s+Damage/gi,
+    make: (m) => (m[1] ? { stat: 'critDamage', op: 'flat', value: Number(m[1]) } : null)
+  },
+  {
+    re: new RegExp(`([+-]?\\d+(?:\\.\\d+)?)%\\s+(${ELEMENT_WORDS})\\s+Resistance`, 'gi'),
+    make: (m) => {
+      const stat = m[2] ? RESIST_STAT[capitalize(m[2])] : undefined;
+      return stat && m[1] ? { stat, op: 'flat', value: Number(m[1]) } : null;
+    }
+  },
+  {
+    re: /([+-]?\d+(?:\.\d+)?)%\s+(?:increased\s+)?maximum\s+Life/gi,
+    make: (m) => (m[1] ? { stat: 'increasedLife', op: 'increased', value: Number(m[1]) } : null)
+  },
+  {
+    re: /\+(\d+(?:\.\d+)?)\s+maximum\s+Life\b/gi,
+    make: (m) => (m[1] ? { stat: 'life', op: 'flat', value: Number(m[1]) } : null)
+  }
+];
+
+function capitalize(s: string): string {
+  return s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
+}
+
+/**
+ * Best-effort extraction of build-data modifiers from tlidb effect text. Only
+ * the common, cleanly-quoted combat stats are recognised; anything mechanic-
+ * specific is skipped (documented approximation — the calculator is simplified).
+ */
+export function parseModifiers(text: string): Modifier[] {
+  const byKey = new Map<string, Modifier>();
+  for (const rule of RULES) {
+    for (const m of text.matchAll(rule.re)) {
+      const mod = rule.make(m);
+      if (!mod || !Number.isFinite(mod.value) || mod.value === 0) continue;
+      // Dedupe identical (stat/op/value) — tlidb repeats effects in Simple +
+      // Details blocks, so the same line is matched more than once.
+      byKey.set(`${mod.stat}|${mod.op}|${mod.value}`, mod);
+    }
+  }
+  return [...byKey.values()];
+}
+
+/** Parse a support-skill page (same card layout as skills) into a SupportSkill. */
+export function parseSupport(slug: string, html: string): SupportSkill | null {
+  const card = firstCard(html);
+  if (!card) return null;
+  const name = card.querySelector('.card-title')?.text.trim() || slug.replace(/_/g, ' ');
+  const text = card.querySelectorAll('.explicitMod').map((m) => m.text).join('\n');
+  return { id: slugToId(slug), name, modifiers: parseModifiers(text), requiresTags: [] };
+}
+
+/** Scrape every support skill across tlidb's three support categories. */
+export async function scrapeSupports(
+  overrides: Partial<TlidbConfig> = {}
+): Promise<{ supports: SupportSkill[]; skipped: string[] }> {
+  const cfg: TlidbConfig = { ...DEFAULT_CONFIG, ...overrides };
+  const allowed = await indexSlugs(['Skill'], cfg);
+  const cats = ['Support_Skill', 'Magnificent_Support_Skill', 'Noble_Support_Skill'];
+  const slugSet = new Set<string>();
+  for (const cat of cats) {
+    for (const s of extractSlugs(await fetchPath(`/en/${cat}`, cfg), allowed)) slugSet.add(s);
+  }
+  let slugs = [...slugSet];
+  if (cfg.limit > 0) slugs = slugs.slice(0, cfg.limit);
+
+  const supports: SupportSkill[] = [];
+  const skipped: string[] = [];
+  for (const slug of slugs) {
+    try {
+      const s = parseSupport(slug, await fetchPath(`/en/${slug}`, cfg));
+      if (s) supports.push(s);
+      else skipped.push(slug);
+    } catch (err) {
+      skipped.push(`${slug} (${err instanceof Error ? err.message : err})`);
+    }
+  }
+  return { supports, skipped };
+}
 
 /** Scrape every active skill listed on tlidb's Active Skill category page. */
 export async function scrapeActiveSkills(
