@@ -1,32 +1,37 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { extractNextData, get } from '../dist/index.js';
+import { readFileSync } from 'node:fs';
+import { parseSkill, mapActiveSkill, extractSlugs } from '../dist/index.js';
 
-// These test the site-agnostic core only — no network involved. The scraper's
-// live behaviour depends on hosts blocked in the build environment.
+// Offline tests against saved tlidb fixtures — no network. The live scrape is
+// exercised separately (scrapeActiveSkills), which hits tlidb.com.
 
-test('extractNextData parses embedded Next.js JSON', () => {
-  const html = `<html><body><script id="__NEXT_DATA__" type="application/json">${JSON.stringify(
-    { props: { pageProps: { items: [{ id: 'a' }, { id: 'b' }] } } }
-  )}</script></body></html>`;
-  const data = extractNextData(html);
-  assert.ok(data);
-  const items = get(data, 'props.pageProps.items');
-  assert.equal(Array.isArray(items) ? items.length : 0, 2);
+const fixture = (name) =>
+  readFileSync(new URL(`./fixtures/${name}`, import.meta.url), 'utf8');
+
+test('parseSkill extracts a spell skill (Flame Jet) from a real tlidb page', () => {
+  const p = parseSkill('Flame_Jet', fixture('Flame_Jet.html'));
+  assert.ok(p, 'expected a parse result');
+  assert.equal(p.name, 'Flame Jet');
+  assert.deepEqual(p.elements, ['fire']);
+  assert.ok(p.tags.includes('spell') && p.tags.includes('area'));
+  assert.ok(p.damageRange, 'expected a spell damage range');
+  assert.ok(p.castSeconds && p.castSeconds > 0);
 });
 
-test('extractNextData returns null when the marker is absent', () => {
-  assert.equal(extractNextData('<html><body>no data here</body></html>'), null);
+test('mapActiveSkill produces a valid ActiveSkill with mid-range base damage', () => {
+  const skill = mapActiveSkill(parseSkill('Flame_Jet', fixture('Flame_Jet.html')));
+  assert.equal(skill.id, 'flame-jet');
+  assert.equal(skill.name, 'Flame Jet');
+  assert.ok(skill.baseDamage.fire && skill.baseDamage.fire > 0, 'expected fire base damage');
+  assert.ok(skill.baseRate > 0);
+  assert.ok(Array.isArray(skill.tags));
 });
 
-test('extractNextData returns null on malformed JSON', () => {
-  const html =
-    '<script id="__NEXT_DATA__" type="application/json">{ not json }</script>';
-  assert.equal(extractNextData(html), null);
-});
-
-test('get safely returns undefined for missing paths', () => {
-  assert.equal(get({ a: { b: 1 } }, 'a.c.d'), undefined);
-  assert.equal(get(null, 'a.b'), undefined);
-  assert.equal(get({ a: { b: 1 } }, 'a.b'), 1);
+test('extractSlugs pulls entity slugs from a category page, filtered by the index', () => {
+  const allowed = new Set(['Flame_Jet', 'Aimed_Shot', 'Blizzard']);
+  const slugs = extractSlugs(fixture('Active_Skill.html'), allowed);
+  // Only allowed slugs survive; season/nav links are dropped.
+  assert.ok(slugs.includes('Aimed_Shot'));
+  assert.ok(slugs.every((s) => allowed.has(s)));
 });

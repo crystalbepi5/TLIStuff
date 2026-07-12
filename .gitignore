@@ -13,3 +13,4 @@ dist/
 release/
 out/
 .vite/
+.tlidb-cache/

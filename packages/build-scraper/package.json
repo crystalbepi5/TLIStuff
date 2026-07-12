@@ -12,7 +12,8 @@
     "lint": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@torchlight-companion/build-data": "workspace:*"
+    "@torchlight-companion/build-data": "workspace:*",
+    "node-html-parser": "^9.0.0"
   },
   "devDependencies": {
     "@types/node": "^24.13.2"

@@ -1,8 +1,12 @@
 export {
-  scrape,
-  fetchPage,
-  extractNextData,
-  get,
+  BASE_URL,
   DEFAULT_CONFIG,
-  type ScrapeConfig
+  fetchPath,
+  extractSlugs,
+  indexSlugs,
+  parseSkill,
+  mapActiveSkill,
+  scrapeActiveSkills,
+  type TlidbConfig,
+  type ParsedSkill
 } from './scrape.js';
