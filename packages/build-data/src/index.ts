@@ -11,6 +11,7 @@ export {
   encodeShareCode,
   decodeShareCode,
   extractCode,
+  hasEmbeddedPayload,
   importBuildCode,
   externalAdapters,
   compendiumAdapter,

@@ -394,7 +394,7 @@ export function BuildPlanner() {
         <textarea
           className="share-code"
           value={shareCode}
-          placeholder="Export to generate a native share code, or paste a native code / TLI Compendium / Torchlight of Building URL and Import."
+          placeholder="Export to generate a native share code, or paste a native code (or a Compendium / PoB Export code — not the editor URL) and Import."
           onChange={(e) => setShareCode(e.target.value)}
         />
         {status && <p className="share-status">{status}</p>}

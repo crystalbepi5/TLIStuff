@@ -99,6 +99,30 @@ export function extractCode(input: string): string {
   }
 }
 
+/**
+ * Does this input actually carry a build, or is it just an editor URL?
+ *
+ * Planners like TLI Compendium keep the live editor at a static path
+ * (`/en/build-planner`) and only embed a build when you explicitly Export/Share
+ * — as a `#hash`, a `?build=`/`?code=` param, or a `/build/<id>` segment. A bare
+ * code string (not a URL) is assumed to be a payload.
+ */
+export function hasEmbeddedPayload(input: string): boolean {
+  const trimmed = input.trim();
+  if (!/^https?:\/\//i.test(trimmed)) return trimmed.length > 0;
+  try {
+    const url = new URL(trimmed);
+    if (url.hash.replace(/^#/, '').length > 0) return true;
+    if (url.searchParams.get('build') ?? url.searchParams.get('code')) return true;
+    // A share path like /build/<id> or /b/<id> carries an id after the keyword.
+    const segments = url.pathname.split('/').filter(Boolean);
+    const keyIdx = segments.findIndex((s) => s === 'build' || s === 'b');
+    return keyIdx >= 0 && keyIdx < segments.length - 1;
+  } catch {
+    return false;
+  }
+}
+
 function notYetSupported(label: string): never {
   throw new Error(
     `${label} import isn't wired up yet — its share-code format isn't public. ` +
@@ -137,6 +161,15 @@ export function importBuildCode(
   // so a Compendium URL doesn't get misread as malformed native input.
   const claimed = adapters.find((a) => a.detect(input));
   if (claimed) {
+    // The live editor URL contains no build — tell the user how to get one.
+    if (!hasEmbeddedPayload(input)) {
+      return {
+        ok: false,
+        error:
+          `That's the ${claimed.label} editor URL — it doesn't contain a build. ` +
+          `Use ${claimed.label}'s Export / Share to copy a build code or share link, then paste that here.`
+      };
+    }
     try {
       const { build, warnings } = claimed.parse(input);
       return { ok: true, build, format: claimed.id, warnings };
