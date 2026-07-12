@@ -1,38 +1,44 @@
 [
   {
-    "id": "elemental-boost",
-    "name": "Elemental Boost",
-    "requiresTags": [],
-    "modifiers": [{ "stat": "increasedElemental", "op": "increased", "value": 40 }]
+    "id": "channeled-depths",
+    "name": "Channeled Depths",
+    "requiresTags": ["channelled"],
+    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.05 }]
   },
   {
-    "id": "concentrated-effect",
-    "name": "Concentrated Effect",
+    "id": "tidewell-torrent",
+    "name": "Tidewell: Torrent (Magnificent)",
     "requiresTags": ["area"],
-    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.35 }]
+    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.34 }]
   },
   {
-    "id": "swift-strikes",
-    "name": "Swift Strikes",
+    "id": "thornfield-sacrifice",
+    "name": "Thornfield: Sacrifice (Magnificent)",
+    "requiresTags": ["area"],
+    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.095 }]
+  },
+  {
+    "id": "thornfield-retribution",
+    "name": "Thornfield: Retribution (Noble)",
+    "requiresTags": ["area"],
+    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.75 }]
+  },
+  {
+    "id": "storm-field-thunderclap",
+    "name": "Storm Field: Thunderclap (Magnificent)",
+    "requiresTags": ["area"],
+    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.34 }]
+  },
+  {
+    "id": "storm-field-conduction",
+    "name": "Storm Field: Conduction (Noble)",
+    "requiresTags": ["area"],
+    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.2 }]
+  },
+  {
+    "id": "chromatic-condensed-cold",
+    "name": "Chromatic Shot: Condensed Cold (Noble)",
     "requiresTags": ["attack"],
-    "modifiers": [{ "stat": "increasedAttackSpeed", "op": "increased", "value": 25 }]
-  },
-  {
-    "id": "arcane-surge",
-    "name": "Arcane Surge",
-    "requiresTags": ["spell"],
-    "modifiers": [
-      { "stat": "increasedCastSpeed", "op": "increased", "value": 20 },
-      { "stat": "moreDamage", "op": "more", "value": 0.15 }
-    ]
-  },
-  {
-    "id": "deadly-aim",
-    "name": "Deadly Aim",
-    "requiresTags": [],
-    "modifiers": [
-      { "stat": "critRate", "op": "flat", "value": 3 },
-      { "stat": "critDamage", "op": "flat", "value": 30 }
-    ]
+    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.29 }]
   }
 ]

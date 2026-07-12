@@ -1,46 +1,54 @@
 [
   {
-    "id": "selina-deep-current",
-    "name": "Deep Current",
-    "heroId": "selina-tide-whisper",
-    "description": "SS13 Selina trait. NOTE: seed approximation.",
-    "modifiers": [
-      { "stat": "increasedCold", "op": "increased", "value": 25 },
-      { "stat": "increasedCastSpeed", "op": "increased", "value": 8 }
-    ]
+    "id": "selena-red-shoes",
+    "name": "Red Shoes of Cruelty",
+    "heroId": "selena-tide-whisper",
+    "description": "Selena Revive Affix: enemies in your Terra take additional damage scaling with Movement Speed bonus, capped at 75%. Modelled at a representative +30%.",
+    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.3 }]
   },
   {
-    "id": "selina-undertow",
-    "name": "Undertow",
-    "heroId": "selina-tide-whisper",
-    "description": "SS13 Selina trait. NOTE: seed approximation.",
-    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.12 }]
+    "id": "rehan-furys-onslaught",
+    "name": "Fury's Onslaught",
+    "heroId": "rehan-berserker",
+    "description": "Berserker Rehan trait: Seething Spirit grants +78% player's own Damage (Lv.5).",
+    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.78 }]
   },
   {
-    "id": "gemma-molten-core",
-    "name": "Molten Core",
-    "heroId": "gemma-flaming-hammer",
-    "description": "NOTE: seed approximation.",
-    "modifiers": [
-      { "stat": "increasedFire", "op": "increased", "value": 25 },
-      { "stat": "increasedAttackSpeed", "op": "increased", "value": 8 }
-    ]
+    "id": "thea-avatar-descent",
+    "name": "Avatar Descent",
+    "heroId": "thea-oracle",
+    "description": "Oracle Thea trait: up to +25% additional Damage to enemies in Divine Realm.",
+    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.25 }]
   },
   {
-    "id": "generic-lethality",
-    "name": "Lethality",
+    "id": "arcanist-full-mana",
+    "name": "Arcanist · Full Mana",
     "heroId": "any",
-    "description": "Shared node. NOTE: seed approximation.",
+    "description": "Class Legendary Medium talent: at full Mana, +10% Attack and Cast Speed (condition not modelled).",
     "modifiers": [
-      { "stat": "critRate", "op": "flat", "value": 2 },
-      { "stat": "critDamage", "op": "flat", "value": 20 }
+      { "stat": "increasedAttackSpeed", "op": "increased", "value": 10 },
+      { "stat": "increasedCastSpeed", "op": "increased", "value": 10 }
     ]
   },
   {
-    "id": "generic-fortitude",
-    "name": "Fortitude",
+    "id": "magister-spell-burst",
+    "name": "Magister · Spell Burst",
     "heroId": "any",
-    "description": "Shared node. NOTE: seed approximation.",
-    "modifiers": [{ "stat": "increasedLife", "op": "increased", "value": 15 }]
+    "description": "Class Legendary Medium talent: skills cast by Spell Burst deal +8% additional On Hit Damage.",
+    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.08 }]
+  },
+  {
+    "id": "elementalist-channeled",
+    "name": "Elementalist · Channeled Cap",
+    "heroId": "any",
+    "description": "Class Legendary Medium talent: at max Channeled stacks, +8% additional Damage.",
+    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.08 }]
+  },
+  {
+    "id": "knowledge-acquaintance",
+    "name": "Goddess of Knowledge · Acquaintance",
+    "heroId": "any",
+    "description": "Core talent: +25% additional Spell Damage.",
+    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.25, "tags": ["spell"] }]
   }
 ]

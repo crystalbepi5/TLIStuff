@@ -20,9 +20,9 @@ import type {
   ActiveSkill,
   Affix,
   Dataset,
+  Divinity,
   GearBase,
   Hero,
-  MemoryRevival,
   PactSpirit,
   SupportSkill,
   Talent
@@ -42,7 +42,7 @@ export interface ScrapeConfig {
     gearBases: string;
     talents: string;
     pactSpirits: string;
-    memories: string;
+    divinities: string;
   };
   /** Optional User-Agent; some hosts reject the default. */
   userAgent?: string;
@@ -58,7 +58,7 @@ export const DEFAULT_CONFIG: ScrapeConfig = {
     gearBases: '/database/items',
     talents: '/database/talents',
     pactSpirits: '/database/pact-spirits',
-    memories: '/database/memories'
+    divinities: '/database/divinity'
   },
   userAgent:
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) torchlight-companion-scraper/0.1'
@@ -188,7 +188,7 @@ function mapPactSpirit(raw: Record<string, unknown>): PactSpirit {
   };
 }
 
-function mapMemory(raw: Record<string, unknown>): MemoryRevival {
+function mapDivinity(raw: Record<string, unknown>): Divinity {
   return {
     id: String(raw.id ?? raw.slug ?? raw.name),
     name: String(raw.name ?? 'Unknown'),
@@ -208,7 +208,7 @@ export async function scrape(config: ScrapeConfig = DEFAULT_CONFIG): Promise<Dat
     return asArray(nextData);
   };
 
-  const [heroes, skills, supports, affixes, gearBases, talents, pactSpirits, memories] =
+  const [heroes, skills, supports, affixes, gearBases, talents, pactSpirits, divinities] =
     await Promise.all([
       page(config.paths.heroes),
       page(config.paths.skills),
@@ -217,7 +217,7 @@ export async function scrape(config: ScrapeConfig = DEFAULT_CONFIG): Promise<Dat
       page(config.paths.gearBases),
       page(config.paths.talents),
       page(config.paths.pactSpirits),
-      page(config.paths.memories)
+      page(config.paths.divinities)
     ]);
 
   const dataset: Dataset = {
@@ -233,7 +233,7 @@ export async function scrape(config: ScrapeConfig = DEFAULT_CONFIG): Promise<Dat
     gearBases: gearBases.map(mapGearBase),
     talents: talents.map(mapTalent),
     pactSpirits: pactSpirits.map(mapPactSpirit),
-    memories: memories.map(mapMemory)
+    divinities: divinities.map(mapDivinity)
   };
 
   const problems = validateDataset(dataset);

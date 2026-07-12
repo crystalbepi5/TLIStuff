@@ -1,0 +1,69 @@
+[
+  {
+    "id": "nk-small-damage",
+    "name": "Small Node · +18% Damage",
+    "tier": "small",
+    "season": "SS13",
+    "description": "Nether King's Divinity Small Talent Node.",
+    "modifiers": [{ "stat": "increasedDamage", "op": "increased", "value": 18 }]
+  },
+  {
+    "id": "nk-small-crit-rating",
+    "name": "Small Node · +30% Crit Rating",
+    "tier": "small",
+    "season": "SS13",
+    "description": "Nether King's Divinity Small Talent Node. Critical Strike Rating mapped to increasedCritRate.",
+    "modifiers": [{ "stat": "increasedCritRate", "op": "increased", "value": 30 }]
+  },
+  {
+    "id": "nk-small-crit-damage",
+    "name": "Small Node · +15% Crit Damage",
+    "tier": "small",
+    "season": "SS13",
+    "description": "Nether King's Divinity Small Talent Node.",
+    "modifiers": [{ "stat": "critDamage", "op": "flat", "value": 15 }]
+  },
+  {
+    "id": "nk-small-speed",
+    "name": "Small Node · +6% Attack/Cast Speed",
+    "tier": "small",
+    "season": "SS13",
+    "description": "Nether King's Divinity Small Talent Node.",
+    "modifiers": [
+      { "stat": "increasedAttackSpeed", "op": "increased", "value": 6 },
+      { "stat": "increasedCastSpeed", "op": "increased", "value": 6 }
+    ]
+  },
+  {
+    "id": "nk-small-armor",
+    "name": "Small Node · +720 Armor",
+    "tier": "small",
+    "season": "SS13",
+    "description": "Nether King's Divinity Small Talent Node.",
+    "modifiers": [{ "stat": "armor", "op": "flat", "value": 720 }]
+  },
+  {
+    "id": "nk-small-added-cold",
+    "name": "Small Node · +15 Cold Damage",
+    "tier": "small",
+    "season": "SS13",
+    "description": "Nether King's Divinity Small Talent Node: adds 15 Cold Damage to Attacks and Spells.",
+    "modifiers": [{ "stat": "addedCold", "op": "flat", "value": 15 }]
+  },
+  {
+    "id": "nk-medium-double",
+    "name": "Medium Node · +8% Double Damage",
+    "tier": "medium",
+    "season": "SS13",
+    "description": "Nether King's Divinity Medium Talent Node: +8% chance to deal Double Damage, mapped to +8% average multiplicative damage.",
+    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.08 }]
+  },
+  {
+    "id": "nk-legendary-damage",
+    "name": "Legendary Node · +12% Additional Damage",
+    "tier": "legendary",
+    "season": "SS13",
+    "description": "Nether King's Divinity Legendary Medium Talent Node.",
+    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.12 }]
+  }
+]

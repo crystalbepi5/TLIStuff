@@ -15,13 +15,13 @@ function baseBuild(overrides = {}) {
   return {
     id: 'b',
     name: 'B',
-    heroId: 'selina-tide-whisper',
+    heroId: 'selena-tide-whisper',
     activeSkillId: 'dance-of-the-deep',
     supportIds: [],
     gear: [],
     talentIds: [],
     pactSpiritIds: [],
-    memoryIds: [],
+    divinityIds: [],
     extraModifiers: [],
     ...overrides
   };
@@ -117,18 +117,19 @@ test('computeDefense: resistances cap and health pool', () => {
   assert.equal(def.resists.cold, 50);
 });
 
-test('evaluateBuild: Selina + Dance of the Deep produces positive dps, no fatal warnings', () => {
+test('evaluateBuild: Selena + Dance of the Deep produces positive dps, no fatal warnings', () => {
   const index = indexDataset(seedDataset);
   const build = baseBuild({
-    name: 'Cold Selina',
-    supportIds: ['elemental-boost', 'concentrated-effect', 'arcane-surge', 'deadly-aim'],
+    name: 'Cold Selena',
+    // All gate on tags Dance of the Deep carries (spell/area/channelled).
+    supportIds: ['channeled-depths', 'tidewell-torrent', 'thornfield-sacrifice', 'storm-field-thunderclap'],
     gear: [
-      { slot: 'weapon', baseId: 'tidecaller-staff', affixIds: ['of-frost'] },
+      { slot: 'weapon', baseId: 'tidecaller-staff', affixIds: ['of-terra-might', 'of-frost'] },
       { slot: 'chest', baseId: 'silk-robe', affixIds: ['of-vitality', 'resolute'] }
     ],
-    talentIds: ['selina-deep-current', 'generic-lethality'],
-    pactSpiritIds: ['leviathan'],
-    memoryIds: ['awakened-tide']
+    talentIds: ['selena-red-shoes', 'arcanist-full-mana'],
+    pactSpiritIds: ['icemirror'],
+    divinityIds: ['nk-small-damage', 'nk-legendary-damage']
   });
   const report = evaluateBuild(build, index);
   assert.ok(report.damage.dps > 0, 'expected positive dps');
@@ -138,20 +139,21 @@ test('evaluateBuild: Selina + Dance of the Deep produces positive dps, no fatal 
 
 test('evaluateBuild: tag-mismatched support is dropped with a warning', () => {
   const index = indexDataset(seedDataset);
-  const build = baseBuild({ supportIds: ['swift-strikes'] }); // requires 'attack', skill is spell
+  // Chromatic Shot: Condensed Cold requires an 'attack' skill; Dance of the Deep is a spell.
+  const build = baseBuild({ supportIds: ['chromatic-condensed-cold'] });
   const report = evaluateBuild(build, index);
   assert.equal(report.warnings.length, 1);
-  assert.match(report.warnings[0], /swift strikes/i);
+  assert.match(report.warnings[0], /chromatic/i);
 });
 
-test('evaluateBuild: talents, pact spirits and memories all raise dps', () => {
+test('evaluateBuild: talents, pact spirits and divinity nodes all raise dps', () => {
   const index = indexDataset(seedDataset);
   const bare = evaluateBuild(baseBuild(), index);
   const withProgression = evaluateBuild(
     baseBuild({
-      talentIds: ['selina-undertow'], // +12% more
-      pactSpiritIds: ['leviathan'], // +20% elemental
-      memoryIds: ['awakened-ruin'] // +10% more
+      talentIds: ['selena-red-shoes'], // +30% more
+      pactSpiritIds: ['icemirror'], // +24% increased + more
+      divinityIds: ['nk-legendary-damage'] // +12% more
     }),
     index
   );
@@ -160,15 +162,17 @@ test('evaluateBuild: talents, pact spirits and memories all raise dps', () => {
 
 test("evaluateBuild: another hero's talent is ignored with a warning", () => {
   const index = indexDataset(seedDataset);
-  // Gemma's talent on a Selina build.
-  const report = evaluateBuild(baseBuild({ talentIds: ['gemma-molten-core'] }), index);
+  // Rehan's hero talent on a Selena build.
+  const report = evaluateBuild(baseBuild({ talentIds: ['rehan-furys-onslaught'] }), index);
   assert.equal(report.warnings.length, 1);
   assert.match(report.warnings[0], /another hero/i);
 });
 
 test('evaluateBuild: pact spirits beyond the cap are ignored with a warning', () => {
   const index = indexDataset(seedDataset);
-  const tooMany = ['leviathan', 'emberwing', 'stoneguard', 'voltaic-sprite'];
+  // Only two pact spirits exist in the seed; repeat one to exceed the cap and
+  // exercise the length-based guard (the list is not de-duplicated).
+  const tooMany = ['icemirror', 'icemirror', 'icemirror', 'icemirror'];
   assert.ok(tooMany.length > MAX_PACT_SPIRITS);
   const report = evaluateBuild(baseBuild({ pactSpiritIds: tooMany }), index);
   assert.ok(

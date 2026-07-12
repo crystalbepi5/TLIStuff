@@ -22,10 +22,6 @@ const GEAR_SLOTS: GearSlot[] = [
 
 const index = indexDataset(seedDataset);
 
-function emptyGear(slot: GearSlot): GearPiece {
-  return { slot, baseId: '', affixIds: [] };
-}
-
 function defaultBuild(): Build {
   return {
     id: 'draft',
@@ -36,7 +32,7 @@ function defaultBuild(): Build {
     gear: [],
     talentIds: [],
     pactSpiritIds: [],
-    memoryIds: [],
+    divinityIds: [],
     extraModifiers: []
   };
 }
@@ -55,7 +51,7 @@ function decodeBuild(code: string): Build {
     supportIds: parsed.supportIds ?? [],
     talentIds: parsed.talentIds ?? [],
     pactSpiritIds: parsed.pactSpiritIds ?? [],
-    memoryIds: parsed.memoryIds ?? [],
+    divinityIds: parsed.divinityIds ?? [],
     extraModifiers: parsed.extraModifiers ?? []
   };
 }
@@ -90,7 +86,7 @@ export function BuildPlanner() {
   }
 
   function toggleInList(
-    key: 'talentIds' | 'pactSpiritIds' | 'memoryIds',
+    key: 'talentIds' | 'pactSpiritIds' | 'divinityIds',
     id: string,
     cap?: number
   ) {
@@ -122,9 +118,10 @@ export function BuildPlanner() {
       </header>
 
       <p className="planner-disclaimer">
-        Numbers are an <strong>approximation</strong> — the seed dataset and damage formula are
-        best guesses, not verified against Torchlight Infinite. Replace the seed data with a real
-        scrape (packages/build-scraper) and tune the formula for accuracy.
+        Data is drawn from the SS13 <strong>“Afterlight” patch notes</strong> and mapped onto a
+        simplified model — effects that rely on unmodelled mechanics (Terra Charge, Spell Burst,
+        conditionals) are approximated or dropped, and the damage <strong>formula</strong> itself is
+        still an estimate. Treat DPS as a relative indicator, not in-game truth.
       </p>
 
       <div className="planner-grid">
@@ -278,17 +275,17 @@ export function BuildPlanner() {
             })}
           </div>
 
-          <h3>Memory Revival</h3>
+          <h3>Nether King's Divinity</h3>
           <div className="checkbox-list">
-            {seedDataset.memories.map((m) => (
-              <label key={m.id} className="checkbox">
+            {seedDataset.divinities.map((d) => (
+              <label key={d.id} className="checkbox">
                 <input
                   type="checkbox"
-                  checked={build.memoryIds.includes(m.id)}
-                  onChange={() => toggleInList('memoryIds', m.id)}
+                  checked={build.divinityIds.includes(d.id)}
+                  onChange={() => toggleInList('divinityIds', d.id)}
                 />
-                <span>{m.name}</span>
-                {m.season && <em className="req-tags">{m.season}</em>}
+                <span>{d.name}</span>
+                {d.tier && <em className="req-tags">{d.tier}</em>}
               </label>
             ))}
           </div>

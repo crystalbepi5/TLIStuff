@@ -1,39 +1,17 @@
 [
   {
-    "id": "leviathan",
-    "name": "Leviathan of the Depths",
-    "description": "Water-themed pact spirit. NOTE: seed approximation.",
+    "id": "icemirror",
+    "name": "Icemirror",
+    "description": "SS13 combat Pact Spirit for Terra builds. '+24% Terra Damage' node mapped to increasedDamage; the major node 'Stage in the Mirror' adds stacking Terra damage (moreDamage). Its Terra Skill Area (AoE size) node isn't a damage stat, so it's omitted.",
     "modifiers": [
-      { "stat": "increasedElemental", "op": "increased", "value": 20 },
-      { "stat": "energyShield", "op": "flat", "value": 150 }
+      { "stat": "increasedDamage", "op": "increased", "value": 24 },
+      { "stat": "moreDamage", "op": "more", "value": 0.08 }
     ]
   },
   {
-    "id": "emberwing",
-    "name": "Emberwing",
-    "description": "NOTE: seed approximation.",
-    "modifiers": [
-      { "stat": "increasedFire", "op": "increased", "value": 20 },
-      { "stat": "increasedAttackSpeed", "op": "increased", "value": 6 }
-    ]
-  },
-  {
-    "id": "stoneguard",
-    "name": "Stoneguard",
-    "description": "Defensive pact spirit. NOTE: seed approximation.",
-    "modifiers": [
-      { "stat": "life", "op": "flat", "value": 250 },
-      { "stat": "fireResist", "op": "flat", "value": 15 },
-      { "stat": "coldResist", "op": "flat", "value": 15 }
-    ]
-  },
-  {
-    "id": "voltaic-sprite",
-    "name": "Voltaic Sprite",
-    "description": "NOTE: seed approximation.",
-    "modifiers": [
-      { "stat": "increasedLightning", "op": "increased", "value": 22 },
-      { "stat": "increasedCastSpeed", "op": "increased", "value": 8 }
-    ]
+    "id": "lady-obituary",
+    "name": "Lady Obituary",
+    "description": "SS13 drop-focused Pact Spirit (Afterlight Wraith drop quantity / Elegy Effect). No combat modifiers — included for completeness.",
+    "modifiers": []
   }
 ]

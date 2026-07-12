@@ -12,16 +12,23 @@
     "implicit": [{ "stat": "increasedAttack", "op": "increased", "value": 20 }]
   },
   {
-    "id": "plated-vest",
-    "name": "Plated Vest",
-    "slot": "chest",
-    "implicit": [{ "stat": "armor", "op": "flat", "value": 300 }]
-  },
-  {
     "id": "silk-robe",
     "name": "Silk Robe",
     "slot": "chest",
     "implicit": [{ "stat": "energyShield", "op": "flat", "value": 180 }]
+  },
+  {
+    "id": "uros-bond",
+    "name": "Uros's Bond (Legendary)",
+    "slot": "chest",
+    "implicit": [
+      { "stat": "increasedLife", "op": "increased", "value": 27 },
+      { "stat": "increasedEnergyShield", "op": "increased", "value": 27 },
+      { "stat": "fireResist", "op": "flat", "value": 11 },
+      { "stat": "coldResist", "op": "flat", "value": 11 },
+      { "stat": "lightningResist", "op": "flat", "value": 11 },
+      { "stat": "erosionResist", "op": "flat", "value": 11 }
+    ]
   },
   {
     "id": "leather-gloves",
@@ -30,10 +37,25 @@
     "implicit": []
   },
   {
+    "id": "fire-lords-pyric-stride",
+    "name": "Fire Lord's Pyric Stride (Legendary)",
+    "slot": "boots",
+    "implicit": [{ "stat": "armor", "op": "flat", "value": 1800 }]
+  },
+  {
     "id": "gold-amulet",
     "name": "Gold Amulet",
     "slot": "amulet",
     "implicit": [{ "stat": "increasedElemental", "op": "increased", "value": 12 }]
+  },
+  {
+    "id": "silent-aria",
+    "name": "Silent Aria (Legendary)",
+    "slot": "amulet",
+    "implicit": [
+      { "stat": "increasedCritRate", "op": "increased", "value": 105 },
+      { "stat": "critDamage", "op": "flat", "value": -50 }
+    ]
   },
   {
     "id": "topaz-ring",

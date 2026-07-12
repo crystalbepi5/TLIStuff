@@ -4,11 +4,14 @@
 // support skills, affixes, and gear bases — plus the saved-build shape the
 // planner UI reads and writes.
 //
-// IMPORTANT: the *numbers* in the seed dataset (packages/build-data/src/seed)
-// are hand-entered approximations, not verified against the game. Torchlight
-// Infinite does not publish its data tables or damage formulas. The scraper
-// (packages/build-scraper) is the intended path to a real, complete dataset;
-// the schema below is what it emits and what packages/build-calc consumes.
+// The seed dataset (packages/build-data/src/seed) is curated by hand from the
+// official SS13 "Afterlight" patch notes — names and quoted values are real,
+// but mapped onto this simplified model (see each seed file's note). Effects
+// that depend on mechanics this calculator doesn't model (Terra Charge stacks,
+// Spell Burst, Bond, shotgun falloff, conditionals) are approximated to the
+// nearest modelled stat or dropped. The scraper (packages/build-scraper) is the
+// path to a fuller dataset; the schema below is what it emits and what
+// packages/build-calc consumes.
 
 /** Damage / defence element used throughout the game. */
 export type Element = 'physical' | 'fire' | 'cold' | 'lightning' | 'erosion';
@@ -49,6 +52,9 @@ export type StatKey =
   | 'increasedElemental'
   | 'increasedAttack'
   | 'increasedSpell'
+  // NB: these are increased *Area/Projectile Damage*, applied to skills carrying
+  // the tag — NOT AoE size or projectile count. Don't map "Skill Area" (radius)
+  // or "+N Projectiles" here; those aren't damage and aren't modelled.
   | 'increasedArea'
   | 'increasedProjectile'
   | 'moreDamage'
@@ -89,7 +95,7 @@ export interface Modifier {
 export interface Hero {
   id: string;
   name: string;
-  /** Short hero/trait blurb, e.g. Selina's water theme. */
+  /** Short hero/trait blurb, e.g. Selena's water/Terra theme. */
   description: string;
   /** Passive modifiers the hero grants unconditionally. */
   baseModifiers: Modifier[];
@@ -173,15 +179,17 @@ export interface PactSpirit {
 }
 
 /**
- * An SS13 "Memory Revival" awakening — items that boost affix values and unlock
- * rare affixes. Modelled here as a selectable bundle of modifiers. NOTE: the
- * real system's mechanics aren't public yet; seed entries are placeholders.
+ * A Nether King's Divinity node — SS13's craftable Divinity Slate progression.
+ * Each entry is one inscribed Talent Node modelled as a bundle of modifiers.
+ * The socket/craft mechanics aren't modelled; only the resulting stats are.
  */
-export interface MemoryRevival {
+export interface Divinity {
   id: string;
   name: string;
   description?: string;
   modifiers: Modifier[];
+  /** Node tier, informational: 'small' | 'medium' | 'legendary' | 'ultimate'. */
+  tier?: 'small' | 'medium' | 'legendary' | 'ultimate';
   season?: string;
 }
 
@@ -201,7 +209,7 @@ export interface Dataset {
   gearBases: GearBase[];
   talents: Talent[];
   pactSpirits: PactSpirit[];
-  memories: MemoryRevival[];
+  divinities: Divinity[];
 }
 
 /** A piece of gear the player has assembled: a base plus chosen affixes. */
@@ -224,8 +232,8 @@ export interface Build {
   talentIds: string[];
   /** Bound Pact Spirits (capped by MAX_PACT_SPIRITS in build-calc). */
   pactSpiritIds: string[];
-  /** Selected Memory Revival awakenings. */
-  memoryIds: string[];
+  /** Inscribed Nether King's Divinity nodes. */
+  divinityIds: string[];
   /** Free-form extra modifiers — an escape hatch for anything not modelled. */
   extraModifiers: Modifier[];
 }

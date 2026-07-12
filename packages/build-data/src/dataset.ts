@@ -2,9 +2,9 @@ import type {
   ActiveSkill,
   Affix,
   Dataset,
+  Divinity,
   GearBase,
   Hero,
-  MemoryRevival,
   PactSpirit,
   SupportSkill,
   Talent
@@ -17,18 +17,19 @@ import affixes from './seed/affixes.json' with { type: 'json' };
 import gearBases from './seed/gearBases.json' with { type: 'json' };
 import talents from './seed/talents.json' with { type: 'json' };
 import pactSpirits from './seed/pactSpirits.json' with { type: 'json' };
-import memories from './seed/memories.json' with { type: 'json' };
+import divinities from './seed/divinities.json' with { type: 'json' };
 
 /**
- * The bundled seed dataset. Hand-entered, approximate, and intentionally small
- * — enough to exercise the calculator and UI end-to-end. Replace it with the
- * scraper's output (packages/build-scraper) for real, complete data.
+ * The bundled seed dataset. Curated by hand from the SS13 "Afterlight" patch
+ * notes — real names/values mapped onto a simplified model — and intentionally
+ * small. Replace it with the scraper's output (packages/build-scraper) for a
+ * fuller dataset.
  */
 export const seedDataset: Dataset = {
   meta: {
     source: 'seed',
     generatedAt: '2026-07-11T00:00:00.000Z',
-    note: 'Hand-entered seed data. Numbers are approximations, not verified against Torchlight Infinite.'
+    note: 'Curated from the official SS13 "Afterlight" patch notes; values mapped onto a simplified damage model (see per-file notes).'
   },
   heroes: heroes as Hero[],
   activeSkills: activeSkills as ActiveSkill[],
@@ -37,7 +38,7 @@ export const seedDataset: Dataset = {
   gearBases: gearBases as GearBase[],
   talents: talents as Talent[],
   pactSpirits: pactSpirits as PactSpirit[],
-  memories: memories as MemoryRevival[]
+  divinities: divinities as Divinity[]
 };
 
 /** Indexed view over a dataset for O(1) lookups by id. */
@@ -50,7 +51,7 @@ export interface DatasetIndex {
   gearBase(id: string): GearBase | undefined;
   talent(id: string): Talent | undefined;
   pactSpirit(id: string): PactSpirit | undefined;
-  memory(id: string): MemoryRevival | undefined;
+  divinity(id: string): Divinity | undefined;
 }
 
 export function indexDataset(dataset: Dataset): DatasetIndex {
@@ -61,7 +62,7 @@ export function indexDataset(dataset: Dataset): DatasetIndex {
   const gearBases = new Map(dataset.gearBases.map((g) => [g.id, g]));
   const talents = new Map(dataset.talents.map((t) => [t.id, t]));
   const pactSpirits = new Map(dataset.pactSpirits.map((p) => [p.id, p]));
-  const memories = new Map(dataset.memories.map((m) => [m.id, m]));
+  const divinities = new Map(dataset.divinities.map((d) => [d.id, d]));
 
   return {
     dataset,
@@ -72,7 +73,7 @@ export function indexDataset(dataset: Dataset): DatasetIndex {
     gearBase: (id) => gearBases.get(id),
     talent: (id) => talents.get(id),
     pactSpirit: (id) => pactSpirits.get(id),
-    memory: (id) => memories.get(id)
+    divinity: (id) => divinities.get(id)
   };
 }
 

@@ -111,10 +111,10 @@ export function collectModifiers(
     else raw.push(...spirit.modifiers);
   }
 
-  for (const memoryId of build.memoryIds) {
-    const memory = index.memory(memoryId);
-    if (!memory) warnings.push(`unknown memory: ${memoryId}`);
-    else raw.push(...memory.modifiers);
+  for (const divinityId of build.divinityIds) {
+    const divinity = index.divinity(divinityId);
+    if (!divinity) warnings.push(`unknown divinity node: ${divinityId}`);
+    else raw.push(...divinity.modifiers);
   }
 
   raw.push(...build.extraModifiers);

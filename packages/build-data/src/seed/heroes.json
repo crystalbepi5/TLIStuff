@@ -1,32 +1,21 @@
 [
   {
-    "id": "selina-tide-whisper",
-    "name": "Tide Whisper Selina",
+    "id": "selena-tide-whisper",
+    "name": "Tide Whisper Selena",
     "season": "SS13",
-    "description": "SS13 'Afterlight' water-magic caster. Signature skill 'Dance of the Deep'. NOTE: seed approximation — numbers not verified against the game.",
-    "baseModifiers": [
-      { "stat": "increasedSpell", "op": "increased", "value": 20 },
-      { "stat": "increasedCold", "op": "increased", "value": 15 },
-      { "stat": "critDamage", "op": "flat", "value": 20 }
-    ]
+    "description": "SS13 'Afterlight' reborn hero with an all-new tree-based Hero Trait system. Water/Terra caster; signature skill 'Dance of the Deep'. Base stats are not quantified in the patch notes, so baseModifiers are empty — her power comes from Terra skills, gear, and progression.",
+    "baseModifiers": []
   },
   {
-    "id": "gemma-flaming-hammer",
-    "name": "Gemma, Flaming Hammer",
-    "description": "Fire-attack bruiser archetype. NOTE: seed approximation.",
-    "baseModifiers": [
-      { "stat": "increasedAttack", "op": "increased", "value": 20 },
-      { "stat": "increasedFire", "op": "increased", "value": 15 },
-      { "stat": "life", "op": "flat", "value": 200 }
-    ]
+    "id": "rehan-berserker",
+    "name": "Berserker Rehan",
+    "description": "Rage/Burst attack hero. Base stats not quantified in the notes.",
+    "baseModifiers": []
   },
   {
-    "id": "youga-frostfire",
-    "name": "Youga, Timeless Torment",
-    "description": "Hybrid caster archetype. NOTE: seed approximation.",
-    "baseModifiers": [
-      { "stat": "increasedDamage", "op": "increased", "value": 15 },
-      { "stat": "increasedCastSpeed", "op": "increased", "value": 10 }
-    ]
+    "id": "thea-oracle",
+    "name": "Oracle Thea",
+    "description": "Divine Realm / Blessing hero. Base stats not quantified in the notes.",
+    "baseModifiers": []
   }
 ]

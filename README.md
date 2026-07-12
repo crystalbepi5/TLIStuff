@@ -20,13 +20,13 @@ One originally-considered feature is deferred to a later phase, on purpose:
 
 The **build helper** — originally deferred for lack of a public item/affix/skill dataset — now ships as a working, if approximate, feature:
 
-- **`packages/build-data`** — a typed schema (heroes, active/support skills, affixes, gear bases, saved builds) plus a small hand-entered *seed* dataset. It includes SS13 "Afterlight" stubs (Tide Whisper Selina, Dance of the Deep).
+- **`packages/build-data`** — a typed schema (heroes, active/support skills, affixes, gear bases, talents, pact spirits, Nether King's Divinity nodes, saved builds) plus a *seed* dataset curated by hand from the SS13 "Afterlight" patch notes: the Terra skills (Tidewell, Thornfield, Storm Field, Dance of the Deep), their supports, Icemirror, and real Nether King's Divinity nodes.
 - **`packages/build-calc`** — a pure, fully-tested modifier engine implementing the standard ARPG damage pipeline (base → added flat → sum of *increased%* → product of *more%* → crit → rate) plus life/ES/resist/EHP defence.
-- **`apps/web`** — a **Build Planner** view: pick a hero, main skill, supports, gear, and **progression** (talent-tree nodes, Pact Spirits, and SS13 Memory Revival awakenings), and see DPS / crit / rate / per-element damage and defence recompute live. Reachable at the `#planner` URL hash (a normal opaque page, separate from the transparent overlay). Builds export/import as a base64 share code.
+- **`apps/web`** — a **Build Planner** view: pick a hero, main skill, supports, gear, and **progression** (talent-tree nodes, Pact Spirits, and Nether King's Divinity), and see DPS / crit / rate / per-element damage and defence recompute live. Reachable at the `#planner` URL hash (a normal opaque page, separate from the transparent overlay). Builds export/import as a base64 share code.
 
 ### Honest caveats
 
-- **The numbers are approximations.** Torchlight Infinite publishes neither its data tables nor its damage formulas, so both the seed data and the formula are best guesses — treat DPS as a *relative* indicator, not in-game truth. This is surfaced in the UI and flagged throughout the source, the same way the log parser is.
+- **Real data, simplified model.** The seed names and values are taken from the official SS13 patch notes, but mapped onto a deliberately simple calculator: effects that depend on unmodelled mechanics (Terra Charge stacks, Spell Burst, Bond, shotgun falloff, conditionals) are approximated to the nearest modelled stat or dropped — see each seed file's note. The damage *formula* is still an estimate (TLI doesn't publish it), so treat DPS as a *relative* indicator, not in-game truth. This is surfaced in the UI and flagged throughout the source.
 - **`packages/build-scraper`** is the intended path to real, complete data: it pulls the `__NEXT_DATA__` JSON that community databases (tli-hub.com, tlidb.com) embed and emits the `build-data` `Dataset` shape. Its site-agnostic core (fetch, extraction, assembly, validation) is tested; the site-specific field mapping is explicitly marked as needing verification against the live payload. **It must be run on your own machine** — the hosts it targets are unreachable from the web-based dev sandbox this was built in.
 
 ## Known limitation: the log parser is a best guess

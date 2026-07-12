@@ -1,5 +1,19 @@
 [
   {
+    "id": "of-terra-might",
+    "name": "of Terra Might",
+    "kind": "suffix",
+    "slots": ["weapon"],
+    "modifiers": [{ "stat": "increasedDamage", "op": "increased", "value": 30 }]
+  },
+  {
+    "id": "of-bursting",
+    "name": "of Bursting",
+    "kind": "suffix",
+    "slots": ["ring"],
+    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.07 }]
+  },
+  {
     "id": "of-frost",
     "name": "of Frost",
     "kind": "suffix",
