@@ -1,10 +1,50 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import type { LootFeedSnapshot } from '@torchlight-companion/domain';
+import { seedDataset, indexDataset, type Build } from '@torchlight-companion/build-data';
+import { evaluateBuild } from '@torchlight-companion/build-calc';
 import { fetchLootRecent, subscribeToLootEvents } from './api';
+import { getOverlayGoal, OVERLAY_GOAL_KEY } from './overlayGoal';
+
+const datasetIndex = indexDataset(seedDataset);
+
+function GoalPanel({ goal }: { goal: Build }) {
+  const summary = useMemo(() => {
+    const hero = datasetIndex.hero(goal.heroId);
+    const skill = datasetIndex.activeSkill(goal.activeSkillId);
+    try {
+      const report = evaluateBuild(goal, datasetIndex);
+      return { heroName: hero?.name, skillName: skill?.name, dps: report.damage.dps };
+    } catch {
+      return { heroName: hero?.name, skillName: skill?.name, dps: undefined };
+    }
+  }, [goal]);
+
+  return (
+    <section className="hud-panel goal-panel">
+      <span className="hud-label">Building toward</span>
+      <strong className="goal-name">{goal.name}</strong>
+      <span className="goal-sub">
+        {[summary.heroName, summary.skillName].filter(Boolean).join(' · ')}
+      </span>
+      {summary.dps !== undefined && (
+        <span className="goal-dps">target {Math.round(summary.dps).toLocaleString()} DPS</span>
+      )}
+    </section>
+  );
+}
 
 export function App() {
   const [snapshot, setSnapshot] = useState<LootFeedSnapshot | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [goal, setGoal] = useState<Build | null>(() => getOverlayGoal());
+
+  useEffect(() => {
+    const onStorage = (e: StorageEvent) => {
+      if (e.key === OVERLAY_GOAL_KEY || e.key === null) setGoal(getOverlayGoal());
+    };
+    window.addEventListener('storage', onStorage);
+    return () => window.removeEventListener('storage', onStorage);
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -42,6 +82,8 @@ export function App() {
   return (
     <main className="overlay">
       {error && <p className="offline-banner">Local agent offline — start it with pnpm --filter @torchlight-companion/local-agent dev.</p>}
+
+      {goal && <GoalPanel goal={goal} />}
 
       <section className="hud-panel net-worth-panel">
         <span className="hud-label">Net Worth</span>

@@ -374,3 +374,32 @@ body {
   font-family: 'Cascadia Code', ui-monospace, monospace;
   font-size: 0.78rem;
 }
+
+/* Overlay "building toward" goal panel (set from the planner). */
+.goal-panel {
+  display: grid;
+  gap: 2px;
+  border-left: 3px solid var(--gold);
+}
+
+.goal-name {
+  font-size: 1rem;
+  color: var(--gold);
+}
+
+.goal-sub {
+  font-size: 0.76rem;
+  color: var(--text);
+}
+
+.goal-dps {
+  font-size: 0.72rem;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.share-status {
+  color: var(--gold);
+  font-size: 0.82rem;
+  margin: 6px 0 0;
+}

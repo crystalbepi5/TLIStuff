@@ -2,11 +2,14 @@ import { useMemo, useState } from 'react';
 import {
   seedDataset,
   indexDataset,
+  encodeShareCode,
+  importBuildCode,
   type Build,
   type GearPiece,
   type GearSlot
 } from '@torchlight-companion/build-data';
 import { evaluateBuild, MAX_PACT_SPIRITS } from '@torchlight-companion/build-calc';
+import { setOverlayGoal } from '../overlayGoal';
 
 const GEAR_SLOTS: GearSlot[] = [
   'weapon',
@@ -37,29 +40,11 @@ function defaultBuild(): Build {
   };
 }
 
-function encodeBuild(build: Build): string {
-  return btoa(encodeURIComponent(JSON.stringify(build)));
-}
-
-/** Decode a share code, backfilling any fields older codes may lack. */
-function decodeBuild(code: string): Build {
-  const parsed = JSON.parse(decodeURIComponent(atob(code.trim()))) as Partial<Build>;
-  return {
-    ...defaultBuild(),
-    ...parsed,
-    gear: parsed.gear ?? [],
-    supportIds: parsed.supportIds ?? [],
-    talentIds: parsed.talentIds ?? [],
-    pactSpiritIds: parsed.pactSpiritIds ?? [],
-    divinityIds: parsed.divinityIds ?? [],
-    extraModifiers: parsed.extraModifiers ?? []
-  };
-}
-
 export function BuildPlanner() {
   const [build, setBuild] = useState<Build>(defaultBuild);
   const [shareCode, setShareCode] = useState('');
   const [importError, setImportError] = useState<string | null>(null);
+  const [status, setStatus] = useState<string | null>(null);
 
   const skill = index.activeSkill(build.activeSkillId);
   const supportSlots = skill?.supportSlots ?? 0;
@@ -368,31 +353,51 @@ export function BuildPlanner() {
       </div>
 
       <section className="planner-panel share-panel">
-        <h2>Share</h2>
+        <h2>Share &amp; interop</h2>
         <div className="share-row">
-          <button type="button" onClick={() => setShareCode(encodeBuild(build))}>
+          <button
+            type="button"
+            onClick={() => {
+              setShareCode(encodeShareCode(build));
+              setImportError(null);
+              setStatus('Exported native share code.');
+            }}
+          >
             Export code
           </button>
           <button
             type="button"
             onClick={() => {
-              setImportError(null);
-              try {
-                setBuild(decodeBuild(shareCode));
-              } catch {
-                setImportError('Could not decode that build code.');
+              setStatus(null);
+              const result = importBuildCode(shareCode);
+              if (result.ok) {
+                setBuild(result.build);
+                setImportError(null);
+                setStatus(`Imported (${result.format}).`);
+              } else {
+                setImportError(result.error);
               }
             }}
           >
-            Import code
+            Import
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setOverlayGoal(encodeShareCode(build));
+              setStatus('Set as overlay goal — it shows in the in-game overlay.');
+            }}
+          >
+            Set as overlay goal
           </button>
         </div>
         <textarea
           className="share-code"
           value={shareCode}
-          placeholder="Export to generate a share code, or paste one here and Import."
+          placeholder="Export to generate a native share code, or paste a native code / TLI Compendium / Torchlight of Building URL and Import."
           onChange={(e) => setShareCode(e.target.value)}
         />
+        {status && <p className="share-status">{status}</p>}
         {importError && <p className="results-error">{importError}</p>}
       </section>
     </div>

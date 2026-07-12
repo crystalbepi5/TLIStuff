@@ -22,7 +22,14 @@ The **build helper** — originally deferred for lack of a public item/affix/ski
 
 - **`packages/build-data`** — a typed schema (heroes, active/support skills, affixes, gear bases, talents, pact spirits, Nether King's Divinity nodes, saved builds) plus a *seed* dataset curated by hand from the SS13 "Afterlight" patch notes: the Terra skills (Tidewell, Thornfield, Storm Field, Dance of the Deep), their supports, Icemirror, and real Nether King's Divinity nodes.
 - **`packages/build-calc`** — a pure, fully-tested modifier engine implementing the standard ARPG damage pipeline (base → added flat → sum of *increased%* → product of *more%* → crit → rate) plus life/ES/resist/EHP defence.
-- **`apps/web`** — a **Build Planner** view: pick a hero, main skill, supports, gear, and **progression** (talent-tree nodes, Pact Spirits, and Nether King's Divinity), and see DPS / crit / rate / per-element damage and defence recompute live. Reachable at the `#planner` URL hash (a normal opaque page, separate from the transparent overlay). Builds export/import as a base64 share code.
+- **`apps/web`** — a **Build Planner** view: pick a hero, main skill, supports, gear, and **progression** (talent-tree nodes, Pact Spirits, and Nether King's Divinity), and see DPS / crit / rate / per-element damage and defence recompute live. Reachable at the `#planner` URL hash (a normal opaque page, separate from the transparent overlay).
+
+### Interop, not competition
+
+Mature Path-of-Building-style planners already exist ([TLI Compendium](https://tlicompendium.com/en/build-planner), [Torchlight of Building](https://tlipob.com/)) and will always track season data and formulas more closely than a hand-maintained clone can. So this planner leans on what those tools *don't* have — the live in-game overlay:
+
+- **Build interop** (`packages/build-data/src/interop.ts`) — a tested native share-code format plus a pluggable adapter framework (`importBuildCode`) so builds from external planners can be imported. The Compendium / PoB adapters are scaffolded but **not yet wired**: their share formats aren't public and the sites are unreachable from the build sandbox, so importing one reports a clear "paste a sample to enable this" message. Filling those in needs one real sample code/URL from each.
+- **Overlay goal** — the planner's "Set as overlay goal" marks a build as your target; the transparent overlay then shows a compact *"Building toward"* panel (hero, skill, target DPS) while you play. v1 links the two via `localStorage`, which only bridges planner ↔ overlay when they share an origin (both in the browser, or both inside Electron); persisting the goal through the local-agent is the next step for a true cross-process link.
 
 ### Honest caveats
 
