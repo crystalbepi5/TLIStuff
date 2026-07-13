@@ -308,12 +308,26 @@ const RULES: Rule[] = [
     }
   },
   {
-    re: /([+-]?\d+(?:\.\d+)?)%\s+(?:increased\s+)?maximum\s+Life/gi,
+    // "+15% maximum Life", "+10% Max Life and maximum Energy Shield"
+    re: /([+-]?\d+(?:\.\d+)?)%\s+(?:increased\s+)?(?:maximum|Max)\s+Life/gi,
     make: (m) => (m[1] ? { stat: 'increasedLife', op: 'increased', value: Number(m[1]) } : null)
   },
   {
-    re: /\+(\d+(?:\.\d+)?)\s+maximum\s+Life\b/gi,
+    // "+330 Max Life", "+168 maximum Life"
+    re: /\+(\d+(?:\.\d+)?)\s+(?:maximum|Max)\s+Life\b/gi,
     make: (m) => (m[1] ? { stat: 'life', op: 'flat', value: Number(m[1]) } : null)
+  },
+  {
+    // generic "+90% damage" (lowercase, unqualified) -> increased. Avoids
+    // "Minion Damage"/"Weapon Attack Damage" (capitalised) and "additional
+    // damage" (matched above, which consumes the word "additional").
+    re: /([+-]?\d+(?:\.\d+)?)%\s+damage\b/g,
+    make: (m) => (m[1] ? { stat: 'increasedDamage', op: 'increased', value: Number(m[1]) } : null)
+  },
+  {
+    // "+720 gear Armor", "+300 Armor"
+    re: /\+(\d+(?:\.\d+)?)\s+(?:gear\s+)?Armor\b/gi,
+    make: (m) => (m[1] ? { stat: 'armor', op: 'flat', value: Number(m[1]) } : null)
   }
 ];
 

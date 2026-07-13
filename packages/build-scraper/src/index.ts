@@ -14,3 +14,16 @@ export {
   type TlidbConfig,
   type ParsedSkill
 } from './scrape.js';
+
+export {
+  BUNDLE_BASE,
+  DATA_VERSION,
+  fetchBundle,
+  leaves,
+  mapGear,
+  mapLegendaries,
+  mapHeroTraits,
+  scrapeGear,
+  scrapeLegendaries,
+  scrapeHeroTraits
+} from './tlicompendium.js';
