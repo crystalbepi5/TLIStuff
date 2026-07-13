@@ -9,6 +9,10 @@ export interface LootEvent {
   mapRunId?: string;
   estimatedValue?: number;
   pickedUpAt: ISODateTime;
+  /** Resolved from `configBaseId` via the item catalog (build-data). Not
+   * persisted — it's derivable — so it's attached when events are served. */
+  itemName?: string;
+  itemSlot?: string;
 }
 
 export type MapRunStatus = 'active' | 'completed';

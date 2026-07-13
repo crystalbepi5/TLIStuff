@@ -5,13 +5,12 @@
 // engine convention, not something specific to this game — and diffInventorySnapshots is
 // pure domain logic that doesn't depend on the exact log format at all.
 //
-// UNVERIFIED — BEST GUESS PENDING A REAL LOG SAMPLE: parseInventorySlotLine and
-// parseExchangeSearchPriceLine. No real UE_game.log sample was available while writing this
-// (see project memory/plan) — these two functions guess at Torchlight Infinite's specific
-// message content shape based on TITrack's publicly described approach (PageId/SlotId/
-// ConfigBaseId inventory deltas, XchgSearchPrice marketplace events) and MUST be corrected
-// against a real log sample before this package can be trusted in production. Everything
-// else in this file does not depend on these two functions being correct.
+// VERIFIED against a real UE_game.log (SS12.5): parseInventorySlotLine matches the real
+// `BagMgr@:Modfy BagItem PageId = … SlotId = … ConfigBaseId = … Num = …` format, and
+// ConfigBaseId equals tlidb/tlicompendium's item id (so drops resolve to real items via
+// build-data). parseExchangeSearchPriceBlock matches the multi-line XchgSearchPrice socket
+// block; its price-amount fields still need a market query that returns listings to finalise
+// (the verified sample returned none).
 
 export interface UELogLine {
   timestamp: string;
@@ -45,37 +44,61 @@ export interface InventorySlotState {
 
 function extractKeyValuePairs(message: string): Record<string, string> {
   const pairs: Record<string, string> = {};
-  for (const match of message.matchAll(/(\w+)=([^\s,]+)/g)) {
+  // Accepts both `Key=Value` and `Key = Value` — the real game logs the latter,
+  // e.g. `BagMgr@:Modfy BagItem PageId = 100 SlotId = 52 ConfigBaseId = 3802 Num = 1`.
+  for (const match of message.matchAll(/(\w+)\s*=\s*([^\s,]+)/g)) {
     const [, key, value] = match;
     if (key && value !== undefined) pairs[key] = value;
   }
   return pairs;
 }
 
-/** UNVERIFIED — see file header. Best guess: a key=value line naming PageId/SlotId/ConfigBaseId/Count. */
+/**
+ * VERIFIED against a real UE_game.log: the game logs inventory changes as
+ * `[Game] BagMgr@:Modfy BagItem PageId = <n> SlotId = <n> ConfigBaseId = <n> Num = <n>`.
+ * `Num` is the quantity; `Count`/`Quantity` are also accepted for compatibility.
+ */
 export function parseInventorySlotLine(message: string): InventorySlotState | undefined {
   const kv = extractKeyValuePairs(message);
   const pageId = Number(kv.PageId);
   const slotId = Number(kv.SlotId);
   const configBaseId = Number(kv.ConfigBaseId);
-  const quantity = Number(kv.Count ?? kv.Quantity);
+  const quantity = Number(kv.Num ?? kv.Count ?? kv.Quantity);
   if ([pageId, slotId, configBaseId, quantity].some((n) => Number.isNaN(n))) return undefined;
   return { pageId, slotId, configBaseId, quantity };
 }
 
 export interface ExchangeSearchPrice {
-  configBaseId: number;
-  price: number;
+  /** The marketplace item the price was queried for (an item-listing id, NOT a
+   * ConfigBaseId). */
+  itemGoldId: number;
+  /** Currency type ids the response quoted in. */
+  currencies: number[];
+  /** Price amounts, if the search returned listings. Empty when the market had
+   * no matches — as in the sample this was verified against. */
+  prices: number[];
 }
 
-/** UNVERIFIED — see file header. Best guess: an XchgSearchPrice line naming ConfigBaseId/Price. */
-export function parseExchangeSearchPriceLine(message: string): ExchangeSearchPrice | undefined {
-  if (!message.includes('XchgSearchPrice')) return undefined;
-  const kv = extractKeyValuePairs(message);
-  const configBaseId = Number(kv.ConfigBaseId);
-  const price = Number(kv.Price);
-  if (Number.isNaN(configBaseId) || Number.isNaN(price)) return undefined;
-  return { configBaseId, price };
+/**
+ * VERIFIED against a real UE_game.log. A price check is a multi-line socket
+ * message block, so this takes the whole accumulated `RecvMessage …
+ * XchgSearchPrice … RecvMessage End` block (joined), e.g.:
+ *
+ *   +itemGoldId [1419]
+ *   +prices+1+currency [100300]
+ *   |      +2+currency [100200]
+ *
+ * NOTE: the verified sample returned no listing amounts (empty market result),
+ * so `prices` came back empty. The amount fields still need a price check that
+ * returns listings to pin down — this parser extracts them opportunistically.
+ */
+export function parseExchangeSearchPriceBlock(block: string): ExchangeSearchPrice | undefined {
+  if (!block.includes('XchgSearchPrice')) return undefined;
+  const item = block.match(/itemGoldId\s*\[(\d+)\]/);
+  if (!item?.[1]) return undefined;
+  const currencies = [...block.matchAll(/currency\s*\[(\d+)\]/g)].map((m) => Number(m[1]));
+  const prices = [...block.matchAll(/(?:price|amount|low|high)\s*\[(\d+)\]/gi)].map((m) => Number(m[1]));
+  return { itemGoldId: Number(item[1]), currencies, prices };
 }
 
 export interface InventoryDelta {

@@ -76,6 +76,21 @@ export function indexDataset(dataset: Dataset): DatasetIndex {
   };
 }
 
+let gearByTlidbId: Map<string, GearBase> | undefined;
+
+/**
+ * Resolve a gear base by its in-game ConfigBaseId. The game log records drops as
+ * `ConfigBaseId = <n>`, which equals tlidb/tlicompendium's item id — so this
+ * turns a raw drop id into a real item (name, slot, implicits) from the seed.
+ */
+export function gearByConfigBaseId(configBaseId: number): GearBase | undefined {
+  if (!gearByTlidbId) {
+    gearByTlidbId = new Map();
+    for (const g of seedDataset.gearBases) if (g.tlidbId) gearByTlidbId.set(g.tlidbId, g);
+  }
+  return gearByTlidbId.get(String(configBaseId));
+}
+
 /**
  * Minimal structural validation for a dataset loaded from JSON (e.g. scraper
  * output). Returns a list of human-readable problems; empty means it's usable.

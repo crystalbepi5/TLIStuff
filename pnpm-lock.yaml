@@ -29,6 +29,9 @@ importers:
 
   apps/local-agent:
     dependencies:
+      '@torchlight-companion/build-data':
+        specifier: workspace:*
+        version: link:../../packages/build-data
       '@torchlight-companion/db':
         specifier: workspace:*
         version: link:../../packages/db

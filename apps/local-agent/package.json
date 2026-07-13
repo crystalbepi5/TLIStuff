@@ -14,6 +14,7 @@
     "lint": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
+    "@torchlight-companion/build-data": "workspace:*",
     "@torchlight-companion/db": "workspace:*",
     "@torchlight-companion/domain": "workspace:*",
     "@torchlight-companion/log-parser": "workspace:*"
