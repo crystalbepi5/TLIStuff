@@ -1,0 +1,38 @@
+[
+  {
+    "id": "elemental-boost",
+    "name": "Elemental Boost",
+    "requiresTags": [],
+    "modifiers": [{ "stat": "increasedElemental", "op": "increased", "value": 40 }]
+  },
+  {
+    "id": "concentrated-effect",
+    "name": "Concentrated Effect",
+    "requiresTags": ["area"],
+    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.35 }]
+  },
+  {
+    "id": "swift-strikes",
+    "name": "Swift Strikes",
+    "requiresTags": ["attack"],
+    "modifiers": [{ "stat": "increasedAttackSpeed", "op": "increased", "value": 25 }]
+  },
+  {
+    "id": "arcane-surge",
+    "name": "Arcane Surge",
+    "requiresTags": ["spell"],
+    "modifiers": [
+      { "stat": "increasedCastSpeed", "op": "increased", "value": 20 },
+      { "stat": "moreDamage", "op": "more", "value": 0.15 }
+    ]
+  },
+  {
+    "id": "deadly-aim",
+    "name": "Deadly Aim",
+    "requiresTags": [],
+    "modifiers": [
+      { "stat": "critRate", "op": "flat", "value": 3 },
+      { "stat": "critDamage", "op": "flat", "value": 30 }
+    ]
+  }
+]

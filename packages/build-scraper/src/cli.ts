@@ -1,24 +1,23 @@
-// CLI: assemble the full build-data dataset from all sources and write seed JSON.
+// CLI: assemble the build-data dataset from tlicompendium bundles and write JSON.
 //
-//   node dist/cli.js [--out DIR] [--limit N] [--delay MS]
+//   node dist/cli.js [--out DIR] [--limit N] [--delay MS] [--version SSxx]
 //   pnpm --filter @torchlight-companion/build-scraper scrape -- --out ../build-data/src/seed
 //
-// Sources:
-//   - skills (active + support)         -> tlidb.com   (scrape.ts)
-//   - gear + legendaries -> gearBases   -> tlicompendium.com (tlicompendium.ts)
-//   - hero traits        -> talents     -> tlicompendium.com
-//   - heroes / affixes / pact spirits / divinity   -> kept from the hand-curated
-//     seed (no clean source yet)
+// Sources (all tlicompendium.com):
+//   - skills (active + support), gear + legendaries -> gearBases, affixes,
+//     hero traits -> talents
+//   - heroes / pact spirits / memories -> kept from the hand-curated seed
 //
-// Writes one JSON file per scraped category to --out (default ./scraped), so you
-// can review before promoting into packages/build-data/src/seed. It does NOT
-// touch the hand-curated categories.
+// By default it resolves the newest season from the manifest, so it picks up a
+// new season (e.g. SS13) automatically; pass --version to pin one. Writes one
+// JSON file per scraped category to --out (default ./scraped).
 
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { seedDataset, validateDataset, type Dataset } from '@torchlight-companion/build-data';
-import type { TlidbConfig } from './scrape.js';
+import { DEFAULT_CONFIG, type ScrapeConfig } from './scrape.js';
 import {
+  resolveLatestVersion,
   scrapeSkillsFromBundles,
   scrapeGear,
   scrapeAffixes,
@@ -33,10 +32,14 @@ function arg(name: string, fallback: string): string {
 
 async function main(): Promise<void> {
   const outDir = arg('out', 'scraped');
-  const cfg: Partial<TlidbConfig> = {
+  const cfg: Partial<ScrapeConfig> = {
     limit: Number(arg('limit', '0')),
     delayMs: Number(arg('delay', '400'))
   };
+
+  const pinned = arg('version', '');
+  cfg.version = pinned || (await resolveLatestVersion({ ...DEFAULT_CONFIG, ...cfg }));
+  console.error(`[scrape] season: ${cfg.version}${pinned ? ' (pinned)' : ' (latest)'}`);
 
   console.error('[scrape] tlicompendium: skills (master+en)…');
   const { active: skills, support: supports } = await scrapeSkillsFromBundles(cfg);

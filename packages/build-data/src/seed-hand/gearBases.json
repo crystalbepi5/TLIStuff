@@ -1,0 +1,44 @@
+[
+  {
+    "id": "tidecaller-staff",
+    "name": "Tidecaller Staff",
+    "slot": "weapon",
+    "implicit": [{ "stat": "increasedSpell", "op": "increased", "value": 25 }]
+  },
+  {
+    "id": "warhammer",
+    "name": "Ironforged Warhammer",
+    "slot": "weapon",
+    "implicit": [{ "stat": "increasedAttack", "op": "increased", "value": 20 }]
+  },
+  {
+    "id": "plated-vest",
+    "name": "Plated Vest",
+    "slot": "chest",
+    "implicit": [{ "stat": "armor", "op": "flat", "value": 300 }]
+  },
+  {
+    "id": "silk-robe",
+    "name": "Silk Robe",
+    "slot": "chest",
+    "implicit": [{ "stat": "energyShield", "op": "flat", "value": 180 }]
+  },
+  {
+    "id": "leather-gloves",
+    "name": "Leather Gloves",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "gold-amulet",
+    "name": "Gold Amulet",
+    "slot": "amulet",
+    "implicit": [{ "stat": "increasedElemental", "op": "increased", "value": 12 }]
+  },
+  {
+    "id": "topaz-ring",
+    "name": "Topaz Ring",
+    "slot": "ring",
+    "implicit": [{ "stat": "lightningResist", "op": "flat", "value": 20 }]
+  }
+]
