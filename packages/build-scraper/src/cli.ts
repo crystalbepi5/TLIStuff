@@ -1,16 +1,24 @@
-// CLI: scrape tlidb and write dataset seed files.
+// CLI: assemble the full build-data dataset from all sources and write seed JSON.
 //
 //   node dist/cli.js [--out DIR] [--limit N] [--delay MS]
+//   pnpm --filter @torchlight-companion/build-scraper scrape -- --out ../build-data/src/seed
 //
-// Currently scrapes the two clean, high-value types — active skills and support
-// skills — and writes them as build-data seed JSON. It does NOT overwrite the
-// hand-curated seed; it writes to `--out` (default ./scraped) so you can review
-// and promote the files deliberately. See TODOs in scrape.ts for the remaining
-// types (talents, pact spirits, legendaries, affixes).
+// Sources:
+//   - skills (active + support)         -> tlidb.com   (scrape.ts)
+//   - gear + legendaries -> gearBases   -> tlicompendium.com (tlicompendium.ts)
+//   - hero traits        -> talents     -> tlicompendium.com
+//   - heroes / affixes / pact spirits / divinity   -> kept from the hand-curated
+//     seed (no clean source yet)
+//
+// Writes one JSON file per scraped category to --out (default ./scraped), so you
+// can review before promoting into packages/build-data/src/seed. It does NOT
+// touch the hand-curated categories.
 
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { seedDataset, validateDataset, type Dataset } from '@torchlight-companion/build-data';
 import { scrapeActiveSkills, scrapeSupports, type TlidbConfig } from './scrape.js';
+import { scrapeGear, scrapeLegendaries, scrapeHeroTraits } from './tlicompendium.js';
 
 function arg(name: string, fallback: string): string {
   const i = process.argv.indexOf(`--${name}`);
@@ -24,23 +32,59 @@ async function main(): Promise<void> {
     delayMs: Number(arg('delay', '400'))
   };
 
-  console.error(`[scrape] active skills…`);
-  const { skills, skipped: s1 } = await scrapeActiveSkills(cfg);
-  console.error(`[scrape] support skills…`);
-  const { supports, skipped: s2 } = await scrapeSupports(cfg);
+  console.error('[scrape] tlidb: active skills…');
+  const { skills } = await scrapeActiveSkills(cfg);
+  console.error('[scrape] tlidb: support skills…');
+  const { supports } = await scrapeSupports(cfg);
+  console.error('[scrape] tlicompendium: gear…');
+  const gear = await scrapeGear(cfg);
+  console.error('[scrape] tlicompendium: legendaries…');
+  const legendaries = await scrapeLegendaries(cfg);
+  console.error('[scrape] tlicompendium: hero traits…');
+  const traits = await scrapeHeroTraits(cfg);
+
+  const gearBases = [...gear, ...legendaries];
+  const talents = traits.length > 0 ? traits : seedDataset.talents;
+
+  // A full dataset for validation (hand-curated categories fill the gaps).
+  const dataset: Dataset = {
+    meta: {
+      source: 'scrape',
+      generatedAt: new Date().toISOString(),
+      note: 'tlidb skills + tlicompendium gear/legendaries/talents; heroes/affixes/pactspirits/divinity from hand-curated seed'
+    },
+    heroes: seedDataset.heroes,
+    activeSkills: skills,
+    supportSkills: supports,
+    affixes: seedDataset.affixes,
+    gearBases,
+    talents,
+    pactSpirits: seedDataset.pactSpirits,
+    divinities: seedDataset.divinities
+  };
 
   mkdirSync(outDir, { recursive: true });
-  writeFileSync(join(outDir, 'activeSkills.json'), JSON.stringify(skills, null, 2) + '\n');
-  writeFileSync(join(outDir, 'supportSkills.json'), JSON.stringify(supports, null, 2) + '\n');
+  const write = (file: string, data: unknown) =>
+    writeFileSync(join(outDir, file), JSON.stringify(data, null, 2) + '\n');
+  write('activeSkills.json', skills);
+  write('supportSkills.json', supports);
+  write('gearBases.json', gearBases);
+  write('talents.json', talents);
 
-  const mappedSupports = supports.filter((s) => s.modifiers.length > 0).length;
+  const withMods = (arr: { modifiers?: unknown[]; implicit?: unknown[] }[]) =>
+    arr.filter((x) => (x.modifiers ?? x.implicit ?? []).length > 0).length;
+
+  console.error('\n[done] wrote to ' + outDir + '/');
+  console.error(`  activeSkills : ${skills.length}`);
+  console.error(`  supportSkills: ${supports.length} (${withMods(supports)} with modifiers)`);
+  console.error(`  gearBases    : ${gearBases.length} (${withMods(gearBases)} with modifiers)`);
+  console.error(`  talents      : ${talents.length} (${withMods(talents)} with modifiers)`);
+
+  const problems = validateDataset(dataset);
+  const damageless = problems.filter((p) => /no base damage/.test(p)).length;
   console.error(
-    `\n[done] ${skills.length} active skills, ${supports.length} supports ` +
-      `(${mappedSupports} with mapped modifiers) -> ${outDir}/`
+    `[validate] ${problems.length} notes (${damageless} are no-damage utility skills — expected)`
   );
-  if (s1.length || s2.length) {
-    console.error(`[skipped] ${s1.length} skills, ${s2.length} supports (non-card or fetch errors)`);
-  }
 }
 
 main().catch((err) => {
