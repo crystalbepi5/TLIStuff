@@ -1,219 +1,37 @@
-// Ingestion pipeline: tlidb.com (Torchlight: Infinite Wiki) -> build-data Dataset.
+// Shared scrape config + the text -> Modifier[] engine used by the tlicompendium
+// mappers (tlicompendium.ts). The rules recognise the common, cleanly-quoted
+// combat stats found in effect text / affix templates; anything mechanic-
+// specific (Terra Charge, Spell Burst, stacks, conversions, "Skill Area") is
+// intentionally skipped — a documented approximation, since the calculator is a
+// simplified model.
 //
-// tlidb is a server-rendered ASP.NET/Bootstrap site. Every entity lives at
-// `/en/<Slug>` as an HTML card; category pages (`/en/Active_Skill`, …) list the
-// slugs; `/i18n/autocomplete_en.json` is the master index of every entity keyed
-// by type. This module: enumerates slugs from a category page -> fetches each
-// entity page (polite + on-disk cache) -> parses the card -> maps to build-data.
-//
-// NOTE: tlidb currently carries up to the live season (SS12 at time of writing);
-// SS13 "Afterlight" content appears here only after it goes live in-game.
+// (tlicompendium.com is the sole data source; the earlier tlidb.com HTML scrape
+// was removed once the structured bundles covered every category.)
 
-import { parse, HTMLElement } from 'node-html-parser';
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { join } from 'node:path';
-import type {
-  ActiveSkill,
-  DamageTag,
-  Dataset,
-  Element,
-  Modifier,
-  PactSpirit,
-  StatKey,
-  SupportSkill,
-  Talent
-} from '@torchlight-companion/build-data';
+import type { Modifier, StatKey } from '@torchlight-companion/build-data';
 
-export const BASE_URL = 'https://tlidb.com';
-
-export interface TlidbConfig {
-  /** Milliseconds between live requests (politeness). Default 400. */
+export interface ScrapeConfig {
+  /** Milliseconds between live requests (politeness). */
   delayMs: number;
-  /** Directory for the on-disk HTML cache. Default '.tlidb-cache'. */
+  /** Directory for the on-disk bundle cache. */
   cacheDir: string;
-  /** Cap the number of entities fetched (for testing). 0 = no cap. */
+  /** Cap the number of entities processed (for testing). 0 = no cap. */
   limit: number;
+  /** Season version to pull, e.g. "SS12.5". Use resolveLatestVersion() to fill
+   * this with the newest season the site publishes. */
+  version: string;
   userAgent: string;
 }
 
-export const DEFAULT_CONFIG: TlidbConfig = {
+export const DEFAULT_CONFIG: ScrapeConfig = {
   delayMs: 400,
-  cacheDir: '.tlidb-cache',
+  cacheDir: '.bundle-cache',
   limit: 0,
+  version: 'SS12.5',
   userAgent: 'torchlight-companion-scraper/0.1 (+github build planner)'
 };
 
-// --------------------------- fetch (cache + rate-limit) -------------------------
-
-let lastFetchAt = 0;
-
-/** Fetch `BASE_URL + path`, caching the body on disk and rate-limiting live hits. */
-export async function fetchPath(path: string, cfg: TlidbConfig): Promise<string> {
-  const cacheFile = join(cfg.cacheDir, encodeURIComponent(path) + '.cache');
-  if (existsSync(cacheFile)) return readFileSync(cacheFile, 'utf8');
-
-  const wait = cfg.delayMs - (Date.now() - lastFetchAt);
-  if (wait > 0) await new Promise((r) => setTimeout(r, wait));
-  lastFetchAt = Date.now();
-
-  const res = await fetch(BASE_URL + path, { headers: { 'user-agent': cfg.userAgent } });
-  if (!res.ok) throw new Error(`GET ${path} -> HTTP ${res.status} ${res.statusText}`);
-  const body = await res.text();
-  mkdirSync(cfg.cacheDir, { recursive: true });
-  writeFileSync(cacheFile, body);
-  return body;
-}
-
-// ------------------------------- enumeration ---------------------------------
-
-/**
- * Entity slugs linked from a category page. Category pages link each entity as
- * a bare relative slug (`href="Aimed_Shot"`); `allowed` (the autocomplete index)
- * filters out season/nav links, keeping only real entities.
- */
-export function extractSlugs(categoryHtml: string, allowed: Set<string>): string[] {
-  const root = parse(categoryHtml);
-  const slugs = new Set<string>();
-  for (const a of root.querySelectorAll('a')) {
-    const href = a.getAttribute('href');
-    if (!href || /[:/#?]/.test(href)) continue; // skip absolute/nav/anchor links
-    if (allowed.has(href)) slugs.add(href);
-  }
-  return [...slugs];
-}
-
-/** Values from `/i18n/autocomplete_en.json` whose `desc` is in `descTypes`. */
-export async function indexSlugs(descTypes: string[], cfg: TlidbConfig): Promise<Set<string>> {
-  const raw = await fetchPath('/i18n/autocomplete_en.json', cfg);
-  const entries = JSON.parse(raw) as { value: string; desc: string }[];
-  const want = new Set(descTypes);
-  return new Set(entries.filter((e) => want.has(e.desc)).map((e) => e.value));
-}
-
-// ------------------------------- parsing -------------------------------------
-
-const ELEMENT_TAGS: Record<string, Element> = {
-  Physical: 'physical',
-  Fire: 'fire',
-  Cold: 'cold',
-  Lightning: 'lightning',
-  Erosion: 'erosion'
-};
-
-const DAMAGE_TAGS: Record<string, DamageTag> = {
-  Attack: 'attack',
-  Spell: 'spell',
-  Melee: 'melee',
-  Area: 'area',
-  Projectile: 'projectile',
-  Channeled: 'channelled',
-  Channelled: 'channelled'
-};
-
-export interface ParsedSkill {
-  slug: string;
-  name: string;
-  version: string | undefined;
-  elements: Element[];
-  rawTags: string[];
-  tags: DamageTag[];
-  stats: Record<string, string>;
-  /** Spell base-damage range (min,max) if the card shows one. */
-  damageRange: [number, number] | undefined;
-  /** "% weapon damage" effectiveness for attack skills. */
-  effectiveness: number | undefined;
-  castSeconds: number | undefined;
-}
-
-function toNumber(s: string): number {
-  return Number(s.replace(/,/g, ''));
-}
-
-/** The primary entity card: the first `.card.ui_item` in document order (its
- * current-season version), regardless of tab layout. */
-export function firstCard(html: string): HTMLElement | null {
-  return parse(html).querySelector('.card.ui_item');
-}
-
-/** Parse a tlidb skill entity page. Returns null if no skill card is present. */
-export function parseSkill(slug: string, html: string): ParsedSkill | null {
-  const card = firstCard(html);
-  if (!card) return null;
-
-  const name = card.querySelector('.card-title')?.text.trim() || slug.replace(/_/g, ' ');
-  const version = card.querySelector('.item_ver')?.text.trim() || undefined;
-
-  const rawTags = card.querySelectorAll('.tag.tlborder').map((t) => t.text.trim());
-  const elements = rawTags.map((t) => ELEMENT_TAGS[t]).filter((e): e is Element => Boolean(e));
-  const tags = rawTags.map((t) => DAMAGE_TAGS[t]).filter((t): t is DamageTag => Boolean(t));
-
-  const stats: Record<string, string> = {};
-  for (const row of card.querySelectorAll('.d-flex.justify-content-center')) {
-    const valNode = row.querySelector('.ps-2');
-    const elems = row.childNodes.filter((n): n is HTMLElement => n instanceof HTMLElement);
-    const labelNode = elems.find((n) => !n.classList.contains('ps-2'));
-    if (valNode && labelNode) {
-      const label = labelNode.text.trim().replace(/:$/, '');
-      if (label) stats[label] = valNode.text.trim();
-    }
-  }
-
-  const castRaw = stats['Cast Speed'];
-  const castSeconds = castRaw ? Number.parseFloat(castRaw) || undefined : undefined;
-  const effRaw = stats['Effectiveness of added damage'];
-  const effMatch = effRaw ? effRaw.match(/([\d.]+)/) : null;
-  const effectiveness = effMatch?.[1] ? Number.parseFloat(effMatch[1]) : undefined;
-
-  let damageRange: [number, number] | undefined;
-  for (const mod of card.querySelectorAll('.explicitMod .text-mod')) {
-    const m = mod.text.trim().match(/^([\d,]+)\s*-\s*([\d,]+)$/);
-    if (m?.[1] && m[2]) {
-      damageRange = [toNumber(m[1]), toNumber(m[2])];
-      break;
-    }
-  }
-
-  return { slug, name, version, elements, rawTags, tags, stats, damageRange, effectiveness, castSeconds };
-}
-
-// ------------------------------- mapping -------------------------------------
-
-function slugToId(slug: string): string {
-  return slug.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-}
-
-/**
- * Map a parsed skill to the build-data `ActiveSkill` shape. Base damage is a
- * best-effort single number: spells use the mid of their damage range; attacks
- * use their "% weapon damage" effectiveness as a relative proxy (documented
- * approximation — the calculator's model is simplified).
- */
-export function mapActiveSkill(p: ParsedSkill): ActiveSkill {
-  const element: Element = p.elements[0] ?? 'physical';
-  let base = 0;
-  if (p.damageRange) base = Math.round((p.damageRange[0] + p.damageRange[1]) / 2);
-  else if (p.effectiveness) base = Math.round(p.effectiveness);
-
-  const baseDamage: Partial<Record<Element, number>> = {};
-  if (base > 0) baseDamage[element] = base;
-
-  const baseRate = p.castSeconds && p.castSeconds > 0 ? Number((1 / p.castSeconds).toFixed(3)) : 1;
-
-  return {
-    id: slugToId(p.slug),
-    name: p.name,
-    tags: p.tags,
-    baseDamage,
-    baseRate,
-    baseCritRate: 5,
-    supportSlots: 5,
-    ...(p.version ? { season: p.version } : {})
-  };
-}
-
-// ------------------------------ orchestration --------------------------------
-
-// ---------------------- text -> Modifier[] (supports/gear) --------------------
+// -------------------------- text -> Modifier[] --------------------------------
 
 const ELEMENT_WORDS = 'Physical|Fire|Cold|Lightning|Erosion';
 const RESIST_STAT: Record<string, StatKey> = {
@@ -229,6 +47,13 @@ const INCREASED_ELEMENT: Record<string, StatKey> = {
   Lightning: 'increasedLightning',
   Erosion: 'increasedErosion'
 };
+const ADDED_ELEMENT: Record<string, StatKey> = {
+  Physical: 'addedPhysical',
+  Fire: 'addedFire',
+  Cold: 'addedCold',
+  Lightning: 'addedLightning',
+  Erosion: 'addedErosion'
+};
 
 function round(n: number, decimals: number): number {
   const f = 10 ** decimals;
@@ -242,13 +67,9 @@ function midpoint(a: string, b?: string): number {
   return round((x + Number(b)) / 2, 3);
 }
 
-const ADDED_ELEMENT: Record<string, StatKey> = {
-  Physical: 'addedPhysical',
-  Fire: 'addedFire',
-  Cold: 'addedCold',
-  Lightning: 'addedLightning',
-  Erosion: 'addedErosion'
-};
+function capitalize(s: string): string {
+  return s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
+}
 
 interface Rule {
   re: RegExp;
@@ -256,8 +77,7 @@ interface Rule {
 }
 
 // Ordered rules. Each is scanned globally over the text; every match emits a
-// modifier. Effects relying on unmodelled mechanics (Terra Charge, Spell Burst,
-// stacks, conversions, "Skill Area") are intentionally not matched.
+// modifier.
 const RULES: Rule[] = [
   {
     // "+32%~36% additional damage", "-6%~-3% additional damage", "+5% additional damage"
@@ -265,9 +85,8 @@ const RULES: Rule[] = [
     make: (m) => (m[1] ? { stat: 'moreDamage', op: 'more', value: round(midpoint(m[1], m[2]) / 100, 4) } : null)
   },
   {
-    // "10.3% additional Cold Damage", "+32%~36% additional Fire Damage"
-    // (element-specific "additional" damage — modelled as generic `more`, since
-    // supports are slotted on element-matching skills anyway).
+    // "10.3% additional Cold Damage" — element-specific "additional" damage,
+    // modelled as generic `more` (supports are slotted on element-matching skills).
     re: new RegExp(
       `([+-]?\\d+(?:\\.\\d+)?)\\s*%?\\s*(?:~\\s*([+-]?\\d+(?:\\.\\d+)?)\\s*%?)?\\s+additional\\s+(?:${ELEMENT_WORDS})\\s+Damage`,
       'gi'
@@ -331,14 +150,11 @@ const RULES: Rule[] = [
   }
 ];
 
-function capitalize(s: string): string {
-  return s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
-}
-
 /**
- * Best-effort extraction of build-data modifiers from tlidb effect text. Only
- * the common, cleanly-quoted combat stats are recognised; anything mechanic-
- * specific is skipped (documented approximation — the calculator is simplified).
+ * Best-effort extraction of build-data modifiers from effect text / affix
+ * templates. Only the common, cleanly-quoted combat stats are recognised;
+ * anything mechanic-specific is skipped. Deduplicates identical (stat/op/value)
+ * matches (source text often repeats a line across summary + detail blocks).
  */
 export function parseModifiers(text: string): Modifier[] {
   const byKey = new Map<string, Modifier>();
@@ -346,71 +162,8 @@ export function parseModifiers(text: string): Modifier[] {
     for (const m of text.matchAll(rule.re)) {
       const mod = rule.make(m);
       if (!mod || !Number.isFinite(mod.value) || mod.value === 0) continue;
-      // Dedupe identical (stat/op/value) — tlidb repeats effects in Simple +
-      // Details blocks, so the same line is matched more than once.
       byKey.set(`${mod.stat}|${mod.op}|${mod.value}`, mod);
     }
   }
   return [...byKey.values()];
-}
-
-/** Parse a support-skill page (same card layout as skills) into a SupportSkill. */
-export function parseSupport(slug: string, html: string): SupportSkill | null {
-  const card = firstCard(html);
-  if (!card) return null;
-  const name = card.querySelector('.card-title')?.text.trim() || slug.replace(/_/g, ' ');
-  const text = card.querySelectorAll('.explicitMod').map((m) => m.text).join('\n');
-  return { id: slugToId(slug), name, modifiers: parseModifiers(text), requiresTags: [] };
-}
-
-/** Scrape every support skill across tlidb's three support categories. */
-export async function scrapeSupports(
-  overrides: Partial<TlidbConfig> = {}
-): Promise<{ supports: SupportSkill[]; skipped: string[] }> {
-  const cfg: TlidbConfig = { ...DEFAULT_CONFIG, ...overrides };
-  const allowed = await indexSlugs(['Skill'], cfg);
-  const cats = ['Support_Skill', 'Magnificent_Support_Skill', 'Noble_Support_Skill'];
-  const slugSet = new Set<string>();
-  for (const cat of cats) {
-    for (const s of extractSlugs(await fetchPath(`/en/${cat}`, cfg), allowed)) slugSet.add(s);
-  }
-  let slugs = [...slugSet];
-  if (cfg.limit > 0) slugs = slugs.slice(0, cfg.limit);
-
-  const supports: SupportSkill[] = [];
-  const skipped: string[] = [];
-  for (const slug of slugs) {
-    try {
-      const s = parseSupport(slug, await fetchPath(`/en/${slug}`, cfg));
-      if (s) supports.push(s);
-      else skipped.push(slug);
-    } catch (err) {
-      skipped.push(`${slug} (${err instanceof Error ? err.message : err})`);
-    }
-  }
-  return { supports, skipped };
-}
-
-/** Scrape every active skill listed on tlidb's Active Skill category page. */
-export async function scrapeActiveSkills(
-  overrides: Partial<TlidbConfig> = {}
-): Promise<{ skills: ActiveSkill[]; skipped: string[] }> {
-  const cfg: TlidbConfig = { ...DEFAULT_CONFIG, ...overrides };
-  const allowed = await indexSlugs(['Skill'], cfg);
-  const catHtml = await fetchPath('/en/Active_Skill', cfg);
-  let slugs = extractSlugs(catHtml, allowed);
-  if (cfg.limit > 0) slugs = slugs.slice(0, cfg.limit);
-
-  const skills: ActiveSkill[] = [];
-  const skipped: string[] = [];
-  for (const slug of slugs) {
-    try {
-      const parsed = parseSkill(slug, await fetchPath(`/en/${slug}`, cfg));
-      if (parsed) skills.push(mapActiveSkill(parsed));
-      else skipped.push(slug);
-    } catch (err) {
-      skipped.push(`${slug} (${err instanceof Error ? err.message : err})`);
-    }
-  }
-  return { skills, skipped };
 }

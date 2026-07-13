@@ -1,11 +1,12 @@
-// Alternative (preferred) source: tlicompendium.com structured JSON data bundles.
+// Data source: tlicompendium.com structured JSON data bundles.
 //
-// One bundle per category (gear, legendaries, hero-trait, pactspirit, …) at
-// `/data-bundles/SS12.5-<name>-en.json`. Bundles are deeply nested maps; the
-// leaf entries carry `name` + structured fields. This is far cleaner than the
-// tlidb HTML scrape for gear/affixes/progression, which is why those categories
-// source from here. Skills stay on tlidb (scrape.ts) — its cards expose clean
-// element/tag chips these bundles don't.
+// One bundle per category (skill, gear, legendaries, hero-trait, pactspirit, …)
+// at `/data-bundles/<version>-<name>-{en,master}.json`. Bundles are deeply
+// nested maps; leaf entries carry `name` + structured fields. The `-master`
+// bundles hold the structured data (tags, values, affix pools), the `-en`
+// bundles hold localized names/text; the mappers join them. `<version>` is the
+// season (e.g. SS12.5) — resolveLatestVersion() finds the newest one so the
+// scrape self-updates when a new season is published.
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -19,14 +20,40 @@ import type {
   SupportSkill,
   Talent
 } from '@torchlight-companion/build-data';
-import { DEFAULT_CONFIG, parseModifiers, type TlidbConfig } from './scrape.js';
+import { DEFAULT_CONFIG, parseModifiers, type ScrapeConfig } from './scrape.js';
 
 export const BUNDLE_BASE = 'https://tlicompendium.com/data-bundles';
-export const DATA_VERSION = 'SS12.5';
+
+/** Numeric weight of a season string for comparison: "SS12.5" -> 12.5. */
+function seasonNumber(version: string): number {
+  return Number(version.replace(/^SS/i, ''));
+}
+
+/**
+ * Fetch the bundle manifest and return the newest `SS*` season it publishes, so
+ * the scrape follows the live season without a code change. Falls back to
+ * `cfg.version` if the manifest can't be read.
+ */
+export async function resolveLatestVersion(cfg: ScrapeConfig): Promise<string> {
+  try {
+    const res = await fetch(`${BUNDLE_BASE}/manifest.json`, { headers: { 'user-agent': cfg.userAgent } });
+    if (!res.ok) return cfg.version;
+    const manifest = JSON.parse(await res.text()) as { bundles?: Record<string, unknown> };
+    const versions = new Set<string>();
+    for (const key of Object.keys(manifest.bundles ?? {})) {
+      const m = key.match(/^(SS\d+(?:\.\d+)?)-/i);
+      if (m?.[1]) versions.add(m[1]);
+    }
+    const latest = [...versions].sort((a, b) => seasonNumber(a) - seasonNumber(b)).at(-1);
+    return latest ?? cfg.version;
+  } catch {
+    return cfg.version;
+  }
+}
 
 /** Fetch a `<version>-<name>-en.json` bundle, cached on disk. */
-export async function fetchBundle(name: string, cfg: TlidbConfig): Promise<unknown> {
-  const file = `${DATA_VERSION}-${name}-en.json`;
+export async function fetchBundle(name: string, cfg: ScrapeConfig): Promise<unknown> {
+  const file = `${cfg.version}-${name}-en.json`;
   const cacheFile = join(cfg.cacheDir, file + '.cache');
   if (existsSync(cacheFile)) return JSON.parse(readFileSync(cacheFile, 'utf8'));
 
@@ -224,7 +251,8 @@ function damageFromText(text: string | undefined, effectiveness: string | undefi
 /** Map the skill `-master` + `-en` bundles into active and support skills. */
 export function mapSkills(
   master: unknown,
-  en: unknown
+  en: unknown,
+  version: string = DEFAULT_CONFIG.version
 ): { active: ActiveSkill[]; support: SupportSkill[] } {
   const names = indexEnById(en);
   const active: ActiveSkill[] = [];
@@ -265,7 +293,7 @@ export function mapSkills(
         baseRate,
         baseCritRate: 5,
         supportSlots: 5,
-        season: DATA_VERSION
+        season: version
       });
     }
   }
@@ -274,20 +302,20 @@ export function mapSkills(
 
 /** Fetch the skill `-master` + `-en` bundles and map them. */
 export async function scrapeSkillsFromBundles(
-  overrides: Partial<TlidbConfig> = {}
+  overrides: Partial<ScrapeConfig> = {}
 ): Promise<{ active: ActiveSkill[]; support: SupportSkill[] }> {
-  const cfg: TlidbConfig = { ...DEFAULT_CONFIG, ...overrides };
+  const cfg: ScrapeConfig = { ...DEFAULT_CONFIG, ...overrides };
   const [master, en] = await Promise.all([
     fetchBundleRaw('skill-master', cfg),
     fetchBundle('skill', cfg)
   ]);
-  return mapSkills(master, en);
+  return mapSkills(master, en, cfg.version);
 }
 
 /** Fetch a `-master` bundle (same as fetchBundle but the master variant name is
  * passed literally, e.g. `skill-master`). */
-async function fetchBundleRaw(fullName: string, cfg: TlidbConfig): Promise<unknown> {
-  const file = `${DATA_VERSION}-${fullName}.json`;
+async function fetchBundleRaw(fullName: string, cfg: ScrapeConfig): Promise<unknown> {
+  const file = `${cfg.version}-${fullName}.json`;
   const cacheFile = join(cfg.cacheDir, file + '.cache');
   if (existsSync(cacheFile)) return JSON.parse(readFileSync(cacheFile, 'utf8'));
   const res = await fetch(`${BUNDLE_BASE}/${file}`, { headers: { 'user-agent': cfg.userAgent } });
@@ -446,8 +474,8 @@ export function mapGearFromMaster(gearMaster: unknown, gearEn: unknown): GearBas
 }
 
 /** Fetch gear `-master` + `-en` and map to GearBase[] (with tlidbId). */
-export async function scrapeGear(overrides: Partial<TlidbConfig> = {}): Promise<GearBase[]> {
-  const cfg: TlidbConfig = { ...DEFAULT_CONFIG, ...overrides };
+export async function scrapeGear(overrides: Partial<ScrapeConfig> = {}): Promise<GearBase[]> {
+  const cfg: ScrapeConfig = { ...DEFAULT_CONFIG, ...overrides };
   const [master, en] = await Promise.all([
     fetchBundleRaw('gear-master', cfg),
     fetchBundle('gear', cfg)
@@ -456,17 +484,17 @@ export async function scrapeGear(overrides: Partial<TlidbConfig> = {}): Promise<
 }
 
 /** Fetch gear `-master` and extract the rollable affix pool. */
-export async function scrapeAffixes(overrides: Partial<TlidbConfig> = {}): Promise<Affix[]> {
-  const cfg: TlidbConfig = { ...DEFAULT_CONFIG, ...overrides };
+export async function scrapeAffixes(overrides: Partial<ScrapeConfig> = {}): Promise<Affix[]> {
+  const cfg: ScrapeConfig = { ...DEFAULT_CONFIG, ...overrides };
   return mapAffixes(await fetchBundleRaw('gear-master', cfg));
 }
 
-export async function scrapeLegendaries(overrides: Partial<TlidbConfig> = {}): Promise<GearBase[]> {
-  const cfg: TlidbConfig = { ...DEFAULT_CONFIG, ...overrides };
+export async function scrapeLegendaries(overrides: Partial<ScrapeConfig> = {}): Promise<GearBase[]> {
+  const cfg: ScrapeConfig = { ...DEFAULT_CONFIG, ...overrides };
   return mapLegendaries(await fetchBundle('legendaries', cfg));
 }
 
-export async function scrapeHeroTraits(overrides: Partial<TlidbConfig> = {}): Promise<Talent[]> {
-  const cfg: TlidbConfig = { ...DEFAULT_CONFIG, ...overrides };
+export async function scrapeHeroTraits(overrides: Partial<ScrapeConfig> = {}): Promise<Talent[]> {
+  const cfg: ScrapeConfig = { ...DEFAULT_CONFIG, ...overrides };
   return mapHeroTraits(await fetchBundle('hero-trait', cfg));
 }
