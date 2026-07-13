@@ -10,7 +10,8 @@
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "node --test test/*.test.mjs",
     "lint": "tsc -p tsconfig.json --noEmit",
-    "scrape": "node dist/cli.js"
+    "scrape": "node dist/cli.js",
+    "regen:seed": "pnpm build && node scripts/regen-seed.mjs"
   },
   "dependencies": {
     "@torchlight-companion/build-data": "workspace:*",

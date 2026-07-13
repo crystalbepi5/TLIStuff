@@ -1,0 +1,50 @@
+[
+  {
+    "id": "of-frost",
+    "name": "of Frost",
+    "kind": "suffix",
+    "slots": ["weapon", "amulet", "ring"],
+    "modifiers": [{ "stat": "increasedCold", "op": "increased", "value": 35 }]
+  },
+  {
+    "id": "flaring",
+    "name": "Flaring",
+    "kind": "prefix",
+    "slots": ["weapon", "gloves"],
+    "modifiers": [{ "stat": "addedFire", "op": "flat", "value": 45 }]
+  },
+  {
+    "id": "of-vitality",
+    "name": "of Vitality",
+    "kind": "suffix",
+    "slots": ["chest", "helmet", "belt"],
+    "modifiers": [{ "stat": "life", "op": "flat", "value": 120 }]
+  },
+  {
+    "id": "resolute",
+    "name": "Resolute",
+    "kind": "prefix",
+    "slots": ["chest", "boots", "helmet"],
+    "modifiers": [
+      { "stat": "fireResist", "op": "flat", "value": 24 },
+      { "stat": "coldResist", "op": "flat", "value": 24 }
+    ]
+  },
+  {
+    "id": "of-precision",
+    "name": "of Precision",
+    "kind": "suffix",
+    "slots": ["amulet", "gloves", "ring"],
+    "modifiers": [
+      { "stat": "critRate", "op": "flat", "value": 4 },
+      { "stat": "critDamage", "op": "flat", "value": 25 }
+    ]
+  },
+  {
+    "id": "empowering",
+    "name": "Empowering",
+    "kind": "prefix",
+    "slots": ["amulet", "chest"],
+    "modifiers": [{ "stat": "increasedDamage", "op": "increased", "value": 30 }]
+  }
+]
