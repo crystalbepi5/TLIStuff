@@ -52,20 +52,15 @@ test('importBuildCode rejects garbage with a discriminated error', () => {
   assert.match(result.error, /Unrecognised build code/);
 });
 
-test('importBuildCode: a payload-less editor URL explains how to get a real code', () => {
+test('importBuildCode: a payload-less editor URL explains how to get a real build', () => {
   // The live Compendium editor URL is static and carries no build.
   const result = importBuildCode('https://tlicompendium.com/en/build-planner');
   assert.equal(result.ok, false);
   assert.match(result.error, /doesn't contain a build/i);
-  assert.match(result.error, /Export ?\/ ?Share/i);
+  assert.match(result.error, /Export/i);
 });
 
-test('importBuildCode: an external URL that DOES carry a payload reaches the adapter', () => {
-  // Once a real share link exists, it should hit the (still-stubbed) adapter.
-  const compendium = importBuildCode('https://tlicompendium.com/en/build-planner#build=abc123');
-  assert.equal(compendium.ok, false);
-  assert.match(compendium.error, /isn't wired up yet/i);
-
+test('importBuildCode: a PoB URL reaches the (still-stubbed) adapter', () => {
   const pob = importBuildCode('https://tlipob.com/#code=xyz');
   assert.equal(pob.ok, false);
   assert.match(pob.error, /isn't wired up yet/i);

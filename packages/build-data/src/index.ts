@@ -19,3 +19,13 @@ export {
   type ImportResult,
   type ExternalAdapter
 } from './interop.js';
+export {
+  parseCompendiumExport,
+  isCompendiumExport,
+  parseModifierLine,
+  resolveText,
+  type CompendiumImport,
+  type CompendiumOptions,
+  type HeroMemoryDict,
+  type GuidDictionary
+} from './compendium.js';

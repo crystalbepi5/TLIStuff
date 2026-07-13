@@ -4,14 +4,15 @@ import type {
   DatasetIndex,
   Modifier
 } from '@torchlight-companion/build-data';
-import { computeDamage, type DamageResult } from './damage.js';
+import { computeDamage, BASE_CRIT_MULTIPLIER, type DamageResult } from './damage.js';
 import { computeDefense, type DefenseResult } from './defense.js';
 
 /** How many Pact Spirits a build may bind. Stand-in for the real limit. */
 export const MAX_PACT_SPIRITS = 3;
 
 export interface BuildReport {
-  skill: ActiveSkill;
+  /** The main skill, or null when the build has no valid one (e.g. imports). */
+  skill: ActiveSkill | null;
   /** Every modifier that applied to this build, after tag filtering. */
   modifiers: Modifier[];
   damage: DamageResult;
@@ -20,9 +21,22 @@ export interface BuildReport {
   warnings: string[];
 }
 
-/** True if a tag-restricted modifier is allowed on this skill. */
-function tagsAllow(modifier: Modifier, skill: ActiveSkill): boolean {
+/** A zeroed damage result for builds without a usable main skill. */
+function noDamage(): DamageResult {
+  return {
+    perElement: {},
+    averageHit: 0,
+    critRate: 0,
+    critMultiplier: BASE_CRIT_MULTIPLIER,
+    rate: 0,
+    dps: 0
+  };
+}
+
+/** True if a tag-restricted modifier is allowed on this skill (null = allow all). */
+function tagsAllow(modifier: Modifier, skill: ActiveSkill | null): boolean {
   if (!modifier.tags || modifier.tags.length === 0) return true;
+  if (!skill) return true;
   return modifier.tags.some((t) => skill.tags.includes(t));
 }
 
@@ -34,18 +48,22 @@ function tagsAllow(modifier: Modifier, skill: ActiveSkill): boolean {
 export function collectModifiers(
   build: Build,
   index: DatasetIndex
-): { modifiers: Modifier[]; skill: ActiveSkill; warnings: string[] } {
+): { modifiers: Modifier[]; skill: ActiveSkill | null; warnings: string[] } {
   const warnings: string[] = [];
-  const skill = index.activeSkill(build.activeSkillId);
+  const skill = index.activeSkill(build.activeSkillId) ?? null;
   if (!skill) {
-    throw new Error(`unknown active skill: ${build.activeSkillId}`);
+    warnings.push(
+      build.activeSkillId
+        ? `unknown active skill: ${build.activeSkillId}`
+        : 'no main skill selected — DPS not computed'
+    );
   }
 
   const raw: Modifier[] = [];
 
   const hero = index.hero(build.heroId);
-  if (!hero) warnings.push(`unknown hero: ${build.heroId}`);
-  else raw.push(...hero.baseModifiers);
+  if (build.heroId && !hero) warnings.push(`unknown hero: ${build.heroId}`);
+  if (hero) raw.push(...hero.baseModifiers);
 
   for (const piece of build.gear) {
     const base = index.gearBase(piece.baseId);
@@ -64,11 +82,14 @@ export function collectModifiers(
     }
   }
 
-  const socketed = build.supportIds.slice(0, skill.supportSlots);
-  if (build.supportIds.length > skill.supportSlots) {
+  const supportSlots = skill?.supportSlots ?? 0;
+  const socketed = skill ? build.supportIds.slice(0, supportSlots) : [];
+  if (skill && build.supportIds.length > supportSlots) {
     warnings.push(
-      `${skill.name} has ${skill.supportSlots} support slots but ${build.supportIds.length} were provided; extras ignored`
+      `${skill.name} has ${supportSlots} support slots but ${build.supportIds.length} were provided; extras ignored`
     );
+  } else if (!skill && build.supportIds.length > 0) {
+    warnings.push('supports ignored — no main skill selected');
   }
   for (const supportId of socketed) {
     const support = index.supportSkill(supportId);
@@ -78,9 +99,9 @@ export function collectModifiers(
     }
     const matches =
       support.requiresTags.length === 0 ||
-      support.requiresTags.some((t) => skill.tags.includes(t));
+      support.requiresTags.some((t) => skill!.tags.includes(t));
     if (!matches) {
-      warnings.push(`support '${support.name}' requires tags [${support.requiresTags.join(', ')}] which ${skill.name} lacks; ignored`);
+      warnings.push(`support '${support.name}' requires tags [${support.requiresTags.join(', ')}] which ${skill!.name} lacks; ignored`);
       continue;
     }
     raw.push(...support.modifiers);
@@ -129,7 +150,7 @@ export function evaluateBuild(build: Build, index: DatasetIndex): BuildReport {
   return {
     skill,
     modifiers,
-    damage: computeDamage(skill, modifiers),
+    damage: skill ? computeDamage(skill, modifiers) : noDamage(),
     defense: computeDefense(modifiers),
     warnings
   };

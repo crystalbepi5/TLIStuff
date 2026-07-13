@@ -11,6 +11,7 @@
 // framework — detection, URL handling, native round-trip — is real and tested.
 
 import type { Build } from './schema.js';
+import { isCompendiumExport, parseCompendiumExport } from './compendium.js';
 
 /** Bumped when the native envelope shape changes. */
 export const SHARE_VERSION = 1;
@@ -130,11 +131,22 @@ function notYetSupported(label: string): never {
   );
 }
 
+/** Does this input parse as a TLI Compendium export JSON? */
+function looksLikeCompendiumJson(input: string): boolean {
+  const trimmed = input.trim();
+  if (!trimmed.startsWith('{')) return false;
+  try {
+    return isCompendiumExport(JSON.parse(trimmed));
+  } catch {
+    return false;
+  }
+}
+
 export const compendiumAdapter: ExternalAdapter = {
   id: 'compendium',
   label: 'TLI Compendium',
-  detect: (input) => /tlicompendium\.com/i.test(input),
-  parse: () => notYetSupported('TLI Compendium')
+  detect: (input) => /tlicompendium\.com/i.test(input) || looksLikeCompendiumJson(input),
+  parse: (input) => parseCompendiumExport(input)
 };
 
 export const pobAdapter: ExternalAdapter = {
@@ -167,7 +179,7 @@ export function importBuildCode(
         ok: false,
         error:
           `That's the ${claimed.label} editor URL — it doesn't contain a build. ` +
-          `Use ${claimed.label}'s Export / Share to copy a build code or share link, then paste that here.`
+          `In ${claimed.label}, use Export to download the build JSON, then paste its contents here.`
       };
     }
     try {
