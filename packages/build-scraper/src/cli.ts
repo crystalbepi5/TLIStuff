@@ -21,6 +21,7 @@ import type { TlidbConfig } from './scrape.js';
 import {
   scrapeSkillsFromBundles,
   scrapeGear,
+  scrapeAffixes,
   scrapeLegendaries,
   scrapeHeroTraits
 } from './tlicompendium.js';
@@ -39,8 +40,10 @@ async function main(): Promise<void> {
 
   console.error('[scrape] tlicompendium: skills (master+en)…');
   const { active: skills, support: supports } = await scrapeSkillsFromBundles(cfg);
-  console.error('[scrape] tlicompendium: gear…');
+  console.error('[scrape] tlicompendium: gear (master+en)…');
   const gear = await scrapeGear(cfg);
+  console.error('[scrape] tlicompendium: affixes (craft prefix/suffix)…');
+  const affixes = await scrapeAffixes(cfg);
   console.error('[scrape] tlicompendium: legendaries…');
   const legendaries = await scrapeLegendaries(cfg);
   console.error('[scrape] tlicompendium: hero traits…');
@@ -59,7 +62,7 @@ async function main(): Promise<void> {
     heroes: seedDataset.heroes,
     activeSkills: skills,
     supportSkills: supports,
-    affixes: seedDataset.affixes,
+    affixes: affixes.length > 0 ? affixes : seedDataset.affixes,
     gearBases,
     talents,
     pactSpirits: seedDataset.pactSpirits,
@@ -71,6 +74,7 @@ async function main(): Promise<void> {
     writeFileSync(join(outDir, file), JSON.stringify(data, null, 2) + '\n');
   write('activeSkills.json', skills);
   write('supportSkills.json', supports);
+  write('affixes.json', affixes);
   write('gearBases.json', gearBases);
   write('talents.json', talents);
 
@@ -80,7 +84,8 @@ async function main(): Promise<void> {
   console.error('\n[done] wrote to ' + outDir + '/');
   console.error(`  activeSkills : ${skills.length}`);
   console.error(`  supportSkills: ${supports.length} (${withMods(supports)} with modifiers)`);
-  console.error(`  gearBases    : ${gearBases.length} (${withMods(gearBases)} with modifiers)`);
+  console.error(`  affixes      : ${affixes.length} (prefix/suffix, with value ranges + modifier ids)`);
+  console.error(`  gearBases    : ${gearBases.length} (${withMods(gearBases)} with modifiers; tlidbId attached)`);
   console.error(`  talents      : ${talents.length} (${withMods(talents)} with modifiers)`);
 
   const problems = validateDataset(dataset);

@@ -130,6 +130,12 @@ export interface Affix {
   modifiers: Modifier[];
   /** Gear slots this affix can appear on. */
   slots: GearSlot[];
+  /**
+   * The game's internal modifier ids this affix corresponds to (all tiers /
+   * gear subtypes that share the same stat). Lets a future loot parser map a
+   * dropped item's rolled affix id back to this entry for pricing.
+   */
+  modifierIds?: string[];
 }
 
 export type GearSlot =
@@ -149,6 +155,8 @@ export interface GearBase {
   slot: GearSlot;
   /** Implicit modifiers inherent to the base (before affixes). */
   implicit: Modifier[];
+  /** tlidb.com item id — a stable cross-reference for loot/price lookups. */
+  tlidbId?: string;
 }
 
 /**

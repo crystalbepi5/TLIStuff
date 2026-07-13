@@ -21,10 +21,13 @@ export {
   fetchBundle,
   leaves,
   mapGear,
+  mapGearFromMaster,
+  mapAffixes,
   mapLegendaries,
   mapHeroTraits,
   mapSkills,
   scrapeGear,
+  scrapeAffixes,
   scrapeLegendaries,
   scrapeHeroTraits,
   scrapeSkillsFromBundles

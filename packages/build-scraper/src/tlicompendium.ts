@@ -11,6 +11,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type {
   ActiveSkill,
+  Affix,
   DamageTag,
   Element,
   GearBase,
@@ -300,10 +301,164 @@ async function fetchBundleRaw(fullName: string, cfg: TlidbConfig): Promise<unkno
   return JSON.parse(text);
 }
 
-/** Fetch + map a single category. Convenience for the CLI. */
+// -------------------- affixes + item ids (gear-master) -----------------------
+
+const CATEGORY_SLOT: Record<string, GearSlot> = {
+  boots: 'boots',
+  chest_armor: 'chest',
+  gloves: 'gloves',
+  helmet: 'helmet',
+  one_handed: 'weapon',
+  two_handed: 'weapon',
+  shield: 'offhand',
+  amulet: 'amulet',
+  necklace: 'amulet',
+  ring: 'ring',
+  belt: 'belt',
+  waist: 'belt'
+};
+
+interface AffixValue {
+  minValue?: number;
+  maxValue?: number;
+  sign?: string;
+}
+interface AffixTier {
+  modifierId?: string;
+  values?: AffixValue[];
+}
+interface CraftAffix {
+  descriptionTemplate?: string;
+  tiers?: AffixTier[];
+}
+interface GearSection {
+  category?: string;
+  baseItems?: { id?: string; tlidbId?: string | number; implicits?: unknown[] }[];
+  craftPrefix?: CraftAffix[];
+  craftSuffix?: CraftAffix[];
+}
+
+/** Fill a "+# Max Life" template with the (max) roll values, in order. */
+function fillTemplate(template: string, values: AffixValue[] | undefined): string {
+  let i = 0;
+  return template.replace(/#/g, () => {
+    const v = values?.[i++];
+    return v?.maxValue != null ? String(v.maxValue) : '0';
+  });
+}
+
+/** Readable affix name from its template: "+# Max Life" -> "Max Life". */
+function affixName(template: string): string {
+  return template.replace(/[+\-]?#%?/g, '').replace(/\s+/g, ' ').trim() || template;
+}
+
+/** Highest-roll tier of a craft affix. */
+function topTier(a: CraftAffix): AffixTier | undefined {
+  return (a.tiers ?? [])
+    .slice()
+    .sort((x, y) => (y.values?.[0]?.maxValue ?? 0) - (x.values?.[0]?.maxValue ?? 0))[0];
+}
+
+/**
+ * Map gear-master's craftPrefix/craftSuffix into the Affix pool. Dedupes by
+ * (kind, stat template), unions slots + modifier ids across gear subtypes, and
+ * keeps only affixes whose stat the calculator models. modifierIds are retained
+ * so a future loot parser can map a dropped roll back to the affix.
+ */
+export function mapAffixes(gearMaster: unknown): Affix[] {
+  const byKey = new Map<string, Affix>();
+  for (const section of Object.values(gearMaster as Record<string, GearSection>)) {
+    const slot = section.category ? CATEGORY_SLOT[section.category] : undefined;
+    if (!slot) continue;
+    for (const [kind, list] of [
+      ['prefix', section.craftPrefix],
+      ['suffix', section.craftSuffix]
+    ] as const) {
+      for (const a of list ?? []) {
+        const template = a.descriptionTemplate;
+        if (!template) continue;
+        const modifiers = parseModifiers(fillTemplate(template, topTier(a)?.values));
+        if (modifiers.length === 0) continue; // stat the calculator doesn't model
+        const ids = (a.tiers ?? []).map((t) => t.modifierId).filter((x): x is string => Boolean(x));
+        const key = `${kind}|${template}`;
+        const existing = byKey.get(key);
+        if (existing) {
+          if (!existing.slots.includes(slot)) existing.slots.push(slot);
+          existing.modifierIds = [...new Set([...(existing.modifierIds ?? []), ...ids])];
+        } else {
+          const name = affixName(template);
+          byKey.set(key, {
+            id: `${idFromName(name)}-${kind}`,
+            name,
+            kind,
+            modifiers,
+            slots: [slot],
+            modifierIds: [...new Set(ids)]
+          });
+        }
+      }
+    }
+  }
+  return [...byKey.values()];
+}
+
+/** uuid -> { name, implicit rawTexts } from the gear `-en` bundle. */
+function indexGearEn(en: unknown): Map<string, { name: string; texts: string[] }> {
+  const map = new Map<string, { name: string; texts: string[] }>();
+  const walk = (node: unknown): void => {
+    if (!node || typeof node !== 'object' || Array.isArray(node)) return;
+    for (const [key, val] of Object.entries(node as Record<string, unknown>)) {
+      const v = val as { name?: unknown; implicits?: { rawText?: string }[] };
+      if (typeof v.name === 'string' && Array.isArray(v.implicits)) {
+        map.set(key, { name: v.name, texts: v.implicits.map((i) => i.rawText ?? '').filter(Boolean) });
+      } else {
+        walk(val);
+      }
+    }
+  };
+  walk(en);
+  return map;
+}
+
+/** Gear from `-master` (slot + tlidbId) joined with `-en` (name + mod text). */
+export function mapGearFromMaster(gearMaster: unknown, gearEn: unknown): GearBase[] {
+  const enIndex = indexGearEn(gearEn);
+  const byId = new Map<string, GearBase>();
+  for (const section of Object.values(gearMaster as Record<string, GearSection>)) {
+    const slot = section.category ? CATEGORY_SLOT[section.category] : undefined;
+    if (!slot) continue;
+    for (const item of section.baseItems ?? []) {
+      if (!item.id) continue;
+      const en = enIndex.get(item.id);
+      if (!en) continue;
+      const id = idFromName(en.name);
+      if (byId.has(id)) continue;
+      byId.set(id, {
+        id,
+        name: en.name,
+        slot,
+        implicit: parseModifiers(en.texts.join('\n')),
+        ...(item.tlidbId != null ? { tlidbId: String(item.tlidbId) } : {})
+      });
+    }
+  }
+  return [...byId.values()];
+}
+
+/** Fetch gear `-master` + `-en` and map to GearBase[] (with tlidbId). */
 export async function scrapeGear(overrides: Partial<TlidbConfig> = {}): Promise<GearBase[]> {
   const cfg: TlidbConfig = { ...DEFAULT_CONFIG, ...overrides };
-  return mapGear(await fetchBundle('gear', cfg));
+  const [master, en] = await Promise.all([
+    fetchBundleRaw('gear-master', cfg),
+    fetchBundle('gear', cfg)
+  ]);
+  return mapGearFromMaster(master, en);
+}
+
+/** Fetch gear `-master` and extract the rollable affix pool. */
+export async function scrapeAffixes(overrides: Partial<TlidbConfig> = {}): Promise<Affix[]> {
+  const cfg: TlidbConfig = { ...DEFAULT_CONFIG, ...overrides };
+  return mapAffixes(await fetchBundleRaw('gear-master', cfg));
 }
 
 export async function scrapeLegendaries(overrides: Partial<TlidbConfig> = {}): Promise<GearBase[]> {

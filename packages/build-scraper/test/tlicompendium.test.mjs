@@ -1,6 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { leaves, mapGear, mapLegendaries, mapHeroTraits, mapSkills } from '../dist/index.js';
+import {
+  leaves,
+  mapGear,
+  mapGearFromMaster,
+  mapAffixes,
+  mapLegendaries,
+  mapHeroTraits,
+  mapSkills
+} from '../dist/index.js';
 
 // Small inline fixtures shaped like real tlicompendium bundles (which are
 // deeply-nested maps of uuid -> entry). No network, no giant fixtures.
@@ -61,6 +69,55 @@ test('mapLegendaries infers slot from name and parses normalRawText', () => {
     { stat: 'coldResist', op: 'flat', value: 24 },
     { stat: 'life', op: 'flat', value: 40 }
   ]);
+});
+
+test('mapAffixes extracts craft prefix/suffix with value range + modifier ids', () => {
+  const gearMaster = {
+    'gear/boots/str_boots/master': {
+      category: 'boots',
+      craftPrefix: [
+        {
+          descriptionTemplate: '+# Max Life',
+          tiers: [
+            { modifierId: '104510080', values: [{ minValue: 330, maxValue: 372 }] },
+            { modifierId: '104510000', values: [{ minValue: 200, maxValue: 250 }] }
+          ]
+        }
+      ],
+      craftSuffix: [
+        { descriptionTemplate: '+#% Fire Resistance', tiers: [{ modifierId: '999', values: [{ maxValue: 46 }] }] }
+      ]
+    }
+  };
+  const affixes = mapAffixes(gearMaster);
+  const life = affixes.find((a) => a.name === 'Max Life');
+  assert.ok(life);
+  assert.equal(life.kind, 'prefix');
+  assert.deepEqual(life.modifiers, [{ stat: 'life', op: 'flat', value: 372 }]); // top tier, max roll
+  assert.deepEqual(life.slots, ['boots']);
+  assert.deepEqual(life.modifierIds, ['104510080', '104510000']); // all tiers, for loot cross-ref
+  const fire = affixes.find((a) => a.name === 'Fire Resistance');
+  assert.deepEqual(fire.modifiers, [{ stat: 'fireResist', op: 'flat', value: 46 }]);
+});
+
+test('mapGearFromMaster joins tlidbId (master) with name + mods (en)', () => {
+  const gearMaster = {
+    'gear/boots/str/master': { category: 'boots', baseItems: [{ id: 'u1', tlidbId: '4000' }] }
+  };
+  const gearEn = {
+    'gear/boots/str/i18n/en': {
+      u1: { name: 'Iron Boots', slotType: 'Feet', implicits: [{ modifierId: '1', rawText: '+329 gear Armor' }] }
+    }
+  };
+  const gear = mapGearFromMaster(gearMaster, gearEn);
+  assert.equal(gear.length, 1);
+  assert.deepEqual(gear[0], {
+    id: 'iron-boots',
+    name: 'Iron Boots',
+    slot: 'boots',
+    implicit: [{ stat: 'armor', op: 'flat', value: 329 }],
+    tlidbId: '4000'
+  });
 });
 
 test('mapSkills joins -master structure with -en names (active + support)', () => {
