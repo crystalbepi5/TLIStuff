@@ -22,9 +22,9 @@ const GEAR_SLOTS: GearSlot[] = [
 
 const index = indexDataset(seedDataset);
 
-function emptyGear(slot: GearSlot): GearPiece {
-  return { slot, baseId: '', affixIds: [] };
-}
+/** Cap how many unselected matches a filtered list renders, to keep the DOM
+ * light when the dataset has hundreds of entries. */
+const LIST_LIMIT = 60;
 
 function defaultBuild(): Build {
   return {
@@ -38,6 +38,26 @@ function defaultBuild(): Build {
     pactSpiritIds: [],
     memoryIds: [],
     extraModifiers: []
+  };
+}
+
+/**
+ * Filter a named list by a search string: selected items always show (so you
+ * can unselect them), plus matching unselected items up to LIST_LIMIT.
+ */
+function filterList<T extends { id: string; name: string }>(
+  items: T[],
+  selectedIds: string[],
+  search: string
+): { shown: T[]; hidden: number } {
+  const q = search.trim().toLowerCase();
+  const selected = items.filter((i) => selectedIds.includes(i.id));
+  const matching = items.filter(
+    (i) => !selectedIds.includes(i.id) && (q === '' || i.name.toLowerCase().includes(q))
+  );
+  return {
+    shown: [...selected, ...matching.slice(0, LIST_LIMIT)],
+    hidden: Math.max(0, matching.length - LIST_LIMIT)
   };
 }
 
@@ -64,6 +84,8 @@ export function BuildPlanner() {
   const [build, setBuild] = useState<Build>(defaultBuild);
   const [shareCode, setShareCode] = useState('');
   const [importError, setImportError] = useState<string | null>(null);
+  const [supportSearch, setSupportSearch] = useState('');
+  const [talentSearch, setTalentSearch] = useState('');
 
   const skill = index.activeSkill(build.activeSkillId);
   const supportSlots = skill?.supportSlots ?? 0;
@@ -122,9 +144,9 @@ export function BuildPlanner() {
       </header>
 
       <p className="planner-disclaimer">
-        Numbers are an <strong>approximation</strong> — the seed dataset and damage formula are
-        best guesses, not verified against Torchlight Infinite. Replace the seed data with a real
-        scrape (packages/build-scraper) and tune the formula for accuracy.
+        Data is scraped from tlicompendium.com; the damage <strong>formula</strong> is a simplified
+        model (no source publishes TLI's exact math), and effects the calculator doesn't model yet
+        are skipped. Treat DPS as a <strong>relative</strong> indicator, not in-game truth.
       </p>
 
       <div className="planner-grid">
@@ -162,26 +184,44 @@ export function BuildPlanner() {
           <h3>
             Supports ({build.supportIds.length}/{supportSlots})
           </h3>
-          <div className="checkbox-list">
-            {seedDataset.supportSkills.map((sup) => {
-              const checked = build.supportIds.includes(sup.id);
-              const disabled = !checked && build.supportIds.length >= supportSlots;
-              return (
-                <label key={sup.id} className={`checkbox ${disabled ? 'is-disabled' : ''}`}>
-                  <input
-                    type="checkbox"
-                    checked={checked}
-                    disabled={disabled}
-                    onChange={() => toggleSupport(sup.id)}
-                  />
-                  <span>{sup.name}</span>
-                  {sup.requiresTags.length > 0 && (
-                    <em className="req-tags">needs {sup.requiresTags.join('/')}</em>
-                  )}
-                </label>
-              );
-            })}
-          </div>
+          <input
+            className="list-search"
+            type="search"
+            placeholder={`Search ${seedDataset.supportSkills.length} supports…`}
+            value={supportSearch}
+            onChange={(e) => setSupportSearch(e.target.value)}
+          />
+          {(() => {
+            const { shown, hidden } = filterList(
+              seedDataset.supportSkills,
+              build.supportIds,
+              supportSearch
+            );
+            return (
+              <div className="checkbox-list">
+                {shown.map((sup) => {
+                  const checked = build.supportIds.includes(sup.id);
+                  const disabled = !checked && build.supportIds.length >= supportSlots;
+                  return (
+                    <label key={sup.id} className={`checkbox ${disabled ? 'is-disabled' : ''}`}>
+                      <input
+                        type="checkbox"
+                        checked={checked}
+                        disabled={disabled}
+                        onChange={() => toggleSupport(sup.id)}
+                      />
+                      <span>{sup.name}</span>
+                      {sup.requiresTags.length > 0 && (
+                        <em className="req-tags">needs {sup.requiresTags.join('/')}</em>
+                      )}
+                    </label>
+                  );
+                })}
+                {hidden > 0 && <div className="list-more">+{hidden} more — refine search</div>}
+                {shown.length === 0 && <div className="list-more">no matches</div>}
+              </div>
+            );
+          })()}
         </section>
 
         <section className="planner-panel">
@@ -241,21 +281,35 @@ export function BuildPlanner() {
           <h2>Progression</h2>
 
           <h3>Talents</h3>
-          <div className="checkbox-list">
-            {seedDataset.talents
-              .filter((t) => t.heroId === 'any' || t.heroId === build.heroId)
-              .map((t) => (
-                <label key={t.id} className="checkbox">
-                  <input
-                    type="checkbox"
-                    checked={build.talentIds.includes(t.id)}
-                    onChange={() => toggleInList('talentIds', t.id)}
-                  />
-                  <span>{t.name}</span>
-                  {t.heroId === 'any' && <em className="req-tags">shared</em>}
-                </label>
-              ))}
-          </div>
+          <input
+            className="list-search"
+            type="search"
+            placeholder="Search talents…"
+            value={talentSearch}
+            onChange={(e) => setTalentSearch(e.target.value)}
+          />
+          {(() => {
+            const eligible = seedDataset.talents.filter(
+              (t) => t.heroId === 'any' || t.heroId === build.heroId
+            );
+            const { shown, hidden } = filterList(eligible, build.talentIds, talentSearch);
+            return (
+              <div className="checkbox-list">
+                {shown.map((t) => (
+                  <label key={t.id} className="checkbox">
+                    <input
+                      type="checkbox"
+                      checked={build.talentIds.includes(t.id)}
+                      onChange={() => toggleInList('talentIds', t.id)}
+                    />
+                    <span>{t.name}</span>
+                    {t.heroId === 'any' && <em className="req-tags">shared</em>}
+                  </label>
+                ))}
+                {hidden > 0 && <div className="list-more">+{hidden} more — refine search</div>}
+              </div>
+            );
+          })()}
 
           <h3>
             Pact Spirits ({build.pactSpiritIds.length}/{MAX_PACT_SPIRITS})

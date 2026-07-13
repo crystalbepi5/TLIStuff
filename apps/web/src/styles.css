@@ -374,3 +374,27 @@ body {
   font-family: 'Cascadia Code', ui-monospace, monospace;
   font-size: 0.78rem;
 }
+
+/* Search filter for large planner lists */
+.list-search {
+  width: 100%;
+  margin: 0 0 8px;
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 5px 8px;
+  font: inherit;
+  font-size: 0.82rem;
+}
+
+.list-search::placeholder {
+  color: var(--muted);
+}
+
+.list-more {
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-style: italic;
+  padding: 4px 2px 0;
+}
