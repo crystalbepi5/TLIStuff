@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { leaves, mapGear, mapLegendaries, mapHeroTraits } from '../dist/index.js';
+import { leaves, mapGear, mapLegendaries, mapHeroTraits, mapSkills } from '../dist/index.js';
 
 // Small inline fixtures shaped like real tlicompendium bundles (which are
 // deeply-nested maps of uuid -> entry). No network, no giant fixtures.
@@ -61,6 +61,31 @@ test('mapLegendaries infers slot from name and parses normalRawText', () => {
     { stat: 'coldResist', op: 'flat', value: 24 },
     { stat: 'life', op: 'flat', value: 40 }
   ]);
+});
+
+test('mapSkills joins -master structure with -en names (active + support)', () => {
+  const master = {
+    'skill/Active/master': {
+      category: 'Active',
+      skills: [{ id: 'u1', tags: ['Cold', 'Spell', 'Area'], castSpeed: '0.5 s' }]
+    },
+    'skill/Support/master': {
+      category: 'Support',
+      skills: [{ id: 'u2', tags: ['Support'] }]
+    }
+  };
+  const en = {
+    'skill/Active/i18n/en': { u1: { name: 'Frost Nova', description: 'Deals 200-300 Cold Damage' } },
+    'skill/Support/i18n/en': { u2: { name: 'More Damage', description: '+20% additional damage' } }
+  };
+  const { active, support } = mapSkills(master, en);
+  assert.equal(active.length, 1);
+  assert.equal(active[0].name, 'Frost Nova');
+  assert.deepEqual(active[0].tags, ['spell', 'area']); // "Cold" is element, not a tag
+  assert.deepEqual(active[0].baseDamage, { cold: 250 }); // mid of 200-300
+  assert.equal(active[0].baseRate, 2); // 1 / 0.5s
+  assert.equal(support.length, 1);
+  assert.deepEqual(support[0].modifiers, [{ stat: 'moreDamage', op: 'more', value: 0.2 }]);
 });
 
 test('mapHeroTraits uses the highest tier and strips HTML markup', () => {

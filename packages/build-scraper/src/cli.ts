@@ -17,8 +17,13 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { seedDataset, validateDataset, type Dataset } from '@torchlight-companion/build-data';
-import { scrapeActiveSkills, scrapeSupports, type TlidbConfig } from './scrape.js';
-import { scrapeGear, scrapeLegendaries, scrapeHeroTraits } from './tlicompendium.js';
+import type { TlidbConfig } from './scrape.js';
+import {
+  scrapeSkillsFromBundles,
+  scrapeGear,
+  scrapeLegendaries,
+  scrapeHeroTraits
+} from './tlicompendium.js';
 
 function arg(name: string, fallback: string): string {
   const i = process.argv.indexOf(`--${name}`);
@@ -32,10 +37,8 @@ async function main(): Promise<void> {
     delayMs: Number(arg('delay', '400'))
   };
 
-  console.error('[scrape] tlidb: active skills…');
-  const { skills } = await scrapeActiveSkills(cfg);
-  console.error('[scrape] tlidb: support skills…');
-  const { supports } = await scrapeSupports(cfg);
+  console.error('[scrape] tlicompendium: skills (master+en)…');
+  const { active: skills, support: supports } = await scrapeSkillsFromBundles(cfg);
   console.error('[scrape] tlicompendium: gear…');
   const gear = await scrapeGear(cfg);
   console.error('[scrape] tlicompendium: legendaries…');
@@ -51,7 +54,7 @@ async function main(): Promise<void> {
     meta: {
       source: 'scrape',
       generatedAt: new Date().toISOString(),
-      note: 'tlidb skills + tlicompendium gear/legendaries/talents; heroes/affixes/pactspirits/divinity from hand-curated seed'
+      note: 'tlicompendium: skills/gear/legendaries/talents; heroes/affixes/pactspirits/memories from hand-curated seed'
     },
     heroes: seedDataset.heroes,
     activeSkills: skills,
@@ -60,7 +63,7 @@ async function main(): Promise<void> {
     gearBases,
     talents,
     pactSpirits: seedDataset.pactSpirits,
-    divinities: seedDataset.divinities
+    memories: seedDataset.memories
   };
 
   mkdirSync(outDir, { recursive: true });

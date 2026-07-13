@@ -9,7 +9,15 @@
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import type { GearBase, GearSlot, Talent } from '@torchlight-companion/build-data';
+import type {
+  ActiveSkill,
+  DamageTag,
+  Element,
+  GearBase,
+  GearSlot,
+  SupportSkill,
+  Talent
+} from '@torchlight-companion/build-data';
 import { DEFAULT_CONFIG, parseModifiers, type TlidbConfig } from './scrape.js';
 
 export const BUNDLE_BASE = 'https://tlicompendium.com/data-bundles';
@@ -151,6 +159,145 @@ export function mapHeroTraits(bundle: unknown): Talent[] {
     }
   }
   return [...byId.values()];
+}
+
+// ------------------------------- skills --------------------------------------
+// Structured from the `-master` bundle (tags/element/castSpeed/effectiveness);
+// display name + effect text joined from the `-en` bundle by uuid.
+
+const ELEMENT_TAG: Record<string, Element> = {
+  Physical: 'physical',
+  Fire: 'fire',
+  Cold: 'cold',
+  Lightning: 'lightning',
+  Erosion: 'erosion'
+};
+const DAMAGE_TAG: Record<string, DamageTag> = {
+  Attack: 'attack',
+  Spell: 'spell',
+  Melee: 'melee',
+  Area: 'area',
+  Projectile: 'projectile',
+  Channeled: 'channelled',
+  Channelled: 'channelled'
+};
+
+interface MasterSkill {
+  id: string;
+  tags?: string[];
+  castSpeed?: string;
+  effectivenessOfAddedDamage?: string;
+}
+
+/** Map uuid -> { name, description } from an `-en` skill/gear bundle. */
+function indexEnById(enBundle: unknown): Map<string, { name: string; description: string | undefined }> {
+  const map = new Map<string, { name: string; description: string | undefined }>();
+  const walk = (node: unknown): void => {
+    if (!node || typeof node !== 'object' || Array.isArray(node)) return;
+    for (const [key, val] of Object.entries(node as Record<string, unknown>)) {
+      if (val && typeof val === 'object' && typeof (val as { name?: unknown }).name === 'string') {
+        const v = val as { name: string; description?: string };
+        map.set(key, { name: v.name, description: v.description });
+      } else {
+        walk(val);
+      }
+    }
+  };
+  walk(enBundle);
+  return map;
+}
+
+/** First damage figure in an effect description: a spell "X-Y" range midpoint,
+ * else an attack "N%" effectiveness. */
+function damageFromText(text: string | undefined, effectiveness: string | undefined): number {
+  if (text) {
+    const range = text.match(/(\d[\d,]*)\s*[-–]\s*(\d[\d,]*)/);
+    if (range?.[1] && range[2]) {
+      return Math.round((Number(range[1].replace(/,/g, '')) + Number(range[2].replace(/,/g, ''))) / 2);
+    }
+  }
+  const eff = effectiveness?.match(/([\d.]+)/);
+  return eff?.[1] ? Math.round(Number(eff[1])) : 0;
+}
+
+/** Map the skill `-master` + `-en` bundles into active and support skills. */
+export function mapSkills(
+  master: unknown,
+  en: unknown
+): { active: ActiveSkill[]; support: SupportSkill[] } {
+  const names = indexEnById(en);
+  const active: ActiveSkill[] = [];
+  const support: SupportSkill[] = [];
+  const bundle = master as Record<string, { category?: string; skills?: MasterSkill[] }>;
+
+  for (const [subKey, section] of Object.entries(bundle)) {
+    const category = section?.category ?? subKey;
+    const skills = Array.isArray(section?.skills) ? section.skills : [];
+    // Only the "Active" category is a main skill; Support/Magnificent/Noble and
+    // the modifier-like Activation_Medium/Module/Passive all behave as supports.
+    const isActive = category === 'Active';
+
+    for (const s of skills) {
+      const meta = names.get(s.id);
+      const name = meta?.name;
+      if (!name) continue; // no localized name -> skip
+      const id = idFromName(name);
+      const tags = (s.tags ?? []).map((t) => DAMAGE_TAG[t]).filter((t): t is DamageTag => Boolean(t));
+
+      if (!isActive) {
+        support.push({ id, name, modifiers: parseModifiers(meta?.description ?? ''), requiresTags: [] });
+        continue;
+      }
+
+      const element = (s.tags ?? []).map((t) => ELEMENT_TAG[t]).find(Boolean) ?? 'physical';
+      const base = damageFromText(meta?.description, s.effectivenessOfAddedDamage);
+      const baseDamage: Partial<Record<Element, number>> = {};
+      if (base > 0) baseDamage[element] = base;
+      const castSeconds = s.castSpeed ? Number.parseFloat(s.castSpeed) : NaN;
+      const baseRate = castSeconds > 0 ? Number((1 / castSeconds).toFixed(3)) : 1;
+
+      active.push({
+        id,
+        name,
+        tags,
+        baseDamage,
+        baseRate,
+        baseCritRate: 5,
+        supportSlots: 5,
+        season: DATA_VERSION
+      });
+    }
+  }
+  return { active, support };
+}
+
+/** Fetch the skill `-master` + `-en` bundles and map them. */
+export async function scrapeSkillsFromBundles(
+  overrides: Partial<TlidbConfig> = {}
+): Promise<{ active: ActiveSkill[]; support: SupportSkill[] }> {
+  const cfg: TlidbConfig = { ...DEFAULT_CONFIG, ...overrides };
+  const [master, en] = await Promise.all([
+    fetchBundleRaw('skill-master', cfg),
+    fetchBundle('skill', cfg)
+  ]);
+  return mapSkills(master, en);
+}
+
+/** Fetch a `-master` bundle (same as fetchBundle but the master variant name is
+ * passed literally, e.g. `skill-master`). */
+async function fetchBundleRaw(fullName: string, cfg: TlidbConfig): Promise<unknown> {
+  const file = `${DATA_VERSION}-${fullName}.json`;
+  const cacheFile = join(cfg.cacheDir, file + '.cache');
+  if (existsSync(cacheFile)) return JSON.parse(readFileSync(cacheFile, 'utf8'));
+  const res = await fetch(`${BUNDLE_BASE}/${file}`, { headers: { 'user-agent': cfg.userAgent } });
+  if (!res.ok) throw new Error(`GET ${file} -> HTTP ${res.status} ${res.statusText}`);
+  const text = await res.text();
+  if (text.length < 5000 || !text.trimStart().startsWith('{')) {
+    throw new Error(`bundle ${file} looks like a soft-404 (len ${text.length})`);
+  }
+  mkdirSync(cfg.cacheDir, { recursive: true });
+  writeFileSync(cacheFile, text);
+  return JSON.parse(text);
 }
 
 /** Fetch + map a single category. Convenience for the CLI. */

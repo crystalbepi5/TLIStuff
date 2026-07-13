@@ -23,7 +23,9 @@ export {
   mapGear,
   mapLegendaries,
   mapHeroTraits,
+  mapSkills,
   scrapeGear,
   scrapeLegendaries,
-  scrapeHeroTraits
+  scrapeHeroTraits,
+  scrapeSkillsFromBundles
 } from './tlicompendium.js';
