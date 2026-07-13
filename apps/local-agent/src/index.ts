@@ -1,6 +1,7 @@
 import { SqliteRepository } from '@torchlight-companion/db';
-import type { LootEvent, PriceEntry } from '@torchlight-companion/domain';
-import { diffInventorySnapshots, parseExchangeSearchPriceLine, parseInventorySlotLine, parseUELogLine, type InventorySlotState } from '@torchlight-companion/log-parser';
+import { gearByConfigBaseId } from '@torchlight-companion/build-data';
+import type { LootEvent } from '@torchlight-companion/domain';
+import { diffInventorySnapshots, parseExchangeSearchPriceBlock, parseInventorySlotLine, parseUELogLine, type InventorySlotState } from '@torchlight-companion/log-parser';
 import { randomUUID } from 'node:crypto';
 import { EventEmitter } from 'node:events';
 import { existsSync } from 'node:fs';
@@ -22,37 +23,60 @@ function slotKey(state: Pick<InventorySlotState, 'pageId' | 'slotId'>): string {
   return `${state.pageId}:${state.slotId}`;
 }
 
+/** Attach the resolved item (name/slot), derived from configBaseId via the
+ * scraped catalog, so drops read as "Acolyte's Crown" not "Item #3802". */
+function enrich(event: LootEvent): LootEvent {
+  const item = gearByConfigBaseId(event.configBaseId);
+  return item ? { ...event, itemName: item.name, itemSlot: item.slot } : event;
+}
+
+// A price check spans multiple raw log lines (an indented socket-message tree);
+// accumulate them between the XchgSearchPrice start marker and the end marker.
+let priceBlock: string[] | null = null;
+
 function handleLogLine(rawLine: string): void {
-  const parsed = parseUELogLine(rawLine);
-  if (!parsed) return;
-
-  const slotUpdate = parseInventorySlotLine(parsed.message);
-  if (slotUpdate) {
-    const key = slotKey(slotUpdate);
-    const previous = knownSlotState.get(key);
-    const [delta] = diffInventorySnapshots(previous ? [previous] : [], [slotUpdate]);
-    knownSlotState.set(key, slotUpdate);
-
-    if (delta && delta.quantityDelta > 0) {
-      const activeRun = repository.getActiveMapRun();
-      const price = repository.latestPriceForItem(delta.configBaseId);
-      const event: LootEvent = {
-        id: `evt_${randomUUID()}`, configBaseId: delta.configBaseId, quantity: delta.quantityDelta,
-        pageId: delta.pageId, slotId: delta.slotId,
-        ...(activeRun ? { mapRunId: activeRun.id } : {}),
-        ...(price !== undefined ? { estimatedValue: price * delta.quantityDelta } : {}),
-        pickedUpAt: now()
-      };
-      repository.upsertLootEvent(event);
-      lootEvents.emit('event', event);
+  if (priceBlock) {
+    priceBlock.push(rawLine);
+    if (/(?:Recv|Send)Message End/.test(rawLine)) {
+      const price = parseExchangeSearchPriceBlock(priceBlock.join('\n'));
+      priceBlock = null;
+      if (price) {
+        console.log(
+          `[price-check] item ${price.itemGoldId}: ` +
+            (price.prices.length ? price.prices.join('/') : 'no listings') +
+            ` (currencies ${price.currencies.join(',')})`
+        );
+      }
     }
     return;
   }
+  if (/(?:Recv|Send)Message STT----XchgSearchPrice/.test(rawLine)) {
+    priceBlock = [rawLine];
+    return;
+  }
 
-  const priceUpdate = parseExchangeSearchPriceLine(parsed.message);
-  if (priceUpdate) {
-    const entry: PriceEntry = { id: `price_${randomUUID()}`, configBaseId: priceUpdate.configBaseId, price: priceUpdate.price, observedAt: now() };
-    repository.upsertPriceEntry(entry);
+  const parsed = parseUELogLine(rawLine);
+  if (!parsed) return;
+  const slotUpdate = parseInventorySlotLine(parsed.message);
+  if (!slotUpdate) return;
+
+  const key = slotKey(slotUpdate);
+  const previous = knownSlotState.get(key);
+  const [delta] = diffInventorySnapshots(previous ? [previous] : [], [slotUpdate]);
+  knownSlotState.set(key, slotUpdate);
+
+  if (delta && delta.quantityDelta > 0) {
+    const activeRun = repository.getActiveMapRun();
+    const price = repository.latestPriceForItem(delta.configBaseId);
+    const event: LootEvent = {
+      id: `evt_${randomUUID()}`, configBaseId: delta.configBaseId, quantity: delta.quantityDelta,
+      pageId: delta.pageId, slotId: delta.slotId,
+      ...(activeRun ? { mapRunId: activeRun.id } : {}),
+      ...(price !== undefined ? { estimatedValue: price * delta.quantityDelta } : {}),
+      pickedUpAt: now()
+    };
+    repository.upsertLootEvent(event);
+    lootEvents.emit('event', enrich(event));
   }
 }
 
@@ -88,7 +112,7 @@ const server = createServer((req, res) => {
     if (req.method === 'GET' && url.pathname === '/api/v1/loot/recent') {
       const since = url.searchParams.get('since') ?? undefined;
       const snapshot = repository.getLootFeedSnapshot();
-      const recentEvents = since ? repository.listRecentLootEvents(since) : snapshot.recentEvents;
+      const recentEvents = (since ? repository.listRecentLootEvents(since) : snapshot.recentEvents).map(enrich);
       return send(res, 200, { data: { ...snapshot, recentEvents } });
     }
 

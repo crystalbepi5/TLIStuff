@@ -70,6 +70,24 @@ test('appending a real inventory pickup line to the watched log file produces a 
   assert.equal(found.slotId, 1);
 });
 
+test('a real gear drop (BagMgr line) is resolved to a real item name via the catalog', async () => {
+  // Real format + a ConfigBaseId that exists in the scraped gear catalog (== tlidbId).
+  appendFileSync(
+    logPath,
+    '[2026.07.13-01.19.25:108][868]TLLua: Display: [Game] BagMgr@:Modfy BagItem PageId = 100 SlotId = 55 ConfigBaseId = 3802 Num = 1\n'
+  );
+  const deadline = Date.now() + 3000;
+  let found;
+  while (Date.now() < deadline && !found) {
+    const body = await fetch(`${baseUrl}/loot/recent`).then((r) => r.json());
+    found = body.data.recentEvents.find((e) => e.configBaseId === 3802);
+    if (!found) await new Promise((resolve) => setTimeout(resolve, 50));
+  }
+  assert.ok(found, 'expected a loot event for configBaseId 3802');
+  assert.ok(found.itemName && !found.itemName.startsWith('Item #'), `expected a real item name, got ${found.itemName}`);
+  assert.ok(found.itemSlot, 'expected a resolved item slot');
+});
+
 test('GET /loot/events resolves immediately (headers must be flushed, not held until the first write)', async () => {
   const t0 = Date.now();
   const controller = new AbortController();

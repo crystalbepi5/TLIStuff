@@ -61,7 +61,8 @@ export function App() {
           {recentEvents.map((event) => (
             <li key={event.id} className="loot-toast">
               <span className="loot-quantity">×{event.quantity}</span>
-              <span className="loot-name">Item #{event.configBaseId}</span>
+              <span className="loot-name">{event.itemName ?? `Item #${event.configBaseId}`}</span>
+              {event.itemSlot && <span className="loot-slot">{event.itemSlot}</span>}
               {event.estimatedValue !== undefined && <span className="loot-value">{event.estimatedValue.toFixed(1)}</span>}
             </li>
           ))}
