@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Flame_Jet - Torchlight: Infinite Wiki</title>
+    <meta name="color-scheme" content="dark">
+    <link href="/favicon.ico" rel="shortcut icon" >
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css" integrity="sha512-Z/def5z5u2aR89OuzYcxmDJ0Bnd5V1cKqBEbvLOiUNWdg9PQeXVvXLI90SE4QOHGlfLqUnDNVAYyZi8UwUTmWQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.16/sweetalert2.min.css" integrity="sha512-NvuRGlPf6cHpxQqBGnPe7fPoACpyrjhlSNeXVUY7BZAj1nNhuNpRBq3osC4yr2vswUEuHq2HtCsY2vfLNCndYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modal-video@2.4.6/css/modal-video.min.css" integrity="sha256-nd8IBqNn9uqwZKfZcLIXQcNxk5TjqrxiLx7PzN5PFW0=" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/stdtheme.css?1783411650"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js" integrity="sha512-ToL6UYWePxjhDQKNioSi4AyJ5KkRxY+F1+Fi7Jgh0Hp5Kk2/s8FD7zusJDdonfe5B00Qw+B8taXxF6CFLnqNCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js" integrity="sha512-lteuRD+aUENrZPTXWFRPTBcDDxIGWe5uu0apPEn+3ZKYDwDaEErIK9rvR0QzUGmUQ55KFE2RqGTVoZsKctGMVw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@popperjs/core@2" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/tippy.js@6" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.6.16/sweetalert2.all.min.js" integrity="sha512-4tvE14sHIcdIHl/dUdMHp733PI6MpYA7BDnDfndQmx7aIovEkW+LfkonVO9+NPWP1jYzmrqXJMIT2tECv1TsEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--<script src="https://unpkg.com/mustache@latest" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/modal-video@2.4.6/js/modal-video.min.js" integrity="sha256-VqINwNxkS4VEDMq5O52YTckX+Mx84X6bafO8NxF21Xw=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.3.1/tinymce.min.js" integrity="sha512-eV68QXP3t5Jbsf18jfqT8xclEJSGvSK5uClUuqayUbF5IRK8e2/VSXIFHzEoBnNcvLBkHngnnd3CY7AFpUhF7w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/header.js?1783411650"></script>
+    <script src="/js/footer.js?1783411650"></script>
+
+<meta property="og:title" content="Flame Jet" />
+
+
+<script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+<script data-cfasync="false" async src="https://s.nitropay.com/ads-1573.js"></script>
+
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6KT6L9KX8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-P6KT6L9KX8');
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="/en/" data-i18n="TLIDB">TLIDB</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a data-i18n="HeroRanking|name|1" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Hero
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" data-i18n="HeroRanking|name|1" href="/en/Hero">Hero</a></li>
+                <li><a class="dropdown-item" data-i18n="handbook|name|30010" href="/en/Talent">Talent</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav-item dropdown">
+              <a data-i18n="function|name|115" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Stash
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" data-i18n="function|name|115" href="/en/Inventory">Stash</a></li>
+                <li><a class="dropdown-item" data-i18n="AuctionHouse_rough_search|description|1" href="/en/Legendary_Gear">Legendary Gear</a></li>
+                <li><a class="dropdown-item" data-i18n="item_type_list|name|100101" href="/en/Ethereal_Prism"></a></li>
+                <!--<li><a class="dropdown-item" data-i18n="TextTable_GameFunc|value|Func_Synthetic_Synthetic" href="/en/Recipe">Recipe</a></li>-->
+                <li><a class="dropdown-item" data-i18n="function|name|130" href="/en/Pactspirit">Pactspirit</a></li>
+                <!--<li><a class="dropdown-item" data-i18n="function|name|116" href="/en/Black_Market">Black Market</a></li>-->
+                <li><a class="dropdown-item" href="/en/Drop_Source" data-i18n="TextTable_GameFunc|value|Func_Tips_DropSource">Drop Source</a></li>
+                <li><a class="dropdown-item" href="/en/Destiny" data-i18n="manual_ruledes_filter|des|200503">Destiny</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav-item dropdown">
+              <a data-i18n="function|name|100" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Skill
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" data-i18n="TextTable_GameFunc|value|Func_SkillBag_SkillType1" href="/en/Active_Skill">Active Skill</a></li>
+                <li><a class="dropdown-item" data-i18n="TextTable_GameFunc|value|Func_SkillBag_SkillType2" href="/en/Support_Skill">Support Skill</a></li>
+                <li><a class="dropdown-item" data-i18n="TextTable_GameFunc|value|Func_SkillBag_SkillType3" href="/en/Passive_Skill">Passive Skill</a></li>
+                <!--<li><a class="dropdown-item" data-i18n="TextTable_GameFunc|value|Func_SkillBag_SkillType4" href="/en/Triggered_Skill">Triggered Skill</a></li>-->
+                <li><a class="dropdown-item" data-i18n="TextTable_GameFunc|value|Func_SkillBag_SkillType5" href="/en/Activation_Medium_Skill">Activation Medium Skill</a></li>
+                <li><a class="dropdown-item" data-i18n="item_type_list|name|50605" href="/en/Magnificent_Support_Skill">Magnificent Support Skill</a></li>
+                <li><a class="dropdown-item" data-i18n="item_type_list|name|50606" href="/en/Noble_Support_Skill">Noble Support Skill</a></li>
+                <li><a class="dropdown-item" data-i18n="item_type_list|name|50607" href="/en/Modularization_Skill">Modularization Skill</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav-item dropdown">
+              <a data-i18n="function|name|128" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Craft
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" data-i18n="function|name|128" href="/en/Craft">Craft</a></li>
+                <!--<li><a class="dropdown-item" data-i18n="function|name|131" href="/en/Enchant">Enchant</a></li>-->
+                <li><a class="dropdown-item" data-i18n="function|name|133" href="/en/Corrosion">Corrosion</a></li>
+                <li><a class="dropdown-item" data-i18n="function|name|901" href="/en/Gear_Empowerment">Gear Empowerment</a></li>
+                <li><a class="dropdown-item" data-i18n="manual_rule|name|60000111" href="/en/Dream_Talking">Dream Talking</a></li>
+                <li><a class="dropdown-item" data-i18n="system_help|name|38" href="/en/Blending_Rituals"></a></li>
+                <li><a class="dropdown-item" data-i18n="system_help|name|40" href="/en/TOWER_Sequence"></a></li>
+                <li><a class="dropdown-item" data-i18n="function|name|1501" href="/en/Graft"></a></li>
+                <li><a class="dropdown-item" data-i18n="function|name|518" href="/en/Memory_Revival"></a></li>
+              </ul>
+            </li>
+    
+            <li class="nav-item dropdown">
+              <a data-i18n="function|name|125" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Merits
+              </a>
+              <ul class="dropdown-menu">
+                <!--
+                <li><a class="dropdown-item" data-i18n="TextTable_GameFunc|value|Func_Growth_Achievement_Title" href="/en/Path_of_Achievements">Path of Achievements</a></li>
+                -->
+                <li><a class="dropdown-item" data-i18n="TextTable_GameFunc|value|Func_Growth_GrowPath_Title" href="/en/Path_of_Progression">Path of Progression</a></li>
+                <!--<li><a class="dropdown-item" data-i18n="season|name1|101" href="/en/Dark_Surge_Season">Dark Surge Season</a></li>-->
+                <!--<li><a class="dropdown-item" data-i18n="TextTable_GameFunc|value|Func_SeasonBook_Title" href="/en/Season_Pass">Season Pass</a></li>-->
+                <!--
+                <li><a class="dropdown-item" data-i18n="function|name|139" href="/en/Event">Event</a></li>
+                -->
+                <li><a class="dropdown-item" data-i18n="function|name|122" href="/en/Help">Help</a></li>
+                <li><a class="dropdown-item" data-i18n="function|name|124" href="/en/Codex">Codex</a></li>
+                <li><a class="dropdown-item" data-i18n="TextTable_GameFunc|value|Func_Common_Mind" href="/en/Tip">Tip</a></li>
+                <li><a class="dropdown-item" href="/en/Hyperlink">Hyperlink</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav-item dropdown">
+              <a data-i18n="system_help|name|8" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Netherrealm
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" data-i18n="system_help|name|8" href="/en/Netherrealm">Netherrealm</a></li>
+                <!--<li><a class="dropdown-item" data-i18n="TextTable_GameFunc|value|Func_MysteryCard_PlayerDeck" href="/en/Trait_Decks">Trait Decks</a></li>-->
+                <li><a class="dropdown-item" data-i18n="TextTable_GameFunc|value|Func_MysteryCard_AdditionDeck" href="/en/Confusion_Card_Library">Confusion Card Library</a></li>
+                <li><a class="dropdown-item" data-i18n="function|name|171" href="/en/Void_Chart">Void Chart</a></li>
+                <li><a class="dropdown-item" data-i18n="item_type_list|name|51001" href="/en/Compass">Compass</a></li>
+                <li><a class="dropdown-item" data-i18n="TextTable_GameFunc|value|Func_FarmReference_MysticOrb" href="/en/Probe">Probe</a></li>
+                <li><a class="dropdown-item" data-i18n="item_type_list|name|51002" href="/en/Season_Compass">Season Compass</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" data-i18n="function|name|137" href="/en/Path_of_the_Brave">Path of the Brave</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav-item dropdown">
+              <a data-i18n="function|name|110" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Shop
+              </a>
+              <ul class="dropdown-menu">
+    <!--
+                <li><a class="dropdown-item" data-i18n="function|name|110" href="/en/Shop">Shop</a></li>
+    -->
+                <li><a class="dropdown-item" data-i18n="TextTable_GameFunc|value|Func_Fashion_Type1" href="/en/Outfit">Outfit</a></li>
+                <li><a class="dropdown-item" data-i18n="TextTable_GameFunc|value|Func_Pack_Currency_Tab" href="/en/Commodity">Commodity</a></li>
+                <li><a class="dropdown-item" data-i18n="function|name|132" href="/en/Boon">Boon</a></li>
+              </ul>
+            </li>
+    
+    <!--
+            <li class="nav-item">
+              <a class="nav-link" data-i18n="Guide" href="/en/guides?season=The%20Frozen%20Canvas%20Season">Guide</a>
+            </li>
+    -->
+    
+          </ul>
+    
+          <!--
+          <a class="nav-link2" style="padding-right: 10px" href="https://lihi1.com/cAO3Z" target="_blank">
+            <img style="height: 24px" 
+                src="https://cdn.tlidb.com/image/logo/torchlight-48.webp"
+            />
+          </a>
+    
+          <a class="nav-link2" style="padding-right: 10px"
+            href="https://lihi1.com/l1NmL"
+            target="_blank">
+            <img style="height: 24px" src="https://cdn.tlidb.com/image/logo/facebook-48.webp"/>
+          </a>
+    
+          <a class="nav-link2" style="padding-right: 10px"
+            href="https://lihi1.com/neCTK"
+            target="_blank">
+            <img style="height: 24px" src="https://cdn.tlidb.com/image/logo/youtube-48.webp"/>
+          </a>
+    
+          <a class="nav-link2" style="padding-right: 10px" href="https://lihi1.com/owKrQ" target="_blank">
+            <img style="height: 24px" src="https://cdn.tlidb.com/image/logo/discord-48.webp"/>
+          </a>
+          -->
+    
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-language fa-lg"></i></a>
+              <ul class="dropdown-menu language-menu">
+                <li><a class='dropdown-item' href='/en/'>EN English</a></li>
+                <li><a class='dropdown-item' href='/tw/'>TW 繁體中文</a></li>
+                <li><a class='dropdown-item' href='/cn/'>CN 简体中文</a></li>
+                <li><a class='dropdown-item' href='/ko/'>KO 한국어</a></li>
+                <li><a class='dropdown-item' href='/ja/'>JA Japanese</a></li>
+                <li><a class='dropdown-item' href='/ru/'>RU Русский</a></li>
+                <!--
+                <li><a class='dropdown-item' href='/de/'>DE Deutsch</a></li>
+                <li><a class='dropdown-item' href='/es/'>ES Spanish</a></li>
+                <li><a class='dropdown-item' href='/fr/'>FR Français</a></li>
+                <li><a class='dropdown-item' href='/id/'>ID bahasa Indonesia</a></li>
+                <li><a class='dropdown-item' href='/pt/'>PT Português</a></li>
+                <li><a class='dropdown-item' href='/th/'>TH ภาษาไทย</a></li>
+                <li><a class='dropdown-item' href='/vi/'>VI Tiếng Việt</a></li>
+                -->
+              </ul>
+            </li>
+          </ul>
+    
+          <form class="d-flex" role="search" action="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="navautosearch" name="q">
+          </form>
+    
+        </div>
+      </div>
+    </nav>
+
+    <script> sidebar160("leftside_banner", "left"); </script>
+    <script> sidebar160("rightside_banner", "right"); </script>
+
+    <div class="page">
+    <div class="page-content container" role="main">
+    <div class="text-center">
+    <a href="Vorax_Season"><img src="https://cdn.tlidb.com/UI/Textures/Common/Icon/Item/UI_S13_LegendStitching_03.webp" class="size48 white-shadow"/></a>
+    <a href="Overrealm_Season"><img src="https://cdn.tlidb.com/UI/Textures/Common/Icon/Item/UI_S12_LengJing_White01.webp" class="size48 white-shadow"/></a>
+    <a href="Outlaw_Season"><img src="https://cdn.tlidb.com/UI/Textures/Common/Icon/GamePlay/UI_Item_S11ChipMatching0_Icon.webp" class="size48 white-shadow"/></a>
+    <a href="Sandlord_Season"><img src="https://cdn.tlidb.com/UI/Textures/Common/Icon/Coin/128/UI_Money_S10EquipEnchantMaterial_10_128.webp" class="size48 white-shadow"/></a>
+    <a href="Arcana_Season"><img src="https://cdn.tlidb.com/UI/Textures/Common/Icon/Item/128/UI_S9Pet_FateStar_128.webp" class="size48 white-shadow"/></a>
+    <a href="The_Frozen_Canvas_Season"><img src="https://cdn.tlidb.com/UI/Textures/Common/Icon/GamePlay/UI_Item_S8Gameplay_Snow2_128.webp" class="size48 white-shadow"/></a>
+    <a href="Clockwork_Ballet_Season"><img src="https://cdn.tlidb.com/UI/Textures/Common/Icon/Item/128/UI_MysticTreeRespecPoint_Icon_128.webp" class="size48 white-shadow"/></a>
+    <a href="Whispering_Mist_Season"><img src="https://cdn.tlidb.com/UI/Textures/Common/Icon/GamePlay/UI_S6Gameplay_Tile_bench.webp" class="size48 white-shadow"/></a>
+    <a href="Nightmare_Season"><img src="https://cdn.tlidb.com/UI/Textures/Common/Icon/GamePlay/UI_Item_S5Gameplay_DreamTreasure_Almighty_C_128.webp" class="size48 white-shadow"/></a>
+    <a href="Aeterna_Season"><img src="https://cdn.tlidb.com/UI/Textures/Common/Icon/Silhouette/Talent/S4/UI_S4Gameplay_talent01_Icon_128.webp" class="size48 white-shadow"/></a>
+    <a href="Cube_Season"><img src="https://cdn.tlidb.com/UI/Textures/Common/Icon/Item/128/UI_S3Gameplay_Beads_Icon_128.webp" class="size48 white-shadow"/></a>
+    <a href="Blacksail_Season"><img src="https://cdn.tlidb.com/UI/Textures/Common/Icon/Item/128/UI_S2BossTicket3_Icon_128.webp" class="size48 white-shadow"/></a>
+    <a href="Dark_Surge_Season"><img src="https://cdn.tlidb.com/UI/Textures/Common/Icon/Item/128/UI_Item_yimozhihe_Icon_128.webp" class="size48 white-shadow"/></a>
+    </div>
+    <div class="text-center mb-2"><a href="https://torchlight.xd.com" target="_blank"><img src="https://cdn.tlidb.com/image/torchlight/p3_20260609_us.webp" style="max-width: 100%;"/></a></div>
+    <ul class="nav nav-tabs d-flex flex-wrap" role="tablist"><li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="tab" role="tab" aria-selected="true" data-bs-target="#FlameJet">Flame Jet</button></li><li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false" data-bs-target="#BigElvenFountain">Big Elven Fountain</button></li><li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false" data-bs-target="#FlameJetcache-2">Flame Jet(cache - 2)</button></li></ul><div class="tab-content"><div id="FlameJet" class="tab-pane fade show active"><script>
+if (document.title.indexOf("Flame Jet") == -1) {
+    document.title = "Flame Jet" + " - " + document.title;
+}
+</script>
+<h1>Flame Jet</h1>
+
+<div class="row row-cols-1 row-cols-lg-3 g-2">
+
+<div class="col">
+<div class="card ui_item popupItem">
+    <div class="item_ver">SS12Season</div>
+    <div class="text-center icon">
+        <img src="https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/Icon_Skill_FlameBlast_128.webp" alt="IconSkillFlameBlast128" class="size128" loading="lazy" />
+        <div class="level">20</div>
+    </div>
+    <div class="text-center px-3 banner bannerskill">
+      <h5 class="card-title" style="margin-top: 0.5rem">Flame Jet</h5>
+      <div class="d-flex flex-wrap justify-content-center">
+        <span class="border p-1 mb-1 tag tlborder">Spell</span>
+        <span class="border p-1 mb-1 tag tlborder">Fire</span>
+        <span class="border p-1 mb-1 tag tlborder">Area</span>
+        <span class="border p-1 mb-1 tag tlborder">Persistent</span>
+        <span class="border p-1 mb-1 tag tlborder">Projectile</span>
+        <span class="border p-1 mb-1 tag tlborder">Parabolic</span>
+        <span class="border p-1 mb-1 tag tlborder">Terra</span>
+      </div>
+    </div>
+
+    <div class="px-3 pt-1 pb-3">
+
+
+        <div>
+          <div class="d-flex justify-content-center">
+            <div>Main Stat:</div>
+            <div class="ps-2">Intelligence</div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div>Mana Cost</div>
+            <div class="ps-2">8</div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div>Cast Speed</div>
+            <div class="ps-2">1 s</div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div>Cooldown</div>
+            <div class="ps-2">0.5 s</div>
+          </div>
+        </div>
+        <div data-block="attrs2"></div>
+
+
+
+
+        <div class="text-center"><div class="detailsNote" data-i18n="TextTable_GameFunc|value|Func_SkillTips_SimpleMode">Simple</div></div>
+        <div class="explicitMod">Casts the skill and conjures a Flame Terra at the target location, dealing <span class="text-mod">611</span> Persistent Fire Damage per second.<br/>The Flame Terra erupts at regular intervals, dealing <span class="text-mod">231-428</span> Spell Fire Damage to enemies in it.<br/>When the Flame Terra erupts, it locks onto enemies within a certain area and fires one Fire Bomb at them, dealing <span class="text-mod">231-428</span> Spell Fire Damage on hit.<br/>When the skill consumes <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charges</e>, the number of Fire Bombs increases.</div>
+
+        <div class="text-center"><div class="detailsNote" data-i18n="TextTable_GameFunc|value|Func_SkillTips_DetailMode">Details</div></div>
+        <div class="explicitMod">Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.</div>
+        <div class="explicitMod">Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.</div>
+        <div class="explicitMod">Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.</div>
+        <div class="explicitMod">Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.</div>
+        <div class="explicitMod">This skill's max base Terra quantity is <span class="text-mod">1</span>.</div>
+
+        <div class="explicitMod">Projectiles from this skill cannot <e id=106 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Split&lt;/div&gt;&lt;div&gt;Upon hitting a target, a Parabolic Projectile Splits into multiple secondary Projectiles&lt;/div&gt;&lt;/div&gt;">Split</e><br/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)</div>
+
+
+
+
+
+
+    </div>
+</div>
+</div>
+
+<div class="col">
+<div class="card ui_item popupItem previousItem">
+    <div class="item_ver">SS11Season</div>
+    <div class="text-center icon">
+        <img src="https://cdn.tlidb.com/UI/Textures/Common/Icon/Skill/CommonSkill/128/Icon_Skill_FlameBlast_128.webp" alt="IconSkillFlameBlast128" class="size128" loading="lazy" />
+        <div class="level">20</div>
+    </div>
+    <div class="text-center px-3 banner bannerskill">
+      <h5 class="card-title" style="margin-top: 0.5rem">Flame Jet</h5>
+      <div class="d-flex flex-wrap justify-content-center">
+        <span class="border p-1 mb-1 tag tlborder">Spell</span>
+        <span class="border p-1 mb-1 tag tlborder">Fire</span>
+        <span class="border p-1 mb-1 tag tlborder">Area</span>
+        <span class="border p-1 mb-1 tag tlborder">Persistent</span>
+        <span class="border p-1 mb-1 tag tlborder">Projectile</span>
+        <span class="border p-1 mb-1 tag tlborder">Parabolic</span>
+        <span class="border p-1 mb-1 tag tlborder">Terra</span>
+      </div>
+    </div>
+
+    <div class="px-3 pt-1 pb-3">
+
+
+        <div>
+          <div class="d-flex justify-content-center">
+            <div>Main Stat:</div>
+            <div class="ps-2">Intelligence</div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div>Mana Cost</div>
+            <div class="ps-2">8</div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div>Cast Speed</div>
+            <div class="ps-2">1 s</div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div>Cooldown</div>
+            <div class="ps-2">0.5 s</div>
+          </div>
+        </div>
+        <div data-block="attrs2"></div>
+
+
+
+
+        <div class="text-center"><div class="detailsNote" data-i18n="TextTable_GameFunc|value|Func_SkillTips_SimpleMode">Simple</div></div>
+        <div class="explicitMod">Casts the skill and conjures a Flame Terra at the target location, dealing <span class="text-mod">611</span> Persistent Fire Damage per second.<br/>The Flame Terra erupts at regular intervals, dealing <span class="text-mod">231-428</span> Spell Fire Damage to enemies in it.<br/>When the Flame Terra erupts, it locks onto enemies within a certain area and fires one Fire Bomb at them, dealing <span class="text-mod">231-428</span> Spell Fire Damage on hit.<br/>When the skill consumes <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charges</e>, the number of Fire Bombs increases.</div>
+
+        <div class="text-center"><div class="detailsNote" data-i18n="TextTable_GameFunc|value|Func_SkillTips_DetailMode">Details</div></div>
+        <div class="explicitMod">Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.</div>
+        <div class="explicitMod">Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.</div>
+        <div class="explicitMod">Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.</div>
+        <div class="explicitMod">Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.</div>
+        <div class="explicitMod">This skill's max base Terra quantity is <span class="text-mod">1</span>.</div>
+
+        <div class="explicitMod">Projectiles from this skill cannot <e id=106 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Split&lt;/div&gt;&lt;div&gt;Upon hitting a target, a Parabolic Projectile Splits into multiple secondary Projectiles&lt;/div&gt;&lt;/div&gt;">Split</e><br/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)</div>
+
+
+
+
+
+
+    </div>
+</div>
+</div>
+
+
+<div class="col">
+<div class="card ui_item">
+    <div class="card-header">Alts</div>
+    <div class="card-body">
+    <li><a data-hover="/cache/en/Torchlight_ItemBase_hover/c12c04c35c465c1c3773eb90d9f1a5a4fc03ba05d68f403ab04fb27256b2cea9" href="Flame_Jet">Flame Jet</a></li>
+    <li><a data-hover="/cache/en/Torchlight_ItemBase_hover/ab75dae20896549d53608f1ff652a89473002cd75b49861a0bc523a1c49d1413" href="Flame_Jet%3A_Burst_%28Magnificent%29">Flame Jet: Burst (Magnificent)</a></li>
+    <li><a data-hover="/cache/en/Torchlight_ItemBase_hover/8c16e38b324288a829485938f381e15fc9c224c48802a9b3d18ec372d0c8afaa" href="Flame_Jet%3A_Scorched_Earth_%28Magnificent%29">Flame Jet: Scorched Earth (Magnificent)</a></li>
+    <li><a data-hover="/cache/en/Torchlight_ItemBase_hover/df6cb3bfceedba032c3494fcb38ae1bee783b888459aa1146077637038cbc654" href="Flame_Jet%3A_Offshoot_%28Noble%29">Flame Jet: Offshoot (Noble)</a></li>
+    <li><a data-hover="/cache/en/Torchlight_ItemBase_hover/4a39518a09985cc73191ddc75f5a6328f5e2dcafaf7783af9168885f2b582a49" href="Flame_Jet%3A_Furnace_%28Noble%29">Flame Jet: Furnace (Noble)</a></li>
+    </div>
+</div>
+</div>
+
+<div class="col">
+<div class="card ui_item">
+    <div class="card-header"><span data-i18n="TextTable_GameFunc|value|Func_Skill_SkillStore">Skill Shop</span> <span data-i18n="TextTable_GameFunc|value|Func_Common_CanBeUnlock">Unlock</span> <span data-i18n="TextTable_GameFunc|value|Func_Common_LV">Level</span></div>
+    <div class="card-body">
+      <button class="btn btn-sm mb-1 border"><a href="Anger">Anger</a>: 50</button>
+      <button class="btn btn-sm mb-1 border"><a href="Seething_Silhouette">Seething Silhouette</a>: 50</button>
+      <button class="btn btn-sm mb-1 border"><a href="Ranger_of_Glory">Ranger of Glory</a>: 50</button>
+      <button class="btn btn-sm mb-1 border"><a href="Lethal_Flash">Lethal Flash</a>: 50</button>
+      <button class="btn btn-sm mb-1 border"><a href="Zealot_of_War">Zealot of War</a>: 50</button>
+      <button class="btn btn-sm mb-1 border"><a href="Wind_Stalker">Wind Stalker</a>: 50</button>
+      <button class="btn btn-sm mb-1 border"><a href="Lightning_Shadow">Lightning Shadow</a>: 50</button>
+      <button class="btn btn-sm mb-1 border"><a href="Blast_Nova">Blast Nova</a>: 50</button>
+      <button class="btn btn-sm mb-1 border"><a href="Flame_of_Pleasure">Flame of Pleasure</a>: 50</button>
+      <button class="btn btn-sm mb-1 border"><a href="Frostbitten_Heart">Frostbitten Heart</a>: 50</button>
+      <button class="btn btn-sm mb-1 border"><a href="Ice-Fire_Fusion">Ice-Fire Fusion</a>: 7</button>
+      <button class="btn btn-sm mb-1 border"><a href="Wisdom_of_The_Gods">Wisdom of The Gods</a>: 7</button>
+      <button class="btn btn-sm mb-1 border"><a href="Incarnation_of_the_Gods">Incarnation of the Gods</a>: 50</button>
+      <button class="btn btn-sm mb-1 border"><a href="Blasphemer">Blasphemer</a>: 50</button>
+      <button class="btn btn-sm mb-1 border"><a href="Spacetime_Illusion">Spacetime Illusion</a>: 7</button>
+      <button class="btn btn-sm mb-1 border"><a href="Spacetime_Elapse">Spacetime Elapse</a>: 1</button>
+      <button class="btn btn-sm mb-1 border"><a href="Order_Calling">Order Calling</a>: 50</button>
+      <button class="btn btn-sm mb-1 border"><a href="Charge_Calling">Charge Calling</a>: 50</button>
+      <button class="btn btn-sm mb-1 border"><a href="High_Court_Chariot">High Court Chariot</a>: 50</button>
+      <button class="btn btn-sm mb-1 border"><a href="Growing_Breeze">Growing Breeze</a>: 50</button>
+      <button class="btn btn-sm mb-1 border"><a href="Sing_with_the_Tide">Sing with the Tide</a>: 7</button>
+      <button class="btn btn-sm mb-1 border"><a href="Vigilant_Breeze">Vigilant Breeze</a>: 50</button>
+      <button class="btn btn-sm mb-1 border"><a href="Unsullied_Blade">Unsullied Blade</a>: 50</button>
+      <button class="btn btn-sm mb-1 border"><a href="Creative_Genius">Creative Genius</a>: 7</button>
+      <button class="btn btn-sm mb-1 border"><a href="Vendetta%27s_Sting">Vendetta's Sting</a>: 50</button>
+      <button class="btn btn-sm mb-1 border"><a href="Licorice_Note">Licorice Note</a>: 50</button>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="col">
+<div class="card ui_item">
+    <div class="card-header">Info</div>
+    <div class="card-body">
+        <div>id: 7070</div>
+    </div>
+</div>
+</div>
+
+</div>
+
+<div class="m-2">
+    <button id="hideSmall" class="btn btn-primary">Show Description</button>
+</div>
+<script>
+$(document).ready(function () {
+  if ($('small.description').length == 0) {
+    $('#hideSmall').hide();
+  }
+  $('#hideSmall').click(function() {
+    $(this).text(function(i, v) { return v == 'Show Description' ? 'Hide Description' : 'Show Description'; });
+    $('small.description').toggle();
+  });
+});
+</script>
+
+<div   class='card mb-2 '>
+    <h5 class="card-header">Progression /40 </h5>
+    <div  class='collapse show'>
+    
+    
+    <table class='table table-hover table-striped DataTable '><thead><tr>
+<th  >level</th>
+<th  >Descript</th></tr></thead><tbody>
+<tr><td>1</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">6</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">2-3</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">2-3</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>2</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">7</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">2-3</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">2-3</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>3</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">9</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">2-5</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">2-5</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>4</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">13</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">4-7</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">4-7</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>5</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">16</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">5-9</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">5-9</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>6</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">20</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">6-11</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">6-11</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>7</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">24</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">7-13</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">7-13</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>8</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">30</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">9-17</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">9-17</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>9</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">40</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">12-23</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">12-23</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>10</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">49</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">16-29</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">16-29</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>11</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">64</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">21-38</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">21-38</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>12</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">77</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">25-47</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">25-47</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>13</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">95</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">32-59</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">32-59</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>14</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">113</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">38-71</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">38-71</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>15</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">137</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">47-88</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">47-88</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>16</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">196</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">69-128</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">69-128</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>17</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">235</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">84-156</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">84-156</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>18</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">330</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">120-223</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">120-223</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>19</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">503</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">186-346</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">186-346</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>20</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>21</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>22</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>23</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>24</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>25</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>26</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>27</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>28</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>29</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>30</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>31</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>32</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>33</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>34</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>35</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>36</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>37</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>38</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>39</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+<tr><td>40</td><td>Flame Terra:<br/>Flame Terra lasts for <span class="text-mod">3</span>s.<br/>Deals <span class="text-mod">611</span> Persistent Fire Damage every second for <span class="text-mod">2</span>s.<br/>For each 1 <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> consumed, erupts Projectiles one more time in the duration.<hr style="width: 80%" class="mx-auto my-1"/>Fire Terra Eruption:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Fire Bomb:<br/>Deals <span class="text-mod">231-428</span> Spell Fire Damage.<hr style="width: 80%" class="mx-auto my-1"/>Damage Over Time statuses inflicted by the skill can't be spread (excludes Ailments)<br/>The maximum stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> is <span class="text-mod">1</span>.<br/>Gain 1 stack of <e id=151 class="Hyperlink" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="&lt;div class=&quot;text-start&quot;&gt;&lt;div&gt;Terra Charge&lt;/div&gt;&lt;div&gt;Terra Skills gain 1 Terra Charge at regular intervals.&lt;br/&gt;Using a Terra Skill will consume all of its charges, and every consumed charge will enhance the skill&lt;/div&gt;&lt;/div&gt;">Terra Charge</e> per <span class="text-mod">0.5</span> second.<hr style="width: 80%" class="mx-auto my-1"/>This skill's max base Terra quantity is <span class="text-mod">1</span>.</td></tr>
+</tbody></table>
+    
+    </div>
+</div>
+</div id="FlameJet"><div id="BigElvenFountain" class="tab-pane fade"><h1>Big Elven Fountain</h1>
+
+<div class="row row-cols-1 row-cols-lg-3 g-2">
+
+<div class="col">
+<div class="card">
+    <div class="card-header">Big Elven Fountain</div>
+    <div class="card-body">
+        <div>[Skill Effect] Flame Jet<br/>The silent Elven Fountain starts to roar.</div>
+        <div class="text-center"><img src="https://cdn.tlidb.com/UI/Textures/Common/Icon/Fashin/256/UI_Fashion_UnleashFlame_LavaProjectile_01_256.webp" alt="UIFashionUnleashFlameLavaProjectile01256" class="size128" loading="lazy" /></div>
+    </div>
+</div>
+</div>
+
+</div>
+</div id="BigElvenFountain"><div id="FlameJetcache-2" class="tab-pane fade"><h1>Flame Jet</h1>
+
+<div class="row row-cols-1 row-cols-lg-3 g-2">
+    <div class="col">
+        <div class="card">
+            <div class="card-header">Flame Jet</div>
+            <div class="card-body">
+                Conjures a Fire Terra at the target location at regular intervals. Eruptions lock onto enemy units in an area and hurl a Projectile at the targets. The Projectile that falls on the ground forms a small Fire Terra on the spot.
+            </div>
+        </div>
+    </div>
+</div>
+</div id="FlameJetcache-2"></div class="tab-content">
+    </div>
+    </div>
+
+    <footer class="text-center text-lg-left container mt-2">
+      <div class="card p-4">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Sites</h5>
+            <ul class="list-unstyled mb-0">
+              <li> <a target="_blank" href="https://poedb.tw/">poedb.tw</a> </li>
+              <li> <a target="_blank" href="https://tlidb.com/">tlidb.com</a> </li>
+              <!--<li> <a target="_blank" href="https://diablo4.cc/">diablo4.cc</a> </li>-->
+              <li> <a target="_blank" href="https://poe2db.tw/">poe2db.tw</a> </li>
+              <li> <a target="_blank" href="https://paldb.cc/">paldb.cc</a> </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">About Site</h5>
+            <ul class="list-unstyled mb-0">
+              <li><a href="privacy">Privacy</a></li>
+              <li> <a target="_blank" href="https://www.reddit.com/user/chuanhsing">About US</a> </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Community</h5>
+            <ul class="list-unstyled mb-0">
+            </ul>
+          </div>
+
+        </div>
+      </div>
+      <div class="p-3">
+
+      <span data-i18n="Disclaimer">The site is based on beta testing data, not the final official release. This site is fan-made and not affiliated with XD in any way.</span>
+      </div>
+    </footer>
+
+    <a href="#top" id="toTop"><span class="fas fa-arrow-circle-up fa-3x"></span></a>
+    <div id="consent-box" style="display:none">
+      <button onclick="window.__cmp('showModal');">
+        Update cookie preferences
+      </button>
+    </div>
+    
+    <script>
+      if (window["nitroAds"] && window["nitroAds"].loaded) {
+        document.getElementById("consent-box").style.display = window["__tcfapi"]
+          ? ""
+          : "none";
+      } else {
+        document.addEventListener(
+          "nitroAds.loaded",
+          () =>
+            (document.getElementById("consent-box").style.display = window["__tcfapi"]
+              ? ""
+              : "none")
+        );
+      }
+    </script>
+  </body>
+</html>

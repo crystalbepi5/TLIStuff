@@ -3,17 +3,31 @@
     "id": "dance-of-the-deep",
     "name": "Dance of the Deep",
     "season": "SS13",
-    "tags": ["spell", "area", "channelled"],
-    "baseDamage": { "cold": 420, "physical": 60 },
-    "baseRate": 3.0,
+    "tags": [
+      "spell",
+      "area",
+      "channelled"
+    ],
+    "baseDamage": {
+      "cold": 420,
+      "physical": 60
+    },
+    "baseRate": 3,
     "baseCritRate": 6,
     "supportSlots": 5
   },
   {
     "id": "flame-slash",
     "name": "Flame Slash",
-    "tags": ["attack", "melee", "area"],
-    "baseDamage": { "physical": 180, "fire": 120 },
+    "tags": [
+      "attack",
+      "melee",
+      "area"
+    ],
+    "baseDamage": {
+      "physical": 180,
+      "fire": 120
+    },
     "baseRate": 1.4,
     "baseCritRate": 5,
     "supportSlots": 5
@@ -21,10 +35,2808 @@
   {
     "id": "storm-lance",
     "name": "Storm Lance",
-    "tags": ["spell", "projectile"],
-    "baseDamage": { "lightning": 260 },
+    "tags": [
+      "spell",
+      "projectile"
+    ],
+    "baseDamage": {
+      "lightning": 260
+    },
     "baseRate": 2.2,
     "baseCritRate": 5,
     "supportSlots": 5
+  },
+  {
+    "id": "leap-attack",
+    "name": "Leap Attack",
+    "tags": [
+      "attack",
+      "melee",
+      "area"
+    ],
+    "baseDamage": {
+      "physical": 228
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "ice-shot",
+    "name": "Ice Shot",
+    "tags": [
+      "projectile",
+      "attack",
+      "area"
+    ],
+    "baseDamage": {
+      "cold": 313
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "hammer-of-ash",
+    "name": "Hammer of Ash",
+    "tags": [
+      "area",
+      "attack",
+      "projectile",
+      "melee"
+    ],
+    "baseDamage": {
+      "fire": 369
+    },
+    "baseRate": 5,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "chromatic-shot",
+    "name": "Chromatic Shot",
+    "tags": [
+      "spell",
+      "projectile",
+      "area"
+    ],
+    "baseDamage": {
+      "cold": 846
+    },
+    "baseRate": 1.538,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "resurrection-warcry",
+    "name": "Resurrection Warcry",
+    "tags": [
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "whirlwind",
+    "name": "Whirlwind",
+    "tags": [
+      "attack",
+      "melee",
+      "area",
+      "channelled"
+    ],
+    "baseDamage": {
+      "physical": 83
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "focused-slash",
+    "name": "Focused Slash",
+    "tags": [
+      "attack",
+      "melee",
+      "area"
+    ],
+    "baseDamage": {
+      "physical": 154
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "stoneskin",
+    "name": "Stoneskin",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "thundercloud",
+    "name": "Thundercloud",
+    "tags": [
+      "spell",
+      "channelled",
+      "area"
+    ],
+    "baseDamage": {
+      "lightning": 359
+    },
+    "baseRate": 3.003,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "blink",
+    "name": "Blink",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "bombard",
+    "name": "Bombard",
+    "tags": [
+      "attack",
+      "projectile",
+      "area"
+    ],
+    "baseDamage": {
+      "fire": 41
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "shadow-shot",
+    "name": "Shadow Shot",
+    "tags": [
+      "spell",
+      "area",
+      "projectile"
+    ],
+    "baseDamage": {
+      "erosion": 705
+    },
+    "baseRate": 1.538,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "shadow-swamp",
+    "name": "Shadow Swamp",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "erosion": 420
+    },
+    "baseRate": 1.538,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "marked-rain-of-arrows",
+    "name": "Marked Rain of Arrows",
+    "tags": [
+      "attack",
+      "area",
+      "projectile"
+    ],
+    "baseDamage": {
+      "fire": 35
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "bull-s-rage",
+    "name": "Bull's Rage",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "shadow-dash",
+    "name": "Shadow Dash",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "frost-shield",
+    "name": "Frost Shield",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {
+      "cold": 101
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "rocket-jump",
+    "name": "Rocket Jump",
+    "tags": [
+      "attack",
+      "area"
+    ],
+    "baseDamage": {
+      "fire": 221
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "split-firebolt",
+    "name": "Split Firebolt",
+    "tags": [
+      "spell",
+      "projectile",
+      "area"
+    ],
+    "baseDamage": {
+      "fire": 843
+    },
+    "baseRate": 1.538,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "blizzard",
+    "name": "Blizzard",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "cold": 253
+    },
+    "baseRate": 1.111,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "obscure",
+    "name": "Obscure",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "mana-boil",
+    "name": "Mana Boil",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "frost-impact",
+    "name": "Frost Impact",
+    "tags": [
+      "attack",
+      "melee",
+      "area"
+    ],
+    "baseDamage": {
+      "cold": 202
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "path-of-flames",
+    "name": "Path of Flames",
+    "tags": [
+      "spell",
+      "channelled",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 3.003,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "berserking-blade",
+    "name": "Berserking Blade",
+    "tags": [
+      "attack",
+      "melee",
+      "area"
+    ],
+    "baseDamage": {
+      "physical": 210
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "charged-pummel",
+    "name": "Charged Pummel",
+    "tags": [
+      "attack",
+      "melee",
+      "area",
+      "channelled"
+    ],
+    "baseDamage": {
+      "lightning": 438
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "chain-lightning",
+    "name": "Chain Lightning",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {
+      "lightning": 733
+    },
+    "baseRate": 1.538,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "double-thrusts",
+    "name": "Double Thrusts",
+    "tags": [
+      "attack",
+      "melee",
+      "area"
+    ],
+    "baseDamage": {
+      "physical": 186
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "mind-control",
+    "name": "Mind Control",
+    "tags": [
+      "spell",
+      "channelled"
+    ],
+    "baseDamage": {
+      "erosion": 125
+    },
+    "baseRate": 3.003,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "ring-of-ice",
+    "name": "Ring of Ice",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "cold": 765
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "split-shot",
+    "name": "Split Shot",
+    "tags": [
+      "attack",
+      "projectile"
+    ],
+    "baseDamage": {
+      "physical": 347
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "icy-blade",
+    "name": "Icy Blade",
+    "tags": [
+      "attack",
+      "melee",
+      "area"
+    ],
+    "baseDamage": {
+      "cold": 142
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "frost-spike",
+    "name": "Frost Spike",
+    "tags": [
+      "attack",
+      "melee",
+      "projectile",
+      "area"
+    ],
+    "baseDamage": {
+      "cold": 201
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "wilt-spike",
+    "name": "Wilt Spike",
+    "tags": [
+      "attack",
+      "melee",
+      "area"
+    ],
+    "baseDamage": {
+      "erosion": 5
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "lightning-shot",
+    "name": "Lightning Shot",
+    "tags": [
+      "attack",
+      "projectile"
+    ],
+    "baseDamage": {
+      "lightning": 334
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "corrosive-shot",
+    "name": "Corrosive Shot",
+    "tags": [
+      "attack",
+      "area",
+      "projectile"
+    ],
+    "baseDamage": {
+      "erosion": 95
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "burning-shot",
+    "name": "Burning Shot",
+    "tags": [
+      "attack",
+      "area",
+      "projectile"
+    ],
+    "baseDamage": {
+      "fire": 256
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "electrifying-shot",
+    "name": "Electrifying Shot",
+    "tags": [
+      "attack",
+      "projectile"
+    ],
+    "baseDamage": {
+      "lightning": 302
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "corrosive-throw",
+    "name": "Corrosive Throw",
+    "tags": [
+      "attack",
+      "projectile"
+    ],
+    "baseDamage": {
+      "erosion": 383
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "inexhaustible-barrage",
+    "name": "Inexhaustible Barrage",
+    "tags": [
+      "attack",
+      "projectile",
+      "channelled",
+      "area"
+    ],
+    "baseDamage": {
+      "physical": 124
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "rain-of-arrows",
+    "name": "Rain of Arrows",
+    "tags": [
+      "attack",
+      "area",
+      "projectile"
+    ],
+    "baseDamage": {
+      "physical": 134
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "savage-charge",
+    "name": "Savage Charge",
+    "tags": [
+      "attack",
+      "melee",
+      "channelled",
+      "area"
+    ],
+    "baseDamage": {
+      "physical": 57
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "ice-lances",
+    "name": "Ice Lances",
+    "tags": [
+      "spell",
+      "projectile"
+    ],
+    "baseDamage": {
+      "cold": 953
+    },
+    "baseRate": 1.538,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "sparkle",
+    "name": "Sparkle",
+    "tags": [
+      "spell",
+      "projectile",
+      "area"
+    ],
+    "baseDamage": {
+      "lightning": 427
+    },
+    "baseRate": 1.538,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "ring-of-blades",
+    "name": "Ring of Blades",
+    "tags": [
+      "spell",
+      "channelled",
+      "area",
+      "projectile"
+    ],
+    "baseDamage": {
+      "physical": 505
+    },
+    "baseRate": 3.003,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "flame-core",
+    "name": "Flame Core",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "fire": 712
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "lightning-storm",
+    "name": "Lightning Storm",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "lightning": 899
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "flame-jet",
+    "name": "Flame Jet",
+    "tags": [
+      "spell",
+      "area",
+      "projectile"
+    ],
+    "baseDamage": {
+      "fire": 330
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "frost-terra",
+    "name": "Frost Terra",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1.538,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "scorching-beam",
+    "name": "Scorching Beam",
+    "tags": [
+      "spell",
+      "channelled",
+      "area"
+    ],
+    "baseDamage": {
+      "fire": 171
+    },
+    "baseRate": 3.003,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "wilting-beam",
+    "name": "Wilting Beam",
+    "tags": [
+      "spell",
+      "channelled",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 3.003,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "frigid-transmission",
+    "name": "Frigid Transmission",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "cold": 867
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "forced-start",
+    "name": "Forced Start",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "aegis-of-fire",
+    "name": "Aegis of Fire",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {
+      "fire": 73
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "delayed-pain",
+    "name": "Delayed Pain",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "defensive-buffer",
+    "name": "Defensive Buffer",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "brisk-wind",
+    "name": "Brisk Wind",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "burst-of-anger",
+    "name": "Burst of Anger",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "scorching-pulse",
+    "name": "Scorching Pulse",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "fire": 1496
+    },
+    "baseRate": 1.538,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "fixate",
+    "name": "Fixate",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "secret-origin-unleash",
+    "name": "Secret Origin Unleash",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "aim",
+    "name": "Aim",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "swiftness-dew",
+    "name": "Swiftness Dew",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "groundshaker",
+    "name": "Groundshaker",
+    "tags": [
+      "attack",
+      "melee",
+      "area"
+    ],
+    "baseDamage": {
+      "physical": 227
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "focused-shot",
+    "name": "Focused Shot",
+    "tags": [
+      "attack",
+      "projectile"
+    ],
+    "baseDamage": {
+      "physical": 315
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "fire-burst",
+    "name": "Fire Burst",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "fire": 868
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "thunderbolt-overload",
+    "name": "Thunderbolt Overload",
+    "tags": [
+      "spell",
+      "area",
+      "projectile"
+    ],
+    "baseDamage": {
+      "lightning": 166
+    },
+    "baseRate": 1.538,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "fearless-warcry",
+    "name": "Fearless Warcry",
+    "tags": [
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "raging-warcry",
+    "name": "Raging Warcry",
+    "tags": [
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "charging-warcry",
+    "name": "Charging Warcry",
+    "tags": [
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "black-hole",
+    "name": "Black Hole",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "erosion": 249
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "summon-machine-guard",
+    "name": "Summon Machine Guard",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "summon-spider-tank",
+    "name": "Summon Spider Tank",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "timid",
+    "name": "Timid",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "electrocute",
+    "name": "Electrocute",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "vulnerability",
+    "name": "Vulnerability",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "scorch",
+    "name": "Scorch",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "dazzled",
+    "name": "Dazzled",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "entangled-pain",
+    "name": "Entangled Pain",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "biting-cold",
+    "name": "Biting Cold",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "corruption",
+    "name": "Corruption",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "life-tonic",
+    "name": "Life Tonic",
+    "tags": [],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "mana-tonic",
+    "name": "Mana Tonic",
+    "tags": [],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "elemental-shock",
+    "name": "Elemental Shock",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "machine-army",
+    "name": "Machine Army",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "prayer",
+    "name": "Prayer",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "dark-gate",
+    "name": "Dark Gate",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "thunderlight-bond",
+    "name": "Thunderlight Bond",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1.667,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "arcane-circle",
+    "name": "Arcane Circle",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "ice-bond",
+    "name": "Ice Bond",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "cold": 193
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "thirst-dew",
+    "name": "Thirst Dew",
+    "tags": [],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "reform",
+    "name": "Reform",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "centralized-loading",
+    "name": "Centralized Loading",
+    "tags": [
+      "attack"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "blink-arrow",
+    "name": "Blink Arrow",
+    "tags": [
+      "attack",
+      "projectile"
+    ],
+    "baseDamage": {
+      "physical": 248
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "swift-shadow-raid",
+    "name": "Swift Shadow Raid",
+    "tags": [
+      "attack",
+      "area"
+    ],
+    "baseDamage": {
+      "physical": 271
+    },
+    "baseRate": 4,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "safeguard-ring",
+    "name": "Safeguard Ring",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "icebound-beam",
+    "name": "Icebound Beam",
+    "tags": [
+      "spell",
+      "channelled",
+      "projectile"
+    ],
+    "baseDamage": {
+      "cold": 214
+    },
+    "baseRate": 3.003,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "spiral-strike",
+    "name": "Spiral Strike",
+    "tags": [
+      "attack",
+      "area",
+      "melee"
+    ],
+    "baseDamage": {
+      "erosion": 87
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "compound-tonic",
+    "name": "Compound Tonic",
+    "tags": [],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "moon-strike",
+    "name": "Moon Strike",
+    "tags": [
+      "attack",
+      "area",
+      "melee"
+    ],
+    "baseDamage": {
+      "physical": 185
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "howling-gale",
+    "name": "Howling Gale",
+    "tags": [
+      "spell",
+      "channelled",
+      "area"
+    ],
+    "baseDamage": {
+      "physical": 731
+    },
+    "baseRate": 3.003,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "blazing-bullet",
+    "name": "Blazing Bullet",
+    "tags": [
+      "attack",
+      "area",
+      "projectile"
+    ],
+    "baseDamage": {
+      "fire": 121
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "thunder-slash",
+    "name": "Thunder Slash",
+    "tags": [
+      "attack",
+      "area",
+      "melee"
+    ],
+    "baseDamage": {
+      "lightning": 210
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "thunder-spike",
+    "name": "Thunder Spike",
+    "tags": [
+      "attack",
+      "area",
+      "melee"
+    ],
+    "baseDamage": {
+      "lightning": 277
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "haunting-abomination",
+    "name": "Haunting Abomination",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "erosion": 202
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "frost-core",
+    "name": "Frost Core",
+    "tags": [
+      "spell",
+      "projectile"
+    ],
+    "baseDamage": {
+      "cold": 700
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "thunder-core",
+    "name": "Thunder Core",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "lightning": 606
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "ghost-blade-einherjar",
+    "name": "Ghost Blade Einherjar",
+    "tags": [
+      "attack",
+      "projectile",
+      "area"
+    ],
+    "baseDamage": {
+      "erosion": 144
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "arrow-einherjar",
+    "name": "Arrow Einherjar",
+    "tags": [
+      "attack",
+      "projectile",
+      "area"
+    ],
+    "baseDamage": {
+      "physical": 135
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "summon-grim-phantom",
+    "name": "Summon Grim Phantom",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "overpower",
+    "name": "Overpower",
+    "tags": [
+      "attack",
+      "area",
+      "melee"
+    ],
+    "baseDamage": {
+      "physical": 49
+    },
+    "baseRate": 1.429,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "onslaught-punch",
+    "name": "Onslaught Punch",
+    "tags": [
+      "attack",
+      "area",
+      "melee"
+    ],
+    "baseDamage": {
+      "physical": 75
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "aimed-shot",
+    "name": "Aimed Shot",
+    "tags": [
+      "attack",
+      "projectile"
+    ],
+    "baseDamage": {
+      "physical": 61
+    },
+    "baseRate": 1.429,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "blazing-dance",
+    "name": "Blazing Dance",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "fire": 110
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "blazing-spin",
+    "name": "Blazing Spin",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1.667,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "blazing-incineration",
+    "name": "Blazing Incineration",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "molten-rising",
+    "name": "Molten Rising",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "fire": 637
+    },
+    "baseRate": 0.667,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "glacier-ripples",
+    "name": "Glacier Ripples",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "cold": 110
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "frost-release",
+    "name": "Frost Release",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "cold": 72
+    },
+    "baseRate": 1.667,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "permafrost-cast",
+    "name": "Permafrost Cast",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "cold": 300
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "ice-earthshaker",
+    "name": "Ice Earthshaker",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "cold": 2064
+    },
+    "baseRate": 0.667,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "lightning-star",
+    "name": "Lightning Star",
+    "tags": [
+      "attack",
+      "projectile"
+    ],
+    "baseDamage": {
+      "lightning": 232
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "thunderlight-arrow",
+    "name": "Thunderlight Arrow",
+    "tags": [
+      "attack",
+      "projectile"
+    ],
+    "baseDamage": {
+      "lightning": 189
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "thundercloud-surge",
+    "name": "Thundercloud Surge",
+    "tags": [
+      "attack"
+    ],
+    "baseDamage": {},
+    "baseRate": 1.667,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "lightning-surge",
+    "name": "Lightning Surge",
+    "tags": [
+      "attack",
+      "projectile"
+    ],
+    "baseDamage": {
+      "lightning": 301
+    },
+    "baseRate": 0.667,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "high-energy-beam",
+    "name": "High Energy Beam",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "lightning": 46
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "destructive-light-cannon",
+    "name": "Destructive Light Cannon",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "lightning": 207
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "whirlwind-blade",
+    "name": "Whirlwind Blade",
+    "tags": [
+      "spell",
+      "area",
+      "projectile"
+    ],
+    "baseDamage": {
+      "physical": 411
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "lightning-beam",
+    "name": "Lightning Beam",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "lightning": 253
+    },
+    "baseRate": 1.538,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "speed-phantom",
+    "name": "Speed Phantom",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "physical": 723
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "archery-bond",
+    "name": "Archery Bond",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "nourishment-of-life",
+    "name": "Nourishment of Life",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "dazzling-bloom",
+    "name": "Dazzling Bloom",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "star-stalker",
+    "name": "Star Stalker",
+    "tags": [
+      "spell",
+      "projectile",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1.538,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "harmonious-field",
+    "name": "Harmonious Field",
+    "tags": [
+      "spell",
+      "channelled",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 3.003,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "shackles-of-malice",
+    "name": "Shackles of Malice",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "erosion": 667
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "shattered-stone",
+    "name": "Shattered Stone",
+    "tags": [
+      "attack",
+      "melee",
+      "area"
+    ],
+    "baseDamage": {
+      "physical": 107
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "gold-rush",
+    "name": "Gold Rush",
+    "tags": [
+      "attack",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1.667,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "rock-blast",
+    "name": "Rock Blast",
+    "tags": [
+      "attack",
+      "melee",
+      "area"
+    ],
+    "baseDamage": {
+      "physical": 47
+    },
+    "baseRate": 2.5,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "towering-mountains",
+    "name": "Towering Mountains",
+    "tags": [
+      "attack",
+      "melee",
+      "area"
+    ],
+    "baseDamage": {
+      "physical": 1138
+    },
+    "baseRate": 0.667,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "scattered-mud",
+    "name": "Scattered Mud",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "erosion": 100
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "withering-payback",
+    "name": "Withering Payback",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1.667,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "bleak-grass",
+    "name": "Bleak Grass",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "erosion": 162
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "world-of-thorns",
+    "name": "World of Thorns",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "erosion": 2298
+    },
+    "baseRate": 0.667,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "rising-edge",
+    "name": "Rising Edge",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {},
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "crescent-slash",
+    "name": "Crescent Slash",
+    "tags": [
+      "attack",
+      "melee",
+      "area"
+    ],
+    "baseDamage": {
+      "physical": 502
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "serpent-beam",
+    "name": "Serpent Beam",
+    "tags": [
+      "spell"
+    ],
+    "baseDamage": {
+      "physical": 538
+    },
+    "baseRate": 1.538,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "gale-slash",
+    "name": "Gale Slash",
+    "tags": [
+      "attack",
+      "melee",
+      "area"
+    ],
+    "baseDamage": {
+      "physical": 313
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "spectral-slash",
+    "name": "Spectral Slash",
+    "tags": [
+      "attack",
+      "melee",
+      "area"
+    ],
+    "baseDamage": {
+      "physical": 406
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "vendetta",
+    "name": "Vendetta",
+    "tags": [
+      "attack",
+      "melee",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "shockwave-warcry",
+    "name": "Shockwave Warcry",
+    "tags": [
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "endless-vendetta",
+    "name": "Endless Vendetta",
+    "tags": [
+      "attack",
+      "melee",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "frostclaw",
+    "name": "Frostclaw",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "cold": 62
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "firebird",
+    "name": "Firebird",
+    "tags": [
+      "spell",
+      "projectile"
+    ],
+    "baseDamage": {
+      "cold": 121
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "earthshatter",
+    "name": "Earthshatter",
+    "tags": [
+      "attack",
+      "area",
+      "melee"
+    ],
+    "baseDamage": {
+      "physical": 63
+    },
+    "baseRate": 0.556,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "aember-rain",
+    "name": "Aember Rain",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "erosion": 94
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "molten-barrage",
+    "name": "Molten Barrage",
+    "tags": [
+      "attack",
+      "projectile"
+    ],
+    "baseDamage": {
+      "physical": 104
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "all-out-volley",
+    "name": "All-Out Volley",
+    "tags": [
+      "attack",
+      "projectile"
+    ],
+    "baseDamage": {
+      "physical": 87
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "rockfall",
+    "name": "Rockfall",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "physical": 34
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "thunderfall",
+    "name": "Thunderfall",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "lightning": 83
+    },
+    "baseRate": 0.833,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "kinetic-thrust",
+    "name": "Kinetic Thrust",
+    "tags": [
+      "attack",
+      "area",
+      "melee"
+    ],
+    "baseDamage": {
+      "physical": 47
+    },
+    "baseRate": 1.429,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "groundslam",
+    "name": "Groundslam",
+    "tags": [
+      "attack",
+      "area",
+      "melee"
+    ],
+    "baseDamage": {
+      "physical": 90
+    },
+    "baseRate": 0.667,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "overstrike",
+    "name": "Overstrike",
+    "tags": [
+      "attack",
+      "area",
+      "melee"
+    ],
+    "baseDamage": {
+      "physical": 54
+    },
+    "baseRate": 1.429,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "searing-crush",
+    "name": "Searing Crush",
+    "tags": [
+      "attack",
+      "area",
+      "melee"
+    ],
+    "baseDamage": {
+      "physical": 149
+    },
+    "baseRate": 0.417,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "sweep",
+    "name": "Sweep",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "erosion": 56
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "rootsurge",
+    "name": "Rootsurge",
+    "tags": [
+      "spell",
+      "area",
+      "projectile"
+    ],
+    "baseDamage": {
+      "erosion": 87
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "blitz-strike",
+    "name": "Blitz Strike",
+    "tags": [
+      "attack",
+      "projectile"
+    ],
+    "baseDamage": {
+      "physical": 75
+    },
+    "baseRate": 0.833,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "burst-hammer",
+    "name": "Burst Hammer",
+    "tags": [
+      "attack",
+      "area",
+      "melee"
+    ],
+    "baseDamage": {
+      "physical": 64
+    },
+    "baseRate": 0.833,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "firebomb",
+    "name": "Firebomb",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "fire": 73
+    },
+    "baseRate": 0.811,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "pyromania",
+    "name": "Pyromania",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "fire": 68
+    },
+    "baseRate": 0.833,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "flickering-shadow",
+    "name": "Flickering Shadow",
+    "tags": [
+      "attack",
+      "area",
+      "melee"
+    ],
+    "baseDamage": {
+      "physical": 68
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "sin-of-the-fallen",
+    "name": "Sin of the Fallen",
+    "tags": [
+      "attack",
+      "area",
+      "melee"
+    ],
+    "baseDamage": {
+      "physical": 5
+    },
+    "baseRate": 0.833,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "blade-of-glory",
+    "name": "Blade of Glory",
+    "tags": [
+      "attack",
+      "area",
+      "melee"
+    ],
+    "baseDamage": {
+      "physical": 37
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "high-court-covenant",
+    "name": "High Court Covenant",
+    "tags": [
+      "attack",
+      "area",
+      "melee"
+    ],
+    "baseDamage": {
+      "physical": 104
+    },
+    "baseRate": 0.87,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "ravaging-slash",
+    "name": "Ravaging Slash",
+    "tags": [
+      "attack",
+      "area",
+      "melee"
+    ],
+    "baseDamage": {
+      "physical": 74
+    },
+    "baseRate": 0.833,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "auric-shot",
+    "name": "Auric Shot",
+    "tags": [
+      "attack",
+      "projectile"
+    ],
+    "baseDamage": {
+      "physical": 41
+    },
+    "baseRate": 0.833,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "gravelshot",
+    "name": "Gravelshot",
+    "tags": [
+      "attack",
+      "area",
+      "projectile"
+    ],
+    "baseDamage": {
+      "physical": 38
+    },
+    "baseRate": 0.909,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "divine-judgment",
+    "name": "Divine Judgment",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "lightning": 104
+    },
+    "baseRate": 0.833,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "javelin-of-judgment",
+    "name": "Javelin of Judgment",
+    "tags": [
+      "spell",
+      "projectile"
+    ],
+    "baseDamage": {
+      "lightning": 62
+    },
+    "baseRate": 0.833,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "spikeburst",
+    "name": "Spikeburst",
+    "tags": [
+      "attack",
+      "area",
+      "projectile"
+    ],
+    "baseDamage": {
+      "physical": 75
+    },
+    "baseRate": 0.909,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "tailsweep",
+    "name": "Tailsweep",
+    "tags": [
+      "attack",
+      "area",
+      "melee"
+    ],
+    "baseDamage": {
+      "physical": 73
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "impaling-thrust",
+    "name": "Impaling Thrust",
+    "tags": [
+      "attack",
+      "area",
+      "melee"
+    ],
+    "baseDamage": {
+      "physical": 111
+    },
+    "baseRate": 0.833,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "twinstrike",
+    "name": "Twinstrike",
+    "tags": [
+      "attack",
+      "area",
+      "melee"
+    ],
+    "baseDamage": {
+      "physical": 23
+    },
+    "baseRate": 1.25,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "undercurrent",
+    "name": "Undercurrent",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {
+      "erosion": 45
+    },
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "resistance-dew",
+    "name": "Resistance Dew",
+    "tags": [],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "steadfast-dew",
+    "name": "Steadfast Dew",
+    "tags": [],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "nimbleness-dew",
+    "name": "Nimbleness Dew",
+    "tags": [],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "tenacity-dew",
+    "name": "Tenacity Dew",
+    "tags": [],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "tortoise-shell-distillate",
+    "name": "Tortoise Shell Distillate",
+    "tags": [],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "scorpion-stinger-distillate",
+    "name": "Scorpion Stinger Distillate",
+    "tags": [],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "putrid-toad-distillate",
+    "name": "Putrid Toad Distillate",
+    "tags": [],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "saltpeter-mushroom-distillate",
+    "name": "Saltpeter Mushroom Distillate",
+    "tags": [],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "fire-lizard-distillate",
+    "name": "Fire Lizard Distillate",
+    "tags": [],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "white-rhino-distillate",
+    "name": "White Rhino Distillate",
+    "tags": [],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "thunder-wood-distillate",
+    "name": "Thunder Wood Distillate",
+    "tags": [],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
+  },
+  {
+    "id": "ominous",
+    "name": "Ominous",
+    "tags": [
+      "spell",
+      "area"
+    ],
+    "baseDamage": {},
+    "baseRate": 1,
+    "baseCritRate": 5,
+    "supportSlots": 5,
+    "season": "SS12.5"
   }
 ]

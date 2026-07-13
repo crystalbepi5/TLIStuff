@@ -3,27 +3,59 @@
     "id": "elemental-boost",
     "name": "Elemental Boost",
     "requiresTags": [],
-    "modifiers": [{ "stat": "increasedElemental", "op": "increased", "value": 40 }]
+    "modifiers": [
+      {
+        "stat": "increasedElemental",
+        "op": "increased",
+        "value": 40
+      }
+    ]
   },
   {
     "id": "concentrated-effect",
     "name": "Concentrated Effect",
-    "requiresTags": ["area"],
-    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.35 }]
+    "requiresTags": [
+      "area"
+    ],
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.35
+      }
+    ]
   },
   {
     "id": "swift-strikes",
     "name": "Swift Strikes",
-    "requiresTags": ["attack"],
-    "modifiers": [{ "stat": "increasedAttackSpeed", "op": "increased", "value": 25 }]
+    "requiresTags": [
+      "attack"
+    ],
+    "modifiers": [
+      {
+        "stat": "increasedAttackSpeed",
+        "op": "increased",
+        "value": 25
+      }
+    ]
   },
   {
     "id": "arcane-surge",
     "name": "Arcane Surge",
-    "requiresTags": ["spell"],
+    "requiresTags": [
+      "spell"
+    ],
     "modifiers": [
-      { "stat": "increasedCastSpeed", "op": "increased", "value": 20 },
-      { "stat": "moreDamage", "op": "more", "value": 0.15 }
+      {
+        "stat": "increasedCastSpeed",
+        "op": "increased",
+        "value": 20
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.15
+      }
     ]
   },
   {
@@ -31,8 +63,5442 @@
     "name": "Deadly Aim",
     "requiresTags": [],
     "modifiers": [
-      { "stat": "critRate", "op": "flat", "value": 3 },
-      { "stat": "critDamage", "op": "flat", "value": 30 }
+      {
+        "stat": "critRate",
+        "op": "flat",
+        "value": 3
+      },
+      {
+        "stat": "critDamage",
+        "op": "flat",
+        "value": 30
+      }
     ]
+  },
+  {
+    "id": "activation-medium-preparation",
+    "name": "Activation Medium: Preparation",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-perpetual-motion",
+    "name": "Activation Medium: Perpetual Motion",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-elite",
+    "name": "Activation Medium: Elite",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-boss",
+    "name": "Activation Medium: Boss",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-life",
+    "name": "Activation Medium: Life",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-energy-shield",
+    "name": "Activation Medium: Energy Shield",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-severe-injury",
+    "name": "Activation Medium: Severe Injury",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-multistrike",
+    "name": "Activation Medium: Multistrike",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-demolisher",
+    "name": "Activation Medium: Demolisher",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-spell-burst",
+    "name": "Activation Medium: Spell Burst",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-start",
+    "name": "Activation Medium: Start",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-root",
+    "name": "Activation Medium: Root",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-resonance-activation",
+    "name": "Activation Medium: Resonance Activation",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-resonance",
+    "name": "Activation Medium: Resonance",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-rhythm",
+    "name": "Activation Medium: Rhythm",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.03
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.8
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-wind-rhythm",
+    "name": "Activation Medium: Wind Rhythm",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.8
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-root-attack",
+    "name": "Activation Medium: Root Attack",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-still-attack",
+    "name": "Activation Medium: Still Attack",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-sentry",
+    "name": "Activation Medium: Sentry",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-minion",
+    "name": "Activation Medium: Minion",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-critical-strike",
+    "name": "Activation Medium: Critical Strike",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-channel",
+    "name": "Activation Medium: Channel",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-instruction",
+    "name": "Activation Medium: Instruction",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.8
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-lock-on",
+    "name": "Activation Medium: Lock On",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-track",
+    "name": "Activation Medium: Track",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-burst-activation",
+    "name": "Activation Medium: Burst Activation",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-motionless",
+    "name": "Activation Medium: Motionless",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "activation-medium-tangle",
+    "name": "Activation Medium: Tangle",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "focused-shot-aspire-magnificent",
+    "name": "Focused Shot: Aspire (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "focused-shot-long-shot-magnificent",
+    "name": "Focused Shot: Long Shot (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "burning-shot-fiery-blast-magnificent",
+    "name": "Burning Shot: Fiery Blast (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "burning-shot-combustion-magnificent",
+    "name": "Burning Shot: Combustion (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "chain-lightning-web-of-lightning-magnificent",
+    "name": "Chain Lightning: Web of Lightning (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "chain-lightning-augmentation-magnificent",
+    "name": "Chain Lightning: Augmentation (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "focused-slash-tranquility-magnificent",
+    "name": "Focused Slash: Tranquility (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "focused-slash-duel-magnificent",
+    "name": "Focused Slash: Duel (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "icy-blade-quick-freeze-magnificent",
+    "name": "Icy Blade: Quick Freeze (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "flame-slash-immediate-threat-magnificent",
+    "name": "Flame Slash: Immediate Threat (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "corrosive-throw-augmentation-magnificent",
+    "name": "Corrosive Throw: Augmentation (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "blazing-bullet-fiery-blast-magnificent",
+    "name": "Blazing Bullet: Fiery Blast (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "wilt-spike-wither-magnificent",
+    "name": "Wilt Spike: Wither (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "wilt-spike-languish-magnificent",
+    "name": "Wilt Spike: Languish (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "hammer-of-ash-upheaval-magnificent",
+    "name": "Hammer of Ash: Upheaval (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "hammer-of-ash-rekindle-magnificent",
+    "name": "Hammer of Ash: Rekindle (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "frost-impact-ice-cluster-magnificent",
+    "name": "Frost Impact: Ice Cluster (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "frost-impact-frozen-trajectory-magnificent",
+    "name": "Frost Impact: Frozen Trajectory (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "whirlwind-endless-wind-magnificent",
+    "name": "Whirlwind: Endless Wind (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "whirlwind-wind-barrier-magnificent",
+    "name": "Whirlwind: Wind Barrier (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "lightning-shot-offshoot-magnificent",
+    "name": "Lightning Shot: Offshoot (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "split-shot-volley-magnificent",
+    "name": "Split Shot: Volley (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "split-shot-diversion-magnificent",
+    "name": "Split Shot: Diversion (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "ice-shot-ice-blast-magnificent",
+    "name": "Ice Shot: Ice Blast (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "bombard-cannon-magnificent",
+    "name": "Bombard: Cannon (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "bombard-guided-magnificent",
+    "name": "Bombard: Guided (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "berserking-blade-desperation-magnificent",
+    "name": "Berserking Blade: Desperation (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.45
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "berserking-blade-sweep-magnificent",
+    "name": "Berserking Blade: Sweep (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "charged-pummel-drastic-shift-magnificent",
+    "name": "Charged Pummel: Drastic Shift (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.7
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "charged-pummel-connected-magnificent",
+    "name": "Charged Pummel: Connected (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "moon-strike-rainbow-magnificent",
+    "name": "Moon Strike: Rainbow (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "moon-strike-lunar-ring-magnificent",
+    "name": "Moon Strike: Lunar Ring (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "savage-charge-infuriate-magnificent",
+    "name": "Savage Charge: Infuriate (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "savage-charge-bulldoze-magnificent",
+    "name": "Savage Charge: Bulldoze (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "marked-rain-of-arrows-heartpiercer-magnificent",
+    "name": "Marked Rain of Arrows: Heartpiercer (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "marked-rain-of-arrows-chain-reaction-magnificent",
+    "name": "Marked Rain of Arrows: Chain Reaction (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "corrosive-shot-swift-action-magnificent",
+    "name": "Corrosive Shot: Swift Action (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "inexhaustible-barrage-bombard-magnificent",
+    "name": "Inexhaustible Barrage: Bombard (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.24
+      },
+      {
+        "stat": "increasedDamage",
+        "op": "increased",
+        "value": 10
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thunder-spike-numb-magnificent",
+    "name": "Thunder Spike: Numb (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thunder-slash-keen-edge-magnificent",
+    "name": "Thunder Slash: Keen Edge (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thunder-slash-blade-cluster-magnificent",
+    "name": "Thunder Slash: Blade Cluster (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "ring-of-blades-blade-formation-magnificent",
+    "name": "Ring of Blades: Blade Formation (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "frost-spike-offshoot-magnificent",
+    "name": "Frost Spike: Offshoot (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "rain-of-arrows-swift-flight-magnificent",
+    "name": "Rain of Arrows: Swift Flight (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "arrow-einherjar-arrowstorm-magnificent",
+    "name": "Arrow Einherjar: Arrowstorm (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "shadow-shot-eradicate-magnificent",
+    "name": "Shadow Shot: Eradicate (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "split-firebolt-split-magnificent",
+    "name": "Split Firebolt: Split (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "ice-lances-rebound-magnificent",
+    "name": "Ice Lances: Rebound (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "ice-lances-ice-corrosion-magnificent",
+    "name": "Ice Lances: Ice Corrosion (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "sparkle-magnetic-field-magnificent",
+    "name": "Sparkle: Magnetic Field (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "whirlwind-blade-unsheath-magnificent",
+    "name": "Whirlwind Blade: Unsheath (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "whirlwind-blade-swift-slash-magnificent",
+    "name": "Whirlwind Blade: Swift Slash (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "ring-of-ice-ice-seal-magnificent",
+    "name": "Ring of Ice: Ice Seal (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "blizzard-freezing-point-magnificent",
+    "name": "Blizzard: Freezing Point (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "blizzard-hail-magnificent",
+    "name": "Blizzard: Hail (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "lightning-storm-surging-thunder-magnificent",
+    "name": "Lightning Storm: Surging Thunder (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.025
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "flame-core-lone-vanguard-magnificent",
+    "name": "Flame Core: Lone Vanguard (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "flame-jet-burst-magnificent",
+    "name": "Flame Jet: Burst (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.5
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "flame-jet-scorched-earth-magnificent",
+    "name": "Flame Jet: Scorched Earth (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "frost-terra-rime-magnificent",
+    "name": "Frost Terra: Rime (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "frost-terra-snow-shell-magnificent",
+    "name": "Frost Terra: Snow Shell (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "shadow-swamp-gushing-spring-magnificent",
+    "name": "Shadow Swamp: Gushing Spring (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "shadow-swamp-splatter-magnificent",
+    "name": "Shadow Swamp: Splatter (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "increasedDamage",
+        "op": "increased",
+        "value": -90
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thunderbolt-overload-leap-magnificent",
+    "name": "Thunderbolt Overload: Leap (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thunderbolt-overload-retribution-magnificent",
+    "name": "Thunderbolt Overload: Retribution (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "frost-core-chase-magnificent",
+    "name": "Frost Core: Chase (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-thunder-magus-lightning-ward-magnificent",
+    "name": "Summon Thunder Magus: Lightning Ward (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-thunder-magus-continuation-magnificent",
+    "name": "Summon Thunder Magus: Continuation (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-frost-magus-cold-ward-magnificent",
+    "name": "Summon Frost Magus: Cold Ward (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-frost-magus-piercing-cold-magnificent",
+    "name": "Summon Frost Magus: Piercing Cold (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-frost-magus-ice-crusher-magnificent",
+    "name": "Summon Frost Magus: Ice Crusher (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-fire-magus-fire-ward-magnificent",
+    "name": "Summon Fire Magus: Fire Ward (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-fire-magus-aflame-magnificent",
+    "name": "Summon Fire Magus: Aflame (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-fire-magus-flowing-flames-magnificent",
+    "name": "Summon Fire Magus: Flowing Flames (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "synthetic-troop-force-field-magnificent",
+    "name": "Synthetic Troop: Force Field (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-machine-guard-iron-fist-magnificent",
+    "name": "Summon Machine Guard: Iron Fist (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-machine-guard-pummel-magnificent",
+    "name": "Summon Machine Guard: Pummel (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-grim-phantom-glare-magnificent",
+    "name": "Summon Grim Phantom: Glare (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-grim-phantom-spur-magnificent",
+    "name": "Summon Grim Phantom: Spur (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-spider-tank-steamroll-magnificent",
+    "name": "Summon Spider Tank: Steamroll (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "ghost-blade-einherjar-prestige-magnificent",
+    "name": "Ghost Blade Einherjar: Prestige (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "ghost-blade-einherjar-unbroken-magnificent",
+    "name": "Ghost Blade Einherjar: Unbroken (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "groundshaker-frequent-quake-magnificent",
+    "name": "Groundshaker: Frequent Quake (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "groundshaker-epicenter-magnificent",
+    "name": "Groundshaker: Epicenter (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "howling-gale-rapid-sweep-magnificent",
+    "name": "Howling Gale: Rapid Sweep (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "howling-gale-headwind-magnificent",
+    "name": "Howling Gale: Headwind (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "shackles-of-malice-defile-magnificent",
+    "name": "Shackles of Malice: Defile (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "shackles-of-malice-vendetta-magnificent",
+    "name": "Shackles of Malice: Vendetta (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "mind-control-concentrate-magnificent",
+    "name": "Mind Control: Concentrate (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "mind-control-befuddle-magnificent",
+    "name": "Mind Control: Befuddle (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "fire-burst-heart-of-flame-magnificent",
+    "name": "Fire Burst: Heart of Flame (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "fire-burst-violent-blast-magnificent",
+    "name": "Fire Burst: Violent Blast (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "icebound-beam-frostbitten-magnificent",
+    "name": "Icebound Beam: Frostbitten (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "scorching-beam-supercharge-magnificent",
+    "name": "Scorching Beam: Supercharge (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "scorching-beam-shockwave-magnificent",
+    "name": "Scorching Beam: Shockwave (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thunder-core-electric-field-magnificent",
+    "name": "Thunder Core: Electric Field (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thunder-core-lone-vanguard-magnificent",
+    "name": "Thunder Core: Lone Vanguard (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "path-of-flames-spontaneous-combustion-magnificent",
+    "name": "Path of Flames: Spontaneous Combustion (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thundercloud-billowing-cloud-magnificent",
+    "name": "Thundercloud: Billowing Cloud (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thundercloud-alarmed-awakening-magnificent",
+    "name": "Thundercloud: Alarmed Awakening (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-rock-magus-unyielding-magnificent",
+    "name": "Summon Rock Magus: Unyielding (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-rock-magus-forging-magnificent",
+    "name": "Summon Rock Magus: Forging (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-rock-magus-clustering-sand-magnificent",
+    "name": "Summon Rock Magus: Clustering Sand (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-erosion-magus-plague-source-magnificent",
+    "name": "Summon Erosion Magus: Plague Source (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-erosion-magus-wicked-magnificent",
+    "name": "Summon Erosion Magus: Wicked (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-erosion-magus-frequent-quake-magnificent",
+    "name": "Summon Erosion Magus: Frequent Quake (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "double-thrusts-restless-magnificent",
+    "name": "Double Thrusts: Restless (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "lightning-beam-aftershock-magnificent",
+    "name": "Lightning Beam: Aftershock (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "lightning-beam-relentless-magnificent",
+    "name": "Lightning Beam: Relentless (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "wilting-beam-dispirit-magnificent",
+    "name": "Wilting Beam: Dispirit (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "wilting-beam-reflection-magnificent",
+    "name": "Wilting Beam: Reflection (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "electrifying-shot-close-range-magnificent",
+    "name": "Electrifying Shot: Close-Range (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "haunting-abomination-misdeeds-magnificent",
+    "name": "Haunting Abomination: Misdeeds (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "haunting-abomination-feud-magnificent",
+    "name": "Haunting Abomination: Feud (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.05
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thunder-focus-haste-magnificent",
+    "name": "Thunder Focus: Haste (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.4
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thunder-focus-quickstep-magnificent",
+    "name": "Thunder Focus: Quickstep (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "flame-focus-kindling-magnificent",
+    "name": "Flame Focus: Kindling (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 1
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "flame-focus-flint-magnificent",
+    "name": "Flame Focus: Flint (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "corrosion-focus-clustering-magnificent",
+    "name": "Corrosion Focus: Clustering (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "corrosion-focus-infection-magnificent",
+    "name": "Corrosion Focus: Infection (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "ice-focus-shattered-ice-magnificent",
+    "name": "Ice Focus: Shattered Ice (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "ice-focus-permafrost-magnificent",
+    "name": "Ice Focus: Permafrost (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "acuteness-focus-piercing-agony-magnificent",
+    "name": "Acuteness Focus: Piercing Agony (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "acuteness-focus-sharpening-magnificent",
+    "name": "Acuteness Focus: Sharpening (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "crescent-slash-raid-magnificent",
+    "name": "Crescent Slash: Raid (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "crescent-slash-vile-magnificent",
+    "name": "Crescent Slash: Vile (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "serpent-beam-barrage-magnificent",
+    "name": "Serpent Beam: Barrage (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "serpent-beam-inferno-magnificent",
+    "name": "Serpent Beam: Inferno (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "gale-slash-onslaught-magnificent",
+    "name": "Gale Slash: Onslaught (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "gale-slash-dominance-magnificent",
+    "name": "Gale Slash: Dominance (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "spectral-slash-detonation-magnificent",
+    "name": "Spectral Slash: Detonation (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "chromatic-shot-lightchaser-magnificent",
+    "name": "Chromatic Shot: Lightchaser (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.25
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "modularization-shared-burden-magnificent",
+    "name": "Modularization: Shared Burden (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "modularization-resonance-magnificent",
+    "name": "Modularization: Resonance (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "modularization-cluster-magnificent",
+    "name": "Modularization: Cluster (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "module-goblin-priest",
+    "name": "Module: Goblin Priest",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "module-trog-2nd-general",
+    "name": "Module: Trog 2nd General",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.01
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "module-dwarven-automaton",
+    "name": "Module: Dwarven Automaton",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "module-trog-mage",
+    "name": "Module: Trog Mage",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "module-goblin-priest-of-elements",
+    "name": "Module: Goblin Priest of Elements",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "module-medium-ember-automaton",
+    "name": "Module: Medium Ember Automaton",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "module-huge-ember-automaton",
+    "name": "Module: Huge Ember Automaton",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "module-ent-great-elder",
+    "name": "Module: Ent Great Elder",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "module-ratlin-stormer-captain",
+    "name": "Module: Ratlin Stormer Captain",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "module-chief-machinist",
+    "name": "Module: Chief Machinist",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "module-lean-phantom",
+    "name": "Module: Lean Phantom",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "module-god-of-swords",
+    "name": "Module: God of Swords",
+    "modifiers": [
+      {
+        "stat": "increasedAttackSpeed",
+        "op": "increased",
+        "value": 3
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "module-tyrant",
+    "name": "Module: Tyrant",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.01
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "module-ichi-storm",
+    "name": "Module: Ichi Storm",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "module-sand-giant",
+    "name": "Module: Sand Giant",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "module-einherjar-elder-sage",
+    "name": "Module: Einherjar Elder Sage",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "module-aember-winged-beast",
+    "name": "Module: Aember Winged Beast",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "module-punisher",
+    "name": "Module: Punisher",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.02
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "focused-shot-building-momentum-noble",
+    "name": "Focused Shot: Building Momentum (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "focused-shot-power-bow-noble",
+    "name": "Focused Shot: Power Bow (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "focused-shot-snipe-noble",
+    "name": "Focused Shot: Snipe (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "burning-shot-ignition-noble",
+    "name": "Burning Shot: Ignition (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "burning-shot-through-fire-noble",
+    "name": "Burning Shot: Through Fire (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "chain-lightning-lucky-noble",
+    "name": "Chain Lightning: Lucky (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "chain-lightning-merge-noble",
+    "name": "Chain Lightning: Merge (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "focused-slash-fervor-noble",
+    "name": "Focused Slash: Fervor (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "focused-slash-behead-noble",
+    "name": "Focused Slash: Behead (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "icy-blade-hidden-edge-noble",
+    "name": "Icy Blade: Hidden Edge (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "flame-slash-inverted-blaze-noble",
+    "name": "Flame Slash: Inverted Blaze (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "double-thrusts-cutthroat-noble",
+    "name": "Double Thrusts: Cutthroat (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "corrosive-throw-swift-strike-noble",
+    "name": "Corrosive Throw: Swift Strike (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "corrosive-throw-blitz-strike-noble",
+    "name": "Corrosive Throw: Blitz Strike (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "blazing-bullet-ignition-point-noble",
+    "name": "Blazing Bullet: Ignition Point (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "blazing-bullet-dual-resonance-noble",
+    "name": "Blazing Bullet: Dual Resonance (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "wilt-spike-mirage-noble",
+    "name": "Wilt Spike: Mirage (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "wilt-spike-evanescence-noble",
+    "name": "Wilt Spike: Evanescence (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "hammer-of-ash-quickfire-noble",
+    "name": "Hammer of Ash: Quickfire (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "hammer-of-ash-blast-quake-noble",
+    "name": "Hammer of Ash: Blast Quake (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "frost-impact-chilling-surge-noble",
+    "name": "Frost Impact: Chilling Surge (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "frost-impact-chilling-buildup-noble",
+    "name": "Frost Impact: Chilling Buildup (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "whirlwind-whirling-blade-noble",
+    "name": "Whirlwind: Whirling Blade (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "lightning-shot-crossed-lightning-noble",
+    "name": "Lightning Shot: Crossed Lightning (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "split-shot-collaboration-noble",
+    "name": "Split Shot: Collaboration (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "split-shot-rapid-advance-noble",
+    "name": "Split Shot: Rapid Advance (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.5
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "ice-shot-batter-noble",
+    "name": "Ice Shot: Batter (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "bombard-fission-noble",
+    "name": "Bombard: Fission (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "bombard-grenade-noble",
+    "name": "Bombard: Grenade (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "bombard-smokescreen-noble",
+    "name": "Bombard: Smokescreen (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "berserking-blade-decimate-noble",
+    "name": "Berserking Blade: Decimate (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "berserking-blade-rampage-noble",
+    "name": "Berserking Blade: Rampage (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "charged-pummel-charge-reduction-noble",
+    "name": "Charged Pummel: Charge Reduction (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "charged-pummel-electric-charge-noble",
+    "name": "Charged Pummel: Electric Charge (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "moon-strike-lunar-eclipse-noble",
+    "name": "Moon Strike: Lunar Eclipse (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.01
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "moon-strike-wax-and-wane-noble",
+    "name": "Moon Strike: Wax and Wane (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "savage-charge-raid-noble",
+    "name": "Savage Charge: Raid (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "marked-rain-of-arrows-hyper-blast-noble",
+    "name": "Marked Rain of Arrows: Hyper Blast (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "marked-rain-of-arrows-threads-of-arrows-noble",
+    "name": "Marked Rain of Arrows: Threads of Arrows (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "corrosive-shot-degeneration-noble",
+    "name": "Corrosive Shot: Degeneration (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "corrosive-shot-burst-of-agony-noble",
+    "name": "Corrosive Shot: Burst of Agony (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "inexhaustible-barrage-fatal-pursuit-noble",
+    "name": "Inexhaustible Barrage: Fatal Pursuit (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "inexhaustible-barrage-landslide-noble",
+    "name": "Inexhaustible Barrage: Landslide (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thunder-spike-tremble-noble",
+    "name": "Thunder Spike: Tremble (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thunder-spike-rumbling-thunder-noble",
+    "name": "Thunder Spike: Rumbling Thunder (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thunder-slash-flurry-noble",
+    "name": "Thunder Slash: Flurry (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thunder-slash-big-stride-noble",
+    "name": "Thunder Slash: Big Stride (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "ring-of-blades-razor-edge-noble",
+    "name": "Ring of Blades: Razor Edge (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "ring-of-blades-strength-in-numbers-noble",
+    "name": "Ring of Blades: Strength in Numbers (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "frost-spike-ice-fission-noble",
+    "name": "Frost Spike: Ice Fission (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "frost-spike-glaciate-noble",
+    "name": "Frost Spike: Glaciate (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "rain-of-arrows-payback-noble",
+    "name": "Rain of Arrows: Payback (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "rain-of-arrows-tracking-noble",
+    "name": "Rain of Arrows: Tracking (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "arrow-einherjar-advancement-noble",
+    "name": "Arrow Einherjar: Advancement (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "arrow-einherjar-fellowship-noble",
+    "name": "Arrow Einherjar: Fellowship (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "split-firebolt-focal-point-noble",
+    "name": "Split Firebolt: Focal Point (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "ice-lances-bounce-noble",
+    "name": "Ice Lances: Bounce (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "ice-lances-permafrost-noble",
+    "name": "Ice Lances: Permafrost (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "sparkle-strobe-noble",
+    "name": "Sparkle: Strobe (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "sparkle-static-electricity-noble",
+    "name": "Sparkle: Static Electricity (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.1
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "whirlwind-blade-sharpen-noble",
+    "name": "Whirlwind Blade: Sharpen (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "whirlwind-blade-circling-noble",
+    "name": "Whirlwind Blade: Circling (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "ring-of-ice-cascade-noble",
+    "name": "Ring of Ice: Cascade (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "blizzard-avalanche-noble",
+    "name": "Blizzard: Avalanche (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "blizzard-numbing-cold-noble",
+    "name": "Blizzard: Numbing Cold (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "lightning-storm-boundless-noble",
+    "name": "Lightning Storm: Boundless (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "lightning-storm-raging-storm-noble",
+    "name": "Lightning Storm: Raging Storm (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "flame-core-engage-noble",
+    "name": "Flame Core: Engage (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "flame-jet-offshoot-noble",
+    "name": "Flame Jet: Offshoot (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "flame-jet-furnace-noble",
+    "name": "Flame Jet: Furnace (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "frost-terra-cohesion-noble",
+    "name": "Frost Terra: Cohesion (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "frost-terra-winter-s-bite-noble",
+    "name": "Frost Terra: Winter's Bite (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.13
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "shadow-swamp-overlapping-waves-noble",
+    "name": "Shadow Swamp: Overlapping Waves (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "shadow-swamp-still-water-noble",
+    "name": "Shadow Swamp: Still Water (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thunderbolt-overload-augmentation-noble",
+    "name": "Thunderbolt Overload: Augmentation (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "frost-core-puncture-noble",
+    "name": "Frost Core: Puncture (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-thunder-magus-heavy-arrow-noble",
+    "name": "Summon Thunder Magus: Heavy Arrow (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-thunder-magus-agility-noble",
+    "name": "Summon Thunder Magus: Agility (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-frost-magus-vengeance-noble",
+    "name": "Summon Frost Magus: Vengeance (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-fire-magus-wicked-spirit-noble",
+    "name": "Summon Fire Magus: Wicked Spirit (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-fire-magus-engulfing-flames-noble",
+    "name": "Summon Fire Magus: Engulfing Flames (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-machine-guard-crushing-blow-noble",
+    "name": "Summon Machine Guard: Crushing Blow (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-machine-guard-discipline-noble",
+    "name": "Summon Machine Guard: Discipline (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-machine-guard-dead-silence-noble",
+    "name": "Summon Machine Guard: Dead Silence (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-grim-phantom-shriek-noble",
+    "name": "Summon Grim Phantom: Shriek (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-grim-phantom-undercurrent-noble",
+    "name": "Summon Grim Phantom: Undercurrent (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-grim-phantom-flicker-noble",
+    "name": "Summon Grim Phantom: Flicker (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-spider-tank-focus-fire-noble",
+    "name": "Summon Spider Tank: Focus Fire (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-spider-tank-spider-egg-noble",
+    "name": "Summon Spider Tank: Spider Egg (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.5
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "ghost-blade-einherjar-eruption-noble",
+    "name": "Ghost Blade Einherjar: Eruption (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "ghost-blade-einherjar-heroes-noble",
+    "name": "Ghost Blade Einherjar: Heroes (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "groundshaker-collapse-noble",
+    "name": "Groundshaker: Collapse (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "groundshaker-cripple-noble",
+    "name": "Groundshaker: Cripple (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.9
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "groundshaker-wrathful-vault-noble",
+    "name": "Groundshaker: Wrathful Vault (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "howling-gale-furious-sweep-noble",
+    "name": "Howling Gale: Furious Sweep (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "howling-gale-eye-of-the-gale-noble",
+    "name": "Howling Gale: Eye of the Gale (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "shackles-of-malice-mutual-destruction-noble",
+    "name": "Shackles of Malice: Mutual Destruction (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "shackles-of-malice-spite-noble",
+    "name": "Shackles of Malice: Spite (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "mind-control-enthrall-noble",
+    "name": "Mind Control: Enthrall (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "mind-control-entice-noble",
+    "name": "Mind Control: Entice (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.1
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "fire-burst-prairie-fire-noble",
+    "name": "Fire Burst: Prairie Fire (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "fire-burst-converge-noble",
+    "name": "Fire Burst: Converge (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "icebound-beam-chilling-spike-noble",
+    "name": "Icebound Beam: Chilling Spike (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "icebound-beam-ring-blade-noble",
+    "name": "Icebound Beam: Ring Blade (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "scorching-beam-disintegrate-noble",
+    "name": "Scorching Beam: Disintegrate (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "scorching-beam-immolate-noble",
+    "name": "Scorching Beam: Immolate (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thunder-core-lightning-lasso-noble",
+    "name": "Thunder Core: Lightning Lasso (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thunder-core-augmentation-noble",
+    "name": "Thunder Core: Augmentation (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "path-of-flames-heat-wave-noble",
+    "name": "Path of Flames: Heat Wave (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "path-of-flames-raging-boil-noble",
+    "name": "Path of Flames: Raging Boil (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thundercloud-heavy-cloud-noble",
+    "name": "Thundercloud: Heavy Cloud (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thundercloud-thunderous-blow-noble",
+    "name": "Thundercloud: Thunderous Blow (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-rock-magus-stone-refinement-noble",
+    "name": "Summon Rock Magus: Stone Refinement (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.01
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-erosion-magus-malignant-noble",
+    "name": "Summon Erosion Magus: Malignant (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-erosion-magus-malady-noble",
+    "name": "Summon Erosion Magus: Malady (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "double-thrusts-recourse-noble",
+    "name": "Double Thrusts: Recourse (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "lightning-beam-reverberation-noble",
+    "name": "Lightning Beam: Reverberation (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "lightning-beam-salvo-noble",
+    "name": "Lightning Beam: Salvo (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "wilting-beam-set-course-noble",
+    "name": "Wilting Beam: Set Course (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "wilting-beam-rapid-completion-noble",
+    "name": "Wilting Beam: Rapid Completion (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "electrifying-shot-multishot-noble",
+    "name": "Electrifying Shot: Multishot (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "marked-rain-of-arrows-rainfall-noble",
+    "name": "Marked Rain of Arrows: Rainfall (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "haunting-abomination-hail-mary-noble",
+    "name": "Haunting Abomination: Hail Mary (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "haunting-abomination-depravity-noble",
+    "name": "Haunting Abomination: Depravity (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thunder-focus-tremor-noble",
+    "name": "Thunder Focus: Tremor (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thunder-focus-overflow-noble",
+    "name": "Thunder Focus: Overflow (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "flame-focus-blast-noble",
+    "name": "Flame Focus: Blast (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "corrosion-focus-splash-noble",
+    "name": "Corrosion Focus: Splash (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "ice-focus-frigid-wind-noble",
+    "name": "Ice Focus: Frigid Wind (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.05
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "ice-focus-solemn-chill-noble",
+    "name": "Ice Focus: Solemn Chill (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "acuteness-focus-dull-pain-noble",
+    "name": "Acuteness Focus: Dull Pain (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "acuteness-focus-remaining-strength-noble",
+    "name": "Acuteness Focus: Remaining Strength (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "crescent-slash-flash-noble",
+    "name": "Crescent Slash: Flash (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "increasedAttackSpeed",
+        "op": "increased",
+        "value": 40
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "crescent-slash-rising-noble",
+    "name": "Crescent Slash: Rising (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.6
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "serpent-beam-torrent-noble",
+    "name": "Serpent Beam: Torrent (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "serpent-beam-twin-blaze-noble",
+    "name": "Serpent Beam: Twin Blaze (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "gale-slash-soaring-noble",
+    "name": "Gale Slash: Soaring (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "gale-slash-brutality-noble",
+    "name": "Gale Slash: Brutality (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "spectral-slash-legion-noble",
+    "name": "Spectral Slash: Legion (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "spectral-slash-synchrony-noble",
+    "name": "Spectral Slash: Synchrony (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "frigid-transmission-thin-ice-noble",
+    "name": "Frigid Transmission: Thin Ice (Noble)",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "chromatic-shot-splendor-noble",
+    "name": "Chromatic Shot: Splendor (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "modularization-superconductivity-noble",
+    "name": "Modularization: Superconductivity (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "modularization-calibrate-noble",
+    "name": "Modularization: Calibrate (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "modularization-compress-noble",
+    "name": "Modularization: Compress (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "modularization-sever-noble",
+    "name": "Modularization: Sever (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.99
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "fearless",
+    "name": "Fearless",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "weapon-amplification",
+    "name": "Weapon Amplification",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.35
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "rejuvenation",
+    "name": "Rejuvenation",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "electric-conversion",
+    "name": "Electric Conversion",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.35
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "frigid-domain",
+    "name": "Frigid Domain",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.35
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "nimbleness",
+    "name": "Nimbleness",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "spell-amplification",
+    "name": "Spell Amplification",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "energy-fortress",
+    "name": "Energy Fortress",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "magical-source",
+    "name": "Magical Source",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-projectiles",
+    "name": "Precise Projectiles",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "elemental-resistance",
+    "name": "Elemental Resistance",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "swiftness",
+    "name": "Swiftness",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "deep-pain",
+    "name": "Deep Pain",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.35
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "erosion-amplification",
+    "name": "Erosion Amplification",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.35
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "charged-flames",
+    "name": "Charged Flames",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.35
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "steadfast",
+    "name": "Steadfast",
+    "modifiers": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 6000
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-fire-magus",
+    "name": "Summon Fire Magus",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-frost-magus",
+    "name": "Summon Frost Magus",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-thunder-magus",
+    "name": "Summon Thunder Magus",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.0725
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "acuteness-focus",
+    "name": "Acuteness Focus",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.135
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "corrosion-focus",
+    "name": "Corrosion Focus",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.135
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "ice-focus",
+    "name": "Ice Focus",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.135
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "thunder-focus",
+    "name": "Thunder Focus",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.135
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "flame-focus",
+    "name": "Flame Focus",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.07
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-rock-magus",
+    "name": "Summon Rock Magus",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.5
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "summon-erosion-magus",
+    "name": "Summon Erosion Magus",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.0915
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.5
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "radical-order",
+    "name": "Radical Order",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "cruelty",
+    "name": "Cruelty",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "domain-expansion",
+    "name": "Domain Expansion",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "ailment-amplification",
+    "name": "Ailment Amplification",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-fearless",
+    "name": "Precise: Fearless",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-weapon-amplification",
+    "name": "Precise: Weapon Amplification",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.4
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-rejuvenation",
+    "name": "Precise: Rejuvenation",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-electric-conversion",
+    "name": "Precise: Electric Conversion",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.4
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-frigid-domain",
+    "name": "Precise: Frigid Domain",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.4
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-nimbleness",
+    "name": "Precise: Nimbleness",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-spell-amplification",
+    "name": "Precise: Spell Amplification",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-energy-fortress",
+    "name": "Precise: Energy Fortress",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-magical-source",
+    "name": "Precise: Magical Source",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-precise-projectiles",
+    "name": "Precise: Precise Projectiles",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-elemental-resistance",
+    "name": "Precise: Elemental Resistance",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-swiftness",
+    "name": "Precise: Swiftness",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-deep-pain",
+    "name": "Precise: Deep Pain",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.4
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-erosion-amplification",
+    "name": "Precise: Erosion Amplification",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.4
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-charged-flames",
+    "name": "Precise: Charged Flames",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.4
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-steadfast",
+    "name": "Precise: Steadfast",
+    "modifiers": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 6000
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-acuteness-focus",
+    "name": "Precise: Acuteness Focus",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.04
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.156
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-corrosion-focus",
+    "name": "Precise: Corrosion Focus",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.04
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.156
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-ice-focus",
+    "name": "Precise: Ice Focus",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.04
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.156
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-thunder-focus",
+    "name": "Precise: Thunder Focus",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.04
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.156
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-flame-focus",
+    "name": "Precise: Flame Focus",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.04
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.09
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-radical-order",
+    "name": "Precise: Radical Order",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-cruelty",
+    "name": "Precise: Cruelty",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-domain-expansion",
+    "name": "Precise: Domain Expansion",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-ailment-amplification",
+    "name": "Precise: Ailment Amplification",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "multiple-projectiles",
+    "name": "Multiple Projectiles",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.074
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "multistrike",
+    "name": "Multistrike",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "projectile-split",
+    "name": "Projectile Split",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.082
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "increased-area",
+    "name": "Increased Area",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.16
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "melee-knockback",
+    "name": "Melee Knockback",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.155
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "overload",
+    "name": "Overload",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.0305
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "tendonslicer",
+    "name": "Tendonslicer",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.075
+      },
+      {
+        "stat": "increasedDamage",
+        "op": "increased",
+        "value": 10
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "glacial-freeze",
+    "name": "Glacial Freeze",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.103
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "additional-ignite",
+    "name": "Additional Ignite",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "high-voltage",
+    "name": "High Voltage",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.103
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "quick-mobility",
+    "name": "Quick Mobility",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "extended-duration",
+    "name": "Extended Duration",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "spell-concentration",
+    "name": "Spell Concentration",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.225
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "added-erosion-damage",
+    "name": "Added Erosion Damage",
+    "modifiers": [
+      {
+        "stat": "addedErosion",
+        "op": "flat",
+        "value": 2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "critical-strike-rating-increase",
+    "name": "Critical Strike Rating Increase",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "critical-strike-damage-increase",
+    "name": "Critical Strike Damage Increase",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.26
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "physical-to-fire",
+    "name": "Physical to Fire",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "lightning-to-cold",
+    "name": "Lightning to Cold",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.055
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "deep-wounds",
+    "name": "Deep Wounds",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "improved-corrosion",
+    "name": "Improved Corrosion",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "passivation",
+    "name": "Passivation",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.41
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "quick-decision",
+    "name": "Quick Decision",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "cost-conversion",
+    "name": "Cost Conversion",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "jump",
+    "name": "Jump",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.04
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "shortened-duration",
+    "name": "Shortened Duration",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "added-fire-damage",
+    "name": "Added Fire Damage",
+    "modifiers": [
+      {
+        "stat": "addedFire",
+        "op": "flat",
+        "value": 2
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "added-cold-damage",
+    "name": "Added Cold Damage",
+    "modifiers": [
+      {
+        "stat": "addedCold",
+        "op": "flat",
+        "value": 2.5
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "added-lightning-damage",
+    "name": "Added Lightning Damage",
+    "modifiers": [
+      {
+        "stat": "addedLightning",
+        "op": "flat",
+        "value": 2.5
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "control-spell",
+    "name": "Control Spell",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.28
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "elemental-fusion",
+    "name": "Elemental Fusion",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "recklessness",
+    "name": "Recklessness",
+    "modifiers": [
+      {
+        "stat": "increasedAttackSpeed",
+        "op": "increased",
+        "value": 5
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "slow-projectile",
+    "name": "Slow Projectile",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.195
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "grudge",
+    "name": "Grudge",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.105
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "projectile-penetration",
+    "name": "Projectile Penetration",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.055
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "steamroll",
+    "name": "Steamroll",
+    "modifiers": [
+      {
+        "stat": "increasedAttackSpeed",
+        "op": "increased",
+        "value": -15
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "cataclysm",
+    "name": "Cataclysm",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "hunting-tempo",
+    "name": "Hunting Tempo",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.305
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "multifaceted-guard",
+    "name": "Multifaceted Guard",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.01
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "sentry-modification",
+    "name": "Sentry Modification",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "fire-explosion",
+    "name": "Fire Explosion",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.155
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "nova-shot",
+    "name": "Nova Shot",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.175
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "precision-strike",
+    "name": "Precision Strike",
+    "modifiers": [
+      {
+        "stat": "increasedAttackSpeed",
+        "op": "increased",
+        "value": 10
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "haunt",
+    "name": "Haunt",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.03
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "guard",
+    "name": "Guard",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.155
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "channel-preparation",
+    "name": "Channel Preparation",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.04
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "raging-slash",
+    "name": "Raging Slash",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "quick-return",
+    "name": "Quick Return",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.155
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "restrain",
+    "name": "Restrain",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "attack-focus",
+    "name": "Attack Focus",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.0165
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "wind-projectiles",
+    "name": "Wind Projectiles",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.155
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "pain-amplification",
+    "name": "Pain Amplification",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.125
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "blind",
+    "name": "Blind",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "electric-punishment",
+    "name": "Electric Punishment",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.105
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.01
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "ailment-termination",
+    "name": "Ailment Termination",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.067
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "enhanced-ailment",
+    "name": "Enhanced Ailment",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "added-physical-damage",
+    "name": "Added Physical Damage",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "cooldown-reduction",
+    "name": "Cooldown Reduction",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "emergency-restoration",
+    "name": "Emergency restoration",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "instant-restoration",
+    "name": "Instant restoration",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "ground-divide",
+    "name": "Ground Divide",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.015
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "scattershot-beam",
+    "name": "Scattershot Beam",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.02
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "focused-beam",
+    "name": "Focused Beam",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.155
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "refracted-prism",
+    "name": "Refracted Prism",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.125
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "servant-damage",
+    "name": "Servant Damage",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.155
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "servant-life",
+    "name": "Servant Life",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "elemental-duo",
+    "name": "Elemental Duo",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.155
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "maniacal-army",
+    "name": "Maniacal Army",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.11
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "mechanical-modification",
+    "name": "Mechanical Modification",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 1.31
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "assault-command",
+    "name": "Assault Command",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.155
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "defense-form",
+    "name": "Defense Form",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.05
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "well-fought-battle",
+    "name": "Well-Fought Battle",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "fragile-resurrection",
+    "name": "Fragile Resurrection",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.1
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "residues",
+    "name": "Residues",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "all-in",
+    "name": "All In",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "iron-fortification",
+    "name": "Iron Fortification",
+    "modifiers": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 220
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "emergency-avoidance",
+    "name": "Emergency Avoidance",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "concentration-warcry",
+    "name": "Concentration Warcry",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "lion-s-roars",
+    "name": "Lion's Roars",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "periodic-burst",
+    "name": "Periodic Burst",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "terrain-of-malice",
+    "name": "Terrain of Malice",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "electric-overload",
+    "name": "Electric Overload",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.1025
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.15
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "elemental-impact",
+    "name": "Elemental Impact",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "carpet-bombardment",
+    "name": "Carpet Bombardment",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.093
+      },
+      {
+        "stat": "increasedDamage",
+        "op": "increased",
+        "value": 8.6
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "mass-effect",
+    "name": "Mass Effect",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "defense-layers",
+    "name": "Defense Layers",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "focus-acceleration",
+    "name": "Focus Acceleration",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "focus-buff",
+    "name": "Focus Buff",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "seal-conversion",
+    "name": "Seal Conversion",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "psychic-burst",
+    "name": "Psychic Burst",
+    "modifiers": [
+      {
+        "stat": "increasedCastSpeed",
+        "op": "increased",
+        "value": 16
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "magic-dash",
+    "name": "Magic Dash",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "psychic-surge",
+    "name": "Psychic Surge",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "savage-growth",
+    "name": "Savage Growth",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.0001
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "harvest-time",
+    "name": "Harvest Time",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.08
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "preparation",
+    "name": "Preparation",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "charge",
+    "name": "Charge",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "gladiator-s-roar",
+    "name": "Gladiator's Roar",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "aura-amplification",
+    "name": "Aura Amplification",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "friend-of-spirit-magi",
+    "name": "Friend of Spirit Magi",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "protection-field",
+    "name": "Protection Field",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "hyper-metabolism",
+    "name": "Hyper Metabolism",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "emergency-aid",
+    "name": "Emergency Aid",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "medicinal-buildup",
+    "name": "Medicinal Buildup",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "reclusion",
+    "name": "Reclusion",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "willpower",
+    "name": "Willpower",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.06
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "recuperation",
+    "name": "Recuperation",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "spell-tangle",
+    "name": "Spell Tangle",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.155
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "manifold-entanglement",
+    "name": "Manifold Entanglement",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.01
+      }
+    ],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-seal-conversion",
+    "name": "Precise: Seal Conversion",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-selfless",
+    "name": "Precise: Selfless",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-selfishness",
+    "name": "Precise: Selfishness",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-stand-as-one",
+    "name": "Precise: Stand as One",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-disciplined",
+    "name": "Precise: Disciplined",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-concentrated",
+    "name": "Precise: Concentrated",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-malleable",
+    "name": "Precise: Malleable",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-safety-in-numbers",
+    "name": "Precise: Safety in Numbers",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-focus-buff",
+    "name": "Precise: Focus Buff",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-superpower",
+    "name": "Precise: Superpower",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-friend-of-spirit-magi",
+    "name": "Precise: Friend of Spirit Magi",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-protection-field",
+    "name": "Precise: Protection Field",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-restrain",
+    "name": "Precise Restrain",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-harmony",
+    "name": "Precise: Harmony",
+    "modifiers": [],
+    "requiresTags": []
+  },
+  {
+    "id": "precise-purify",
+    "name": "Precise: Purify",
+    "modifiers": [],
+    "requiresTags": []
   }
 ]
