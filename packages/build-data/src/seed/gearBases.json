@@ -3,25 +3,49 @@
     "id": "tidecaller-staff",
     "name": "Tidecaller Staff",
     "slot": "weapon",
-    "implicit": [{ "stat": "increasedSpell", "op": "increased", "value": 25 }]
+    "implicit": [
+      {
+        "stat": "increasedSpell",
+        "op": "increased",
+        "value": 25
+      }
+    ]
   },
   {
     "id": "warhammer",
     "name": "Ironforged Warhammer",
     "slot": "weapon",
-    "implicit": [{ "stat": "increasedAttack", "op": "increased", "value": 20 }]
+    "implicit": [
+      {
+        "stat": "increasedAttack",
+        "op": "increased",
+        "value": 20
+      }
+    ]
   },
   {
     "id": "plated-vest",
     "name": "Plated Vest",
     "slot": "chest",
-    "implicit": [{ "stat": "armor", "op": "flat", "value": 300 }]
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 300
+      }
+    ]
   },
   {
     "id": "silk-robe",
     "name": "Silk Robe",
     "slot": "chest",
-    "implicit": [{ "stat": "energyShield", "op": "flat", "value": 180 }]
+    "implicit": [
+      {
+        "stat": "energyShield",
+        "op": "flat",
+        "value": 180
+      }
+    ]
   },
   {
     "id": "leather-gloves",
@@ -33,12 +57,6962 @@
     "id": "gold-amulet",
     "name": "Gold Amulet",
     "slot": "amulet",
-    "implicit": [{ "stat": "increasedElemental", "op": "increased", "value": 12 }]
+    "implicit": [
+      {
+        "stat": "increasedElemental",
+        "op": "increased",
+        "value": 12
+      }
+    ]
   },
   {
     "id": "topaz-ring",
     "name": "Topaz Ring",
     "slot": "ring",
-    "implicit": [{ "stat": "lightningResist", "op": "flat", "value": 20 }]
+    "implicit": [
+      {
+        "stat": "lightningResist",
+        "op": "flat",
+        "value": 20
+      }
+    ]
+  },
+  {
+    "id": "rogue-s-long-boots",
+    "name": "Rogue's Long Boots",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "scout-s-short-boots",
+    "name": "Scout's Short Boots",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "skirmisher-s-leather-boots",
+    "name": "Skirmisher's Leather Boots",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "hunter-s-leather-boots",
+    "name": "Hunter's Leather Boots",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "prospector-s-short-boots",
+    "name": "Prospector's Short Boots",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "wild-dominator-long-boots",
+    "name": "Wild Dominator Long Boots",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "grand-explorer-s-heavy-boots",
+    "name": "Grand Explorer's Heavy Boots",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "watcher-s-trail",
+    "name": "Watcher's Trail",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "eternal-night-stalker-s-long-boots",
+    "name": "Eternal Night Stalker's Long Boots",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "boots-of-calamity",
+    "name": "Boots of Calamity",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "demon-slayer-s-feet",
+    "name": "Demon Slayer's Feet",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "secret-shadow-s-shoes",
+    "name": "Secret Shadow's Shoes",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "herbalist-s-footguards",
+    "name": "Herbalist's Footguards",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "scribe-s-boots",
+    "name": "Scribe's Boots",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "acolyte-s-footwraps",
+    "name": "Acolyte's Footwraps",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "witchdoctor-s-slippers",
+    "name": "Witchdoctor's Slippers",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "disciple-s-cloth-boots",
+    "name": "Disciple's Cloth Boots",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "shaman-s-slippers",
+    "name": "Shaman's Slippers",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "envoy-s-soft-shoes",
+    "name": "Envoy's Soft Shoes",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "respected-tutor-s-footwraps",
+    "name": "Respected Tutor's Footwraps",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "elder-sage-s-treads",
+    "name": "Elder Sage's Treads",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "imperishable-feet",
+    "name": "Imperishable Feet",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "all-magic-shoes",
+    "name": "All Magic Shoes",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "long-night-sorcerer-s-boots",
+    "name": "Long Night Sorcerer's Boots",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "brute-s-greaves",
+    "name": "Brute's Greaves",
+    "slot": "boots",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 168
+      }
+    ]
+  },
+  {
+    "id": "footman-s-boots",
+    "name": "Footman's Boots",
+    "slot": "boots",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 235
+      }
+    ]
+  },
+  {
+    "id": "paladin-s-iron-greaves",
+    "name": "Paladin's Iron Greaves",
+    "slot": "boots",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 329
+      }
+    ]
+  },
+  {
+    "id": "berserker-s-footguards",
+    "name": "Berserker's Footguards",
+    "slot": "boots",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 461
+      }
+    ]
+  },
+  {
+    "id": "iron-sentry-s-feet",
+    "name": "Iron Sentry's Feet",
+    "slot": "boots",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 599
+      }
+    ]
+  },
+  {
+    "id": "packleader-greaves",
+    "name": "Packleader Greaves",
+    "slot": "boots",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 779
+      }
+    ]
+  },
+  {
+    "id": "mountain-lord-s-feet",
+    "name": "Mountain Lord's Feet",
+    "slot": "boots",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 935
+      }
+    ]
+  },
+  {
+    "id": "divine-arbiter-s-feet",
+    "name": "Divine Arbiter's Feet",
+    "slot": "boots",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1122
+      }
+    ]
+  },
+  {
+    "id": "dragon-guardian-s-footguards",
+    "name": "Dragon Guardian's Footguards",
+    "slot": "boots",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1346
+      }
+    ]
+  },
+  {
+    "id": "fallen-knight-s-footguards",
+    "name": "Fallen Knight's Footguards",
+    "slot": "boots",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1615
+      }
+    ]
+  },
+  {
+    "id": "old-king-s-sabatons",
+    "name": "Old King's Sabatons",
+    "slot": "boots",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1777
+      }
+    ]
+  },
+  {
+    "id": "ranger-s-dirty-boots",
+    "name": "Ranger's Dirty Boots",
+    "slot": "boots",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1920
+      }
+    ]
+  },
+  {
+    "id": "rogue-outerwear",
+    "name": "Rogue Outerwear",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "scout-s-tight-vest",
+    "name": "Scout's Tight Vest",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "skirmisher-outerwear",
+    "name": "Skirmisher Outerwear",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "hunter-s-chestguard",
+    "name": "Hunter's Chestguard",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "prospector-outerwear",
+    "name": "Prospector Outerwear",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "wild-dominator-outerwear",
+    "name": "Wild Dominator Outerwear",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "grand-explorer-outerwear",
+    "name": "Grand Explorer Outerwear",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "watcher-s-chest-armor",
+    "name": "Watcher's Chest Armor",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "eternal-night-stalker-s-chestguard",
+    "name": "Eternal Night Stalker's Chestguard",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "sanctuary-of-calamity",
+    "name": "Sanctuary of Calamity",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "demon-slayer-s-skin",
+    "name": "Demon Slayer's Skin",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "secret-shadow-s-protection",
+    "name": "Secret Shadow's Protection",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "herbalist-s-robe",
+    "name": "Herbalist's Robe",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "scribe-s-coat",
+    "name": "Scribe's Coat",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "acolyte-s-robe",
+    "name": "Acolyte's Robe",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "witchdoctor-s-robe",
+    "name": "Witchdoctor's Robe",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "disciple-s-coat",
+    "name": "Disciple's Coat",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "shaman-s-short-robe",
+    "name": "Shaman's Short Robe",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "envoy-s-robe",
+    "name": "Envoy's Robe",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "respected-tutor-s-robe",
+    "name": "Respected Tutor's Robe",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "elder-sage-s-regalia",
+    "name": "Elder Sage's Regalia",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "imperishable-black-robe",
+    "name": "Imperishable Black Robe",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "all-magic-secret-robe",
+    "name": "All Magic Secret Robe",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "long-night-sorcerer-s-robe",
+    "name": "Long Night Sorcerer's Robe",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "brute-s-chestguard",
+    "name": "Brute's Chestguard",
+    "slot": "chest",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 196
+      }
+    ]
+  },
+  {
+    "id": "footman-s-chestguard",
+    "name": "Footman's Chestguard",
+    "slot": "chest",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 274
+      }
+    ]
+  },
+  {
+    "id": "paladin-s-heavy-armor",
+    "name": "Paladin's Heavy Armor",
+    "slot": "chest",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 384
+      }
+    ]
+  },
+  {
+    "id": "berserker-s-chest-armor",
+    "name": "Berserker's Chest Armor",
+    "slot": "chest",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 538
+      }
+    ]
+  },
+  {
+    "id": "iron-sentry-s-heavy-armor",
+    "name": "Iron Sentry's Heavy Armor",
+    "slot": "chest",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 699
+      }
+    ]
+  },
+  {
+    "id": "packleader-chest-armor",
+    "name": "Packleader Chest Armor",
+    "slot": "chest",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 909
+      }
+    ]
+  },
+  {
+    "id": "mountain-lord-s-chest-armor",
+    "name": "Mountain Lord's Chest Armor",
+    "slot": "chest",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1091
+      }
+    ]
+  },
+  {
+    "id": "divine-arbiter-s-defense",
+    "name": "Divine Arbiter's Defense",
+    "slot": "chest",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1309
+      }
+    ]
+  },
+  {
+    "id": "dragon-guardian-s-lamellar-armor",
+    "name": "Dragon Guardian's Lamellar Armor",
+    "slot": "chest",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1571
+      }
+    ]
+  },
+  {
+    "id": "fallen-knight-s-armor",
+    "name": "Fallen Knight's Armor",
+    "slot": "chest",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1885
+      }
+    ]
+  },
+  {
+    "id": "old-king-s-armor",
+    "name": "Old King's Armor",
+    "slot": "chest",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 2073
+      }
+    ]
+  },
+  {
+    "id": "ranger-s-rag",
+    "name": "Ranger's Rag",
+    "slot": "chest",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 2240
+      }
+    ]
+  },
+  {
+    "id": "rogue-s-gloves",
+    "name": "Rogue's Gloves",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "scout-s-gloves",
+    "name": "Scout's Gloves",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "skirmisher-s-gloves",
+    "name": "Skirmisher's Gloves",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "hunter-s-gloves",
+    "name": "Hunter's Gloves",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "prospector-handguards",
+    "name": "Prospector Handguards",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "wild-dominator-handguards",
+    "name": "Wild Dominator Handguards",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "grand-explorer-s-gloves",
+    "name": "Grand Explorer's Gloves",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "watcher-s-hold",
+    "name": "Watcher's Hold",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "eternal-night-stalker-s-hands",
+    "name": "Eternal Night Stalker's Hands",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "hands-of-calamity",
+    "name": "Hands of Calamity",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "demon-slayer-s-hands",
+    "name": "Demon Slayer's Hands",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "secret-shadow-s-wrists",
+    "name": "Secret Shadow's Wrists",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "herbalist-s-gloves",
+    "name": "Herbalist's Gloves",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "scribe-handguards",
+    "name": "Scribe Handguards",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "acolyte-handguards",
+    "name": "Acolyte Handguards",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "witchdoctor-s-gloves",
+    "name": "Witchdoctor's Gloves",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "disciple-handguards",
+    "name": "Disciple Handguards",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "shaman-s-hands",
+    "name": "Shaman's Hands",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "envoy-s-hands",
+    "name": "Envoy's Hands",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "respected-tutor-s-gloves",
+    "name": "Respected Tutor's Gloves",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "elder-sage-s-long-gloves",
+    "name": "Elder Sage's Long Gloves",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "imperishable-touch",
+    "name": "Imperishable Touch",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "all-magic-grip",
+    "name": "All Magic Grip",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "long-night-sorcerer-s-wristband",
+    "name": "Long Night Sorcerer's Wristband",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "brute-handguards",
+    "name": "Brute Handguards",
+    "slot": "gloves",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 168
+      }
+    ]
+  },
+  {
+    "id": "footman-s-gauntlets",
+    "name": "Footman's Gauntlets",
+    "slot": "gloves",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 235
+      }
+    ]
+  },
+  {
+    "id": "paladin-s-hands",
+    "name": "Paladin's Hands",
+    "slot": "gloves",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 329
+      }
+    ]
+  },
+  {
+    "id": "berserker-s-hands",
+    "name": "Berserker's Hands",
+    "slot": "gloves",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 461
+      }
+    ]
+  },
+  {
+    "id": "iron-sentry-s-hold",
+    "name": "Iron Sentry's Hold",
+    "slot": "gloves",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 599
+      }
+    ]
+  },
+  {
+    "id": "packleader-handguards",
+    "name": "Packleader Handguards",
+    "slot": "gloves",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 779
+      }
+    ]
+  },
+  {
+    "id": "mountain-lord-handguards",
+    "name": "Mountain Lord Handguards",
+    "slot": "gloves",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 935
+      }
+    ]
+  },
+  {
+    "id": "divine-arbiter-s-hands",
+    "name": "Divine Arbiter's Hands",
+    "slot": "gloves",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1122
+      }
+    ]
+  },
+  {
+    "id": "dragon-guardian-handguards",
+    "name": "Dragon Guardian Handguards",
+    "slot": "gloves",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1346
+      }
+    ]
+  },
+  {
+    "id": "fallen-knight-handguards",
+    "name": "Fallen Knight Handguards",
+    "slot": "gloves",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1615
+      }
+    ]
+  },
+  {
+    "id": "old-king-s-rerebraces",
+    "name": "Old King's Rerebraces",
+    "slot": "gloves",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1777
+      }
+    ]
+  },
+  {
+    "id": "ranger-s-rusted-gauntlets",
+    "name": "Ranger's Rusted Gauntlets",
+    "slot": "gloves",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1920
+      }
+    ]
+  },
+  {
+    "id": "rogue-s-hood",
+    "name": "Rogue's Hood",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "scout-s-hood",
+    "name": "Scout's Hood",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "skirmisher-s-mask",
+    "name": "Skirmisher's Mask",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "hunter-s-hood",
+    "name": "Hunter's Hood",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "prospector-s-hat",
+    "name": "Prospector's Hat",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "wild-dominator-headdress",
+    "name": "Wild Dominator Headdress",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "grand-explorer-s-fez",
+    "name": "Grand Explorer's Fez",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "watcher-s-gaze",
+    "name": "Watcher's Gaze",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "eternal-night-stalker-s-hood",
+    "name": "Eternal Night Stalker's Hood",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "mask-of-calamity",
+    "name": "Mask of Calamity",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "demon-slayer-s-eyes",
+    "name": "Demon Slayer's Eyes",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "secret-shadow-s-mask",
+    "name": "Secret Shadow's Mask",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "herbalist-s-headscarf",
+    "name": "Herbalist's Headscarf",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "scribe-s-headscarf",
+    "name": "Scribe's Headscarf",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "acolyte-s-crown",
+    "name": "Acolyte's Crown",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "witchdoctor-s-mask",
+    "name": "Witchdoctor's Mask",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "disciple-s-headscarf",
+    "name": "Disciple's Headscarf",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "shaman-s-headdress",
+    "name": "Shaman's Headdress",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "envoy-s-mask",
+    "name": "Envoy's Mask",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "respected-tutor-s-face",
+    "name": "Respected Tutor's Face",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "elder-sage-s-chapeau",
+    "name": "Elder Sage's Chapeau",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "imperishable-miter",
+    "name": "Imperishable Miter",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "all-magic-crown",
+    "name": "All Magic Crown",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "long-night-sorcerer-s-mask",
+    "name": "Long Night Sorcerer's Mask",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "brute-s-helm",
+    "name": "Brute's Helm",
+    "slot": "helmet",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 168
+      }
+    ]
+  },
+  {
+    "id": "footman-helmet",
+    "name": "Footman Helmet",
+    "slot": "helmet",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 235
+      }
+    ]
+  },
+  {
+    "id": "paladin-s-heavy-helm",
+    "name": "Paladin's Heavy Helm",
+    "slot": "helmet",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 329
+      }
+    ]
+  },
+  {
+    "id": "berserker-s-spired-helm",
+    "name": "Berserker's Spired Helm",
+    "slot": "helmet",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 461
+      }
+    ]
+  },
+  {
+    "id": "iron-sentry-s-helmet",
+    "name": "Iron Sentry's Helmet",
+    "slot": "helmet",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 599
+      }
+    ]
+  },
+  {
+    "id": "packleader-helmet",
+    "name": "Packleader Helmet",
+    "slot": "helmet",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 779
+      }
+    ]
+  },
+  {
+    "id": "mountain-lord-helmet",
+    "name": "Mountain Lord Helmet",
+    "slot": "helmet",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 935
+      }
+    ]
+  },
+  {
+    "id": "divine-arbiter-s-diadem",
+    "name": "Divine Arbiter's Diadem",
+    "slot": "helmet",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1122
+      }
+    ]
+  },
+  {
+    "id": "dragon-guardian-s-faceguard",
+    "name": "Dragon Guardian's Faceguard",
+    "slot": "helmet",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1346
+      }
+    ]
+  },
+  {
+    "id": "fallen-knight-helmet",
+    "name": "Fallen Knight Helmet",
+    "slot": "helmet",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1615
+      }
+    ]
+  },
+  {
+    "id": "old-king-s-crown",
+    "name": "Old King's Crown",
+    "slot": "helmet",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1777
+      }
+    ]
+  },
+  {
+    "id": "ranger-s-broken-mask",
+    "name": "Ranger's Broken Mask",
+    "slot": "helmet",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1920
+      }
+    ]
+  },
+  {
+    "id": "wayfarer-cane",
+    "name": "Wayfarer Cane",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "rambone-cane",
+    "name": "Rambone Cane",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "witness-cane",
+    "name": "Witness Cane",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "snake-scale-cane",
+    "name": "Snake-scale Cane",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "recluse-cane",
+    "name": "Recluse Cane",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "wolf-fang-cane",
+    "name": "Wolf Fang Cane",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "omen-short-staff",
+    "name": "Omen Short Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "thinker-cane",
+    "name": "Thinker Cane",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "leopard-jaw-cane",
+    "name": "Leopard Jaw Cane",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "traitor-cane",
+    "name": "Traitor Cane",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "lion-heart-cane",
+    "name": "Lion Heart Cane",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "villain-cane",
+    "name": "Villain Cane",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "dragonblood-cane",
+    "name": "Dragonblood Cane",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "foreshadow-short-staff",
+    "name": "Foreshadow Short Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "esoteric-cane",
+    "name": "Esoteric Cane",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "fallen-pactspirital-short-staff",
+    "name": "Fallen Pactspirital Short Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "obsidian-cane",
+    "name": "Obsidian Cane",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "blue-amber-cane",
+    "name": "Blue Amber Cane",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "glimmering-fluorite-cane",
+    "name": "Glimmering Fluorite Cane",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "sleeping-sage-s-cane",
+    "name": "Sleeping Sage's Cane",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "nailclaw",
+    "name": "Nailclaw",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "shark-tooth",
+    "name": "Shark Tooth",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "pickaxe-claw",
+    "name": "Pickaxe Claw",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "black-cat-claw",
+    "name": "Black Cat Claw",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "eyestinger-claw",
+    "name": "Eyestinger Claw",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "berserker-claw",
+    "name": "Berserker Claw",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "sandstorm-katar",
+    "name": "Sandstorm Katar",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "wailing-claw",
+    "name": "Wailing Claw",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "two-headed-claw",
+    "name": "Two-Headed Claw",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "direwolf-fang",
+    "name": "Direwolf Fang",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "spinesplitter-katar",
+    "name": "Spinesplitter Katar",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "crimson-tiger-sting",
+    "name": "Crimson Tiger Sting",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "scarlet-river-claw",
+    "name": "Scarlet River Claw",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "primeval-war-claw",
+    "name": "Primeval War Claw",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "jadebone-katar",
+    "name": "Jadebone Katar",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "eagle-claw",
+    "name": "Eagle Claw",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "delusion-claw",
+    "name": "Delusion Claw",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "three-tailed-cat-claw",
+    "name": "Three-tailed Cat Claw",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "dragon-hunter-claw",
+    "name": "Dragon Hunter Claw",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "silence-piercing-claw",
+    "name": "Silence Piercing Claw",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "thief-short-dagger",
+    "name": "Thief Short Dagger",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "rusted-dagger",
+    "name": "Rusted Dagger",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "slaughter-short-dagger",
+    "name": "Slaughter Short Dagger",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "poisoned-dagger",
+    "name": "Poisoned Dagger",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "assassin-short-dagger",
+    "name": "Assassin Short Dagger",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "voodoo-dagger",
+    "name": "Voodoo Dagger",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "resentment-dirk",
+    "name": "Resentment Dirk",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "violence-short-dagger",
+    "name": "Violence Short Dagger",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "nightshade-dagger",
+    "name": "Nightshade Dagger",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "kingslayer-short-dagger",
+    "name": "Kingslayer Short Dagger",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "cursed-dagger",
+    "name": "Cursed Dagger",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "godslaughter-short-dagger",
+    "name": "Godslaughter Short Dagger",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "sorcerer-s-dagger",
+    "name": "Sorcerer's Dagger",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "hatred-dirk",
+    "name": "Hatred Dirk",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "esoteric-dagger",
+    "name": "Esoteric Dagger",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "illusory-dirk",
+    "name": "Illusory Dirk",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "disillusion-dagger",
+    "name": "Disillusion Dagger",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "fools-dagger",
+    "name": "Fools' Dagger",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "blind-faith-dagger",
+    "name": "Blind Faith Dagger",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "truth-speaker-s-dagger",
+    "name": "Truth Speaker's Dagger",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "rusted-iron-axe",
+    "name": "Rusted Iron Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "twisted-copper-axe",
+    "name": "Twisted Copper Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "iron-hatchet",
+    "name": "Iron Hatchet",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "sharpened-iron-axe",
+    "name": "Sharpened Iron Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "alloy-board-axe",
+    "name": "Alloy Board Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "war-axe",
+    "name": "War Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "scoundrel-s-axe",
+    "name": "Scoundrel's Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "earthsplitter-axe",
+    "name": "Earthsplitter Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "savage-axe",
+    "name": "Savage Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "valagon-axe",
+    "name": "Valagon Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "cursed-axe",
+    "name": "Cursed Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "bonecrusher-greataxe",
+    "name": "Bonecrusher Greataxe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "conflict-war-axe",
+    "name": "Conflict War Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "frenzy-battle-axe",
+    "name": "Frenzy Battle Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "scarlet-axe",
+    "name": "Scarlet Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "ritual-greataxe",
+    "name": "Ritual Greataxe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "vengeance-axe",
+    "name": "Vengeance Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "suppressor-axe",
+    "name": "Suppressor Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "rebel-axe",
+    "name": "Rebel Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "hollow-rift-axe",
+    "name": "Hollow Rift Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "witherbark-club",
+    "name": "Witherbark Club",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "mossy-stone-hammer",
+    "name": "Mossy Stone Hammer",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "rusted-wooden-hammer",
+    "name": "Rusted Wooden Hammer",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "black-iron-maul",
+    "name": "Black Iron Maul",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "war-hammer",
+    "name": "War Hammer",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "oblivion-maul",
+    "name": "Oblivion Maul",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "prayer-hammer",
+    "name": "Prayer Hammer",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "nightmare-hammer",
+    "name": "Nightmare Hammer",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "dragon-s-roar-hammer",
+    "name": "Dragon's Roar Hammer",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "tremor-wooden-hammer",
+    "name": "Tremor Wooden Hammer",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "thorny-hammer",
+    "name": "Thorny Hammer",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "rocksplitter-mallet",
+    "name": "Rocksplitter Mallet",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "primeval-war-hammer",
+    "name": "Primeval War Hammer",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "nature-wooden-hammer",
+    "name": "Nature Wooden Hammer",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "redgold-hammer",
+    "name": "Redgold Hammer",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "twilight-hammer",
+    "name": "Twilight Hammer",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "quinn-s-hammer",
+    "name": "Quinn's Hammer",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "general-s-war-hammer",
+    "name": "General's War Hammer",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "melted-iron-hammer",
+    "name": "Melted Iron Hammer",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "sierra-forge-light-hammer",
+    "name": "Sierra Forge Light Hammer",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "rusted-bronze-sword",
+    "name": "Rusted Bronze Sword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "crude-iron-sword",
+    "name": "Crude Iron Sword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "recruit-s-saber",
+    "name": "Recruit's Saber",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "iron-sword",
+    "name": "Iron Sword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "thorny-sword",
+    "name": "Thorny Sword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "battlefield-longsword",
+    "name": "Battlefield Longsword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "redgold-sword",
+    "name": "Redgold Sword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "cold-blade",
+    "name": "Cold Blade",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "talon-sword",
+    "name": "Talon Sword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "hurricane-short-sword",
+    "name": "Hurricane Short Sword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "blizzard-sword",
+    "name": "Blizzard Sword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "coldlight-sword",
+    "name": "Coldlight Sword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "hero-s-longsword",
+    "name": "Hero's Longsword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "gilt-longsword",
+    "name": "Gilt Longsword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "bone-stinger-sword",
+    "name": "Bone Stinger Sword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "moonlight-long-blade",
+    "name": "Moonlight Long Blade",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "nameless-sword",
+    "name": "Nameless Sword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "forgotten-iron-sword",
+    "name": "Forgotten Iron Sword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "unforgotten-long-blade",
+    "name": "Unforgotten Long Blade",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "shadowless-swordsman-s-blade",
+    "name": "Shadowless Swordsman's Blade",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "rusted-pistol",
+    "name": "Rusted Pistol",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "blackrock-zapper",
+    "name": "Blackrock Zapper",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "pocket-boomstick",
+    "name": "Pocket Boomstick",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "iron-pistol",
+    "name": "Iron Pistol",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "black-feather-zapper",
+    "name": "Black Feather Zapper",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "rottenbone-zapper",
+    "name": "Rottenbone Zapper",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "thorny-boomstick",
+    "name": "Thorny Boomstick",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "warden-s-boomstick",
+    "name": "Warden's Boomstick",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "unholy-zapper",
+    "name": "Unholy Zapper",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "cursed-boomstick",
+    "name": "Cursed Boomstick",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "viper-zapper",
+    "name": "Viper Zapper",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "voodoo-boomstick",
+    "name": "Voodoo Boomstick",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "bloodclaw-zapper",
+    "name": "Bloodclaw Zapper",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "swarm-pistol",
+    "name": "Swarm Pistol",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "shadow-boomstick",
+    "name": "Shadow Boomstick",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "dragonsoul-zapper",
+    "name": "Dragonsoul Zapper",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "final-battle-boomstick",
+    "name": "Final Battle Boomstick",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "terminator-boomstick",
+    "name": "Terminator Boomstick",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "kingslayer-boomstick",
+    "name": "Kingslayer Boomstick",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "war-ender-s-boomstick",
+    "name": "War Ender's Boomstick",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "bud-rod",
+    "name": "Bud Rod",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "thriving-rod",
+    "name": "Thriving Rod",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "vine-rod",
+    "name": "Vine Rod",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "storm-rod",
+    "name": "Storm Rod",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "waning-moon-rod",
+    "name": "Waning Moon Rod",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "flying-bird-rod",
+    "name": "Flying Bird Rod",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "swimming-fish-rod",
+    "name": "Swimming Fish Rod",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "shepherdess-rod",
+    "name": "Shepherdess Rod",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "river-rod",
+    "name": "River Rod",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "harvest-rod",
+    "name": "Harvest Rod",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "daylight-rod",
+    "name": "Daylight Rod",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "full-moon-rod",
+    "name": "Full Moon Rod",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "shooting-star-rod",
+    "name": "Shooting Star Rod",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "beast-king-rod",
+    "name": "Beast King Rod",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "celestial-rod",
+    "name": "Celestial Rod",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "cosmic-rod",
+    "name": "Cosmic Rod",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "star-ocean-rod",
+    "name": "Star Ocean Rod",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "astrologer-rod",
+    "name": "Astrologer Rod",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "bard-rod",
+    "name": "Bard Rod",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "heart-of-all-rod",
+    "name": "Heart of All Rod",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "withering-scepter",
+    "name": "Withering Scepter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "marsh-scepter",
+    "name": "Marsh Scepter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "barren-scepter",
+    "name": "Barren Scepter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "lamentation-scepter",
+    "name": "Lamentation Scepter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "disorientation-scepter",
+    "name": "Disorientation Scepter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "high-tower-scepter",
+    "name": "High Tower Scepter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "hanging-scepter",
+    "name": "Hanging Scepter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "eternal-night-scepter",
+    "name": "Eternal Night Scepter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "red-rain-scepter",
+    "name": "Red Rain Scepter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "stigmata-scepter",
+    "name": "Stigmata Scepter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "deception-scepter",
+    "name": "Deception Scepter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "sorrow-scepter",
+    "name": "Sorrow Scepter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "agony-scepter",
+    "name": "Agony Scepter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "rotten-scepter",
+    "name": "Rotten Scepter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "spiral-scepter",
+    "name": "Spiral Scepter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "judgment-scepter",
+    "name": "Judgment Scepter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "reflux-scepter",
+    "name": "Reflux Scepter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "trickster-scepter",
+    "name": "Trickster Scepter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "thorn-sea-scepter",
+    "name": "Thorn Sea Scepter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "dark-gaze-scepter",
+    "name": "Dark Gaze Scepter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "withervine-wand",
+    "name": "Withervine Wand",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedCold",
+        "op": "flat",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "id": "rambone-wand",
+    "name": "Rambone Wand",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedLightning",
+        "op": "flat",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "id": "carved-wooden-wand",
+    "name": "Carved Wooden Wand",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedErosion",
+        "op": "flat",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "id": "cuprite-wand",
+    "name": "Cuprite Wand",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedFire",
+        "op": "flat",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "id": "spiritwood-wand",
+    "name": "Spiritwood Wand",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedCold",
+        "op": "flat",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "id": "wind-spirit-wand",
+    "name": "Wind Spirit Wand",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedLightning",
+        "op": "flat",
+        "value": 7
+      }
+    ]
+  },
+  {
+    "id": "voodoo-wand",
+    "name": "Voodoo Wand",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedErosion",
+        "op": "flat",
+        "value": 8
+      }
+    ]
+  },
+  {
+    "id": "flower-sea-wand",
+    "name": "Flower Sea Wand",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedFire",
+        "op": "flat",
+        "value": 9
+      }
+    ]
+  },
+  {
+    "id": "wiseman-s-wand",
+    "name": "Wiseman's Wand",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedCold",
+        "op": "flat",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "id": "white-crystal-wand",
+    "name": "White Crystal Wand",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedLightning",
+        "op": "flat",
+        "value": 12
+      }
+    ]
+  },
+  {
+    "id": "viper-wand",
+    "name": "Viper Wand",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedErosion",
+        "op": "flat",
+        "value": 14
+      }
+    ]
+  },
+  {
+    "id": "wraith-wand",
+    "name": "Wraith Wand",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedFire",
+        "op": "flat",
+        "value": 16
+      }
+    ]
+  },
+  {
+    "id": "bard-s-wand",
+    "name": "Bard's Wand",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedCold",
+        "op": "flat",
+        "value": 18
+      }
+    ]
+  },
+  {
+    "id": "sage-wand",
+    "name": "Sage Wand",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedLightning",
+        "op": "flat",
+        "value": 20
+      }
+    ]
+  },
+  {
+    "id": "devout-wand",
+    "name": "Devout Wand",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedErosion",
+        "op": "flat",
+        "value": 22
+      }
+    ]
+  },
+  {
+    "id": "scarlet-wand",
+    "name": "Scarlet Wand",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedFire",
+        "op": "flat",
+        "value": 24
+      }
+    ]
+  },
+  {
+    "id": "azure-moon-wand",
+    "name": "Azure Moon Wand",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedCold",
+        "op": "flat",
+        "value": 26
+      }
+    ]
+  },
+  {
+    "id": "wretched-wand",
+    "name": "Wretched Wand",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedLightning",
+        "op": "flat",
+        "value": 28
+      }
+    ]
+  },
+  {
+    "id": "heartflayer-wand",
+    "name": "Heartflayer Wand",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedErosion",
+        "op": "flat",
+        "value": 30
+      }
+    ]
+  },
+  {
+    "id": "headless-cleric-wand",
+    "name": "Headless Cleric Wand",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "aspiration-light-shield",
+    "name": "Aspiration Light Shield",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "griffin-buckler",
+    "name": "Griffin Buckler",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "wind-spirit-light-shield",
+    "name": "Wind Spirit Light Shield",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "dragonfang-buckler",
+    "name": "Dragonfang Buckler",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "hunter-s-buckler",
+    "name": "Hunter's Buckler",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "thunder-light-shield",
+    "name": "Thunder Light Shield",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "cursed-light-shield",
+    "name": "Cursed Light Shield",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "viper-buckler",
+    "name": "Viper Buckler",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "shadow-light-shield",
+    "name": "Shadow Light Shield",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "wind-god-s-buckler",
+    "name": "Wind God's Buckler",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "conqueror-buckler",
+    "name": "Conqueror Buckler",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "lost-ranger-s-light-shield",
+    "name": "Lost Ranger's Light Shield",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "aspiration-magic-shield",
+    "name": "Aspiration Magic Shield",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "voodoo-caster-shield",
+    "name": "Voodoo Caster Shield",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "bard-s-square-shield",
+    "name": "Bard's Square Shield",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "freedom-square-shield",
+    "name": "Freedom Square Shield",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "nature-caster-shield",
+    "name": "Nature Caster Shield",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "abyssal-square-shield",
+    "name": "Abyssal Square Shield",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "blizzard-square-shield",
+    "name": "Blizzard Square Shield",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "sage-s-caster-shield",
+    "name": "Sage's Caster Shield",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "spirit-lord-s-caster-shield",
+    "name": "Spirit Lord's Caster Shield",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "twilight-square-shield",
+    "name": "Twilight Square Shield",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "fraudster-magic-shield",
+    "name": "Fraudster Magic Shield",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "ninth-apostle-s-magic-shield",
+    "name": "Ninth Apostle's Magic Shield",
+    "slot": "offhand",
+    "implicit": []
+  },
+  {
+    "id": "aspiration-tower-shield",
+    "name": "Aspiration Tower Shield",
+    "slot": "offhand",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 168
+      }
+    ]
+  },
+  {
+    "id": "starmetal-kite-shield",
+    "name": "Starmetal Kite Shield",
+    "slot": "offhand",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 235
+      }
+    ]
+  },
+  {
+    "id": "griffin-tower-shield",
+    "name": "Griffin Tower Shield",
+    "slot": "offhand",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 329
+      }
+    ]
+  },
+  {
+    "id": "crimson-kite-shield",
+    "name": "Crimson Kite Shield",
+    "slot": "offhand",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 461
+      }
+    ]
+  },
+  {
+    "id": "callous-kite-shield",
+    "name": "Callous Kite Shield",
+    "slot": "offhand",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 599
+      }
+    ]
+  },
+  {
+    "id": "falling-star-tower-shield",
+    "name": "Falling Star Tower Shield",
+    "slot": "offhand",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 779
+      }
+    ]
+  },
+  {
+    "id": "warlord-s-kite-shield",
+    "name": "Warlord's Kite Shield",
+    "slot": "offhand",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 935
+      }
+    ]
+  },
+  {
+    "id": "vindicator-s-tower-shield",
+    "name": "Vindicator's Tower Shield",
+    "slot": "offhand",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1122
+      }
+    ]
+  },
+  {
+    "id": "monarch-s-kite-shield",
+    "name": "Monarch's Kite Shield",
+    "slot": "offhand",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1346
+      }
+    ]
+  },
+  {
+    "id": "glory-kite-shield",
+    "name": "Glory Kite Shield",
+    "slot": "offhand",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1615
+      }
+    ]
+  },
+  {
+    "id": "red-pegasus-kite-shield",
+    "name": "Red Pegasus Kite Shield",
+    "slot": "offhand",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1777
+      }
+    ]
+  },
+  {
+    "id": "future-warrior-s-kite-shield",
+    "name": "Future Warrior's Kite Shield",
+    "slot": "offhand",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 1920
+      }
+    ]
+  },
+  {
+    "id": "rock-waistguard",
+    "name": "Rock Waistguard",
+    "slot": "belt",
+    "implicit": [
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "id": "spring-source-girdle",
+    "name": "Spring Source Girdle",
+    "slot": "belt",
+    "implicit": []
+  },
+  {
+    "id": "wind-blade-waistguard",
+    "name": "Wind Blade Waistguard",
+    "slot": "belt",
+    "implicit": [
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 15
+      }
+    ]
+  },
+  {
+    "id": "god-s-grace-girdle",
+    "name": "God's Grace Girdle",
+    "slot": "belt",
+    "implicit": []
+  },
+  {
+    "id": "dragon-scale-waistguard",
+    "name": "Dragon Scale Waistguard",
+    "slot": "belt",
+    "implicit": [
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 35
+      }
+    ]
+  },
+  {
+    "id": "radiant-lunar-girdle",
+    "name": "Radiant Lunar Girdle",
+    "slot": "belt",
+    "implicit": []
+  },
+  {
+    "id": "fearless-waistguard",
+    "name": "Fearless Waistguard",
+    "slot": "belt",
+    "implicit": [
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 65
+      }
+    ]
+  },
+  {
+    "id": "magic-girdle",
+    "name": "Magic Girdle",
+    "slot": "belt",
+    "implicit": []
+  },
+  {
+    "id": "conqueror-waistguard",
+    "name": "Conqueror Waistguard",
+    "slot": "belt",
+    "implicit": [
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 95
+      }
+    ]
+  },
+  {
+    "id": "arcanist-girdle",
+    "name": "Arcanist Girdle",
+    "slot": "belt",
+    "implicit": []
+  },
+  {
+    "id": "wayfarer-waistguard",
+    "name": "Wayfarer Waistguard",
+    "slot": "belt",
+    "implicit": [
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 110
+      }
+    ]
+  },
+  {
+    "id": "elder-sage-girdle",
+    "name": "Elder Sage Girdle",
+    "slot": "belt",
+    "implicit": []
+  },
+  {
+    "id": "tortoiseshell-amulet",
+    "name": "Tortoiseshell Amulet",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "cinnabar-pendant",
+    "name": "Cinnabar Pendant",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "obsidian-necklace",
+    "name": "Obsidian Necklace",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "cataclysm-amulet",
+    "name": "Cataclysm Amulet",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "sunlight-pendant",
+    "name": "Sunlight Pendant",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "shaman-s-necklace",
+    "name": "Shaman's Necklace",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "flare-amulet",
+    "name": "Flare Amulet",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "ripple-pendant",
+    "name": "Ripple Pendant",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "lunar-corona-necklace",
+    "name": "Lunar Corona Necklace",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "sunlight-amulet",
+    "name": "Sunlight Amulet",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "red-crystal-amulet",
+    "name": "Red Crystal Amulet",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "opal-pendant",
+    "name": "Opal Pendant",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "moonstone-necklace",
+    "name": "Moonstone Necklace",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "hero-s-amulet",
+    "name": "Hero's Amulet",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "assassin-s-pendant",
+    "name": "Assassin's Pendant",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "sage-s-necklace",
+    "name": "Sage's Necklace",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "destroyer-s-amulet",
+    "name": "Destroyer's Amulet",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "onslaughter-s-pendant",
+    "name": "Onslaughter's Pendant",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "sacrificer-s-necklace",
+    "name": "Sacrificer's Necklace",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "burning-flame-ring",
+    "name": "Burning Flame Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "fireResist",
+        "op": "flat",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "id": "biting-wind-ice-ring",
+    "name": "Biting Wind Ice Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "coldResist",
+        "op": "flat",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "id": "calamity-lightning-ring",
+    "name": "Calamity Lightning Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "lightningResist",
+        "op": "flat",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "id": "abyss-darkness-ring",
+    "name": "Abyss Darkness Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "erosionResist",
+        "op": "flat",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "id": "heated-flame-ring",
+    "name": "Heated Flame Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "fireResist",
+        "op": "flat",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "id": "blight-ice-ring",
+    "name": "Blight Ice Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "coldResist",
+        "op": "flat",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "id": "dazzling-lightning-ring",
+    "name": "Dazzling Lightning Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "lightningResist",
+        "op": "flat",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "id": "agony-darkness-ring",
+    "name": "Agony Darkness Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "erosionResist",
+        "op": "flat",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "id": "raging-boil-flame-ring",
+    "name": "Raging Boil Flame Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "fireResist",
+        "op": "flat",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "id": "snow-ice-ring",
+    "name": "Snow Ice Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "coldResist",
+        "op": "flat",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "id": "chilling-lightning-ring",
+    "name": "Chilling Lightning Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "lightningResist",
+        "op": "flat",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "id": "rotten-darkness-ring",
+    "name": "Rotten Darkness Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "erosionResist",
+        "op": "flat",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "id": "frozen-ring",
+    "name": "Frozen Ring",
+    "slot": "ring",
+    "implicit": []
+  },
+  {
+    "id": "firestorm-flame-ring",
+    "name": "Firestorm Flame Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "fireResist",
+        "op": "flat",
+        "value": 9
+      }
+    ]
+  },
+  {
+    "id": "frost-city-ice-ring",
+    "name": "Frost City Ice Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "coldResist",
+        "op": "flat",
+        "value": 9
+      }
+    ]
+  },
+  {
+    "id": "high-heavens-lightning-ring",
+    "name": "High Heavens Lightning Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "lightningResist",
+        "op": "flat",
+        "value": 9
+      }
+    ]
+  },
+  {
+    "id": "evernight-darkness-ring",
+    "name": "Evernight Darkness Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "erosionResist",
+        "op": "flat",
+        "value": 9
+      }
+    ]
+  },
+  {
+    "id": "torched-flame-ring",
+    "name": "Torched Flame Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "fireResist",
+        "op": "flat",
+        "value": 11
+      }
+    ]
+  },
+  {
+    "id": "sealed-ice-ring",
+    "name": "Sealed Ice Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "coldResist",
+        "op": "flat",
+        "value": 11
+      }
+    ]
+  },
+  {
+    "id": "punished-lightning-ring",
+    "name": "Punished Lightning Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "lightningResist",
+        "op": "flat",
+        "value": 11
+      }
+    ]
+  },
+  {
+    "id": "imprisoned-darkness-ring",
+    "name": "Imprisoned Darkness Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "erosionResist",
+        "op": "flat",
+        "value": 11
+      }
+    ]
+  },
+  {
+    "id": "depicted-ward-ring",
+    "name": "Depicted Ward Ring",
+    "slot": "ring",
+    "implicit": []
+  },
+  {
+    "id": "perishing-inferno-flame-ring",
+    "name": "Perishing Inferno Flame Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "fireResist",
+        "op": "flat",
+        "value": 12
+      }
+    ]
+  },
+  {
+    "id": "eternal-sleep-ice-ring",
+    "name": "Eternal Sleep Ice Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "coldResist",
+        "op": "flat",
+        "value": 12
+      }
+    ]
+  },
+  {
+    "id": "thunder-tempered-lightning-ring",
+    "name": "Thunder Tempered Lightning Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "lightningResist",
+        "op": "flat",
+        "value": 12
+      }
+    ]
+  },
+  {
+    "id": "eternal-gloom-darkness-ring",
+    "name": "Eternal Gloom Darkness Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "erosionResist",
+        "op": "flat",
+        "value": 12
+      }
+    ]
+  },
+  {
+    "id": "myriad-radiance-ward-ring",
+    "name": "Myriad Radiance Ward Ring",
+    "slot": "ring",
+    "implicit": []
+  },
+  {
+    "id": "budding-spirit-ring",
+    "name": "Budding Spirit Ring",
+    "slot": "ring",
+    "implicit": []
+  },
+  {
+    "id": "thriving-spirit-ring",
+    "name": "Thriving Spirit Ring",
+    "slot": "ring",
+    "implicit": []
+  },
+  {
+    "id": "command-spirit-ring",
+    "name": "Command Spirit Ring",
+    "slot": "ring",
+    "implicit": []
+  },
+  {
+    "id": "harvest-spirit-ring",
+    "name": "Harvest Spirit Ring",
+    "slot": "ring",
+    "implicit": []
+  },
+  {
+    "id": "championed-spirit-ring",
+    "name": "Championed Spirit Ring",
+    "slot": "ring",
+    "implicit": []
+  },
+  {
+    "id": "essence-spirit-ring",
+    "name": "Essence Spirit Ring",
+    "slot": "ring",
+    "implicit": []
+  },
+  {
+    "id": "rottenwood-bow",
+    "name": "Rottenwood Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "vitex-bow",
+    "name": "Vitex Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "beastbone-bow",
+    "name": "Beastbone Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "thorny-curve-bow",
+    "name": "Thorny Curve Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "bonewood-hunting-bow",
+    "name": "Bonewood Hunting Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "segar-hunting-bow",
+    "name": "Segar Hunting Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "griffin-long-bow",
+    "name": "Griffin Long Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "white-wolf-curve-bow",
+    "name": "White Wolf Curve Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "raider-s-bow",
+    "name": "Raider's Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "white-feather-hunting-bow",
+    "name": "White Feather Hunting Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "piercer-bow",
+    "name": "Piercer Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "bloody-curve-bow",
+    "name": "Bloody Curve Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "black-feather-long-bow",
+    "name": "Black Feather Long Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "twilight-curve-bow",
+    "name": "Twilight Curve Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "unholy-hunting-bow",
+    "name": "Unholy Hunting Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "thunder-long-bow",
+    "name": "Thunder Long Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "starfall-long-bow",
+    "name": "Starfall Long Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "demon-hunter-long-bow",
+    "name": "Demon Hunter Long Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "godseeker-long-bow",
+    "name": "Godseeker Long Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "lonely-hunter-s-bow",
+    "name": "Lonely Hunter's Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "woodvine-light-crossbow",
+    "name": "Woodvine Light Crossbow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "rambone-short-crossbow",
+    "name": "Rambone Short Crossbow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "darkwoods-long-crossbow",
+    "name": "Darkwoods Long Crossbow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "bronze-short-crossbow",
+    "name": "Bronze Short Crossbow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "soldier-s-light-crossbow",
+    "name": "Soldier's Light Crossbow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "black-iron-crossbow",
+    "name": "Black Iron Crossbow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "elven-hunting-crossbow",
+    "name": "Elven Hunting Crossbow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "beastfang-light-crossbow",
+    "name": "Beastfang Light Crossbow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "jungle-hunting-bow",
+    "name": "Jungle Hunting Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "segar-hunting-crossbow",
+    "name": "Segar Hunting Crossbow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "muddy-long-crossbow",
+    "name": "Muddy Long Crossbow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "cursed-war-crossbow",
+    "name": "Cursed War Crossbow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "conflict-crossbow",
+    "name": "Conflict Crossbow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "blue-sea-war-crossbow",
+    "name": "Blue Sea War Crossbow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "icy-war-crossbow",
+    "name": "Icy War Crossbow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "scarlet-crossbow",
+    "name": "Scarlet Crossbow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "flowing-blaze-crossbow",
+    "name": "Flowing Blaze Crossbow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "red-pegasus-war-crossbow",
+    "name": "Red Pegasus War Crossbow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "black-pass-hunting-crossbow",
+    "name": "Black Pass Hunting Crossbow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "war-ranger-s-crossbow",
+    "name": "War Ranger's Crossbow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "witherbark-staff",
+    "name": "Witherbark Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "cultivation-iron-staff",
+    "name": "Cultivation Iron Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "thorny-staff",
+    "name": "Thorny Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "ascetic-iron-staff",
+    "name": "Ascetic Iron Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "dryad-staff",
+    "name": "Dryad Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "confession-iron-staff",
+    "name": "Confession Iron Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "broken-mirror-staff",
+    "name": "Broken Mirror Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "ancestral-staff",
+    "name": "Ancestral Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "authority-iron-staff",
+    "name": "Authority Iron Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "flower-staff",
+    "name": "Flower Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "conviction-iron-staff",
+    "name": "Conviction Iron Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "sacred-tree-staff",
+    "name": "Sacred Tree Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "judge-s-iron-staff",
+    "name": "Judge's Iron Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "perishing-staff",
+    "name": "Perishing Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "esoteric-cudgel",
+    "name": "Esoteric Cudgel",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "origin-iron-staff",
+    "name": "Origin Iron Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "reincarnation-iron-staff",
+    "name": "Reincarnation Iron Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "absolver-iron-staff",
+    "name": "Absolver Iron Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "executive-iron-staff",
+    "name": "Executive Iron Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "last-man-s-cudgel",
+    "name": "Last Man's Cudgel",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "witherbark-cannon",
+    "name": "Witherbark Cannon",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "rusted-blaster",
+    "name": "Rusted Blaster",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "black-iron-cannon",
+    "name": "Black Iron Cannon",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "iron-cannon",
+    "name": "Iron Cannon",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "wolf-hunter-s-cannon",
+    "name": "Wolf Hunter's Cannon",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "starmetal-cannon",
+    "name": "Starmetal Cannon",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "unholy-blaster",
+    "name": "Unholy Blaster",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "warden-s-blaster",
+    "name": "Warden's Blaster",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "griffin-blaster",
+    "name": "Griffin Blaster",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "blazing-cannon",
+    "name": "Blazing Cannon",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "unyielding-cannon",
+    "name": "Unyielding Cannon",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "wailing-blaster",
+    "name": "Wailing Blaster",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "abyssal-blaster",
+    "name": "Abyssal Blaster",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "monarch-s-cannon",
+    "name": "Monarch's Cannon",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "solar-flame-cannon",
+    "name": "Solar Flame Cannon",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "viking-blaster",
+    "name": "Viking Blaster",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "dark-ravine-cannon",
+    "name": "Dark Ravine Cannon",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "fire-worshiper-cannon",
+    "name": "Fire Worshiper Cannon",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "fire-eater-cannon",
+    "name": "Fire Eater Cannon",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "sun-fall-cannon",
+    "name": "Sun Fall Cannon",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "rusted-rifle",
+    "name": "Rusted Rifle",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "crude-iron-rifle",
+    "name": "Crude Iron Rifle",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "recruit-s-musket",
+    "name": "Recruit's Musket",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "iron-musket",
+    "name": "Iron Musket",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "wolf-fang-rifle",
+    "name": "Wolf Fang Rifle",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "blazing-rifle",
+    "name": "Blazing Rifle",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "unpredictable-rifle",
+    "name": "Unpredictable Rifle",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "ripple-rifle",
+    "name": "Ripple Rifle",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "eagle-rifle",
+    "name": "Eagle Rifle",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "toxic-rifle",
+    "name": "Toxic Rifle",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "conflict-rifle",
+    "name": "Conflict Rifle",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "giant-s-rifle",
+    "name": "Giant's Rifle",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "war-rifle",
+    "name": "War Rifle",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "scarlet-rifle",
+    "name": "Scarlet Rifle",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "moonlight-rifle",
+    "name": "Moonlight Rifle",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "warlord-s-musket",
+    "name": "Warlord's Musket",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "imperial-rifle",
+    "name": "Imperial Rifle",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "bannerlord-s-musket",
+    "name": "Bannerlord's Musket",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "personal-guard-musket",
+    "name": "Personal Guard Musket",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "war-repercussion-musket",
+    "name": "War Repercussion Musket",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "withervine-staff",
+    "name": "Withervine Staff",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedCold",
+        "op": "flat",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "id": "bonewood-staff",
+    "name": "Bonewood Staff",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedLightning",
+        "op": "flat",
+        "value": 6
+      }
+    ]
+  },
+  {
+    "id": "ivory-staff",
+    "name": "Ivory Staff",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedErosion",
+        "op": "flat",
+        "value": 8
+      }
+    ]
+  },
+  {
+    "id": "iron-staff",
+    "name": "Iron Staff",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedFire",
+        "op": "flat",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "id": "viper-staff",
+    "name": "Viper Staff",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedCold",
+        "op": "flat",
+        "value": 12
+      }
+    ]
+  },
+  {
+    "id": "gilt-staff",
+    "name": "Gilt Staff",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedLightning",
+        "op": "flat",
+        "value": 14
+      }
+    ]
+  },
+  {
+    "id": "flower-sea-staff",
+    "name": "Flower Sea Staff",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedErosion",
+        "op": "flat",
+        "value": 16
+      }
+    ]
+  },
+  {
+    "id": "monkey-staff",
+    "name": "Monkey Staff",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedFire",
+        "op": "flat",
+        "value": 18
+      }
+    ]
+  },
+  {
+    "id": "white-crystal-staff",
+    "name": "White Crystal Staff",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedCold",
+        "op": "flat",
+        "value": 20
+      }
+    ]
+  },
+  {
+    "id": "black-feather-staff",
+    "name": "Black Feather Staff",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedLightning",
+        "op": "flat",
+        "value": 24
+      }
+    ]
+  },
+  {
+    "id": "twilight-staff",
+    "name": "Twilight Staff",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedErosion",
+        "op": "flat",
+        "value": 28
+      }
+    ]
+  },
+  {
+    "id": "voodoo-staff",
+    "name": "Voodoo Staff",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedFire",
+        "op": "flat",
+        "value": 32
+      }
+    ]
+  },
+  {
+    "id": "sage-s-staff",
+    "name": "Sage's Staff",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedCold",
+        "op": "flat",
+        "value": 36
+      }
+    ]
+  },
+  {
+    "id": "devout-staff",
+    "name": "Devout Staff",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedLightning",
+        "op": "flat",
+        "value": 40
+      }
+    ]
+  },
+  {
+    "id": "wind-god-s-staff",
+    "name": "Wind God's Staff",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedErosion",
+        "op": "flat",
+        "value": 44
+      }
+    ]
+  },
+  {
+    "id": "warden-s-staff",
+    "name": "Warden's Staff",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedFire",
+        "op": "flat",
+        "value": 48
+      }
+    ]
+  },
+  {
+    "id": "divinity-staff",
+    "name": "Divinity Staff",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedCold",
+        "op": "flat",
+        "value": 52
+      }
+    ]
+  },
+  {
+    "id": "southern-cross-staff",
+    "name": "Southern Cross Staff",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedLightning",
+        "op": "flat",
+        "value": 56
+      }
+    ]
+  },
+  {
+    "id": "centaur-staff",
+    "name": "Centaur Staff",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedErosion",
+        "op": "flat",
+        "value": 60
+      }
+    ]
+  },
+  {
+    "id": "first-man-s-scepter",
+    "name": "First Man's Scepter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "shattered-iron-axe",
+    "name": "Shattered Iron Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "gigantic-stone-axe",
+    "name": "Gigantic Stone Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "iron-battle-axe",
+    "name": "Iron Battle Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "hardrock-stone-axe",
+    "name": "Hardrock Stone Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "coldlight-greataxe",
+    "name": "Coldlight Greataxe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "gilt-board-axe",
+    "name": "Gilt Board Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "marsh-greataxe",
+    "name": "Marsh Greataxe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "blazing-greataxe",
+    "name": "Blazing Greataxe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "giant-s-board-axe",
+    "name": "Giant's Board Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "doomsday-board-axe",
+    "name": "Doomsday Board Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "redgold-greataxe",
+    "name": "Redgold Greataxe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "unpredictable-board-axe",
+    "name": "Unpredictable Board Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "griffin-greataxe",
+    "name": "Griffin Greataxe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "blue-sea-greataxe",
+    "name": "Blue Sea Greataxe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "ripping-greataxe",
+    "name": "Ripping Greataxe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "lava-board-axe",
+    "name": "Lava Board Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "fallen-star-greataxe",
+    "name": "Fallen Star Greataxe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "red-pegasus-greataxe",
+    "name": "Red Pegasus Greataxe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "black-pass-board-axe",
+    "name": "Black Pass Board Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "earthrending-axe",
+    "name": "Earthrending Axe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "crude-iron-maul",
+    "name": "Crude Iron Maul",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "hardrock-mallet",
+    "name": "Hardrock Mallet",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "iron-maul",
+    "name": "Iron Maul",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "icefrost-mallet",
+    "name": "Icefrost Mallet",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "beastfang-mallet",
+    "name": "Beastfang Mallet",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "scarlet-maul",
+    "name": "Scarlet Maul",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "lonewolf-maul",
+    "name": "Lonewolf Maul",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "valagon-mallet",
+    "name": "Valagon Mallet",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "crushing-mallet",
+    "name": "Crushing Mallet",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "devastating-mallet",
+    "name": "Devastating Mallet",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "doomsday-maul",
+    "name": "Doomsday Maul",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "conflict-maul",
+    "name": "Conflict Maul",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "vindicator-maul",
+    "name": "Vindicator Maul",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "vanquisher-mallet",
+    "name": "Vanquisher Mallet",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "platinum-mallet",
+    "name": "Platinum Mallet",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "lava-maul",
+    "name": "Lava Maul",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "crumbling-maul",
+    "name": "Crumbling Maul",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "destroyer-mallet",
+    "name": "Destroyer Mallet",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "forger-s-maul",
+    "name": "Forger's Maul",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "sierra-reverberation-maul",
+    "name": "Sierra Reverberation Maul",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "crude-wooden-sword",
+    "name": "Crude Wooden Sword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "rottenwood-greatsword",
+    "name": "Rottenwood Greatsword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "rusted-claymore",
+    "name": "Rusted Claymore",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "rock-claymore",
+    "name": "Rock Claymore",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "iron-greatsword",
+    "name": "Iron Greatsword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "conflict-greatsword",
+    "name": "Conflict Greatsword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "ripping-claymore",
+    "name": "Ripping Claymore",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "coldlight-claymore",
+    "name": "Coldlight Claymore",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "gladiator-s-greatsword",
+    "name": "Gladiator's Greatsword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "barren-greatsword",
+    "name": "Barren Greatsword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "tidal-claymore",
+    "name": "Tidal Claymore",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "sundering-greatsword",
+    "name": "Sundering Greatsword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "wolfsoul-claymore",
+    "name": "Wolfsoul Claymore",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "glory-greatsword",
+    "name": "Glory Greatsword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "griffin-greatsword",
+    "name": "Griffin Greatsword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "vindicator-s-greatsword",
+    "name": "Vindicator's Greatsword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "subjugation-claymore",
+    "name": "Subjugation Claymore",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "red-pegasus-greatsword",
+    "name": "Red Pegasus Greatsword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "black-pass-claymore",
+    "name": "Black Pass Claymore",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "sky-severing-sword",
+    "name": "Sky Severing Sword",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "thunder-channeling-prosthetics",
+    "name": "Thunder Channeling Prosthetics",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "wind-chasers",
+    "name": "Wind Chasers",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "ralph-s-journey",
+    "name": "Ralph's Journey",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "royal-guard-s-boots",
+    "name": "Royal Guard's Boots",
+    "slot": "boots",
+    "implicit": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.1
+      },
+      {
+        "stat": "erosionResist",
+        "op": "flat",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "id": "trickster-s-tread",
+    "name": "Trickster's Tread",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "pathfinder-s-path",
+    "name": "Pathfinder's Path",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "lone-walker-s-boots",
+    "name": "Lone Walker's Boots",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "valerie-s-night-stroll",
+    "name": "Valerie's Night Stroll",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.0075
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.15
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.25
+      }
+    ]
+  },
+  {
+    "id": "blade-dancer-s-steps",
+    "name": "Blade-dancer's Steps",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "ralph-s-footsteps",
+    "name": "Ralph's Footsteps",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "feline-steps",
+    "name": "Feline Steps",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "rat-king-s-escape-show",
+    "name": "Rat King's Escape Show",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "crow-s-plume",
+    "name": "Crow's Plume",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "wriggling-tango",
+    "name": "Wriggling Tango",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "heels-of-hands",
+    "name": "Heels of Hands",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "unholy-prayer-agility",
+    "name": "Unholy Prayer - Agility",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "unholy-prayer-focus",
+    "name": "Unholy Prayer - Focus",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "unholy-prayer-tenacity",
+    "name": "Unholy Prayer - Tenacity",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "awaiting",
+    "name": "Awaiting",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "cold-sanctuary-prosthetics",
+    "name": "Cold Sanctuary Prosthetics",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "grace-boots",
+    "name": "Grace Boots",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "air-treaders",
+    "name": "Air Treaders",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 40
+      }
+    ]
+  },
+  {
+    "id": "fighting-stompers",
+    "name": "Fighting Stompers",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "powered-battle-greaves",
+    "name": "Powered Battle Greaves",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "guild-guard-boots",
+    "name": "Guild Guard Boots",
+    "slot": "boots",
+    "implicit": [
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 75
+      }
+    ]
+  },
+  {
+    "id": "king-s-boon",
+    "name": "King's Boon",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "shadow-dance",
+    "name": "Shadow Dance",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "verdant-steps",
+    "name": "Verdant Steps",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "frozen-ripples",
+    "name": "Frozen Ripples",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "dragon-scale-shoes",
+    "name": "Dragon Scale Shoes",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 154
+      }
+    ]
+  },
+  {
+    "id": "fire-shielding-prosthetics",
+    "name": "Fire Shielding Prosthetics",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "boots-of-sinned-fire",
+    "name": "Boots of Sinned Fire",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "resolution-steps",
+    "name": "Resolution Steps",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "final-bastion",
+    "name": "Final Bastion",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "fireResist",
+        "op": "flat",
+        "value": 11
+      },
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 154
+      }
+    ]
+  },
+  {
+    "id": "mind-infusion",
+    "name": "Mind Infusion",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "boots-of-devastation",
+    "name": "Boots of Devastation",
+    "slot": "boots",
+    "implicit": []
+  },
+  {
+    "id": "fire-lord-s-pyric-stride",
+    "name": "Fire Lord's Pyric Stride",
+    "slot": "boots",
+    "implicit": [
+      {
+        "stat": "fireResist",
+        "op": "flat",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "phantasm",
+    "name": "Phantasm",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 55
+      }
+    ]
+  },
+  {
+    "id": "ralph-s-burial",
+    "name": "Ralph's Burial",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "evil-heart-armor",
+    "name": "Evil Heart Armor",
+    "slot": "chest",
+    "implicit": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.4
+      }
+    ]
+  },
+  {
+    "id": "royal-cycle",
+    "name": "Royal Cycle",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "increasedFire",
+        "op": "increased",
+        "value": 1
+      },
+      {
+        "stat": "increasedLightning",
+        "op": "increased",
+        "value": 1
+      },
+      {
+        "stat": "increasedCold",
+        "op": "increased",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "double-rainbow",
+    "name": "Double Rainbow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "mad-doctor-s-silver-plated-lung",
+    "name": "Mad Doctor's Silver-Plated Lung",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "lightning-striker-s-sacrum",
+    "name": "Lightning Striker's Sacrum",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "trinity",
+    "name": "Trinity",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "israfel-s-sorrow",
+    "name": "Israfel's Sorrow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "genius-battlegear",
+    "name": "Genius Battlegear",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "critDamage",
+        "op": "flat",
+        "value": 100
+      }
+    ]
+  },
+  {
+    "id": "gauze-of-phantom-sin",
+    "name": "Gauze of Phantom Sin",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.02
+      }
+    ]
+  },
+  {
+    "id": "imperious-verdict",
+    "name": "Imperious Verdict",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "agony-of-lost-self",
+    "name": "Agony of Lost Self",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "shattered-moonlight",
+    "name": "Shattered Moonlight",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "kingly-armor",
+    "name": "Kingly Armor",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "iced-drinker-s-cage",
+    "name": "Iced Drinker's Cage",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "undying-faith",
+    "name": "Undying Faith",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "endless-fortress",
+    "name": "Endless Fortress",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "corrupted-bulwark",
+    "name": "Corrupted Bulwark",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "flaming-evil",
+    "name": "Flaming Evil",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "fireResist",
+        "op": "flat",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "frozen-path",
+    "name": "Frozen Path",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "coldResist",
+        "op": "flat",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "fleeting-sky",
+    "name": "Fleeting Sky",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "lightningResist",
+        "op": "flat",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "cicada-shell",
+    "name": "Cicada Shell",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "stellar-vestment-of-eminence",
+    "name": "Stellar Vestment of Eminence",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "twilight-vestment",
+    "name": "Twilight Vestment",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "blight",
+    "name": "Blight",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "ruinous-star",
+    "name": "Ruinous Star",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.4
+      }
+    ]
+  },
+  {
+    "id": "agony-s-embrace",
+    "name": "Agony's Embrace",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "glorious-journey",
+    "name": "Glorious Journey",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "furious-man-s-body",
+    "name": "Furious Man's Body",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "magnus-jealousy",
+    "name": "Magnus' Jealousy",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "vestment-of-song",
+    "name": "Vestment of Song",
+    "slot": "chest",
+    "implicit": [
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 44
+      }
+    ]
+  },
+  {
+    "id": "varagon-s-lament",
+    "name": "Varagon's Lament",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "unbreakable-armor",
+    "name": "Unbreakable Armor",
+    "slot": "chest",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 2304
+      }
+    ]
+  },
+  {
+    "id": "dragon-breath-armor",
+    "name": "Dragon Breath Armor",
+    "slot": "chest",
+    "implicit": []
+  },
+  {
+    "id": "crimson-king",
+    "name": "Crimson King",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "martyr-s-staff",
+    "name": "Martyr's Staff",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "void-embankment",
+    "name": "Void Embankment",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "heavyware",
+    "name": "Heavyware",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "devouring-tide",
+    "name": "Devouring Tide",
+    "slot": "ring",
+    "implicit": []
+  },
+  {
+    "id": "arrival-of-the-polar-night",
+    "name": "Arrival of the Polar Night",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "increasedLife",
+        "op": "increased",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "id": "mere-eternity",
+    "name": "Mere Eternity",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "friend-nemesis",
+    "name": "Friend Nemesis",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "futile-tradeoff",
+    "name": "Futile Tradeoff",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "increasedLife",
+        "op": "increased",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "silent-avowal",
+    "name": "Silent Avowal",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "berserker-bracer",
+    "name": "Berserker Bracer",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "feline-gloves",
+    "name": "Feline Gloves",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "vendetta-s-sleeve-blade",
+    "name": "Vendetta's Sleeve-Blade",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "marksman-bracers",
+    "name": "Marksman Bracers",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "sea-splitter",
+    "name": "Sea Splitter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "tyrant-s-smoldering-hold",
+    "name": "Tyrant's Smoldering Hold",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "addedFire",
+        "op": "flat",
+        "value": 110
+      }
+    ]
+  },
+  {
+    "id": "golden-touch",
+    "name": "Golden Touch",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "chaos-abyss",
+    "name": "Chaos Abyss",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "thunder-manipulator",
+    "name": "Thunder Manipulator",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "blinding-bracers",
+    "name": "Blinding Bracers",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.12
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ]
+  },
+  {
+    "id": "torturer-s-touch",
+    "name": "Torturer's Touch",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "wings-of-light",
+    "name": "Wings of Light",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "ralph-s-laws",
+    "name": "Ralph's Laws",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "stray-bird-s-return",
+    "name": "Stray Bird's Return",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "vajra-handguards",
+    "name": "Vajra Handguards",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "ice-pulse",
+    "name": "Ice Pulse",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "vow-s-grasp",
+    "name": "Vow's Grasp",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "providential-grace",
+    "name": "Providential Grace",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "hand-of-malice",
+    "name": "Hand of Malice",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "ice-and-fire",
+    "name": "Ice and Fire",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "sage-s-insight",
+    "name": "Sage's Insight",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "malevolent-hand",
+    "name": "Malevolent Hand",
+    "slot": "gloves",
+    "implicit": [
+      {
+        "stat": "erosionResist",
+        "op": "flat",
+        "value": -30
+      }
+    ]
+  },
+  {
+    "id": "tyrant-s-iron-fist",
+    "name": "Tyrant's Iron Fist",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "miniature-void-sea",
+    "name": "Miniature Void Sea",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "israfel-s-laws",
+    "name": "Israfel's Laws",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "aeterna-martyr",
+    "name": "Aeterna Martyr",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "archmage-s-hands",
+    "name": "Archmage's Hands",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "grasp-of-truth",
+    "name": "Grasp of Truth",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "boom-gloves",
+    "name": "Boom Gloves",
+    "slot": "gloves",
+    "implicit": []
+  },
+  {
+    "id": "alloy-covenant",
+    "name": "Alloy Covenant",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "praise-for-injury",
+    "name": "Praise for Injury",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "ardor",
+    "name": "Ardor",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 55
+      }
+    ]
+  },
+  {
+    "id": "varagon-shroud",
+    "name": "Varagon Shroud",
+    "slot": "chest",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 2304
+      }
+    ]
+  },
+  {
+    "id": "ghost-slaughter",
+    "name": "Ghost Slaughter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "clenched-spring",
+    "name": "Clenched Spring",
+    "slot": "ring",
+    "implicit": []
+  },
+  {
+    "id": "blade-dancer-s-fingers",
+    "name": "Blade-dancer's Fingers",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "magnus-laws",
+    "name": "Magnus' Laws",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "death-s-touch",
+    "name": "Death's Touch",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "blade-dancer-s-edges",
+    "name": "Blade-Dancer's Edges",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "quantum-convergence",
+    "name": "Quantum Convergence",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "grandmaster-s-hands",
+    "name": "Grandmaster's Hands",
+    "slot": "gloves",
+    "implicit": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.05
+      }
+    ]
+  },
+  {
+    "id": "demons-touch",
+    "name": "Demons' Touch",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "corrupted-marrow",
+    "name": "Corrupted Marrow",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 150
+      }
+    ]
+  },
+  {
+    "id": "legendary-soldier-spectacles",
+    "name": "Legendary Soldier Spectacles",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.5
+      }
+    ]
+  },
+  {
+    "id": "machine-lord",
+    "name": "Machine Lord",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "opening-heart",
+    "name": "Opening Heart",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "blind-vision",
+    "name": "Blind Vision",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "thunder-jawbone",
+    "name": "Thunder Jawbone",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "hunting-the-eye-of-the-kraken",
+    "name": "Hunting the Eye of the Kraken",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "flying-light-at-daybreak",
+    "name": "Flying Light at Daybreak",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "legless-bird-s-lament",
+    "name": "Legless Bird's Lament",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.1
+      },
+      {
+        "stat": "lightningResist",
+        "op": "flat",
+        "value": 2
+      },
+      {
+        "stat": "erosionResist",
+        "op": "flat",
+        "value": -1
+      },
+      {
+        "stat": "lightningResist",
+        "op": "flat",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "hanging-two-tone-mask",
+    "name": "Hanging Two-Tone Mask",
+    "slot": "helmet",
+    "implicit": [
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 200
+      }
+    ]
+  },
+  {
+    "id": "siren-faceguard",
+    "name": "Siren Faceguard",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "brainwave-emitter",
+    "name": "Brainwave Emitter",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "cold-breath",
+    "name": "Cold Breath",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "surging-inspiration",
+    "name": "Surging Inspiration",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "fiend-crown",
+    "name": "Fiend Crown",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "webbed-arcane-headscarf",
+    "name": "Webbed Arcane Headscarf",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "imperial-iron-sentry",
+    "name": "Imperial Iron Sentry",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "when-winter-comes",
+    "name": "When Winter Comes",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "hekate-s-vision",
+    "name": "Hekate's Vision",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.2
+      }
+    ]
+  },
+  {
+    "id": "troublemaker",
+    "name": "Troublemaker",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "headless-crown",
+    "name": "Headless Crown",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "solid-river",
+    "name": "Solid River",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "malign-embrace",
+    "name": "Malign Embrace",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "rock-lizard-s-skull",
+    "name": "Rock Lizard's Skull",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "armor",
+        "op": "flat",
+        "value": 50
+      }
+    ]
+  },
+  {
+    "id": "boor-s-iron-crown",
+    "name": "Boor's Iron Crown",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "scarlet-decree",
+    "name": "Scarlet Decree",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "last-words-of-chaos",
+    "name": "Last Words of Chaos",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "awakening-skull",
+    "name": "Awakening Skull",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "tide-of-the-styx",
+    "name": "Tide of the Styx",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "increasedAttackSpeed",
+        "op": "increased",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "sun-s-embrace",
+    "name": "Sun's Embrace",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "fool-s-crown",
+    "name": "Fool's Crown",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "divine-ember",
+    "name": "Divine Ember",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "magnus-scar",
+    "name": "Magnus' Scar",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 4
+      }
+    ]
+  },
+  {
+    "id": "mask-of-infernal-iron",
+    "name": "Mask of Infernal Iron",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "kragol-s-roar",
+    "name": "Kragol's Roar",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "iron-and-bloom",
+    "name": "Iron and Bloom",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "ralph-s-dreadcrest",
+    "name": "Ralph's Dreadcrest",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "magmaskull",
+    "name": "Magmaskull",
+    "slot": "helmet",
+    "implicit": []
+  },
+  {
+    "id": "twisted-branch",
+    "name": "Twisted Branch",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "eternal-moon",
+    "name": "Eternal Moon",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "throat-slasher",
+    "name": "Throat-Slasher",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "elemental-whirl",
+    "name": "Elemental Whirl",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "flying-bird",
+    "name": "Flying Bird",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "imploration-dagger",
+    "name": "Imploration Dagger",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "memory",
+    "name": "Memory",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "shadow-of-thunderlight-s-eyes",
+    "name": "Shadow of Thunderlight's Eyes",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "frantic-shadow",
+    "name": "Frantic Shadow",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "increasedAttackSpeed",
+        "op": "increased",
+        "value": 100
+      },
+      {
+        "stat": "increasedAttackSpeed",
+        "op": "increased",
+        "value": 30
+      },
+      {
+        "stat": "increasedAttackSpeed",
+        "op": "increased",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "id": "end-night-banquet",
+    "name": "End Night Banquet",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "critDamage",
+        "op": "flat",
+        "value": 90
+      }
+    ]
+  },
+  {
+    "id": "ominous-gift",
+    "name": "Ominous Gift",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "scorching-words",
+    "name": "Scorching Words",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "interlocking-soul",
+    "name": "Interlocking Soul",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "frozen-will",
+    "name": "Frozen Will",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "misube-s-refusal",
+    "name": "Misube's Refusal",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "steel-stagnation",
+    "name": "Steel Stagnation",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "thunder-branch",
+    "name": "Thunder Branch",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "oathkeeper",
+    "name": "Oathkeeper",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "farewell-desire",
+    "name": "Farewell Desire",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "fleeting-regret",
+    "name": "Fleeting Regret",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "frozen-sight",
+    "name": "Frozen Sight",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "increasedCold",
+        "op": "increased",
+        "value": 11
+      }
+    ]
+  },
+  {
+    "id": "severed-wrist",
+    "name": "Severed Wrist",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "buzzing",
+    "name": "Buzzing",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "gravel",
+    "name": "Gravel",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "supreme-throne",
+    "name": "Supreme Throne",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "spring-resurrection",
+    "name": "Spring Resurrection",
+    "slot": "ring",
+    "implicit": []
+  },
+  {
+    "id": "scepter-of-excommunication",
+    "name": "Scepter of Excommunication",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "fire-lord-s-promise",
+    "name": "Fire Lord's Promise",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "increasedCastSpeed",
+        "op": "increased",
+        "value": 17
+      },
+      {
+        "stat": "critDamage",
+        "op": "flat",
+        "value": 30
+      }
+    ]
+  },
+  {
+    "id": "jumble-ice",
+    "name": "Jumble Ice",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "shadow-of-thunderlight-s-fury",
+    "name": "Shadow of Thunderlight's Fury",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedLightning",
+        "op": "flat",
+        "value": 25.5
+      }
+    ]
+  },
+  {
+    "id": "oversight",
+    "name": "Oversight",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "fiery-oath",
+    "name": "Fiery Oath",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedFire",
+        "op": "flat",
+        "value": 60
+      }
+    ]
+  },
+  {
+    "id": "reverse-reverse-reverse-mirror",
+    "name": "Reverse-Reverse-Reverse Mirror",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "silent-sentry-shield",
+    "name": "Silent Sentry Shield",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "electricity-amplifier",
+    "name": "Electricity Amplifier",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "arcane-shield",
+    "name": "Arcane Shield",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "glacier-caster-shield",
+    "name": "Glacier Caster Shield",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "the-coward-s-counterfire",
+    "name": "The Coward's Counterfire",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "shield-of-judgment",
+    "name": "Shield of Judgment",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "last-stand",
+    "name": "Last Stand",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "cover-the-sun",
+    "name": "Cover the Sun",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "fireResist",
+        "op": "flat",
+        "value": -8
+      }
+    ]
+  },
+  {
+    "id": "heavy-soul",
+    "name": "Heavy Soul",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.1
+      },
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 198
+      }
+    ]
+  },
+  {
+    "id": "enamor",
+    "name": "Enamor",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "elemental-whisper-belt",
+    "name": "Elemental Whisper Belt",
+    "slot": "belt",
+    "implicit": []
+  },
+  {
+    "id": "desire-of-survival",
+    "name": "Desire of Survival",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "steel-s-lament",
+    "name": "Steel's Lament",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "cry-of-divinity",
+    "name": "Cry of Divinity",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "call-of-souls",
+    "name": "Call of Souls",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "witchdoctor-s-herb-bag",
+    "name": "Witchdoctor's Herb Bag",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "entangled-root",
+    "name": "Entangled Root",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "eternal-sun",
+    "name": "Eternal Sun",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ]
+  },
+  {
+    "id": "insulation",
+    "name": "Insulation",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "strayed-healer-s-waistguard",
+    "name": "Strayed Healer's Waistguard",
+    "slot": "belt",
+    "implicit": []
+  },
+  {
+    "id": "confusion-elemental-belt",
+    "name": "Confusion Elemental Belt",
+    "slot": "belt",
+    "implicit": []
+  },
+  {
+    "id": "pale-mist-s-embrace",
+    "name": "Pale Mist's Embrace",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 44
+      }
+    ]
+  },
+  {
+    "id": "winter-of-origin",
+    "name": "Winter of Origin",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "compensatory-life",
+    "name": "Compensatory Life",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "everburn-thunderfire",
+    "name": "Everburn Thunderfire",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "light-hunter-belt",
+    "name": "Light Hunter Belt",
+    "slot": "belt",
+    "implicit": []
+  },
+  {
+    "id": "embrace-of-the-dark-surge",
+    "name": "Embrace of the Dark Surge",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "polygonal-enclosure",
+    "name": "Polygonal Enclosure",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "corrosion-of-manifolds",
+    "name": "Corrosion of Manifolds",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "erosionResist",
+        "op": "flat",
+        "value": 50
+      }
+    ]
+  },
+  {
+    "id": "eternal-sea-fog",
+    "name": "Eternal Sea Fog",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "formation-breaker",
+    "name": "Formation Breaker",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.3
+      }
+    ]
+  },
+  {
+    "id": "rat-herder-s-golden-rein",
+    "name": "Rat Herder's Golden Rein",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "hot-night-s-embrace",
+    "name": "Hot Night's Embrace",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "dawn-break",
+    "name": "Dawn Break",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.01
+      }
+    ]
+  },
+  {
+    "id": "bodhi-girdle",
+    "name": "Bodhi Girdle",
+    "slot": "belt",
+    "implicit": []
+  },
+  {
+    "id": "silent-observer",
+    "name": "Silent Observer",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "tranquil-stir",
+    "name": "Tranquil Stir",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "omni-elixir-notes",
+    "name": "Omni-Elixir Notes",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "eternity",
+    "name": "Eternity",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "blessing-pendant",
+    "name": "Blessing Pendant",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "pentagram-astrolabe",
+    "name": "Pentagram Astrolabe",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "despised-shadow",
+    "name": "Despised Shadow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "ownerless",
+    "name": "Ownerless",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "photophobia",
+    "name": "Photophobia",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "lady-s-tears",
+    "name": "Lady's Tears",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "chain-of-resistance",
+    "name": "Chain of Resistance",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "mercurial-torment",
+    "name": "Mercurial Torment",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "sage-s-shackle",
+    "name": "Sage's Shackle",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "prayer-bead-of-evil",
+    "name": "Prayer Bead of Evil",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 60
+      }
+    ]
+  },
+  {
+    "id": "necklace-of-inverse",
+    "name": "Necklace of Inverse",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "frostbolt",
+    "name": "Frostbolt",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "forlorn-crystal",
+    "name": "Forlorn Crystal",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "vortex-heart",
+    "name": "Vortex Heart",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.32
+      }
+    ]
+  },
+  {
+    "id": "master-defender-pendant",
+    "name": "Master Defender Pendant",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "magnus-mindflame",
+    "name": "Magnus' Mindflame",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "truth",
+    "name": "Truth",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "warden-s-breastpin",
+    "name": "Warden's Breastpin",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "ocean-of-rock",
+    "name": "Ocean of Rock",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "necklace-of-firebird",
+    "name": "Necklace of Firebird",
+    "slot": "amulet",
+    "implicit": []
+  },
+  {
+    "id": "phantom",
+    "name": "Phantom",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "illusory-ocean-silk-iron-rain",
+    "name": "Illusory Ocean Silk - Iron Rain",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "illusory-ocean-silk-ash",
+    "name": "Illusory Ocean Silk - Ash",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "fireResist",
+        "op": "flat",
+        "value": -20
+      }
+    ]
+  },
+  {
+    "id": "illusory-ocean-silk-thunder",
+    "name": "Illusory Ocean Silk - Thunder",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "lightningResist",
+        "op": "flat",
+        "value": -20
+      }
+    ]
+  },
+  {
+    "id": "illusory-ocean-silk-chilly",
+    "name": "Illusory Ocean Silk - Chilly",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "coldResist",
+        "op": "flat",
+        "value": -20
+      }
+    ]
+  },
+  {
+    "id": "illusory-ocean-silk-unreal",
+    "name": "Illusory Ocean Silk - Unreal",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "broken-sun-ring",
+    "name": "Broken Sun Ring",
+    "slot": "ring",
+    "implicit": []
+  },
+  {
+    "id": "mother-goddess-paddock",
+    "name": "Mother Goddess' Paddock",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "clarity",
+    "name": "Clarity",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "chain-behind-the-curtain",
+    "name": "Chain behind the Curtain",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "strange-snow",
+    "name": "Strange Snow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "false-god-s-skin",
+    "name": "False God's Skin",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "rat-king-s-megagon-dice",
+    "name": "Rat King's Megagon Dice",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "iron-nest",
+    "name": "Iron Nest",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "elegy-of-immortality",
+    "name": "Elegy of Immortality",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "howling-wind",
+    "name": "Howling Wind",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "decaying-blessing",
+    "name": "Decaying Blessing",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "heart-of-the-storm",
+    "name": "Heart of the Storm",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "coldness-tracer-s-tear",
+    "name": "Coldness Tracer's Tear",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "mortal-s-reverie",
+    "name": "Mortal's Reverie",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "heart-of-animitta",
+    "name": "Heart of Animitta",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "law-of-greed",
+    "name": "Law of Greed",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "old-grudge",
+    "name": "Old Grudge",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "lone-survivor",
+    "name": "Lone Survivor",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "lonesome",
+    "name": "Lonesome",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "revered-light",
+    "name": "Revered Light",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "born-in-fire",
+    "name": "Born in Fire",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "increasedFire",
+        "op": "increased",
+        "value": 1
+      },
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "id": "silver-frost",
+    "name": "Silver Frost",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "coldResist",
+        "op": "flat",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "id": "searing-finger-bone",
+    "name": "Searing Finger Bone",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "increasedFire",
+        "op": "increased",
+        "value": 120
+      }
+    ]
+  },
+  {
+    "id": "frozen-lightning",
+    "name": "Frozen Lightning",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "clay-doll-s-broken-finger",
+    "name": "Clay Doll's Broken Finger",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 20
+      }
+    ]
+  },
+  {
+    "id": "fury-heart",
+    "name": "Fury Heart",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "restless-glacier",
+    "name": "Restless Glacier",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "chaotic-ending",
+    "name": "Chaotic Ending",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "increasedLife",
+        "op": "increased",
+        "value": 8
+      }
+    ]
+  },
+  {
+    "id": "exemption-thunderhell",
+    "name": "Exemption Thunderhell",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "increasedLightning",
+        "op": "increased",
+        "value": 2
+      }
+    ]
+  },
+  {
+    "id": "stream-of-steel",
+    "name": "Stream of Steel",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "frozen-flame",
+    "name": "Frozen Flame",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "burning-ice",
+    "name": "Burning Ice",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "windbreath-convergence",
+    "name": "Windbreath Convergence",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "windbreath-dispersion",
+    "name": "Windbreath Dispersion",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "traceless-pain",
+    "name": "Traceless Pain",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "kaleidoscope",
+    "name": "Kaleidoscope",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 66
+      }
+    ]
+  },
+  {
+    "id": "folklore-of-locking-fingers",
+    "name": "Folklore of Locking Fingers",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "increasedLife",
+        "op": "increased",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "id": "passing-of-time",
+    "name": "Passing of Time",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.03
+      }
+    ]
+  },
+  {
+    "id": "time-of-vow",
+    "name": "Time of Vow",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.03
+      }
+    ]
+  },
+  {
+    "id": "heart-of-rock",
+    "name": "Heart of Rock",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "heart-of-magic",
+    "name": "Heart of Magic",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "horn-ring",
+    "name": "Horn Ring",
+    "slot": "ring",
+    "implicit": [
+      {
+        "stat": "critDamage",
+        "op": "flat",
+        "value": 100
+      }
+    ]
+  },
+  {
+    "id": "decayed-mind",
+    "name": "Decayed Mind",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "shadow-of-thunderlight-s-touch",
+    "name": "Shadow of Thunderlight's Touch",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "sun-shooter-long-bow",
+    "name": "Sun-shooter Long Bow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "mountain-howling",
+    "name": "Mountain Howling",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "bow-of-endless-dusk",
+    "name": "Bow of Endless Dusk",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "glacial-abyss-arrow",
+    "name": "Glacial Abyss Arrow",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "ralph-s-ambition",
+    "name": "Ralph's Ambition",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "plain-echo",
+    "name": "Plain Echo",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "dumb-voice",
+    "name": "Dumb Voice",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "scorching-wave",
+    "name": "Scorching Wave",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "king-lionheart-s-ambition",
+    "name": "King Lionheart's Ambition",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "sage-s-foresight",
+    "name": "Sage's Foresight",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "scorching-tempo",
+    "name": "Scorching Tempo",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "varagon-s-attack",
+    "name": "Varagon's Attack",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "arminius-guillotine",
+    "name": "Arminius Guillotine",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.08
+      }
+    ]
+  },
+  {
+    "id": "highest-glance",
+    "name": "Highest Glance",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "incorrect-arbitration",
+    "name": "Incorrect Arbitration",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "crosser",
+    "name": "Crosser",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "shamed",
+    "name": "Shamed",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "will",
+    "name": "Will",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "circular-clearing",
+    "name": "Circular Clearing",
+    "slot": "ring",
+    "implicit": []
+  },
+  {
+    "id": "cursed-flame",
+    "name": "Cursed Flame",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "harbinger-s-reversed-plumes",
+    "name": "Harbinger's Reversed Plumes",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "addedErosion",
+        "op": "flat",
+        "value": 400
+      }
+    ]
   }
 ]

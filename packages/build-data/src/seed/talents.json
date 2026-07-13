@@ -5,8 +5,16 @@
     "heroId": "selina-tide-whisper",
     "description": "SS13 Selina trait. NOTE: seed approximation.",
     "modifiers": [
-      { "stat": "increasedCold", "op": "increased", "value": 25 },
-      { "stat": "increasedCastSpeed", "op": "increased", "value": 8 }
+      {
+        "stat": "increasedCold",
+        "op": "increased",
+        "value": 25
+      },
+      {
+        "stat": "increasedCastSpeed",
+        "op": "increased",
+        "value": 8
+      }
     ]
   },
   {
@@ -14,7 +22,13 @@
     "name": "Undertow",
     "heroId": "selina-tide-whisper",
     "description": "SS13 Selina trait. NOTE: seed approximation.",
-    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.12 }]
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.12
+      }
+    ]
   },
   {
     "id": "gemma-molten-core",
@@ -22,8 +36,16 @@
     "heroId": "gemma-flaming-hammer",
     "description": "NOTE: seed approximation.",
     "modifiers": [
-      { "stat": "increasedFire", "op": "increased", "value": 25 },
-      { "stat": "increasedAttackSpeed", "op": "increased", "value": 8 }
+      {
+        "stat": "increasedFire",
+        "op": "increased",
+        "value": 25
+      },
+      {
+        "stat": "increasedAttackSpeed",
+        "op": "increased",
+        "value": 8
+      }
     ]
   },
   {
@@ -32,8 +54,16 @@
     "heroId": "any",
     "description": "Shared node. NOTE: seed approximation.",
     "modifiers": [
-      { "stat": "critRate", "op": "flat", "value": 2 },
-      { "stat": "critDamage", "op": "flat", "value": 20 }
+      {
+        "stat": "critRate",
+        "op": "flat",
+        "value": 2
+      },
+      {
+        "stat": "critDamage",
+        "op": "flat",
+        "value": 20
+      }
     ]
   },
   {
@@ -41,6 +71,406 @@
     "name": "Fortitude",
     "heroId": "any",
     "description": "Shared node. NOTE: seed approximation.",
-    "modifiers": [{ "stat": "increasedLife", "op": "increased", "value": 15 }]
+    "modifiers": [
+      {
+        "stat": "increasedLife",
+        "op": "increased",
+        "value": 15
+      }
+    ]
+  },
+  {
+    "id": "anger",
+    "name": "Anger",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.0022
+      }
+    ]
+  },
+  {
+    "id": "seething-silhouette",
+    "name": "Seething Silhouette",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.44
+      },
+      {
+        "stat": "increasedAttackSpeed",
+        "op": "increased",
+        "value": 1
+      }
+    ]
+  },
+  {
+    "id": "ranger-of-glory",
+    "name": "Ranger of Glory",
+    "heroId": "any",
+    "modifiers": []
+  },
+  {
+    "id": "lethal-flash",
+    "name": "Lethal Flash",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.82
+      }
+    ]
+  },
+  {
+    "id": "zealot-of-war",
+    "name": "Zealot of War",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.38
+      }
+    ]
+  },
+  {
+    "id": "ceasefire",
+    "name": "Ceasefire",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.21
+      }
+    ]
+  },
+  {
+    "id": "extreme-heat",
+    "name": "Extreme Heat",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.16
+      },
+      {
+        "stat": "increasedLife",
+        "op": "increased",
+        "value": 3
+      }
+    ]
+  },
+  {
+    "id": "eternal-flames",
+    "name": "Eternal Flames",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.21
+      }
+    ]
+  },
+  {
+    "id": "wind-stalker",
+    "name": "Wind Stalker",
+    "heroId": "any",
+    "modifiers": []
+  },
+  {
+    "id": "cat-s-punches",
+    "name": "Cat's Punches",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.06
+      }
+    ]
+  },
+  {
+    "id": "lightning-shadow",
+    "name": "Lightning Shadow",
+    "heroId": "any",
+    "modifiers": []
+  },
+  {
+    "id": "vendetta-s-sting",
+    "name": "Vendetta's Sting",
+    "heroId": "any",
+    "modifiers": []
+  },
+  {
+    "id": "leisurely-stroll",
+    "name": "Leisurely Stroll",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.8
+      }
+    ]
+  },
+  {
+    "id": "blast-nova",
+    "name": "Blast Nova",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "increasedAttackSpeed",
+        "op": "increased",
+        "value": 100
+      },
+      {
+        "stat": "increasedCastSpeed",
+        "op": "increased",
+        "value": 100
+      }
+    ]
+  },
+  {
+    "id": "creative-genius",
+    "name": "Creative Genius",
+    "heroId": "any",
+    "modifiers": []
+  },
+  {
+    "id": "auto-ingenuity-program",
+    "name": "Auto-Ingenuity Program",
+    "heroId": "any",
+    "modifiers": []
+  },
+  {
+    "id": "multi-coupling-equation",
+    "name": "Multi-Coupling Equation",
+    "heroId": "any",
+    "modifiers": []
+  },
+  {
+    "id": "flame-of-pleasure",
+    "name": "Flame of Pleasure",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.76
+      }
+    ]
+  },
+  {
+    "id": "frostbitten-heart",
+    "name": "Frostbitten Heart",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.44
+      }
+    ]
+  },
+  {
+    "id": "glacial-night",
+    "name": "Glacial Night",
+    "heroId": "any",
+    "modifiers": []
+  },
+  {
+    "id": "ice-fire-fusion",
+    "name": "Ice-Fire Fusion",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.33
+      }
+    ]
+  },
+  {
+    "id": "wisdom-of-the-gods",
+    "name": "Wisdom of The Gods",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.1
+      }
+    ]
+  },
+  {
+    "id": "incarnation-of-the-gods",
+    "name": "Incarnation of the Gods",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.06
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.01
+      }
+    ]
+  },
+  {
+    "id": "incarnation",
+    "name": "Incarnation",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ]
+  },
+  {
+    "id": "blasphemer",
+    "name": "Blasphemer",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ]
+  },
+  {
+    "id": "spacetime-illusion",
+    "name": "Spacetime Illusion",
+    "heroId": "any",
+    "modifiers": []
+  },
+  {
+    "id": "spacetime-elapse",
+    "name": "Spacetime Elapse",
+    "heroId": "any",
+    "modifiers": []
+  },
+  {
+    "id": "order-calling",
+    "name": "Order Calling",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.6
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.22
+      }
+    ]
+  },
+  {
+    "id": "charge-calling",
+    "name": "Charge Calling",
+    "heroId": "any",
+    "modifiers": []
+  },
+  {
+    "id": "high-court-chariot",
+    "name": "High Court Chariot",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.44
+      }
+    ]
+  },
+  {
+    "id": "unsullied-blade",
+    "name": "Unsullied Blade",
+    "heroId": "any",
+    "modifiers": []
+  },
+  {
+    "id": "growing-breeze",
+    "name": "Growing Breeze",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.3
+      }
+    ]
+  },
+  {
+    "id": "vigilant-breeze",
+    "name": "Vigilant Breeze",
+    "heroId": "any",
+    "modifiers": []
+  },
+  {
+    "id": "sing-with-the-tide",
+    "name": "Sing with the Tide",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.15
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ]
+  },
+  {
+    "id": "licorice-note",
+    "name": "Licorice Note",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.16
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.11
+      }
+    ]
+  },
+  {
+    "id": "licorice-tincture-blend",
+    "name": "Licorice Tincture Blend",
+    "heroId": "any",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.018
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ]
   }
 ]

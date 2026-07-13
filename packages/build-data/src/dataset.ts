@@ -91,9 +91,8 @@ export function validateDataset(dataset: Dataset): string[] {
   if (dataset.activeSkills.length === 0) problems.push('dataset has no active skills');
 
   for (const skill of dataset.activeSkills) {
-    if (Object.keys(skill.baseDamage).length === 0) {
-      problems.push(`active skill '${skill.id}' has no base damage`);
-    }
+    // No base-damage is valid for utility/movement skills (Blink, warcries…),
+    // so it isn't flagged. A non-positive rate is still a data error.
     if (skill.baseRate <= 0) {
       problems.push(`active skill '${skill.id}' has non-positive baseRate`);
     }
