@@ -142,6 +142,88 @@ def parse_card_entries(pane, base_url: str) -> list[dict]:
     return entries
 
 
+def parse_talent_tree_entries(pane, base_url: str) -> list[dict]:
+    """Talent-tree nodes (hero archetype / "god" Divinity Slate pages, e.g.
+    /en/Alchemist, /en/God_of_War) use a distinct card shape the generic
+    card/table parsers don't handle: no <a href> at all (nodes aren't their
+    own page -- the whole tree lives on one page), a real game id on
+    [data-talent-id], and a "NNpts" point-cost span alongside the name.
+    Without this, parse_card_entries silently produces name=None/href=None
+    for every node on all 32 of these pages."""
+    entries = []
+    for node in pane.select("[data-talent-id]"):
+        talent_id = node.get("data-talent-id")
+        name = node.get_text(strip=True)
+        header = node.find_parent("div", class_="d-flex justify-content-between")
+        cost = None
+        if header:
+            for span in header.select("span"):
+                t = span.get_text(strip=True)
+                if t.endswith("pts"):
+                    cost = t
+                    break
+        container = node.find_parent("div", class_="flex-grow-1") or header
+        icon_el = None
+        card = node.find_parent("div", class_="col")
+        if card:
+            icon_el = card.select_one(".flex-shrink-0 img")
+        text, links = text_and_links(container, base_url) if container else ("", [])
+        # The header text ("Name NNpts 0/1") is part of container's text --
+        # strip it so `text` is just the effect description, matching the
+        # convention of card/table entries not repeating their own name.
+        if header:
+            header_text = header.get_text(" ", strip=True)
+            if text.startswith(header_text):
+                text = text[len(header_text):].strip()
+        glossary_refs = [e.get("id") for e in container.select("e[id]")] if container else []
+        entries.append(
+            {
+                "talent_id": talent_id,
+                "name": name or None,
+                "cost": cost,
+                "text": text or None,
+                "icon": urljoin(base_url, icon_el["src"]) if icon_el and icon_el.get("src") else None,
+                "glossary_refs": glossary_refs or None,
+            }
+        )
+    return entries
+
+
+def parse_void_chart_nodes(pane, base_url: str) -> list[dict]:
+    """Void Chart meta-progression trees (one page per season/category, e.g.
+    /en/War_Talent_Constellation) use yet another distinct node shape: a
+    stable game id on [data-node-id], a node-size label ("Micro Node" /
+    "Medium Node" / "Initial Node" -- not a unique name) as its text, and
+    the actual effect split across separate [data-src="map_modifier"] and
+    [data-src="function_modifier"] containers. Structurally close to but
+    distinct from parse_talent_tree_entries's [data-talent-id] nodes (no
+    point cost here, different container layout) -- same failure mode
+    without this: name=None for every node."""
+    entries = []
+    for node in pane.select("div[data-node-id]"):
+        node_id = node.get("data-node-id")
+        node_type = node.get_text(strip=True)
+        container = node.find_parent("div", class_="flex-grow-1")
+        map_el = container.select_one('[data-src="map_modifier"]') if container else None
+        func_el = container.select_one('[data-src="function_modifier"]') if container else None
+        map_text, map_links = text_and_links(map_el, base_url) if map_el else ("", [])
+        func_text, func_links = text_and_links(func_el, base_url) if func_el else ("", [])
+        card = node.find_parent("div", class_="col")
+        icon_el = card.select_one(".flex-shrink-0 img") if card else None
+        glossary_refs = [e.get("id") for e in container.select("e[id]")] if container else []
+        entries.append(
+            {
+                "node_id": node_id,
+                "node_type": node_type or None,
+                "map_modifier": map_text or None,
+                "function_modifier": func_text or None,
+                "icon": urljoin(base_url, icon_el["src"]) if icon_el and icon_el.get("src") else None,
+                "glossary_refs": glossary_refs or None,
+            }
+        )
+    return entries
+
+
 def parse_table_entries(pane, base_url: str) -> list[dict]:
     table = pane.select_one("table")
     if not table:
@@ -175,14 +257,36 @@ def parse_tab_panes(soup: BeautifulSoup, base_url: str) -> list[dict]:
     for pane in blocks:
         header_el = pane.select_one(".card-header")
         header = header_el.get_text(strip=True) if header_el else pane.get("id")
-        if pane.select_one("table"):
+        if pane.select_one("[data-talent-id]"):
+            entries = parse_talent_tree_entries(pane, base_url)
+            kind = "talent-tree"
+        elif pane.select_one("div[data-node-id]"):
+            entries = parse_void_chart_nodes(pane, base_url)
+            kind = "void-chart-nodes"
+        elif pane.select_one("table"):
             entries = parse_table_entries(pane, base_url)
             kind = "table"
         else:
             entries = parse_card_entries(pane, base_url)
             kind = "cards"
         panes.append({"id": pane.get("id"), "title": header, "kind": kind, "entries": entries})
-    return panes
+    return dedupe_panes(panes)
+
+
+def dedupe_panes(panes: list[dict]) -> list[dict]:
+    """Some pages render the same content block more than once with ids like
+    "Foocache-1", "Foocache-2" (a redundancy on the site's own end, not
+    something we're doing wrong) -- drop later panes that are an exact
+    (title, entries) duplicate of an earlier one, keeping the first."""
+    seen = set()
+    out = []
+    for pane in panes:
+        key = (pane["title"], json.dumps(pane["entries"], sort_keys=True))
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(pane)
+    return out
 
 
 def parse_listing_page(html: str, url: str) -> list[dict]:
