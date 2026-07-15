@@ -265,6 +265,23 @@ def collect_detail_urls(panes: list[dict]) -> set[str]:
     return urls
 
 
+def collect_gear_base_urls(craft_panes: list[dict]) -> set[str]:
+    """The Craft category's global Affix table lists a 'Source' column
+    (e.g. "Claw", "STR Boots") as plain text, not a hyperlink, so
+    collect_detail_urls() has no path to the per-base-type pages that hold
+    each one's real weighted craft/corrosion/sweet-dream tables (e.g.
+    /en/Claw) -- confirmed those pages exist and follow this exact
+    URL-from-Source-text pattern by checking the live site directly.
+    Derive and return them explicitly instead of relying on a link."""
+    urls = set()
+    for pane in craft_panes:
+        for entry in pane["entries"]:
+            source = (entry.get("Source") or "").strip()
+            if source:
+                urls.add(f"{BASE}/en/{source.replace(' ', '_')}")
+    return urls
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--out-dir", default="output_tlidb")
@@ -294,8 +311,14 @@ def main() -> None:
         save_json(panes, out_dir / "listings" / f"{cat}.json")
         n_entries = sum(len(p["entries"]) for p in panes)
         detail_urls = collect_detail_urls(panes)
+        if cat == "Craft":
+            gear_base_urls = collect_gear_base_urls(panes)
+            detail_urls |= gear_base_urls
+            print(f"  [{i}/{len(categories)}] {cat}: {n_entries} entries, {len(detail_urls)} detail links "
+                  f"(+{len(gear_base_urls)} gear base-type pages derived from the Source column)")
+        else:
+            print(f"  [{i}/{len(categories)}] {cat}: {n_entries} entries, {len(detail_urls)} detail links")
         all_detail_urls |= detail_urls
-        print(f"  [{i}/{len(categories)}] {cat}: {n_entries} entries, {len(detail_urls)} detail links")
 
     print(f"\n{len(all_detail_urls)} unique detail page URLs discovered across all categories.")
     save_json(sorted(all_detail_urls), out_dir / "all_detail_urls.json")
@@ -321,11 +344,14 @@ def main() -> None:
     def worker(url: str):
         nonlocal done
         out_path = detail_dir / f"{slug_for(url)}.json"
-        if out_path.exists():
-            with lock:
-                done += 1
-            return
         try:
+            # Always re-parse, even if out_path already exists: get_html is a
+            # free cache hit for already-fetched pages, but the glossary dict
+            # is fresh every run, so skipping the parse here would silently
+            # starve it (a previous run of this exact script did exactly
+            # that -- 0 glossary terms out of a supposedly-complete crawl).
+            # Re-parsing also means an improved parse_detail_page take effect
+            # on a re-run without needing to manually clear details/ first.
             html = session.get_html(url)
             record = parse_detail_page(html, url, glossary)
             save_json(record, out_path)
