@@ -16,3 +16,5 @@ out/
 .tlidb-cache/
 .bundle-cache/
 scraped/
+__pycache__/
+*.pyc

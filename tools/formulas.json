@@ -1,0 +1,31 @@
+{
+  "_schema": {
+    "_comment": "Map of skill/support slug -> per-column classification, hand-verified against real game knowledge (in-game testing or official patch notes). dps_calc.py ONLY includes a support's column in the damage total if it's classified here with role 'damage_additional' or 'damage_multiplicative' -- anything else (proc chance, area, speed, duration, ...) is excluded and printed separately so nothing gets silently miscounted as damage. Note that both damage roles are currently combined the same naive additive way; a real multiplicative combine engine isn't implemented yet, so treat every number this produces as a rough draft, not a verified DPS figure.",
+    "slug": {
+      "columns": {
+        "<exact column header text from the scraped table>": {
+          "role": "one of: damage_additional | damage_multiplicative | proc_chance | area | speed | duration | other",
+          "stack": "unverified_additive | additive | multiplicative -- only meaningful for damage_* roles",
+          "notes": "how you verified this, and any conditions/exclusions that apply"
+        }
+      }
+    }
+  },
+  "Multistrike": {
+    "columns": {
+      "+101% chance for the supported skill to triggerMultistrike": {
+        "role": "proc_chance",
+        "notes": "This is the chance to repeat the attack, not a damage modifier -- excluded from damage totals. The 'trigger a 2nd/3rd/... attack' effect needs to be modeled as extra hits, not a %, if you want this support's real DPS contribution."
+      }
+    }
+  },
+  "Increased_Area": {
+    "columns": {
+      "+16% additional damage for the supported skill": {
+        "role": "damage_additional",
+        "stack": "unverified_additive",
+        "notes": "Not yet verified against real game mechanics -- placeholder classification so the pipeline has at least one live example. Confirm before trusting numbers that use it."
+      }
+    }
+  }
+}
