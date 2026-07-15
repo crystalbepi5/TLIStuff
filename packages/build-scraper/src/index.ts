@@ -11,6 +11,7 @@ export {
   mapLegendaries,
   mapHeroTraits,
   mapSkills,
+  buildLevelScaling,
   scrapeGear,
   scrapeAffixes,
   scrapeLegendaries,

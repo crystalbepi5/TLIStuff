@@ -13,10 +13,12 @@ import { join } from 'node:path';
 import type {
   ActiveSkill,
   Affix,
+  AffixTier,
   DamageTag,
   Element,
   GearBase,
   GearSlot,
+  SkillLevelEntry,
   SupportSkill,
   Talent
 } from '@torchlight-companion/build-data';
@@ -210,22 +212,36 @@ const DAMAGE_TAG: Record<string, DamageTag> = {
   Channelled: 'channelled'
 };
 
+interface LevelProgressionRow {
+  level: number;
+  [valueKey: string]: number | string;
+}
+
 interface MasterSkill {
   id: string;
   tags?: string[];
   castSpeed?: string;
   effectivenessOfAddedDamage?: string;
+  manaMultiplier?: string;
+  cannotSupport?: string[];
+  levelProgression?: LevelProgressionRow[];
 }
 
-/** Map uuid -> { name, description } from an `-en` skill/gear bundle. */
-function indexEnById(enBundle: unknown): Map<string, { name: string; description: string | undefined }> {
-  const map = new Map<string, { name: string; description: string | undefined }>();
+interface EnSkillEntry {
+  name: string;
+  description?: string | undefined;
+  templateDescription?: string | undefined;
+}
+
+/** Map uuid -> { name, description, templateDescription } from an `-en` skill/gear bundle. */
+function indexEnById(enBundle: unknown): Map<string, EnSkillEntry> {
+  const map = new Map<string, EnSkillEntry>();
   const walk = (node: unknown): void => {
     if (!node || typeof node !== 'object' || Array.isArray(node)) return;
     for (const [key, val] of Object.entries(node as Record<string, unknown>)) {
       if (val && typeof val === 'object' && typeof (val as { name?: unknown }).name === 'string') {
-        const v = val as { name: string; description?: string };
-        map.set(key, { name: v.name, description: v.description });
+        const v = val as EnSkillEntry;
+        map.set(key, { name: v.name, description: v.description, templateDescription: v.templateDescription });
       } else {
         walk(val);
       }
@@ -246,6 +262,167 @@ function damageFromText(text: string | undefined, effectiveness: string | undefi
   }
   const eff = effectiveness?.match(/([\d.]+)/);
   return eff?.[1] ? Math.round(Number(eff[1])) : 0;
+}
+
+// --------------------- per-level scaling (levelProgression) ------------------
+//
+// `levelProgression` gives every level's raw values as anonymous `value1`..
+// `valueN` slots -- no field tells you which slot is "damage" vs "duration"
+// vs an unrelated mechanic constant. But `-en`'s `templateDescription` has
+// the real tooltip text with "#" placeholders standing in for *some* of
+// those slots (not necessarily all of them -- some slots are baked into the
+// template as fixed literal numbers instead, by whatever authored the
+// template; there's no way to tell which without checking). `description`
+// is the same text with the placeholders already filled in, at whichever
+// level was used as the display snapshot -- found by matching
+// `effectivenessOfAddedDamage` against value1's per-level series.
+//
+// So: find that reference level, extract the actual numbers sitting at each
+// "#" position in `description`, then match each one (in order) against the
+// first not-yet-used value slot (in value1, value2, ... order) whose value
+// at the reference level equals it. That gives a position -> slot mapping
+// good enough to refill the template at any other level and re-run it
+// through the same parseModifiers() text engine used everywhere else in
+// this file. If any position can't be confidently matched, this bails
+// (returns undefined) rather than guess -- a wrong slot mapping would
+// silently fabricate numbers, which is worse than having none.
+
+/** "37/5" is a known upstream data quirk (also seen verbatim on tlidb.com's
+ * independent HTML scrape) -- treat it as a fraction, not two numbers. */
+function parseValueSlot(raw: number | string | undefined): number | undefined {
+  if (raw == null) return undefined;
+  if (typeof raw === 'number') return Number.isFinite(raw) ? raw : undefined;
+  const frac = /^\s*(-?\d+(?:\.\d+)?)\s*\/\s*(-?\d+(?:\.\d+)?)\s*$/.exec(raw);
+  if (frac?.[1] && frac[2]) {
+    const denom = Number(frac[2]);
+    return denom !== 0 ? Number(frac[1]) / denom : undefined;
+  }
+  const n = Number(raw);
+  return Number.isFinite(n) ? n : undefined;
+}
+
+/** value1, value2, ... keys present on a row, in numeric order. Some skills
+ * (range-damage spells, e.g. "Deals #-# Spell Damage") use `value1Min`/
+ * `value1Max` pairs instead of a flat `value1` -- both count as slots here,
+ * Min sorting before Max within the same index. */
+const SUFFIX_RANK: Record<string, number> = { '': 0, Min: 1, Max: 2 };
+
+function valueSlotKeys(row: LevelProgressionRow): string[] {
+  return Object.keys(row)
+    .filter((k) => /^value\d+(Min|Max)?$/.test(k))
+    .sort((a, b) => {
+      const [, an, asuf] = /^value(\d+)(Min|Max)?$/.exec(a) ?? [];
+      const [, bn, bsuf] = /^value(\d+)(Min|Max)?$/.exec(b) ?? [];
+      const byIndex = Number(an) - Number(bn);
+      if (byIndex !== 0) return byIndex;
+      return (SUFFIX_RANK[asuf ?? ''] ?? 0) - (SUFFIX_RANK[bsuf ?? ''] ?? 0);
+    });
+}
+
+/** Extract the numbers that fill each "#" in `template` when it produced
+ * `filled`, by matching the literal text between placeholders. undefined if
+ * `filled` doesn't actually match the template's literal structure. */
+function extractFilledNumbers(template: string, filled: string): number[] | undefined {
+  const segments = template.split('#');
+  if (segments.length < 2) return []; // no placeholders to resolve
+  const escaped = segments.map((s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  const re = new RegExp(escaped.join('(-?[\\d.]+)'), 's');
+  const m = re.exec(filled);
+  if (!m) return undefined;
+  const nums = m.slice(1).map(Number);
+  return nums.every((n) => Number.isFinite(n)) ? nums : undefined;
+}
+
+/** Greedy positional match against one candidate row: for each extracted
+ * number (in template order), take the first not-yet-used value slot (in
+ * value1, value2, ... order) whose value at that row equals it. Returns
+ * undefined (not a partial mapping) if any position can't be matched --
+ * a partial match against the wrong row is worse than no match. */
+function tryMapAgainstRow(extracted: number[], row: LevelProgressionRow): (string | undefined)[] | undefined {
+  const used = new Set<string>();
+  const keys = valueSlotKeys(row);
+  const mapped = extracted.map((num) => {
+    for (const key of keys) {
+      if (used.has(key)) continue;
+      const v = parseValueSlot(row[key]);
+      if (v !== undefined && Math.abs(v - num) < 0.05) {
+        used.add(key);
+        return key;
+      }
+    }
+    return undefined;
+  });
+  return mapped.every((k) => k !== undefined) ? mapped : undefined;
+}
+
+/**
+ * `description` is a snapshot filled in at *some* level, but which one isn't
+ * consistent -- active skills seem to snapshot at a high/max level (findable
+ * via effectivenessOfAddedDamage, which only exists on actives), while
+ * supports have been observed snapshotting at level 1. Rather than assume
+ * one convention, try the effectivenessOfAddedDamage-implied row first (a
+ * fast path when it's available and correct), then fall back to trying
+ * every row until one produces a *complete* placeholder mapping.
+ */
+function mapPlaceholdersToValueKeys(
+  extracted: number[],
+  rows: LevelProgressionRow[],
+  effectivenessOfAddedDamage: string | undefined
+): (string | undefined)[] | undefined {
+  const target = effectivenessOfAddedDamage ? parseValueSlot(effectivenessOfAddedDamage.replace('%', '')) : undefined;
+  if (target !== undefined) {
+    const hinted = rows.find((r) => {
+      const v1 = parseValueSlot(r.value1);
+      return v1 !== undefined && Math.abs(v1 - target) < 0.05;
+    });
+    if (hinted) {
+      const mapped = tryMapAgainstRow(extracted, hinted);
+      if (mapped) return mapped;
+    }
+  }
+  for (const row of rows) {
+    const mapped = tryMapAgainstRow(extracted, row);
+    if (mapped) return mapped;
+  }
+  return undefined;
+}
+
+/**
+ * Reconstruct real per-level modifiers from a skill's levelProgression, by
+ * refilling templateDescription's "#" placeholders with each level's values
+ * (once the placeholder->value-slot mapping is known, see above) and
+ * re-parsing the result with the same text->Modifier engine used elsewhere.
+ * Returns undefined if the mapping isn't confidently resolvable.
+ */
+export function buildLevelScaling(
+  levelProgression: LevelProgressionRow[] | undefined,
+  templateDescription: string | undefined,
+  description: string | undefined,
+  effectivenessOfAddedDamage: string | undefined
+): SkillLevelEntry[] | undefined {
+  if (!levelProgression || levelProgression.length === 0 || !templateDescription || !description) {
+    return undefined;
+  }
+  const extracted = extractFilledNumbers(templateDescription, description);
+  if (!extracted) return undefined;
+  if (extracted.length === 0) {
+    // No placeholders at all -- the text is level-invariant, so every level
+    // shares the same (already-parsed-elsewhere) modifiers. Nothing to add.
+    return undefined;
+  }
+
+  const keyMap = mapPlaceholdersToValueKeys(extracted, levelProgression, effectivenessOfAddedDamage);
+  if (!keyMap) return undefined; // couldn't confidently map any row -> don't guess
+
+  const segments = templateDescription.split('#');
+  return levelProgression.map((row) => {
+    let filled = segments[0] ?? '';
+    keyMap.forEach((key, i) => {
+      const v = key ? parseValueSlot(row[key]) : undefined;
+      filled += (v !== undefined ? String(v) : '?') + (segments[i + 1] ?? '');
+    });
+    return { level: Number(row.level), modifiers: parseModifiers(filled) };
+  });
 }
 
 /** Map the skill `-master` + `-en` bundles into active and support skills. */
@@ -273,8 +450,24 @@ export function mapSkills(
       const id = idFromName(name);
       const tags = (s.tags ?? []).map((t) => DAMAGE_TAG[t]).filter((t): t is DamageTag => Boolean(t));
 
+      const levelScaling = buildLevelScaling(
+        s.levelProgression,
+        meta?.templateDescription,
+        meta?.description,
+        s.effectivenessOfAddedDamage
+      );
+
       if (!isActive) {
-        support.push({ id, name, modifiers: parseModifiers(meta?.description ?? ''), requiresTags: [] });
+        const manaMultiplier = s.manaMultiplier ? parseValueSlot(s.manaMultiplier.replace('%', '')) : undefined;
+        support.push({
+          id,
+          name,
+          modifiers: parseModifiers(meta?.description ?? ''),
+          requiresTags: [],
+          ...(manaMultiplier != null ? { manaMultiplier } : {}),
+          ...(s.cannotSupport && s.cannotSupport.length > 0 ? { cannotSupport: s.cannotSupport } : {}),
+          ...(levelScaling ? { levelScaling } : {})
+        });
         continue;
       }
 
@@ -293,7 +486,8 @@ export function mapSkills(
         baseRate,
         baseCritRate: 5,
         supportSlots: 5,
-        season: version
+        season: version,
+        ...(levelScaling ? { levelScaling } : {})
       });
     }
   }
@@ -351,13 +545,22 @@ interface AffixValue {
   maxValue?: number;
   sign?: string;
 }
-interface AffixTier {
+/** Raw per-tier shape from the gear-master bundle (renamed from the schema's
+ * output AffixTier to avoid a name collision -- this is the input, that's
+ * the output). weight is the game's real crafting RNG weight; 0 means the
+ * tier is currently disabled/unobtainable rather than "impossible to weight"
+ * (confirmed by cross-checking against tlidb.com's independent HTML scrape,
+ * which shows the same tiers as a binary available/unavailable flag). */
+interface RawAffixTier {
   modifierId?: string;
+  tier?: string;
+  levelRequirement?: number;
+  weight?: number;
   values?: AffixValue[];
 }
 interface CraftAffix {
   descriptionTemplate?: string;
-  tiers?: AffixTier[];
+  tiers?: RawAffixTier[];
 }
 interface GearSection {
   category?: string;
@@ -366,7 +569,7 @@ interface GearSection {
   craftSuffix?: CraftAffix[];
 }
 
-/** Fill a "+# Max Life" template with the (max) roll values, in order. */
+/** Fill a "+# Max Life" template with a tier's (max) roll values, in order. */
 function fillTemplate(template: string, values: AffixValue[] | undefined): string {
   let i = 0;
   return template.replace(/#/g, () => {
@@ -380,18 +583,32 @@ function affixName(template: string): string {
   return template.replace(/[+\-]?#%?/g, '').replace(/\s+/g, ' ').trim() || template;
 }
 
-/** Highest-roll tier of a craft affix. */
-function topTier(a: CraftAffix): AffixTier | undefined {
+/** Highest-roll tier of a craft affix (used for the top-level `modifiers`). */
+function topTier(a: CraftAffix): RawAffixTier | undefined {
   return (a.tiers ?? [])
     .slice()
     .sort((x, y) => (y.values?.[0]?.maxValue ?? 0) - (x.values?.[0]?.maxValue ?? 0))[0];
 }
 
+/** Map every raw tier of a craft affix into the schema's AffixTier shape,
+ * parsing that tier's own filled-in text so e.g. a T0 and a T5 roll of the
+ * same affix get their own (accurate, different-range) modifiers. */
+function buildAffixTiers(a: CraftAffix, template: string): AffixTier[] {
+  return (a.tiers ?? []).map((t) => ({
+    tier: t.tier ?? '?',
+    weight: t.weight ?? 0,
+    modifiers: parseModifiers(fillTemplate(template, t.values)),
+    ...(t.levelRequirement != null ? { levelRequirement: t.levelRequirement } : {}),
+    ...(t.modifierId != null ? { modifierId: t.modifierId } : {})
+  }));
+}
+
 /**
  * Map gear-master's craftPrefix/craftSuffix into the Affix pool. Dedupes by
- * (kind, stat template), unions slots + modifier ids across gear subtypes, and
- * keeps only affixes whose stat the calculator models. modifierIds are retained
- * so a future loot parser can map a dropped roll back to the affix.
+ * (kind, stat template), unions slots + modifier ids + tiers across gear
+ * subtypes, and keeps only affixes whose stat the calculator models.
+ * modifierIds/tiers are retained so a future loot parser or crafting
+ * simulator can map a dropped/rolled affix back to a specific tier + weight.
  */
 export function mapAffixes(gearMaster: unknown): Affix[] {
   const byKey = new Map<string, Affix>();
@@ -408,11 +625,14 @@ export function mapAffixes(gearMaster: unknown): Affix[] {
         const modifiers = parseModifiers(fillTemplate(template, topTier(a)?.values));
         if (modifiers.length === 0) continue; // stat the calculator doesn't model
         const ids = (a.tiers ?? []).map((t) => t.modifierId).filter((x): x is string => Boolean(x));
+        const newTiers = buildAffixTiers(a, template);
         const key = `${kind}|${template}`;
         const existing = byKey.get(key);
         if (existing) {
           if (!existing.slots.includes(slot)) existing.slots.push(slot);
           existing.modifierIds = [...new Set([...(existing.modifierIds ?? []), ...ids])];
+          const seenTierIds = new Set((existing.tiers ?? []).map((t) => t.modifierId));
+          existing.tiers = [...(existing.tiers ?? []), ...newTiers.filter((t) => !seenTierIds.has(t.modifierId))];
         } else {
           const name = affixName(template);
           byKey.set(key, {
@@ -421,7 +641,8 @@ export function mapAffixes(gearMaster: unknown): Affix[] {
             kind,
             modifiers,
             slots: [slot],
-            modifierIds: [...new Set(ids)]
+            modifierIds: [...new Set(ids)],
+            tiers: newTiers
           });
         }
       }

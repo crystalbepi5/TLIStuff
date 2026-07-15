@@ -97,6 +97,20 @@ export interface Hero {
   season?: string;
 }
 
+/**
+ * One entry of a skill's per-level scaling, in the same Modifier shape the
+ * rest of the calculator understands, so a level pick can be aggregated the
+ * same way as any other modifier source. Populated best-effort by the
+ * scraper (see tlicompendium.ts's buildLevelScaling) by reconstructing the
+ * real tooltip text at each level and re-running the same text->Modifier
+ * engine used everywhere else — not every skill can be confidently mapped
+ * (see that function's docs), so this is optional and may be absent/partial.
+ */
+export interface SkillLevelEntry {
+  level: number;
+  modifiers: Modifier[];
+}
+
 export interface ActiveSkill {
   id: string;
   name: string;
@@ -110,6 +124,10 @@ export interface ActiveSkill {
   /** Max support skills this active can socket. */
   supportSlots: number;
   season?: string;
+  /** Per-level modifiers, if the scraper could confidently reconstruct them
+   * (see SkillLevelEntry). Absent -> callers fall back to baseDamage, which
+   * reflects a single fixed level. */
+  levelScaling?: SkillLevelEntry[];
 }
 
 export interface SupportSkill {
@@ -119,6 +137,26 @@ export interface SupportSkill {
   modifiers: Modifier[];
   /** Only applies to actives carrying at least one of these tags (empty = any). */
   requiresTags: DamageTag[];
+  /** e.g. 130 -> this support multiplies the socketed skill's mana cost by 130%. */
+  manaMultiplier?: number;
+  /** Active-skill tags this support is incompatible with (raw source strings,
+   * not normalised to DamageTag -- informational until cross-referenced). */
+  cannotSupport?: string[];
+  /** Per-level modifiers, best-effort (see ActiveSkill.levelScaling). */
+  levelScaling?: SkillLevelEntry[];
+}
+
+/**
+ * One craftable tier of an affix, with the real weight the game's crafting
+ * RNG uses to pick it (see tlicompendium.ts's mapAffixes) -- 0 means the tier
+ * is currently disabled/unobtainable, not that it's impossible to weight.
+ */
+export interface AffixTier {
+  tier: string;
+  levelRequirement?: number;
+  weight: number;
+  modifiers: Modifier[];
+  modifierId?: string;
 }
 
 /** An affix that can roll on gear. */
@@ -127,6 +165,8 @@ export interface Affix {
   name: string;
   /** 'prefix' | 'suffix' — informational; not enforced by the calculator. */
   kind: 'prefix' | 'suffix';
+  /** The top (best-roll) tier's modifiers -- kept for callers that don't care
+   * which tier landed, e.g. the existing build-calc aggregation. */
   modifiers: Modifier[];
   /** Gear slots this affix can appear on. */
   slots: GearSlot[];
@@ -136,6 +176,11 @@ export interface Affix {
    * dropped item's rolled affix id back to this entry for pricing.
    */
   modifierIds?: string[];
+  /**
+   * Every craftable tier with its real weight, for a crafting-odds
+   * simulator. Absent for affixes that were only ever seen at one tier.
+   */
+  tiers?: AffixTier[];
 }
 
 export type GearSlot =

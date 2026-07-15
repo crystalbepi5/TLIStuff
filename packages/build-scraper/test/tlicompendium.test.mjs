@@ -7,7 +7,8 @@ import {
   mapAffixes,
   mapLegendaries,
   mapHeroTraits,
-  mapSkills
+  mapSkills,
+  buildLevelScaling
 } from '../dist/index.js';
 
 // Small inline fixtures shaped like real tlicompendium bundles (which are
@@ -79,13 +80,13 @@ test('mapAffixes extracts craft prefix/suffix with value range + modifier ids', 
         {
           descriptionTemplate: '+# Max Life',
           tiers: [
-            { modifierId: '104510080', values: [{ minValue: 330, maxValue: 372 }] },
-            { modifierId: '104510000', values: [{ minValue: 200, maxValue: 250 }] }
+            { tier: '0+', modifierId: '104510080', levelRequirement: 100, weight: 0, values: [{ minValue: 330, maxValue: 372 }] },
+            { tier: '1', modifierId: '104510000', levelRequirement: 86, weight: 100, values: [{ minValue: 200, maxValue: 250 }] }
           ]
         }
       ],
       craftSuffix: [
-        { descriptionTemplate: '+#% Fire Resistance', tiers: [{ modifierId: '999', values: [{ maxValue: 46 }] }] }
+        { descriptionTemplate: '+#% Fire Resistance', tiers: [{ tier: '0', modifierId: '999', weight: 50, values: [{ maxValue: 46 }] }] }
       ]
     }
   };
@@ -98,6 +99,45 @@ test('mapAffixes extracts craft prefix/suffix with value range + modifier ids', 
   assert.deepEqual(life.modifierIds, ['104510080', '104510000']); // all tiers, for loot cross-ref
   const fire = affixes.find((a) => a.name === 'Fire Resistance');
   assert.deepEqual(fire.modifiers, [{ stat: 'fireResist', op: 'flat', value: 46 }]);
+
+  // Every tier is preserved with its own real weight + own parsed modifiers
+  // (not just the top tier), for a crafting-odds simulator.
+  assert.equal(life.tiers.length, 2);
+  const [t0plus, t1] = life.tiers;
+  assert.equal(t0plus.tier, '0+');
+  assert.equal(t0plus.weight, 0); // disabled tier -- kept, not silently dropped
+  assert.equal(t0plus.levelRequirement, 100);
+  assert.deepEqual(t0plus.modifiers, [{ stat: 'life', op: 'flat', value: 372 }]);
+  assert.equal(t1.tier, '1');
+  assert.equal(t1.weight, 100);
+  assert.deepEqual(t1.modifiers, [{ stat: 'life', op: 'flat', value: 250 }]); // its own range, not the top tier's
+});
+
+test('mapAffixes unions tiers (by modifierId) for the same affix across gear subtypes', () => {
+  const gearMaster = {
+    'gear/boots/str_boots/master': {
+      category: 'boots',
+      craftPrefix: [
+        { descriptionTemplate: '+# Max Life', tiers: [{ tier: '0', modifierId: 'A', weight: 100, values: [{ maxValue: 300 }] }] }
+      ]
+    },
+    'gear/boots/dex_boots/master': {
+      category: 'boots',
+      craftPrefix: [
+        {
+          descriptionTemplate: '+# Max Life',
+          tiers: [
+            { tier: '0', modifierId: 'A', weight: 100, values: [{ maxValue: 300 }] }, // duplicate id -> not double-counted
+            { tier: '1', modifierId: 'B', weight: 50, values: [{ maxValue: 200 }] }
+          ]
+        }
+      ]
+    }
+  };
+  const affixes = mapAffixes(gearMaster);
+  const life = affixes.find((a) => a.name === 'Max Life');
+  assert.equal(life.tiers.length, 2);
+  assert.deepEqual(life.tiers.map((t) => t.modifierId).sort(), ['A', 'B']);
 });
 
 test('mapGearFromMaster joins tlidbId (master) with name + mods (en)', () => {
@@ -163,4 +203,87 @@ test('mapHeroTraits uses the highest tier and strips HTML markup', () => {
   assert.equal(talents.length, 1);
   assert.equal(talents[0].heroId, 'any');
   assert.deepEqual(talents[0].modifiers, [{ stat: 'moreDamage', op: 'more', value: 0.78 }]);
+});
+
+// ------------------------- buildLevelScaling ---------------------------------
+// Fixtures shaped like real levelProgression/templateDescription/description
+// found live on tlicompendium.com (see the function's own docs for why the
+// algorithm works the way it does).
+
+test('buildLevelScaling disambiguates a tie (two slots equal at the reference level) using position order once an earlier unique slot is consumed', () => {
+  // Modeled on Leap Attack: value3 is constant at 20 across every level, and
+  // value5 also happens to equal 20 at the reference level (20) -- a genuine
+  // tie. The template still has a "#" for all three slots in this order:
+  // value1 (228, unique -> consumed first), value3 ("up to # times"), value5
+  // ("+#% damage per bonus"). Because extraction and matching both proceed
+  // left-to-right, value1 being unmistakable lets value3 get correctly
+  // consumed by the *second* placeholder, leaving value5 -- not value3 -- for
+  // the third, even though value3 and value5 are numerically tied at level 20.
+  const levelProgression = [
+    { level: 1, value1: 130, value3: 20, value5: 10.5 },
+    { level: 20, value1: 228, value3: 20, value5: 20 },
+    { level: 40, value1: 228, value3: 20, value5: 30 }
+  ];
+  const templateDescription = 'Deals #% Weapon Attack Damage. Up to # time(s). +#% damage per bonus gained';
+  const description = 'Deals 228% Weapon Attack Damage. Up to 20 time(s). +20% damage per bonus gained';
+  const result = buildLevelScaling(levelProgression, templateDescription, description, '228%');
+  assert.ok(result);
+  assert.equal(result.length, 3);
+  // Only value5's contribution is a recognised Modifier pattern; value1/value3
+  // feed literal tooltip numbers ("Deals X%", "up to N times") that
+  // parseModifiers doesn't treat as stat modifiers, same as the skill's own
+  // baseDamage being tracked separately rather than as a Modifier.
+  assert.deepEqual(
+    result.map((r) => r.modifiers),
+    [
+      [{ stat: 'increasedDamage', op: 'increased', value: 10.5 }],
+      [{ stat: 'increasedDamage', op: 'increased', value: 20 }],
+      [{ stat: 'increasedDamage', op: 'increased', value: 30 }]
+    ]
+  );
+});
+
+test('buildLevelScaling handles the "N/D" fraction quirk and falls back to searching every row when there is no effectivenessOfAddedDamage hint (supports don\'t have that field)', () => {
+  // Modeled on Multiple Projectiles: description snapshots at level 1 (not
+  // the last level), and value1 at level 1 is literally the string "37/5".
+  const levelProgression = [
+    { level: 1, value1: '37/5' }, // 37/5 = 7.4
+    { level: 2, value1: 7.8 },
+    { level: 3, value1: 8.2 }
+  ];
+  const templateDescription = '#% additional damage for the supported skill';
+  const description = '7.4% additional damage for the supported skill';
+  const result = buildLevelScaling(levelProgression, templateDescription, description, undefined);
+  assert.ok(result);
+  assert.deepEqual(result[0].modifiers, [{ stat: 'moreDamage', op: 'more', value: 0.074 }]);
+  assert.deepEqual(result[1].modifiers, [{ stat: 'moreDamage', op: 'more', value: 0.078 }]);
+});
+
+test('buildLevelScaling supports valueNMin/valueNMax pairs (range-damage spells)', () => {
+  const levelProgression = [{ level: 1, value1Min: 592, value1Max: 1100 }];
+  const templateDescription = 'Deals #-# Spell Damage';
+  const description = 'Deals 592-1100 Spell Damage';
+  const result = buildLevelScaling(levelProgression, templateDescription, description, undefined);
+  assert.ok(result); // resolves (even though this particular text isn't itself a Modifier pattern)
+  assert.equal(result.length, 1);
+});
+
+test('buildLevelScaling bails (returns undefined) rather than guess when the template is missing a placeholder the description actually varies by', () => {
+  // Modeled on Ice Shot: description has a second "Explosion: Deals N%..."
+  // line with no corresponding "#" anywhere in the template, so the literal
+  // segments can never line up -- must not silently mis-map.
+  const levelProgression = [{ level: 1, value1: 214, value2: 107 }];
+  const templateDescription = 'Deals #% Weapon Attack Damage. Explosion: Converts 100% to Cold.';
+  const description = 'Deals 313% Weapon Attack Damage. Explosion: Deals 157% Weapon Attack Damage. Converts 100% to Cold.';
+  assert.equal(buildLevelScaling(levelProgression, templateDescription, description, '313%'), undefined);
+});
+
+test('buildLevelScaling returns undefined for skills with no levelProgression or no placeholders', () => {
+  assert.equal(buildLevelScaling([], 'x', 'x', undefined), undefined);
+  assert.equal(buildLevelScaling(undefined, 'x', 'x', undefined), undefined);
+  // No "#" at all -> level-invariant text, nothing to add.
+  assert.equal(
+    buildLevelScaling([{ level: 1, value1: 5 }], 'Fixed text, no scaling', 'Fixed text, no scaling', undefined),
+    undefined
+  );
 });

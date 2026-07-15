@@ -13,3 +13,10 @@ export {
   MAX_PACT_SPIRITS,
   type BuildReport
 } from './build.js';
+export {
+  pickAffixTier,
+  craftableTiers,
+  affixTierOdds,
+  pickSkillLevel,
+  availableLevels
+} from './tiers.js';
