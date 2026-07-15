@@ -128,6 +128,9 @@ export interface ActiveSkill {
    * (see SkillLevelEntry). Absent -> callers fall back to baseDamage, which
    * reflects a single fixed level. */
   levelScaling?: SkillLevelEntry[];
+  manaCost?: number;
+  /** Attribute(s) this skill scales with, e.g. ["Strength"]. */
+  mainStat?: string[];
 }
 
 export interface SupportSkill {
@@ -217,18 +220,35 @@ export interface Talent {
   modifiers: Modifier[];
 }
 
+/** One step of a Pact Spirit's linear effect chain. */
+export interface PactSpiritNode {
+  nodeId: number;
+  nodeType?: string;
+  /** Next node in the chain, or null/absent at the end. */
+  nextNode?: number | null;
+  modifiers: Modifier[];
+}
+
 /** A Pact Spirit the hero binds for passive bonuses. */
 export interface PactSpirit {
   id: string;
   name: string;
   description?: string;
+  /** Every node's modifiers flattened together, for callers that don't care
+   * about the chain structure (the existing build-calc aggregation). */
   modifiers: Modifier[];
+  /** The real node-by-node chain, if scraped from tlicompendium's pactspirit
+   * bundle rather than hand-seeded. */
+  nodes?: PactSpiritNode[];
+  typeCode?: string;
+  rarity?: string;
+  iconUrl?: string;
 }
 
 /**
- * An SS13 "Memory Revival" awakening — items that boost affix values and unlock
- * rare affixes. Modelled here as a selectable bundle of modifiers. NOTE: the
- * real system's mechanics aren't public yet; seed entries are placeholders.
+ * An SS13 "Memory Revival" awakening -- a specific named, non-tiered effect
+ * (as opposed to the tiered/weighted affix pools below). Modelled here as a
+ * selectable bundle of modifiers.
  */
 export interface MemoryRevival {
   id: string;
@@ -236,6 +256,91 @@ export interface MemoryRevival {
   description?: string;
   modifiers: Modifier[];
   season?: string;
+}
+
+/**
+ * One of Memory Revival's weighted affix pools (base stats, fixed affixes,
+ * random affixes, revived affixes, special random affixes) -- structurally
+ * identical to a gear Affix's tier list, since the underlying game data uses
+ * the same modifierId/tier/level/weight shape. Keyed by `memoryType`
+ * ("Origin" | "Discipline" | "Progress" | "Any") in MemoryAffixPools below.
+ */
+export interface MemoryAffix {
+  id: string;
+  name: string;
+  modifiers: Modifier[];
+  modifierIds?: string[];
+  tiers?: AffixTier[];
+}
+
+export interface MemoryAffixPools {
+  baseStats: MemoryAffix[];
+  fixedAffixes: MemoryAffix[];
+  randomAffixes: MemoryAffix[];
+  revivedAffixes: MemoryAffix[];
+  specialRandomAffixes: MemoryAffix[];
+}
+
+/** A node in a Void Chart / Talent Tree graph, shared shape for both (see
+ * VoidChartTree and TalentTree) since they're structurally the same idea:
+ * a real position, real graph edges, and a small list of typed effects. */
+export interface ProgressionNode {
+  id: string;
+  tlidbId?: string;
+  type?: string;
+  name?: string;
+  description?: string;
+  icon?: string;
+  /** Graph edges to other nodes' `id`, however the source bundle expresses
+   * them (Void Chart: bidirectional `connections`; Talent Tree: `ancestor` +
+   * `predecessors`) -- normalised here into one adjacency list. */
+  connections: string[];
+  maxPoints?: number;
+  position?: { x: number; y: number };
+  modifiers: Modifier[];
+}
+
+/** A Void Chart meta-progression tree (one per season/category, e.g. "war",
+ * "vorax", "aeterna") or a hero-archetype Talent Tree (Alchemist, God of
+ * War, ...). Purely a real-game-data reference for now -- not yet wired into
+ * Build/collectModifiers, since these are account-wide unlocks rather than
+ * per-build loadout choices like gear/skills/talents. */
+export interface ProgressionTree {
+  id: string;
+  name: string;
+  icon?: string;
+  nodes: ProgressionNode[];
+}
+
+/** A Vorax limb gear base (SS13's extra equipment slot) -- kept distinct
+ * from GearBase/GearSlot since a Vorax limb is worn *in addition to* normal
+ * gear, not instead of it, and its slot names ("digits", "waist", ...) don't
+ * map onto the existing closed GearSlot union. */
+export interface VoraxGearBase {
+  id: string;
+  name: string;
+  limb: string;
+  icon?: string;
+  modifiers: Modifier[];
+}
+
+/** A Vorax-exclusive legendary, with its normal and "corroded" (mutated)
+ * variant values -- corroded is a distinct value set, not a modifier op. */
+export interface VoraxLegendary {
+  id: string;
+  limb: string;
+  icon?: string;
+  modifiers: Modifier[];
+  corrodedModifiers?: Modifier[];
+}
+
+/** A Vorax limb's craftable affix, same tiered/weighted shape as a regular
+ * gear Affix. */
+export interface VoraxAffix {
+  id: string;
+  limb: string;
+  modifiers: Modifier[];
+  tiers?: AffixTier[];
 }
 
 /** The whole dataset, as loaded by the app and emitted by the scraper. */
@@ -255,6 +360,15 @@ export interface Dataset {
   talents: Talent[];
   pactSpirits: PactSpirit[];
   memories: MemoryRevival[];
+  /** Memory Revival's weighted affix pools -- absent when not yet scraped. */
+  memoryAffixPools?: MemoryAffixPools;
+  /** Void Chart meta-progression trees (one per season/category) and hero
+   * archetype Talent Trees -- reference data, not yet wired into Build. */
+  voidCharts?: ProgressionTree[];
+  talentTrees?: ProgressionTree[];
+  voraxGearBases?: VoraxGearBase[];
+  voraxAffixes?: VoraxAffix[];
+  voraxLegendaries?: VoraxLegendary[];
 }
 
 /** A piece of gear the player has assembled: a base plus chosen affixes. */

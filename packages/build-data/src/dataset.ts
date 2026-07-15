@@ -4,10 +4,14 @@ import type {
   Dataset,
   GearBase,
   Hero,
+  MemoryAffixPools,
   MemoryRevival,
   PactSpirit,
+  ProgressionTree,
   SupportSkill,
-  Talent
+  Talent,
+  VoraxAffix,
+  VoraxLegendary
 } from './schema.js';
 
 import heroes from './seed/heroes.json' with { type: 'json' };
@@ -18,6 +22,11 @@ import gearBases from './seed/gearBases.json' with { type: 'json' };
 import talents from './seed/talents.json' with { type: 'json' };
 import pactSpirits from './seed/pactSpirits.json' with { type: 'json' };
 import memories from './seed/memories.json' with { type: 'json' };
+import memoryAffixPools from './seed/memoryAffixPools.json' with { type: 'json' };
+import voidCharts from './seed/voidCharts.json' with { type: 'json' };
+import talentTrees from './seed/talentTrees.json' with { type: 'json' };
+import voraxAffixes from './seed/voraxAffixes.json' with { type: 'json' };
+import voraxLegendaries from './seed/voraxLegendaries.json' with { type: 'json' };
 
 /**
  * The bundled seed dataset. Hand-entered, approximate, and intentionally small
@@ -37,7 +46,12 @@ export const seedDataset: Dataset = {
   gearBases: gearBases as GearBase[],
   talents: talents as Talent[],
   pactSpirits: pactSpirits as PactSpirit[],
-  memories: memories as MemoryRevival[]
+  memories: memories as MemoryRevival[],
+  memoryAffixPools: memoryAffixPools as MemoryAffixPools,
+  voidCharts: voidCharts as ProgressionTree[],
+  talentTrees: talentTrees as ProgressionTree[],
+  voraxAffixes: voraxAffixes as VoraxAffix[],
+  voraxLegendaries: voraxLegendaries as VoraxLegendary[]
 };
 
 /** Indexed view over a dataset for O(1) lookups by id. */

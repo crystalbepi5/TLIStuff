@@ -8,7 +8,12 @@ import {
   mapLegendaries,
   mapHeroTraits,
   mapSkills,
-  buildLevelScaling
+  buildLevelScaling,
+  mapVoidChart,
+  mapTalentTrees,
+  mapPactSpirits,
+  mapHeroMemory,
+  mapVorax
 } from '../dist/index.js';
 
 // Small inline fixtures shaped like real tlicompendium bundles (which are
@@ -286,4 +291,261 @@ test('buildLevelScaling returns undefined for skills with no levelProgression or
     buildLevelScaling([{ level: 1, value1: 5 }], 'Fixed text, no scaling', 'Fixed text, no scaling', undefined),
     undefined
   );
+});
+
+// ------------------------------ mapVoidChart ---------------------------------
+
+test('mapVoidChart maps each sub-tree\'s nodes with real connections + position, best-effort parsing effect text', () => {
+  const bundle = {
+    'voidchart/war/en': {
+      id: 'god-of-war',
+      name: 'God of War',
+      nodes: [
+        {
+          id: 'n1',
+          tlidbId: 't1',
+          type: 'minor',
+          name: 'Vigor',
+          description: 'Grants extra life',
+          icon: 'icon.png',
+          position: { x: 10, y: 20 },
+          connections: ['n2'],
+          effects: [{ displayString: '+50 Max Life' }]
+        },
+        { id: 'n2', connections: [], effects: [] }
+      ]
+    }
+  };
+  const trees = mapVoidChart(bundle);
+  assert.equal(trees.length, 1);
+  assert.equal(trees[0].id, 'god-of-war');
+  assert.equal(trees[0].name, 'God of War');
+  assert.equal(trees[0].nodes.length, 2);
+  assert.deepEqual(trees[0].nodes[0], {
+    id: 'n1',
+    tlidbId: 't1',
+    type: 'minor',
+    name: 'Vigor',
+    description: 'Grants extra life',
+    icon: 'icon.png',
+    connections: ['n2'],
+    position: { x: 10, y: 20 },
+    modifiers: [{ stat: 'life', op: 'flat', value: 50 }]
+  });
+  assert.deepEqual(trees[0].nodes[1], { id: 'n2', connections: [], modifiers: [] });
+});
+
+test('mapVoidChart skips entries with no nodes array', () => {
+  assert.deepEqual(mapVoidChart({ k: { id: 'x' } }), []);
+});
+
+// ------------------------------ mapTalentTrees -------------------------------
+
+test('mapTalentTrees normalises ancestor + predecessors into a shared connections adjacency list', () => {
+  const bundle = {
+    'talent-tree/warrior/master': {
+      tree: {
+        id: 'warrior',
+        tlidbId: 'Warrior',
+        icon: 'warrior.png',
+        nodes: [
+          {
+            id: 'root',
+            type: 'keystone',
+            maxPoints: 1,
+            svgPosition: { cx: 100, cy: 200 },
+            ancestor: null,
+            predecessors: [],
+            mods: [{ description: '+20% additional damage' }]
+          },
+          {
+            id: 'child',
+            ancestor: 'root',
+            predecessors: [{ guid: 'root' }, { guid: 'other' }],
+            mods: []
+          }
+        ]
+      }
+    }
+  };
+  const trees = mapTalentTrees(bundle);
+  assert.equal(trees.length, 1);
+  assert.equal(trees[0].id, 'warrior');
+  assert.equal(trees[0].name, 'Warrior');
+  assert.equal(trees[0].icon, 'warrior.png');
+  assert.deepEqual(trees[0].nodes[0], {
+    id: 'root',
+    type: 'keystone',
+    connections: [],
+    maxPoints: 1,
+    position: { x: 100, y: 200 },
+    modifiers: [{ stat: 'moreDamage', op: 'more', value: 0.2 }]
+  });
+  // ancestor + predecessors merged into one adjacency list (root de-duped by caller if needed)
+  assert.deepEqual(trees[0].nodes[1].connections, ['root', 'root', 'other']);
+});
+
+test('mapTalentTrees skips entries with no tree.nodes', () => {
+  assert.deepEqual(mapTalentTrees({ k: {} }), []);
+  assert.deepEqual(mapTalentTrees({ k: { tree: {} } }), []);
+});
+
+// ------------------------------ mapPactSpirits -------------------------------
+
+test('mapPactSpirits joins master (mechanics) + en (name/description) by shared id, flattening node effects into modifiers', () => {
+  const master = {
+    'pactspirit/master': {
+      types: [{ id: 'type-1', code: 'combat' }],
+      pactspirits: [
+        {
+          id: 'ps-1',
+          typeId: 'type-1',
+          rarity: 'legendary',
+          iconUrl: 'ps1.png',
+          nodes: [
+            { nodeId: 1, nodeType: 'start', nextNode: 2, effects: [{ sign: '+', value: 30, unit: '%', text: 'increased damage' }] },
+            { nodeId: 2, nodeType: 'end', nextNode: null, effects: [] }
+          ]
+        }
+      ]
+    }
+  };
+  const en = {
+    'pactspirit/i18n/en': {
+      pactspirits: { 'ps-1': { name: 'Ember Wisp', description: 'A fiery companion' } }
+    }
+  };
+  const spirits = mapPactSpirits(master, en);
+  assert.equal(spirits.length, 1);
+  assert.deepEqual(spirits[0], {
+    id: 'ps-1',
+    name: 'Ember Wisp',
+    description: 'A fiery companion',
+    modifiers: [],
+    nodes: [
+      { nodeId: 1, nodeType: 'start', nextNode: 2, modifiers: [] },
+      { nodeId: 2, nodeType: 'end', nextNode: null, modifiers: [] }
+    ],
+    typeCode: 'combat',
+    rarity: 'legendary',
+    iconUrl: 'ps1.png'
+  });
+});
+
+test('mapPactSpirits falls back to the raw id as name when no en entry exists', () => {
+  const master = { k: { pactspirits: [{ id: 'ps-2', nodes: [] }] } };
+  const spirits = mapPactSpirits(master, {});
+  assert.equal(spirits[0].name, 'ps-2');
+  assert.deepEqual(spirits[0].modifiers, []);
+});
+
+// ------------------------------ mapHeroMemory --------------------------------
+
+test('mapHeroMemory fills each tiered pool\'s -en template with the tier\'s own value(s) and maps lunar-phase memories', () => {
+  const master = {
+    'hero-memory/master': {
+      baseStats: [
+        {
+          id: 'ms-1',
+          modifierId: 'mod-1',
+          tiers: [{ tier: 1, weight: 100, level: 1, value: 42 }]
+        }
+      ],
+      revivedAffixLunarPhases: [{ id: 'lp-1', name: 'Full Moon', description: '+10% additional damage' }]
+    }
+  };
+  const en = {
+    'hero-memory/i18n/en': {
+      baseStats: { 'ms-1': { template: '+#% Critical Strike Damage' } }
+    }
+  };
+  const { pools, revivedMemories } = mapHeroMemory(master, en);
+  assert.equal(pools.baseStats.length, 1);
+  assert.deepEqual(pools.baseStats[0].tiers[0].modifiers, [{ stat: 'critDamage', op: 'flat', value: 42 }]);
+  assert.deepEqual(pools.baseStats[0].modifierIds, ['mod-1']);
+  assert.equal(pools.fixedAffixes.length, 0);
+  assert.equal(revivedMemories.length, 1);
+  assert.deepEqual(revivedMemories[0], {
+    id: 'lp-1',
+    name: 'Full Moon',
+    description: '+10% additional damage',
+    modifiers: [{ stat: 'moreDamage', op: 'more', value: 0.1 }]
+  });
+});
+
+test('mapHeroMemory handles a compound tier (nested values[]) filling multiple template placeholders', () => {
+  const master = {
+    k: {
+      randomAffixes: [
+        { id: 'ra-1', tiers: [{ tier: 1, weight: 50, values: [{ valueMax: 12 }, { valueMax: 8 }] }] }
+      ]
+    }
+  };
+  const en = { k: { randomAffixes: { 'ra-1': { template: '+#% Fire Resistance and +#% Cold Resistance' } } } };
+  const { pools } = mapHeroMemory(master, en);
+  assert.deepEqual(pools.randomAffixes[0].tiers[0].modifiers, [
+    { stat: 'fireResist', op: 'flat', value: 12 },
+    { stat: 'coldResist', op: 'flat', value: 8 }
+  ]);
+});
+
+// --------------------------------- mapVorax ----------------------------------
+
+test('mapVorax joins master craftAffixes/legendaries (plain arrays keyed by their own id) with en tiers/mods by that id', () => {
+  const master = {
+    'vorax/master': {
+      craftAffixes: [
+        {
+          id: 'affix-1',
+          limb: 'head',
+          tiers: [
+            { id: 'tier-1', tier: '1', modifierId: 'm1', levelRequirement: 1, weight: 100 }
+          ]
+        }
+      ],
+      legendaries: [
+        {
+          id: 'leg-1',
+          limb: 'head',
+          icon: 'leg1.png',
+          mods: [{ id: 'mod-1' }]
+        }
+      ]
+    }
+  };
+  const en = {
+    'vorax/i18n/en': {
+      craftAffixes: {
+        'affix-1': { tiers: [{ id: 'tier-1', rawText: '+40 Max Life' }] }
+      },
+      legendaries: {
+        'leg-1': {
+          name: 'Crown of Ash',
+          mods: [{ id: 'mod-1', normalRawText: '+50 Armor', corrodedRawText: '+100 Armor' }]
+        }
+      }
+    }
+  };
+  const { affixes, legendaries } = mapVorax(master, en);
+  assert.equal(affixes.length, 1);
+  assert.deepEqual(affixes[0].modifiers, [{ stat: 'life', op: 'flat', value: 40 }]);
+  assert.equal(affixes[0].tiers.length, 1);
+  assert.equal(affixes[0].tiers[0].modifierId, 'm1');
+
+  assert.equal(legendaries.length, 1);
+  assert.deepEqual(legendaries[0], {
+    id: 'leg-1',
+    limb: 'head',
+    icon: 'leg1.png',
+    modifiers: [{ stat: 'armor', op: 'flat', value: 50 }],
+    corrodedModifiers: [{ stat: 'armor', op: 'flat', value: 100 }]
+  });
+});
+
+test('mapVorax omits corrodedModifiers when the legendary has no corroded variant text', () => {
+  const master = { k: { legendaries: [{ id: 'leg-2', mods: [{ id: 'mod-2' }] }] } };
+  const en = { k: { legendaries: { 'leg-2': { mods: [{ id: 'mod-2', normalRawText: '+10 Armor' }] } } } };
+  const { legendaries } = mapVorax(master, en);
+  assert.deepEqual(legendaries[0].modifiers, [{ stat: 'armor', op: 'flat', value: 10 }]);
+  assert.equal('corrodedModifiers' in legendaries[0], false);
 });

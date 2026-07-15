@@ -5102,6 +5102,18 @@
     "implicit": []
   },
   {
+    "id": "omniscient-prototype",
+    "name": "Omniscient Prototype",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "life",
+        "op": "flat",
+        "value": 1
+      }
+    ]
+  },
+  {
     "id": "glorious-journey",
     "name": "Glorious Journey",
     "slot": "weapon",

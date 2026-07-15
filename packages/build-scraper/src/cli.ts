@@ -22,7 +22,12 @@ import {
   scrapeGear,
   scrapeAffixes,
   scrapeLegendaries,
-  scrapeHeroTraits
+  scrapeHeroTraits,
+  scrapeVoidCharts,
+  scrapeTalentTrees,
+  scrapePactSpirits,
+  scrapeHeroMemory,
+  scrapeVorax
 } from './tlicompendium.js';
 
 function arg(name: string, fallback: string): string {
@@ -51,6 +56,16 @@ async function main(): Promise<void> {
   const legendaries = await scrapeLegendaries(cfg);
   console.error('[scrape] tlicompendium: hero traits…');
   const traits = await scrapeHeroTraits(cfg);
+  console.error('[scrape] tlicompendium: void charts…');
+  const voidCharts = await scrapeVoidCharts(cfg);
+  console.error('[scrape] tlicompendium: talent trees…');
+  const talentTrees = await scrapeTalentTrees(cfg);
+  console.error('[scrape] tlicompendium: pact spirits (master+en)…');
+  const pactSpirits = await scrapePactSpirits(cfg);
+  console.error('[scrape] tlicompendium: hero memory (master+en)…');
+  const { pools: memoryAffixPools, revivedMemories } = await scrapeHeroMemory(cfg);
+  console.error('[scrape] tlicompendium: vorax (master+en)…');
+  const { affixes: voraxAffixes, legendaries: voraxLegendaries } = await scrapeVorax(cfg);
 
   const gearBases = [...gear, ...legendaries];
   const talents = traits.length > 0 ? traits : seedDataset.talents;
@@ -60,7 +75,7 @@ async function main(): Promise<void> {
     meta: {
       source: 'scrape',
       generatedAt: new Date().toISOString(),
-      note: 'tlicompendium: skills/gear/legendaries/talents; heroes/affixes/pactspirits/memories from hand-curated seed'
+      note: 'tlicompendium: skills/gear/legendaries/talents/void-charts/talent-trees/pact-spirits/hero-memory/vorax; heroes from hand-curated seed'
     },
     heroes: seedDataset.heroes,
     activeSkills: skills,
@@ -68,8 +83,13 @@ async function main(): Promise<void> {
     affixes: affixes.length > 0 ? affixes : seedDataset.affixes,
     gearBases,
     talents,
-    pactSpirits: seedDataset.pactSpirits,
-    memories: seedDataset.memories
+    pactSpirits: pactSpirits.length > 0 ? pactSpirits : seedDataset.pactSpirits,
+    memories: revivedMemories.length > 0 ? revivedMemories : seedDataset.memories,
+    memoryAffixPools,
+    voidCharts,
+    talentTrees,
+    voraxAffixes,
+    voraxLegendaries
   };
 
   mkdirSync(outDir, { recursive: true });
@@ -80,16 +100,30 @@ async function main(): Promise<void> {
   write('affixes.json', affixes);
   write('gearBases.json', gearBases);
   write('talents.json', talents);
+  write('voidCharts.json', voidCharts);
+  write('talentTrees.json', talentTrees);
+  write('pactSpirits.json', dataset.pactSpirits);
+  write('memoryAffixPools.json', memoryAffixPools);
+  write('memories.json', dataset.memories);
+  write('voraxAffixes.json', voraxAffixes);
+  write('voraxLegendaries.json', voraxLegendaries);
 
   const withMods = (arr: { modifiers?: unknown[]; implicit?: unknown[] }[]) =>
     arr.filter((x) => (x.modifiers ?? x.implicit ?? []).length > 0).length;
 
   console.error('\n[done] wrote to ' + outDir + '/');
-  console.error(`  activeSkills : ${skills.length}`);
-  console.error(`  supportSkills: ${supports.length} (${withMods(supports)} with modifiers)`);
-  console.error(`  affixes      : ${affixes.length} (prefix/suffix, with value ranges + modifier ids)`);
-  console.error(`  gearBases    : ${gearBases.length} (${withMods(gearBases)} with modifiers; tlidbId attached)`);
-  console.error(`  talents      : ${talents.length} (${withMods(talents)} with modifiers)`);
+  console.error(`  activeSkills   : ${skills.length}`);
+  console.error(`  supportSkills  : ${supports.length} (${withMods(supports)} with modifiers)`);
+  console.error(`  affixes        : ${affixes.length} (prefix/suffix, with value ranges + modifier ids)`);
+  console.error(`  gearBases      : ${gearBases.length} (${withMods(gearBases)} with modifiers; tlidbId attached)`);
+  console.error(`  talents        : ${talents.length} (${withMods(talents)} with modifiers)`);
+  console.error(`  voidCharts     : ${voidCharts.length} trees (${voidCharts.reduce((n, t) => n + t.nodes.length, 0)} nodes)`);
+  console.error(`  talentTrees    : ${talentTrees.length} trees (${talentTrees.reduce((n, t) => n + t.nodes.length, 0)} nodes)`);
+  console.error(`  pactSpirits    : ${pactSpirits.length}`);
+  console.error(`  memoryPools    : ${Object.values(memoryAffixPools).reduce((n, arr) => n + arr.length, 0)} affixes across ${Object.keys(memoryAffixPools).length} pools`);
+  console.error(`  revivedMemories: ${revivedMemories.length}`);
+  console.error(`  voraxAffixes   : ${voraxAffixes.length} (${withMods(voraxAffixes)} with modifiers)`);
+  console.error(`  voraxLegendaries: ${voraxLegendaries.length} (${withMods(voraxLegendaries)} with modifiers)`);
 
   const problems = validateDataset(dataset);
   const damageless = problems.filter((p) => /no base damage/.test(p)).length;
