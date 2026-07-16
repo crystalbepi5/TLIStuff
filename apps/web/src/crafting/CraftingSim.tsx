@@ -28,10 +28,21 @@ function rowKey(t: AffixTier, i: number): string {
   return t.modifierId ?? `${t.tier}-${i}`;
 }
 
+/** `more` values are stored as a decimal multiplier (0.08 -> x1.08, i.e. 8%
+ * more -- see aggregate()'s `more *= 1 + mod.value`), while `increased`
+ * values are already plain percentage numbers. Scale `more` by 100 before
+ * display or it reads as "+0.08%" instead of "+8%". */
+function displayValue(m: { op: string; value: number }): number {
+  return m.op === 'more' ? m.value * 100 : m.value;
+}
+
 function describeModifiers(t: AffixTier): string {
   if (t.modifiers.length === 0) return '(effect text not recognized by the parser)';
   return t.modifiers
-    .map((m) => `${m.value >= 0 ? '+' : ''}${m.value}${m.op === 'flat' ? '' : '%'} ${m.stat}`)
+    .map((m) => {
+      const value = displayValue(m);
+      return `${value >= 0 ? '+' : ''}${value}${m.op === 'flat' ? '' : '%'} ${m.stat}`;
+    })
     .join(', ');
 }
 
@@ -50,6 +61,20 @@ export function CraftingSim() {
 
   function pickAffix(id: string) {
     setAffixId(id);
+    setTargetKeys(new Set());
+    setMc(null);
+  }
+
+  function pickSlot(next: GearSlot) {
+    setSlot(next);
+    // The previously-selected affix almost certainly doesn't belong to the
+    // new slot (affix ids aren't shared across slots) -- fall back to it
+    // otherwise the tier ladder/odds keep showing the old slot's affix while
+    // the dropdown displays the new slot's options.
+    const firstForSlot = seedDataset.affixes.find(
+      (a) => a.slots.includes(next) && (a.tiers?.length ?? 0) > 0
+    );
+    setAffixId(firstForSlot?.id ?? '');
     setTargetKeys(new Set());
     setMc(null);
   }
@@ -93,7 +118,7 @@ export function CraftingSim() {
           <h2>Pick an affix</h2>
           <label className="field">
             <span>Gear slot</span>
-            <select value={slot} onChange={(e) => { setSlot(e.target.value as GearSlot); setMc(null); }}>
+            <select value={slot} onChange={(e) => pickSlot(e.target.value as GearSlot)}>
               {GEAR_SLOTS.map((s) => (
                 <option key={s} value={s}>
                   {s}

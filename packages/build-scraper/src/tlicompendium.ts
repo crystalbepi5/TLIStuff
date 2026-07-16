@@ -596,11 +596,19 @@ function affixName(template: string): string {
   return template.replace(/[+\-]?#%?/g, '').replace(/\s+/g, ' ').trim() || template;
 }
 
-/** Highest-roll tier of a craft affix (used for the top-level `modifiers`). */
+/** Highest-roll *craftable* tier of a craft affix (used for the top-level
+ * `modifiers`). weight 0 means disabled/unobtainable (see RawAffixTier's
+ * doc comment) -- a disabled tier can carry a higher roll than any tier a
+ * player can actually craft (confirmed against the real scrape: several
+ * affixes' strongest-looking tier is a disabled 0+ row), so it must be
+ * excluded here or the top-level `modifiers` would show an impossible
+ * value. Falls back to considering every tier only if none are craftable,
+ * so an affix doesn't lose its `modifiers` entirely in that edge case. */
 function topTier(a: CraftAffix): RawAffixTier | undefined {
-  return (a.tiers ?? [])
-    .slice()
-    .sort((x, y) => (y.values?.[0]?.maxValue ?? 0) - (x.values?.[0]?.maxValue ?? 0))[0];
+  const tiers = a.tiers ?? [];
+  const craftable = tiers.filter((t) => (t.weight ?? 0) > 0);
+  const pool = craftable.length > 0 ? craftable : tiers;
+  return pool.slice().sort((x, y) => (y.values?.[0]?.maxValue ?? 0) - (x.values?.[0]?.maxValue ?? 0))[0];
 }
 
 /** Map every raw tier of a craft affix into the schema's AffixTier shape,
@@ -1132,10 +1140,16 @@ export function mapVorax(master: unknown, en: unknown): { affixes: VoraxAffix[];
       ...(t.modifierId != null ? { modifierId: t.modifierId } : {}),
       modifiers: parseModifiers(enTiers.get(t.id) ?? '')
     }));
+    // Top-level `modifiers` must be a tier a player can actually craft --
+    // weight 0 means disabled/unobtainable (same convention as regular gear
+    // affixes' topTier()), and it isn't always tiers[0]. Falls back to the
+    // literal first tier only if none are craftable, so the affix doesn't
+    // lose its modifiers entirely in that edge case.
+    const craftableTier = tiers.find((t) => t.weight > 0) ?? tiers[0];
     return {
       id: raw.id,
       limb: raw.limb ?? 'unknown',
-      modifiers: tiers[0]?.modifiers ?? [],
+      modifiers: craftableTier?.modifiers ?? [],
       ...(tiers.length > 0 ? { tiers } : {})
     };
   });

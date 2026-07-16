@@ -100,7 +100,10 @@ test('mapAffixes extracts craft prefix/suffix with value range + modifier ids', 
   const life = affixes.find((a) => a.name === 'Max Life');
   assert.ok(life);
   assert.equal(life.kind, 'prefix');
-  assert.deepEqual(life.modifiers, [{ stat: 'life', op: 'flat', value: 372 }]); // top tier, max roll
+  // Top-level modifiers must reflect the best tier a player can actually
+  // craft (weight > 0) -- the disabled 0+ tier rolls higher (372) but is
+  // unobtainable, so tier '1' (250, weight 100) is the correct "top" here.
+  assert.deepEqual(life.modifiers, [{ stat: 'life', op: 'flat', value: 250 }]);
   assert.deepEqual(life.slots, ['boots']);
   assert.deepEqual(life.modifierIds, ['104510080', '104510000']); // all tiers, for loot cross-ref
   const fire = affixes.find((a) => a.name === 'Fire Resistance');
@@ -117,6 +120,24 @@ test('mapAffixes extracts craft prefix/suffix with value range + modifier ids', 
   assert.equal(t1.tier, '1');
   assert.equal(t1.weight, 100);
   assert.deepEqual(t1.modifiers, [{ stat: 'life', op: 'flat', value: 250 }]); // its own range, not the top tier's
+});
+
+test('mapAffixes falls back to considering every tier (even weight-0) only when none are craftable, so the affix keeps its modifiers instead of losing them', () => {
+  const gearMaster = {
+    'gear/boots/str_boots/master': {
+      category: 'boots',
+      craftPrefix: [
+        {
+          descriptionTemplate: '+# Max Life',
+          tiers: [{ tier: '0+', modifierId: '1', weight: 0, values: [{ maxValue: 372 }] }]
+        }
+      ]
+    }
+  };
+  const affixes = mapAffixes(gearMaster);
+  const life = affixes.find((a) => a.name === 'Max Life');
+  assert.ok(life);
+  assert.deepEqual(life.modifiers, [{ stat: 'life', op: 'flat', value: 372 }]);
 });
 
 test('mapAffixes unions tiers (by modifierId) for the same affix across gear subtypes', () => {
@@ -549,6 +570,46 @@ test('mapVorax omits corrodedModifiers when the legendary has no corroded varian
   const { legendaries } = mapVorax(master, en);
   assert.deepEqual(legendaries[0].modifiers, [{ stat: 'armor', op: 'flat', value: 10 }]);
   assert.equal('corrodedModifiers' in legendaries[0], false);
+});
+
+test('mapVorax skips a disabled (weight-0) first tier when picking the top-level modifiers, same as gear affixes', () => {
+  const master = {
+    k: {
+      craftAffixes: [
+        {
+          id: 'affix-2',
+          limb: 'chest',
+          tiers: [
+            { id: 't0plus', tier: '0+', modifierId: 'm0', weight: 0 }, // disabled -- listed first, but not craftable
+            { id: 't1', tier: '1', modifierId: 'm1', weight: 100 }
+          ]
+        }
+      ]
+    }
+  };
+  const en = {
+    k: {
+      craftAffixes: {
+        'affix-2': {
+          tiers: [
+            { id: 't0plus', rawText: '+372 Max Life' },
+            { id: 't1', rawText: '+250 Max Life' }
+          ]
+        }
+      }
+    }
+  };
+  const { affixes } = mapVorax(master, en);
+  assert.deepEqual(affixes[0].modifiers, [{ stat: 'life', op: 'flat', value: 250 }]);
+});
+
+test('mapVorax falls back to the first tier when none are craftable, so the affix keeps its modifiers', () => {
+  const master = {
+    k: { craftAffixes: [{ id: 'affix-3', limb: 'chest', tiers: [{ id: 't0plus', tier: '0+', modifierId: 'm0', weight: 0 }] }] }
+  };
+  const en = { k: { craftAffixes: { 'affix-3': { tiers: [{ id: 't0plus', rawText: '+372 Max Life' }] } } } };
+  const { affixes } = mapVorax(master, en);
+  assert.deepEqual(affixes[0].modifiers, [{ stat: 'life', op: 'flat', value: 372 }]);
 });
 
 // --------------------------------- mapKismet ---------------------------------

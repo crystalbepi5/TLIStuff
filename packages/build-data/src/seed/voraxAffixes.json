@@ -6,7 +6,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -71,7 +71,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -136,7 +136,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -3067,7 +3067,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.12
+        "value": 0.05
       }
     ],
     "tiers": [
@@ -3267,7 +3267,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -3332,7 +3332,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -3397,7 +3397,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -3847,7 +3847,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.07
+        "value": 0.06
       }
     ],
     "tiers": [
@@ -6145,7 +6145,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -6210,7 +6210,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -6275,7 +6275,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -6613,7 +6613,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.07
+        "value": 0.06
       }
     ],
     "tiers": [
@@ -9053,7 +9053,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -9118,7 +9118,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -9183,7 +9183,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -9890,7 +9890,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.13
+        "value": 0.05
       }
     ],
     "tiers": [
@@ -10011,7 +10011,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.13
+        "value": 0.05
       }
     ],
     "tiers": [
@@ -10090,7 +10090,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.13
+        "value": 0.05
       }
     ],
     "tiers": [
@@ -12418,7 +12418,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -12483,7 +12483,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -12548,7 +12548,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -13178,7 +13178,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.13
+        "value": 0.05
       }
     ],
     "tiers": [
@@ -13299,7 +13299,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.13
+        "value": 0.05
       }
     ],
     "tiers": [
@@ -13378,7 +13378,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.13
+        "value": 0.05
       }
     ],
     "tiers": [
@@ -15755,7 +15755,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -15820,7 +15820,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -15885,7 +15885,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -18536,7 +18536,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.12
+        "value": 0.05
       }
     ],
     "tiers": [
@@ -18680,7 +18680,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -18745,7 +18745,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -18810,7 +18810,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -19482,7 +19482,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.13
+        "value": 0.05
       }
     ],
     "tiers": [
@@ -19603,7 +19603,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.13
+        "value": 0.05
       }
     ],
     "tiers": [
@@ -19731,7 +19731,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.13
+        "value": 0.05
       }
     ],
     "tiers": [
@@ -22192,7 +22192,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -22257,7 +22257,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -22322,7 +22322,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -23162,7 +23162,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.13
+        "value": 0.05
       }
     ],
     "tiers": [
@@ -23283,7 +23283,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.13
+        "value": 0.05
       }
     ],
     "tiers": [
@@ -23362,7 +23362,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.13
+        "value": 0.05
       }
     ],
     "tiers": [
@@ -25536,7 +25536,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -25601,7 +25601,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -25666,7 +25666,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -26401,7 +26401,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.13
+        "value": 0.05
       }
     ],
     "tiers": [
@@ -26522,7 +26522,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.13
+        "value": 0.05
       }
     ],
     "tiers": [
@@ -26601,7 +26601,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.13
+        "value": 0.05
       }
     ],
     "tiers": [
@@ -28824,7 +28824,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -28889,7 +28889,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -28954,7 +28954,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.5
+        "value": -0.45
       }
     ],
     "tiers": [
@@ -29661,7 +29661,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.13
+        "value": 0.05
       }
     ],
     "tiers": [
@@ -29782,7 +29782,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.13
+        "value": 0.05
       }
     ],
     "tiers": [
@@ -29910,7 +29910,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.13
+        "value": 0.05
       }
     ],
     "tiers": [
