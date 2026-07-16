@@ -378,6 +378,18 @@ export interface GearPiece {
   affixIds: string[];
 }
 
+/**
+ * A piece of Vorax gear -- SS13's extra "limb" slot, worn in addition to
+ * normal gear (see VoraxAffix/VoraxLegendary). Keyed by `limb` (a free-form
+ * string like "head" or "aberrant digits", not the closed GearSlot union)
+ * since it's a separate slot system layered on top of regular gear.
+ */
+export interface VoraxGearPiece {
+  limb: string;
+  legendaryId?: string;
+  affixIds: string[];
+}
+
 /** A complete saved build — what the planner serialises to a share string. */
 export interface Build {
   id: string;
@@ -387,8 +399,21 @@ export interface Build {
   activeSkillId: string;
   supportIds: string[];
   gear: GearPiece[];
-  /** Allocated talent-tree nodes. */
+  /** Vorax limb gear (legendary + affixes per limb slot). */
+  voraxGear: VoraxGearPiece[];
+  /** Allocated hero traits (the flat per-hero Talent list, see mapHeroTraits --
+   * a different system from the graph-shaped talentTrees/talentTreeNodeIds
+   * below, despite the similar name). */
   talentIds: string[];
+  /** Selected nodes from the hero-archetype Talent Trees (graph-shaped,
+   * see ProgressionTree/talentTrees). */
+  talentTreeNodeIds: string[];
+  /** Selected nodes from the Void Chart meta-progression trees (graph-shaped,
+   * see ProgressionTree/voidCharts). Most nodes have no modeled effect yet
+   * (best-effort text parsing recognizes only a small fraction) -- selecting
+   * one is still meaningful as a real account-progression record, just often
+   * contributes zero modifiers today. */
+  voidChartNodeIds: string[];
   /** Bound Pact Spirits (capped by MAX_PACT_SPIRITS in build-calc). */
   pactSpiritIds: string[];
   /** Selected Memory Revival awakenings. */

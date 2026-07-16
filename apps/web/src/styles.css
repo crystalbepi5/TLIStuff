@@ -427,6 +427,58 @@ body {
   font-variant-numeric: normal;
 }
 
+.progression-graph {
+  display: grid;
+  gap: 8px;
+}
+
+.progression-graph-svg {
+  width: 100%;
+  aspect-ratio: 1;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.progression-graph-edge {
+  stroke: var(--line);
+  stroke-width: 1.5;
+}
+
+.progression-graph-node {
+  fill: var(--muted);
+  stroke: #17100b;
+  stroke-width: 1;
+  cursor: pointer;
+}
+
+.progression-graph-node.has-effect {
+  fill: var(--gold);
+}
+
+.progression-graph-node.is-selected {
+  fill: var(--accent);
+  stroke: var(--gold);
+  stroke-width: 2;
+}
+
+.progression-graph-node:hover {
+  filter: brightness(1.3);
+}
+
+.progression-graph-info {
+  font-size: 0.8rem;
+  min-height: 3.2em;
+}
+
+.progression-graph-info strong {
+  color: var(--gold);
+}
+
+.progression-graph-info p {
+  margin: 2px 0;
+}
+
 .loot-slot {
   color: var(--muted);
   font-size: 0.7rem;

@@ -19,7 +19,10 @@ function baseBuild(overrides = {}) {
     activeSkillId: 'dance-of-the-deep',
     supportIds: [],
     gear: [],
+    voraxGear: [],
     talentIds: [],
+    talentTreeNodeIds: [],
+    voidChartNodeIds: [],
     pactSpiritIds: [],
     memoryIds: [],
     extraModifiers: [],
@@ -175,4 +178,65 @@ test('evaluateBuild: pact spirits beyond the cap are ignored with a warning', ()
     report.warnings.some((w) => /pact spirits bound/i.test(w)),
     'expected a pact-spirit cap warning'
   );
+});
+
+// Real ids from the scraped seed data (not hand-fixtures) -- see
+// packages/build-data/src/seed/voraxAffixes.json / voraxLegendaries.json.
+const VORAX_LEGENDARY_HEAD = 'f9be5c29-e9dc-51a3-969e-0da4cc61389b'; // +50 armor
+const VORAX_AFFIX_HEAD_MORE_DAMAGE = 'e01068c9-558e-5ac9-bea4-3a15d4bdbc15'; // +8% more damage
+
+test('evaluateBuild: Vorax legendary + affix modifiers are folded in', () => {
+  const index = indexDataset(seedDataset);
+  const bare = evaluateBuild(baseBuild(), index);
+  const withVorax = evaluateBuild(
+    baseBuild({
+      voraxGear: [{ limb: 'head', legendaryId: VORAX_LEGENDARY_HEAD, affixIds: [VORAX_AFFIX_HEAD_MORE_DAMAGE] }]
+    }),
+    index
+  );
+  assert.ok(withVorax.defense.armor > bare.defense.armor, 'vorax legendary armor should apply');
+  assert.ok(withVorax.damage.dps > bare.damage.dps, 'vorax affix more-damage should apply');
+});
+
+test('evaluateBuild: a Vorax legendary id looked up under the wrong limb is reported as unknown', () => {
+  // VoraxLegendary.id is NOT unique across limbs in the real scrape (the same
+  // legendary effect can spawn on more than one compatible limb, e.g. head
+  // and neck, as separate entries sharing an id) -- the index is keyed on
+  // (limb, id) together, so the right id under the wrong limb must not
+  // silently resolve to a different limb's entry.
+  const index = indexDataset(seedDataset);
+  const report = evaluateBuild(
+    baseBuild({ voraxGear: [{ limb: 'chest', legendaryId: VORAX_LEGENDARY_HEAD, affixIds: [] }] }),
+    index
+  );
+  assert.ok(report.warnings.some((w) => /unknown vorax legendary/i.test(w)));
+});
+
+test('evaluateBuild: unknown vorax affix/legendary ids are reported, not silently dropped', () => {
+  const index = indexDataset(seedDataset);
+  const report = evaluateBuild(
+    baseBuild({ voraxGear: [{ limb: 'head', legendaryId: 'nonexistent', affixIds: ['nonexistent-affix'] }] }),
+    index
+  );
+  assert.ok(report.warnings.some((w) => /unknown vorax legendary/i.test(w)));
+  assert.ok(report.warnings.some((w) => /unknown vorax affix/i.test(w)));
+});
+
+test('evaluateBuild: Talent Tree and Void Chart node modifiers are folded in', () => {
+  const index = indexDataset(seedDataset);
+  const bare = evaluateBuild(baseBuild(), index);
+  // Real node from talentTrees.json carrying +9% increasedDamage.
+  const nodeId = '4c2624fe-947f-5dfe-9ada-460175de6770';
+  const withNode = evaluateBuild(baseBuild({ talentTreeNodeIds: [nodeId] }), index);
+  assert.ok(withNode.damage.dps > bare.damage.dps, 'talent tree node modifier should apply');
+});
+
+test('evaluateBuild: unknown progression-tree node ids are reported, not silently dropped', () => {
+  const index = indexDataset(seedDataset);
+  const report = evaluateBuild(
+    baseBuild({ talentTreeNodeIds: ['nonexistent-node'], voidChartNodeIds: ['nonexistent-node-2'] }),
+    index
+  );
+  assert.ok(report.warnings.some((w) => /unknown talent tree node/i.test(w)));
+  assert.ok(report.warnings.some((w) => /unknown void chart node/i.test(w)));
 });

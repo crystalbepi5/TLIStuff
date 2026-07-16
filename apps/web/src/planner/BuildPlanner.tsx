@@ -4,9 +4,32 @@ import {
   indexDataset,
   type Build,
   type GearPiece,
-  type GearSlot
+  type GearSlot,
+  type VoraxAffix,
+  type VoraxGearPiece,
+  type VoraxLegendary
 } from '@torchlight-companion/build-data';
-import { evaluateBuild, MAX_PACT_SPIRITS } from '@torchlight-companion/build-calc';
+import { evaluateBuild, MAX_PACT_SPIRITS, totalManaCost } from '@torchlight-companion/build-calc';
+import { ProgressionTreeGraph } from '../progression/ProgressionTreeGraph';
+
+/** Vorax affixes/legendaries have no `name` field in the scraped data (the
+ * game never labels them individually the way regular affixes are) -- these
+ * synthesize a readable option label from the modifiers themselves, the same
+ * "describe from modifiers" pattern the crafting sim page uses. */
+function describeVoraxModifiers(modifiers: { stat: string; op: string; value: number }[]): string {
+  if (modifiers.length === 0) return '(no modeled effect yet)';
+  return modifiers
+    .map((m) => `${m.value >= 0 ? '+' : ''}${m.value}${m.op === 'flat' ? '' : '%'} ${m.stat}`)
+    .join(', ');
+}
+
+function voraxAffixLabel(a: VoraxAffix): string {
+  return describeVoraxModifiers(a.modifiers);
+}
+
+function voraxLegendaryLabel(l: VoraxLegendary): string {
+  return describeVoraxModifiers(l.modifiers);
+}
 
 const GEAR_SLOTS: GearSlot[] = [
   'weapon',
@@ -34,7 +57,10 @@ function defaultBuild(): Build {
     activeSkillId: seedDataset.activeSkills[0]?.id ?? '',
     supportIds: [],
     gear: [],
+    voraxGear: [],
     talentIds: [],
+    talentTreeNodeIds: [],
+    voidChartNodeIds: [],
     pactSpiritIds: [],
     memoryIds: [],
     extraModifiers: []
@@ -86,8 +112,11 @@ function decodeBuild(code: string): Build {
     ...defaultBuild(),
     ...parsed,
     gear: parsed.gear ?? [],
+    voraxGear: parsed.voraxGear ?? [],
     supportIds: parsed.supportIds ?? [],
     talentIds: parsed.talentIds ?? [],
+    talentTreeNodeIds: parsed.talentTreeNodeIds ?? [],
+    voidChartNodeIds: parsed.voidChartNodeIds ?? [],
     pactSpiritIds: parsed.pactSpiritIds ?? [],
     memoryIds: parsed.memoryIds ?? [],
     extraModifiers: parsed.extraModifiers ?? []
@@ -124,8 +153,17 @@ export function BuildPlanner() {
   const [supportSearch, setSupportSearch] = useState('');
   const [talentSearch, setTalentSearch] = useState('');
 
+  const [progressionCategory, setProgressionCategory] = useState<'talentTrees' | 'voidCharts'>('talentTrees');
+  const [progressionTreeId, setProgressionTreeId] = useState<string>('');
+
   const skill = index.activeSkill(build.activeSkillId);
   const supportSlots = skill?.supportSlots ?? 0;
+  const manaCost = skill
+    ? totalManaCost(
+        skill,
+        build.supportIds.map((id) => index.supportSkill(id))
+      )
+    : 0;
 
   const report = useMemo(() => {
     try {
@@ -169,6 +207,26 @@ export function BuildPlanner() {
   }
 
   const gearBySlot = (slot: GearSlot) => build.gear.find((g) => g.slot === slot);
+
+  function setVoraxGear(limb: string, piece: VoraxGearPiece | null) {
+    setBuild((prev) => {
+      const rest = prev.voraxGear.filter((g) => g.limb !== limb);
+      return { ...prev, voraxGear: piece ? [...rest, piece] : rest };
+    });
+  }
+
+  const voraxGearByLimb = (limb: string) => build.voraxGear.find((g) => g.limb === limb);
+
+  function toggleProgressionNode(category: 'talentTrees' | 'voidCharts', nodeId: string) {
+    const key = category === 'talentTrees' ? 'talentTreeNodeIds' : 'voidChartNodeIds';
+    setBuild((prev) => {
+      const list = prev[key];
+      return {
+        ...prev,
+        [key]: list.includes(nodeId) ? list.filter((x) => x !== nodeId) : [...list, nodeId]
+      };
+    });
+  }
 
   return (
     <div className="planner">
@@ -223,6 +281,7 @@ export function BuildPlanner() {
 
           <h3>
             Supports ({build.supportIds.length}/{supportSlots})
+            <span className="req-tags"> · Mana Cost: {manaCost.toFixed(1)}</span>
           </h3>
           <input
             className="list-search"
@@ -318,6 +377,79 @@ export function BuildPlanner() {
         </section>
 
         <section className="planner-panel">
+          <h2>Vorax Gear</h2>
+          <p className="planner-disclaimer">
+            An extra limb slot worn in addition to normal gear. Affixes with no recognized effect
+            (the parser couldn't map their text to a modeled stat) are hidden from these lists to
+            keep them usable — the raw tier/weight data is still there for the crafting sim.
+          </p>
+          {(() => {
+            const allLimbs = [
+              ...new Set([
+                ...(seedDataset.voraxAffixes ?? []).map((a) => a.limb),
+                ...(seedDataset.voraxLegendaries ?? []).map((l) => l.limb)
+              ])
+            ].sort();
+            return allLimbs.map((limb) => {
+              const legendaries = (seedDataset.voraxLegendaries ?? []).filter(
+                (l) => l.limb === limb && l.modifiers.length > 0
+              );
+              const affixes = (seedDataset.voraxAffixes ?? []).filter(
+                (a) => a.limb === limb && a.modifiers.length > 0
+              );
+              const piece = voraxGearByLimb(limb);
+              return (
+                <div key={limb} className="gear-row">
+                  <div className="gear-slot-name">{limb}</div>
+                  <select
+                    value={piece?.legendaryId ?? ''}
+                    onChange={(e) => {
+                      const legendaryId = e.target.value;
+                      setVoraxGear(
+                        limb,
+                        legendaryId || (piece?.affixIds.length ?? 0) > 0
+                          ? { limb, affixIds: piece?.affixIds ?? [], ...(legendaryId ? { legendaryId } : {}) }
+                          : null
+                      );
+                    }}
+                  >
+                    <option value="">— no legendary —</option>
+                    {legendaries.map((l) => (
+                      <option key={l.id} value={l.id}>
+                        {voraxLegendaryLabel(l)}
+                      </option>
+                    ))}
+                  </select>
+                  {affixes.length > 0 && (
+                    <div className="affix-list">
+                      {affixes.slice(0, 20).map((a) => {
+                        const on = piece?.affixIds.includes(a.id) ?? false;
+                        return (
+                          <label key={a.id} className="chip">
+                            <input
+                              type="checkbox"
+                              checked={on}
+                              onChange={() => {
+                                const current = piece ?? { limb, affixIds: [] };
+                                const affixIds = on
+                                  ? current.affixIds.filter((x) => x !== a.id)
+                                  : [...current.affixIds, a.id];
+                                setVoraxGear(limb, { ...current, affixIds });
+                              }}
+                            />
+                            <span>{voraxAffixLabel(a)}</span>
+                          </label>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              );
+            });
+          })()}
+        </section>
+
+        <section className="planner-panel">
           <h2>Progression</h2>
 
           <h3>Talents</h3>
@@ -386,6 +518,58 @@ export function BuildPlanner() {
               </label>
             ))}
           </div>
+        </section>
+
+        <section className="planner-panel">
+          <h2>Progression Trees</h2>
+          <p className="planner-disclaimer">
+            Real node graphs (position + connections) scraped straight from the game's own data --
+            not available from any HTML-only scrape. Most Void Chart nodes have no modeled effect
+            yet (best-effort text parsing only recognizes a small fraction of them); Talent Tree
+            nodes fare much better. No point-budget or prerequisite gating is enforced since neither
+            is confirmed against the real game — every node stays freely toggleable.
+          </p>
+          <label className="field">
+            <span>Category</span>
+            <select
+              value={progressionCategory}
+              onChange={(e) => {
+                setProgressionCategory(e.target.value as 'talentTrees' | 'voidCharts');
+                setProgressionTreeId('');
+              }}
+            >
+              <option value="talentTrees">Talent Trees ({(seedDataset.talentTrees ?? []).length})</option>
+              <option value="voidCharts">Void Chart ({(seedDataset.voidCharts ?? []).length})</option>
+            </select>
+          </label>
+          {(() => {
+            const trees = seedDataset[progressionCategory] ?? [];
+            const tree = trees.find((t) => t.id === progressionTreeId) ?? trees[0];
+            const selectedIds = new Set(
+              progressionCategory === 'talentTrees' ? build.talentTreeNodeIds : build.voidChartNodeIds
+            );
+            return (
+              <>
+                <label className="field">
+                  <span>Tree</span>
+                  <select value={tree?.id ?? ''} onChange={(e) => setProgressionTreeId(e.target.value)}>
+                    {trees.map((t) => (
+                      <option key={t.id} value={t.id}>
+                        {t.name} ({t.nodes.length} nodes)
+                      </option>
+                    ))}
+                  </select>
+                </label>
+                {tree && (
+                  <ProgressionTreeGraph
+                    tree={tree}
+                    selectedIds={selectedIds}
+                    onToggle={(nodeId) => toggleProgressionNode(progressionCategory, nodeId)}
+                  />
+                )}
+              </>
+            );
+          })()}
         </section>
 
         <section className="planner-panel planner-results">
