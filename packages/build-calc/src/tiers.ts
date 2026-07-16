@@ -5,10 +5,20 @@ import type { Affix, AffixTier, ActiveSkill, Modifier, SkillLevelEntry, SupportS
  * top-tier `modifiers` if per-tier data isn't available or the requested
  * tier isn't found -- so callers that don't care which tier landed (the
  * existing build-calc pipeline) keep working unchanged.
+ *
+ * Pass `modifierId` whenever the caller has it: mapAffixes unions tiers
+ * across gear subtypes, so the same generic tier label (e.g. "1") can
+ * legitimately appear more than once in one affix's tiers array (each
+ * subtype keeps its own row/weight) -- `tier` alone is ambiguous and would
+ * arbitrarily return whichever matching row comes first. `modifierId` is
+ * each row's real, unique id and disambiguates correctly.
  */
-export function pickAffixTier(affix: Affix, tier?: string): Modifier[] {
-  if (tier == null) return affix.modifiers;
-  const found = affix.tiers?.find((t) => t.tier === tier);
+export function pickAffixTier(affix: Affix, tier?: string, modifierId?: string): Modifier[] {
+  if (tier == null && modifierId == null) return affix.modifiers;
+  const found =
+    modifierId != null
+      ? affix.tiers?.find((t) => t.modifierId === modifierId)
+      : affix.tiers?.find((t) => t.tier === tier);
   return found ? found.modifiers : affix.modifiers;
 }
 

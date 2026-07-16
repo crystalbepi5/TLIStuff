@@ -1,6 +1,7 @@
 import type {
   ActiveSkill,
   Build,
+  DamageTag,
   DatasetIndex,
   Modifier
 } from '@torchlight-companion/build-data';
@@ -9,6 +10,27 @@ import { computeDefense, type DefenseResult } from './defense.js';
 
 /** How many Pact Spirits a build may bind. Stand-in for the real limit. */
 export const MAX_PACT_SPIRITS = 3;
+
+/**
+ * SupportSkill.cannotSupport carries the scraper's raw, unnormalised source
+ * strings (see its doc comment) since not every one of them maps onto the
+ * DamageTag vocabulary this project tracks -- e.g. "Sentry" and "Mobility"
+ * (both seen in the real scrape) have no corresponding DamageTag, so a
+ * support incompatible only via one of those can't be enforced here; that's
+ * an honest gap, not a guess. The ones that do map (confirmed against the
+ * real scraped vocabulary: Channeled, Attack, Summon) are normalised the
+ * same way mapSkills normalises `tags` in build-scraper.
+ */
+const CANNOT_SUPPORT_TAG: Record<string, DamageTag> = {
+  Attack: 'attack',
+  Spell: 'spell',
+  Melee: 'melee',
+  Area: 'area',
+  Projectile: 'projectile',
+  Channeled: 'channelled',
+  Channelled: 'channelled',
+  Summon: 'minion'
+};
 
 export interface BuildReport {
   skill: ActiveSkill;
@@ -81,6 +103,14 @@ export function collectModifiers(
       support.requiresTags.some((t) => skill.tags.includes(t));
     if (!matches) {
       warnings.push(`support '${support.name}' requires tags [${support.requiresTags.join(', ')}] which ${skill.name} lacks; ignored`);
+      continue;
+    }
+    const forbiddenTags = (support.cannotSupport ?? [])
+      .map((raw) => CANNOT_SUPPORT_TAG[raw])
+      .filter((t): t is DamageTag => t != null);
+    const conflicting = forbiddenTags.filter((t) => skill.tags.includes(t));
+    if (conflicting.length > 0) {
+      warnings.push(`support '${support.name}' cannot support [${conflicting.join(', ')}] skills, which ${skill.name} is; ignored`);
       continue;
     }
     raw.push(...support.modifiers);

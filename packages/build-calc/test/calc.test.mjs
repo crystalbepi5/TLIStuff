@@ -147,6 +147,17 @@ test('evaluateBuild: tag-mismatched support is dropped with a warning', () => {
   assert.match(report.warnings[0], /swift strikes/i);
 });
 
+test('evaluateBuild: a support whose cannotSupport conflicts with the active skill is dropped with a warning, not silently applied', () => {
+  const index = indexDataset(seedDataset);
+  // Real scraped data: Spell Tangle has cannotSupport ['Channeled', 'Sentry',
+  // 'Summon'] and a +15.5% moreDamage modifier; the default build's active
+  // skill (dance-of-the-deep) is tagged 'channelled'.
+  const bare = evaluateBuild(baseBuild(), index);
+  const withConflict = evaluateBuild(baseBuild({ supportIds: ['spell-tangle'] }), index);
+  assert.equal(withConflict.damage.dps, bare.damage.dps, 'the conflicting support must not affect dps');
+  assert.ok(withConflict.warnings.some((w) => /spell tangle/i.test(w) && /cannot support/i.test(w)));
+});
+
 test('evaluateBuild: talents, pact spirits and memories all raise dps', () => {
   const index = indexDataset(seedDataset);
   const bare = evaluateBuild(baseBuild(), index);

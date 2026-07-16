@@ -16,10 +16,17 @@ import { ProgressionTreeGraph } from '../progression/ProgressionTreeGraph';
  * game never labels them individually the way regular affixes are) -- these
  * synthesize a readable option label from the modifiers themselves, the same
  * "describe from modifiers" pattern the crafting sim page uses. */
+/** `more` values are stored as a decimal multiplier (0.08 -> x1.08, i.e. 8%
+ * more -- see aggregate()'s `more *= 1 + mod.value`), while `increased`
+ * values are already plain percentage numbers. Scale `more` by 100 before
+ * display or it reads as "+0.08%" instead of "+8%". */
 function describeVoraxModifiers(modifiers: { stat: string; op: string; value: number }[]): string {
   if (modifiers.length === 0) return '(no modeled effect yet)';
   return modifiers
-    .map((m) => `${m.value >= 0 ? '+' : ''}${m.value}${m.op === 'flat' ? '' : '%'} ${m.stat}`)
+    .map((m) => {
+      const value = m.op === 'more' ? m.value * 100 : m.value;
+      return `${value >= 0 ? '+' : ''}${value}${m.op === 'flat' ? '' : '%'} ${m.stat}`;
+    })
     .join(', ');
 }
 

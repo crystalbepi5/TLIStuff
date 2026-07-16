@@ -29,6 +29,25 @@ test('pickAffixTier falls back gracefully for an affix with no tiers data at all
   assert.deepEqual(pickAffixTier(noTiers, '1'), noTiers.modifiers);
 });
 
+test('pickAffixTier disambiguates by modifierId when the same tier label appears more than once (real mapAffixes unions subtypes this way)', () => {
+  const unioned = {
+    ...lifeAffix,
+    tiers: [
+      { tier: '1', modifierId: 'boots-t1', weight: 100, modifiers: [{ stat: 'life', op: 'flat', value: 220 }] },
+      { tier: '1', modifierId: 'gloves-t1', weight: 80, modifiers: [{ stat: 'life', op: 'flat', value: 180 }] }
+    ]
+  };
+  // Bare tier label is ambiguous -- returns whichever comes first (documented, not ideal).
+  assert.deepEqual(pickAffixTier(unioned, '1'), [{ stat: 'life', op: 'flat', value: 220 }]);
+  // modifierId picks the exact row regardless of array order.
+  assert.deepEqual(pickAffixTier(unioned, '1', 'gloves-t1'), [{ stat: 'life', op: 'flat', value: 180 }]);
+  assert.deepEqual(pickAffixTier(unioned, '1', 'boots-t1'), [{ stat: 'life', op: 'flat', value: 220 }]);
+});
+
+test('pickAffixTier falls back to top-tier modifiers when modifierId is given but not found', () => {
+  assert.deepEqual(pickAffixTier(lifeAffix, undefined, 'nonexistent'), lifeAffix.modifiers);
+});
+
 test('craftableTiers excludes weight-0 (disabled) tiers', () => {
   const craftable = craftableTiers(lifeAffix);
   assert.equal(craftable.length, 2);
