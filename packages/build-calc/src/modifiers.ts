@@ -8,6 +8,13 @@ import type { Modifier, StatKey } from '@torchlight-companion/build-data';
  *
  * where `increased` is a sum of percentage points and `more` is the product of
  * each individual `(1 + moreValue)` multiplier.
+ *
+ * This structure is confirmed against the game's own docs, not assumed: see
+ * tlidb.com's "Damage Calculation" page (https://tlidb.com/vi/Damage_Calculation),
+ * which states damage = Base Damage x (1 + all non-additional bonus %) x
+ * (1 + additional bonus % 1) x (1 + additional bonus % 2) x ... -- i.e. one
+ * summed multiplier for "increased"-type bonuses, then one separate
+ * multiplier per "additional"/"more"-type bonus, exactly this aggregation.
  */
 export interface Aggregate {
   flat: number;

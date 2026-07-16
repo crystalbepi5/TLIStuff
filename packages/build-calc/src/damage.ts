@@ -47,9 +47,20 @@ export interface DamageResult {
  * Compute DPS for one active skill given the full list of modifiers that apply
  * to it (hero + gear + supports + extras, already tag-filtered in build.ts).
  *
- * This is a standard, honest approximation of the ARPG damage pipeline. It is
- * NOT reverse-engineered from Torchlight's real formulas (those aren't public),
- * so treat the absolute numbers as relative indicators, not in-game truth.
+ * The core multiplicative structure here is CONFIRMED, not guessed: tlidb.com's
+ * own "Damage Calculation" page (https://tlidb.com/vi/Damage_Calculation)
+ * states the formula as
+ *
+ *   Damage = Base Damage x (1 + all non-additional bonus %) x (1 + additional
+ *   bonus % 1) x (1 + additional bonus % 2) x ...
+ *
+ * i.e. exactly this file's "increased" bucket (summed into one multiplier)
+ * followed by the "more"/"additional" bucket (each its own separate
+ * multiplier) -- see modifiers.ts's Aggregate. That page doesn't cover crit,
+ * elemental/resistance mechanics, or exact per-skill numbers, so those pieces
+ * (crit multiplier, tag-conditional "increased" pools, base values) are still
+ * this project's own modeling, not verified against the game -- treat DPS as
+ * a relative indicator for comparing builds, not exact in-game truth.
  */
 export function computeDamage(skill: ActiveSkill, modifiers: Modifier[]): DamageResult {
   const hasTag = (t: string) => skill.tags.includes(t as never);

@@ -242,9 +242,14 @@ export function BuildPlanner() {
       </header>
 
       <p className="planner-disclaimer">
-        Data is scraped from tlicompendium.com; the damage <strong>formula</strong> is a simplified
-        model (no source publishes TLI's exact math), and effects the calculator doesn't model yet
-        are skipped. Treat DPS as a <strong>relative</strong> indicator, not in-game truth.
+        Data is scraped from tlicompendium.com. The damage <strong>formula</strong>'s core structure
+        (summed "increased" bonuses, then each "additional"/"more" bonus as its own multiplier) is
+        confirmed against{' '}
+        <a href="https://tlidb.com/vi/Damage_Calculation" target="_blank" rel="noreferrer">
+          tlidb.com's own Damage Calculation page
+        </a>
+        — crit, exact per-skill numbers, and effects the calculator doesn't model yet are still
+        approximations. Treat DPS as a <strong>relative</strong> indicator, not exact in-game truth.
       </p>
 
       <div className="planner-grid">
