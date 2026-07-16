@@ -4,14 +4,26 @@
     "name": "Awakened Tide",
     "season": "SS13",
     "description": "Memory Revival awakening. NOTE: placeholder — real mechanics not public.",
-    "modifiers": [{ "stat": "increasedCold", "op": "increased", "value": 30 }]
+    "modifiers": [
+      {
+        "stat": "increasedCold",
+        "op": "increased",
+        "value": 30
+      }
+    ]
   },
   {
     "id": "awakened-ruin",
     "name": "Awakened Ruin",
     "season": "SS13",
     "description": "Memory Revival awakening. NOTE: placeholder — real mechanics not public.",
-    "modifiers": [{ "stat": "moreDamage", "op": "more", "value": 0.1 }]
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.1
+      }
+    ]
   },
   {
     "id": "awakened-bulwark",
@@ -19,8 +31,310 @@
     "season": "SS13",
     "description": "Memory Revival awakening. NOTE: placeholder — real mechanics not public.",
     "modifiers": [
-      { "stat": "increasedLife", "op": "increased", "value": 12 },
-      { "stat": "erosionResist", "op": "flat", "value": 20 }
+      {
+        "stat": "increasedLife",
+        "op": "increased",
+        "value": 12
+      },
+      {
+        "stat": "erosionResist",
+        "op": "flat",
+        "value": 20
+      }
     ]
+  },
+  {
+    "id": "f6dcb91e-4d6a-57ab-a258-95584ce52ef9",
+    "name": "Hero's Resourcefulness",
+    "description": "Burst becomes Burst Blast and can activate Spell Burst\nAll conditions of this trait that trigger on attack are changed to trigger on hit\nThe Base Trait effect that generates Rage from using Melee Skills is changed to generating Rage upon skill use. The effect that triggers Burst on attack hit is changed to triggering Burst Blaston hit\nHero Trait Exclusive: Berserker Rehan|Anger",
+    "modifiers": []
+  },
+  {
+    "id": "c6ba38d1-688d-56ad-b1b8-3d9ca5da2dde",
+    "name": "Furious Roar",
+    "description": "Attacks trigger Burst once on Critical Strike while Berserk is active. Cooldown: 0.3s\n-20% additional Burst Damage\nHero Trait Exclusive: Berserker Rehan | Anger",
+    "modifiers": []
+  },
+  {
+    "id": "a7a0ee4c-9fad-5647-ac60-216973c3596b",
+    "name": "Ancestral Hate",
+    "description": "Additional bonuses to Energy Shield Regain Interval also apply to Life Regain Interval, up to -65%\nFor every Attack Skill used by Seething Spirit within 2s, +3% additional Hit Damage taken by you, up to 30%\nSeething Spirit consumes 30% of current Life when using skills\nHero Trait Exclusive: Berserker Rehan | Seething Silhouette",
+    "modifiers": []
+  },
+  {
+    "id": "e79252fb-1852-5e47-a9e4-0d4d33d7c0b0",
+    "name": "Starfall Wasteland",
+    "description": "Seething Spirit now only uses Ranged Projectile Skills (except Channeled and Parabolic Skills)\nGenerates 15 Rage when using a Ranged Skill\n+1 to Projectile Quantity, +1 Horizontal Projectile Jump(s), +1 Horizontal Projectile Penetration(s), +11% Projectile Size for Ranged Skills cast by Seething Spirit\n33% chance for Ranged Skills cast by Seething Spirit to return after reaching their max range\nHero Trait Exclusive: Berserker Rehan|Seething Silhouette",
+    "modifiers": []
+  },
+  {
+    "id": "7c635ba9-4006-5a3b-aba7-d30f2833c6e0",
+    "name": "Between the Holy Land and Hell",
+    "description": "Gains Repent to the Light for 8s after casting the Trait Skill\nHero Trait Exclusive: Lightbringer Rosa|High Court Chariot",
+    "modifiers": []
+  },
+  {
+    "id": "7613b4e7-f902-524a-a0bd-5c85d7c5eeec",
+    "name": "Mercury Purged",
+    "description": "When inflicting Frostbite, gains Baptism: Impassive for 8s\nWhen inflicting Ignite, gains Baptism: Rage for 8s\nWhen inflicting Numbed, gains Baptism: Indolent for 8s\nHero Trait Exclusive: Lightbringer Rosa | Unsullied Blade",
+    "modifiers": []
+  },
+  {
+    "id": "edfb3f00-4beb-50af-9bb9-73b8fc6ae905",
+    "name": "Telepathy Expert",
+    "description": "When Spacetime Illusion consumes Spell Burst, it also attempts to consume Spell Burst for Youga\n-20% additional Spell Burst Hit Damage\nHero Trait Exclusive: Spacetime Witness Youga | Spacetime Illusion",
+    "modifiers": []
+  },
+  {
+    "id": "c9cb4077-c8f5-53c5-b851-bf419d787ee1",
+    "name": "Fifth Cosmic Velocity",
+    "description": "-99% additional Spell Burst Charge Speed\n100% chance to immediately gain 2 stack(s) of Spell Burst Charge. Interval: 0.03s\n-20% additional Spell Burst Hit Damage\nHero Trait Exclusive: Spacetime Witness Youga | Spacetime Illusion",
+    "modifiers": []
+  },
+  {
+    "id": "c148f9e2-bdc9-5cc0-845d-32932e0de548",
+    "name": "To Myself in Another Spacetime",
+    "description": "When dealing damage to enemies in Twisted Spacetime, Reaps 1s of Damage Over Time. This effect has a 2s interval for the same target\nThe casting interval of Twisted Spacetime is reduced to 1s\nHero Trait Exclusive: Spacetime Witness Youga | Spacetime Elapse",
+    "modifiers": []
+  },
+  {
+    "id": "0e36d721-d65c-5210-9f33-6c60d4efd479",
+    "name": "Private Universe",
+    "description": "+200% additional Twisted Spacetime Skill Area\n+40% Spacetime Turbulence Duration\nTwisted Spacetime only follows you\nHero Trait Exclusive: Spacetime Witness Youga|Spacetime Elapse",
+    "modifiers": []
+  },
+  {
+    "id": "f8d7311c-5014-59eb-b31c-830f3a96d820",
+    "name": "Artificial Moon: Origin",
+    "description": "Base Traits now have Special Memory slots that can be installed with an Ultimate or lower Origin Memory. Reduces the Base Stats and Random Affixes of Memories installed in this slot by 60%\nBase Traits gain additional affixes upon reaching max level",
+    "modifiers": []
+  },
+  {
+    "id": "adc158a1-e7d8-5334-9718-1c716ddf35d6",
+    "name": "Artificial Moon: Discipline",
+    "description": "Base Traits now have Special Memory slots that can be installed with an Ultimate or lower Discipline Memory. Reduces the Base Stats and Random Affixes of Memories installed in this slot by 60%\nBase Traits gain additional affixes upon reaching max level",
+    "modifiers": []
+  },
+  {
+    "id": "fb508857-6b1a-55d0-9c2e-bf8663d46ac5",
+    "name": "Artificial Moon: Progress",
+    "description": "Base Traits now have Special Memory slots that can be installed with an Ultimate or lower Progress Memory. Reduces the Base Stats and Random Affixes of Memories installed in this slot by 60%\nBase Traits gain additional affixes upon reaching max level",
+    "modifiers": []
+  },
+  {
+    "id": "8383e127-8f64-52de-9fc1-80ffccacac48",
+    "name": "Discord of the Second Will",
+    "description": "When dealing damage, inflicts a random crowd control effect (except Freeze and Knockback), prioritizing effects that have not yet been inflicted. Interval: 1s",
+    "modifiers": []
+  },
+  {
+    "id": "c8b802fc-2e2b-59cf-a34a-9d5c3d96206f",
+    "name": "Omni-Elixir Side Effect",
+    "description": "Adds the unselected Ingredient effects to Scent Bottles, and the selected Ingredients and their effects will no longer take effect\n-50% Elixir Skill Effect\nHero Trait Exclusive: Scent Weaver Sage | Licorice Note",
+    "modifiers": []
+  },
+  {
+    "id": "17dbf309-23b2-5bfd-a9e9-6d1bc104a83f",
+    "name": "Basic Pharmacology Manuscript",
+    "description": "+80% additional Ingredient Effect applied to Basic Scent Bottle\nHero Trait Exclusive: Scent Weaver Sage|Licorice Note",
+    "modifiers": []
+  },
+  {
+    "id": "d5ddd46a-8a83-5702-b27e-70deb2b00ac6",
+    "name": "Soft Storm",
+    "description": "While in Vigilant, for every 2 use(s) of Enhanced Skills by Spirit Magi, triggers the Ultimate\nSpirit Magi cannot use the Ultimate. -45% additional Ultimate Damage\nHero Trait Exclusive: The Forsaken Iris|Vigilant Breeze",
+    "modifiers": []
+  },
+  {
+    "id": "fc83877f-3e3a-5934-a277-b4db2f1d951d",
+    "name": "Blowing Breeze",
+    "description": "While in Vigilant, for every 1 use(s) of the Ultimate by Spirit Magi, +1 to Max Breeze Stacks, up to 7 Stacks, lasting until Reconjuring\nHero Trait Exclusive: The Forsaken Iris|Vigilant Breeze",
+    "modifiers": []
+  },
+  {
+    "id": "dce034e0-0b18-50eb-ad56-b49739725772",
+    "name": "Nourishing Spring Rain",
+    "description": "Nourishment can be applied to Synthetic Troop Minions\nWhen Spirit Magi are present, +5% additional damage for Synthetic Troop Minions for every 10 Growth, up to +300%\nWhen Spirit Magi are present, -2% chance for Synthetic Troop Minions to lose Nourishment for every 1% chance to use Enhanced Skills\nThe cooldown of Modularization Skills is reduced to 0.1s\nHero Trait Exclusive: The Forsaken Iris | Growing Breeze",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.05
+      }
+    ]
+  },
+  {
+    "id": "fe3240c0-3cd6-5773-9276-fdd1a50c581d",
+    "name": "Nature's Party",
+    "description": "Nourishment applies additional base effects:\nFrost Magus: Restores 5% of Missing Life and Energy Shield to you on hit. Interval: 0.2s. +5 Max Frostbite Rating per Nourishment stack\nThunder Magus: Inflicts Numbed on hit. Interval: 0.2s. +2% additional Lightning Damage dealt to Numbed enemies per Nourishment stack\nFire Magus: +9% additional Critical Strike Damage and -20% Critical Strike Rating per Nourishment stack\nRock Magus: Transfers 20% of damage taken to this Minion, and adds Physical Damage equal to 0.05% of Armor per Nourishment stack, up to 70 Physical Damage per stack\nErosion Magus: Inflicts Deterioration on hit\nHero Trait Exclusive: The Forsaken Iris | Growing Breeze",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.02
+      }
+    ]
+  },
+  {
+    "id": "e24b8cb1-55b0-5a91-9361-5711899798f7",
+    "name": "Machine's Joy",
+    "description": "+3% additional Overload Effect on hit. Stacks up to 30 time(s) (multiplies). Removes all stacks when casting a Trait Skill\nHero Trait Exclusive: Commander Moto|Order Calling",
+    "modifiers": []
+  },
+  {
+    "id": "48e69b26-d0d6-563e-b551-eeb170d2f671",
+    "name": "Peril of Synthetic Troops",
+    "description": "Adds 9% of the player's Max Life to the Base Life of Synthetic Troop Minions\nAdds 6% of the player's Max Energy Shield to the Base Energy Shield of Synthetic Troop\nHero Trait Exclusive: Commander Moto|Charge Calling",
+    "modifiers": []
+  },
+  {
+    "id": "c4d45c16-0b00-50d2-802a-212fcfd579ac",
+    "name": "Three-Chambered Heart",
+    "description": "The Main Skill is supported by a Lv. 40 Advanced Elemental Impact\nHero Trait Exclusive: Frostfire Gemma|Ice-Fire Fusion",
+    "modifiers": []
+  },
+  {
+    "id": "78534606-9fb7-5382-be1f-1a6976de461e",
+    "name": "First Flake of Strange Snow",
+    "description": "-50% additional Frostbite Effect\nEach type of Crowd Control Effect, Ailment, and Curse afflicting an enemy is deemed to have 50 additional Frostbite Rating, up to 350\nHero Trait Exclusive: Frostfire Gemma|Frostbitten Heart",
+    "modifiers": []
+  },
+  {
+    "id": "b5df05d8-fb40-5f3c-be51-13789135a972",
+    "name": "Sweet Pain",
+    "description": "Converts 99% Fire Damage to Erosion Damage\nHas Lv. 20 Precise: Corrosion Focus\nHas Lv. 20 Erosion Magus Origin of Spirit Magus Effect\nHero Trait Exclusive: Frostfire Gemma | Flame of Pleasure",
+    "modifiers": [
+      {
+        "stat": "increasedFire",
+        "op": "increased",
+        "value": 99
+      }
+    ]
+  },
+  {
+    "id": "9f212c1d-0039-50d3-8e58-dd918d303297",
+    "name": "Royal Arsenal",
+    "description": "For every activated Magnificent Support Skill, +50% Projectile Speed, up to 150%\nFor every activated Noble Support Skill, +10% additional Projectile Damage, up to 30%\nHero Trait Exclusive: Divineshot Carino|Ranger of Glory",
+    "modifiers": []
+  },
+  {
+    "id": "99c12027-f293-5039-80d1-49c9d22e30e3",
+    "name": "Into the Night",
+    "description": "+2 to Max Deflection\nDeflection is no longer consumed when hit, but Deflection now only lasts for 3s\n+20% additional Projectile Damage when Deflection is active\nHero Trait Exclusive: Divineshot Carino|Lethal Flash",
+    "modifiers": []
+  },
+  {
+    "id": "1b8f1725-68d5-5d59-ab0d-4d61ce16a741",
+    "name": "Self-Imposed Shackles",
+    "description": "+30% additional Heat Up Effect after stopping movement. Lasts 8s\n+20% Attack and Spell Block Chance and +20% Block Ratio Upper Limit after stopping movement, Lasts 8s\n-60% Max Elemental and Erosion Resistance while moving\nHero Trait Exclusive: Divineshot Carino | Zealot of War",
+    "modifiers": []
+  },
+  {
+    "id": "7c6ac4c6-9b58-516b-87fa-242a7fc2fe0a",
+    "name": "Cat's Night Safari",
+    "description": "Gains 1 stack of Interest upon dealing damage to an Elite enemy. Interval: 1s\nGains Hunting Instinct when having 5 stack(s) of Interest\nHero Trait Exclusive: Cateye Erika|Wind Stalker",
+    "modifiers": []
+  },
+  {
+    "id": "f067dc75-d729-5f04-8744-b55978fa3bf4",
+    "name": "Charging Tail",
+    "description": "Feline Figure can now land Critical Strikes\nOn Critical Strike, the effect of Numbed inflicted within 10s by Feline Figure is increased by an additional 50%\nHero Trait Exclusive: Cateye Erika | Lightning Shadow",
+    "modifiers": []
+  },
+  {
+    "id": "8840ad77-f47e-5261-90be-401d0b71d87c",
+    "name": "Vengeful Night Wraith",
+    "description": "For every 3 casts of Vendetta, generates 1 Phantom that casts Vendetta 1 additional time on a random target within 9m\n+30% additional Phantom Damage\nHero Trait Exclusive: Cateye Erika | Vendetta's Sting",
+    "modifiers": []
+  },
+  {
+    "id": "14b076e9-d885-5344-b914-18f87549c502",
+    "name": "The Place of Oracle",
+    "description": "During God's Boon, Tenacity Blessing and Agility Blessing gain an additional effect: +2% additional damage\nHero Trait Exclusive: Oracle Thea|Wisdom of The Gods",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.02
+      }
+    ]
+  },
+  {
+    "id": "9c593873-b843-5af4-af80-a19e43580983",
+    "name": "Crossing the Divine Threshold",
+    "description": "Immune to Crowd Control Effects and Curses while inside the Divine Realm\n+1 to max stacks of all Blessings while outside the Divine Realm\nHero Trait Exclusive: Oracle Thea | Incarnation of the Gods",
+    "modifiers": []
+  },
+  {
+    "id": "b04da564-be91-5f33-a821-c028aec040ea",
+    "name": "Inverted Shrine",
+    "description": "Inflicts Desecration on yourself when inflicting Desecration on enemies\n+50% additional Erosion Damage when you have Desecration\nHero Trait Exclusive: Oracle Thea|Blasphemer",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.5
+      }
+    ]
+  },
+  {
+    "id": "e182daa8-296e-5726-b6f9-9c0f4c0772d8",
+    "name": "Bing's Big Bang Pack",
+    "description": "When bombs deal damage, they can generate 3 additional Spare Bomb(s), with a chance equal to 35% of the bomb's Critical Strike Chance. -60% additional Spare Bomb Damage\nHero Trait Exclusive: Escapist Bing | Blast Nova",
+    "modifiers": []
+  },
+  {
+    "id": "8d0ccbfc-2009-5d71-8961-ee4edb09fdd1",
+    "name": "Genius Idea Generator",
+    "description": "+2 to Whimsy Explosion Projectile Quantity, +100% Whimsy Effect, +40% Whimsy Signal Effect\n+1 to Max Spell Burst and +60% additional Spell Damage for Spells triggered by Ingenuity Overload\nHero Trait Exclusive: Escapist Bing|Creative Genius",
+    "modifiers": []
+  },
+  {
+    "id": "9ddc6a39-e45b-56ce-ae02-f26f1dc41fc4",
+    "name": "Ceaseless Tide",
+    "description": "Deemed to be in the Loud Song state while in the Bard state\nMovement Speed is no longer additionally reduced while in the Loud Song state\nHero Trait Exclusive: Tide Whisper Selena | Sing with the Tide",
+    "modifiers": []
+  },
+  {
+    "id": "b376d72d-3140-50e6-a6a4-b124113be67e",
+    "name": "Radical Evolution Theory: Cruelty",
+    "description": "40% of the final bonus applied to Origin of Spirit Magus Effect is also applied to Cruelty's Aura Effect bonus",
+    "modifiers": []
+  },
+  {
+    "id": "a52dc9b6-baf3-5ae6-af4e-f498888964d4",
+    "name": "Radical Evolution Theory: Spell Amplification",
+    "description": "40% of the final bonus applied to Origin of Spirit Magus Effect is also applied to Spell Amplification's Aura Effect bonus",
+    "modifiers": []
+  },
+  {
+    "id": "ee3aa99f-893a-5cd9-a3b0-7419fe344f1f",
+    "name": "Radical Evolution Theory: Radical Order",
+    "description": "40% of the final bonus applied to Origin of Spirit Magus Effect is also applied to Radical Order's Aura Effect bonus",
+    "modifiers": []
+  },
+  {
+    "id": "dc2fb6ec-555f-5a40-9542-9f621eab3404",
+    "name": "Radical Evolution Theory: Deep Pain",
+    "description": "40% of the final bonus applied to Origin of Spirit Magus Effect is also applied to Deep Pain's Aura Effect bonus",
+    "modifiers": []
+  },
+  {
+    "id": "fdcc6b23-f1fc-5ca8-bc64-3373ebe49f9a",
+    "name": "Reactive Rainbow",
+    "description": "For every 2% excess chance to avoid Elemental Ailments, +0.7% chance to deem your Max Elemental Resistance as the effective Elemental Resistance when taking Elemental Damage\nFor every 2% excess chance to avoid Elemental Ailments, +0.7% chance to inflict Elemental Resistance Reversal on enemies when dealing Elemental Damage",
+    "modifiers": []
+  },
+  {
+    "id": "f7b2e393-9b38-52d3-971a-9b06f3c9f76b",
+    "name": "Approaching Nightfall",
+    "description": "-50% additional Ailment Duration. Additionally settles 35% of the remaining total Damage Over Time when Reaping, then removes all Damage Over Time acting on the target",
+    "modifiers": []
+  },
+  {
+    "id": "e1f1c996-25a3-5303-bb3e-96dbcb68fdf0",
+    "name": "Red Shoes of Cruelty",
+    "description": "While Main Terra Skill is active, takes True Damage equal to a percentage of Max Life and Energy Shield. This percentage equals 8% of Movement Speed bonus, up to 15%\nWhile Main Terra Skill is active, increases the damage taken by enemies within the Terra Skill Area by a percentage that equals 38% of Movement Speed bonus, up to 75%\nHero Trait Exclusive: Tide Whisper Selena | Dance of the Deep",
+    "modifiers": []
   }
 ]

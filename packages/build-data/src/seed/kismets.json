@@ -1,0 +1,1445 @@
+[
+  {
+    "id": "f7b2acdd-0727-504a-9a31-fc1e364fa9f4",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_1_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": [
+      {
+        "stat": "fireResist",
+        "op": "flat",
+        "value": 7
+      }
+    ]
+  },
+  {
+    "id": "92978f5d-3d09-5823-931d-66bb1cdb3376",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_2_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": [
+      {
+        "stat": "coldResist",
+        "op": "flat",
+        "value": 7
+      }
+    ]
+  },
+  {
+    "id": "0f0beb63-229a-5712-985d-f1fe11a0f1b1",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_3_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": [
+      {
+        "stat": "lightningResist",
+        "op": "flat",
+        "value": 7
+      }
+    ]
+  },
+  {
+    "id": "70290f9d-0489-549a-8ef1-0b691e0a8cc4",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_4_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": [
+      {
+        "stat": "erosionResist",
+        "op": "flat",
+        "value": 7
+      }
+    ]
+  },
+  {
+    "id": "2a53c885-26c4-5e39-a3fd-fcd6bb97dfa6",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_5_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "f65a635f-c8af-5e4c-820a-8d8e7f3d707e",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_6_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "51903683-4656-52f9-a768-4f93f25d6829",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_8_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "1d0ec925-266e-5717-9989-8252a46df86a",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_9_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "f6b3d90d-88ec-5537-ba9e-6f8cd2021379",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_10_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "32ddeb80-ccc3-5c08-9f5d-895c40697f87",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_11_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "66446894-e63a-502c-a5c2-aa011565936f",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_12_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "02c4315b-584d-5985-a498-316e1956e42c",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_13_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "a0ea4475-673d-5b3b-baab-69c088f0c70a",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_14_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "fe7c348c-4f7d-532f-9d75-cf95ebc9a47c",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_15_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "46f3437e-4b12-5f60-9724-d9238db25c73",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_16_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "ae5d3119-212d-53ba-8670-920518e81791",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_17_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "a0b36abc-478e-5e7c-b848-c2857559e68f",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_18_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "b8ec5a38-e790-521b-b0e7-271993cc41a7",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_19_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "784f3341-13f1-512f-894d-393525d9e91c",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_20_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "46ec8a3d-70e7-5dff-abec-b08abde39564",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_40_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "123a3db5-29fc-550a-8004-ff4d46e86818",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_52_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "a128a6c0-4ef7-5074-8eb7-caf006656f1e",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_52_128.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "83089793-4a3e-50d2-8c9a-219a961ae3f9",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_26_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "c282d71a-e03f-5831-a71e-0e576bf2988e",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_22_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "c6ce4630-682f-5c82-bd99-dcb4d93d1a50",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_23_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "cbdafbe9-8d3c-522e-890b-81cb4da29f64",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_24_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": [
+      {
+        "stat": "critDamage",
+        "op": "flat",
+        "value": 15
+      }
+    ]
+  },
+  {
+    "id": "a434d5f2-9e80-5bc9-a4f5-a8f15cb08a2c",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_27_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "148e5104-f338-5eb8-b977-649c31199118",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_28_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "868cbbc0-3b2a-5987-b751-8613dcd02f02",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_29_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "464e919b-664e-50b4-91d5-5d466aff3254",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_30_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "34c5ad80-c1e9-540e-8491-fd030e0e8000",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_31_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "a39f09ec-ecc0-5ae6-a979-bd678c83594c",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_32_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "94096343-40a6-5a6f-87cb-70a1245ffca7",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_33_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "0aa45925-aa62-5772-9751-101ee5c2e73e",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_34_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "5d590ddd-f1ca-58c5-a1a3-b0f62626db9a",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_35_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "764a601a-82a7-52bb-a785-043740a28292",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_36_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "d5260294-c0f2-5bfe-b25d-b0f805684adc",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_37_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "710d06cd-9a0b-5af4-be73-f81af2f5907a",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_38_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "9d031e79-070b-56b3-b913-a1a2ccb9ece9",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_39_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "9e4c0dcf-e0b2-5402-a139-2b7d58596458",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_40_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "7739f922-c1a4-5634-ba20-c58a2411ec48",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_42_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "e90de0cd-4fc8-5b81-9a43-9fb08ad74b2e",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_43_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "a3447e07-a0e8-522b-b039-5334afff232d",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_44_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "2a41aac3-ebc7-5b5d-b1fa-be3b64581318",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_45_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "a1743967-4f72-51f4-aaa2-4e2d2f7f3144",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_46_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "ddebc5a4-5efc-5fa4-b065-4cc1fe013415",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_47_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "55343677-925d-5fb6-ab0b-b2337e09fb68",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_48_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "63dff4a7-9d72-5ed0-8246-afafa4ea56eb",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_49_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "697bc7fa-c227-5145-87ad-46a8d1de5a63",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_50_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "db672987-bd28-5d03-9dd7-deb3374ba8d5",
+    "iconUrl": "/images/kismet/UI_S9Pet_SFate_54_128.webp",
+    "rarity": "Epic",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "037f5f7d-92ad-5d39-b622-4a0123c71e1c",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_1_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": [
+      {
+        "stat": "fireResist",
+        "op": "flat",
+        "value": 14
+      }
+    ]
+  },
+  {
+    "id": "78c4a205-f6eb-5a1f-8e5c-da8fc6637050",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_2_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": [
+      {
+        "stat": "coldResist",
+        "op": "flat",
+        "value": 14
+      }
+    ]
+  },
+  {
+    "id": "d65cb745-8093-59bc-bc83-f57870da173d",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_3_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": [
+      {
+        "stat": "lightningResist",
+        "op": "flat",
+        "value": 14
+      }
+    ]
+  },
+  {
+    "id": "5b1a2a7f-305b-542e-8379-0ea345f6e92d",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_4_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": [
+      {
+        "stat": "erosionResist",
+        "op": "flat",
+        "value": 14
+      }
+    ]
+  },
+  {
+    "id": "4e249ce4-342b-573c-b68b-3ac55985f2f4",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_5_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "c501aeb9-6170-5a47-95d7-f8b94c4d0e3c",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_6_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "c633bc00-d8d1-5182-ada2-1f287ccdfcf9",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_8_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "fc984685-c1a4-5692-93a7-94a4c7ac6fdf",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_9_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "414706b3-97ea-5e00-ab4d-d56ef03fb5fb",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_10_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "2ba5b302-1945-5b5f-9206-2be2ce19c913",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_11_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "85ff82f3-0fba-585d-b179-47a06152eadc",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_12_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "9be8b9c3-d86c-5f89-adf7-d76576264fe0",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_13_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "f70479e3-e095-5d8b-865a-e29b749c3827",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_14_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "fc1de9bc-c928-5a17-a8a3-da9d40766601",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_15_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "d4b6219c-f188-518c-9d3a-74391f9606b2",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_16_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "63970540-4ecc-5ebc-b0e0-bcb79d10ded2",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_17_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "75e37410-a5a1-5738-88f7-851460d8c6f0",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_18_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "1288910b-bbed-57fb-b43d-d400f6116622",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_19_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "4da178d5-aa15-518f-93dc-bc716e06342f",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_20_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "106615e4-6dd4-5056-aeba-5b415b07d0b2",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_40_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "6b6bafbb-738f-50de-8e8a-bc0fd8084519",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_52_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "f268c336-ad3f-59f5-81a3-e7df07c9cd1e",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_52_128.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "8a68190c-367b-5bfb-a1b3-4e06f7b27b8b",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_26_128.webp",
+    "rarity": "Epic",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "fa29e28f-3390-5556-9e0b-3ed5b0f59a1c",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_22_128.webp",
+    "rarity": "Epic",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "b8e885aa-44e3-5d7d-a1e3-833f22db1642",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_23_128.webp",
+    "rarity": "Epic",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "6551df11-ba26-5f5c-b7ca-8cb01b5ecf88",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_24_128.webp",
+    "rarity": "Epic",
+    "type": "Medium",
+    "modifiers": [
+      {
+        "stat": "critDamage",
+        "op": "flat",
+        "value": 30
+      }
+    ]
+  },
+  {
+    "id": "d4ec54eb-4f6a-5d09-be36-d1ba03549049",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_27_128.webp",
+    "rarity": "Epic",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "aa6df36b-da99-5a2d-9588-ed976a34268a",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_28_128.webp",
+    "rarity": "Epic",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "d0f0a6fa-dce1-56a8-8ef5-b76029b66a35",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_29_128.webp",
+    "rarity": "Epic",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "fbc598a6-d721-5239-8b5a-9942f2d9fce2",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_30_128.webp",
+    "rarity": "Epic",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "7951b855-5dd2-50b6-8932-fd74d44ea064",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_31_128.webp",
+    "rarity": "Epic",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "61b32afd-d8a1-579e-9c91-9a2e3a6e7914",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_32_128.webp",
+    "rarity": "Epic",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "abd8268e-e459-5dd6-b101-98b3aee2f7d8",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_33_128.webp",
+    "rarity": "Epic",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "f0c8ddeb-203e-548e-9755-f11e6b2e837d",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_34_128.webp",
+    "rarity": "Epic",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "03e809cb-1e4e-5870-bfd5-64b558b87c0b",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_35_128.webp",
+    "rarity": "Epic",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "e04bdc13-2aba-5eaf-8919-6ea3e57c9cac",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_36_128.webp",
+    "rarity": "Epic",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "1e427ac8-4978-50f5-b854-262aa856678d",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_37_128.webp",
+    "rarity": "Epic",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "8b3b26c0-7c67-5ddf-a7ba-b0a6031a6be4",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_38_128.webp",
+    "rarity": "Epic",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "aa969446-80a7-5271-9703-e58b56924ce2",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_39_128.webp",
+    "rarity": "Epic",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "bb92a2b9-1f7d-5ef3-bba0-570720a84d81",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_40_128.webp",
+    "rarity": "Epic",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "7f9efb6c-e566-55ce-acc5-04ef8f114916",
+    "iconUrl": "/images/kismet/UI_S9Pet_MFate_54_128.webp",
+    "rarity": "Epic",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "e8bec0ce-8c32-5d87-ad02-d8a790d8e626",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny1_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "be974b7e-6002-55a6-a1c1-f29cfdda3d01",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny2_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "e09a7d4b-5b9c-59f1-b491-9c2039ff3d07",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny3_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "fc4c3935-8a0b-5d4f-9199-9a374c3a0a4e",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny6_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "78d0a07c-d670-5231-b0bf-b5008faee2c7",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny7_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "647690fb-4fc3-5cdf-ac56-d3f9ee364853",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny8_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "00c6c3fc-8156-5cd2-9b52-d7a870c5db0c",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny9_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "7ed0680e-e11f-5f16-8370-efd22aaecb26",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny10_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "ee3367f8-453f-5ada-ac66-2498a2d30e46",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny11_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "19f59cd6-5f3a-538b-bb1b-4a1d95e5c0f2",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny12_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "5c2523b4-01ee-5e88-8d26-da86cb71031e",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny13_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "381e36de-d303-5f71-8bb4-7032b81869da",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny14_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "06f0a8a9-5bab-5dd8-9b9f-ebf31510d71a",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny15_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "7e210af7-490a-5162-90b3-b104a90c8685",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny16_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "e9e0c330-a755-5239-a73a-38c7c0bdaadf",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny17_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "55d3d1de-e78c-50f2-af88-41cf67145e16",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny18_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "bdc18954-eebe-5822-aeea-cc5f04a464eb",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny19_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "2305fa7b-c14f-5b1c-880f-a16a4df7337e",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny20_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "b2de5431-886e-54c0-b7e8-b434dfbb4de6",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny21_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": [
+      {
+        "stat": "increasedLife",
+        "op": "increased",
+        "value": 10
+      }
+    ]
+  },
+  {
+    "id": "1949ef36-44de-5a2b-aa31-e22360f08de3",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny22_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "054e87bc-85a2-5bd3-90bd-bbf63dde025a",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny23_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "fa5b5ab5-b8c7-54ec-8feb-2f9dbbc24833",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny25_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "dcaa6921-df98-5f14-acf9-f5bd86247058",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny26_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "afcbb2d8-35b5-5a07-8e1a-cc53efcbaf19",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny27_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "715d6fc5-1550-5671-90f1-494be8ed129c",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny28_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "a1304755-8475-5272-93d2-7162af7b6299",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny29_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "e01d1329-4ccb-52f2-b8f3-0eed42539e9a",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny30_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "9d2e86ec-0a42-5de8-9924-0654c0c358e1",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny31_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "06b0c511-2ce1-5e6e-bb16-90246fbad6d8",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny32_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "4bbe6eda-ae13-52ef-87f6-63038d0f3d20",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny33_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "d3881a96-4be9-5b22-84ab-3e859b79b61d",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny34_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "5a7146b7-e993-5c9c-8bd1-86008844121e",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny35_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "25b20faf-cdd9-56fb-a1d0-c68d53ec2dca",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny36_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "5afa41f1-6b97-5911-8509-09e589d9ff27",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny37_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "1c69b10a-a717-5775-bc22-a1c6d812a040",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny38_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "958fb0da-5614-5533-93cc-92f082803a32",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny39_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "87dc8c76-4574-58d9-a504-0f85e1cbfd3f",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny40_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "ec429730-ed9b-5fc4-9603-29c5c31e9b36",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny85_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "3e5943cb-7888-539c-bd88-5d8e5d3e80a8",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny87_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "f02d5dcd-ef4b-548f-8401-c88fb2bda86b",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny93_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "64f2a52f-5d52-57ac-9656-18a4ca53360d",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny99_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "7da74c3a-03d5-52e1-a16e-b31a59a55cdc",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny100_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": [
+      {
+        "stat": "critDamage",
+        "op": "flat",
+        "value": 60
+      }
+    ]
+  },
+  {
+    "id": "bff4b67e-add8-55b6-9084-66e7a0d18788",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny109_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.12
+      }
+    ]
+  },
+  {
+    "id": "ce1747a6-a74e-5a2f-aa78-bf28a7813b86",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny111_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "04d57818-5449-57c8-a6bc-88a427a06138",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny112_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "adea4dda-ec1c-56f4-8f56-7aaf12ff8f0e",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny114_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "d733d755-213b-5bf2-a3e2-940e871d66ea",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny51_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "560a20e9-a50a-5f4c-bfa9-5c86ccddca97",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny52_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "f6dc11e9-3d29-5f5b-91a9-c3a8b8935a1e",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny88_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "87bef74c-5027-5d78-b9da-e8c60c3a6471",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny86_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "d9b7987e-ae8b-5918-bc0e-7d60c718bcc9",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny53_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "74423d1f-c3e4-5691-a120-18a1cfdb4b09",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny54_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "421bdf34-ffe7-5efb-92da-3b089bfe5220",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny55_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "2d041f8d-c803-513d-aa59-d3c2b7613a64",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny56_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "d1033208-740c-5d3f-a39e-36d808a29ae2",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny57_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "2a90156b-dc0b-56ae-a212-e5a79e3539e2",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny58_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "b17e26f3-2286-59d5-b68a-6ada0b08d33f",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny59_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "a4d8e764-5e91-5bdb-920f-7ee21fd32227",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny60_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "968945ec-9c58-54d6-ab16-8a54558ee025",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny61_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "0d0c98c3-083c-5efb-befe-df6a33cc9909",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny62_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "f2381bfd-34f7-5f19-babe-162fbb7b3312",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny63_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "e12c86d8-e2d3-558d-bb1d-5853939dfa57",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny64_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "38fbc36f-d46c-52c1-a00b-00b79baad53c",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny66_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "749e553b-a3c4-5167-b373-e2e3162759ec",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny67_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "d4932aff-ad5d-5dc5-a71e-b299ce737823",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny68_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "84181a2d-10ae-56b4-83bd-368caade47d2",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny69_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "6ff7b3de-2f19-5f94-a062-d142589a282a",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny70_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "943b00b0-10fc-56db-b3c0-c5aba41f17d9",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny71_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "9f72e088-e9c3-56fe-ae6c-e29b28b891aa",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny72_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "7f9c55a1-d51d-5fd9-82b9-4f1cedc130ac",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny73_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "7949a3af-34be-5476-8d34-38c874f34ede",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny74_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "47515d28-d985-566f-9006-d6abb7ac7585",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny75_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "f6701af3-818f-5a20-93fd-7946798021ee",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny76_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "b907fce8-9e5c-5244-b7d5-5ed385f4ac01",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny77_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "6fc8f258-a702-5c59-94da-ec1d61145502",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny78_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "3e356498-319f-562e-8526-a2d7729b5405",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny80_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "c29e02af-f12d-512c-aacd-fbd1d0cb98e7",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny81_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "b71bb154-284a-5f03-a403-f85ef0108525",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny82_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "86317498-95cb-5801-a57e-d4e79a625775",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny83_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "81066842-80c7-5873-b782-ca594705f324",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny84_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "3f041f29-b400-541d-892e-69039934e572",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny65_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "ffa6f80c-a3e3-5960-a642-e6aa19591c4f",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny79_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "778f1152-5d2a-5ccd-8e33-3be0ed7871df",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny89_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "ecd99b60-4230-5313-8467-6ce12a71f9ca",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny90_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "ba2a06da-32d9-5556-a044-505901f555be",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny91_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "af4030ea-03d4-5042-a8b5-83caabbd8d76",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny92_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "79b6203b-792a-5055-a922-ded78c258347",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny94_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "a3011329-a0fc-54db-8a37-6b67eae70dd1",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny95_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "4047c142-c38f-501f-86c7-69bbce1dcae8",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny97_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "34c8b8b2-00b8-5d57-8f48-ba6f5e76fdca",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny98_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "fb255e13-c856-5b95-b934-562147440c39",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny101_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "87d15094-7d13-5a4b-8245-d410e9f8f112",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny102_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "ac8e5aaf-58a5-5260-925f-777ba948f584",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny103_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "71c5d44b-80c4-52e6-8689-5974871ab457",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny108_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "cc82a5cb-3587-565a-807f-93393e7c9852",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny110_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "d4ba7652-b220-5c26-9630-ba147d20bde3",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny104_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "4eb60a8e-509f-570e-8663-e3d9a54ce984",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny114_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "49ac54b3-cb40-56b6-b365-2dfd8def4364",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny113_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "392d700f-9a91-51d6-963d-6b00039a0232",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny116_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "3002f756-2d3a-5981-83e4-62a9edfaaec4",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny5_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "fd566fb3-6d3c-5210-857f-78f6ff60199d",
+    "iconUrl": "/images/kismet/UI_S9Pet_UndeterminedFate_128.webp",
+    "rarity": "Mythic",
+    "type": "Undetermined Fate",
+    "modifiers": []
+  },
+  {
+    "id": "c931e7bb-4ede-5e5a-90db-8afe2163703d",
+    "iconUrl": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Item/UI_S13_LegendStitching_03.webp",
+    "rarity": "Rare",
+    "type": "Micro",
+    "modifiers": []
+  },
+  {
+    "id": "c4a6b255-4adc-5799-b9df-23a03bb378f5",
+    "iconUrl": "https://cdn.tlidb.com/UI/Textures/Common/Icon/Item/UI_S13_LegendStitching_03.webp",
+    "rarity": "Rare",
+    "type": "Medium",
+    "modifiers": []
+  },
+  {
+    "id": "f329e929-cfc7-513b-8f44-2e240d132780",
+    "iconUrl": "/images/kismet/UI_S9Pet_Destiny5_128.webp",
+    "rarity": "Legendary",
+    "type": "Medium",
+    "modifiers": []
+  }
+]

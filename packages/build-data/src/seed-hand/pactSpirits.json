@@ -1,0 +1,39 @@
+[
+  {
+    "id": "leviathan",
+    "name": "Leviathan of the Depths",
+    "description": "Water-themed pact spirit. NOTE: seed approximation.",
+    "modifiers": [
+      { "stat": "increasedElemental", "op": "increased", "value": 20 },
+      { "stat": "energyShield", "op": "flat", "value": 150 }
+    ]
+  },
+  {
+    "id": "emberwing",
+    "name": "Emberwing",
+    "description": "NOTE: seed approximation.",
+    "modifiers": [
+      { "stat": "increasedFire", "op": "increased", "value": 20 },
+      { "stat": "increasedAttackSpeed", "op": "increased", "value": 6 }
+    ]
+  },
+  {
+    "id": "stoneguard",
+    "name": "Stoneguard",
+    "description": "Defensive pact spirit. NOTE: seed approximation.",
+    "modifiers": [
+      { "stat": "life", "op": "flat", "value": 250 },
+      { "stat": "fireResist", "op": "flat", "value": 15 },
+      { "stat": "coldResist", "op": "flat", "value": 15 }
+    ]
+  },
+  {
+    "id": "voltaic-sprite",
+    "name": "Voltaic Sprite",
+    "description": "NOTE: seed approximation.",
+    "modifiers": [
+      { "stat": "increasedLightning", "op": "increased", "value": 22 },
+      { "stat": "increasedCastSpeed", "op": "increased", "value": 8 }
+    ]
+  }
+]

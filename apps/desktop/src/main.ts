@@ -40,7 +40,7 @@ function createWindow(): void {
   // bypass the DWM compositor entirely, so no overlay window — this one, Discord's, anything —
   // can render on top of that. Only Borderless Windowed mode composites correctly.
   if (isDev) void win.loadURL(devServerUrl);
-  else void win.loadFile(join(__dirname, '..', '..', 'web', 'dist', 'index.html'));
+  else void win.loadFile(join(__dirname, '..', 'web-dist', 'index.html'));
 
   const registered = globalShortcut.register(TOGGLE_HOTKEY, () => setInteractive(win, !interactive));
   if (!registered) {

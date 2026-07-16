@@ -97,6 +97,20 @@ export interface Hero {
   season?: string;
 }
 
+/**
+ * One entry of a skill's per-level scaling, in the same Modifier shape the
+ * rest of the calculator understands, so a level pick can be aggregated the
+ * same way as any other modifier source. Populated best-effort by the
+ * scraper (see tlicompendium.ts's buildLevelScaling) by reconstructing the
+ * real tooltip text at each level and re-running the same text->Modifier
+ * engine used everywhere else — not every skill can be confidently mapped
+ * (see that function's docs), so this is optional and may be absent/partial.
+ */
+export interface SkillLevelEntry {
+  level: number;
+  modifiers: Modifier[];
+}
+
 export interface ActiveSkill {
   id: string;
   name: string;
@@ -110,6 +124,13 @@ export interface ActiveSkill {
   /** Max support skills this active can socket. */
   supportSlots: number;
   season?: string;
+  /** Per-level modifiers, if the scraper could confidently reconstruct them
+   * (see SkillLevelEntry). Absent -> callers fall back to baseDamage, which
+   * reflects a single fixed level. */
+  levelScaling?: SkillLevelEntry[];
+  manaCost?: number;
+  /** Attribute(s) this skill scales with, e.g. ["Strength"]. */
+  mainStat?: string[];
 }
 
 export interface SupportSkill {
@@ -119,6 +140,26 @@ export interface SupportSkill {
   modifiers: Modifier[];
   /** Only applies to actives carrying at least one of these tags (empty = any). */
   requiresTags: DamageTag[];
+  /** e.g. 130 -> this support multiplies the socketed skill's mana cost by 130%. */
+  manaMultiplier?: number;
+  /** Active-skill tags this support is incompatible with (raw source strings,
+   * not normalised to DamageTag -- informational until cross-referenced). */
+  cannotSupport?: string[];
+  /** Per-level modifiers, best-effort (see ActiveSkill.levelScaling). */
+  levelScaling?: SkillLevelEntry[];
+}
+
+/**
+ * One craftable tier of an affix, with the real weight the game's crafting
+ * RNG uses to pick it (see tlicompendium.ts's mapAffixes) -- 0 means the tier
+ * is currently disabled/unobtainable, not that it's impossible to weight.
+ */
+export interface AffixTier {
+  tier: string;
+  levelRequirement?: number;
+  weight: number;
+  modifiers: Modifier[];
+  modifierId?: string;
 }
 
 /** An affix that can roll on gear. */
@@ -127,6 +168,8 @@ export interface Affix {
   name: string;
   /** 'prefix' | 'suffix' — informational; not enforced by the calculator. */
   kind: 'prefix' | 'suffix';
+  /** The top (best-roll) tier's modifiers -- kept for callers that don't care
+   * which tier landed, e.g. the existing build-calc aggregation. */
   modifiers: Modifier[];
   /** Gear slots this affix can appear on. */
   slots: GearSlot[];
@@ -136,6 +179,11 @@ export interface Affix {
    * dropped item's rolled affix id back to this entry for pricing.
    */
   modifierIds?: string[];
+  /**
+   * Every craftable tier with its real weight, for a crafting-odds
+   * simulator. Absent for affixes that were only ever seen at one tier.
+   */
+  tiers?: AffixTier[];
 }
 
 export type GearSlot =
@@ -172,18 +220,35 @@ export interface Talent {
   modifiers: Modifier[];
 }
 
+/** One step of a Pact Spirit's linear effect chain. */
+export interface PactSpiritNode {
+  nodeId: number;
+  nodeType?: string;
+  /** Next node in the chain, or null/absent at the end. */
+  nextNode?: number | null;
+  modifiers: Modifier[];
+}
+
 /** A Pact Spirit the hero binds for passive bonuses. */
 export interface PactSpirit {
   id: string;
   name: string;
   description?: string;
+  /** Every node's modifiers flattened together, for callers that don't care
+   * about the chain structure (the existing build-calc aggregation). */
   modifiers: Modifier[];
+  /** The real node-by-node chain, if scraped from tlicompendium's pactspirit
+   * bundle rather than hand-seeded. */
+  nodes?: PactSpiritNode[];
+  typeCode?: string;
+  rarity?: string;
+  iconUrl?: string;
 }
 
 /**
- * An SS13 "Memory Revival" awakening — items that boost affix values and unlock
- * rare affixes. Modelled here as a selectable bundle of modifiers. NOTE: the
- * real system's mechanics aren't public yet; seed entries are placeholders.
+ * An SS13 "Memory Revival" awakening -- a specific named, non-tiered effect
+ * (as opposed to the tiered/weighted affix pools below). Modelled here as a
+ * selectable bundle of modifiers.
  */
 export interface MemoryRevival {
   id: string;
@@ -191,6 +256,103 @@ export interface MemoryRevival {
   description?: string;
   modifiers: Modifier[];
   season?: string;
+}
+
+/**
+ * One of Memory Revival's weighted affix pools (base stats, fixed affixes,
+ * random affixes, revived affixes, special random affixes) -- structurally
+ * identical to a gear Affix's tier list, since the underlying game data uses
+ * the same modifierId/tier/level/weight shape. Keyed by `memoryType`
+ * ("Origin" | "Discipline" | "Progress" | "Any") in MemoryAffixPools below.
+ */
+export interface MemoryAffix {
+  id: string;
+  name: string;
+  modifiers: Modifier[];
+  modifierIds?: string[];
+  tiers?: AffixTier[];
+}
+
+export interface MemoryAffixPools {
+  baseStats: MemoryAffix[];
+  fixedAffixes: MemoryAffix[];
+  randomAffixes: MemoryAffix[];
+  revivedAffixes: MemoryAffix[];
+  specialRandomAffixes: MemoryAffix[];
+}
+
+/** A node in a Void Chart / Talent Tree graph, shared shape for both (see
+ * VoidChartTree and TalentTree) since they're structurally the same idea:
+ * a real position, real graph edges, and a small list of typed effects. */
+export interface ProgressionNode {
+  id: string;
+  tlidbId?: string;
+  type?: string;
+  name?: string;
+  description?: string;
+  icon?: string;
+  /** Graph edges to other nodes' `id`, however the source bundle expresses
+   * them (Void Chart: bidirectional `connections`; Talent Tree: `ancestor` +
+   * `predecessors`) -- normalised here into one adjacency list. */
+  connections: string[];
+  maxPoints?: number;
+  position?: { x: number; y: number };
+  modifiers: Modifier[];
+}
+
+/** A Void Chart meta-progression tree (one per season/category, e.g. "war",
+ * "vorax", "aeterna") or a hero-archetype Talent Tree (Alchemist, God of
+ * War, ...). Purely a real-game-data reference for now -- not yet wired into
+ * Build/collectModifiers, since these are account-wide unlocks rather than
+ * per-build loadout choices like gear/skills/talents. */
+export interface ProgressionTree {
+  id: string;
+  name: string;
+  icon?: string;
+  nodes: ProgressionNode[];
+}
+
+/** A Vorax limb gear base (SS13's extra equipment slot) -- kept distinct
+ * from GearBase/GearSlot since a Vorax limb is worn *in addition to* normal
+ * gear, not instead of it, and its slot names ("digits", "waist", ...) don't
+ * map onto the existing closed GearSlot union. */
+export interface VoraxGearBase {
+  id: string;
+  name: string;
+  limb: string;
+  icon?: string;
+  modifiers: Modifier[];
+}
+
+/** A Vorax-exclusive legendary, with its normal and "corroded" (mutated)
+ * variant values -- corroded is a distinct value set, not a modifier op. */
+export interface VoraxLegendary {
+  id: string;
+  limb: string;
+  icon?: string;
+  modifiers: Modifier[];
+  corrodedModifiers?: Modifier[];
+}
+
+/** A Vorax limb's craftable affix, same tiered/weighted shape as a regular
+ * gear Affix. */
+export interface VoraxAffix {
+  id: string;
+  limb: string;
+  modifiers: Modifier[];
+  tiers?: AffixTier[];
+}
+
+/** A Kismet: a small rarity-tiered charm-like item (SS9+), one optional
+ * effect each (many carry no published effect text at all -- kept as an
+ * empty modifiers list rather than omitted, same as every other
+ * best-effort-parsed category). No `name` field in the scraped data. */
+export interface Kismet {
+  id: string;
+  iconUrl?: string;
+  rarity?: string;
+  type?: string;
+  modifiers: Modifier[];
 }
 
 /** The whole dataset, as loaded by the app and emitted by the scraper. */
@@ -210,12 +372,34 @@ export interface Dataset {
   talents: Talent[];
   pactSpirits: PactSpirit[];
   memories: MemoryRevival[];
+  /** Memory Revival's weighted affix pools -- absent when not yet scraped. */
+  memoryAffixPools?: MemoryAffixPools;
+  /** Void Chart meta-progression trees (one per season/category) and hero
+   * archetype Talent Trees -- reference data, not yet wired into Build. */
+  voidCharts?: ProgressionTree[];
+  talentTrees?: ProgressionTree[];
+  voraxGearBases?: VoraxGearBase[];
+  voraxAffixes?: VoraxAffix[];
+  voraxLegendaries?: VoraxLegendary[];
+  kismets?: Kismet[];
 }
 
 /** A piece of gear the player has assembled: a base plus chosen affixes. */
 export interface GearPiece {
   slot: GearSlot;
   baseId: string;
+  affixIds: string[];
+}
+
+/**
+ * A piece of Vorax gear -- SS13's extra "limb" slot, worn in addition to
+ * normal gear (see VoraxAffix/VoraxLegendary). Keyed by `limb` (a free-form
+ * string like "head" or "aberrant digits", not the closed GearSlot union)
+ * since it's a separate slot system layered on top of regular gear.
+ */
+export interface VoraxGearPiece {
+  limb: string;
+  legendaryId?: string;
   affixIds: string[];
 }
 
@@ -228,8 +412,21 @@ export interface Build {
   activeSkillId: string;
   supportIds: string[];
   gear: GearPiece[];
-  /** Allocated talent-tree nodes. */
+  /** Vorax limb gear (legendary + affixes per limb slot). */
+  voraxGear: VoraxGearPiece[];
+  /** Allocated hero traits (the flat per-hero Talent list, see mapHeroTraits --
+   * a different system from the graph-shaped talentTrees/talentTreeNodeIds
+   * below, despite the similar name). */
   talentIds: string[];
+  /** Selected nodes from the hero-archetype Talent Trees (graph-shaped,
+   * see ProgressionTree/talentTrees). */
+  talentTreeNodeIds: string[];
+  /** Selected nodes from the Void Chart meta-progression trees (graph-shaped,
+   * see ProgressionTree/voidCharts). Most nodes have no modeled effect yet
+   * (best-effort text parsing recognizes only a small fraction) -- selecting
+   * one is still meaningful as a real account-progression record, just often
+   * contributes zero modifiers today. */
+  voidChartNodeIds: string[];
   /** Bound Pact Spirits (capped by MAX_PACT_SPIRITS in build-calc). */
   pactSpiritIds: string[];
   /** Selected Memory Revival awakenings. */

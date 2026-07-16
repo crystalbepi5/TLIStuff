@@ -225,18 +225,7 @@
     "id": "blast-nova",
     "name": "Blast Nova",
     "heroId": "any",
-    "modifiers": [
-      {
-        "stat": "increasedAttackSpeed",
-        "op": "increased",
-        "value": 100
-      },
-      {
-        "stat": "increasedCastSpeed",
-        "op": "increased",
-        "value": 100
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "creative-genius",
@@ -324,18 +313,6 @@
         "stat": "moreDamage",
         "op": "more",
         "value": 0.01
-      }
-    ]
-  },
-  {
-    "id": "incarnation",
-    "name": "Incarnation",
-    "heroId": "any",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.2
       }
     ]
   },
@@ -447,12 +424,12 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.16
+        "value": 0.14
       },
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.11
+        "value": 0.1
       }
     ]
   },
@@ -472,5 +449,17 @@
         "value": 0.2
       }
     ]
+  },
+  {
+    "id": "dance-of-the-deep",
+    "name": "Dance of the Deep",
+    "heroId": "any",
+    "modifiers": []
+  },
+  {
+    "id": "silencing-severance",
+    "name": "Silencing Severance",
+    "heroId": "any",
+    "modifiers": []
   }
 ]

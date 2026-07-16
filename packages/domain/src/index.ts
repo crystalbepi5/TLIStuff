@@ -43,3 +43,19 @@ export interface LootFeedSnapshot {
   activeRun?: MapRun;
   netWorth: number;
 }
+
+/**
+ * A raw in-game marketplace price check, keyed by `itemGoldId` (the
+ * marketplace's own item-listing id). NOTE: itemGoldId is NOT the same id
+ * space as `configBaseId` (confirmed distinct in the one verified sample —
+ * see packages/log-parser), so this cannot yet be joined to a specific
+ * `LootEvent`/`GearBase` to compute `estimatedValue` for a drop. Surfaced
+ * on its own until a real log session correlates the two id spaces.
+ */
+export interface MarketPriceCheck {
+  id: string;
+  itemGoldId: number;
+  currencies: number[];
+  prices: number[];
+  checkedAt: ISODateTime;
+}

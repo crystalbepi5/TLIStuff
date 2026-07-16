@@ -13,12 +13,23 @@ import { join } from 'node:path';
 import type {
   ActiveSkill,
   Affix,
+  AffixTier,
   DamageTag,
   Element,
   GearBase,
   GearSlot,
+  Kismet,
+  MemoryAffix,
+  MemoryAffixPools,
+  MemoryRevival,
+  PactSpirit,
+  ProgressionNode,
+  ProgressionTree,
+  SkillLevelEntry,
   SupportSkill,
-  Talent
+  Talent,
+  VoraxAffix,
+  VoraxLegendary
 } from '@torchlight-companion/build-data';
 import { DEFAULT_CONFIG, parseModifiers, type ScrapeConfig } from './scrape.js';
 
@@ -210,22 +221,38 @@ const DAMAGE_TAG: Record<string, DamageTag> = {
   Channelled: 'channelled'
 };
 
+interface LevelProgressionRow {
+  level: number;
+  [valueKey: string]: number | string;
+}
+
 interface MasterSkill {
   id: string;
   tags?: string[];
   castSpeed?: string;
   effectivenessOfAddedDamage?: string;
+  manaMultiplier?: string;
+  cannotSupport?: string[];
+  levelProgression?: LevelProgressionRow[];
+  manaCost?: number;
+  mainStat?: string[];
 }
 
-/** Map uuid -> { name, description } from an `-en` skill/gear bundle. */
-function indexEnById(enBundle: unknown): Map<string, { name: string; description: string | undefined }> {
-  const map = new Map<string, { name: string; description: string | undefined }>();
+interface EnSkillEntry {
+  name: string;
+  description?: string | undefined;
+  templateDescription?: string | undefined;
+}
+
+/** Map uuid -> { name, description, templateDescription } from an `-en` skill/gear bundle. */
+function indexEnById(enBundle: unknown): Map<string, EnSkillEntry> {
+  const map = new Map<string, EnSkillEntry>();
   const walk = (node: unknown): void => {
     if (!node || typeof node !== 'object' || Array.isArray(node)) return;
     for (const [key, val] of Object.entries(node as Record<string, unknown>)) {
       if (val && typeof val === 'object' && typeof (val as { name?: unknown }).name === 'string') {
-        const v = val as { name: string; description?: string };
-        map.set(key, { name: v.name, description: v.description });
+        const v = val as EnSkillEntry;
+        map.set(key, { name: v.name, description: v.description, templateDescription: v.templateDescription });
       } else {
         walk(val);
       }
@@ -246,6 +273,167 @@ function damageFromText(text: string | undefined, effectiveness: string | undefi
   }
   const eff = effectiveness?.match(/([\d.]+)/);
   return eff?.[1] ? Math.round(Number(eff[1])) : 0;
+}
+
+// --------------------- per-level scaling (levelProgression) ------------------
+//
+// `levelProgression` gives every level's raw values as anonymous `value1`..
+// `valueN` slots -- no field tells you which slot is "damage" vs "duration"
+// vs an unrelated mechanic constant. But `-en`'s `templateDescription` has
+// the real tooltip text with "#" placeholders standing in for *some* of
+// those slots (not necessarily all of them -- some slots are baked into the
+// template as fixed literal numbers instead, by whatever authored the
+// template; there's no way to tell which without checking). `description`
+// is the same text with the placeholders already filled in, at whichever
+// level was used as the display snapshot -- found by matching
+// `effectivenessOfAddedDamage` against value1's per-level series.
+//
+// So: find that reference level, extract the actual numbers sitting at each
+// "#" position in `description`, then match each one (in order) against the
+// first not-yet-used value slot (in value1, value2, ... order) whose value
+// at the reference level equals it. That gives a position -> slot mapping
+// good enough to refill the template at any other level and re-run it
+// through the same parseModifiers() text engine used everywhere else in
+// this file. If any position can't be confidently matched, this bails
+// (returns undefined) rather than guess -- a wrong slot mapping would
+// silently fabricate numbers, which is worse than having none.
+
+/** "37/5" is a known upstream data quirk (also seen verbatim on tlidb.com's
+ * independent HTML scrape) -- treat it as a fraction, not two numbers. */
+function parseValueSlot(raw: number | string | undefined): number | undefined {
+  if (raw == null) return undefined;
+  if (typeof raw === 'number') return Number.isFinite(raw) ? raw : undefined;
+  const frac = /^\s*(-?\d+(?:\.\d+)?)\s*\/\s*(-?\d+(?:\.\d+)?)\s*$/.exec(raw);
+  if (frac?.[1] && frac[2]) {
+    const denom = Number(frac[2]);
+    return denom !== 0 ? Number(frac[1]) / denom : undefined;
+  }
+  const n = Number(raw);
+  return Number.isFinite(n) ? n : undefined;
+}
+
+/** value1, value2, ... keys present on a row, in numeric order. Some skills
+ * (range-damage spells, e.g. "Deals #-# Spell Damage") use `value1Min`/
+ * `value1Max` pairs instead of a flat `value1` -- both count as slots here,
+ * Min sorting before Max within the same index. */
+const SUFFIX_RANK: Record<string, number> = { '': 0, Min: 1, Max: 2 };
+
+function valueSlotKeys(row: LevelProgressionRow): string[] {
+  return Object.keys(row)
+    .filter((k) => /^value\d+(Min|Max)?$/.test(k))
+    .sort((a, b) => {
+      const [, an, asuf] = /^value(\d+)(Min|Max)?$/.exec(a) ?? [];
+      const [, bn, bsuf] = /^value(\d+)(Min|Max)?$/.exec(b) ?? [];
+      const byIndex = Number(an) - Number(bn);
+      if (byIndex !== 0) return byIndex;
+      return (SUFFIX_RANK[asuf ?? ''] ?? 0) - (SUFFIX_RANK[bsuf ?? ''] ?? 0);
+    });
+}
+
+/** Extract the numbers that fill each "#" in `template` when it produced
+ * `filled`, by matching the literal text between placeholders. undefined if
+ * `filled` doesn't actually match the template's literal structure. */
+function extractFilledNumbers(template: string, filled: string): number[] | undefined {
+  const segments = template.split('#');
+  if (segments.length < 2) return []; // no placeholders to resolve
+  const escaped = segments.map((s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'));
+  const re = new RegExp(escaped.join('(-?[\\d.]+)'), 's');
+  const m = re.exec(filled);
+  if (!m) return undefined;
+  const nums = m.slice(1).map(Number);
+  return nums.every((n) => Number.isFinite(n)) ? nums : undefined;
+}
+
+/** Greedy positional match against one candidate row: for each extracted
+ * number (in template order), take the first not-yet-used value slot (in
+ * value1, value2, ... order) whose value at that row equals it. Returns
+ * undefined (not a partial mapping) if any position can't be matched --
+ * a partial match against the wrong row is worse than no match. */
+function tryMapAgainstRow(extracted: number[], row: LevelProgressionRow): (string | undefined)[] | undefined {
+  const used = new Set<string>();
+  const keys = valueSlotKeys(row);
+  const mapped = extracted.map((num) => {
+    for (const key of keys) {
+      if (used.has(key)) continue;
+      const v = parseValueSlot(row[key]);
+      if (v !== undefined && Math.abs(v - num) < 0.05) {
+        used.add(key);
+        return key;
+      }
+    }
+    return undefined;
+  });
+  return mapped.every((k) => k !== undefined) ? mapped : undefined;
+}
+
+/**
+ * `description` is a snapshot filled in at *some* level, but which one isn't
+ * consistent -- active skills seem to snapshot at a high/max level (findable
+ * via effectivenessOfAddedDamage, which only exists on actives), while
+ * supports have been observed snapshotting at level 1. Rather than assume
+ * one convention, try the effectivenessOfAddedDamage-implied row first (a
+ * fast path when it's available and correct), then fall back to trying
+ * every row until one produces a *complete* placeholder mapping.
+ */
+function mapPlaceholdersToValueKeys(
+  extracted: number[],
+  rows: LevelProgressionRow[],
+  effectivenessOfAddedDamage: string | undefined
+): (string | undefined)[] | undefined {
+  const target = effectivenessOfAddedDamage ? parseValueSlot(effectivenessOfAddedDamage.replace('%', '')) : undefined;
+  if (target !== undefined) {
+    const hinted = rows.find((r) => {
+      const v1 = parseValueSlot(r.value1);
+      return v1 !== undefined && Math.abs(v1 - target) < 0.05;
+    });
+    if (hinted) {
+      const mapped = tryMapAgainstRow(extracted, hinted);
+      if (mapped) return mapped;
+    }
+  }
+  for (const row of rows) {
+    const mapped = tryMapAgainstRow(extracted, row);
+    if (mapped) return mapped;
+  }
+  return undefined;
+}
+
+/**
+ * Reconstruct real per-level modifiers from a skill's levelProgression, by
+ * refilling templateDescription's "#" placeholders with each level's values
+ * (once the placeholder->value-slot mapping is known, see above) and
+ * re-parsing the result with the same text->Modifier engine used elsewhere.
+ * Returns undefined if the mapping isn't confidently resolvable.
+ */
+export function buildLevelScaling(
+  levelProgression: LevelProgressionRow[] | undefined,
+  templateDescription: string | undefined,
+  description: string | undefined,
+  effectivenessOfAddedDamage: string | undefined
+): SkillLevelEntry[] | undefined {
+  if (!levelProgression || levelProgression.length === 0 || !templateDescription || !description) {
+    return undefined;
+  }
+  const extracted = extractFilledNumbers(templateDescription, description);
+  if (!extracted) return undefined;
+  if (extracted.length === 0) {
+    // No placeholders at all -- the text is level-invariant, so every level
+    // shares the same (already-parsed-elsewhere) modifiers. Nothing to add.
+    return undefined;
+  }
+
+  const keyMap = mapPlaceholdersToValueKeys(extracted, levelProgression, effectivenessOfAddedDamage);
+  if (!keyMap) return undefined; // couldn't confidently map any row -> don't guess
+
+  const segments = templateDescription.split('#');
+  return levelProgression.map((row) => {
+    let filled = segments[0] ?? '';
+    keyMap.forEach((key, i) => {
+      const v = key ? parseValueSlot(row[key]) : undefined;
+      filled += (v !== undefined ? String(v) : '?') + (segments[i + 1] ?? '');
+    });
+    return { level: Number(row.level), modifiers: parseModifiers(filled) };
+  });
 }
 
 /** Map the skill `-master` + `-en` bundles into active and support skills. */
@@ -273,8 +461,24 @@ export function mapSkills(
       const id = idFromName(name);
       const tags = (s.tags ?? []).map((t) => DAMAGE_TAG[t]).filter((t): t is DamageTag => Boolean(t));
 
+      const levelScaling = buildLevelScaling(
+        s.levelProgression,
+        meta?.templateDescription,
+        meta?.description,
+        s.effectivenessOfAddedDamage
+      );
+
       if (!isActive) {
-        support.push({ id, name, modifiers: parseModifiers(meta?.description ?? ''), requiresTags: [] });
+        const manaMultiplier = s.manaMultiplier ? parseValueSlot(s.manaMultiplier.replace('%', '')) : undefined;
+        support.push({
+          id,
+          name,
+          modifiers: parseModifiers(meta?.description ?? ''),
+          requiresTags: [],
+          ...(manaMultiplier != null ? { manaMultiplier } : {}),
+          ...(s.cannotSupport && s.cannotSupport.length > 0 ? { cannotSupport: s.cannotSupport } : {}),
+          ...(levelScaling ? { levelScaling } : {})
+        });
         continue;
       }
 
@@ -293,7 +497,10 @@ export function mapSkills(
         baseRate,
         baseCritRate: 5,
         supportSlots: 5,
-        season: version
+        season: version,
+        ...(levelScaling ? { levelScaling } : {}),
+        ...(s.manaCost != null ? { manaCost: s.manaCost } : {}),
+        ...(s.mainStat && s.mainStat.length > 0 ? { mainStat: s.mainStat } : {})
       });
     }
   }
@@ -351,13 +558,22 @@ interface AffixValue {
   maxValue?: number;
   sign?: string;
 }
-interface AffixTier {
+/** Raw per-tier shape from the gear-master bundle (renamed from the schema's
+ * output AffixTier to avoid a name collision -- this is the input, that's
+ * the output). weight is the game's real crafting RNG weight; 0 means the
+ * tier is currently disabled/unobtainable rather than "impossible to weight"
+ * (confirmed by cross-checking against tlidb.com's independent HTML scrape,
+ * which shows the same tiers as a binary available/unavailable flag). */
+interface RawAffixTier {
   modifierId?: string;
+  tier?: string;
+  levelRequirement?: number;
+  weight?: number;
   values?: AffixValue[];
 }
 interface CraftAffix {
   descriptionTemplate?: string;
-  tiers?: AffixTier[];
+  tiers?: RawAffixTier[];
 }
 interface GearSection {
   category?: string;
@@ -366,7 +582,7 @@ interface GearSection {
   craftSuffix?: CraftAffix[];
 }
 
-/** Fill a "+# Max Life" template with the (max) roll values, in order. */
+/** Fill a "+# Max Life" template with a tier's (max) roll values, in order. */
 function fillTemplate(template: string, values: AffixValue[] | undefined): string {
   let i = 0;
   return template.replace(/#/g, () => {
@@ -380,18 +596,32 @@ function affixName(template: string): string {
   return template.replace(/[+\-]?#%?/g, '').replace(/\s+/g, ' ').trim() || template;
 }
 
-/** Highest-roll tier of a craft affix. */
-function topTier(a: CraftAffix): AffixTier | undefined {
+/** Highest-roll tier of a craft affix (used for the top-level `modifiers`). */
+function topTier(a: CraftAffix): RawAffixTier | undefined {
   return (a.tiers ?? [])
     .slice()
     .sort((x, y) => (y.values?.[0]?.maxValue ?? 0) - (x.values?.[0]?.maxValue ?? 0))[0];
 }
 
+/** Map every raw tier of a craft affix into the schema's AffixTier shape,
+ * parsing that tier's own filled-in text so e.g. a T0 and a T5 roll of the
+ * same affix get their own (accurate, different-range) modifiers. */
+function buildAffixTiers(a: CraftAffix, template: string): AffixTier[] {
+  return (a.tiers ?? []).map((t) => ({
+    tier: t.tier ?? '?',
+    weight: t.weight ?? 0,
+    modifiers: parseModifiers(fillTemplate(template, t.values)),
+    ...(t.levelRequirement != null ? { levelRequirement: t.levelRequirement } : {}),
+    ...(t.modifierId != null ? { modifierId: t.modifierId } : {})
+  }));
+}
+
 /**
  * Map gear-master's craftPrefix/craftSuffix into the Affix pool. Dedupes by
- * (kind, stat template), unions slots + modifier ids across gear subtypes, and
- * keeps only affixes whose stat the calculator models. modifierIds are retained
- * so a future loot parser can map a dropped roll back to the affix.
+ * (kind, stat template), unions slots + modifier ids + tiers across gear
+ * subtypes, and keeps only affixes whose stat the calculator models.
+ * modifierIds/tiers are retained so a future loot parser or crafting
+ * simulator can map a dropped/rolled affix back to a specific tier + weight.
  */
 export function mapAffixes(gearMaster: unknown): Affix[] {
   const byKey = new Map<string, Affix>();
@@ -408,11 +638,14 @@ export function mapAffixes(gearMaster: unknown): Affix[] {
         const modifiers = parseModifiers(fillTemplate(template, topTier(a)?.values));
         if (modifiers.length === 0) continue; // stat the calculator doesn't model
         const ids = (a.tiers ?? []).map((t) => t.modifierId).filter((x): x is string => Boolean(x));
+        const newTiers = buildAffixTiers(a, template);
         const key = `${kind}|${template}`;
         const existing = byKey.get(key);
         if (existing) {
           if (!existing.slots.includes(slot)) existing.slots.push(slot);
           existing.modifierIds = [...new Set([...(existing.modifierIds ?? []), ...ids])];
+          const seenTierIds = new Set((existing.tiers ?? []).map((t) => t.modifierId));
+          existing.tiers = [...(existing.tiers ?? []), ...newTiers.filter((t) => !seenTierIds.has(t.modifierId))];
         } else {
           const name = affixName(template);
           byKey.set(key, {
@@ -421,7 +654,8 @@ export function mapAffixes(gearMaster: unknown): Affix[] {
             kind,
             modifiers,
             slots: [slot],
-            modifierIds: [...new Set(ids)]
+            modifierIds: [...new Set(ids)],
+            tiers: newTiers
           });
         }
       }
@@ -497,4 +731,489 @@ export async function scrapeLegendaries(overrides: Partial<ScrapeConfig> = {}): 
 export async function scrapeHeroTraits(overrides: Partial<ScrapeConfig> = {}): Promise<Talent[]> {
   const cfg: ScrapeConfig = { ...DEFAULT_CONFIG, ...overrides };
   return mapHeroTraits(await fetchBundle('hero-trait', cfg));
+}
+
+// ------------------- Void Chart + Talent Tree (progression graphs) ----------
+// Unlike everything above, these bundles expose the *real* tree graph (node
+// positions and edges) -- something no HTML scrape of tlidb.com can recover,
+// since that site's pages don't expose connectivity, only a flat node list.
+// Kept as reference data (Dataset.voidCharts / .talentTrees), not yet wired
+// into Build/collectModifiers: these are account-wide meta-progression
+// unlocks, not a per-build loadout choice like gear/skills/talents.
+
+interface VoidChartEffectRaw {
+  displayString?: string;
+}
+interface VoidChartNodeRaw {
+  id: string;
+  tlidbId?: string;
+  type?: string;
+  name?: string;
+  description?: string;
+  icon?: string;
+  position?: { x: number; y: number };
+  connections?: string[];
+  effects?: VoidChartEffectRaw[];
+}
+interface VoidChartTreeRaw {
+  id?: string;
+  name?: string;
+  nodes?: VoidChartNodeRaw[];
+}
+
+/** Map the Void Chart bundle (voidchart-en: one key per season/category, e.g.
+ * "war", "vorax", "aeterna") into one ProgressionTree per sub-tree. Modifiers
+ * are best-effort parsed from each effect's displayString with the same text
+ * engine used everywhere else -- effects aren't tagged with a StatKey, just a
+ * game-internal id/category, so there's no direct mapping to reach for. */
+export function mapVoidChart(bundle: unknown): ProgressionTree[] {
+  const trees: ProgressionTree[] = [];
+  for (const [key, raw] of Object.entries(bundle as Record<string, VoidChartTreeRaw>)) {
+    if (!raw || !Array.isArray(raw.nodes)) continue;
+    const nodes: ProgressionNode[] = raw.nodes.map((n) => ({
+      id: n.id,
+      ...(n.tlidbId != null ? { tlidbId: n.tlidbId } : {}),
+      ...(n.type != null ? { type: n.type } : {}),
+      ...(n.name ? { name: n.name } : {}),
+      ...(n.description ? { description: n.description } : {}),
+      ...(n.icon != null ? { icon: n.icon } : {}),
+      connections: n.connections ?? [],
+      ...(n.position != null ? { position: n.position } : {}),
+      modifiers: parseModifiers((n.effects ?? []).map((e) => e.displayString ?? '').join('\n'))
+    }));
+    trees.push({ id: raw.id ?? key, name: raw.name ?? key, nodes });
+  }
+  return trees;
+}
+
+export async function scrapeVoidCharts(overrides: Partial<ScrapeConfig> = {}): Promise<ProgressionTree[]> {
+  const cfg: ScrapeConfig = { ...DEFAULT_CONFIG, ...overrides };
+  return mapVoidChart(await fetchBundle('voidchart', cfg));
+}
+
+interface TalentTreeModRaw {
+  description?: string;
+}
+interface TalentTreeNodeRaw {
+  id: string;
+  tlidbId?: string;
+  type?: string;
+  icon?: string;
+  svgPosition?: { cx: number; cy: number };
+  maxPoints?: number;
+  ancestor?: string | null;
+  predecessors?: { guid: string; tlidbId?: string }[];
+  mods?: TalentTreeModRaw[];
+}
+interface TalentTreeRaw {
+  id?: string;
+  tlidbId?: string;
+  icon?: string;
+  nodes?: TalentTreeNodeRaw[];
+}
+interface TalentTreeBundleEntry {
+  tree?: TalentTreeRaw;
+}
+
+/** Map the talent-tree bundle (one key per hero archetype / "god", e.g.
+ * "talent-tree/warrior/master") into one ProgressionTree per archetype.
+ * Same idea as mapVoidChart but the graph is expressed as ancestor +
+ * predecessors instead of a flat connections list -- normalised into one
+ * adjacency list on the shared ProgressionNode shape. */
+export function mapTalentTrees(bundle: unknown): ProgressionTree[] {
+  const trees: ProgressionTree[] = [];
+  for (const [key, entry] of Object.entries(bundle as Record<string, TalentTreeBundleEntry>)) {
+    const tree = entry?.tree;
+    if (!tree || !Array.isArray(tree.nodes)) continue;
+    const nodes: ProgressionNode[] = tree.nodes.map((n) => {
+      const connections = [...(n.ancestor ? [n.ancestor] : []), ...(n.predecessors ?? []).map((p) => p.guid)];
+      return {
+        id: n.id,
+        ...(n.tlidbId != null ? { tlidbId: n.tlidbId } : {}),
+        ...(n.type != null ? { type: n.type } : {}),
+        ...(n.icon != null ? { icon: n.icon } : {}),
+        connections,
+        ...(n.maxPoints != null ? { maxPoints: n.maxPoints } : {}),
+        ...(n.svgPosition != null ? { position: { x: n.svgPosition.cx, y: n.svgPosition.cy } } : {}),
+        modifiers: parseModifiers((n.mods ?? []).map((m) => m.description ?? '').join('\n'))
+      };
+    });
+    trees.push({
+      id: tree.id ?? key,
+      name: tree.tlidbId ?? key,
+      ...(tree.icon ? { icon: tree.icon } : {}),
+      nodes
+    });
+  }
+  return trees;
+}
+
+export async function scrapeTalentTrees(overrides: Partial<ScrapeConfig> = {}): Promise<ProgressionTree[]> {
+  const cfg: ScrapeConfig = { ...DEFAULT_CONFIG, ...overrides };
+  return mapTalentTrees(await fetchBundleRaw('talent-tree-master', cfg));
+}
+
+// --------------------------- Pact Spirit -------------------------------------
+// pactspirit-master has the mechanics (typeId, rarity, per-node effects with
+// clean sign/value/unit/text -- no template needed, unlike gear/memory
+// affixes); pactspirit-en has the name/description the master bundle lacks
+// entirely. Joined by the shared `id`.
+
+interface PactSpiritEffectRaw {
+  sign?: string;
+  value?: number;
+  unit?: string;
+  text?: string;
+}
+interface PactSpiritNodeRaw {
+  nodeId: number;
+  nodeType?: string;
+  nextNode?: number | null;
+  effects?: PactSpiritEffectRaw[];
+}
+interface PactSpiritRaw {
+  id: string;
+  typeId?: string;
+  rarity?: string;
+  iconUrl?: string;
+  nodes?: PactSpiritNodeRaw[];
+}
+interface PactSpiritMasterRaw {
+  types?: { id: string; code: string }[];
+  pactspirits?: PactSpiritRaw[];
+}
+interface PactSpiritEnEntry {
+  name?: string;
+  description?: string;
+}
+
+function effectsToText(effects: PactSpiritEffectRaw[] | undefined): string {
+  return (effects ?? [])
+    .map((e) => `${e.sign ?? ''}${e.value ?? ''}${e.unit ?? ''} ${e.text ?? ''}`.trim())
+    .join('\n');
+}
+
+/** Map pactspirit master+en into real PactSpirit[] (replacing the 4-entry
+ * hand-seeded placeholder with all 166 real pact spirits). */
+export function mapPactSpirits(master: unknown, en: unknown): PactSpirit[] {
+  const masterData = (Object.values(master as Record<string, PactSpiritMasterRaw>)[0] ?? {}) as PactSpiritMasterRaw;
+  const enData = (Object.values(en as Record<string, { pactspirits?: Record<string, PactSpiritEnEntry> }>)[0] ??
+    {}) as { pactspirits?: Record<string, PactSpiritEnEntry> };
+  const typeCodeById = new Map((masterData.types ?? []).map((t) => [t.id, t.code]));
+
+  return (masterData.pactspirits ?? []).map((raw) => {
+    const meta = enData.pactspirits?.[raw.id];
+    const nodes = (raw.nodes ?? []).map((n) => ({
+      nodeId: n.nodeId,
+      ...(n.nodeType != null ? { nodeType: n.nodeType } : {}),
+      nextNode: n.nextNode ?? null,
+      modifiers: parseModifiers(effectsToText(n.effects))
+    }));
+    const modifiers = nodes.flatMap((n) => n.modifiers);
+    const typeCode = raw.typeId ? typeCodeById.get(raw.typeId) : undefined;
+    return {
+      id: raw.id,
+      name: meta?.name ?? raw.id,
+      ...(meta?.description ? { description: meta.description } : {}),
+      modifiers,
+      nodes,
+      ...(typeCode != null ? { typeCode } : {}),
+      ...(raw.rarity ? { rarity: raw.rarity } : {}),
+      ...(raw.iconUrl ? { iconUrl: raw.iconUrl } : {})
+    };
+  });
+}
+
+export async function scrapePactSpirits(overrides: Partial<ScrapeConfig> = {}): Promise<PactSpirit[]> {
+  const cfg: ScrapeConfig = { ...DEFAULT_CONFIG, ...overrides };
+  const [master, en] = await Promise.all([
+    fetchBundleRaw('pactspirit-master', cfg),
+    fetchBundle('pactspirit', cfg)
+  ]);
+  return mapPactSpirits(master, en);
+}
+
+// --------------------------- Hero Memory (Memory Revival) --------------------
+// hero-memory-master has 5 tiered/weighted affix pools (baseStats,
+// fixedAffixes, randomAffixes, revivedAffixes, specialRandomAffixes) in the
+// same modifierId/tier/level/weight shape as gear affixes, plus a 6th
+// category (revivedAffixLunarPhases) of fixed named effects with no tiers at
+// all. The 5 tiered pools have NO descriptionTemplate in -master (unlike gear)
+// -- the template lives in -en, joined by id, same pattern as mapAffixes.
+
+interface MemoryTierValueRaw {
+  value?: number | null;
+  valueMin?: number;
+  valueMax?: number;
+}
+interface MemoryTierRaw {
+  tier: number;
+  value?: number | null;
+  valueMax?: number;
+  level?: number;
+  weight: number;
+  values?: MemoryTierValueRaw[];
+}
+interface MemoryAffixRaw {
+  id: string;
+  modifierId?: string;
+  tiers?: MemoryTierRaw[];
+  name?: string;
+  description?: string;
+}
+interface MemoryEnEntry {
+  description?: string;
+  template?: string;
+  rawText?: string;
+}
+interface HeroMemoryMasterRaw {
+  baseStats?: MemoryAffixRaw[];
+  fixedAffixes?: MemoryAffixRaw[];
+  randomAffixes?: MemoryAffixRaw[];
+  revivedAffixes?: MemoryAffixRaw[];
+  specialRandomAffixes?: MemoryAffixRaw[];
+  revivedAffixLunarPhases?: { id: string; name?: string; description?: string }[];
+}
+
+/** Fill a hero-memory tier's own numeric value(s) into its -en template
+ * ("+#% Skill Area"). Tolerates the tier-value shapes seen across
+ * hero-memory's pools: a flat value, or a nested `values` array (compound
+ * affixes bundling more than one stat into one tier/template). */
+function fillMemoryTemplate(template: string, tier: MemoryTierRaw): string {
+  const slots: MemoryTierValueRaw[] = tier.values && tier.values.length > 0 ? tier.values : [tier];
+  let i = 0;
+  return template.replace(/#/g, () => {
+    const v = slots[i++];
+    if (!v) return '0';
+    if (v.valueMax != null) return String(v.valueMax);
+    if (v.value != null) return String(v.value);
+    return '0';
+  });
+}
+
+/** Each raw entry becomes its own MemoryAffix with whatever tiers it carries
+ * (samples show one tier per entry rather than gear's multi-tier-per-affix
+ * shape, so no cross-entry grouping is attempted). */
+function mapMemoryAffixList(
+  rawList: MemoryAffixRaw[] | undefined,
+  en: Record<string, MemoryEnEntry> | undefined
+): MemoryAffix[] {
+  return (rawList ?? []).map((raw) => {
+    const meta = en?.[raw.id];
+    const name = meta?.description ?? raw.name ?? raw.id;
+    const tiers: AffixTier[] = (raw.tiers ?? []).map((t) => ({
+      tier: String(t.tier),
+      weight: t.weight ?? 0,
+      ...(t.level != null ? { levelRequirement: t.level } : {}),
+      ...(raw.modifierId != null ? { modifierId: raw.modifierId } : {}),
+      modifiers: parseModifiers(meta?.template ? fillMemoryTemplate(meta.template, t) : meta?.rawText ?? raw.description ?? '')
+    }));
+    return {
+      id: raw.id,
+      name,
+      modifiers: tiers[0]?.modifiers ?? (raw.description ? parseModifiers(raw.description) : []),
+      ...(raw.modifierId != null ? { modifierIds: [raw.modifierId] } : {}),
+      ...(tiers.length > 0 ? { tiers } : {})
+    };
+  });
+}
+
+/** Map hero-memory master+en into the 5 weighted affix pools plus the 6th
+ * category of fixed named "Lunar Phase" memories (mapped onto the existing
+ * MemoryRevival shape, replacing the 3-entry hand-seeded placeholder). */
+export function mapHeroMemory(
+  master: unknown,
+  en: unknown
+): { pools: MemoryAffixPools; revivedMemories: MemoryRevival[] } {
+  const masterData = (Object.values(master as Record<string, HeroMemoryMasterRaw>)[0] ?? {}) as HeroMemoryMasterRaw;
+  const enData = (Object.values(en as Record<string, Record<string, Record<string, MemoryEnEntry>>>)[0] ??
+    {}) as Record<string, Record<string, MemoryEnEntry>>;
+
+  const pools: MemoryAffixPools = {
+    baseStats: mapMemoryAffixList(masterData.baseStats, enData.baseStats),
+    fixedAffixes: mapMemoryAffixList(masterData.fixedAffixes, enData.fixedAffixes),
+    randomAffixes: mapMemoryAffixList(masterData.randomAffixes, enData.randomAffixes),
+    revivedAffixes: mapMemoryAffixList(masterData.revivedAffixes, enData.revivedAffixes),
+    specialRandomAffixes: mapMemoryAffixList(masterData.specialRandomAffixes, enData.specialRandomAffixes)
+  };
+
+  const revivedMemories: MemoryRevival[] = (masterData.revivedAffixLunarPhases ?? []).map((raw) => ({
+    id: raw.id,
+    name: raw.name ?? raw.id,
+    ...(raw.description ? { description: raw.description } : {}),
+    modifiers: raw.description ? parseModifiers(raw.description) : []
+  }));
+
+  return { pools, revivedMemories };
+}
+
+export async function scrapeHeroMemory(
+  overrides: Partial<ScrapeConfig> = {}
+): Promise<{ pools: MemoryAffixPools; revivedMemories: MemoryRevival[] }> {
+  const cfg: ScrapeConfig = { ...DEFAULT_CONFIG, ...overrides };
+  const [master, en] = await Promise.all([
+    fetchBundleRaw('hero-memory-master', cfg),
+    fetchBundle('hero-memory', cfg)
+  ]);
+  return mapHeroMemory(master, en);
+}
+
+// ------------------------------- Vorax ---------------------------------------
+// SS13's extra "limb" equipment slot. Same craft-affix-tier and legendary-mod
+// shapes as regular gear, but keyed by `limb` instead of gear category, and
+// worn in addition to normal gear rather than instead of it -- kept as
+// separate VoraxAffix/VoraxLegendary types rather than reusing Affix/GearBase
+// (whose GearSlot union doesn't have "digits"/"waist" as extra slots).
+// Unlike gear/memory affixes, vorax-en already has each tier's/mod's fully
+// filled rawText (no template + fillTemplate step needed).
+
+interface VoraxCraftTierRaw {
+  id: string;
+  tier?: string;
+  modifierId?: string;
+  levelRequirement?: number;
+  weight?: number;
+}
+interface VoraxCraftAffixRaw {
+  id: string;
+  limb?: string;
+  descriptionTemplate?: string;
+  tiers?: VoraxCraftTierRaw[];
+}
+interface VoraxCraftTierEnRaw {
+  id: string;
+  rawText?: string;
+}
+interface VoraxCraftAffixEnRaw {
+  tiers?: VoraxCraftTierEnRaw[];
+}
+interface VoraxLegendaryModRaw {
+  id: string;
+  modifierId?: string;
+}
+interface VoraxLegendaryRaw {
+  id: string;
+  limb?: string;
+  icon?: string;
+  mods?: VoraxLegendaryModRaw[];
+}
+interface VoraxLegendaryModEnRaw {
+  id: string;
+  normalRawText?: string;
+  corrodedRawText?: string;
+}
+interface VoraxLegendaryEnRaw {
+  name?: string;
+  mods?: VoraxLegendaryModEnRaw[];
+}
+interface VoraxMasterRaw {
+  // Unlike gear-master (dicts keyed by section), vorax-master's craftAffixes
+  // and legendaries are plain arrays, each entry carrying its own `id`.
+  craftAffixes?: VoraxCraftAffixRaw[];
+  legendaries?: VoraxLegendaryRaw[];
+}
+interface VoraxEnRaw {
+  craftAffixes?: Record<string, VoraxCraftAffixEnRaw>;
+  legendaries?: Record<string, VoraxLegendaryEnRaw>;
+}
+
+/** Map vorax master+en into craft affixes (weighted tiers, for a crafting-odds
+ * simulator) and legendaries (with normal + corroded mutation variants). */
+export function mapVorax(master: unknown, en: unknown): { affixes: VoraxAffix[]; legendaries: VoraxLegendary[] } {
+  const masterData = (Object.values(master as Record<string, VoraxMasterRaw>)[0] ?? {}) as VoraxMasterRaw;
+  const enData = (Object.values(en as Record<string, VoraxEnRaw>)[0] ?? {}) as VoraxEnRaw;
+
+  const affixes: VoraxAffix[] = (masterData.craftAffixes ?? []).map((raw) => {
+    const enTiers = new Map((enData.craftAffixes?.[raw.id]?.tiers ?? []).map((t) => [t.id, t.rawText]));
+    const tiers: AffixTier[] = (raw.tiers ?? []).map((t) => ({
+      tier: t.tier ?? '?',
+      weight: t.weight ?? 0,
+      ...(t.levelRequirement != null ? { levelRequirement: t.levelRequirement } : {}),
+      ...(t.modifierId != null ? { modifierId: t.modifierId } : {}),
+      modifiers: parseModifiers(enTiers.get(t.id) ?? '')
+    }));
+    return {
+      id: raw.id,
+      limb: raw.limb ?? 'unknown',
+      modifiers: tiers[0]?.modifiers ?? [],
+      ...(tiers.length > 0 ? { tiers } : {})
+    };
+  });
+
+  const legendaries: VoraxLegendary[] = (masterData.legendaries ?? []).map((raw) => {
+    const enLeg = enData.legendaries?.[raw.id];
+    const enModsById = new Map((enLeg?.mods ?? []).map((m) => [m.id, m]));
+    const modifiers = (raw.mods ?? []).flatMap((m) => parseModifiers(enModsById.get(m.id)?.normalRawText ?? ''));
+    const corrodedModifiers = (raw.mods ?? []).flatMap((m) => parseModifiers(enModsById.get(m.id)?.corrodedRawText ?? ''));
+    return {
+      id: raw.id,
+      limb: raw.limb ?? 'unknown',
+      ...(raw.icon ? { icon: raw.icon } : {}),
+      modifiers,
+      ...(corrodedModifiers.length > 0 ? { corrodedModifiers } : {})
+    };
+  });
+
+  return { affixes, legendaries };
+}
+
+export async function scrapeVorax(
+  overrides: Partial<ScrapeConfig> = {}
+): Promise<{ affixes: VoraxAffix[]; legendaries: VoraxLegendary[] }> {
+  const cfg: ScrapeConfig = { ...DEFAULT_CONFIG, ...overrides };
+  const [master, en] = await Promise.all([fetchBundleRaw('vorax-master', cfg), fetchBundle('vorax', cfg)]);
+  return mapVorax(master, en);
+}
+
+// --------------------------------- Kismet ------------------------------------
+// Unlike gear/vorax/memory affixes, kismet-master already carries its own
+// effect text (sign/valueMin/valueMax/unit/text) directly -- no separate -en
+// bundle/template-fill step needed, same shape as pactspirit's node effects.
+// ~40% of entries (74/192 in the SS13 sample) have no effects at all -- kept
+// as an empty modifiers list rather than skipped, same as every other
+// best-effort category. No `name` field exists in the scraped data.
+
+interface KismetEffectRaw {
+  sign?: string;
+  valueMin?: number;
+  valueMax?: number;
+  unit?: string;
+  text?: string;
+}
+interface KismetRaw {
+  id: string;
+  iconUrl?: string;
+  rarity?: string;
+  type?: string;
+  effects?: KismetEffectRaw[];
+}
+interface KismetMasterRaw {
+  kismets?: KismetRaw[];
+}
+
+/** `text` already embeds its own unit as a leading token (e.g. "% Fire
+ * Resistance", not just "Fire Resistance") -- confirmed against the real
+ * scrape, unlike pactspirit's clean-prose effect text. Appending `unit`
+ * separately would double it up ("18% % Fire Resistance"), breaking every
+ * regex in parseModifiers that expects "<number>% <word>". */
+function kismetEffectsToText(effects: KismetEffectRaw[] | undefined): string {
+  return (effects ?? [])
+    .map((e) => `${e.sign ?? ''}${e.valueMax ?? e.valueMin ?? ''}${e.text ?? ''}`.trim())
+    .join('\n');
+}
+
+export function mapKismet(bundle: unknown): Kismet[] {
+  const data = (Object.values(bundle as Record<string, KismetMasterRaw>)[0] ?? {}) as KismetMasterRaw;
+  return (data.kismets ?? []).map((raw) => ({
+    id: raw.id,
+    ...(raw.iconUrl != null ? { iconUrl: raw.iconUrl } : {}),
+    ...(raw.rarity != null ? { rarity: raw.rarity } : {}),
+    ...(raw.type != null ? { type: raw.type } : {}),
+    modifiers: parseModifiers(kismetEffectsToText(raw.effects))
+  }));
+}
+
+export async function scrapeKismet(overrides: Partial<ScrapeConfig> = {}): Promise<Kismet[]> {
+  const cfg: ScrapeConfig = { ...DEFAULT_CONFIG, ...overrides };
+  return mapKismet(await fetchBundleRaw('kismet-master', cfg));
 }

@@ -99,6 +99,31 @@ export function collectModifiers(
     raw.push(...talent.modifiers);
   }
 
+  for (const piece of build.voraxGear) {
+    if (piece.legendaryId) {
+      const legendary = index.voraxLegendary(piece.legendaryId, piece.limb);
+      if (!legendary) warnings.push(`unknown vorax legendary '${piece.legendaryId}' for limb '${piece.limb}'`);
+      else raw.push(...legendary.modifiers);
+    }
+    for (const affixId of piece.affixIds) {
+      const affix = index.voraxAffix(affixId);
+      if (!affix) warnings.push(`unknown vorax affix: ${affixId}`);
+      else raw.push(...affix.modifiers);
+    }
+  }
+
+  for (const nodeId of build.talentTreeNodeIds) {
+    const entry = index.talentTreeNode(nodeId);
+    if (!entry) warnings.push(`unknown talent tree node: ${nodeId}`);
+    else raw.push(...entry.node.modifiers);
+  }
+
+  for (const nodeId of build.voidChartNodeIds) {
+    const entry = index.voidChartNode(nodeId);
+    if (!entry) warnings.push(`unknown void chart node: ${nodeId}`);
+    else raw.push(...entry.node.modifiers);
+  }
+
   const boundSpirits = build.pactSpiritIds.slice(0, MAX_PACT_SPIRITS);
   if (build.pactSpiritIds.length > MAX_PACT_SPIRITS) {
     warnings.push(

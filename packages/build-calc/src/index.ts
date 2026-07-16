@@ -13,3 +13,12 @@ export {
   MAX_PACT_SPIRITS,
   type BuildReport
 } from './build.js';
+export {
+  pickAffixTier,
+  craftableTiers,
+  affixTierOdds,
+  pickSkillLevel,
+  availableLevels
+} from './tiers.js';
+export { analyticOdds, monteCarloOdds, type CraftingOdds, type MonteCarloResult } from './crafting.js';
+export { totalManaCost } from './manaCost.js';

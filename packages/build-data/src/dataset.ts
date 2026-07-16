@@ -4,10 +4,16 @@ import type {
   Dataset,
   GearBase,
   Hero,
+  Kismet,
+  MemoryAffixPools,
   MemoryRevival,
   PactSpirit,
+  ProgressionNode,
+  ProgressionTree,
   SupportSkill,
-  Talent
+  Talent,
+  VoraxAffix,
+  VoraxLegendary
 } from './schema.js';
 
 import heroes from './seed/heroes.json' with { type: 'json' };
@@ -18,6 +24,12 @@ import gearBases from './seed/gearBases.json' with { type: 'json' };
 import talents from './seed/talents.json' with { type: 'json' };
 import pactSpirits from './seed/pactSpirits.json' with { type: 'json' };
 import memories from './seed/memories.json' with { type: 'json' };
+import memoryAffixPools from './seed/memoryAffixPools.json' with { type: 'json' };
+import voidCharts from './seed/voidCharts.json' with { type: 'json' };
+import talentTrees from './seed/talentTrees.json' with { type: 'json' };
+import voraxAffixes from './seed/voraxAffixes.json' with { type: 'json' };
+import voraxLegendaries from './seed/voraxLegendaries.json' with { type: 'json' };
+import kismets from './seed/kismets.json' with { type: 'json' };
 
 /**
  * The bundled seed dataset. Hand-entered, approximate, and intentionally small
@@ -37,8 +49,33 @@ export const seedDataset: Dataset = {
   gearBases: gearBases as GearBase[],
   talents: talents as Talent[],
   pactSpirits: pactSpirits as PactSpirit[],
-  memories: memories as MemoryRevival[]
+  memories: memories as MemoryRevival[],
+  memoryAffixPools: memoryAffixPools as MemoryAffixPools,
+  voidCharts: voidCharts as ProgressionTree[],
+  talentTrees: talentTrees as ProgressionTree[],
+  voraxAffixes: voraxAffixes as VoraxAffix[],
+  voraxLegendaries: voraxLegendaries as VoraxLegendary[],
+  kismets: kismets as Kismet[]
 };
+
+/** A tree node plus the id of the ProgressionTree it belongs to (so a caller
+ * that only has a bare node id, e.g. from Build.talentTreeNodeIds, can still
+ * find which tree/hero-archetype it's part of). */
+export interface IndexedProgressionNode {
+  node: ProgressionNode;
+  treeId: string;
+  treeName: string;
+}
+
+function indexNodes(trees: ProgressionTree[] | undefined): Map<string, IndexedProgressionNode> {
+  const map = new Map<string, IndexedProgressionNode>();
+  for (const tree of trees ?? []) {
+    for (const node of tree.nodes) {
+      map.set(node.id, { node, treeId: tree.id, treeName: tree.name });
+    }
+  }
+  return map;
+}
 
 /** Indexed view over a dataset for O(1) lookups by id. */
 export interface DatasetIndex {
@@ -51,6 +88,17 @@ export interface DatasetIndex {
   talent(id: string): Talent | undefined;
   pactSpirit(id: string): PactSpirit | undefined;
   memory(id: string): MemoryRevival | undefined;
+  voraxAffix(id: string): VoraxAffix | undefined;
+  /**
+   * `id` alone is NOT unique across VoraxLegendary -- confirmed against the
+   * real scrape: 822 entries collapse to 239 distinct ids, every one
+   * duplicated (the same legendary effect can spawn on more than one
+   * compatible limb, e.g. "head" and "neck", as separate array entries
+   * sharing one id). `limb` is required to disambiguate.
+   */
+  voraxLegendary(id: string, limb: string): VoraxLegendary | undefined;
+  talentTreeNode(id: string): IndexedProgressionNode | undefined;
+  voidChartNode(id: string): IndexedProgressionNode | undefined;
 }
 
 export function indexDataset(dataset: Dataset): DatasetIndex {
@@ -62,6 +110,10 @@ export function indexDataset(dataset: Dataset): DatasetIndex {
   const talents = new Map(dataset.talents.map((t) => [t.id, t]));
   const pactSpirits = new Map(dataset.pactSpirits.map((p) => [p.id, p]));
   const memories = new Map(dataset.memories.map((m) => [m.id, m]));
+  const voraxAffixes = new Map((dataset.voraxAffixes ?? []).map((a) => [a.id, a]));
+  const voraxLegendaries = new Map((dataset.voraxLegendaries ?? []).map((l) => [`${l.limb}::${l.id}`, l]));
+  const talentTreeNodes = indexNodes(dataset.talentTrees);
+  const voidChartNodes = indexNodes(dataset.voidCharts);
 
   return {
     dataset,
@@ -72,7 +124,11 @@ export function indexDataset(dataset: Dataset): DatasetIndex {
     gearBase: (id) => gearBases.get(id),
     talent: (id) => talents.get(id),
     pactSpirit: (id) => pactSpirits.get(id),
-    memory: (id) => memories.get(id)
+    memory: (id) => memories.get(id),
+    voraxAffix: (id) => voraxAffixes.get(id),
+    voraxLegendary: (id, limb) => voraxLegendaries.get(`${limb}::${id}`),
+    talentTreeNode: (id) => talentTreeNodes.get(id),
+    voidChartNode: (id) => voidChartNodes.get(id)
   };
 }
 

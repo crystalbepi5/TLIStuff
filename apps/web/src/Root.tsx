@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { App } from './App';
 import { BuildPlanner } from './planner/BuildPlanner';
+import { CraftingSim } from './crafting/CraftingSim';
 
 /**
  * Chooses a view from the URL hash so the transparent overlay (`App`) stays the
@@ -18,5 +19,6 @@ export function Root() {
   }, []);
 
   if (hash === '#planner') return <BuildPlanner />;
+  if (hash === '#craft') return <CraftingSim />;
   return <App />;
 }
