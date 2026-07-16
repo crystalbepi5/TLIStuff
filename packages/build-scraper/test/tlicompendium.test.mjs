@@ -13,7 +13,8 @@ import {
   mapTalentTrees,
   mapPactSpirits,
   mapHeroMemory,
-  mapVorax
+  mapVorax,
+  mapKismet
 } from '../dist/index.js';
 
 // Small inline fixtures shaped like real tlicompendium bundles (which are
@@ -548,4 +549,51 @@ test('mapVorax omits corrodedModifiers when the legendary has no corroded varian
   const { legendaries } = mapVorax(master, en);
   assert.deepEqual(legendaries[0].modifiers, [{ stat: 'armor', op: 'flat', value: 10 }]);
   assert.equal('corrodedModifiers' in legendaries[0], false);
+});
+
+// --------------------------------- mapKismet ---------------------------------
+
+test('mapKismet parses effect text already present in the master bundle (no -en join needed), preferring valueMax over valueMin', () => {
+  const bundle = {
+    'kismet/master': {
+      kismets: [
+        {
+          id: 'k-1',
+          iconUrl: 'k1.png',
+          rarity: 'Rare',
+          type: 'Micro',
+          effects: [{ sign: '+', valueMin: 14, valueMax: 18, unit: '%', text: '% Fire Resistance' }]
+        }
+      ]
+    }
+  };
+  const kismets = mapKismet(bundle);
+  assert.equal(kismets.length, 1);
+  assert.deepEqual(kismets[0], {
+    id: 'k-1',
+    iconUrl: 'k1.png',
+    rarity: 'Rare',
+    type: 'Micro',
+    modifiers: [{ stat: 'fireResist', op: 'flat', value: 18 }]
+  });
+});
+
+test('mapKismet keeps an empty modifiers list for a kismet with no published effect (a real, common case -- ~40% of the real SS13 pool)', () => {
+  const bundle = {
+    k: { kismets: [{ id: 'k-2', rarity: 'Rare', type: 'Micro', effects: [] }] }
+  };
+  const kismets = mapKismet(bundle);
+  assert.deepEqual(kismets[0].modifiers, []);
+});
+
+test('mapKismet falls back to valueMin when a kismet has no valueMax (single fixed value, not a range)', () => {
+  const bundle = {
+    k: {
+      kismets: [
+        { id: 'k-3', rarity: 'Epic', type: 'Medium', effects: [{ sign: '+', valueMin: 25, unit: '%', text: '% Fire Resistance' }] }
+      ]
+    }
+  };
+  const kismets = mapKismet(bundle);
+  assert.deepEqual(kismets[0].modifiers, [{ stat: 'fireResist', op: 'flat', value: 25 }]);
 });

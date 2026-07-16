@@ -22,7 +22,8 @@ import {
   scrapeTalentTrees,
   scrapePactSpirits,
   scrapeHeroMemory,
-  scrapeVorax
+  scrapeVorax,
+  scrapeKismet
 } from '../dist/index.js';
 
 const seedDir = fileURLToPath(new URL('../../build-data/src/seed/', import.meta.url));
@@ -43,6 +44,7 @@ const { pools: memoryAffixPools, revivedMemories } = await scrapeHeroMemory(cfg)
 const voidCharts = await scrapeVoidCharts(cfg);
 const talentTrees = await scrapeTalentTrees(cfg);
 const { affixes: voraxAffixes, legendaries: voraxLegendaries } = await scrapeVorax(cfg);
+const kismets = await scrapeKismet(cfg);
 
 // Categories with a small hand-curated demo tier (kept first, real scraped
 // data deduped behind it by id) so tests referencing fixed demo ids keep
@@ -67,7 +69,7 @@ for (const [name, arr] of Object.entries(withHandTier)) {
 
 // Reference-only categories (not yet wired into Build/collectModifiers, no
 // demo id anything depends on) -- written straight from the scrape.
-const scrapedOnly = { voidCharts, talentTrees, voraxAffixes, voraxLegendaries };
+const scrapedOnly = { voidCharts, talentTrees, voraxAffixes, voraxLegendaries, kismets };
 for (const [name, data] of Object.entries(scrapedOnly)) {
   writeFileSync(seedDir + name + '.json', JSON.stringify(data, null, 2) + '\n');
   console.error(`[regen] ${name}: ${data.length} scraped`);

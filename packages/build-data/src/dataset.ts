@@ -4,6 +4,7 @@ import type {
   Dataset,
   GearBase,
   Hero,
+  Kismet,
   MemoryAffixPools,
   MemoryRevival,
   PactSpirit,
@@ -28,6 +29,7 @@ import voidCharts from './seed/voidCharts.json' with { type: 'json' };
 import talentTrees from './seed/talentTrees.json' with { type: 'json' };
 import voraxAffixes from './seed/voraxAffixes.json' with { type: 'json' };
 import voraxLegendaries from './seed/voraxLegendaries.json' with { type: 'json' };
+import kismets from './seed/kismets.json' with { type: 'json' };
 
 /**
  * The bundled seed dataset. Hand-entered, approximate, and intentionally small
@@ -52,7 +54,8 @@ export const seedDataset: Dataset = {
   voidCharts: voidCharts as ProgressionTree[],
   talentTrees: talentTrees as ProgressionTree[],
   voraxAffixes: voraxAffixes as VoraxAffix[],
-  voraxLegendaries: voraxLegendaries as VoraxLegendary[]
+  voraxLegendaries: voraxLegendaries as VoraxLegendary[],
+  kismets: kismets as Kismet[]
 };
 
 /** A tree node plus the id of the ProgressionTree it belongs to (so a caller

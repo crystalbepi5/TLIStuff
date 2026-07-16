@@ -4703,24 +4703,6 @@
     "implicit": []
   },
   {
-    "id": "unholy-prayer-agility",
-    "name": "Unholy Prayer - Agility",
-    "slot": "weapon",
-    "implicit": []
-  },
-  {
-    "id": "unholy-prayer-focus",
-    "name": "Unholy Prayer - Focus",
-    "slot": "weapon",
-    "implicit": []
-  },
-  {
-    "id": "unholy-prayer-tenacity",
-    "name": "Unholy Prayer - Tenacity",
-    "slot": "weapon",
-    "implicit": []
-  },
-  {
     "id": "awaiting",
     "name": "Awaiting",
     "slot": "weapon",
@@ -4799,6 +4781,12 @@
     "implicit": []
   },
   {
+    "id": "beneath-the-styx",
+    "name": "Beneath the Styx",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
     "id": "dragon-scale-shoes",
     "name": "Dragon Scale Shoes",
     "slot": "weapon",
@@ -4866,6 +4854,11 @@
         "stat": "fireResist",
         "op": "flat",
         "value": 1
+      },
+      {
+        "stat": "fireResist",
+        "op": "flat",
+        "value": 20
       }
     ]
   },
@@ -4942,6 +4935,12 @@
   {
     "id": "trinity",
     "name": "Trinity",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "silent-monologue",
+    "name": "Silent Monologue",
     "slot": "weapon",
     "implicit": []
   },
@@ -5091,7 +5090,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.4
+        "value": 0.3
       }
     ]
   },
@@ -5112,6 +5111,12 @@
         "value": 1
       }
     ]
+  },
+  {
+    "id": "the-three-saints",
+    "name": "The Three Saints",
+    "slot": "weapon",
+    "implicit": []
   },
   {
     "id": "glorious-journey",
@@ -5242,6 +5247,12 @@
   {
     "id": "silent-avowal",
     "name": "Silent Avowal",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "uros-s-bond",
+    "name": "Uros's Bond",
     "slot": "weapon",
     "implicit": []
   },
@@ -5835,6 +5846,18 @@
     "implicit": []
   },
   {
+    "id": "contained-mind",
+    "name": "Contained Mind",
+    "slot": "weapon",
+    "implicit": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.5
+      }
+    ]
+  },
+  {
     "id": "twisted-branch",
     "name": "Twisted Branch",
     "slot": "weapon",
@@ -6009,6 +6032,12 @@
   {
     "id": "supreme-throne",
     "name": "Supreme Throne",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "silent-aria",
+    "name": "Silent Aria",
     "slot": "weapon",
     "implicit": []
   },
@@ -6365,6 +6394,12 @@
     "implicit": []
   },
   {
+    "id": "pantheon-s-elegy",
+    "name": "Pantheon's Elegy",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
     "id": "blessing-pendant",
     "name": "Blessing Pendant",
     "slot": "amulet",
@@ -6653,6 +6688,18 @@
     "implicit": []
   },
   {
+    "id": "broken-dream",
+    "name": "Broken Dream",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "crimson-gash",
+    "name": "Crimson Gash",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
     "id": "lone-survivor",
     "name": "Lone Survivor",
     "slot": "weapon",
@@ -6858,6 +6905,24 @@
   {
     "id": "heart-of-magic",
     "name": "Heart of Magic",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "unholy-prayer-agility",
+    "name": "Unholy Prayer - Agility",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "unholy-prayer-focus",
+    "name": "Unholy Prayer - Focus",
+    "slot": "weapon",
+    "implicit": []
+  },
+  {
+    "id": "unholy-prayer-tenacity",
+    "name": "Unholy Prayer - Tenacity",
     "slot": "weapon",
     "implicit": []
   },

@@ -27,7 +27,8 @@ import {
   scrapeTalentTrees,
   scrapePactSpirits,
   scrapeHeroMemory,
-  scrapeVorax
+  scrapeVorax,
+  scrapeKismet
 } from './tlicompendium.js';
 
 function arg(name: string, fallback: string): string {
@@ -66,6 +67,8 @@ async function main(): Promise<void> {
   const { pools: memoryAffixPools, revivedMemories } = await scrapeHeroMemory(cfg);
   console.error('[scrape] tlicompendium: vorax (master+en)…');
   const { affixes: voraxAffixes, legendaries: voraxLegendaries } = await scrapeVorax(cfg);
+  console.error('[scrape] tlicompendium: kismet…');
+  const kismets = await scrapeKismet(cfg);
 
   const gearBases = [...gear, ...legendaries];
   const talents = traits.length > 0 ? traits : seedDataset.talents;
@@ -89,7 +92,8 @@ async function main(): Promise<void> {
     voidCharts,
     talentTrees,
     voraxAffixes,
-    voraxLegendaries
+    voraxLegendaries,
+    kismets
   };
 
   mkdirSync(outDir, { recursive: true });
@@ -107,6 +111,7 @@ async function main(): Promise<void> {
   write('memories.json', dataset.memories);
   write('voraxAffixes.json', voraxAffixes);
   write('voraxLegendaries.json', voraxLegendaries);
+  write('kismets.json', kismets);
 
   const withMods = (arr: { modifiers?: unknown[]; implicit?: unknown[] }[]) =>
     arr.filter((x) => (x.modifiers ?? x.implicit ?? []).length > 0).length;
@@ -124,6 +129,7 @@ async function main(): Promise<void> {
   console.error(`  revivedMemories: ${revivedMemories.length}`);
   console.error(`  voraxAffixes   : ${voraxAffixes.length} (${withMods(voraxAffixes)} with modifiers)`);
   console.error(`  voraxLegendaries: ${voraxLegendaries.length} (${withMods(voraxLegendaries)} with modifiers)`);
+  console.error(`  kismets        : ${kismets.length} (${withMods(kismets)} with modifiers)`);
 
   const problems = validateDataset(dataset);
   const damageless = problems.filter((p) => /no base damage/.test(p)).length;

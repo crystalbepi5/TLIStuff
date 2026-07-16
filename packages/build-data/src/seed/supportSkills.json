@@ -2105,6 +2105,107 @@
     "manaMultiplier": 110
   },
   {
+    "id": "thornfield-sacrifice-magnificent",
+    "name": "Thornfield: Sacrifice (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.02
+      }
+    ],
+    "requiresTags": [],
+    "manaMultiplier": 110
+  },
+  {
+    "id": "tidewell-torrent-magnificent",
+    "name": "Tidewell: Torrent (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": [],
+    "manaMultiplier": 110
+  },
+  {
+    "id": "haunting-abomination-ravage-magnificent",
+    "name": "Haunting Abomination: Ravage (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": [],
+    "manaMultiplier": 110
+  },
+  {
+    "id": "fallen-star-crush-magnificent",
+    "name": "Fallen Star: Crush (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": [],
+    "manaMultiplier": 110
+  },
+  {
+    "id": "nether-grasp-devour-magnificent",
+    "name": "Nether Grasp: Devour (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.06
+      }
+    ],
+    "requiresTags": [],
+    "manaMultiplier": 110
+  },
+  {
+    "id": "flame-jet-scorching-wave-magnificent",
+    "name": "Flame Jet: Scorching Wave (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": [],
+    "manaMultiplier": 110
+  },
+  {
+    "id": "storm-field-thunderclap-magnificent",
+    "name": "Storm Field: Thunderclap (Magnificent)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": [],
+    "manaMultiplier": 110
+  },
+  {
     "id": "module-goblin-priest",
     "name": "Module: Goblin Priest",
     "modifiers": [],
@@ -2569,11 +2670,6 @@
         "stat": "moreDamage",
         "op": "more",
         "value": 0.2
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.5
       }
     ],
     "requiresTags": [],
@@ -4183,6 +4279,149 @@
         "stat": "moreDamage",
         "op": "more",
         "value": -0.99
+      }
+    ],
+    "requiresTags": [],
+    "manaMultiplier": 110
+  },
+  {
+    "id": "haunting-abomination-misdeeds-noble",
+    "name": "Haunting Abomination: Misdeeds (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": [],
+    "manaMultiplier": 110
+  },
+  {
+    "id": "thornfield-retribution-noble",
+    "name": "Thornfield: Retribution (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": [],
+    "manaMultiplier": 110
+  },
+  {
+    "id": "tidewell-undertow-noble",
+    "name": "Tidewell: Undertow (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": [],
+    "manaMultiplier": 110
+  },
+  {
+    "id": "fallen-star-starfall-noble",
+    "name": "Fallen Star: Starfall (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": [],
+    "manaMultiplier": 110
+  },
+  {
+    "id": "fallen-star-gravity-noble",
+    "name": "Fallen Star: Gravity (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": [],
+    "manaMultiplier": 110
+  },
+  {
+    "id": "nether-grasp-extermination-noble",
+    "name": "Nether Grasp: Extermination (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": [],
+    "manaMultiplier": 110
+  },
+  {
+    "id": "storm-field-conduction-noble",
+    "name": "Storm Field: Conduction (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": [],
+    "manaMultiplier": 110
+  },
+  {
+    "id": "chromatic-shot-condensed-cold-noble",
+    "name": "Chromatic Shot: Condensed Cold (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": [],
+    "manaMultiplier": 110
+  },
+  {
+    "id": "chromatic-shot-condensed-fire-noble",
+    "name": "Chromatic Shot: Condensed Fire (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": [],
+    "manaMultiplier": 110
+  },
+  {
+    "id": "chromatic-shot-condensed-lightning-noble",
+    "name": "Chromatic Shot: Condensed Lightning (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
+      }
+    ],
+    "requiresTags": [],
+    "manaMultiplier": 110
+  },
+  {
+    "id": "chromatic-shot-condensed-erosion-noble",
+    "name": "Chromatic Shot: Condensed Erosion (Noble)",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
       }
     ],
     "requiresTags": [],
@@ -21135,7 +21374,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.125
+        "value": 0.185
       }
     ],
     "requiresTags": [],
@@ -21147,7 +21386,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.125
+            "value": 0.185
           }
         ]
       },
@@ -21157,7 +21396,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.13
+            "value": 0.19
           }
         ]
       },
@@ -21167,7 +21406,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.135
+            "value": 0.195
           }
         ]
       },
@@ -21177,7 +21416,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.14
+            "value": 0.2
           }
         ]
       },
@@ -21187,7 +21426,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.145
+            "value": 0.205
           }
         ]
       },
@@ -21197,7 +21436,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.15
+            "value": 0.21
           }
         ]
       },
@@ -21207,7 +21446,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.155
+            "value": 0.215
           }
         ]
       },
@@ -21217,7 +21456,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.16
+            "value": 0.22
           }
         ]
       },
@@ -21227,7 +21466,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.165
+            "value": 0.225
           }
         ]
       },
@@ -21237,7 +21476,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.17
+            "value": 0.23
           }
         ]
       },
@@ -21247,7 +21486,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.175
+            "value": 0.235
           }
         ]
       },
@@ -21257,7 +21496,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.18
+            "value": 0.24
           }
         ]
       },
@@ -21267,7 +21506,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.185
+            "value": 0.245
           }
         ]
       },
@@ -21277,7 +21516,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.19
+            "value": 0.25
           }
         ]
       },
@@ -21287,7 +21526,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.195
+            "value": 0.255
           }
         ]
       },
@@ -21297,7 +21536,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.2
+            "value": 0.26
           }
         ]
       },
@@ -21307,7 +21546,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.205
+            "value": 0.265
           }
         ]
       },
@@ -21317,7 +21556,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.21
+            "value": 0.27
           }
         ]
       },
@@ -21327,7 +21566,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.215
+            "value": 0.275
           }
         ]
       },
@@ -21337,7 +21576,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.22
+            "value": 0.28
           }
         ]
       },
@@ -21347,7 +21586,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.225
+            "value": 0.285
           }
         ]
       },
@@ -21357,7 +21596,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.23
+            "value": 0.29
           }
         ]
       },
@@ -21367,7 +21606,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.235
+            "value": 0.295
           }
         ]
       },
@@ -21377,7 +21616,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.24
+            "value": 0.3
           }
         ]
       },
@@ -21387,7 +21626,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.245
+            "value": 0.305
           }
         ]
       },
@@ -21397,7 +21636,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.25
+            "value": 0.31
           }
         ]
       },
@@ -21407,7 +21646,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.255
+            "value": 0.315
           }
         ]
       },
@@ -21417,7 +21656,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.26
+            "value": 0.32
           }
         ]
       },
@@ -21427,7 +21666,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.265
+            "value": 0.325
           }
         ]
       },
@@ -21437,7 +21676,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.27
+            "value": 0.33
           }
         ]
       },
@@ -21447,7 +21686,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.275
+            "value": 0.335
           }
         ]
       },
@@ -21457,7 +21696,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.28
+            "value": 0.34
           }
         ]
       },
@@ -21467,7 +21706,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.285
+            "value": 0.345
           }
         ]
       },
@@ -21477,7 +21716,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.29
+            "value": 0.35
           }
         ]
       },
@@ -21487,7 +21726,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.295
+            "value": 0.355
           }
         ]
       },
@@ -21497,7 +21736,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.3
+            "value": 0.36
           }
         ]
       },
@@ -21507,7 +21746,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.305
+            "value": 0.365
           }
         ]
       },
@@ -21517,7 +21756,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.31
+            "value": 0.37
           }
         ]
       },
@@ -21527,7 +21766,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.315
+            "value": 0.375
           }
         ]
       },
@@ -21537,7 +21776,7 @@
           {
             "stat": "moreDamage",
             "op": "more",
-            "value": 0.32
+            "value": 0.38
           }
         ]
       }
@@ -31594,6 +31833,415 @@
       {
         "level": 40,
         "modifiers": []
+      }
+    ]
+  },
+  {
+    "id": "channeled-depths",
+    "name": "Channeled Depths",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": -0.045
+      }
+    ],
+    "requiresTags": [],
+    "manaMultiplier": 110,
+    "levelScaling": [
+      {
+        "level": 1,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.045
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.04
+          }
+        ]
+      },
+      {
+        "level": 3,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.035
+          }
+        ]
+      },
+      {
+        "level": 4,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.03
+          }
+        ]
+      },
+      {
+        "level": 5,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.025
+          }
+        ]
+      },
+      {
+        "level": 6,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.02
+          }
+        ]
+      },
+      {
+        "level": 7,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.015
+          }
+        ]
+      },
+      {
+        "level": 8,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.01
+          }
+        ]
+      },
+      {
+        "level": 9,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.005
+          }
+        ]
+      },
+      {
+        "level": 10,
+        "modifiers": []
+      },
+      {
+        "level": 11,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.005
+          }
+        ]
+      },
+      {
+        "level": 12,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.01
+          }
+        ]
+      },
+      {
+        "level": 13,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.015
+          }
+        ]
+      },
+      {
+        "level": 14,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.02
+          }
+        ]
+      },
+      {
+        "level": 15,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.025
+          }
+        ]
+      },
+      {
+        "level": 16,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.03
+          }
+        ]
+      },
+      {
+        "level": 17,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.035
+          }
+        ]
+      },
+      {
+        "level": 18,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.04
+          }
+        ]
+      },
+      {
+        "level": 19,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.045
+          }
+        ]
+      },
+      {
+        "level": 20,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.05
+          }
+        ]
+      },
+      {
+        "level": 21,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.055
+          }
+        ]
+      },
+      {
+        "level": 22,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.0575
+          }
+        ]
+      },
+      {
+        "level": 23,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.06
+          }
+        ]
+      },
+      {
+        "level": 24,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.0625
+          }
+        ]
+      },
+      {
+        "level": 25,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.065
+          }
+        ]
+      },
+      {
+        "level": 26,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.0675
+          }
+        ]
+      },
+      {
+        "level": 27,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.07
+          }
+        ]
+      },
+      {
+        "level": 28,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.0725
+          }
+        ]
+      },
+      {
+        "level": 29,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.075
+          }
+        ]
+      },
+      {
+        "level": 30,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.0775
+          }
+        ]
+      },
+      {
+        "level": 31,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.08
+          }
+        ]
+      },
+      {
+        "level": 32,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.0825
+          }
+        ]
+      },
+      {
+        "level": 33,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.085
+          }
+        ]
+      },
+      {
+        "level": 34,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.0875
+          }
+        ]
+      },
+      {
+        "level": 35,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.09
+          }
+        ]
+      },
+      {
+        "level": 36,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.0925
+          }
+        ]
+      },
+      {
+        "level": 37,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.095
+          }
+        ]
+      },
+      {
+        "level": 38,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.0975
+          }
+        ]
+      },
+      {
+        "level": 39,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.1
+          }
+        ]
+      },
+      {
+        "level": 40,
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.1025
+          }
+        ]
       }
     ]
   }

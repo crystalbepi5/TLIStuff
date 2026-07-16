@@ -3199,7 +3199,13 @@
           "x": 736,
           "y": 176
         },
-        "modifiers": []
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": -0.03
+          }
+        ]
       },
       {
         "id": "78a4b1bc-1787-5f03-9140-6fda9800a223",
@@ -3549,7 +3555,7 @@
         "type": "medium",
         "icon": "/images/talent-tree/JX_DmgExtra_64.webp",
         "connections": [
-          "545eba72-0bad-5d25-9682-8e178fadd981"
+          "3d3cd01e-0a06-5764-bf50-eb15899ca635"
         ],
         "maxPoints": 3,
         "position": {
@@ -3619,7 +3625,7 @@
         "modifiers": []
       },
       {
-        "id": "545eba72-0bad-5d25-9682-8e178fadd981",
+        "id": "3d3cd01e-0a06-5764-bf50-eb15899ca635",
         "tlidbId": "node_480_176",
         "type": "micro",
         "icon": "/images/talent-tree/JX_DmgExtra_64.webp",
@@ -3640,11 +3646,26 @@
         "type": "medium",
         "icon": "/images/talent-tree/JX_DmgExtra_64.webp",
         "connections": [
-          "545eba72-0bad-5d25-9682-8e178fadd981"
+          "3d3cd01e-0a06-5764-bf50-eb15899ca635"
         ],
         "maxPoints": 3,
         "position": {
           "x": 608,
+          "y": 176
+        },
+        "modifiers": []
+      },
+      {
+        "id": "de4bafc9-adc2-5b2a-b8c3-36c6f076191c",
+        "tlidbId": "node_736_176",
+        "type": "micro",
+        "icon": "/images/talent-tree/JX_Agi_64.webp",
+        "connections": [
+          "3f1a9fc5-13d3-58cd-b93b-c01532d7ca59"
+        ],
+        "maxPoints": 3,
+        "position": {
+          "x": 736,
           "y": 176
         },
         "modifiers": []
@@ -3655,7 +3676,7 @@
         "type": "legendary",
         "icon": "/images/talent-tree/JX_DmgExtra_64.webp",
         "connections": [
-          "b4348e88-d577-5aaa-9806-ad212620324c"
+          "de4bafc9-adc2-5b2a-b8c3-36c6f076191c"
         ],
         "maxPoints": 1,
         "position": {
@@ -3749,7 +3770,7 @@
         ]
       },
       {
-        "id": "3d3cd01e-0a06-5764-bf50-eb15899ca635",
+        "id": "545eba72-0bad-5d25-9682-8e178fadd981",
         "tlidbId": "node_608_272",
         "type": "micro",
         "icon": "/images/talent-tree/JX_DmgExtra_64.webp",
@@ -3766,14 +3787,13 @@
       {
         "id": "b4348e88-d577-5aaa-9806-ad212620324c",
         "tlidbId": "node_736_272",
-        "type": "legendary",
+        "type": "medium",
         "icon": "/images/talent-tree/JX_DmgExtra_64.webp",
         "connections": [
-          "3d3cd01e-0a06-5764-bf50-eb15899ca635",
-          "3f1a9fc5-13d3-58cd-b93b-c01532d7ca59",
+          "545eba72-0bad-5d25-9682-8e178fadd981",
           "7288ad89-7bad-5854-b8e4-6d232efba10b"
         ],
-        "maxPoints": 1,
+        "maxPoints": 3,
         "position": {
           "x": 736,
           "y": 272
@@ -6933,27 +6953,12 @@
         ]
       },
       {
-        "id": "f80a1b83-6e8d-5886-9ee4-72388ee40c4e",
-        "tlidbId": "node_352_272",
-        "type": "micro",
-        "icon": "/images/talent-tree/JX_Defence02_64.webp",
-        "connections": [
-          "1c2c8fe6-6866-526a-9d2b-e745dcbd1b37"
-        ],
-        "maxPoints": 3,
-        "position": {
-          "x": 352,
-          "y": 272
-        },
-        "modifiers": []
-      },
-      {
         "id": "1c2c8fe6-6866-526a-9d2b-e745dcbd1b37",
         "tlidbId": "node_480_272",
-        "type": "medium",
-        "icon": "/images/talent-tree/JX_Defence02_64.webp",
+        "type": "micro",
+        "icon": "/images/talent-tree/JX_Crit02_64.webp",
         "connections": [
-          "f80a1b83-6e8d-5886-9ee4-72388ee40c4e"
+          "b073ed6a-b436-5b8e-beaa-c24a2525bfa2"
         ],
         "maxPoints": 3,
         "position": {
@@ -6965,9 +6970,10 @@
       {
         "id": "b073ed6a-b436-5b8e-beaa-c24a2525bfa2",
         "tlidbId": "node_608_272",
-        "type": "micro",
+        "type": "medium",
         "icon": "/images/talent-tree/JX_Crit02_64.webp",
         "connections": [
+          "1c2c8fe6-6866-526a-9d2b-e745dcbd1b37",
           "82c691a5-0063-50bd-97ab-3d2d63f680e3"
         ],
         "maxPoints": 3,
@@ -6980,12 +6986,12 @@
       {
         "id": "82c691a5-0063-50bd-97ab-3d2d63f680e3",
         "tlidbId": "node_736_272",
-        "type": "medium",
+        "type": "legendary",
         "icon": "/images/talent-tree/JX_Crit02_64.webp",
         "connections": [
           "b073ed6a-b436-5b8e-beaa-c24a2525bfa2"
         ],
-        "maxPoints": 3,
+        "maxPoints": 1,
         "position": {
           "x": 736,
           "y": 272
@@ -7072,7 +7078,7 @@
         "id": "543014a6-5187-597c-8630-11e370bf1479",
         "tlidbId": "node_96_464",
         "type": "micro",
-        "icon": "/images/talent-tree/JX_Flask02_64.webp",
+        "icon": "/images/talent-tree/JX_Defence02_64.webp",
         "connections": [
           "7cc1de11-f438-59f9-ba47-3532b589f85a"
         ],
@@ -7081,19 +7087,13 @@
           "x": 96,
           "y": 464
         },
-        "modifiers": [
-          {
-            "stat": "increasedLife",
-            "op": "increased",
-            "value": 2
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "7cc1de11-f438-59f9-ba47-3532b589f85a",
         "tlidbId": "node_224_464",
         "type": "medium",
-        "icon": "/images/talent-tree/JX_Flask02_64.webp",
+        "icon": "/images/talent-tree/JX_Defence02_64.webp",
         "connections": [
           "543014a6-5187-597c-8630-11e370bf1479"
         ],
@@ -7102,19 +7102,13 @@
           "x": 224,
           "y": 464
         },
-        "modifiers": [
-          {
-            "stat": "increasedLife",
-            "op": "increased",
-            "value": 4
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "362475f8-97a1-50b3-87e5-7b9dbdbd1105",
         "tlidbId": "node_352_464",
         "type": "micro",
-        "icon": "/images/talent-tree/JX_Armor_64.webp",
+        "icon": "/images/talent-tree/JX_Crit02_64.webp",
         "connections": [
           "aa01f5d1-74cf-51be-a17a-a4f68242acbf"
         ],
@@ -7129,7 +7123,7 @@
         "id": "aa01f5d1-74cf-51be-a17a-a4f68242acbf",
         "tlidbId": "node_480_464",
         "type": "medium",
-        "icon": "/images/talent-tree/JX_Armor_64.webp",
+        "icon": "/images/talent-tree/JX_Crit02_64.webp",
         "connections": [
           "362475f8-97a1-50b3-87e5-7b9dbdbd1105"
         ],
@@ -8124,12 +8118,12 @@
       {
         "id": "75cd3204-70bd-59e4-830a-40523b88e103",
         "tlidbId": "node_480_464",
-        "type": "medium",
+        "type": "legendary",
         "icon": "/images/talent-tree/SL_Defence01_64.webp",
         "connections": [
           "bc9815b8-d6cd-526f-9526-845f4638d6b5"
         ],
-        "maxPoints": 3,
+        "maxPoints": 1,
         "position": {
           "x": 480,
           "y": 464
@@ -14022,21 +14016,21 @@
       {
         "id": "3c849ea7-21c1-5f49-aad1-db91e1b776f8",
         "tlidbId": "node_608_176",
-        "type": "medium",
+        "type": "legendary",
         "icon": "/images/talent-tree/JL_DmgAll_64.webp",
         "connections": [
           "f86e00a5-342c-509d-b944-050e6bb4b7d0"
         ],
-        "maxPoints": 3,
+        "maxPoints": 1,
         "position": {
           "x": 608,
           "y": 176
         },
         "modifiers": [
           {
-            "stat": "increasedFire",
-            "op": "increased",
-            "value": 18
+            "stat": "moreDamage",
+            "op": "more",
+            "value": 0.04
           }
         ]
       },
@@ -14251,46 +14245,19 @@
         "modifiers": []
       },
       {
-        "id": "0640e4a3-a3b4-5d1c-a86a-e78ed1dfabb8",
-        "tlidbId": "node_736_368",
-        "type": "micro",
-        "icon": "/images/talent-tree/JL_DmgAll_64.webp",
-        "connections": [
-          "82637471-ad1f-5c5f-8bf7-aa6a3df8965a"
-        ],
-        "maxPoints": 3,
-        "position": {
-          "x": 736,
-          "y": 368
-        },
-        "modifiers": [
-          {
-            "stat": "increasedFire",
-            "op": "increased",
-            "value": 9
-          }
-        ]
-      },
-      {
         "id": "82637471-ad1f-5c5f-8bf7-aa6a3df8965a",
         "tlidbId": "node_864_368",
         "type": "legendary",
         "icon": "/images/talent-tree/JL_DmgAll_64.webp",
         "connections": [
-          "0640e4a3-a3b4-5d1c-a86a-e78ed1dfabb8"
+          "6415aa61-a8f8-5c47-b934-53a263d7badc"
         ],
         "maxPoints": 1,
         "position": {
           "x": 864,
           "y": 368
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.04
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "f7176690-4e2f-5b0a-b8f3-74ca99532ba7",
@@ -14392,6 +14359,7 @@
         "icon": "/images/talent-tree/JL_Dot_64.webp",
         "connections": [
           "f10b4317-4599-5497-955f-1119f6feedd1",
+          "82637471-ad1f-5c5f-8bf7-aa6a3df8965a",
           "2f562b28-e9fc-5b5f-99a9-ad27cba48532"
         ],
         "maxPoints": 3,

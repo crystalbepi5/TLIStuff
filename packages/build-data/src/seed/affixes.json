@@ -245,7 +245,6 @@
       "140340704",
       "140340705",
       "140340706",
-      "140340707",
       "104810080",
       "104810000",
       "104810001",
@@ -1773,19 +1772,6 @@
         ],
         "levelRequirement": 40,
         "modifierId": "140340706"
-      },
-      {
-        "tier": "7",
-        "weight": 6250,
-        "modifiers": [
-          {
-            "stat": "life",
-            "op": "flat",
-            "value": 66
-          }
-        ],
-        "levelRequirement": 1,
-        "modifierId": "140340707"
       },
       {
         "tier": "0+",
@@ -3571,7 +3557,8 @@
     "slots": [
       "boots",
       "chest",
-      "gloves"
+      "gloves",
+      "helmet"
     ],
     "modifierIds": [
       "140512480",
@@ -3627,7 +3614,25 @@
       "140402701",
       "140402702",
       "140402703",
-      "140402704"
+      "140402704",
+      "140711580",
+      "140711500",
+      "140711501",
+      "140711502",
+      "140711503",
+      "140711504",
+      "140723880",
+      "140723800",
+      "140723801",
+      "140723802",
+      "140723803",
+      "140723804",
+      "140701580",
+      "140701500",
+      "140701501",
+      "140701502",
+      "140701503",
+      "140701504"
     ],
     "tiers": [
       {
@@ -4331,6 +4336,240 @@
         ],
         "levelRequirement": 68,
         "modifierId": "140402704"
+      },
+      {
+        "tier": "0+",
+        "weight": 0,
+        "modifiers": [
+          {
+            "stat": "critDamage",
+            "op": "flat",
+            "value": 100
+          }
+        ],
+        "levelRequirement": 100,
+        "modifierId": "140711580"
+      },
+      {
+        "tier": "0",
+        "weight": 0,
+        "modifiers": [
+          {
+            "stat": "critDamage",
+            "op": "flat",
+            "value": 78
+          }
+        ],
+        "levelRequirement": 100,
+        "modifierId": "140711500"
+      },
+      {
+        "tier": "1",
+        "weight": 100,
+        "modifiers": [
+          {
+            "stat": "critDamage",
+            "op": "flat",
+            "value": 60
+          }
+        ],
+        "levelRequirement": 86,
+        "modifierId": "140711501"
+      },
+      {
+        "tier": "2",
+        "weight": 200,
+        "modifiers": [
+          {
+            "stat": "critDamage",
+            "op": "flat",
+            "value": 42
+          }
+        ],
+        "levelRequirement": 82,
+        "modifierId": "140711502"
+      },
+      {
+        "tier": "3",
+        "weight": 800,
+        "modifiers": [
+          {
+            "stat": "critDamage",
+            "op": "flat",
+            "value": 30
+          }
+        ],
+        "levelRequirement": 76,
+        "modifierId": "140711503"
+      },
+      {
+        "tier": "4",
+        "weight": 3200,
+        "modifiers": [
+          {
+            "stat": "critDamage",
+            "op": "flat",
+            "value": 24
+          }
+        ],
+        "levelRequirement": 68,
+        "modifierId": "140711504"
+      },
+      {
+        "tier": "0+",
+        "weight": 0,
+        "modifiers": [
+          {
+            "stat": "critDamage",
+            "op": "flat",
+            "value": 100
+          }
+        ],
+        "levelRequirement": 100,
+        "modifierId": "140723880"
+      },
+      {
+        "tier": "0",
+        "weight": 0,
+        "modifiers": [
+          {
+            "stat": "critDamage",
+            "op": "flat",
+            "value": 78
+          }
+        ],
+        "levelRequirement": 100,
+        "modifierId": "140723800"
+      },
+      {
+        "tier": "1",
+        "weight": 100,
+        "modifiers": [
+          {
+            "stat": "critDamage",
+            "op": "flat",
+            "value": 60
+          }
+        ],
+        "levelRequirement": 86,
+        "modifierId": "140723801"
+      },
+      {
+        "tier": "2",
+        "weight": 200,
+        "modifiers": [
+          {
+            "stat": "critDamage",
+            "op": "flat",
+            "value": 42
+          }
+        ],
+        "levelRequirement": 82,
+        "modifierId": "140723802"
+      },
+      {
+        "tier": "3",
+        "weight": 800,
+        "modifiers": [
+          {
+            "stat": "critDamage",
+            "op": "flat",
+            "value": 30
+          }
+        ],
+        "levelRequirement": 76,
+        "modifierId": "140723803"
+      },
+      {
+        "tier": "4",
+        "weight": 3200,
+        "modifiers": [
+          {
+            "stat": "critDamage",
+            "op": "flat",
+            "value": 24
+          }
+        ],
+        "levelRequirement": 68,
+        "modifierId": "140723804"
+      },
+      {
+        "tier": "0+",
+        "weight": 0,
+        "modifiers": [
+          {
+            "stat": "critDamage",
+            "op": "flat",
+            "value": 100
+          }
+        ],
+        "levelRequirement": 100,
+        "modifierId": "140701580"
+      },
+      {
+        "tier": "0",
+        "weight": 0,
+        "modifiers": [
+          {
+            "stat": "critDamage",
+            "op": "flat",
+            "value": 78
+          }
+        ],
+        "levelRequirement": 100,
+        "modifierId": "140701500"
+      },
+      {
+        "tier": "1",
+        "weight": 100,
+        "modifiers": [
+          {
+            "stat": "critDamage",
+            "op": "flat",
+            "value": 60
+          }
+        ],
+        "levelRequirement": 86,
+        "modifierId": "140701501"
+      },
+      {
+        "tier": "2",
+        "weight": 200,
+        "modifiers": [
+          {
+            "stat": "critDamage",
+            "op": "flat",
+            "value": 42
+          }
+        ],
+        "levelRequirement": 82,
+        "modifierId": "140701502"
+      },
+      {
+        "tier": "3",
+        "weight": 800,
+        "modifiers": [
+          {
+            "stat": "critDamage",
+            "op": "flat",
+            "value": 30
+          }
+        ],
+        "levelRequirement": 76,
+        "modifierId": "140701503"
+      },
+      {
+        "tier": "4",
+        "weight": 3200,
+        "modifiers": [
+          {
+            "stat": "critDamage",
+            "op": "flat",
+            "value": 24
+          }
+        ],
+        "levelRequirement": 68,
+        "modifierId": "140701504"
       }
     ]
   },
@@ -32272,7 +32511,7 @@
           {
             "stat": "increasedPhysical",
             "op": "increased",
-            "value": 77
+            "value": 76
           }
         ],
         "levelRequirement": 82,
@@ -32285,7 +32524,7 @@
           {
             "stat": "increasedPhysical",
             "op": "increased",
-            "value": 55
+            "value": 54
           }
         ],
         "levelRequirement": 76,
@@ -32298,7 +32537,7 @@
           {
             "stat": "increasedPhysical",
             "op": "increased",
-            "value": 39
+            "value": 43
           }
         ],
         "levelRequirement": 68,
@@ -32311,7 +32550,7 @@
           {
             "stat": "increasedPhysical",
             "op": "increased",
-            "value": 26
+            "value": 35
           }
         ],
         "levelRequirement": 58,
@@ -32324,7 +32563,7 @@
           {
             "stat": "increasedPhysical",
             "op": "increased",
-            "value": 17
+            "value": 28
           }
         ],
         "levelRequirement": 40,
@@ -32337,7 +32576,7 @@
           {
             "stat": "increasedPhysical",
             "op": "increased",
-            "value": 12
+            "value": 22
           }
         ],
         "levelRequirement": 1,
@@ -32389,7 +32628,7 @@
           {
             "stat": "increasedPhysical",
             "op": "increased",
-            "value": 77
+            "value": 76
           }
         ],
         "levelRequirement": 82,
@@ -32402,7 +32641,7 @@
           {
             "stat": "increasedPhysical",
             "op": "increased",
-            "value": 55
+            "value": 54
           }
         ],
         "levelRequirement": 76,
@@ -32415,7 +32654,7 @@
           {
             "stat": "increasedPhysical",
             "op": "increased",
-            "value": 39
+            "value": 43
           }
         ],
         "levelRequirement": 68,
@@ -32428,7 +32667,7 @@
           {
             "stat": "increasedPhysical",
             "op": "increased",
-            "value": 26
+            "value": 35
           }
         ],
         "levelRequirement": 58,
@@ -32441,7 +32680,7 @@
           {
             "stat": "increasedPhysical",
             "op": "increased",
-            "value": 17
+            "value": 28
           }
         ],
         "levelRequirement": 40,
@@ -32454,7 +32693,7 @@
           {
             "stat": "increasedPhysical",
             "op": "increased",
-            "value": 12
+            "value": 22
           }
         ],
         "levelRequirement": 1,
@@ -35799,380 +36038,6 @@
         ],
         "levelRequirement": 1,
         "modifierId": "140101407"
-      }
-    ]
-  },
-  {
-    "id": "max-terra-quantity-additional-damage-suffix",
-    "name": "Max Terra Quantity additional damage",
-    "kind": "suffix",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.1
-      }
-    ],
-    "slots": [
-      "weapon"
-    ],
-    "modifierIds": [
-      "140262080",
-      "140262000",
-      "140262001",
-      "140341280",
-      "140341200",
-      "140341201",
-      "140320780",
-      "140320700",
-      "140320701",
-      "140282180",
-      "140282100",
-      "140282101",
-      "140271980",
-      "140271900",
-      "140271901",
-      "140121180",
-      "140121100",
-      "140121101"
-    ],
-    "tiers": [
-      {
-        "tier": "0+",
-        "weight": 0,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140262080"
-      },
-      {
-        "tier": "0",
-        "weight": 0,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.05
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140262000"
-      },
-      {
-        "tier": "1",
-        "weight": 100,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.01
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140262001"
-      },
-      {
-        "tier": "0+",
-        "weight": 0,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140341280"
-      },
-      {
-        "tier": "0",
-        "weight": 0,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.05
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140341200"
-      },
-      {
-        "tier": "1",
-        "weight": 100,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.01
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140341201"
-      },
-      {
-        "tier": "0+",
-        "weight": 0,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140320780"
-      },
-      {
-        "tier": "0",
-        "weight": 0,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.05
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140320700"
-      },
-      {
-        "tier": "1",
-        "weight": 100,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.01
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140320701"
-      },
-      {
-        "tier": "0+",
-        "weight": 0,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.2
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140282180"
-      },
-      {
-        "tier": "0",
-        "weight": 0,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140282100"
-      },
-      {
-        "tier": "1",
-        "weight": 100,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.01
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140282101"
-      },
-      {
-        "tier": "0+",
-        "weight": 0,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.2
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140271980"
-      },
-      {
-        "tier": "0",
-        "weight": 0,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140271900"
-      },
-      {
-        "tier": "1",
-        "weight": 100,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.01
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140271901"
-      },
-      {
-        "tier": "0+",
-        "weight": 0,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.2
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140121180"
-      },
-      {
-        "tier": "0",
-        "weight": 0,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140121100"
-      },
-      {
-        "tier": "1",
-        "weight": 100,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.01
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140121101"
-      }
-    ]
-  },
-  {
-    "id": "max-terra-quantity-additional-damage-suffix",
-    "name": "Max Terra Quantity additional damage",
-    "kind": "suffix",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.1
-      }
-    ],
-    "slots": [
-      "weapon"
-    ],
-    "modifierIds": [
-      "140262002",
-      "140341202",
-      "140320702",
-      "140282102",
-      "140271902",
-      "140121102"
-    ],
-    "tiers": [
-      {
-        "tier": "2",
-        "weight": 200,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.1
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140262002"
-      },
-      {
-        "tier": "2",
-        "weight": 200,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.1
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140341202"
-      },
-      {
-        "tier": "2",
-        "weight": 200,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.1
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140320702"
-      },
-      {
-        "tier": "2",
-        "weight": 200,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.2
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140282102"
-      },
-      {
-        "tier": "2",
-        "weight": 200,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.2
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140271902"
-      },
-      {
-        "tier": "2",
-        "weight": 200,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.2
-          }
-        ],
-        "levelRequirement": 100,
-        "modifierId": "140121102"
       }
     ]
   },

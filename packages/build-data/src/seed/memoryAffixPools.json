@@ -19737,6 +19737,74 @@
       ]
     },
     {
+      "id": "136f522b-fa75-5f91-80f3-ff1258d27ccb",
+      "name": "Terra Charge Recovery Speed",
+      "modifiers": [],
+      "modifierIds": [
+        "402177400"
+      ],
+      "tiers": [
+        {
+          "tier": "0",
+          "weight": 1000,
+          "levelRequirement": 86,
+          "modifierId": "402177400",
+          "modifiers": []
+        }
+      ]
+    },
+    {
+      "id": "c4b1d70b-2020-5839-a2ee-3cb7a786c772",
+      "name": "Terra Charge Recovery Speed",
+      "modifiers": [],
+      "modifierIds": [
+        "402177401"
+      ],
+      "tiers": [
+        {
+          "tier": "1",
+          "weight": 2000,
+          "levelRequirement": 86,
+          "modifierId": "402177401",
+          "modifiers": []
+        }
+      ]
+    },
+    {
+      "id": "805855d1-aa1c-562d-b68a-844677511e90",
+      "name": "Terra Charge Recovery Speed",
+      "modifiers": [],
+      "modifierIds": [
+        "402177402"
+      ],
+      "tiers": [
+        {
+          "tier": "2",
+          "weight": 3000,
+          "levelRequirement": 82,
+          "modifierId": "402177402",
+          "modifiers": []
+        }
+      ]
+    },
+    {
+      "id": "a4a41e40-da77-502c-b4da-513c1c27ccba",
+      "name": "Terra Charge Recovery Speed",
+      "modifiers": [],
+      "modifierIds": [
+        "402177403"
+      ],
+      "tiers": [
+        {
+          "tier": "3",
+          "weight": 4000,
+          "levelRequirement": 1,
+          "modifierId": "402177403",
+          "modifiers": []
+        }
+      ]
+    },
+    {
       "id": "36af0cac-f015-5567-96d6-0b2b477f447a",
       "name": "Skill Area",
       "modifiers": [],
@@ -22449,6 +22517,74 @@
               "value": 19
             }
           ]
+        }
+      ]
+    },
+    {
+      "id": "8dfe6a5d-48e5-5724-9c2b-31ddc2ffc3ba",
+      "name": "Terra Charge Recovery Speed",
+      "modifiers": [],
+      "modifierIds": [
+        "402177500"
+      ],
+      "tiers": [
+        {
+          "tier": "0",
+          "weight": 1000,
+          "levelRequirement": 86,
+          "modifierId": "402177500",
+          "modifiers": []
+        }
+      ]
+    },
+    {
+      "id": "1e93fa18-4732-5567-91d3-559720f5515e",
+      "name": "Terra Charge Recovery Speed",
+      "modifiers": [],
+      "modifierIds": [
+        "402177501"
+      ],
+      "tiers": [
+        {
+          "tier": "1",
+          "weight": 2000,
+          "levelRequirement": 86,
+          "modifierId": "402177501",
+          "modifiers": []
+        }
+      ]
+    },
+    {
+      "id": "03fb2c1e-6f61-5294-a1a1-4a662228ff5f",
+      "name": "Terra Charge Recovery Speed",
+      "modifiers": [],
+      "modifierIds": [
+        "402177502"
+      ],
+      "tiers": [
+        {
+          "tier": "2",
+          "weight": 3000,
+          "levelRequirement": 82,
+          "modifierId": "402177502",
+          "modifiers": []
+        }
+      ]
+    },
+    {
+      "id": "92c951af-0f72-5a8d-bcf0-0a3b8094547d",
+      "name": "Terra Charge Recovery Speed",
+      "modifiers": [],
+      "modifierIds": [
+        "402177503"
+      ],
+      "tiers": [
+        {
+          "tier": "3",
+          "weight": 4000,
+          "levelRequirement": 1,
+          "modifierId": "402177503",
+          "modifiers": []
         }
       ]
     },
@@ -25167,162 +25303,77 @@
           ]
         }
       ]
+    },
+    {
+      "id": "6666fe07-537f-5f3d-b33c-e16a97673839",
+      "name": "Terra Charge Recovery Speed",
+      "modifiers": [],
+      "modifierIds": [
+        "402177600"
+      ],
+      "tiers": [
+        {
+          "tier": "0",
+          "weight": 1000,
+          "levelRequirement": 86,
+          "modifierId": "402177600",
+          "modifiers": []
+        }
+      ]
+    },
+    {
+      "id": "29adc4c7-3629-541f-bdfa-3b06f57297be",
+      "name": "Terra Charge Recovery Speed",
+      "modifiers": [],
+      "modifierIds": [
+        "402177601"
+      ],
+      "tiers": [
+        {
+          "tier": "1",
+          "weight": 2000,
+          "levelRequirement": 86,
+          "modifierId": "402177601",
+          "modifiers": []
+        }
+      ]
+    },
+    {
+      "id": "ab0138aa-2829-5bfd-86b2-19d0387b3627",
+      "name": "Terra Charge Recovery Speed",
+      "modifiers": [],
+      "modifierIds": [
+        "402177602"
+      ],
+      "tiers": [
+        {
+          "tier": "2",
+          "weight": 3000,
+          "levelRequirement": 82,
+          "modifierId": "402177602",
+          "modifiers": []
+        }
+      ]
+    },
+    {
+      "id": "4eb88fcb-456a-50ba-8a7f-0f1ba063470e",
+      "name": "Terra Charge Recovery Speed",
+      "modifiers": [],
+      "modifierIds": [
+        "402177603"
+      ],
+      "tiers": [
+        {
+          "tier": "3",
+          "weight": 4000,
+          "levelRequirement": 1,
+          "modifierId": "402177603",
+          "modifiers": []
+        }
+      ]
     }
   ],
   "revivedAffixes": [
-    {
-      "id": "400578e9-117e-5bba-9438-d69178d04f6c",
-      "name": "Elixir Skills gain Charging Progress every second and Elixir Skill Effect if there are at least empty Active Skill slot(s) Aura Effect if there are at least empty Passive Skill Slot(s)",
-      "modifiers": [],
-      "modifierIds": [
-        "500100100"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 1000,
-          "levelRequirement": 82,
-          "modifierId": "500100100",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "76e5ee2b-3551-56fe-a540-a34e7572f905",
-      "name": "Elixir Skills gain Charging Progress every second and Elixir Skill Effect if there are at least empty Active Skill slot(s) Aura Effect if there are at least empty Passive Skill Slot(s)",
-      "modifiers": [],
-      "modifierIds": [
-        "500100101"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 1000,
-          "levelRequirement": 82,
-          "modifierId": "500100101",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "f7692afa-86c5-54ac-bc7f-e8eb70941568",
-      "name": "Elixir Skills gain Charging Progress every second and Elixir Skill Effect if there are at least empty Active Skill slot(s) Aura Effect if there are at least empty Passive Skill Slot(s)",
-      "modifiers": [],
-      "modifierIds": [
-        "500100102"
-      ],
-      "tiers": [
-        {
-          "tier": "3",
-          "weight": 1000,
-          "levelRequirement": 82,
-          "modifierId": "500100102",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "8b24e68a-ab90-52c5-8952-e086ba0212c6",
-      "name": "Elixir Skills gain Charging Progress every second and Elixir Skill Effect if there are at least empty Active Skill slot(s) Focus Effect if there are at least empty Passive Skill Slot(s)",
-      "modifiers": [],
-      "modifierIds": [
-        "500100200"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 1000,
-          "levelRequirement": 82,
-          "modifierId": "500100200",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "59ffc738-d8b6-5a1e-a2bf-331087660a30",
-      "name": "Elixir Skills gain Charging Progress every second and Elixir Skill Effect if there are at least empty Active Skill slot(s) Focus Effect if there are at least empty Passive Skill Slot(s)",
-      "modifiers": [],
-      "modifierIds": [
-        "500100201"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 1000,
-          "levelRequirement": 82,
-          "modifierId": "500100201",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "b188ae9b-5c60-5f04-b605-14a92a4bc708",
-      "name": "Elixir Skills gain Charging Progress every second and Elixir Skill Effect if there are at least empty Active Skill slot(s) Focus Effect if there are at least empty Passive Skill Slot(s)",
-      "modifiers": [],
-      "modifierIds": [
-        "500100202"
-      ],
-      "tiers": [
-        {
-          "tier": "3",
-          "weight": 1000,
-          "levelRequirement": 82,
-          "modifierId": "500100202",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "814d1e05-55f0-5171-8c7a-ef994b37ecee",
-      "name": "Elixir Skills gain Charging Progress every second and Elixir Skill Effect if there are at least empty Active Skill slot(s) Origin of Spirit Magus Effect if there are at least empty Passive Skill Slot(s)",
-      "modifiers": [],
-      "modifierIds": [
-        "500100300"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 1000,
-          "levelRequirement": 82,
-          "modifierId": "500100300",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "91847045-6f3b-56e1-9f07-79c9699a1bfc",
-      "name": "Elixir Skills gain Charging Progress every second and Elixir Skill Effect if there are at least empty Active Skill slot(s) Origin of Spirit Magus Effect if there are at least empty Passive Skill Slot(s)",
-      "modifiers": [],
-      "modifierIds": [
-        "500100301"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 1000,
-          "levelRequirement": 82,
-          "modifierId": "500100301",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "678baf29-fc99-5d00-ada1-928fe55ae8f9",
-      "name": "Elixir Skills gain Charging Progress every second and Elixir Skill Effect if there are at least empty Active Skill slot(s) Origin of Spirit Magus Effect if there are at least empty Passive Skill Slot(s)",
-      "modifiers": [],
-      "modifierIds": [
-        "500100302"
-      ],
-      "tiers": [
-        {
-          "tier": "3",
-          "weight": 1000,
-          "levelRequirement": 82,
-          "modifierId": "500100302",
-          "modifiers": []
-        }
-      ]
-    },
     {
       "id": "484f45d1-ae37-595a-9db3-1928f4c8f5b8",
       "name": "All Stats to All Stats",
@@ -25371,93 +25422,6 @@
           "levelRequirement": 82,
           "modifierId": "500100402",
           "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "d2f20bad-f1ba-5785-bcb0-17499b215a07",
-      "name": "additional damage if you have dealt a Critical Strike recently Critical Strikes do not deal additional damage",
-      "modifiers": [
-        {
-          "stat": "moreDamage",
-          "op": "more",
-          "value": 0.6
-        }
-      ],
-      "modifierIds": [
-        "500100500"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 1000,
-          "levelRequirement": 82,
-          "modifierId": "500100500",
-          "modifiers": [
-            {
-              "stat": "moreDamage",
-              "op": "more",
-              "value": 0.6
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "84b82ed7-7ef9-5802-a309-cb1f23f43a7e",
-      "name": "additional damage if you have dealt a Critical Strike recently Critical Strikes do not deal additional damage",
-      "modifiers": [
-        {
-          "stat": "moreDamage",
-          "op": "more",
-          "value": 0.45
-        }
-      ],
-      "modifierIds": [
-        "500100501"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 1000,
-          "levelRequirement": 82,
-          "modifierId": "500100501",
-          "modifiers": [
-            {
-              "stat": "moreDamage",
-              "op": "more",
-              "value": 0.45
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "9a789cd9-2009-5af8-947c-1e515c9dcb84",
-      "name": "additional damage if you have dealt a Critical Strike recently Critical Strikes do not deal additional damage",
-      "modifiers": [
-        {
-          "stat": "moreDamage",
-          "op": "more",
-          "value": 0.3
-        }
-      ],
-      "modifierIds": [
-        "500100502"
-      ],
-      "tiers": [
-        {
-          "tier": "3",
-          "weight": 1000,
-          "levelRequirement": 82,
-          "modifierId": "500100502",
-          "modifiers": [
-            {
-              "stat": "moreDamage",
-              "op": "more",
-              "value": 0.3
-            }
-          ]
         }
       ]
     },
@@ -25519,7 +25483,7 @@
         {
           "stat": "increasedAttackSpeed",
           "op": "increased",
-          "value": 7
+          "value": 2
         }
       ],
       "modifierIds": [
@@ -25535,7 +25499,7 @@
             {
               "stat": "increasedAttackSpeed",
               "op": "increased",
-              "value": 7
+              "value": 2
             }
           ]
         }
@@ -25548,7 +25512,7 @@
         {
           "stat": "increasedAttackSpeed",
           "op": "increased",
-          "value": 3
+          "value": 2
         }
       ],
       "modifierIds": [
@@ -25564,7 +25528,7 @@
             {
               "stat": "increasedAttackSpeed",
               "op": "increased",
-              "value": 3
+              "value": 2
             }
           ]
         }
@@ -25577,7 +25541,7 @@
         {
           "stat": "increasedAttackSpeed",
           "op": "increased",
-          "value": 2
+          "value": 1
         }
       ],
       "modifierIds": [
@@ -25593,7 +25557,7 @@
             {
               "stat": "increasedAttackSpeed",
               "op": "increased",
-              "value": 2
+              "value": 1
             }
           ]
         }
@@ -25646,57 +25610,6 @@
           "weight": 1000,
           "levelRequirement": 82,
           "modifierId": "500100802",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "f187c731-ac70-55bc-94a4-6d137600f0fd",
-      "name": "additional Ailment Duration Additionally settles of the remaining total Damage Over Time when Reaping, then removes all Damage Over Time acting on the target",
-      "modifiers": [],
-      "modifierIds": [
-        "500100900"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 1000,
-          "levelRequirement": 82,
-          "modifierId": "500100900",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "d5554d84-215b-509f-894e-6ca6298e4c4c",
-      "name": "additional Ailment Duration Additionally settles of the remaining total Damage Over Time when Reaping, then removes all Damage Over Time acting on the target",
-      "modifiers": [],
-      "modifierIds": [
-        "500100901"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 1000,
-          "levelRequirement": 82,
-          "modifierId": "500100901",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "f53e9885-f8e0-505d-9d23-d72302e7b6a2",
-      "name": "additional Ailment Duration Additionally settles of the remaining total Damage Over Time when Reaping, then removes all Damage Over Time acting on the target",
-      "modifiers": [],
-      "modifierIds": [
-        "500100902"
-      ],
-      "tiers": [
-        {
-          "tier": "3",
-          "weight": 1000,
-          "levelRequirement": 82,
-          "modifierId": "500100902",
           "modifiers": []
         }
       ]
@@ -25907,7 +25820,7 @@
     },
     {
       "id": "48b826d3-d3a7-5c02-858e-b4f590043375",
-      "name": "Armor DMG Mitigation Penetration against Traumatized enemies Eliminates Traumatized enemies with less than Life",
+      "name": "Armor DMG Mitigation Penetration against Traumatized enemies",
       "modifiers": [],
       "modifierIds": [
         "500101400"
@@ -25924,7 +25837,7 @@
     },
     {
       "id": "4e33142f-2d32-5e5e-b24f-07e9413ab0ad",
-      "name": "Armor DMG Mitigation Penetration against Traumatized enemies Eliminates Traumatized enemies with less than Life",
+      "name": "Armor DMG Mitigation Penetration against Traumatized enemies",
       "modifiers": [],
       "modifierIds": [
         "500101401"
@@ -25941,7 +25854,7 @@
     },
     {
       "id": "7349f285-51a1-51d3-a724-839890a6e9f9",
-      "name": "Armor DMG Mitigation Penetration against Traumatized enemies Eliminates Traumatized enemies with less than Life",
+      "name": "Armor DMG Mitigation Penetration against Traumatized enemies",
       "modifiers": [],
       "modifierIds": [
         "500101402"
@@ -26026,7 +25939,7 @@
     },
     {
       "id": "25996f12-308c-58f4-b229-de7f5a83db4c",
-      "name": "Base Traits now have Base Trait slots that can be installed with a Epic or lower Origin Memory. Base Stats and the value of Random Affixes of the Memory installed in this slot",
+      "name": "Base Traits now have Base Trait slots that can be installed with a Rare or lower Origin Memory. Base Stats and the value of Random Affixes of the Memory installed in this slot",
       "modifiers": [],
       "modifierIds": [
         "500101601"
@@ -26037,23 +25950,6 @@
           "weight": 1000,
           "levelRequirement": 82,
           "modifierId": "500101601",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "82c799eb-b89c-5cd0-9334-1d039e4397bb",
-      "name": "Base Traits now have Base Trait slots that can be installed with a Rare or lower Origin Memory. Base Stats and the value of Random Affixes of the Memory installed in this slot",
-      "modifiers": [],
-      "modifierIds": [
-        "500101602"
-      ],
-      "tiers": [
-        {
-          "tier": "3",
-          "weight": 1000,
-          "levelRequirement": 82,
-          "modifierId": "500101602",
           "modifiers": []
         }
       ]
@@ -26077,7 +25973,7 @@
     },
     {
       "id": "1cb5bbf3-dbb1-56c4-8600-f014d10e0c9a",
-      "name": "Base Traits now have Base Trait slots that can be installed with a Epic or lower Progress Memory. Base Stats and the value of Random Affixes of the Memory installed in this slot",
+      "name": "Base Traits now have Base Trait slots that can be installed with a Rare or lower Progress Memory. Base Stats and the value of Random Affixes of the Memory installed in this slot",
       "modifiers": [],
       "modifierIds": [
         "500101701"
@@ -26088,23 +25984,6 @@
           "weight": 1000,
           "levelRequirement": 82,
           "modifierId": "500101701",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "5355ca37-07f5-5c41-9de1-605dd7c95543",
-      "name": "Base Traits now have Base Trait slots that can be installed with a Rare or lower Progress Memory. Base Stats and the value of Random Affixes of the Memory installed in this slot",
-      "modifiers": [],
-      "modifierIds": [
-        "500101702"
-      ],
-      "tiers": [
-        {
-          "tier": "3",
-          "weight": 1000,
-          "levelRequirement": 82,
-          "modifierId": "500101702",
           "modifiers": []
         }
       ]
@@ -26128,7 +26007,7 @@
     },
     {
       "id": "e9024615-4c3c-56f8-9503-88d2382dbc4a",
-      "name": "Base Traits now have Base Trait slots that can be installed with a Epic or lower Discipline Memory. Base Stats and the value of Random Affixes of the Memory installed in this slot",
+      "name": "Base Traits now have Base Trait slots that can be installed with a Rare or lower Discipline Memory. Base Stats and the value of Random Affixes of the Memory installed in this slot",
       "modifiers": [],
       "modifierIds": [
         "500101801"
@@ -26142,994 +26021,7 @@
           "modifiers": []
         }
       ]
-    },
-    {
-      "id": "92ea37f3-29d4-5848-af79-10cb75b59c13",
-      "name": "Base Traits now have Base Trait slots that can be installed with a Rare or lower Discipline Memory. Base Stats and the value of Random Affixes of the Memory installed in this slot",
-      "modifiers": [],
-      "modifierIds": [
-        "500101802"
-      ],
-      "tiers": [
-        {
-          "tier": "3",
-          "weight": 1000,
-          "levelRequirement": 82,
-          "modifierId": "500101802",
-          "modifiers": []
-        }
-      ]
     }
   ],
-  "specialRandomAffixes": [
-    {
-      "id": "a98f23e5-55a3-5383-b207-32881c3c267b",
-      "name": "Elemental and Erosion Resistance Penetration",
-      "modifiers": [],
-      "modifierIds": [
-        "510100000"
-      ],
-      "tiers": [
-        {
-          "tier": "0",
-          "weight": 1084,
-          "levelRequirement": 86,
-          "modifierId": "510100000",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "6d54a8ba-9352-5617-911b-8c16c849c349",
-      "name": "Elemental and Erosion Resistance Penetration",
-      "modifiers": [],
-      "modifierIds": [
-        "510100001"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 2817,
-          "levelRequirement": 86,
-          "modifierId": "510100001",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "f541a8d5-79a4-5c65-8f9e-b2ae6460ca95",
-      "name": "Elemental and Erosion Resistance Penetration",
-      "modifiers": [],
-      "modifierIds": [
-        "510100002"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 5850,
-          "levelRequirement": 82,
-          "modifierId": "510100002",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "358f080e-af8a-50cc-b276-fc46ce3e66fc",
-      "name": "Armor DMG Mitigation Penetration",
-      "modifiers": [],
-      "modifierIds": [
-        "510100100"
-      ],
-      "tiers": [
-        {
-          "tier": "0",
-          "weight": 1084,
-          "levelRequirement": 86,
-          "modifierId": "510100100",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "c8982efb-5133-5be8-91f9-4fb2445f3afc",
-      "name": "Armor DMG Mitigation Penetration",
-      "modifiers": [],
-      "modifierIds": [
-        "510100101"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 2817,
-          "levelRequirement": 86,
-          "modifierId": "510100101",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "31be6aac-3f33-546a-a315-81d964da8611",
-      "name": "Armor DMG Mitigation Penetration",
-      "modifiers": [],
-      "modifierIds": [
-        "510100102"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 5850,
-          "levelRequirement": 82,
-          "modifierId": "510100102",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "b2751eb5-f9c1-5796-be99-5f2c7dd25ecf",
-      "name": "Max Elemental Resistance",
-      "modifiers": [],
-      "modifierIds": [
-        "510100200"
-      ],
-      "tiers": [
-        {
-          "tier": "0",
-          "weight": 1084,
-          "levelRequirement": 86,
-          "modifierId": "510100200",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "d1ed2a9e-ad0c-520f-b58c-b37e83bc64af",
-      "name": "Max Elemental Resistance",
-      "modifiers": [],
-      "modifierIds": [
-        "510100201"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 2817,
-          "levelRequirement": 86,
-          "modifierId": "510100201",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "6043ddf5-e663-5c80-94bb-282d107fbfbb",
-      "name": "Max Elemental Resistance",
-      "modifiers": [],
-      "modifierIds": [
-        "510100202"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 5850,
-          "levelRequirement": 82,
-          "modifierId": "510100202",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "37b39d97-6eb4-52d8-9696-ea3b1914575d",
-      "name": "Aura Effect",
-      "modifiers": [],
-      "modifierIds": [
-        "510100300"
-      ],
-      "tiers": [
-        {
-          "tier": "0",
-          "weight": 1084,
-          "levelRequirement": 86,
-          "modifierId": "510100300",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "dd245d24-3210-54e9-8e31-c3541c199456",
-      "name": "Aura Effect",
-      "modifiers": [],
-      "modifierIds": [
-        "510100301"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 2817,
-          "levelRequirement": 86,
-          "modifierId": "510100301",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "e1f9de48-d501-5c9d-af57-862a99586606",
-      "name": "Aura Effect",
-      "modifiers": [],
-      "modifierIds": [
-        "510100302"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 5850,
-          "levelRequirement": 82,
-          "modifierId": "510100302",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "11444c01-3f3e-5788-9677-c0c28ea131f6",
-      "name": "Sealed Mana Compensation",
-      "modifiers": [],
-      "modifierIds": [
-        "510100400"
-      ],
-      "tiers": [
-        {
-          "tier": "0",
-          "weight": 1084,
-          "levelRequirement": 86,
-          "modifierId": "510100400",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "5d31a318-745b-5ad9-96f0-7650e59c241b",
-      "name": "Sealed Mana Compensation",
-      "modifiers": [],
-      "modifierIds": [
-        "510100401"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 2817,
-          "levelRequirement": 86,
-          "modifierId": "510100401",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "6b4724ed-8286-54fc-b1ce-45334912fa23",
-      "name": "Sealed Mana Compensation",
-      "modifiers": [],
-      "modifierIds": [
-        "510100402"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 5850,
-          "levelRequirement": 82,
-          "modifierId": "510100402",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "b4fbcf56-0abd-5c6b-b43a-57698b83f296",
-      "name": "Block Ratio",
-      "modifiers": [],
-      "modifierIds": [
-        "510100500"
-      ],
-      "tiers": [
-        {
-          "tier": "0",
-          "weight": 1084,
-          "levelRequirement": 86,
-          "modifierId": "510100500",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "3013f265-e5d6-5885-9153-407710264aac",
-      "name": "Block Ratio",
-      "modifiers": [],
-      "modifierIds": [
-        "510100501"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 2817,
-          "levelRequirement": 86,
-          "modifierId": "510100501",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "f442e5d4-4c71-5be9-9f6a-bee9abc555c4",
-      "name": "Block Ratio",
-      "modifiers": [],
-      "modifierIds": [
-        "510100502"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 5850,
-          "levelRequirement": 82,
-          "modifierId": "510100502",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "2971758b-6522-50a9-978d-f599045f77c4",
-      "name": "additional Evasion on Spell Damage",
-      "modifiers": [],
-      "modifierIds": [
-        "510100600"
-      ],
-      "tiers": [
-        {
-          "tier": "0",
-          "weight": 1084,
-          "levelRequirement": 86,
-          "modifierId": "510100600",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "65cf4534-bc00-58a9-a7f8-d4a34985f69d",
-      "name": "additional Evasion on Spell Damage",
-      "modifiers": [],
-      "modifierIds": [
-        "510100601"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 2817,
-          "levelRequirement": 86,
-          "modifierId": "510100601",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "93ffc2cd-7994-5eb4-86ee-8a5b5efad126",
-      "name": "additional Evasion on Spell Damage",
-      "modifiers": [],
-      "modifierIds": [
-        "510100602"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 5850,
-          "levelRequirement": 82,
-          "modifierId": "510100602",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "e6f2405e-4ab3-55f2-8668-5789c915a484",
-      "name": "Armor Effective Rate for Non-Physical Damage",
-      "modifiers": [],
-      "modifierIds": [
-        "510100700"
-      ],
-      "tiers": [
-        {
-          "tier": "0",
-          "weight": 1084,
-          "levelRequirement": 86,
-          "modifierId": "510100700",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "98c69d36-a42a-56c0-ae6d-8121433d7ec2",
-      "name": "Armor Effective Rate for Non-Physical Damage",
-      "modifiers": [],
-      "modifierIds": [
-        "510100701"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 2817,
-          "levelRequirement": 86,
-          "modifierId": "510100701",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "e1645d7d-26ea-5faa-913e-12d47a70fc2e",
-      "name": "Armor Effective Rate for Non-Physical Damage",
-      "modifiers": [],
-      "modifierIds": [
-        "510100702"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 5850,
-          "levelRequirement": 82,
-          "modifierId": "510100702",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "82cb2652-28a4-51ed-bb49-1f01a5aad065",
-      "name": "Warcry Effect",
-      "modifiers": [],
-      "modifierIds": [
-        "510100800"
-      ],
-      "tiers": [
-        {
-          "tier": "0",
-          "weight": 1084,
-          "levelRequirement": 86,
-          "modifierId": "510100800",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "67fb0271-1f60-5c0b-9a61-f2103c1c8981",
-      "name": "Warcry Effect",
-      "modifiers": [],
-      "modifierIds": [
-        "510100801"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 2817,
-          "levelRequirement": 86,
-          "modifierId": "510100801",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "f3a4b104-599b-5b69-9730-0643768e5da0",
-      "name": "Warcry Effect",
-      "modifiers": [],
-      "modifierIds": [
-        "510100802"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 5850,
-          "levelRequirement": 82,
-          "modifierId": "510100802",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "8b952ad0-eb3a-5c4e-9f97-ff1516e06b41",
-      "name": "Converts of Physical Damage taken to random Elemental Damage",
-      "modifiers": [],
-      "modifierIds": [
-        "510100900"
-      ],
-      "tiers": [
-        {
-          "tier": "0",
-          "weight": 1084,
-          "levelRequirement": 86,
-          "modifierId": "510100900",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "18d2c61c-23f5-5f4f-9386-bb5391566726",
-      "name": "Converts of Physical Damage taken to random Elemental Damage",
-      "modifiers": [],
-      "modifierIds": [
-        "510100901"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 2817,
-          "levelRequirement": 86,
-          "modifierId": "510100901",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "6be55be4-1249-58df-9cc6-fbbf4fd3f3fa",
-      "name": "Converts of Physical Damage taken to random Elemental Damage",
-      "modifiers": [],
-      "modifierIds": [
-        "510100902"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 5850,
-          "levelRequirement": 82,
-          "modifierId": "510100902",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "4d64690e-c357-5c31-af36-d38c5e521e64",
-      "name": "Converts of Erosion Damage taken to random Elemental Damage",
-      "modifiers": [],
-      "modifierIds": [
-        "510101000"
-      ],
-      "tiers": [
-        {
-          "tier": "0",
-          "weight": 1084,
-          "levelRequirement": 86,
-          "modifierId": "510101000",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "f9ff2de8-3e1d-579e-805d-695916ba7263",
-      "name": "Converts of Erosion Damage taken to random Elemental Damage",
-      "modifiers": [],
-      "modifierIds": [
-        "510101001"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 2817,
-          "levelRequirement": 86,
-          "modifierId": "510101001",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "df767c7e-ecee-5b1d-a9cd-308ed6cfba98",
-      "name": "Converts of Erosion Damage taken to random Elemental Damage",
-      "modifiers": [],
-      "modifierIds": [
-        "510101002"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 5850,
-          "levelRequirement": 82,
-          "modifierId": "510101002",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "fce30b91-b5ad-5a2b-99d7-8a7b144a73ed",
-      "name": "chance to inflict Damaging Ailments",
-      "modifiers": [],
-      "modifierIds": [
-        "510101100"
-      ],
-      "tiers": [
-        {
-          "tier": "0",
-          "weight": 1084,
-          "levelRequirement": 86,
-          "modifierId": "510101100",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "bbecf462-2a82-5268-a057-2970379739a2",
-      "name": "chance to inflict Damaging Ailments",
-      "modifiers": [],
-      "modifierIds": [
-        "510101101"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 2817,
-          "levelRequirement": 86,
-          "modifierId": "510101101",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "ae4543b8-3f45-5018-aba9-df0c6a5319b0",
-      "name": "chance to inflict Damaging Ailments",
-      "modifiers": [],
-      "modifierIds": [
-        "510101102"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 5850,
-          "levelRequirement": 82,
-          "modifierId": "510101102",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "13bb8a9b-45d4-52b6-8798-4a332ed1eaad",
-      "name": "Barrier Absorption Rate",
-      "modifiers": [],
-      "modifierIds": [
-        "510101200"
-      ],
-      "tiers": [
-        {
-          "tier": "0",
-          "weight": 1084,
-          "levelRequirement": 86,
-          "modifierId": "510101200",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "10d03b68-77f3-50f5-9b58-c2d6667d72b2",
-      "name": "Barrier Absorption Rate",
-      "modifiers": [],
-      "modifierIds": [
-        "510101201"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 2817,
-          "levelRequirement": 86,
-          "modifierId": "510101201",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "6434946e-dfd8-5f5c-a432-707f26cb22ec",
-      "name": "Barrier Absorption Rate",
-      "modifiers": [],
-      "modifierIds": [
-        "510101202"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 5850,
-          "levelRequirement": 82,
-          "modifierId": "510101202",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "b30706d8-9240-5fc0-a637-c61026b95c28",
-      "name": "initial Growth for Spirit Magi",
-      "modifiers": [],
-      "modifierIds": [
-        "510101300"
-      ],
-      "tiers": [
-        {
-          "tier": "0",
-          "weight": 1084,
-          "levelRequirement": 86,
-          "modifierId": "510101300",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "201b8ab0-4f9f-5270-abd9-1d172959dcb6",
-      "name": "initial Growth for Spirit Magi",
-      "modifiers": [],
-      "modifierIds": [
-        "510101301"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 2817,
-          "levelRequirement": 86,
-          "modifierId": "510101301",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "6e572dbf-bec7-55d0-aa9e-70d8bb8c3dbe",
-      "name": "initial Growth for Spirit Magi",
-      "modifiers": [],
-      "modifierIds": [
-        "510101302"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 5850,
-          "levelRequirement": 82,
-          "modifierId": "510101302",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "83af6f55-c180-54b4-8416-92bf1ebf2d02",
-      "name": "+ Command per second",
-      "modifiers": [],
-      "modifierIds": [
-        "510101400"
-      ],
-      "tiers": [
-        {
-          "tier": "0",
-          "weight": 1084,
-          "levelRequirement": 86,
-          "modifierId": "510101400",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "b155f90a-1364-59bf-831e-78e72de96a73",
-      "name": "+ Command per second",
-      "modifiers": [],
-      "modifierIds": [
-        "510101401"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 2817,
-          "levelRequirement": 86,
-          "modifierId": "510101401",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "1d20ae84-ed1b-5adb-8639-41ba71cb9058",
-      "name": "+ Command per second",
-      "modifiers": [],
-      "modifierIds": [
-        "510101402"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 5850,
-          "levelRequirement": 82,
-          "modifierId": "510101402",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "576070ab-4732-5845-9b2b-f9eaf1d96336",
-      "name": "Elixir Skill Effect",
-      "modifiers": [],
-      "modifierIds": [
-        "510101500"
-      ],
-      "tiers": [
-        {
-          "tier": "0",
-          "weight": 1084,
-          "levelRequirement": 86,
-          "modifierId": "510101500",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "2c711035-d2b3-5069-9647-6d419aa9b00a",
-      "name": "Elixir Skill Effect",
-      "modifiers": [],
-      "modifierIds": [
-        "510101501"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 2817,
-          "levelRequirement": 86,
-          "modifierId": "510101501",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "fae6a524-d2be-53de-b416-47bd66e9b26e",
-      "name": "Elixir Skill Effect",
-      "modifiers": [],
-      "modifierIds": [
-        "510101502"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 5850,
-          "levelRequirement": 82,
-          "modifierId": "510101502",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "9753c911-cd3a-592e-83f0-d9d388fc9cbe",
-      "name": "to Max Frostbite Rating",
-      "modifiers": [],
-      "modifierIds": [
-        "510101600"
-      ],
-      "tiers": [
-        {
-          "tier": "0",
-          "weight": 1084,
-          "levelRequirement": 86,
-          "modifierId": "510101600",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "9607b630-8c6d-52a7-a219-d9945f48d585",
-      "name": "to Max Frostbite Rating",
-      "modifiers": [],
-      "modifierIds": [
-        "510101601"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 2817,
-          "levelRequirement": 86,
-          "modifierId": "510101601",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "604cb87e-2949-578a-959d-a8277ef86af1",
-      "name": "to Max Frostbite Rating",
-      "modifiers": [],
-      "modifierIds": [
-        "510101602"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 5850,
-          "levelRequirement": 82,
-          "modifierId": "510101602",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "87c17dfc-b825-57d3-bdab-92078a0267d9",
-      "name": "of damage is taken from Mana before life",
-      "modifiers": [],
-      "modifierIds": [
-        "510101700"
-      ],
-      "tiers": [
-        {
-          "tier": "0",
-          "weight": 1084,
-          "levelRequirement": 86,
-          "modifierId": "510101700",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "02862d96-c01a-5dbc-ab95-25911c9ae2c0",
-      "name": "of damage is taken from Mana before life",
-      "modifiers": [],
-      "modifierIds": [
-        "510101701"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 2817,
-          "levelRequirement": 86,
-          "modifierId": "510101701",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "19b5c11f-1d49-5c21-84fb-ef582a231cd5",
-      "name": "of damage is taken from Mana before life",
-      "modifiers": [],
-      "modifierIds": [
-        "510101702"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 5850,
-          "levelRequirement": 82,
-          "modifierId": "510101702",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "0eb44009-c1c4-5b0c-8087-9154ab763da9",
-      "name": "Injury Buffer",
-      "modifiers": [],
-      "modifierIds": [
-        "510101800"
-      ],
-      "tiers": [
-        {
-          "tier": "0",
-          "weight": 1084,
-          "levelRequirement": 86,
-          "modifierId": "510101800",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "a746f64d-def1-5eeb-adb9-cf4c17585574",
-      "name": "Injury Buffer",
-      "modifiers": [],
-      "modifierIds": [
-        "510101801"
-      ],
-      "tiers": [
-        {
-          "tier": "1",
-          "weight": 2817,
-          "levelRequirement": 86,
-          "modifierId": "510101801",
-          "modifiers": []
-        }
-      ]
-    },
-    {
-      "id": "1591ca33-2299-5b1b-bcd2-ec96a98e5731",
-      "name": "Injury Buffer",
-      "modifiers": [],
-      "modifierIds": [
-        "510101802"
-      ],
-      "tiers": [
-        {
-          "tier": "2",
-          "weight": 5850,
-          "levelRequirement": 82,
-          "modifierId": "510101802",
-          "modifiers": []
-        }
-      ]
-    }
-  ]
+  "specialRandomAffixes": []
 }

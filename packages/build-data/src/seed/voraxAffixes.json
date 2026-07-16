@@ -244,6 +244,41 @@
     ]
   },
   {
+    "id": "ad953ac1-9c7a-5082-9848-cda88b9a88e7",
+    "limb": "head",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251361101",
+        "modifiers": []
+      },
+      {
+        "tier": "2",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251361102",
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "id": "b16e3983-f787-5b7c-b1a4-ce9e6b9972be",
+    "limb": "head",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "0",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251361100",
+        "modifiers": []
+      }
+    ]
+  },
+  {
     "id": "e01068c9-558e-5ac9-bea4-3a15d4bdbc15",
     "limb": "head",
     "modifiers": [
@@ -266,6 +301,20 @@
             "value": 0.08
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "b8666e24-1124-5493-90bc-be94c8f31725",
+    "limb": "head",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "0+",
+        "weight": 0,
+        "levelRequirement": 1,
+        "modifierId": "251361180",
+        "modifiers": []
       }
     ]
   },
@@ -3051,35 +3100,7 @@
     ]
   },
   {
-    "id": "276e0bb8-3c0f-553a-bbc0-be6ece82d2c0",
-    "limb": "head",
-    "modifiers": [],
-    "tiers": [
-      {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "251150801",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "470d815d-9232-5866-be64-9710321bb305",
-    "limb": "head",
-    "modifiers": [],
-    "tiers": [
-      {
-        "tier": "2",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "251150802",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "5dbea709-6ced-5bc3-b133-b9c8db98abdb",
+    "id": "98e18e0c-3c4e-5eb9-af35-6185cbc0d06b",
     "limb": "head",
     "modifiers": [],
     "tiers": [
@@ -3095,6 +3116,20 @@
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251150800",
+        "modifiers": []
+      },
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251150801",
+        "modifiers": []
+      },
+      {
+        "tier": "2",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251150802",
         "modifiers": []
       }
     ]
@@ -9718,6 +9753,41 @@
     ]
   },
   {
+    "id": "477390fd-abfd-5146-ac39-9a9e7a9ffacd",
+    "limb": "legs",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "0+",
+        "weight": 0,
+        "levelRequirement": 1,
+        "modifierId": "252135280",
+        "modifiers": []
+      },
+      {
+        "tier": "0",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "252135200",
+        "modifiers": []
+      },
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "252135201",
+        "modifiers": []
+      },
+      {
+        "tier": "2",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "252135202",
+        "modifiers": []
+      }
+    ]
+  },
+  {
     "id": "232e7be5-933a-5458-bec1-bd172f5a2378",
     "limb": "legs",
     "modifiers": [],
@@ -9853,7 +9923,21 @@
     ]
   },
   {
-    "id": "09c0be1b-dbe7-5f5e-b033-d36c89c8fe97",
+    "id": "5d9a3f77-fe6c-5de6-a536-6c23bbd0d516",
+    "limb": "legs",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251370901",
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "id": "fce8acc2-e7c6-58de-b295-bf38d2fadf54",
     "limb": "legs",
     "modifiers": [],
     "tiers": [
@@ -9872,37 +9956,11 @@
         "modifiers": []
       },
       {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "251370901",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "7b0a851b-dcbd-5644-b2dd-104ca29f354b",
-    "limb": "legs",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.05
-      }
-    ],
-    "tiers": [
-      {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251370902",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.05
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
@@ -10618,6 +10676,27 @@
     ]
   },
   {
+    "id": "83b89383-ed54-5b98-bca7-82f1babb87f4",
+    "limb": "legs",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "0+",
+        "weight": 0,
+        "levelRequirement": 1,
+        "modifierId": "252371680",
+        "modifiers": []
+      },
+      {
+        "tier": "0",
+        "weight": 0,
+        "levelRequirement": 1,
+        "modifierId": "252371600",
+        "modifiers": []
+      }
+    ]
+  },
+  {
     "id": "d7bdb1d7-50d5-5c4c-9aef-e7ac460020d7",
     "limb": "legs",
     "modifiers": [],
@@ -10718,41 +10797,6 @@
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "252371102",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "651f338c-604c-590d-ba9e-f9269e3e45a2",
-    "limb": "legs",
-    "modifiers": [],
-    "tiers": [
-      {
-        "tier": "0+",
-        "weight": 0,
-        "levelRequirement": 1,
-        "modifierId": "252371680",
-        "modifiers": []
-      },
-      {
-        "tier": "0",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "252371600",
-        "modifiers": []
-      },
-      {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "252371601",
-        "modifiers": []
-      },
-      {
-        "tier": "2",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "252371602",
         "modifiers": []
       }
     ]
@@ -12186,7 +12230,21 @@
     ]
   },
   {
-    "id": "750ca50a-f179-5033-9be6-381fb86a108a",
+    "id": "1661ed1f-7486-5c9f-bf31-7bf388f5f3ea",
+    "limb": "legs",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251371001",
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "id": "3a25ecb6-4af5-5886-ac5c-2da246c2c46a",
     "limb": "legs",
     "modifiers": [],
     "tiers": [
@@ -12205,37 +12263,11 @@
         "modifiers": []
       },
       {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "251371001",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "35d81045-5ed0-5788-9494-955c30fecac8",
-    "limb": "legs",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.05
-      }
-    ],
-    "tiers": [
-      {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251371002",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.05
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
@@ -13009,6 +13041,41 @@
     ]
   },
   {
+    "id": "d17023d1-5802-5c3f-8769-13fe2584581f",
+    "limb": "waist",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "0+",
+        "weight": 0,
+        "levelRequirement": 1,
+        "modifierId": "252335280",
+        "modifiers": []
+      },
+      {
+        "tier": "0",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "252335200",
+        "modifiers": []
+      },
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "252335201",
+        "modifiers": []
+      },
+      {
+        "tier": "2",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "252335202",
+        "modifiers": []
+      }
+    ]
+  },
+  {
     "id": "9741335e-6290-53ff-96f5-193b621086cc",
     "limb": "waist",
     "modifiers": [],
@@ -13144,7 +13211,21 @@
     ]
   },
   {
-    "id": "318da835-4f52-50f0-89eb-18dc7091c57d",
+    "id": "c49b631b-0254-589f-b873-145b27922784",
+    "limb": "waist",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251170901",
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "id": "4bee6371-6903-5bca-b1f3-d829f5c19c62",
     "limb": "waist",
     "modifiers": [],
     "tiers": [
@@ -13163,37 +13244,11 @@
         "modifiers": []
       },
       {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "251170901",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "25a835a8-2eb1-5f4a-9020-344c1b98bf32",
-    "limb": "waist",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.05
-      }
-    ],
-    "tiers": [
-      {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251170902",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.05
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
@@ -13958,6 +14013,27 @@
     ]
   },
   {
+    "id": "b13ddfa8-b5ec-541a-a584-872f4f98adfc",
+    "limb": "waist",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "0+",
+        "weight": 0,
+        "levelRequirement": 1,
+        "modifierId": "252171680",
+        "modifiers": []
+      },
+      {
+        "tier": "0",
+        "weight": 0,
+        "levelRequirement": 1,
+        "modifierId": "252171600",
+        "modifiers": []
+      }
+    ]
+  },
+  {
     "id": "c5f92715-5ba1-5bfb-b6f8-cbcd712d8dae",
     "limb": "waist",
     "modifiers": [],
@@ -14058,41 +14134,6 @@
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "252171102",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "74372923-f66b-5a79-b123-ee14f13da303",
-    "limb": "waist",
-    "modifiers": [],
-    "tiers": [
-      {
-        "tier": "0+",
-        "weight": 0,
-        "levelRequirement": 1,
-        "modifierId": "252171680",
-        "modifiers": []
-      },
-      {
-        "tier": "0",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "252171600",
-        "modifiers": []
-      },
-      {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "252171601",
-        "modifiers": []
-      },
-      {
-        "tier": "2",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "252171602",
         "modifiers": []
       }
     ]
@@ -14448,7 +14489,7 @@
     ]
   },
   {
-    "id": "00783204-0667-5543-9cbb-51677ba7b1a5",
+    "id": "9a0d5bb3-ee27-5f91-ae3f-f823a3573f45",
     "limb": "waist",
     "modifiers": [],
     "tiers": [
@@ -15112,23 +15153,9 @@
       },
       {
         "tier": "0",
-        "weight": 1,
+        "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251171600",
-        "modifiers": []
-      },
-      {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "251171601",
-        "modifiers": []
-      },
-      {
-        "tier": "2",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "251171602",
         "modifiers": []
       }
     ]
@@ -15414,7 +15441,21 @@
     ]
   },
   {
-    "id": "99ec991d-ce8a-5878-9ad3-df669a22b91b",
+    "id": "b565bc4a-9e95-5c62-88dc-7c241185ccac",
+    "limb": "waist",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251171001",
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "id": "3e735b03-353a-5a86-b99f-a5a151acdc17",
     "limb": "waist",
     "modifiers": [],
     "tiers": [
@@ -15433,37 +15474,11 @@
         "modifiers": []
       },
       {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "251171001",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "4aea34a2-729f-53e6-ad72-69c063043a62",
-    "limb": "waist",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.05
-      }
-    ],
-    "tiers": [
-      {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251171002",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.05
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
@@ -15978,6 +15993,41 @@
     ]
   },
   {
+    "id": "346f0698-96b2-50e6-95de-02477e958a1a",
+    "limb": "neck",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251161101",
+        "modifiers": []
+      },
+      {
+        "tier": "2",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251161102",
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "id": "d67a4da4-aa0e-59fe-a42a-943d4385bc37",
+    "limb": "neck",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "0",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251161100",
+        "modifiers": []
+      }
+    ]
+  },
+  {
     "id": "4dccc050-2355-52a8-bc4b-444ee1f11842",
     "limb": "neck",
     "modifiers": [
@@ -16004,6 +16054,20 @@
     ]
   },
   {
+    "id": "d470f773-2a6d-57d3-97ed-29a9154efb5f",
+    "limb": "neck",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "0+",
+        "weight": 0,
+        "levelRequirement": 1,
+        "modifierId": "251161180",
+        "modifiers": []
+      }
+    ]
+  },
+  {
     "id": "2e49e41b-6112-5357-8092-b9433ac528e1",
     "limb": "neck",
     "modifiers": [],
@@ -16017,30 +16081,9 @@
       },
       {
         "tier": "0",
-        "weight": 1,
+        "weight": 0,
         "levelRequirement": 1,
         "modifierId": "252160600",
-        "modifiers": []
-      },
-      {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "252160601",
-        "modifiers": []
-      },
-      {
-        "tier": "2",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "252160602",
-        "modifiers": []
-      },
-      {
-        "tier": "3",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "252160603",
         "modifiers": []
       }
     ]
@@ -18526,35 +18569,7 @@
     ]
   },
   {
-    "id": "6d7e266a-6c07-5a4e-9807-a544c292f09f",
-    "limb": "neck",
-    "modifiers": [],
-    "tiers": [
-      {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "251350801",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "b17d5584-a8ef-51d9-ab15-ce6d36df00b1",
-    "limb": "neck",
-    "modifiers": [],
-    "tiers": [
-      {
-        "tier": "2",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "251350802",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "44fe4caa-a946-586b-996f-6ad2a79bb553",
+    "id": "cff92ac5-bda8-5a81-b460-fff8c2d8a9ef",
     "limb": "neck",
     "modifiers": [],
     "tiers": [
@@ -18570,6 +18585,20 @@
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251350800",
+        "modifiers": []
+      },
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251350801",
+        "modifiers": []
+      },
+      {
+        "tier": "2",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251350802",
         "modifiers": []
       }
     ]
@@ -19316,6 +19345,41 @@
     ]
   },
   {
+    "id": "08d87a93-eae3-5479-a688-98716a54c164",
+    "limb": "digits",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "0+",
+        "weight": 0,
+        "levelRequirement": 1,
+        "modifierId": "252435280",
+        "modifiers": []
+      },
+      {
+        "tier": "0",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "252435200",
+        "modifiers": []
+      },
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "252435201",
+        "modifiers": []
+      },
+      {
+        "tier": "2",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "252435202",
+        "modifiers": []
+      }
+    ]
+  },
+  {
     "id": "98b39b7c-1df1-5afa-8b9f-a4ab62fee725",
     "limb": "digits",
     "modifiers": [],
@@ -19451,7 +19515,21 @@
     ]
   },
   {
-    "id": "2c9deca8-094f-5d96-8374-21e6462f89eb",
+    "id": "5a8f287e-4795-5d8f-9237-cdfa26a7a956",
+    "limb": "digits",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251470901",
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "id": "427307e1-60cd-555d-809d-ee8aa33200b1",
     "limb": "digits",
     "modifiers": [],
     "tiers": [
@@ -19470,37 +19548,11 @@
         "modifiers": []
       },
       {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "251470901",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "81bf4b03-4ef5-5e08-9c57-ec288bcd87d4",
-    "limb": "digits",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.05
-      }
-    ],
-    "tiers": [
-      {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251470902",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.05
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
@@ -20265,6 +20317,27 @@
     ]
   },
   {
+    "id": "e644aaf3-276b-512e-b75f-eb559a2a69fd",
+    "limb": "digits",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "0+",
+        "weight": 0,
+        "levelRequirement": 1,
+        "modifierId": "252471680",
+        "modifiers": []
+      },
+      {
+        "tier": "0",
+        "weight": 0,
+        "levelRequirement": 1,
+        "modifierId": "252471600",
+        "modifiers": []
+      }
+    ]
+  },
+  {
     "id": "e4bfd2c3-fb4d-5b42-8571-c34630fe777d",
     "limb": "digits",
     "modifiers": [],
@@ -20365,41 +20438,6 @@
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "252181502",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "eba94aa1-fada-5ca6-9e97-c1b665ede9ad",
-    "limb": "digits",
-    "modifiers": [],
-    "tiers": [
-      {
-        "tier": "0+",
-        "weight": 0,
-        "levelRequirement": 1,
-        "modifierId": "252471680",
-        "modifiers": []
-      },
-      {
-        "tier": "0",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "252471600",
-        "modifiers": []
-      },
-      {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "252471601",
-        "modifiers": []
-      },
-      {
-        "tier": "2",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "252471602",
         "modifiers": []
       }
     ]
@@ -22036,7 +22074,21 @@
     ]
   },
   {
-    "id": "8638e835-b802-56c4-8bdc-de40917d402d",
+    "id": "7be8246e-c76c-5a20-9ff8-7b0ec3da3944",
+    "limb": "digits",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251471001",
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "id": "2cad4c17-4a94-5476-bd1b-7091b13583bb",
     "limb": "digits",
     "modifiers": [],
     "tiers": [
@@ -22055,37 +22107,11 @@
         "modifiers": []
       },
       {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "251471001",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "71c882fe-06b0-5367-83c7-49e1368d8070",
-    "limb": "digits",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.05
-      }
-    ],
-    "tiers": [
-      {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251471002",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.05
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
@@ -22845,6 +22871,48 @@
     ]
   },
   {
+    "id": "9f5dc5a0-42a9-52cc-a34a-0a692c2f5f43",
+    "limb": "aberrant legs",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "2",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "252283503",
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "id": "81c83f19-7adb-5994-85e2-23da98858091",
+    "limb": "aberrant legs",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "0+",
+        "weight": 0,
+        "levelRequirement": 1,
+        "modifierId": "252283580",
+        "modifiers": []
+      },
+      {
+        "tier": "0",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "252283501",
+        "modifiers": []
+      },
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "252283502",
+        "modifiers": []
+      }
+    ]
+  },
+  {
     "id": "1c5060e6-1073-5fbf-81eb-e1ac9d379b2e",
     "limb": "aberrant legs",
     "modifiers": [],
@@ -23127,7 +23195,21 @@
     ]
   },
   {
-    "id": "b868793f-ff5d-5663-9d53-43e521e8e383",
+    "id": "a812654f-241f-543f-923a-b1d45504d6ee",
+    "limb": "aberrant legs",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251570901",
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "id": "adff6684-1bfe-578d-9ea1-3a2cb1066a04",
     "limb": "aberrant legs",
     "modifiers": [],
     "tiers": [
@@ -23146,37 +23228,11 @@
         "modifiers": []
       },
       {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "251570901",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "91cedf63-ed33-54fc-b572-d3f9fea97c89",
-    "limb": "aberrant legs",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.05
-      }
-    ],
-    "tiers": [
-      {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251570902",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.05
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
@@ -23857,6 +23913,27 @@
     ]
   },
   {
+    "id": "4d4dd7d0-a92c-56ce-a55a-6b1d0bfb1c32",
+    "limb": "aberrant legs",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "0+",
+        "weight": 0,
+        "levelRequirement": 1,
+        "modifierId": "252571680",
+        "modifiers": []
+      },
+      {
+        "tier": "0",
+        "weight": 0,
+        "levelRequirement": 1,
+        "modifierId": "252571600",
+        "modifiers": []
+      }
+    ]
+  },
+  {
     "id": "d7c08e8f-766d-5351-9ac5-44a74b0e608d",
     "limb": "aberrant legs",
     "modifiers": [],
@@ -23957,41 +24034,6 @@
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "252571102",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "f02d6122-ec20-51cf-a95f-35523b5580c2",
-    "limb": "aberrant legs",
-    "modifiers": [],
-    "tiers": [
-      {
-        "tier": "0+",
-        "weight": 0,
-        "levelRequirement": 1,
-        "modifierId": "252571680",
-        "modifiers": []
-      },
-      {
-        "tier": "0",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "252571600",
-        "modifiers": []
-      },
-      {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "252571601",
-        "modifiers": []
-      },
-      {
-        "tier": "2",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "252571602",
         "modifiers": []
       }
     ]
@@ -25306,7 +25348,21 @@
     ]
   },
   {
-    "id": "07894bd5-06e3-5b70-89f2-5b58e7c76857",
+    "id": "86aa313a-b500-56ca-989a-1616371023da",
+    "limb": "aberrant legs",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251571001",
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "id": "ad65b424-cc7e-5e86-ae61-26e2904231c1",
     "limb": "aberrant legs",
     "modifiers": [],
     "tiers": [
@@ -25325,37 +25381,11 @@
         "modifiers": []
       },
       {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "251571001",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "4e01e890-59ee-5816-9318-c642b19cbfe1",
-    "limb": "aberrant legs",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.05
-      }
-    ],
-    "tiers": [
-      {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251571002",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.05
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
@@ -26024,6 +26054,48 @@
     ]
   },
   {
+    "id": "809b06d4-9158-5bd1-8680-48482e31c2d9",
+    "limb": "aberrant waist",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "2",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "252383503",
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "id": "925a60c6-c702-509d-a9ce-1d36eaa31bb2",
+    "limb": "aberrant waist",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "0+",
+        "weight": 0,
+        "levelRequirement": 1,
+        "modifierId": "252383580",
+        "modifiers": []
+      },
+      {
+        "tier": "0",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "252383501",
+        "modifiers": []
+      },
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "252383502",
+        "modifiers": []
+      }
+    ]
+  },
+  {
     "id": "14e90ccc-c68d-5e51-9394-1dcf91bbefe9",
     "limb": "aberrant waist",
     "modifiers": [],
@@ -26362,7 +26434,21 @@
     ]
   },
   {
-    "id": "a74061b4-c3a9-578f-9718-eae719658def",
+    "id": "275a9d3b-eada-5b28-94cf-40c548ed2b4c",
+    "limb": "aberrant waist",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251270901",
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "id": "9eb71e49-f5d7-5224-b670-7b43e09fce93",
     "limb": "aberrant waist",
     "modifiers": [],
     "tiers": [
@@ -26381,37 +26467,11 @@
         "modifiers": []
       },
       {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "251270901",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "321b5f94-0396-5a85-8a81-8814eb77488e",
-    "limb": "aberrant waist",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.05
-      }
-    ],
-    "tiers": [
-      {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251270902",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.05
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
@@ -27141,6 +27201,27 @@
     ]
   },
   {
+    "id": "ad4019da-46ac-5f61-bb33-0fe00ec64524",
+    "limb": "aberrant waist",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "0+",
+        "weight": 0,
+        "levelRequirement": 1,
+        "modifierId": "252271680",
+        "modifiers": []
+      },
+      {
+        "tier": "0",
+        "weight": 0,
+        "levelRequirement": 1,
+        "modifierId": "252271600",
+        "modifiers": []
+      }
+    ]
+  },
+  {
     "id": "5b711062-5804-54d7-8a8e-edcb699639a5",
     "limb": "aberrant waist",
     "modifiers": [],
@@ -27241,41 +27322,6 @@
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "252271102",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "2778d174-31c0-5dd6-baef-c6dff5d2267a",
-    "limb": "aberrant waist",
-    "modifiers": [],
-    "tiers": [
-      {
-        "tier": "0+",
-        "weight": 0,
-        "levelRequirement": 1,
-        "modifierId": "252271680",
-        "modifiers": []
-      },
-      {
-        "tier": "0",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "252271600",
-        "modifiers": []
-      },
-      {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "252271601",
-        "modifiers": []
-      },
-      {
-        "tier": "2",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "252271602",
         "modifiers": []
       }
     ]
@@ -27631,7 +27677,7 @@
     ]
   },
   {
-    "id": "5216845a-73dd-54f8-99d3-25a15457ae53",
+    "id": "c6fa45e4-4879-5e6b-94bf-1ffc8aa6329a",
     "limb": "aberrant waist",
     "modifiers": [],
     "tiers": [
@@ -28176,23 +28222,9 @@
       },
       {
         "tier": "0",
-        "weight": 1,
+        "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251271600",
-        "modifiers": []
-      },
-      {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "251271601",
-        "modifiers": []
-      },
-      {
-        "tier": "2",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "251271602",
         "modifiers": []
       }
     ]
@@ -28478,7 +28510,21 @@
     ]
   },
   {
-    "id": "e27d886a-fd47-51f9-8f9a-a19a17aac38b",
+    "id": "d5b9d9c4-f34d-5d7c-900f-3bdb12946aee",
+    "limb": "aberrant waist",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251271001",
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "id": "53a2474a-9eab-5cd5-94c8-374c0d814984",
     "limb": "aberrant waist",
     "modifiers": [],
     "tiers": [
@@ -28497,37 +28543,11 @@
         "modifiers": []
       },
       {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "251271001",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "615e2292-00b9-569b-8279-e7cd9622da4d",
-    "limb": "aberrant waist",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.05
-      }
-    ],
-    "tiers": [
-      {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251271002",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.05
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
@@ -29294,6 +29314,48 @@
     ]
   },
   {
+    "id": "59044a75-140d-582c-9342-49f699488040",
+    "limb": "aberrant digits",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "2",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "252672602",
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "id": "7b7b4861-2173-592c-8572-148abe338325",
+    "limb": "aberrant digits",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "0+",
+        "weight": 0,
+        "levelRequirement": 1,
+        "modifierId": "252672680",
+        "modifiers": []
+      },
+      {
+        "tier": "0",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "252672600",
+        "modifiers": []
+      },
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "252672601",
+        "modifiers": []
+      }
+    ]
+  },
+  {
     "id": "eb363f9c-f62f-5e7b-aea3-ae921d10482c",
     "limb": "aberrant digits",
     "modifiers": [],
@@ -29632,7 +29694,21 @@
     ]
   },
   {
-    "id": "6dc53441-c5bf-5777-ac46-a4ba542ee623",
+    "id": "8156f988-2e41-5ce1-95ad-47dc7d9a77fe",
+    "limb": "aberrant digits",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251670901",
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "id": "fc2358ae-d396-525d-aec8-ac54bf236c3e",
     "limb": "aberrant digits",
     "modifiers": [],
     "tiers": [
@@ -29651,37 +29727,11 @@
         "modifiers": []
       },
       {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "251670901",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "b3cf7244-69d4-57fc-81d4-005d109b4687",
-    "limb": "aberrant digits",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.05
-      }
-    ],
-    "tiers": [
-      {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251670902",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.05
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
@@ -30355,6 +30405,27 @@
     ]
   },
   {
+    "id": "f5472ab4-5607-55e1-8c79-3b512144ccbd",
+    "limb": "aberrant digits",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "0+",
+        "weight": 0,
+        "levelRequirement": 1,
+        "modifierId": "252671680",
+        "modifiers": []
+      },
+      {
+        "tier": "0",
+        "weight": 0,
+        "levelRequirement": 1,
+        "modifierId": "252671600",
+        "modifiers": []
+      }
+    ]
+  },
+  {
     "id": "62bda9c0-0cc0-5bea-abb6-8b5e675c4dee",
     "limb": "aberrant digits",
     "modifiers": [],
@@ -30455,41 +30526,6 @@
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "252671102",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "510689b9-f677-5f93-9b8a-7f813967fe4f",
-    "limb": "aberrant digits",
-    "modifiers": [],
-    "tiers": [
-      {
-        "tier": "0+",
-        "weight": 0,
-        "levelRequirement": 1,
-        "modifierId": "252671680",
-        "modifiers": []
-      },
-      {
-        "tier": "0",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "252671600",
-        "modifiers": []
-      },
-      {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "252671601",
-        "modifiers": []
-      },
-      {
-        "tier": "2",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "252671602",
         "modifiers": []
       }
     ]
@@ -31951,7 +31987,21 @@
     ]
   },
   {
-    "id": "920e7558-4961-5db9-a8f2-6a42eb2c6dbc",
+    "id": "1eda651f-a0db-5294-a556-e31d06b50644",
+    "limb": "aberrant digits",
+    "modifiers": [],
+    "tiers": [
+      {
+        "tier": "1",
+        "weight": 1,
+        "levelRequirement": 1,
+        "modifierId": "251671001",
+        "modifiers": []
+      }
+    ]
+  },
+  {
+    "id": "47efb6f7-1da6-545e-b7b6-d44e20b37e00",
     "limb": "aberrant digits",
     "modifiers": [],
     "tiers": [
@@ -31970,37 +32020,11 @@
         "modifiers": []
       },
       {
-        "tier": "1",
-        "weight": 1,
-        "levelRequirement": 1,
-        "modifierId": "251671001",
-        "modifiers": []
-      }
-    ]
-  },
-  {
-    "id": "c94561d9-7f8c-53cf-841e-23a982b6ed2a",
-    "limb": "aberrant digits",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.05
-      }
-    ],
-    "tiers": [
-      {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251671002",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.05
-          }
-        ]
+        "modifiers": []
       }
     ]
   },

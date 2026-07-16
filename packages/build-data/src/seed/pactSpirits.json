@@ -16880,5 +16880,1008 @@
     "typeCode": "Drop",
     "rarity": "Legendary",
     "iconUrl": "/images/pactspirit/UI_Pet_SSR_JiaoYueHuaShen_01_116.webp"
+  },
+  {
+    "id": "8eb28be9-47c5-5300-85e3-cdf35901e09a",
+    "name": "The Bone worm's Daughter",
+    "description": "Increases Mana Restoration, Spell Damage, and Critical Strike damage\nUnlock 2 Pact Nodes in advance",
+    "modifiers": [
+      {
+        "stat": "critDamage",
+        "op": "flat",
+        "value": 10
+      },
+      {
+        "stat": "critDamage",
+        "op": "flat",
+        "value": 10
+      },
+      {
+        "stat": "critDamage",
+        "op": "flat",
+        "value": 20
+      },
+      {
+        "stat": "increasedDamage",
+        "op": "increased",
+        "value": 1
+      }
+    ],
+    "nodes": [
+      {
+        "nodeId": 1,
+        "nodeType": "Micro",
+        "nextNode": 2,
+        "modifiers": []
+      },
+      {
+        "nodeId": 2,
+        "nodeType": "Micro",
+        "nextNode": 3,
+        "modifiers": []
+      },
+      {
+        "nodeId": 3,
+        "nodeType": "Medium",
+        "nextNode": 4,
+        "modifiers": []
+      },
+      {
+        "nodeId": 4,
+        "nodeType": "Micro",
+        "nextNode": 5,
+        "modifiers": []
+      },
+      {
+        "nodeId": 5,
+        "nodeType": "Micro",
+        "nextNode": 6,
+        "modifiers": []
+      },
+      {
+        "nodeId": 6,
+        "nodeType": "Medium",
+        "nextNode": 7,
+        "modifiers": []
+      },
+      {
+        "nodeId": 7,
+        "nodeType": "Micro",
+        "nextNode": 8,
+        "modifiers": [
+          {
+            "stat": "critDamage",
+            "op": "flat",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "nodeId": 8,
+        "nodeType": "Micro",
+        "nextNode": 9,
+        "modifiers": [
+          {
+            "stat": "critDamage",
+            "op": "flat",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "nodeId": 9,
+        "nodeType": "Medium",
+        "nextNode": 10,
+        "modifiers": [
+          {
+            "stat": "critDamage",
+            "op": "flat",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "nodeId": 10,
+        "nodeType": "Notable",
+        "nextNode": 11,
+        "modifiers": []
+      },
+      {
+        "nodeId": 11,
+        "nodeType": "Undetermined Fate",
+        "nextNode": null,
+        "modifiers": [
+          {
+            "stat": "increasedDamage",
+            "op": "increased",
+            "value": 1
+          }
+        ]
+      }
+    ],
+    "typeCode": "Spell",
+    "rarity": "Legendary",
+    "iconUrl": "/images/pactspirit/UI_Pet_SSR_GuChongZhiNv2_01_116.webp"
+  },
+  {
+    "id": "2e4e251a-1246-529f-a45f-4eb28d9998a5",
+    "name": "Cloudgatherer - Sky's Dome",
+    "description": "Increases Drop Quantity\n",
+    "modifiers": [],
+    "nodes": [
+      {
+        "nodeId": 1,
+        "nodeType": "Micro",
+        "nextNode": 2,
+        "modifiers": []
+      },
+      {
+        "nodeId": 2,
+        "nodeType": "Micro",
+        "nextNode": 3,
+        "modifiers": []
+      },
+      {
+        "nodeId": 3,
+        "nodeType": "Medium",
+        "nextNode": 4,
+        "modifiers": []
+      },
+      {
+        "nodeId": 4,
+        "nodeType": "Micro",
+        "nextNode": 5,
+        "modifiers": []
+      },
+      {
+        "nodeId": 5,
+        "nodeType": "Micro",
+        "nextNode": 6,
+        "modifiers": []
+      },
+      {
+        "nodeId": 6,
+        "nodeType": "Medium",
+        "nextNode": 7,
+        "modifiers": []
+      },
+      {
+        "nodeId": 7,
+        "nodeType": "Micro",
+        "nextNode": 8,
+        "modifiers": []
+      },
+      {
+        "nodeId": 8,
+        "nodeType": "Micro",
+        "nextNode": 9,
+        "modifiers": []
+      },
+      {
+        "nodeId": 9,
+        "nodeType": "Medium",
+        "nextNode": 10,
+        "modifiers": []
+      },
+      {
+        "nodeId": 10,
+        "nodeType": "Notable",
+        "nextNode": 11,
+        "modifiers": []
+      }
+    ],
+    "typeCode": "Drop",
+    "rarity": "Rare",
+    "iconUrl": "/images/pactspirit/UI_Pet_SR_CaiYunZhe_05_116.webp"
+  },
+  {
+    "id": "2e5f8ca2-ec25-574b-abe5-b84eaa44b187",
+    "name": "Valkyrie's Night Patrol",
+    "description": "Attack Damage, Attack Critical Strike, and Attack Speed\nUnlock 2 Pact Nodes in advance",
+    "modifiers": [
+      {
+        "stat": "increasedAttackSpeed",
+        "op": "increased",
+        "value": 4
+      },
+      {
+        "stat": "increasedAttackSpeed",
+        "op": "increased",
+        "value": 4
+      },
+      {
+        "stat": "increasedAttackSpeed",
+        "op": "increased",
+        "value": 8
+      },
+      {
+        "stat": "increasedDamage",
+        "op": "increased",
+        "value": 1
+      }
+    ],
+    "nodes": [
+      {
+        "nodeId": 1,
+        "nodeType": "Micro",
+        "nextNode": 2,
+        "modifiers": []
+      },
+      {
+        "nodeId": 2,
+        "nodeType": "Micro",
+        "nextNode": 3,
+        "modifiers": []
+      },
+      {
+        "nodeId": 3,
+        "nodeType": "Medium",
+        "nextNode": 4,
+        "modifiers": []
+      },
+      {
+        "nodeId": 4,
+        "nodeType": "Micro",
+        "nextNode": 5,
+        "modifiers": []
+      },
+      {
+        "nodeId": 5,
+        "nodeType": "Micro",
+        "nextNode": 6,
+        "modifiers": []
+      },
+      {
+        "nodeId": 6,
+        "nodeType": "Medium",
+        "nextNode": 7,
+        "modifiers": []
+      },
+      {
+        "nodeId": 7,
+        "nodeType": "Micro",
+        "nextNode": 8,
+        "modifiers": [
+          {
+            "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "nodeId": 8,
+        "nodeType": "Micro",
+        "nextNode": 9,
+        "modifiers": [
+          {
+            "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "nodeId": 9,
+        "nodeType": "Medium",
+        "nextNode": 10,
+        "modifiers": [
+          {
+            "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": 8
+          }
+        ]
+      },
+      {
+        "nodeId": 10,
+        "nodeType": "Notable",
+        "nextNode": 11,
+        "modifiers": []
+      },
+      {
+        "nodeId": 11,
+        "nodeType": "Undetermined Fate",
+        "nextNode": null,
+        "modifiers": [
+          {
+            "stat": "increasedDamage",
+            "op": "increased",
+            "value": 1
+          }
+        ]
+      }
+    ],
+    "typeCode": "Attack",
+    "rarity": "Legendary",
+    "iconUrl": "/images/pactspirit/UI_Pet_SSR_NvWuShenDeYeXun_01_116.webp"
+  },
+  {
+    "id": "caabdbd6-d6ab-5eb1-b1b7-ea27b3c7f0df",
+    "name": "Meowth - Nightfire",
+    "description": "Increases Drop Quantity\n",
+    "modifiers": [],
+    "nodes": [
+      {
+        "nodeId": 1,
+        "nodeType": "Micro",
+        "nextNode": 2,
+        "modifiers": []
+      },
+      {
+        "nodeId": 2,
+        "nodeType": "Micro",
+        "nextNode": 3,
+        "modifiers": []
+      },
+      {
+        "nodeId": 4,
+        "nodeType": "Micro",
+        "nextNode": 5,
+        "modifiers": []
+      },
+      {
+        "nodeId": 5,
+        "nodeType": "Micro",
+        "nextNode": 6,
+        "modifiers": []
+      },
+      {
+        "nodeId": 7,
+        "nodeType": "Micro",
+        "nextNode": 8,
+        "modifiers": []
+      },
+      {
+        "nodeId": 8,
+        "nodeType": "Micro",
+        "nextNode": 9,
+        "modifiers": []
+      },
+      {
+        "nodeId": 10,
+        "nodeType": "Notable",
+        "nextNode": 11,
+        "modifiers": []
+      }
+    ],
+    "typeCode": "Drop",
+    "rarity": "Magic",
+    "iconUrl": "/images/pactspirit/UI_Pet_R_MaoEZi_03_116.webp"
+  },
+  {
+    "id": "f5b683ee-cd2d-566b-99df-cbfcfb3a5f5f",
+    "name": "Miss Melancholy - Pink",
+    "description": "Increases Drop Quantity\n",
+    "modifiers": [],
+    "nodes": [
+      {
+        "nodeId": 1,
+        "nodeType": "Micro",
+        "nextNode": 2,
+        "modifiers": []
+      },
+      {
+        "nodeId": 2,
+        "nodeType": "Micro",
+        "nextNode": 3,
+        "modifiers": []
+      },
+      {
+        "nodeId": 3,
+        "nodeType": "Medium",
+        "nextNode": 4,
+        "modifiers": []
+      },
+      {
+        "nodeId": 4,
+        "nodeType": "Micro",
+        "nextNode": 5,
+        "modifiers": []
+      },
+      {
+        "nodeId": 5,
+        "nodeType": "Micro",
+        "nextNode": 6,
+        "modifiers": []
+      },
+      {
+        "nodeId": 6,
+        "nodeType": "Medium",
+        "nextNode": 7,
+        "modifiers": []
+      },
+      {
+        "nodeId": 7,
+        "nodeType": "Micro",
+        "nextNode": 8,
+        "modifiers": []
+      },
+      {
+        "nodeId": 8,
+        "nodeType": "Micro",
+        "nextNode": 9,
+        "modifiers": []
+      },
+      {
+        "nodeId": 9,
+        "nodeType": "Medium",
+        "nextNode": 10,
+        "modifiers": []
+      },
+      {
+        "nodeId": 10,
+        "nodeType": "Notable",
+        "nextNode": 11,
+        "modifiers": []
+      }
+    ],
+    "typeCode": "Drop",
+    "rarity": "Rare",
+    "iconUrl": "/images/pactspirit/UI_Pet_SR_GuYingYouYou_03_116.webp"
+  },
+  {
+    "id": "c653f3a9-0171-50a1-86fc-cec6190728b9",
+    "name": "Twilight Sparks",
+    "description": "Increases Drop Quantity\n",
+    "modifiers": [],
+    "nodes": [
+      {
+        "nodeId": 1,
+        "nodeType": "Micro",
+        "nextNode": 2,
+        "modifiers": []
+      },
+      {
+        "nodeId": 2,
+        "nodeType": "Micro",
+        "nextNode": 3,
+        "modifiers": []
+      },
+      {
+        "nodeId": 3,
+        "nodeType": "Medium",
+        "nextNode": 4,
+        "modifiers": []
+      },
+      {
+        "nodeId": 4,
+        "nodeType": "Micro",
+        "nextNode": 5,
+        "modifiers": []
+      },
+      {
+        "nodeId": 5,
+        "nodeType": "Micro",
+        "nextNode": 6,
+        "modifiers": []
+      },
+      {
+        "nodeId": 6,
+        "nodeType": "Medium",
+        "nextNode": 7,
+        "modifiers": []
+      },
+      {
+        "nodeId": 7,
+        "nodeType": "Micro",
+        "nextNode": 8,
+        "modifiers": []
+      },
+      {
+        "nodeId": 8,
+        "nodeType": "Micro",
+        "nextNode": 9,
+        "modifiers": []
+      },
+      {
+        "nodeId": 9,
+        "nodeType": "Medium",
+        "nextNode": 10,
+        "modifiers": []
+      },
+      {
+        "nodeId": 10,
+        "nodeType": "Notable",
+        "nextNode": 11,
+        "modifiers": []
+      }
+    ],
+    "typeCode": "Drop",
+    "rarity": "Legendary",
+    "iconUrl": "/images/pactspirit/UI_Pet_SSR_HuaXinXiaoMan_116.webp"
+  },
+  {
+    "id": "98f654e2-2bef-5d53-aae5-42df6b85104d",
+    "name": "Meowth - Jade",
+    "description": "Terra Damage, Terra Charge, Terra Area\n",
+    "modifiers": [
+      {
+        "stat": "increasedDamage",
+        "op": "increased",
+        "value": 24
+      },
+      {
+        "stat": "increasedDamage",
+        "op": "increased",
+        "value": 24
+      },
+      {
+        "stat": "increasedDamage",
+        "op": "increased",
+        "value": 24
+      },
+      {
+        "stat": "increasedDamage",
+        "op": "increased",
+        "value": 1
+      }
+    ],
+    "nodes": [
+      {
+        "nodeId": 1,
+        "nodeType": "Micro",
+        "nextNode": 2,
+        "modifiers": []
+      },
+      {
+        "nodeId": 2,
+        "nodeType": "Micro",
+        "nextNode": 3,
+        "modifiers": []
+      },
+      {
+        "nodeId": 3,
+        "nodeType": "Medium",
+        "nextNode": 4,
+        "modifiers": [
+          {
+            "stat": "increasedDamage",
+            "op": "increased",
+            "value": 24
+          }
+        ]
+      },
+      {
+        "nodeId": 4,
+        "nodeType": "Micro",
+        "nextNode": 5,
+        "modifiers": []
+      },
+      {
+        "nodeId": 5,
+        "nodeType": "Micro",
+        "nextNode": 6,
+        "modifiers": []
+      },
+      {
+        "nodeId": 6,
+        "nodeType": "Medium",
+        "nextNode": 7,
+        "modifiers": [
+          {
+            "stat": "increasedDamage",
+            "op": "increased",
+            "value": 24
+          }
+        ]
+      },
+      {
+        "nodeId": 7,
+        "nodeType": "Micro",
+        "nextNode": 8,
+        "modifiers": []
+      },
+      {
+        "nodeId": 8,
+        "nodeType": "Micro",
+        "nextNode": 9,
+        "modifiers": []
+      },
+      {
+        "nodeId": 9,
+        "nodeType": "Medium",
+        "nextNode": 10,
+        "modifiers": [
+          {
+            "stat": "increasedDamage",
+            "op": "increased",
+            "value": 24
+          }
+        ]
+      },
+      {
+        "nodeId": 10,
+        "nodeType": "Notable",
+        "nextNode": 11,
+        "modifiers": []
+      },
+      {
+        "nodeId": 11,
+        "nodeType": "Undetermined Fate",
+        "nextNode": null,
+        "modifiers": [
+          {
+            "stat": "increasedDamage",
+            "op": "increased",
+            "value": 1
+          }
+        ]
+      }
+    ],
+    "typeCode": "Spell",
+    "rarity": "Magic",
+    "iconUrl": "/images/pactspirit/UI_Pet_R_MaoEZi_04_116.webp"
+  },
+  {
+    "id": "ba5e5c8b-5f7e-5ace-81c8-23ec51db520f",
+    "name": "Miss Melancholy - Bone",
+    "description": "Terra Damage, Terra Charge, Terra Area\nUnlock 1 Pact Nodes in advance",
+    "modifiers": [
+      {
+        "stat": "increasedDamage",
+        "op": "increased",
+        "value": 1
+      }
+    ],
+    "nodes": [
+      {
+        "nodeId": 1,
+        "nodeType": "Micro",
+        "nextNode": 2,
+        "modifiers": []
+      },
+      {
+        "nodeId": 2,
+        "nodeType": "Micro",
+        "nextNode": 3,
+        "modifiers": []
+      },
+      {
+        "nodeId": 3,
+        "nodeType": "Medium",
+        "nextNode": 4,
+        "modifiers": []
+      },
+      {
+        "nodeId": 4,
+        "nodeType": "Micro",
+        "nextNode": 5,
+        "modifiers": []
+      },
+      {
+        "nodeId": 5,
+        "nodeType": "Micro",
+        "nextNode": 6,
+        "modifiers": []
+      },
+      {
+        "nodeId": 6,
+        "nodeType": "Medium",
+        "nextNode": 7,
+        "modifiers": []
+      },
+      {
+        "nodeId": 7,
+        "nodeType": "Micro",
+        "nextNode": 8,
+        "modifiers": []
+      },
+      {
+        "nodeId": 8,
+        "nodeType": "Micro",
+        "nextNode": 9,
+        "modifiers": []
+      },
+      {
+        "nodeId": 9,
+        "nodeType": "Medium",
+        "nextNode": 10,
+        "modifiers": []
+      },
+      {
+        "nodeId": 10,
+        "nodeType": "Notable",
+        "nextNode": 11,
+        "modifiers": []
+      },
+      {
+        "nodeId": 11,
+        "nodeType": "Undetermined Fate",
+        "nextNode": null,
+        "modifiers": [
+          {
+            "stat": "increasedDamage",
+            "op": "increased",
+            "value": 1
+          }
+        ]
+      }
+    ],
+    "typeCode": "Spell",
+    "rarity": "Rare",
+    "iconUrl": "/images/pactspirit/UI_Pet_SR_GuYingYouYou_04_116.webp"
+  },
+  {
+    "id": "defb67a7-7155-5beb-8ea4-11d0e784993f",
+    "name": "Icemirror",
+    "description": "Terra Damage, Terra Charge, Terra Area\nUnlock 2 Pact Nodes in advance",
+    "modifiers": [
+      {
+        "stat": "increasedDamage",
+        "op": "increased",
+        "value": 1
+      }
+    ],
+    "nodes": [
+      {
+        "nodeId": 1,
+        "nodeType": "Micro",
+        "nextNode": 2,
+        "modifiers": []
+      },
+      {
+        "nodeId": 2,
+        "nodeType": "Micro",
+        "nextNode": 3,
+        "modifiers": []
+      },
+      {
+        "nodeId": 3,
+        "nodeType": "Medium",
+        "nextNode": 4,
+        "modifiers": []
+      },
+      {
+        "nodeId": 4,
+        "nodeType": "Micro",
+        "nextNode": 5,
+        "modifiers": []
+      },
+      {
+        "nodeId": 5,
+        "nodeType": "Micro",
+        "nextNode": 6,
+        "modifiers": []
+      },
+      {
+        "nodeId": 6,
+        "nodeType": "Medium",
+        "nextNode": 7,
+        "modifiers": []
+      },
+      {
+        "nodeId": 7,
+        "nodeType": "Micro",
+        "nextNode": 8,
+        "modifiers": []
+      },
+      {
+        "nodeId": 8,
+        "nodeType": "Micro",
+        "nextNode": 9,
+        "modifiers": []
+      },
+      {
+        "nodeId": 9,
+        "nodeType": "Medium",
+        "nextNode": 10,
+        "modifiers": []
+      },
+      {
+        "nodeId": 10,
+        "nodeType": "Notable",
+        "nextNode": 11,
+        "modifiers": []
+      },
+      {
+        "nodeId": 11,
+        "nodeType": "Undetermined Fate",
+        "nextNode": null,
+        "modifiers": [
+          {
+            "stat": "increasedDamage",
+            "op": "increased",
+            "value": 1
+          }
+        ]
+      }
+    ],
+    "typeCode": "Spell",
+    "rarity": "Legendary"
+  },
+  {
+    "id": "3fb76bcb-1569-5ac1-b862-8e6b84506a43",
+    "name": "Meowth - Aurora",
+    "description": "Increases Drop Quantity\n",
+    "modifiers": [],
+    "nodes": [
+      {
+        "nodeId": 1,
+        "nodeType": "Micro",
+        "nextNode": 2,
+        "modifiers": []
+      },
+      {
+        "nodeId": 2,
+        "nodeType": "Micro",
+        "nextNode": 3,
+        "modifiers": []
+      },
+      {
+        "nodeId": 4,
+        "nodeType": "Micro",
+        "nextNode": 5,
+        "modifiers": []
+      },
+      {
+        "nodeId": 5,
+        "nodeType": "Micro",
+        "nextNode": 6,
+        "modifiers": []
+      },
+      {
+        "nodeId": 7,
+        "nodeType": "Micro",
+        "nextNode": 8,
+        "modifiers": []
+      },
+      {
+        "nodeId": 8,
+        "nodeType": "Micro",
+        "nextNode": 9,
+        "modifiers": []
+      },
+      {
+        "nodeId": 10,
+        "nodeType": "Notable",
+        "nextNode": 11,
+        "modifiers": []
+      }
+    ],
+    "typeCode": "Drop",
+    "rarity": "Magic",
+    "iconUrl": "/images/pactspirit/UI_Pet_R_MaoEZi_05_116.webp"
+  },
+  {
+    "id": "328078ed-dfde-5511-b4bb-47b86f502e87",
+    "name": "Miss Melancholy - Azure",
+    "description": "Increases Drop Quantity\n",
+    "modifiers": [],
+    "nodes": [
+      {
+        "nodeId": 1,
+        "nodeType": "Micro",
+        "nextNode": 2,
+        "modifiers": []
+      },
+      {
+        "nodeId": 2,
+        "nodeType": "Micro",
+        "nextNode": 3,
+        "modifiers": []
+      },
+      {
+        "nodeId": 3,
+        "nodeType": "Medium",
+        "nextNode": 4,
+        "modifiers": []
+      },
+      {
+        "nodeId": 4,
+        "nodeType": "Micro",
+        "nextNode": 5,
+        "modifiers": []
+      },
+      {
+        "nodeId": 5,
+        "nodeType": "Micro",
+        "nextNode": 6,
+        "modifiers": []
+      },
+      {
+        "nodeId": 6,
+        "nodeType": "Medium",
+        "nextNode": 7,
+        "modifiers": []
+      },
+      {
+        "nodeId": 7,
+        "nodeType": "Micro",
+        "nextNode": 8,
+        "modifiers": []
+      },
+      {
+        "nodeId": 8,
+        "nodeType": "Micro",
+        "nextNode": 9,
+        "modifiers": []
+      },
+      {
+        "nodeId": 9,
+        "nodeType": "Medium",
+        "nextNode": 10,
+        "modifiers": []
+      },
+      {
+        "nodeId": 10,
+        "nodeType": "Notable",
+        "nextNode": 11,
+        "modifiers": []
+      }
+    ],
+    "typeCode": "Drop",
+    "rarity": "Rare",
+    "iconUrl": "/images/pactspirit/UI_Pet_SR_GuYingYouYou_05_116.webp"
+  },
+  {
+    "id": "ea132570-ecb6-5c20-942d-eb23df3d9e66",
+    "name": "Lady Obituary",
+    "description": "Increases Drop Quantity\n",
+    "modifiers": [],
+    "nodes": [
+      {
+        "nodeId": 1,
+        "nodeType": "Micro",
+        "nextNode": 2,
+        "modifiers": []
+      },
+      {
+        "nodeId": 2,
+        "nodeType": "Micro",
+        "nextNode": 3,
+        "modifiers": []
+      },
+      {
+        "nodeId": 3,
+        "nodeType": "Medium",
+        "nextNode": 4,
+        "modifiers": []
+      },
+      {
+        "nodeId": 4,
+        "nodeType": "Micro",
+        "nextNode": 5,
+        "modifiers": []
+      },
+      {
+        "nodeId": 5,
+        "nodeType": "Micro",
+        "nextNode": 6,
+        "modifiers": []
+      },
+      {
+        "nodeId": 6,
+        "nodeType": "Medium",
+        "nextNode": 7,
+        "modifiers": []
+      },
+      {
+        "nodeId": 7,
+        "nodeType": "Micro",
+        "nextNode": 8,
+        "modifiers": []
+      },
+      {
+        "nodeId": 8,
+        "nodeType": "Micro",
+        "nextNode": 9,
+        "modifiers": []
+      },
+      {
+        "nodeId": 9,
+        "nodeType": "Medium",
+        "nextNode": 10,
+        "modifiers": []
+      },
+      {
+        "nodeId": 10,
+        "nodeType": "Notable",
+        "nextNode": 11,
+        "modifiers": []
+      }
+    ],
+    "typeCode": "Drop",
+    "rarity": "Legendary"
   }
 ]

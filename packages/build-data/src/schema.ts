@@ -343,6 +343,18 @@ export interface VoraxAffix {
   tiers?: AffixTier[];
 }
 
+/** A Kismet: a small rarity-tiered charm-like item (SS9+), one optional
+ * effect each (many carry no published effect text at all -- kept as an
+ * empty modifiers list rather than omitted, same as every other
+ * best-effort-parsed category). No `name` field in the scraped data. */
+export interface Kismet {
+  id: string;
+  iconUrl?: string;
+  rarity?: string;
+  type?: string;
+  modifiers: Modifier[];
+}
+
 /** The whole dataset, as loaded by the app and emitted by the scraper. */
 export interface Dataset {
   /** Provenance so the UI can show "seed data" vs. a real scrape, and when. */
@@ -369,6 +381,7 @@ export interface Dataset {
   voraxGearBases?: VoraxGearBase[];
   voraxAffixes?: VoraxAffix[];
   voraxLegendaries?: VoraxLegendary[];
+  kismets?: Kismet[];
 }
 
 /** A piece of gear the player has assembled: a base plus chosen affixes. */

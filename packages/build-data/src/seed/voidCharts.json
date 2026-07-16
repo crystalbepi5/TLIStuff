@@ -1284,7 +1284,7 @@
         "tlidbId": "11735",
         "type": "medium",
         "name": "Medium Node",
-        "description": "+20% chance to generate 1 additional Tarot Trial when defeating a Netherrealm boss",
+        "description": "+20% chance to generate 1 additional Tarot Trial when defeating a Stage Final Boss",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
           "1ea9542e-42c2-5d59-ae0e-e6b1612b82f4",
@@ -4807,7 +4807,7 @@
         "tlidbId": "11451",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, the SSS Rating in Clockwork Ballet Games grants +18% additional Drop Quantity",
+        "description": "In Netherrealm stages, the global bonus effect of Clockwork Ballet Games' SSS Rating is enhanced: +18% Drop Quantity",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
         "connections": [
           "9aa4e6b2-ee51-5365-b8ee-74be25feca8a"
@@ -5651,7 +5651,7 @@
         "tlidbId": "10320",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, bosses have a 5% chance to drop 5 additional Netherrealm Resonance(s)",
+        "description": "In Netherrealm stages, bosses have a 2.5% chance to drop 5 additional Netherrealm Resonance(s)",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Mystic_04_128.webp",
         "connections": [
           "d7dfb0ae-a5b5-5dad-9609-6fc983c190f7",
@@ -5668,7 +5668,7 @@
         "tlidbId": "10321",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, bosses have a 5% chance to drop 5 additional Netherrealm Resonance(s)",
+        "description": "In Netherrealm stages, bosses have a 2.5% chance to drop 5 additional Netherrealm Resonance(s)",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Mystic_04_128.webp",
         "connections": [
           "55af39fd-d5dd-5375-8c26-fcd629453354",
@@ -5685,7 +5685,7 @@
         "tlidbId": "10322",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, bosses have a 5% chance to drop 5 additional Netherrealm Resonance(s)",
+        "description": "In Netherrealm stages, bosses have a 2.5% chance to drop 5 additional Netherrealm Resonance(s)",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Mystic_04_128.webp",
         "connections": [
           "fdfd2612-f869-51fe-b541-b6800ac7f5ad",
@@ -5702,7 +5702,7 @@
         "tlidbId": "10323",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, bosses have a 5% chance to drop 20 additional Netherrealm Resonance(s)",
+        "description": "In Netherrealm stages, bosses have a 2.5% chance to drop 20 additional Netherrealm Resonance(s)",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Mystic_04_128.webp",
         "connections": [
           "3516124d-305a-553d-aec6-633cabaa1aac",
@@ -6633,7 +6633,7 @@
         "tlidbId": "10378",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, bosses have a 5% chance to drop 5 additional Netherrealm Resonance(s)",
+        "description": "In Netherrealm stages, bosses have a 2.5% chance to drop 5 additional Netherrealm Resonance(s)",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Mystic_04_128.webp",
         "connections": [
           "48e866ed-2ba4-552e-8da7-0ccd63675a55",
@@ -6650,7 +6650,7 @@
         "tlidbId": "10379",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, bosses have a 5% chance to drop 5 additional Netherrealm Resonance(s)",
+        "description": "In Netherrealm stages, bosses have a 2.5% chance to drop 5 additional Netherrealm Resonance(s)",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Mystic_04_128.webp",
         "connections": [
           "801ac8f8-c6e1-5c10-bdca-e6318c7a4d15",
@@ -6667,7 +6667,7 @@
         "tlidbId": "10380",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, bosses have a 5% chance to drop 5 additional Netherrealm Resonance(s)",
+        "description": "In Netherrealm stages, bosses have a 2.5% chance to drop 5 additional Netherrealm Resonance(s)",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Mystic_04_128.webp",
         "connections": [
           "22477ae7-30d3-5876-b0c6-9bbe4c07d474",
@@ -6684,7 +6684,7 @@
         "tlidbId": "10381",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, bosses have a 5% chance to drop 40 additional Netherrealm Resonance(s)",
+        "description": "In Netherrealm stages, bosses have a 2.5% chance to drop 40 additional Netherrealm Resonance(s)",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Mystic_04_128.webp",
         "connections": [
           "f2a186c6-b56d-533f-af90-b039097725b2"
@@ -7717,7 +7717,9 @@
           "7844b20c-6196-5676-be52-6e989b117c21",
           "c321e086-0229-5f6e-92aa-f1f905ac5c2c",
           "203d69e1-81d5-5ae1-8056-5d29f6e507b7",
-          "88d782e1-53ad-56d0-8d4a-763ee20647d1"
+          "88d782e1-53ad-56d0-8d4a-763ee20647d1",
+          "41a6a3a1-eb81-5a68-ba45-4cfdb419c29a",
+          "9579fe53-67df-57ba-aa50-9483105e7f7b"
         ],
         "position": {
           "x": 657,
@@ -7988,8 +7990,8 @@
         "tlidbId": "10258",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, Compasses dropped are more likely to be Hunting Compasses",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayGoH_01_128.webp",
+        "description": "In Netherrealm stages, Compasses dropped are more likely to be Mechanical Compasses",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayGoM_01_128.webp",
         "connections": [
           "ef4ceb1c-57af-5da5-b2e2-63b37338325b"
         ],
@@ -8004,8 +8006,8 @@
         "tlidbId": "10259",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, Compasses dropped are more likely to be Mechanical Compasses",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayGoM_01_128.webp",
+        "description": "In Netherrealm stages, Compasses dropped are more likely to be Dark Surge Compasses",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayCorrosion_01_128.webp",
         "connections": [
           "ef4ceb1c-57af-5da5-b2e2-63b37338325b"
         ],
@@ -8020,8 +8022,8 @@
         "tlidbId": "10260",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, Compasses dropped are more likely to be Dark Surge Compasses",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayCorrosion_01_128.webp",
+        "description": "In Netherrealm stages, Compasses dropped are more likely to be Blacksail Compasses",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayBlackSail_01_128.webp",
         "connections": [
           "ef4ceb1c-57af-5da5-b2e2-63b37338325b"
         ],
@@ -8036,8 +8038,8 @@
         "tlidbId": "10261",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, Compasses dropped are more likely to be Blacksail Compasses",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayBlackSail_01_128.webp",
+        "description": "In Netherrealm stages, Compasses dropped are more likely to be Cube Compasses",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayCube_01_128.webp",
         "connections": [
           "ef4ceb1c-57af-5da5-b2e2-63b37338325b"
         ],
@@ -8052,8 +8054,8 @@
         "tlidbId": "10262",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, Compasses dropped are more likely to be Cube Compasses",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayCube_01_128.webp",
+        "description": "In Netherrealm stages, Compasses dropped are more likely to be Aeterna Compasses",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayEternal_01_128.webp",
         "connections": [
           "ef4ceb1c-57af-5da5-b2e2-63b37338325b"
         ],
@@ -8068,8 +8070,8 @@
         "tlidbId": "10263",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, Compasses dropped are more likely to be Aeterna Compasses",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayEternal_01_128.webp",
+        "description": "In Netherrealm stages, Compasses dropped are more likely to be Nightmare Compasses",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayTwinightmare_01_128.webp",
         "connections": [
           "e4c68181-92d1-5423-a192-b293e5d2a053"
         ],
@@ -8084,8 +8086,8 @@
         "tlidbId": "10264",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, Compasses dropped are more likely to be Nightmare Compasses",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayTwinightmare_01_128.webp",
+        "description": "In Netherrealm stages, Compasses dropped are more likely to be Folklore Compasses",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayMist_01_128.webp",
         "connections": [
           "e4c68181-92d1-5423-a192-b293e5d2a053"
         ],
@@ -8100,8 +8102,8 @@
         "tlidbId": "10265",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, Compasses dropped are more likely to be Folklore Compasses",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayMist_01_128.webp",
+        "description": "In Netherrealm stages, Compasses dropped are more likely to be Frozen Canvas Compasses",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayFrozenCanvas_01_128.webp",
         "connections": [
           "e4c68181-92d1-5423-a192-b293e5d2a053"
         ],
@@ -8116,8 +8118,8 @@
         "tlidbId": "10266",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, Compasses dropped are more likely to be Frozen Canvas Compasses",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayFrozenCanvas_01_128.webp",
+        "description": "In Netherrealm stages, Compasses dropped are more likely to be Arcana Compasses",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayTaro_01_128.webp",
         "connections": [
           "e4c68181-92d1-5423-a192-b293e5d2a053"
         ],
@@ -8132,8 +8134,8 @@
         "tlidbId": "10267",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, Compasses dropped are more likely to be Arcana Compasses",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayTaro_01_128.webp",
+        "description": "In Netherrealm stages, Compasses dropped are more likely to be Sandlord Compasses",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayTycoon_01_128.webp",
         "connections": [
           "e4c68181-92d1-5423-a192-b293e5d2a053"
         ],
@@ -8148,8 +8150,8 @@
         "tlidbId": "10268",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, Compasses dropped are more likely to be Sandlord Compasses",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayTycoon_01_128.webp",
+        "description": "In Netherrealm stages, Compasses dropped are more likely to be Outlaw Compasses",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayOutlaw_01_128.webp",
         "connections": [
           "e4c68181-92d1-5423-a192-b293e5d2a053"
         ],
@@ -8164,8 +8166,8 @@
         "tlidbId": "10269",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, Compasses dropped are more likely to be Outlaw Compasses",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayOutlaw_01_128.webp",
+        "description": "In Netherrealm stages, Compasses dropped are more likely to be Overrealm Compasses",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayOverrealm_01_128.webp",
         "connections": [
           "e4c68181-92d1-5423-a192-b293e5d2a053"
         ],
@@ -8180,14 +8182,46 @@
         "tlidbId": "10270",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, Compasses dropped are more likely to be Overrealm Compasses",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayOverrealm_01_128.webp",
+        "description": "In Netherrealm stages, dropped Compasses are more likely to be Vorax Compasses",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayVorax_01_128.webp",
         "connections": [
           "e4c68181-92d1-5423-a192-b293e5d2a053"
         ],
         "position": {
           "x": -269,
           "y": -385
+        },
+        "modifiers": []
+      },
+      {
+        "id": "9579fe53-67df-57ba-aa50-9483105e7f7b",
+        "tlidbId": "10272",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, dropped Compasses are more likely to be Creation Compasses",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayAncientDevice_01_128.webp",
+        "connections": [
+          "3ea3fa58-736a-5de3-97e1-2fdb90e306eb"
+        ],
+        "position": {
+          "x": 629,
+          "y": 371
+        },
+        "modifiers": []
+      },
+      {
+        "id": "41a6a3a1-eb81-5a68-ba45-4cfdb419c29a",
+        "tlidbId": "10271",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, dropped Compasses are more likely to be Lunaria Compasses",
+        "icon": "",
+        "connections": [
+          "3ea3fa58-736a-5de3-97e1-2fdb90e306eb"
+        ],
+        "position": {
+          "x": 526,
+          "y": 302
         },
         "modifiers": []
       }
@@ -8206,8 +8240,9 @@
         "connections": [
           "553bf310-745c-5523-85e1-987b25eb0ded",
           "59d253d7-96c6-5a5f-a187-645eb80b35d0",
-          "6160ca6a-6359-5800-94c6-4bc3ebe26e22",
-          "4a4ac0de-afee-5a1c-a119-da7fc8e8d6ad"
+          "e747bcd7-65af-51f6-bbbe-8b7be1db572f",
+          "025a277d-3366-555b-9aba-b3430525b3d4",
+          "2a9ddb3e-c60d-5080-bece-1f448f836355"
         ],
         "position": {
           "x": 0,
@@ -8227,8 +8262,8 @@
           "1c90272e-baa6-5499-80eb-7de52a49b80f"
         ],
         "position": {
-          "x": -179,
-          "y": 61
+          "x": -200,
+          "y": 0
         },
         "modifiers": []
       },
@@ -8244,8 +8279,8 @@
           "25b8cb0c-6461-5661-93a7-f8281386fd7d"
         ],
         "position": {
-          "x": -290,
-          "y": 102
+          "x": -332,
+          "y": 0
         },
         "modifiers": []
       },
@@ -8261,8 +8296,8 @@
           "b36cd792-b30c-5084-b2ee-52d1d2b6fedf"
         ],
         "position": {
-          "x": -400,
-          "y": 142
+          "x": -464,
+          "y": 0
         },
         "modifiers": []
       },
@@ -8278,8 +8313,8 @@
           "3a6c984f-236c-5dd1-af7d-6f20f5a7b181"
         ],
         "position": {
-          "x": -511,
-          "y": 183
+          "x": -595,
+          "y": 0
         },
         "modifiers": []
       },
@@ -8295,8 +8330,8 @@
           "e6077e1a-f4b9-561b-bc5c-5f0f54667adf"
         ],
         "position": {
-          "x": -641,
-          "y": 231
+          "x": -746,
+          "y": 0
         },
         "modifiers": []
       },
@@ -8312,8 +8347,8 @@
           "f2b76ce9-ef10-51c9-be17-b564d704962f"
         ],
         "position": {
-          "x": -784,
-          "y": 174
+          "x": -898,
+          "y": 0
         },
         "modifiers": []
       },
@@ -8329,8 +8364,8 @@
           "021e372b-4d62-5bc0-ad3f-f292b695e85f"
         ],
         "position": {
-          "x": -907,
-          "y": 133
+          "x": -898,
+          "y": -172
         },
         "modifiers": []
       },
@@ -8346,8 +8381,8 @@
           "b83676e0-8f62-5e3d-8d3a-d2a3c59cf3bf"
         ],
         "position": {
-          "x": -907,
-          "y": 0
+          "x": -729,
+          "y": -235
         },
         "modifiers": []
       },
@@ -8363,8 +8398,8 @@
           "b253f82d-0291-5dc9-93a8-d31bda5bf885"
         ],
         "position": {
-          "x": -907,
-          "y": -130
+          "x": -560,
+          "y": -298
         },
         "modifiers": []
       },
@@ -8380,8 +8415,8 @@
           "e4f82564-7e86-59d4-abb6-71ebde345ed3"
         ],
         "position": {
-          "x": -783,
-          "y": -173
+          "x": -465,
+          "y": -431
         },
         "modifiers": []
       },
@@ -8397,8 +8432,8 @@
           "fab09058-793b-5de8-b6ee-31beedfc311f"
         ],
         "position": {
-          "x": -641,
-          "y": -231
+          "x": -340,
+          "y": -535
         },
         "modifiers": []
       },
@@ -8414,8 +8449,8 @@
           "bbfaba51-78d8-5b12-a1c8-9e1ce6a87b10"
         ],
         "position": {
-          "x": -510,
-          "y": -184
+          "x": -193,
+          "y": -603
         },
         "modifiers": []
       },
@@ -8431,8 +8466,8 @@
           "6157f39b-75e0-50d0-8079-f1062f7079d8"
         ],
         "position": {
-          "x": -400,
-          "y": -141
+          "x": -127,
+          "y": -754
         },
         "modifiers": []
       },
@@ -8448,8 +8483,8 @@
           "049cfad8-f369-5a4a-9a15-697e8cfbdf54"
         ],
         "position": {
-          "x": -289,
-          "y": -101
+          "x": 0,
+          "y": -754
         },
         "modifiers": []
       },
@@ -8464,8 +8499,8 @@
           "6157f39b-75e0-50d0-8079-f1062f7079d8"
         ],
         "position": {
-          "x": -178,
-          "y": -61
+          "x": 127,
+          "y": -753
         },
         "modifiers": []
       },
@@ -8481,7 +8516,7 @@
           "1c22d51b-69ba-5df5-9f41-3bf680ec4640"
         ],
         "position": {
-          "x": 150,
+          "x": 200,
           "y": 0
         },
         "modifiers": []
@@ -8498,7 +8533,7 @@
           "7af66a67-b96f-5939-87dc-3ebfef8e4822"
         ],
         "position": {
-          "x": 249,
+          "x": 332,
           "y": 0
         },
         "modifiers": []
@@ -8515,7 +8550,7 @@
           "b2874678-618e-5ec0-9071-cb304f18a6c7"
         ],
         "position": {
-          "x": 348,
+          "x": 464,
           "y": 0
         },
         "modifiers": []
@@ -8532,7 +8567,7 @@
           "c4535bac-a996-52f6-a614-e5a95be7ff93"
         ],
         "position": {
-          "x": 467,
+          "x": 595,
           "y": 0
         },
         "modifiers": []
@@ -8549,7 +8584,7 @@
           "e523d35e-4962-53a3-b56b-17abfba9129b"
         ],
         "position": {
-          "x": 585,
+          "x": 747,
           "y": 0
         },
         "modifiers": []
@@ -8566,7 +8601,7 @@
           "6ce6b7a5-ea1a-5d4e-8f35-be589a44970b"
         ],
         "position": {
-          "x": 684,
+          "x": 898,
           "y": 0
         },
         "modifiers": []
@@ -8583,8 +8618,8 @@
           "9999e90a-7057-53c2-9051-9479767019af"
         ],
         "position": {
-          "x": 783,
-          "y": 0
+          "x": 898,
+          "y": -172
         },
         "modifiers": []
       },
@@ -8597,12 +8632,11 @@
         "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayAncientDevice_01_128.webp",
         "connections": [
           "6ce6b7a5-ea1a-5d4e-8f35-be589a44970b",
-          "3723898d-1062-5f0f-a53d-7aba3cfd8b61",
-          "e747bcd7-65af-51f6-bbbe-8b7be1db572f"
+          "3723898d-1062-5f0f-a53d-7aba3cfd8b61"
         ],
         "position": {
-          "x": 902,
-          "y": 0
+          "x": 730,
+          "y": -234
         },
         "modifiers": []
       },
@@ -8618,8 +8652,8 @@
           "af81f813-4bab-53a7-91f2-ef206127f6f9"
         ],
         "position": {
-          "x": 902,
-          "y": 127
+          "x": 560,
+          "y": -298
         },
         "modifiers": []
       },
@@ -8635,8 +8669,8 @@
           "40ddcbcc-b577-5371-ad59-77527546f1cf"
         ],
         "position": {
-          "x": 788,
-          "y": 166
+          "x": 466,
+          "y": -432
         },
         "modifiers": []
       },
@@ -8652,8 +8686,8 @@
           "bed832a6-d2f7-508e-853c-a6cddd1496b4"
         ],
         "position": {
-          "x": 675,
-          "y": 206
+          "x": 340,
+          "y": -535
         },
         "modifiers": []
       },
@@ -8668,8 +8702,8 @@
           "40ddcbcc-b577-5371-ad59-77527546f1cf"
         ],
         "position": {
-          "x": 556,
-          "y": 251
+          "x": 193,
+          "y": -602
         },
         "modifiers": []
       },
@@ -8681,12 +8715,12 @@
         "description": "In Netherrealm stages, +2% additional Creation Engine Drop Quantity",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
         "connections": [
-          "9999e90a-7057-53c2-9051-9479767019af",
+          "fcc22c97-decb-54a8-9feb-7ba1134488a3",
           "291ad781-b2ff-54a6-bd01-0ab3fb745296"
         ],
         "position": {
-          "x": 902,
-          "y": -127
+          "x": 0,
+          "y": -196
         },
         "modifiers": []
       },
@@ -8702,8 +8736,8 @@
           "964b6888-bebb-5c55-a4c8-08da4b2b0707"
         ],
         "position": {
-          "x": 788,
-          "y": -166
+          "x": 0,
+          "y": -308
         },
         "modifiers": []
       },
@@ -8719,8 +8753,8 @@
           "9b53e3a6-f2c3-51a4-ba92-e1c80b6a1946"
         ],
         "position": {
-          "x": 675,
-          "y": -205
+          "x": 0,
+          "y": -421
         },
         "modifiers": []
       },
@@ -8729,14 +8763,16 @@
         "tlidbId": "12331",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, generates 1 additional Catalyst Creation Engine(s) Up to 1 Creation Engine(s) can appear in Netherrealm stages",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayAncientDevice_01_128.webp",
+        "description": "In Netherrealm stages, +6% additional Creation Engine Drop Quantity",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
         "connections": [
-          "964b6888-bebb-5c55-a4c8-08da4b2b0707"
+          "964b6888-bebb-5c55-a4c8-08da4b2b0707",
+          "6160ca6a-6359-5800-94c6-4bc3ebe26e22",
+          "44aeaea6-073b-5b76-97ad-9d41ff02c1f7"
         ],
         "position": {
-          "x": 556,
-          "y": -251
+          "x": 0,
+          "y": -552
         },
         "modifiers": []
       },
@@ -8748,12 +8784,12 @@
         "description": "In Netherrealm stages, +2% additional Creation Engine Drop Quantity",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
         "connections": [
-          "fcc22c97-decb-54a8-9feb-7ba1134488a3",
+          "9b53e3a6-f2c3-51a4-ba92-e1c80b6a1946",
           "fea62dec-bad9-5684-9f49-36c7e99d3c8d"
         ],
         "position": {
-          "x": 0,
-          "y": -172
+          "x": -142,
+          "y": -442
         },
         "modifiers": []
       },
@@ -8769,8 +8805,8 @@
           "13bf1014-5847-5cfa-a5de-bcda8a13c9bb"
         ],
         "position": {
-          "x": 0,
-          "y": -314
+          "x": -272,
+          "y": -376
         },
         "modifiers": []
       },
@@ -8786,8 +8822,8 @@
           "47da5c1c-4f5c-58ee-8238-b2b03d08c882"
         ],
         "position": {
-          "x": 0,
-          "y": -456
+          "x": -375,
+          "y": -276
         },
         "modifiers": []
       },
@@ -8796,16 +8832,14 @@
         "tlidbId": "12335",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, +6% additional Creation Engine Drop Quantity",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "description": "In Netherrealm stages, when activating a Creation Engine, there is a 44% chance to generate 1 additional Creation Incarnation(s)",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_03_128.webp",
         "connections": [
-          "13bf1014-5847-5cfa-a5de-bcda8a13c9bb",
-          "44aeaea6-073b-5b76-97ad-9d41ff02c1f7",
-          "025a277d-3366-555b-9aba-b3430525b3d4"
+          "13bf1014-5847-5cfa-a5de-bcda8a13c9bb"
         ],
         "position": {
-          "x": 0,
-          "y": -663
+          "x": -441,
+          "y": -144
         },
         "modifiers": []
       },
@@ -8817,12 +8851,12 @@
         "description": "In Netherrealm stages, +2% additional Creation Engine Drop Quantity",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
         "connections": [
-          "47da5c1c-4f5c-58ee-8238-b2b03d08c882",
+          "9b53e3a6-f2c3-51a4-ba92-e1c80b6a1946",
           "b8a210f5-4080-5212-ab45-521a81493fc4"
         ],
         "position": {
-          "x": 132,
-          "y": -663
+          "x": 142,
+          "y": -442
         },
         "modifiers": []
       },
@@ -8838,8 +8872,8 @@
           "d78803cc-f52d-597c-9b6a-bce00f5896ac"
         ],
         "position": {
-          "x": 198,
-          "y": -519
+          "x": 272,
+          "y": -376
         },
         "modifiers": []
       },
@@ -8855,8 +8889,8 @@
           "8a017413-a910-5f46-8c69-37e9f3d840a3"
         ],
         "position": {
-          "x": 327,
-          "y": -449
+          "x": 375,
+          "y": -276
         },
         "modifiers": []
       },
@@ -8865,14 +8899,14 @@
         "tlidbId": "12339",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, when activating a Creation Engine, there is a 44% chance to generate 1 additional Creation Incarnation(s)",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_03_128.webp",
+        "description": "In Netherrealm stages, +18% additional Creation Engine Drop Quantity In Netherrealm stages, when you are defeated, immediately stops the activated Creation Engine and settles rewards",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
         "connections": [
           "d78803cc-f52d-597c-9b6a-bce00f5896ac"
         ],
         "position": {
-          "x": 431,
-          "y": -350
+          "x": 441,
+          "y": -144
         },
         "modifiers": []
       },
@@ -8884,12 +8918,12 @@
         "description": "In Netherrealm stages, +2% additional Creation Engine Drop Quantity",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
         "connections": [
-          "47da5c1c-4f5c-58ee-8238-b2b03d08c882",
+          "fcc22c97-decb-54a8-9feb-7ba1134488a3",
           "96188b8e-3590-55ca-8c79-383c0494789c"
         ],
         "position": {
-          "x": -132,
-          "y": -664
+          "x": -176,
+          "y": 94
         },
         "modifiers": []
       },
@@ -8905,8 +8939,8 @@
           "31664ee7-0144-516b-badc-4e2ece2f7588"
         ],
         "position": {
-          "x": -198,
-          "y": -519
+          "x": -304,
+          "y": 162
         },
         "modifiers": []
       },
@@ -8922,8 +8956,8 @@
           "c40e5de5-64c2-5c4f-9344-ef70818a8219"
         ],
         "position": {
-          "x": -325,
-          "y": -449
+          "x": -432,
+          "y": 230
         },
         "modifiers": []
       },
@@ -8932,14 +8966,16 @@
         "tlidbId": "12343",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, +18% additional Creation Engine Drop Quantity In Netherrealm stages, when you are defeated, immediately stops the activated Creation Engine and settles rewards",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "description": "In Netherrealm stages, Creation Crystals generated by Creation Engines are more likely to be Fluorescent Creation Crystals",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Memory_01_128.webp",
         "connections": [
-          "31664ee7-0144-516b-badc-4e2ece2f7588"
+          "31664ee7-0144-516b-badc-4e2ece2f7588",
+          "4a4ac0de-afee-5a1c-a119-da7fc8e8d6ad",
+          "c429453f-be26-5ec0-8e75-8545da338ea5"
         ],
         "position": {
-          "x": -431,
-          "y": -348
+          "x": -559,
+          "y": 298
         },
         "modifiers": []
       },
@@ -8951,12 +8987,12 @@
         "description": "In Netherrealm stages, +2% additional Creation Engine Drop Quantity",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
         "connections": [
-          "fcc22c97-decb-54a8-9feb-7ba1134488a3",
+          "c40e5de5-64c2-5c4f-9344-ef70818a8219",
           "79f03e64-d55e-520b-982f-c032c64b86e3"
         ],
         "position": {
-          "x": 0,
-          "y": 172
+          "x": -701,
+          "y": 375
         },
         "modifiers": []
       },
@@ -8972,8 +9008,8 @@
           "67330749-b6aa-5f40-8d3a-116024ee7493"
         ],
         "position": {
-          "x": 0,
-          "y": 314
+          "x": -554,
+          "y": 570
         },
         "modifiers": []
       },
@@ -8989,8 +9025,8 @@
           "bf81d9c2-9107-5857-9fac-51df8ea09efb"
         ],
         "position": {
-          "x": 0,
-          "y": 456
+          "x": -356,
+          "y": 711
         },
         "modifiers": []
       },
@@ -8999,16 +9035,15 @@
         "tlidbId": "12347",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, Creation Crystals generated by Creation Engines are more likely to be Fluorescent Creation Crystals",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayAncientDevice_02_128.webp",
+        "description": "In Netherrealm stages, Creation Sentries take -20% additional damage In Netherrealm stages, Fluorescent Creation Crystals generated by Creation Engines may become Gold Fluorescent Creation Crystals",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayAncientDevice_04_128.webp",
         "connections": [
           "67330749-b6aa-5f40-8d3a-116024ee7493",
-          "22f0bfcd-2249-5ecd-b482-b566f927ed1b",
-          "c429453f-be26-5ec0-8e75-8545da338ea5"
+          "22f0bfcd-2249-5ecd-b482-b566f927ed1b"
         ],
         "position": {
-          "x": 0,
-          "y": 664
+          "x": -120,
+          "y": 785
         },
         "modifiers": []
       },
@@ -9024,8 +9059,8 @@
           "5f1db66e-1f10-5da4-9556-11a675266b8e"
         ],
         "position": {
-          "x": -132,
-          "y": 664
+          "x": 122,
+          "y": 786
         },
         "modifiers": []
       },
@@ -9041,8 +9076,8 @@
           "9dd81819-279f-5cd3-b8a1-4ccef671ca3a"
         ],
         "position": {
-          "x": -198,
-          "y": 519
+          "x": 355,
+          "y": 711
         },
         "modifiers": []
       },
@@ -9058,8 +9093,8 @@
           "297c48ce-67bc-5b39-8218-3bbd444e687d"
         ],
         "position": {
-          "x": -325,
-          "y": 449
+          "x": 521,
+          "y": 600
         },
         "modifiers": []
       },
@@ -9068,14 +9103,14 @@
         "tlidbId": "12351",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, Creation Sentries take -20% additional damage In Netherrealm stages, Fluorescent Creation Crystals generated by Creation Engines may become Gold Fluorescent Creation Crystals",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayAncientDevice_04_128.webp",
+        "description": "In Netherrealm stages, after a Creation Engine activates a Gold Fluorescent Creation Crystal , rewards settled are guaranteed to drop 1 aameplay exclusive Fluorescent Memory",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Memory_01_128.webp",
         "connections": [
           "9dd81819-279f-5cd3-b8a1-4ccef671ca3a"
         ],
         "position": {
-          "x": -431,
-          "y": 349
+          "x": 702,
+          "y": 373
         },
         "modifiers": []
       },
@@ -9087,12 +9122,12 @@
         "description": "In Netherrealm stages, +2% additional Creation Engine Drop Quantity",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
         "connections": [
-          "bf81d9c2-9107-5857-9fac-51df8ea09efb",
+          "c40e5de5-64c2-5c4f-9344-ef70818a8219",
           "16d7df8a-9b60-542b-be10-dbb386ca6f97"
         ],
         "position": {
-          "x": 132,
-          "y": 664
+          "x": -416,
+          "y": 478
         },
         "modifiers": []
       },
@@ -9108,8 +9143,8 @@
           "8e2caa8e-1046-5e40-a049-9c9ebcbd0f83"
         ],
         "position": {
-          "x": 198,
-          "y": 520
+          "x": -222,
+          "y": 593
         },
         "modifiers": []
       },
@@ -9125,8 +9160,8 @@
           "8a09faa9-0abf-54c9-8d6d-2bf3e30fea6d"
         ],
         "position": {
-          "x": 327,
-          "y": 449
+          "x": 0,
+          "y": 632
         },
         "modifiers": []
       },
@@ -9141,8 +9176,194 @@
           "8e2caa8e-1046-5e40-a049-9c9ebcbd0f83"
         ],
         "position": {
-          "x": 431,
-          "y": 350
+          "x": 223,
+          "y": 592
+        },
+        "modifiers": []
+      },
+      {
+        "id": "2a9ddb3e-c60d-5080-bece-1f448f836355",
+        "tlidbId": "12356",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +5% chance to spawn 1 additional Catalyst Creation Engine(s)",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayAncientDevice_01_128.webp",
+        "connections": [
+          "fcc22c97-decb-54a8-9feb-7ba1134488a3",
+          "949c6592-3574-51df-9867-88508e10d48e"
+        ],
+        "position": {
+          "x": 176,
+          "y": 94
+        },
+        "modifiers": []
+      },
+      {
+        "id": "949c6592-3574-51df-9867-88508e10d48e",
+        "tlidbId": "12357",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +5% chance to spawn 1 additional Catalyst Creation Engine(s)",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayAncientDevice_01_128.webp",
+        "connections": [
+          "2a9ddb3e-c60d-5080-bece-1f448f836355",
+          "f141688f-4332-520a-a5e1-591435621046"
+        ],
+        "position": {
+          "x": 294,
+          "y": 157
+        },
+        "modifiers": []
+      },
+      {
+        "id": "f141688f-4332-520a-a5e1-591435621046",
+        "tlidbId": "12358",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +5% chance to spawn 1 additional Catalyst Creation Engine(s)",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayAncientDevice_01_128.webp",
+        "connections": [
+          "949c6592-3574-51df-9867-88508e10d48e",
+          "9987b1e8-32a0-5826-8b17-73ffb627fe69"
+        ],
+        "position": {
+          "x": 411,
+          "y": 219
+        },
+        "modifiers": []
+      },
+      {
+        "id": "9987b1e8-32a0-5826-8b17-73ffb627fe69",
+        "tlidbId": "12359",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, +20% chance to spawn 1 additional Catalyst Creation Engine(s)",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayAncientDevice_01_128.webp",
+        "connections": [
+          "f141688f-4332-520a-a5e1-591435621046",
+          "81ec2f80-2268-5018-b370-05be85925098"
+        ],
+        "position": {
+          "x": 559,
+          "y": 298
+        },
+        "modifiers": []
+      },
+      {
+        "id": "81ec2f80-2268-5018-b370-05be85925098",
+        "tlidbId": "12360",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +5% chance to spawn 1 additional Catalyst Creation Engine(s)",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayAncientDevice_01_128.webp",
+        "connections": [
+          "9987b1e8-32a0-5826-8b17-73ffb627fe69",
+          "504f3d7f-db22-5d0b-85db-344c530868c4"
+        ],
+        "position": {
+          "x": 416,
+          "y": 476
+        },
+        "modifiers": []
+      },
+      {
+        "id": "504f3d7f-db22-5d0b-85db-344c530868c4",
+        "tlidbId": "12361",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +5% chance to spawn 1 additional Catalyst Creation Engine(s)",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayAncientDevice_01_128.webp",
+        "connections": [
+          "81ec2f80-2268-5018-b370-05be85925098",
+          "41fe2c3e-ce70-5a36-9307-e07b526b0f0f"
+        ],
+        "position": {
+          "x": 307,
+          "y": 351
+        },
+        "modifiers": []
+      },
+      {
+        "id": "41fe2c3e-ce70-5a36-9307-e07b526b0f0f",
+        "tlidbId": "12362",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +5% chance to spawn 1 additional Catalyst Creation Engine(s)",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayAncientDevice_01_128.webp",
+        "connections": [
+          "504f3d7f-db22-5d0b-85db-344c530868c4",
+          "b20b4209-321e-5a30-a6fd-53da7b019e0a"
+        ],
+        "position": {
+          "x": 165,
+          "y": 436
+        },
+        "modifiers": []
+      },
+      {
+        "id": "b20b4209-321e-5a30-a6fd-53da7b019e0a",
+        "tlidbId": "12363",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, -100% additional Creation Engine Drop Quantity In Netherrealm stages, +50% chance to spawn 1 additional Catalyst Creation Engine(s)",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayAncientDevice_01_128.webp",
+        "connections": [
+          "41fe2c3e-ce70-5a36-9307-e07b526b0f0f",
+          "53007918-0e1a-5c70-a447-64d1303641c8",
+          "68239ee8-07a3-5a94-a661-f7c578b361b3",
+          "3bb88dee-64f5-5ef6-8fe0-66842ae744c9"
+        ],
+        "position": {
+          "x": 1,
+          "y": 467
+        },
+        "modifiers": []
+      },
+      {
+        "id": "53007918-0e1a-5c70-a447-64d1303641c8",
+        "tlidbId": "12364",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, Creation Crystals generated by Creation Engines are extremely likely to be Fluorescent Creation Crystals",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Memory_01_128.webp",
+        "connections": [
+          "b20b4209-321e-5a30-a6fd-53da7b019e0a"
+        ],
+        "position": {
+          "x": -139,
+          "y": 443
+        },
+        "modifiers": []
+      },
+      {
+        "id": "68239ee8-07a3-5a94-a661-f7c578b361b3",
+        "tlidbId": "12365",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, Creation Crystals generated by Creation Engines are extremely likely to be Gear Creation Crystals",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Gear_02_128.webp",
+        "connections": [
+          "b20b4209-321e-5a30-a6fd-53da7b019e0a"
+        ],
+        "position": {
+          "x": -64,
+          "y": 340
+        },
+        "modifiers": []
+      },
+      {
+        "id": "3bb88dee-64f5-5ef6-8fe0-66842ae744c9",
+        "tlidbId": "12366",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, Creation Crystals generated by Creation Engines are extremely likely to be Compass Creation Crystals",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Compass_06_128.webp",
+        "connections": [
+          "b20b4209-321e-5a30-a6fd-53da7b019e0a"
+        ],
+        "position": {
+          "x": 65,
+          "y": 339
         },
         "modifiers": []
       }
@@ -9820,8 +10041,8 @@
         "tlidbId": "11039",
         "type": "medium",
         "name": "Foolish - Cube",
-        "description": "In Netherrealm stages, + 1 Greed attempt(s) for Cube of Rapacity Timemark 1 or above: Confusion Card [Foolish - Cube] added to the Confusion Deck",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayCube_01_128.webp",
+        "description": "In Netherrealm stages, +6% additional Drop Quantity for Malice Incarnations Timemark 1 or above: Confusion Card [Foolish - Cube] added to the Confusion Deck",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
         "connections": [
           "5cf2f8c3-fb60-5129-9cb9-04e94dac2c7c",
           "c310a411-fc29-59f1-9460-bac41d8a8898"
@@ -11102,8 +11323,8 @@
         "tlidbId": "10846",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, 1 piece(s) of Legendary gear dropped by each reward monster in Dark Surge Eruption has (have) a 12% chance to have undergone Darkest Corrosion In Netherrealm stages, the player -2% additional damage dealt for each Dark Surge Eruption",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_Gear_18_128.webp",
+        "description": "In Netherrealm stages, after triggering Dark Surge Eruption for the first time, subsequent eruptions will occur automatically once Corrosion Energy is fully accumulated In Netherrealm stages, the player -3% additional damage dealt for each Dark Surge Eruption",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayCorrosion_01_128.webp",
         "connections": [
           "26b93ea5-d339-5e54-a0cb-265f72d64954",
           "8106862d-fb0e-5db9-a819-f346bf96ff31"
@@ -13181,13 +13402,12 @@
         "connections": [
           "43b9f5ea-fac7-58e7-a643-e51ae4dd5c74",
           "0271bdea-dcf0-5e7a-9826-3b2fb7845cf9",
-          "44e093c9-020d-5591-be23-2462cdb5dea5",
-          "4f03d362-4f1e-50b3-a588-24713f64768e",
-          "b6c1db57-34cf-5277-9cc5-d5722805cac2"
+          "492fbcff-83ee-522d-827a-7fa2a818b043",
+          "c42de343-75a0-5234-b239-7fb5dce774ab"
         ],
         "position": {
-          "x": -4,
-          "y": 0
+          "x": -3,
+          "y": 415
         },
         "modifiers": []
       },
@@ -13203,8 +13423,8 @@
           "f52f64a4-50a3-584d-bd2d-c4d527348900"
         ],
         "position": {
-          "x": -140,
-          "y": -55
+          "x": -189,
+          "y": 453
         },
         "modifiers": []
       },
@@ -13220,8 +13440,8 @@
           "a3943b07-d0f4-5317-8a3f-66f77dfc47ee"
         ],
         "position": {
-          "x": -242,
-          "y": -43
+          "x": -357,
+          "y": 453
         },
         "modifiers": []
       },
@@ -13237,8 +13457,8 @@
           "92c11a72-6721-5fa4-b3f6-d83125ccdef0"
         ],
         "position": {
-          "x": -310,
-          "y": -142
+          "x": -498,
+          "y": 628
         },
         "modifiers": []
       },
@@ -13254,8 +13474,8 @@
           "bb1852b0-7cc6-59a4-aa1d-1dd6d01184df"
         ],
         "position": {
-          "x": -222,
-          "y": -189
+          "x": -582,
+          "y": 490
         },
         "modifiers": []
       },
@@ -13271,8 +13491,8 @@
           "6fb2d2de-3b46-5357-ae60-877981a86ef1"
         ],
         "position": {
-          "x": -170,
-          "y": -296
+          "x": -667,
+          "y": 353
         },
         "modifiers": []
       },
@@ -13288,8 +13508,8 @@
           "8203d123-5b5d-566d-8dfb-136f77e3a340"
         ],
         "position": {
-          "x": -100,
-          "y": -411
+          "x": -751,
+          "y": 215
         },
         "modifiers": []
       },
@@ -13305,8 +13525,8 @@
           "ec05c83e-a6a4-5abe-ac9b-14186864a81a"
         ],
         "position": {
-          "x": -50,
-          "y": -503
+          "x": -836,
+          "y": 77
         },
         "modifiers": []
       },
@@ -13322,8 +13542,8 @@
           "cdbf7288-b707-50df-9d69-1c9e63fd935e"
         ],
         "position": {
-          "x": -4,
-          "y": -608
+          "x": -920,
+          "y": -60
         },
         "modifiers": []
       },
@@ -13339,8 +13559,8 @@
           "c92b2dd1-78f0-5cc1-a055-76e0abf0130f"
         ],
         "position": {
-          "x": 42,
-          "y": -503
+          "x": -786,
+          "y": -154
         },
         "modifiers": []
       },
@@ -13356,8 +13576,8 @@
           "f5af11c9-fc81-5ddf-9c6e-98c5eb441c0f"
         ],
         "position": {
-          "x": 92,
-          "y": -411
+          "x": -652,
+          "y": -246
         },
         "modifiers": []
       },
@@ -13373,8 +13593,8 @@
           "12a46b41-5be3-5f92-aa22-82013f8c0b11"
         ],
         "position": {
-          "x": 162,
-          "y": -296
+          "x": -518,
+          "y": -340
         },
         "modifiers": []
       },
@@ -13390,8 +13610,8 @@
           "6d8f1b75-8b3d-5ba8-9963-a6c61aea922b"
         ],
         "position": {
-          "x": 214,
-          "y": -189
+          "x": -725,
+          "y": -15
         },
         "modifiers": []
       },
@@ -13407,8 +13627,8 @@
           "3c9fe1a1-bb25-5b3b-acf6-bdb24d1216ff"
         ],
         "position": {
-          "x": 302,
-          "y": -142
+          "x": -616,
+          "y": 125
         },
         "modifiers": []
       },
@@ -13424,8 +13644,8 @@
           "22af403a-1a90-58d5-8af7-dcd5e421db62"
         ],
         "position": {
-          "x": 234,
-          "y": -43
+          "x": -506,
+          "y": 266
         },
         "modifiers": []
       },
@@ -13440,8 +13660,8 @@
           "3c9fe1a1-bb25-5b3b-acf6-bdb24d1216ff"
         ],
         "position": {
-          "x": 132,
-          "y": -55
+          "x": -361,
+          "y": 267
         },
         "modifiers": []
       },
@@ -13450,15 +13670,15 @@
         "tlidbId": "10616",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, +4% chance to replicate bosses affected by Trial: Goddess of Hunting",
+        "description": "In Netherrealm stages, 3% chance to replicate Stage Final Bosses after starting Trial: Goddess of Hunting",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
           "a8d296b1-c438-5e85-97a7-7e4ba4730277",
           "bd41fc9c-d76c-50d4-b07e-b5fdc169296c"
         ],
         "position": {
-          "x": -150,
-          "y": 62
+          "x": -117,
+          "y": 542
         },
         "modifiers": []
       },
@@ -13467,49 +13687,49 @@
         "tlidbId": "10617",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, +4% chance to replicate bosses affected by Trial: Goddess of Hunting",
+        "description": "In Netherrealm stages, 3% chance to replicate Stage Final Bosses after starting Trial: Goddess of Hunting",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
           "0271bdea-dcf0-5e7a-9826-3b2fb7845cf9",
           "b6579628-460e-5d95-b752-7de0c1837bb8"
         ],
         "position": {
-          "x": -237,
-          "y": 116
+          "x": -194,
+          "y": 627
         },
         "modifiers": []
       },
       {
         "id": "b6579628-460e-5d95-b752-7de0c1837bb8",
         "tlidbId": "10618",
-        "type": "medium",
-        "name": "Medium Node",
-        "description": "In Netherrealm stages, +17% chance to replicate bosses affected by Trial: Goddess of Hunting",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, 3% chance to replicate Stage Final Bosses after starting Trial: Goddess of Hunting",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
           "bd41fc9c-d76c-50d4-b07e-b5fdc169296c",
           "bc91b263-fa35-5c69-afee-9ee2b1ddae1a"
         ],
         "position": {
-          "x": -356,
-          "y": 157
+          "x": -131,
+          "y": 723
         },
         "modifiers": []
       },
       {
         "id": "bc91b263-fa35-5c69-afee-9ee2b1ddae1a",
         "tlidbId": "10619",
-        "type": "micro",
-        "name": "Micro Node",
-        "description": "In Netherrealm stages, +4% chance to replicate bosses affected by Trial: Goddess of Hunting",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, 14% chance to replicate Stage Final Bosses after starting Trial: Goddess of Hunting",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
           "b6579628-460e-5d95-b752-7de0c1837bb8",
           "2f290de4-07ed-5894-8b5a-40369cc33ef3"
         ],
         "position": {
-          "x": -373,
-          "y": 35
+          "x": -67,
+          "y": 819
         },
         "modifiers": []
       },
@@ -13518,31 +13738,32 @@
         "tlidbId": "10620",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, +4% chance to replicate bosses affected by Trial: Goddess of Hunting",
+        "description": "In Netherrealm stages, 3% chance to replicate Stage Final Bosses after starting Trial: Goddess of Hunting",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
           "bc91b263-fa35-5c69-afee-9ee2b1ddae1a",
           "ec216fc9-5d7a-5ac2-8e08-d32eee425794"
         ],
         "position": {
-          "x": -459,
-          "y": -23
+          "x": -4,
+          "y": 915
         },
         "modifiers": []
       },
       {
         "id": "ec216fc9-5d7a-5ac2-8e08-d32eee425794",
         "tlidbId": "10621",
-        "type": "medium",
-        "name": "Medium Node",
-        "description": "In Netherrealm stages, there is a 7% chance for a Ghost to spawn after defeating a boss affected by Trial: Goddess of Hunting",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, 3% chance to replicate Stage Final Bosses after starting Trial: Goddess of Hunting",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
-          "2f290de4-07ed-5894-8b5a-40369cc33ef3"
+          "2f290de4-07ed-5894-8b5a-40369cc33ef3",
+          "44e093c9-020d-5591-be23-2462cdb5dea5"
         ],
         "position": {
-          "x": -579,
-          "y": 18
+          "x": 58,
+          "y": 819
         },
         "modifiers": []
       },
@@ -13551,72 +13772,65 @@
         "tlidbId": "10622",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, +4% chance to replicate bosses affected by Trial: Goddess of Hunting",
+        "description": "In Netherrealm stages, 3% chance to replicate Stage Final Bosses after starting Trial: Goddess of Hunting",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
-          "a8d296b1-c438-5e85-97a7-7e4ba4730277",
+          "ec216fc9-5d7a-5ac2-8e08-d32eee425794",
           "5f0cf7b2-f21c-5def-88af-69a16ff8184f"
         ],
         "position": {
-          "x": 142,
-          "y": 62
+          "x": 122,
+          "y": 723
         },
         "modifiers": []
       },
       {
         "id": "5f0cf7b2-f21c-5def-88af-69a16ff8184f",
         "tlidbId": "10623",
-        "type": "micro",
-        "name": "Micro Node",
-        "description": "In Netherrealm stages, +4% chance to replicate bosses affected by Trial: Goddess of Hunting",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, there is a 7% chance for a Ghost to spawn after defeating a Stage Final Boss affected by Trial: Goddess of Hunting",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
-          "44e093c9-020d-5591-be23-2462cdb5dea5",
-          "492fbcff-83ee-522d-827a-7fa2a818b043"
+          "44e093c9-020d-5591-be23-2462cdb5dea5"
         ],
         "position": {
-          "x": 229,
-          "y": 116
+          "x": 186,
+          "y": 628
         },
         "modifiers": []
       },
       {
         "id": "492fbcff-83ee-522d-827a-7fa2a818b043",
         "tlidbId": "10624",
-        "type": "medium",
-        "name": "Crafty - Hunting",
-        "description": "In Netherrealm stages, bosses affected by Trial: Goddess of Hunting have a 12% chance to be assisted by the Plane Watcher and will spawn 1 Plane Watcher Chest on defeat In Netherrealm stages, bosses affected by Trial: Goddess of Hunting take -30% additional damage Timemark 1 or above: Confusion Card [Crafty - Hunting] added to the Confusion Deck",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_SecretBox_01_128.webp",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, 3% chance to replicate Stage Final Bosses after starting Trial: Goddess of Hunting",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
-          "5f0cf7b2-f21c-5def-88af-69a16ff8184f",
+          "a8d296b1-c438-5e85-97a7-7e4ba4730277",
           "00693748-d483-5b31-8e5a-0622f7fc6109"
         ],
         "position": {
-          "x": 348,
-          "y": 157
+          "x": 180,
+          "y": 453
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.3
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "00693748-d483-5b31-8e5a-0622f7fc6109",
         "tlidbId": "10625",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, +4% chance to replicate bosses affected by Trial: Goddess of Hunting",
+        "description": "In Netherrealm stages, 3% chance to replicate Stage Final Bosses after starting Trial: Goddess of Hunting",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
           "492fbcff-83ee-522d-827a-7fa2a818b043",
           "163e3103-6d92-58ab-bb33-dee34661ca11"
         ],
         "position": {
-          "x": 365,
-          "y": 35
+          "x": 348,
+          "y": 453
         },
         "modifiers": []
       },
@@ -13625,15 +13839,15 @@
         "tlidbId": "10626",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, +4% chance to replicate bosses affected by Trial: Goddess of Hunting",
+        "description": "In Netherrealm stages, 3% chance to replicate Stage Final Bosses after starting Trial: Goddess of Hunting",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
           "00693748-d483-5b31-8e5a-0622f7fc6109",
           "250e0b87-f5fc-568f-a9e7-b682f8f8e341"
         ],
         "position": {
-          "x": 451,
-          "y": -23
+          "x": 489,
+          "y": 628
         },
         "modifiers": []
       },
@@ -13641,38 +13855,33 @@
         "id": "250e0b87-f5fc-568f-a9e7-b682f8f8e341",
         "tlidbId": "10627",
         "type": "medium",
-        "name": "Deceitful - Hunting",
-        "description": "In Netherrealm stages, bosses affected by Trial: Goddess of Hunting have a 8% chance to be assisted by the Traveler and will spawn 1 Traveler Chest on defeat In Netherrealm stages, bosses affected by Trial: Goddess of Hunting take -30% additional damage Timemark 1 or above: Confusion Card [Deceitful - Hunting] added to the Confusion Deck",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_SecretBox_01_128.webp",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, 14% chance to replicate Stage Final Bosses after starting Trial: Goddess of Hunting",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
-          "163e3103-6d92-58ab-bb33-dee34661ca11"
+          "163e3103-6d92-58ab-bb33-dee34661ca11",
+          "4f03d362-4f1e-50b3-a588-24713f64768e"
         ],
         "position": {
-          "x": 571,
-          "y": 18
+          "x": 574,
+          "y": 491
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.3
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "4f03d362-4f1e-50b3-a588-24713f64768e",
         "tlidbId": "10628",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, +4% chance to replicate bosses affected by Trial: Goddess of Hunting",
+        "description": "In Netherrealm stages, 3% chance to replicate Stage Final Bosses after starting Trial: Goddess of Hunting",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
-          "a8d296b1-c438-5e85-97a7-7e4ba4730277",
+          "250e0b87-f5fc-568f-a9e7-b682f8f8e341",
           "76509173-e487-52ba-bf69-2c6dc3cf9ad7"
         ],
         "position": {
-          "x": -86,
-          "y": 137
+          "x": 658,
+          "y": 352
         },
         "modifiers": []
       },
@@ -13681,49 +13890,49 @@
         "tlidbId": "10629",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, +4% chance to replicate bosses affected by Trial: Goddess of Hunting",
+        "description": "In Netherrealm stages, 3% chance to replicate Stage Final Bosses after starting Trial: Goddess of Hunting",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
           "4f03d362-4f1e-50b3-a588-24713f64768e",
           "4642f046-4847-50bb-bacc-07c35b10dc7a"
         ],
         "position": {
-          "x": -57,
-          "y": 226
+          "x": 742,
+          "y": 215
         },
         "modifiers": []
       },
       {
         "id": "4642f046-4847-50bb-bacc-07c35b10dc7a",
         "tlidbId": "10630",
-        "type": "medium",
-        "name": "Insidious - Hunting",
-        "description": "In Netherrealm stages, the chance for the rarity of boss buff options to be Legendary during Trial: Goddess of Hunting +69% Timemark 1 or above: Confusion Card [Insidious - Hunting] added to the Confusion Deck",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_03_128.webp",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, 3% chance to replicate Stage Final Bosses after starting Trial: Goddess of Hunting",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
           "76509173-e487-52ba-bf69-2c6dc3cf9ad7",
           "0035707d-0f16-5e13-b355-1ac2ccb6f26b"
         ],
         "position": {
-          "x": -104,
-          "y": 324
+          "x": 827,
+          "y": 77
         },
         "modifiers": []
       },
       {
         "id": "0035707d-0f16-5e13-b355-1ac2ccb6f26b",
         "tlidbId": "10631",
-        "type": "micro",
-        "name": "Micro Node",
-        "description": "In Netherrealm stages, +4% chance to replicate bosses affected by Trial: Goddess of Hunting",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
+        "type": "medium",
+        "name": "Crafty - Hunting",
+        "description": "In Netherrealm stages, Stage Final Bosses affected by Trial: Goddess of Hunting have a 12% chance to be assisted by the Plane Watcher and will spawn 1 Plane Watcher Chest on defeat In Netherrealm stages, -45% additional damage taken by Stage Final Bosses affected by Trial: Goddess of Hunting Timemark 1 or above: Confusion Card [Crafty - Hunting] added to the Confusion Deck",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_SecretBox_01_128.webp",
         "connections": [
           "4642f046-4847-50bb-bacc-07c35b10dc7a",
           "c68c1942-ae4c-5a03-95bd-793836f1a700"
         ],
         "position": {
-          "x": -209,
-          "y": 296
+          "x": 912,
+          "y": -60
         },
         "modifiers": []
       },
@@ -13732,31 +13941,32 @@
         "tlidbId": "10632",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, +4% chance to replicate bosses affected by Trial: Goddess of Hunting",
+        "description": "In Netherrealm stages, 3% chance to replicate Stage Final Bosses after starting Trial: Goddess of Hunting",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
           "0035707d-0f16-5e13-b355-1ac2ccb6f26b",
           "ec79dbdc-4564-5f3e-8e65-060846d6d160"
         ],
         "position": {
-          "x": -211,
-          "y": 400
+          "x": 777,
+          "y": -154
         },
         "modifiers": []
       },
       {
         "id": "ec79dbdc-4564-5f3e-8e65-060846d6d160",
         "tlidbId": "10633",
-        "type": "medium",
-        "name": "Mistrustful - Hunting",
-        "description": "In Netherrealm stages, the chance for the rarity of boss buff options to be Legendary during Trial: Goddess of Hunting +500% In Netherrealm stages, the buff selection stage during Trial: Goddess of Hunting will be skipped, and buffs will be selected randomly Timemark 1 or above: Confusion Card [Mistrustful - Hunting] added to the Confusion Deck",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_03_128.webp",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, 3% chance to replicate Stage Final Bosses after starting Trial: Goddess of Hunting",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
-          "c68c1942-ae4c-5a03-95bd-793836f1a700"
+          "c68c1942-ae4c-5a03-95bd-793836f1a700",
+          "b6c1db57-34cf-5277-9cc5-d5722805cac2"
         ],
         "position": {
-          "x": -315,
-          "y": 418
+          "x": 643,
+          "y": -247
         },
         "modifiers": []
       },
@@ -13765,49 +13975,49 @@
         "tlidbId": "10634",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, +4% chance to replicate bosses affected by Trial: Goddess of Hunting",
+        "description": "In Netherrealm stages, 3% chance to replicate Stage Final Bosses after starting Trial: Goddess of Hunting",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
-          "a8d296b1-c438-5e85-97a7-7e4ba4730277",
+          "ec79dbdc-4564-5f3e-8e65-060846d6d160",
           "104da8df-bfe3-572c-a3cd-bbfc32d92ce5"
         ],
         "position": {
-          "x": 78,
-          "y": 137
+          "x": 509,
+          "y": -340
         },
         "modifiers": []
       },
       {
         "id": "104da8df-bfe3-572c-a3cd-bbfc32d92ce5",
         "tlidbId": "10635",
-        "type": "micro",
-        "name": "Micro Node",
-        "description": "In Netherrealm stages, +4% chance to replicate bosses affected by Trial: Goddess of Hunting",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
+        "type": "medium",
+        "name": "Deceitful - Hunting",
+        "description": "In Netherrealm stages, Stage Final Bosses affected by Trial: Goddess of Hunting have a 8% chance to be assisted by the Traveler and will spawn 1 Traveler Chest on defeat In Netherrealm stages, -45% additional damage taken by Stage Final Bosses affected by Trial: Goddess of Hunting Timemark 1 or above: Confusion Card [Deceitful - Hunting] added to the Confusion Deck",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_SecretBox_01_128.webp",
         "connections": [
           "b6c1db57-34cf-5277-9cc5-d5722805cac2",
           "8dd7d9a9-1155-51b9-8579-883e4c0b547a"
         ],
         "position": {
-          "x": 49,
-          "y": 226
+          "x": 717,
+          "y": -15
         },
         "modifiers": []
       },
       {
         "id": "8dd7d9a9-1155-51b9-8579-883e4c0b547a",
         "tlidbId": "10636",
-        "type": "medium",
-        "name": "Medium Node",
-        "description": "In Netherrealm stages, there's a 16% chance for all player buff options to be replaced with boss buff options during Trial: Goddess of Hunting",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_03_128.webp",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, 3% chance to replicate Stage Final Bosses after starting Trial: Goddess of Hunting",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
           "104da8df-bfe3-572c-a3cd-bbfc32d92ce5",
           "6597f718-c2cd-56e2-be42-ba5a9ecfe073"
         ],
         "position": {
-          "x": 96,
-          "y": 324
+          "x": 607,
+          "y": 125
         },
         "modifiers": []
       },
@@ -13816,15 +14026,15 @@
         "tlidbId": "10637",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, +4% chance to replicate bosses affected by Trial: Goddess of Hunting",
+        "description": "In Netherrealm stages, 3% chance to replicate Stage Final Bosses after starting Trial: Goddess of Hunting",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
           "8dd7d9a9-1155-51b9-8579-883e4c0b547a",
           "96d2d722-2b1f-5bed-80a7-2be80a7e2502"
         ],
         "position": {
-          "x": 201,
-          "y": 296
+          "x": 497,
+          "y": 266
         },
         "modifiers": []
       },
@@ -13833,15 +14043,15 @@
         "tlidbId": "10638",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, +4% chance to replicate bosses affected by Trial: Goddess of Hunting",
+        "description": "In Netherrealm stages, 3% chance to replicate Stage Final Bosses after starting Trial: Goddess of Hunting",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
         "connections": [
           "6597f718-c2cd-56e2-be42-ba5a9ecfe073",
           "8617c600-caf1-591a-914f-a51033c7f49a"
         ],
         "position": {
-          "x": 203,
-          "y": 400
+          "x": 352,
+          "y": 266
         },
         "modifiers": []
       },
@@ -13856,8 +14066,687 @@
           "96d2d722-2b1f-5bed-80a7-2be80a7e2502"
         ],
         "position": {
-          "x": 307,
-          "y": 418
+          "x": 207,
+          "y": 267
+        },
+        "modifiers": []
+      },
+      {
+        "id": "c42de343-75a0-5234-b239-7fb5dce774ab",
+        "tlidbId": "10640",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Hunting Rewards",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "a8d296b1-c438-5e85-97a7-7e4ba4730277",
+          "97c4e1be-4bf3-54b0-80b4-c6ff262a0d61"
+        ],
+        "position": {
+          "x": -4,
+          "y": 261
+        },
+        "modifiers": []
+      },
+      {
+        "id": "97c4e1be-4bf3-54b0-80b4-c6ff262a0d61",
+        "tlidbId": "10641",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Hunting Rewards",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "c42de343-75a0-5234-b239-7fb5dce774ab",
+          "cca7b36b-e592-5a89-9c13-ca6d87ea30fc"
+        ],
+        "position": {
+          "x": -4,
+          "y": 164
+        },
+        "modifiers": []
+      },
+      {
+        "id": "cca7b36b-e592-5a89-9c13-ca6d87ea30fc",
+        "tlidbId": "10642",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Hunting Rewards",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "97c4e1be-4bf3-54b0-80b4-c6ff262a0d61",
+          "f08b9d4c-ea8f-5ffe-aca9-9babbe887717"
+        ],
+        "position": {
+          "x": -4,
+          "y": 66
+        },
+        "modifiers": []
+      },
+      {
+        "id": "f08b9d4c-ea8f-5ffe-aca9-9babbe887717",
+        "tlidbId": "10643",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, the buff selection stage during Trial: Goddess of Hunting will be skipped, and buffs will be selected randomly",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_03_128.webp",
+        "connections": [
+          "cca7b36b-e592-5a89-9c13-ca6d87ea30fc",
+          "5d1d31b2-bf9c-57a1-83f0-34304cb02a8d"
+        ],
+        "position": {
+          "x": -4,
+          "y": -51
+        },
+        "modifiers": []
+      },
+      {
+        "id": "5d1d31b2-bf9c-57a1-83f0-34304cb02a8d",
+        "tlidbId": "10644",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Hunting Rewards",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "f08b9d4c-ea8f-5ffe-aca9-9babbe887717",
+          "63632a09-ba98-50f2-98ee-ee2419163245"
+        ],
+        "position": {
+          "x": -4,
+          "y": -169
+        },
+        "modifiers": []
+      },
+      {
+        "id": "63632a09-ba98-50f2-98ee-ee2419163245",
+        "tlidbId": "10645",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Hunting Rewards",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "5d1d31b2-bf9c-57a1-83f0-34304cb02a8d",
+          "0f247de6-40cd-56e2-afb6-395713cc20fe"
+        ],
+        "position": {
+          "x": -4,
+          "y": -266
+        },
+        "modifiers": []
+      },
+      {
+        "id": "0f247de6-40cd-56e2-afb6-395713cc20fe",
+        "tlidbId": "10646",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Hunting Rewards",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "63632a09-ba98-50f2-98ee-ee2419163245",
+          "849dcfdf-75f3-5b2e-9fb5-e41bbb6a6eba"
+        ],
+        "position": {
+          "x": -4,
+          "y": -364
+        },
+        "modifiers": []
+      },
+      {
+        "id": "849dcfdf-75f3-5b2e-9fb5-e41bbb6a6eba",
+        "tlidbId": "10647",
+        "type": "medium",
+        "name": "Insidious - Hunting",
+        "description": "In Netherrealm stages, +5% additional Drop Quantity for Hunting Rewards In Netherrealm stages, Trial: Goddess of Hunting cannot replicate Bosses Timemark 1 or above: Confusion Card [Insidious - Hunting] added to the Confusion Deck",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "0f247de6-40cd-56e2-afb6-395713cc20fe",
+          "ad434b67-babf-53c3-869e-a1743dbacea0"
+        ],
+        "position": {
+          "x": -4,
+          "y": -481
+        },
+        "modifiers": []
+      },
+      {
+        "id": "ad434b67-babf-53c3-869e-a1743dbacea0",
+        "tlidbId": "10648",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Hunting Rewards",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "849dcfdf-75f3-5b2e-9fb5-e41bbb6a6eba",
+          "fc5930bf-1fbb-5c22-b48f-f98821940160"
+        ],
+        "position": {
+          "x": -4,
+          "y": -599
+        },
+        "modifiers": []
+      },
+      {
+        "id": "fc5930bf-1fbb-5c22-b48f-f98821940160",
+        "tlidbId": "10649",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Hunting Rewards",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "ad434b67-babf-53c3-869e-a1743dbacea0",
+          "51165f5c-82ee-5591-8327-0f954168eee6"
+        ],
+        "position": {
+          "x": -4,
+          "y": -696
+        },
+        "modifiers": []
+      },
+      {
+        "id": "51165f5c-82ee-5591-8327-0f954168eee6",
+        "tlidbId": "10650",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Hunting Rewards",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "fc5930bf-1fbb-5c22-b48f-f98821940160",
+          "63a89547-0bbf-5b44-a323-788609b448cb"
+        ],
+        "position": {
+          "x": -4,
+          "y": -794
+        },
+        "modifiers": []
+      },
+      {
+        "id": "63a89547-0bbf-5b44-a323-788609b448cb",
+        "tlidbId": "10651",
+        "type": "medium",
+        "name": "Mistrustful - Hunting",
+        "description": "In Netherrealm stages, Trial: Goddess of Hunting is replaced by Trial: Goddess of Hunting (Safari) In Netherrealm stages, Stage Final Bosses affected by Trial: Goddess of Hunting are greatly enhanced Timemark 1 or above: Confusion Card [Mistrustful - Hunting] added to the Confusion Deck",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_GameplayGoH_01_128.webp",
+        "connections": [
+          "51165f5c-82ee-5591-8327-0f954168eee6",
+          "54721e6e-0ab2-553e-a479-d72701fd1b28",
+          "81bc3cf0-56cb-55ab-9a01-7fbd85e1e21b"
+        ],
+        "position": {
+          "x": -4,
+          "y": -911
+        },
+        "modifiers": []
+      },
+      {
+        "id": "54721e6e-0ab2-553e-a479-d72701fd1b28",
+        "tlidbId": "10652",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Hunting Rewards",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "63a89547-0bbf-5b44-a323-788609b448cb",
+          "d95ac786-32e5-56d5-924d-e540c48755b1"
+        ],
+        "position": {
+          "x": -68,
+          "y": -757
+        },
+        "modifiers": []
+      },
+      {
+        "id": "d95ac786-32e5-56d5-924d-e540c48755b1",
+        "tlidbId": "10653",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Hunting Rewards",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "54721e6e-0ab2-553e-a479-d72701fd1b28",
+          "be62790e-29be-5d77-bc2a-6e21020bc61f"
+        ],
+        "position": {
+          "x": -111,
+          "y": -650
+        },
+        "modifiers": []
+      },
+      {
+        "id": "be62790e-29be-5d77-bc2a-6e21020bc61f",
+        "tlidbId": "10654",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Hunting Rewards",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "d95ac786-32e5-56d5-924d-e540c48755b1",
+          "6df77ffc-e9d7-502f-9849-ecc0dc46bcec"
+        ],
+        "position": {
+          "x": -154,
+          "y": -543
+        },
+        "modifiers": []
+      },
+      {
+        "id": "6df77ffc-e9d7-502f-9849-ecc0dc46bcec",
+        "tlidbId": "10655",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, $P2$ Safari Boss(es) will appear in the stage after starting Trial: Goddess of Hunting (Safari) In Netherrealm stages, bosses take -10% additional damage",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
+        "connections": [
+          "be62790e-29be-5d77-bc2a-6e21020bc61f",
+          "8c74ac01-5ce4-5e1f-bab8-bed773ce44a3",
+          "9c56da81-dbba-51cd-b95e-5c667c3b1327"
+        ],
+        "position": {
+          "x": -197,
+          "y": -435
+        },
+        "modifiers": []
+      },
+      {
+        "id": "8c74ac01-5ce4-5e1f-bab8-bed773ce44a3",
+        "tlidbId": "10656",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Hunting Rewards",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "6df77ffc-e9d7-502f-9849-ecc0dc46bcec",
+          "3462aca1-6eb9-581d-8b22-18f2c1c116be"
+        ],
+        "position": {
+          "x": -271,
+          "y": -352
+        },
+        "modifiers": []
+      },
+      {
+        "id": "3462aca1-6eb9-581d-8b22-18f2c1c116be",
+        "tlidbId": "10657",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Hunting Rewards",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "8c74ac01-5ce4-5e1f-bab8-bed773ce44a3",
+          "036be0eb-76e1-5bde-88d7-98065254822c"
+        ],
+        "position": {
+          "x": -357,
+          "y": -255
+        },
+        "modifiers": []
+      },
+      {
+        "id": "036be0eb-76e1-5bde-88d7-98065254822c",
+        "tlidbId": "10658",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Hunting Rewards",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "3462aca1-6eb9-581d-8b22-18f2c1c116be",
+          "83b7b603-c609-52c8-adac-2b9bf47232e7"
+        ],
+        "position": {
+          "x": -444,
+          "y": -158
+        },
+        "modifiers": []
+      },
+      {
+        "id": "83b7b603-c609-52c8-adac-2b9bf47232e7",
+        "tlidbId": "10659",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, $P2$ Safari Boss(es) will appear in the stage after starting Trial: Goddess of Hunting (Safari) In Netherrealm stages, after starting Trial: Goddess of Hunting (Safari), there's a 25% chance for 2 additional Safari Boss(es) to appear, and a 3% chance for 6 additional Safari Boss(es) to appear In Netherrealm stages, bosses take -10% additional damage",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
+        "connections": [
+          "036be0eb-76e1-5bde-88d7-98065254822c"
+        ],
+        "position": {
+          "x": -530,
+          "y": -60
+        },
+        "modifiers": []
+      },
+      {
+        "id": "9c56da81-dbba-51cd-b95e-5c667c3b1327",
+        "tlidbId": "10660",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Stage Final Bosses' Hunting Rewards for every 1 Safari Boss defeated. Stacks up to 15 stack(s)",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "6df77ffc-e9d7-502f-9849-ecc0dc46bcec",
+          "178ce5cd-1d95-5d4a-bb09-dbe62fdb20ae"
+        ],
+        "position": {
+          "x": -177,
+          "y": -331
+        },
+        "modifiers": []
+      },
+      {
+        "id": "178ce5cd-1d95-5d4a-bb09-dbe62fdb20ae",
+        "tlidbId": "10661",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Stage Final Bosses' Hunting Rewards for every 1 Safari Boss defeated. Stacks up to 15 stack(s)",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "9c56da81-dbba-51cd-b95e-5c667c3b1327",
+          "3084df6e-b263-5a54-815a-ebc5aa16dda5"
+        ],
+        "position": {
+          "x": -238,
+          "y": -195
+        },
+        "modifiers": []
+      },
+      {
+        "id": "3084df6e-b263-5a54-815a-ebc5aa16dda5",
+        "tlidbId": "10662",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Stage Final Bosses' Hunting Rewards for every 1 Safari Boss defeated. Stacks up to 15 stack(s)",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "178ce5cd-1d95-5d4a-bb09-dbe62fdb20ae",
+          "62e70999-4383-51ee-b0df-3815e4c0d48d"
+        ],
+        "position": {
+          "x": -299,
+          "y": -59
+        },
+        "modifiers": []
+      },
+      {
+        "id": "62e70999-4383-51ee-b0df-3815e4c0d48d",
+        "tlidbId": "10663",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, +7% additional Drop Quantity for Stage Final Bosses' Hunting Rewards for every 1 Safari Boss defeated. Stacks up to 15 stack(s) In Netherrealm stages, +10% Attack, Cast, and Movement Speed for Bosses",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "3084df6e-b263-5a54-815a-ebc5aa16dda5",
+          "4acc9775-9167-5289-b17c-f7d4e0b316ae"
+        ],
+        "position": {
+          "x": -360,
+          "y": 78
+        },
+        "modifiers": []
+      },
+      {
+        "id": "4acc9775-9167-5289-b17c-f7d4e0b316ae",
+        "tlidbId": "10664",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Stage Final Bosses' Hunting Rewards for every 1 Safari Boss defeated. Stacks up to 15 stack(s)",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "62e70999-4383-51ee-b0df-3815e4c0d48d",
+          "90bc8950-a0b0-5b3d-bb43-456f39a0240c"
+        ],
+        "position": {
+          "x": -190,
+          "y": 196
+        },
+        "modifiers": []
+      },
+      {
+        "id": "90bc8950-a0b0-5b3d-bb43-456f39a0240c",
+        "tlidbId": "10665",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Stage Final Bosses' Hunting Rewards for every 1 Safari Boss defeated. Stacks up to 15 stack(s)",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "4acc9775-9167-5289-b17c-f7d4e0b316ae",
+          "d3882895-bf59-5713-b694-7882ed39d0f5"
+        ],
+        "position": {
+          "x": -165,
+          "y": 57
+        },
+        "modifiers": []
+      },
+      {
+        "id": "d3882895-bf59-5713-b694-7882ed39d0f5",
+        "tlidbId": "10666",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Stage Final Bosses' Hunting Rewards for every 1 Safari Boss defeated. Stacks up to 15 stack(s)",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "90bc8950-a0b0-5b3d-bb43-456f39a0240c",
+          "bb0434f7-838a-5174-b2b6-cfcb78a1a5f5"
+        ],
+        "position": {
+          "x": -141,
+          "y": -81
+        },
+        "modifiers": []
+      },
+      {
+        "id": "bb0434f7-838a-5174-b2b6-cfcb78a1a5f5",
+        "tlidbId": "10667",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, +12% additional Drop Quantity for Stage Final Bosses' Hunting Rewards for every 1 Safari Boss defeated. Stacks up to 15 stack(s) In Netherrealm stages, +30% Attack, Cast, and Movement Speed for Bosses",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "d3882895-bf59-5713-b694-7882ed39d0f5"
+        ],
+        "position": {
+          "x": -116,
+          "y": -219
+        },
+        "modifiers": []
+      },
+      {
+        "id": "81bc3cf0-56cb-55ab-9a01-7fbd85e1e21b",
+        "tlidbId": "10668",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Hunting Rewards",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "63a89547-0bbf-5b44-a323-788609b448cb",
+          "e922d5a1-c4a6-57b4-b861-82d368716341"
+        ],
+        "position": {
+          "x": 60,
+          "y": -757
+        },
+        "modifiers": []
+      },
+      {
+        "id": "e922d5a1-c4a6-57b4-b861-82d368716341",
+        "tlidbId": "10669",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Hunting Rewards",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "81bc3cf0-56cb-55ab-9a01-7fbd85e1e21b",
+          "d38de716-df97-573d-9c1a-923ae4f23e74"
+        ],
+        "position": {
+          "x": 103,
+          "y": -650
+        },
+        "modifiers": []
+      },
+      {
+        "id": "d38de716-df97-573d-9c1a-923ae4f23e74",
+        "tlidbId": "10670",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Hunting Rewards",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "e922d5a1-c4a6-57b4-b861-82d368716341",
+          "021e3715-c2d1-5e47-94b3-13c4d9bd754e"
+        ],
+        "position": {
+          "x": 146,
+          "y": -543
+        },
+        "modifiers": []
+      },
+      {
+        "id": "021e3715-c2d1-5e47-94b3-13c4d9bd754e",
+        "tlidbId": "10671",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, +7% additional Drop Quantity for Hunting Rewards",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "d38de716-df97-573d-9c1a-923ae4f23e74",
+          "ca64cb1b-f0f5-5d82-bc3e-2599af81cb84",
+          "d0b667e3-d9b2-5456-b2ff-ee9b42543b5f"
+        ],
+        "position": {
+          "x": 190,
+          "y": -435
+        },
+        "modifiers": []
+      },
+      {
+        "id": "ca64cb1b-f0f5-5d82-bc3e-2599af81cb84",
+        "tlidbId": "10672",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, Compasses dropped from Hunting Rewards have a 1% chance to be replicated once",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Compass_06_128.webp",
+        "connections": [
+          "021e3715-c2d1-5e47-94b3-13c4d9bd754e",
+          "e8470a60-67d3-5de0-b732-359053c032a9"
+        ],
+        "position": {
+          "x": 263,
+          "y": -352
+        },
+        "modifiers": []
+      },
+      {
+        "id": "e8470a60-67d3-5de0-b732-359053c032a9",
+        "tlidbId": "10673",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, Compasses dropped from Hunting Rewards have a 1% chance to be replicated once",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Compass_06_128.webp",
+        "connections": [
+          "ca64cb1b-f0f5-5d82-bc3e-2599af81cb84",
+          "8585f0a7-4556-5fb3-a9dd-7ff00d22bddf"
+        ],
+        "position": {
+          "x": 349,
+          "y": -255
+        },
+        "modifiers": []
+      },
+      {
+        "id": "8585f0a7-4556-5fb3-a9dd-7ff00d22bddf",
+        "tlidbId": "10674",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, Compasses dropped from Hunting Rewards have a 1% chance to be replicated once",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Compass_06_128.webp",
+        "connections": [
+          "e8470a60-67d3-5de0-b732-359053c032a9",
+          "283fcfdd-96ae-50e7-b300-fa4490b4401f"
+        ],
+        "position": {
+          "x": 436,
+          "y": -158
+        },
+        "modifiers": []
+      },
+      {
+        "id": "283fcfdd-96ae-50e7-b300-fa4490b4401f",
+        "tlidbId": "10675",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, Compasses dropped from Hunting Rewards have a 5% chance to be replicated once",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Compass_06_128.webp",
+        "connections": [
+          "8585f0a7-4556-5fb3-a9dd-7ff00d22bddf"
+        ],
+        "position": {
+          "x": 523,
+          "y": -60
+        },
+        "modifiers": []
+      },
+      {
+        "id": "d0b667e3-d9b2-5456-b2ff-ee9b42543b5f",
+        "tlidbId": "10676",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, Probes dropped from Hunting Rewards have a 5% chance to be replicated once",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Compass_06_128.webp",
+        "connections": [
+          "021e3715-c2d1-5e47-94b3-13c4d9bd754e",
+          "33d377d0-38ab-5b44-8811-b5dc06eae42b"
+        ],
+        "position": {
+          "x": 169,
+          "y": -331
+        },
+        "modifiers": []
+      },
+      {
+        "id": "33d377d0-38ab-5b44-8811-b5dc06eae42b",
+        "tlidbId": "10677",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, Probes dropped from Hunting Rewards have a 5% chance to be replicated once",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Compass_06_128.webp",
+        "connections": [
+          "d0b667e3-d9b2-5456-b2ff-ee9b42543b5f",
+          "4d2b5531-2b50-508c-8f64-bbe0f2e328e6"
+        ],
+        "position": {
+          "x": 230,
+          "y": -195
+        },
+        "modifiers": []
+      },
+      {
+        "id": "4d2b5531-2b50-508c-8f64-bbe0f2e328e6",
+        "tlidbId": "10678",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, Probes dropped from Hunting Rewards have a 5% chance to be replicated once",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Compass_06_128.webp",
+        "connections": [
+          "33d377d0-38ab-5b44-8811-b5dc06eae42b",
+          "0a5949d7-5ce1-5870-8b18-bcd73293dab6"
+        ],
+        "position": {
+          "x": 291,
+          "y": -59
+        },
+        "modifiers": []
+      },
+      {
+        "id": "0a5949d7-5ce1-5870-8b18-bcd73293dab6",
+        "tlidbId": "10679",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, Probes dropped from Hunting Rewards have a 15% chance to be replicated once",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Compass_06_128.webp",
+        "connections": [
+          "4d2b5531-2b50-508c-8f64-bbe0f2e328e6"
+        ],
+        "position": {
+          "x": 353,
+          "y": 78
         },
         "modifiers": []
       }
@@ -14797,8 +15686,8 @@
         "id": "dffaf065-f0ed-5f69-b7f3-dd352d8666ee",
         "tlidbId": "10753",
         "type": "medium",
-        "name": "Obstinate - Machine",
-        "description": "In Netherrealm stages, the chance for non-Legendary gear dropped during Trial: God of Machines to be Priceless is increased by 100% Timemark 1 or above: Confusion Card [Obstinate - Machine] added to the Confusion Deck",
+        "name": "Obstinate Rigid - Machine",
+        "description": "In Netherrealm stages, the chance for non-Legendary gear dropped during Trial: God of Machines to be Priceless is increased by 100% Timemark 1 or above: Confusion Card [Obstinate - Machine] added to the Confusion Deck Timemark 7 or above: Confusion Card [Rigid - Machine] added to the Confusion Deck",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Gear_20_128.webp",
         "connections": [
           "5063943a-c12d-5e8e-9667-40b78f6c8fca",
@@ -14933,8 +15822,8 @@
         "id": "a715dec7-23cd-5f8e-875c-3e04fffafc96",
         "tlidbId": "10761",
         "type": "medium",
-        "name": "Rigid - Machine",
-        "description": "In Netherrealm stages, +6% additional Drop Quantity during Trial: God of Machines In Netherrealm stages, the Movement Speed of attacking monsters during Trial: God of Machines +20% Timemark 7 or above: Confusion Card [Rigid - Machine] added to the Confusion Deck",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, +6% additional Drop Quantity during Trial: God of Machines In Netherrealm stages, the Movement Speed of attacking monsters during Trial: God of Machines +20%",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
         "connections": [
           "8298b27d-b3b6-5007-9596-d9f4f354cf67"
@@ -15802,7 +16691,7 @@
         "tlidbId": "10524",
         "type": "medium",
         "name": "Indignant - Might",
-        "description": "In Netherrealm stages, Dwarven Automatons +50% Drop Rarity during Trial: God of Might Timemark 1 or above: Confusion Card [Indignant - Might] added to the Confusion Deck",
+        "description": "In Netherrealm stages, +50% Drop Rarity for Dwarven Automatons Timemark 1 or above: Confusion Card [Indignant - Might] added to the Confusion Deck",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_02_128.webp",
         "connections": [
           "86cef1d3-0504-5851-93a8-eef18a0e6dd3",
@@ -15853,7 +16742,7 @@
         "tlidbId": "10527",
         "type": "medium",
         "name": "Enraged - Might",
-        "description": "In Netherrealm stages, Dwarven Automatons +50% Drop Rarity during Trial: God of Might Timemark 1 or above: Confusion Card [Enraged - Might] added to the Confusion Deck",
+        "description": "In Netherrealm stages, +75% Drop Rarity for Dwarven Automatons Timemark 1 or above: Confusion Card [Enraged - Might] added to the Confusion Deck",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_02_128.webp",
         "connections": [
           "8a23be8b-b2a4-5c9e-961d-44f4f73efc74"
@@ -16011,7 +16900,7 @@
         "tlidbId": "10542",
         "type": "medium",
         "name": "Medium Node",
-        "description": "In Netherrealm stages, there's a 4% chance for monsters spawned by Trial: God of Might to be replaced with Dwarven Automatons In Netherrealm stages, monsters spawned by Trial: God of Might -30% additional damage taken",
+        "description": "In Netherrealm stages, Legendary Gear dropped by Trial: God of Might and Dwarven Automatons have a 4% chance to be replicated once In Netherrealm stages, monsters spawned by Trial: God of Might -30% additional damage taken",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_03_128.webp",
         "connections": [
           "fa3c22ed-9bb0-5d5b-83c8-9dd89098e508"
@@ -16033,8 +16922,8 @@
         "tlidbId": "10543",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, +1% Drop Quantity during Trial: God of Might",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "description": "In Netherrealm stages, upon reaching a new level during Trial: God of Might, +2% chance for 1 additional trial monster to be spawned",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_03_128.webp",
         "connections": [
           "5c640010-dd25-5e43-8b09-4b21ca77a277",
           "8579d854-5165-5954-af44-88497b079ced"
@@ -16050,8 +16939,8 @@
         "tlidbId": "10544",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, +1% Drop Quantity during Trial: God of Might",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "description": "In Netherrealm stages, upon reaching a new level during Trial: God of Might, +2% chance for 1 additional trial monster to be spawned",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_03_128.webp",
         "connections": [
           "71c1ac28-1daf-5216-9d1d-698f0ddb731c",
           "e82b2192-b21c-5ad1-a95d-58b9afc038aa"
@@ -16065,10 +16954,10 @@
       {
         "id": "e82b2192-b21c-5ad1-a95d-58b9afc038aa",
         "tlidbId": "10545",
-        "type": "medium",
-        "name": "Medium Node",
-        "description": "In Netherrealm stages, +3% additional Drop Quantity during Trial: God of Might In Netherrealm stages, +5% additional Drop Quantity for Dwarven Automatons during Trial: God of Might",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, upon reaching a new level during Trial: God of Might, +2% chance for 1 additional trial monster to be spawned",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_03_128.webp",
         "connections": [
           "8579d854-5165-5954-af44-88497b079ced",
           "d43d7d2c-2176-5aeb-bb93-369660a1a683"
@@ -16082,9 +16971,9 @@
       {
         "id": "d43d7d2c-2176-5aeb-bb93-369660a1a683",
         "tlidbId": "10546",
-        "type": "micro",
-        "name": "Micro Node",
-        "description": "In Netherrealm stages, +1% Drop Quantity during Trial: God of Might",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, +5% additional Drop Quantity for Trial: God of Might and Dwarven Automatons In Netherrealm stages, monsters spawned by Trial: God of Might gain Giantism",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
         "connections": [
           "e82b2192-b21c-5ad1-a95d-58b9afc038aa",
@@ -16101,8 +16990,8 @@
         "tlidbId": "10547",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, +1% Drop Quantity during Trial: God of Might",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "description": "In Netherrealm stages, upon reaching a new level during Trial: God of Might, +2% chance for 1 additional trial monster to be spawned",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_03_128.webp",
         "connections": [
           "d43d7d2c-2176-5aeb-bb93-369660a1a683",
           "5d90b6e7-0908-5352-b67f-48d31442c85e"
@@ -16116,10 +17005,10 @@
       {
         "id": "5d90b6e7-0908-5352-b67f-48d31442c85e",
         "tlidbId": "10548",
-        "type": "medium",
-        "name": "Mania - Might",
-        "description": "In Netherrealm stages, +9% additional Drop Quantity during Trial: God of Might In Netherrealm stages, +10% additional Drop Quantity for Dwarven Automatons during Trial: God of Might In Netherrealm stages, monsters spawned by Trial: God of Might gain Giantism Timemark 1 or above: Confusion Card [Mania - Might] added to the Confusion Deck",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, upon reaching a new level during Trial: God of Might, +2% chance for 1 additional trial monster to be spawned",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_03_128.webp",
         "connections": [
           "2aeac239-54af-53ff-b1ab-d9de103e43ba",
           "7f5bcffe-94f3-5225-8963-31583ae848ba"
@@ -16135,8 +17024,8 @@
         "tlidbId": "10549",
         "type": "micro",
         "name": "Micro Node",
-        "description": "In Netherrealm stages, +1% Drop Quantity during Trial: God of Might",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "description": "In Netherrealm stages, upon reaching a new level during Trial: God of Might, +2% chance for 1 additional trial monster to be spawned",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_03_128.webp",
         "connections": [
           "5d90b6e7-0908-5352-b67f-48d31442c85e",
           "752bd7fa-18b1-5c80-9a83-ee90aaf9cded"
@@ -16150,33 +17039,16 @@
       {
         "id": "752bd7fa-18b1-5c80-9a83-ee90aaf9cded",
         "tlidbId": "10550",
-        "type": "micro",
-        "name": "Micro Node",
-        "description": "In Netherrealm stages, +1% Drop Quantity during Trial: God of Might",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "type": "medium",
+        "name": "Mania - Might",
+        "description": "In Netherrealm stages, there's a 30% chance for 1 additional Might Sentinel to spawn near the Statue of Might\nThe trial can only be started once the Might Sentinel is defeated. Once it is defeated, +50% additional Drop Quantity for Trial: God of Might and Dwarven Automatons Timemark 1 or above: Confusion Card [Mania - Might] added to the Confusion Deck",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_03_128.webp",
         "connections": [
-          "7f5bcffe-94f3-5225-8963-31583ae848ba",
-          "765d3409-0292-5f4e-87c1-e4ca23b8f3f1"
+          "7f5bcffe-94f3-5225-8963-31583ae848ba"
         ],
         "position": {
           "x": 756,
           "y": -421
-        },
-        "modifiers": []
-      },
-      {
-        "id": "765d3409-0292-5f4e-87c1-e4ca23b8f3f1",
-        "tlidbId": "10551",
-        "type": "medium",
-        "name": "Medium Node",
-        "description": "In Netherrealm stages, +3% additional Drop Quantity during Trial: God of Might In Netherrealm stages, +5% additional Drop Quantity for Dwarven Automatons during Trial: God of Might",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
-        "connections": [
-          "752bd7fa-18b1-5c80-9a83-ee90aaf9cded"
-        ],
-        "position": {
-          "x": 861,
-          "y": -363
         },
         "modifiers": []
       },
@@ -16321,7 +17193,7 @@
         "tlidbId": "10560",
         "type": "medium",
         "name": "Willful - Might",
-        "description": "In Netherrealm stages, Embers dropped during Trial: God of Might have a 0.1% chance to become Ultimate Embers In Netherrealm stages at Timemark 8 or higher, upon reaching Floor 10 during Trial: God of Might, there is a 20% chance to drop 1 additional Flourishing Might Compass or Onslaught Might Compass Timemark 1 or above: Confusion Card [Willful - Might] added to the Confusion Deck",
+        "description": "In Netherrealm stages, Embers dropped during Trial: God of Might have a 0.1% chance to become Ultimate Embers In Netherrealm stages at Timemark 8 or higher, upon reaching Level 10 during Trial: God of Might, there is a 20% chance to drop 1 additional Flourishing Might Compass or Onslaught Might Compass Timemark 1 or above: Confusion Card [Willful - Might] added to the Confusion Deck",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Currency_06_128.webp",
         "connections": [
           "4d49500b-43a8-57fc-88aa-5e14000515b0",
@@ -18001,6 +18873,1267 @@
     ]
   },
   {
+    "id": "lunaria",
+    "name": "lunaria",
+    "nodes": [
+      {
+        "id": "c693652e-66d3-58c2-857f-29877991c38c",
+        "tlidbId": "12416",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "ec79ae6a-3722-5144-9b13-b45c1b46f951",
+          "06824840-4cd3-5a1f-b4b1-0a5ae6a9acea"
+        ],
+        "position": {
+          "x": 180,
+          "y": -547
+        },
+        "modifiers": []
+      },
+      {
+        "id": "06824840-4cd3-5a1f-b4b1-0a5ae6a9acea",
+        "tlidbId": "12417",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "c693652e-66d3-58c2-857f-29877991c38c",
+          "c05df532-9536-54fb-b9aa-07be4dc31059"
+        ],
+        "position": {
+          "x": 299,
+          "y": -493
+        },
+        "modifiers": []
+      },
+      {
+        "id": "c05df532-9536-54fb-b9aa-07be4dc31059",
+        "tlidbId": "12418",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "06824840-4cd3-5a1f-b4b1-0a5ae6a9acea",
+          "066b0552-9c8d-5e12-93c1-268b7748ce6c"
+        ],
+        "position": {
+          "x": 403,
+          "y": -414
+        },
+        "modifiers": []
+      },
+      {
+        "id": "066b0552-9c8d-5e12-93c1-268b7748ce6c",
+        "tlidbId": "12419",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, +4% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "c05df532-9536-54fb-b9aa-07be4dc31059",
+          "0ef0e729-4f7b-5509-a8fc-18e9b0974d64",
+          "bca33025-7d68-52ae-bfe1-1adb7c5b7b47",
+          "c27a42fb-910c-5b1d-86ce-f095c917b361"
+        ],
+        "position": {
+          "x": 486,
+          "y": -311
+        },
+        "modifiers": []
+      },
+      {
+        "id": "0ef0e729-4f7b-5509-a8fc-18e9b0974d64",
+        "tlidbId": "12420",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "066b0552-9c8d-5e12-93c1-268b7748ce6c",
+          "aa4e961e-9c64-59e9-8005-03331ff6a6a2"
+        ],
+        "position": {
+          "x": 452,
+          "y": -130
+        },
+        "modifiers": []
+      },
+      {
+        "id": "aa4e961e-9c64-59e9-8005-03331ff6a6a2",
+        "tlidbId": "12421",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "0ef0e729-4f7b-5509-a8fc-18e9b0974d64",
+          "b354e22b-cd81-5786-9824-dc89395790b6"
+        ],
+        "position": {
+          "x": 414,
+          "y": 34
+        },
+        "modifiers": []
+      },
+      {
+        "id": "b354e22b-cd81-5786-9824-dc89395790b6",
+        "tlidbId": "12422",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "aa4e961e-9c64-59e9-8005-03331ff6a6a2",
+          "14734e33-8103-5b7c-a503-992e65077984"
+        ],
+        "position": {
+          "x": 349,
+          "y": 187
+        },
+        "modifiers": []
+      },
+      {
+        "id": "14734e33-8103-5b7c-a503-992e65077984",
+        "tlidbId": "12423",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, +6% additional Drop Quantity for Lunaria gameplay In Netherrealm stages, during the Lunaria gameplay, the higher the Combo, the less damage Lunari Rare Monsters take",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "b354e22b-cd81-5786-9824-dc89395790b6",
+          "3de810d8-8c21-5a2e-a044-48f14c140a8a"
+        ],
+        "position": {
+          "x": 246,
+          "y": 321
+        },
+        "modifiers": []
+      },
+      {
+        "id": "3de810d8-8c21-5a2e-a044-48f14c140a8a",
+        "tlidbId": "12424",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "14734e33-8103-5b7c-a503-992e65077984",
+          "0e154457-5e99-555f-8f22-645dee6cb5c4"
+        ],
+        "position": {
+          "x": 85,
+          "y": 431
+        },
+        "modifiers": []
+      },
+      {
+        "id": "0e154457-5e99-555f-8f22-645dee6cb5c4",
+        "tlidbId": "12425",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "3de810d8-8c21-5a2e-a044-48f14c140a8a",
+          "a2f7c85e-cfaf-50a9-88cc-8429ce6d85b9"
+        ],
+        "position": {
+          "x": -56,
+          "y": 553
+        },
+        "modifiers": []
+      },
+      {
+        "id": "a2f7c85e-cfaf-50a9-88cc-8429ce6d85b9",
+        "tlidbId": "12426",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "0e154457-5e99-555f-8f22-645dee6cb5c4",
+          "f357748f-20eb-524f-8567-abba318b2dde",
+          "108a86e2-a16f-5b1d-b2a0-875ba532c844"
+        ],
+        "position": {
+          "x": -143,
+          "y": 714
+        },
+        "modifiers": []
+      },
+      {
+        "id": "f357748f-20eb-524f-8567-abba318b2dde",
+        "tlidbId": "12427",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, there's a 30% chance for 1 additional Lunari Rare Monster to appear when activating a statue during the Lunaria gameplay The Max Charges of the Lunaria gameplay is 3 (Max Charges +1 when encountering Moonlit Revival)",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_03_128.webp",
+        "connections": [
+          "a2f7c85e-cfaf-50a9-88cc-8429ce6d85b9",
+          "590c654a-72fb-5472-b773-8b0d06ff4b2d"
+        ],
+        "position": {
+          "x": -115,
+          "y": 914
+        },
+        "modifiers": []
+      },
+      {
+        "id": "590c654a-72fb-5472-b773-8b0d06ff4b2d",
+        "tlidbId": "12428",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "f357748f-20eb-524f-8567-abba318b2dde",
+          "444b7edd-2753-559d-9060-0f351e051596"
+        ],
+        "position": {
+          "x": -189,
+          "y": 794
+        },
+        "modifiers": []
+      },
+      {
+        "id": "444b7edd-2753-559d-9060-0f351e051596",
+        "tlidbId": "12429",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "590c654a-72fb-5472-b773-8b0d06ff4b2d",
+          "874827da-5f76-503d-98b1-ade2ae55cb22"
+        ],
+        "position": {
+          "x": -265,
+          "y": 666
+        },
+        "modifiers": []
+      },
+      {
+        "id": "874827da-5f76-503d-98b1-ade2ae55cb22",
+        "tlidbId": "12430",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "444b7edd-2753-559d-9060-0f351e051596",
+          "df09b17f-63b0-53ab-b68f-ac7bbc88fc02"
+        ],
+        "position": {
+          "x": -350,
+          "y": 552
+        },
+        "modifiers": []
+      },
+      {
+        "id": "df09b17f-63b0-53ab-b68f-ac7bbc88fc02",
+        "tlidbId": "12431",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, there's a 50% chance for 1 additional Lunari Rare Monster to appear when activating a statue during the Lunaria gameplay In the Lunaria gameplay, when the interval between statue activations exceeds 8s, the remaining statues are immediately destroyed In Netherrealm stages, -100% additional Drop Quantity for Caskets",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_03_128.webp",
+        "connections": [
+          "874827da-5f76-503d-98b1-ade2ae55cb22"
+        ],
+        "position": {
+          "x": -436,
+          "y": 430
+        },
+        "modifiers": []
+      },
+      {
+        "id": "108a86e2-a16f-5b1d-b2a0-875ba532c844",
+        "tlidbId": "12432",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, during the Lunaria gameplay, Combo of 10 or below will no longer gain Combo Bonuses During the Lunaria gameplay, +30% additional Drop Quantity when Combo reaches 11 or above",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "a2f7c85e-cfaf-50a9-88cc-8429ce6d85b9",
+          "b2e6cb69-0bd4-5bf9-a871-efbdcd395391"
+        ],
+        "position": {
+          "x": -208,
+          "y": 559
+        },
+        "modifiers": []
+      },
+      {
+        "id": "b2e6cb69-0bd4-5bf9-a871-efbdcd395391",
+        "tlidbId": "12433",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "108a86e2-a16f-5b1d-b2a0-875ba532c844",
+          "89a7174f-db85-53fd-95d2-76a526343d3e"
+        ],
+        "position": {
+          "x": -273,
+          "y": 403
+        },
+        "modifiers": []
+      },
+      {
+        "id": "89a7174f-db85-53fd-95d2-76a526343d3e",
+        "tlidbId": "12434",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "b2e6cb69-0bd4-5bf9-a871-efbdcd395391",
+          "0c93152d-937b-5350-bb1f-f00fb68e33c9"
+        ],
+        "position": {
+          "x": -334,
+          "y": 249
+        },
+        "modifiers": []
+      },
+      {
+        "id": "0c93152d-937b-5350-bb1f-f00fb68e33c9",
+        "tlidbId": "12435",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "89a7174f-db85-53fd-95d2-76a526343d3e",
+          "130fba16-ae3d-542a-b089-a53432a3be34"
+        ],
+        "position": {
+          "x": -376,
+          "y": 72
+        },
+        "modifiers": []
+      },
+      {
+        "id": "130fba16-ae3d-542a-b089-a53432a3be34",
+        "tlidbId": "12436",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, when Combo reaches 11 or above during the Lunaria gameplay, the Lunar Ring becomes golden and there's a 100% chance to spawn 1 additional Lunar Stone Casket. Can be triggered up to 2 time(s)",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_03_128.webp",
+        "connections": [
+          "0c93152d-937b-5350-bb1f-f00fb68e33c9"
+        ],
+        "position": {
+          "x": -414,
+          "y": -96
+        },
+        "modifiers": []
+      },
+      {
+        "id": "bca33025-7d68-52ae-bfe1-1adb7c5b7b47",
+        "tlidbId": "12437",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "066b0552-9c8d-5e12-93c1-268b7748ce6c",
+          "c7ae567a-d183-50e1-8d06-0b6800a762b0"
+        ],
+        "position": {
+          "x": 544,
+          "y": -195
+        },
+        "modifiers": []
+      },
+      {
+        "id": "c7ae567a-d183-50e1-8d06-0b6800a762b0",
+        "tlidbId": "12438",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "bca33025-7d68-52ae-bfe1-1adb7c5b7b47",
+          "533c2c88-6d13-5ed5-8592-0e65e22dd805"
+        ],
+        "position": {
+          "x": 574,
+          "y": -66
+        },
+        "modifiers": []
+      },
+      {
+        "id": "533c2c88-6d13-5ed5-8592-0e65e22dd805",
+        "tlidbId": "12439",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "c7ae567a-d183-50e1-8d06-0b6800a762b0",
+          "22efc990-c739-5397-a51d-ec7510a70d57"
+        ],
+        "position": {
+          "x": 574,
+          "y": 65
+        },
+        "modifiers": []
+      },
+      {
+        "id": "5d8d28f7-6a35-58c2-a811-d5052e395ed6",
+        "tlidbId": "12441",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "22efc990-c739-5397-a51d-ec7510a70d57",
+          "1f4dbc3e-d28b-5ced-af60-4a0da61e1a39"
+        ],
+        "position": {
+          "x": 488,
+          "y": 309
+        },
+        "modifiers": []
+      },
+      {
+        "id": "1f4dbc3e-d28b-5ced-af60-4a0da61e1a39",
+        "tlidbId": "12442",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "5d8d28f7-6a35-58c2-a811-d5052e395ed6",
+          "4f841efc-fd4a-5b69-93df-1866a6a957f2"
+        ],
+        "position": {
+          "x": 405,
+          "y": 412
+        },
+        "modifiers": []
+      },
+      {
+        "id": "4f841efc-fd4a-5b69-93df-1866a6a957f2",
+        "tlidbId": "12443",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "1f4dbc3e-d28b-5ced-af60-4a0da61e1a39",
+          "5737d583-afc9-5ce4-8e2f-05a00aaee154"
+        ],
+        "position": {
+          "x": 303,
+          "y": 491
+        },
+        "modifiers": []
+      },
+      {
+        "id": "c27a42fb-910c-5b1d-86ce-f095c917b361",
+        "tlidbId": "12445",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "066b0552-9c8d-5e12-93c1-268b7748ce6c",
+          "fc7d7e0b-71e7-5be2-9252-52c2d06421ac"
+        ],
+        "position": {
+          "x": 536,
+          "y": -455
+        },
+        "modifiers": []
+      },
+      {
+        "id": "fc7d7e0b-71e7-5be2-9252-52c2d06421ac",
+        "tlidbId": "12446",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "c27a42fb-910c-5b1d-86ce-f095c917b361",
+          "3499c1e9-d172-5067-867c-5e42aa10e8f5"
+        ],
+        "position": {
+          "x": 544,
+          "y": -598
+        },
+        "modifiers": []
+      },
+      {
+        "id": "3499c1e9-d172-5067-867c-5e42aa10e8f5",
+        "tlidbId": "12447",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "fc7d7e0b-71e7-5be2-9252-52c2d06421ac",
+          "8e913665-c763-5405-afb0-d865c89a0732"
+        ],
+        "position": {
+          "x": 445,
+          "y": -690
+        },
+        "modifiers": []
+      },
+      {
+        "id": "c7d4f6b2-ee7d-5d7b-882a-da3c4dcd5f2b",
+        "tlidbId": "12449",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "ec79ae6a-3722-5144-9b13-b45c1b46f951",
+          "46f7ef44-01fa-5ffc-96c3-0fc5a4d3fac1"
+        ],
+        "position": {
+          "x": 146,
+          "y": -751
+        },
+        "modifiers": []
+      },
+      {
+        "id": "46f7ef44-01fa-5ffc-96c3-0fc5a4d3fac1",
+        "tlidbId": "12450",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "c7d4f6b2-ee7d-5d7b-882a-da3c4dcd5f2b",
+          "79364a23-8a29-5c48-9969-8f711d0a2701"
+        ],
+        "position": {
+          "x": 270,
+          "y": -827
+        },
+        "modifiers": []
+      },
+      {
+        "id": "79364a23-8a29-5c48-9969-8f711d0a2701",
+        "tlidbId": "12451",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "46f7ef44-01fa-5ffc-96c3-0fc5a4d3fac1",
+          "2e42e8b8-f022-56de-81e0-616f8fcc7c52"
+        ],
+        "position": {
+          "x": 425,
+          "y": -838
+        },
+        "modifiers": []
+      },
+      {
+        "id": "2e42e8b8-f022-56de-81e0-616f8fcc7c52",
+        "tlidbId": "12452",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, during the Lunaria gameplay, there's a chance to spawn a Scarlet Moon Boss when activating a statue",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_04_128.webp",
+        "connections": [
+          "79364a23-8a29-5c48-9969-8f711d0a2701",
+          "18946036-af50-5169-a01b-dc7ca3ffbfa5"
+        ],
+        "position": {
+          "x": 588,
+          "y": -831
+        },
+        "modifiers": []
+      },
+      {
+        "id": "18946036-af50-5169-a01b-dc7ca3ffbfa5",
+        "tlidbId": "12453",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "2e42e8b8-f022-56de-81e0-616f8fcc7c52",
+          "1d458f9f-bc43-5b88-8087-ed7954c78718"
+        ],
+        "position": {
+          "x": 743,
+          "y": -799
+        },
+        "modifiers": []
+      },
+      {
+        "id": "1d458f9f-bc43-5b88-8087-ed7954c78718",
+        "tlidbId": "12454",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "18946036-af50-5169-a01b-dc7ca3ffbfa5",
+          "cff6ba0c-f106-5f3c-ad36-66542e6681d8"
+        ],
+        "position": {
+          "x": 867,
+          "y": -741
+        },
+        "modifiers": []
+      },
+      {
+        "id": "cff6ba0c-f106-5f3c-ad36-66542e6681d8",
+        "tlidbId": "12455",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "1d458f9f-bc43-5b88-8087-ed7954c78718",
+          "094807a5-4fcc-50cf-ab3b-68345ab0da55"
+        ],
+        "position": {
+          "x": 777,
+          "y": -640
+        },
+        "modifiers": []
+      },
+      {
+        "id": "81d2f94f-1a47-542e-a007-ad8a7f99af9c",
+        "tlidbId": "12457",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "ec79ae6a-3722-5144-9b13-b45c1b46f951",
+          "f3ac6da0-96e5-5bf6-94b9-9134cacfa0c8"
+        ],
+        "position": {
+          "x": 10,
+          "y": -433
+        },
+        "modifiers": []
+      },
+      {
+        "id": "f3ac6da0-96e5-5bf6-94b9-9134cacfa0c8",
+        "tlidbId": "12458",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "81d2f94f-1a47-542e-a007-ad8a7f99af9c",
+          "00911d16-9708-5f37-b6d2-b20a63e792a4"
+        ],
+        "position": {
+          "x": 8,
+          "y": -301
+        },
+        "modifiers": []
+      },
+      {
+        "id": "00911d16-9708-5f37-b6d2-b20a63e792a4",
+        "tlidbId": "12459",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +1% additional Drop Quantity for Lunaria gameplay",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "connections": [
+          "f3ac6da0-96e5-5bf6-94b9-9134cacfa0c8",
+          "148e18b6-965f-5f1b-b7fd-a3de834e090a"
+        ],
+        "position": {
+          "x": 5,
+          "y": -169
+        },
+        "modifiers": []
+      },
+      {
+        "id": "ec79ae6a-3722-5144-9b13-b45c1b46f951",
+        "tlidbId": "12400",
+        "type": "initial",
+        "name": "Initial Node",
+        "icon": "",
+        "connections": [
+          "79643231-ba05-5ae1-8d7b-0af585761890",
+          "c693652e-66d3-58c2-857f-29877991c38c",
+          "c7d4f6b2-ee7d-5d7b-882a-da3c4dcd5f2b",
+          "81d2f94f-1a47-542e-a007-ad8a7f99af9c"
+        ],
+        "position": {
+          "x": 16,
+          "y": -629
+        },
+        "modifiers": []
+      },
+      {
+        "id": "79643231-ba05-5ae1-8d7b-0af585761890",
+        "tlidbId": "12401",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +3% chance for lots of Lunar Stone Statues to appear",
+        "icon": "",
+        "connections": [
+          "ec79ae6a-3722-5144-9b13-b45c1b46f951",
+          "92b50400-8755-55a6-9e48-beca397a61b2"
+        ],
+        "position": {
+          "x": -132,
+          "y": -516
+        },
+        "modifiers": []
+      },
+      {
+        "id": "92b50400-8755-55a6-9e48-beca397a61b2",
+        "tlidbId": "12402",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +3% chance for lots of Lunar Stone Statues to appear",
+        "icon": "",
+        "connections": [
+          "79643231-ba05-5ae1-8d7b-0af585761890",
+          "fce8d299-1ae6-5146-a45e-40c1940c8765"
+        ],
+        "position": {
+          "x": -245,
+          "y": -529
+        },
+        "modifiers": []
+      },
+      {
+        "id": "fce8d299-1ae6-5146-a45e-40c1940c8765",
+        "tlidbId": "12403",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +3% chance for lots of Lunar Stone Statues to appear",
+        "icon": "",
+        "connections": [
+          "92b50400-8755-55a6-9e48-beca397a61b2",
+          "4cece541-8aed-5f55-abe7-06c1c4700894"
+        ],
+        "position": {
+          "x": -323,
+          "y": -624
+        },
+        "modifiers": []
+      },
+      {
+        "id": "4cece541-8aed-5f55-abe7-06c1c4700894",
+        "tlidbId": "12404",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +3% chance for lots of Lunar Stone Statues to appear",
+        "icon": "",
+        "connections": [
+          "fce8d299-1ae6-5146-a45e-40c1940c8765",
+          "8b04439e-2957-55ec-96ac-e7a5a50880da"
+        ],
+        "position": {
+          "x": -399,
+          "y": -716
+        },
+        "modifiers": []
+      },
+      {
+        "id": "8b04439e-2957-55ec-96ac-e7a5a50880da",
+        "tlidbId": "12405",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, +10% chance for lots of Lunar Stone Statues to appear",
+        "icon": "",
+        "connections": [
+          "4cece541-8aed-5f55-abe7-06c1c4700894",
+          "6974f12f-6830-5ea0-a155-c4974d5b5bf8"
+        ],
+        "position": {
+          "x": -517,
+          "y": -771
+        },
+        "modifiers": []
+      },
+      {
+        "id": "6974f12f-6830-5ea0-a155-c4974d5b5bf8",
+        "tlidbId": "12406",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +4% chance for lots of Lunar Stone Statues to appear",
+        "icon": "",
+        "connections": [
+          "8b04439e-2957-55ec-96ac-e7a5a50880da",
+          "4b99ab12-7a93-5b2a-ac2a-b39ceb3ed6b1"
+        ],
+        "position": {
+          "x": -649,
+          "y": -818
+        },
+        "modifiers": []
+      },
+      {
+        "id": "4b99ab12-7a93-5b2a-ac2a-b39ceb3ed6b1",
+        "tlidbId": "12407",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +4% chance for lots of Lunar Stone Statues to appear",
+        "icon": "",
+        "connections": [
+          "6974f12f-6830-5ea0-a155-c4974d5b5bf8",
+          "139df655-da16-5e3c-9acc-3de5c33a5259"
+        ],
+        "position": {
+          "x": -578,
+          "y": -706
+        },
+        "modifiers": []
+      },
+      {
+        "id": "139df655-da16-5e3c-9acc-3de5c33a5259",
+        "tlidbId": "12408",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +4% chance for lots of Lunar Stone Statues to appear",
+        "icon": "",
+        "connections": [
+          "4b99ab12-7a93-5b2a-ac2a-b39ceb3ed6b1",
+          "2609e0e3-3758-50e4-9652-a68046d01363"
+        ],
+        "position": {
+          "x": -521,
+          "y": -598
+        },
+        "modifiers": []
+      },
+      {
+        "id": "2609e0e3-3758-50e4-9652-a68046d01363",
+        "tlidbId": "12409",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +4% chance for lots of Lunar Stone Statues to appear",
+        "icon": "",
+        "connections": [
+          "139df655-da16-5e3c-9acc-3de5c33a5259",
+          "f3897417-4ae0-58f9-b94c-0bb7efdeb9b3"
+        ],
+        "position": {
+          "x": -480,
+          "y": -480
+        },
+        "modifiers": []
+      },
+      {
+        "id": "f3897417-4ae0-58f9-b94c-0bb7efdeb9b3",
+        "tlidbId": "12410",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, +15% chance for lots of Lunar Stone Statues to appear",
+        "icon": "",
+        "connections": [
+          "2609e0e3-3758-50e4-9652-a68046d01363",
+          "54f1f55c-37b2-5e7e-82df-c6a1d8bc2094"
+        ],
+        "position": {
+          "x": -460,
+          "y": -346
+        },
+        "modifiers": []
+      },
+      {
+        "id": "54f1f55c-37b2-5e7e-82df-c6a1d8bc2094",
+        "tlidbId": "12411",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +6% chance for lots of Lunar Stone Statues to appear",
+        "icon": "",
+        "connections": [
+          "f3897417-4ae0-58f9-b94c-0bb7efdeb9b3",
+          "866397cb-ac22-59cf-8367-67f8f344eb53"
+        ],
+        "position": {
+          "x": -527,
+          "y": -233
+        },
+        "modifiers": []
+      },
+      {
+        "id": "866397cb-ac22-59cf-8367-67f8f344eb53",
+        "tlidbId": "12412",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +6% chance for lots of Lunar Stone Statues to appear",
+        "icon": "",
+        "connections": [
+          "54f1f55c-37b2-5e7e-82df-c6a1d8bc2094",
+          "ea8f271b-f5e3-5f3f-a3fe-fc59e3879aa1"
+        ],
+        "position": {
+          "x": -566,
+          "y": -109
+        },
+        "modifiers": []
+      },
+      {
+        "id": "ea8f271b-f5e3-5f3f-a3fe-fc59e3879aa1",
+        "tlidbId": "12413",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +6% chance for lots of Lunar Stone Statues to appear",
+        "icon": "",
+        "connections": [
+          "866397cb-ac22-59cf-8367-67f8f344eb53",
+          "8d232c4b-50c4-5f15-bfa3-ce315c7e504c"
+        ],
+        "position": {
+          "x": -576,
+          "y": 22
+        },
+        "modifiers": []
+      },
+      {
+        "id": "8d232c4b-50c4-5f15-bfa3-ce315c7e504c",
+        "tlidbId": "12414",
+        "type": "micro",
+        "name": "Micro Node",
+        "description": "In Netherrealm stages, +6% chance for lots of Lunar Stone Statues to appear",
+        "icon": "",
+        "connections": [
+          "ea8f271b-f5e3-5f3f-a3fe-fc59e3879aa1",
+          "adc771eb-6c62-5f8b-add1-62c7a28c7c67"
+        ],
+        "position": {
+          "x": -557,
+          "y": 149
+        },
+        "modifiers": []
+      },
+      {
+        "id": "adc771eb-6c62-5f8b-add1-62c7a28c7c67",
+        "tlidbId": "12415",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, +23% chance for lots of Lunar Stone Statues to appear",
+        "icon": "",
+        "connections": [
+          "8d232c4b-50c4-5f15-bfa3-ce315c7e504c"
+        ],
+        "position": {
+          "x": -508,
+          "y": 271
+        },
+        "modifiers": []
+      },
+      {
+        "id": "22efc990-c739-5397-a51d-ec7510a70d57",
+        "tlidbId": "12440",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, during the Lunaria gameplay, there's a 20% to spawn 1 additional Azure Moon Stele",
+        "icon": "",
+        "connections": [
+          "533c2c88-6d13-5ed5-8592-0e65e22dd805",
+          "5d8d28f7-6a35-58c2-a811-d5052e395ed6"
+        ],
+        "position": {
+          "x": 543,
+          "y": 193
+        },
+        "modifiers": []
+      },
+      {
+        "id": "5737d583-afc9-5ce4-8e2f-05a00aaee154",
+        "tlidbId": "12444",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, Azure Moon Steles from the Lunaria gameplay have a 50% chance to be upgraded to Violet Moon Steles",
+        "icon": "",
+        "connections": [
+          "4f841efc-fd4a-5b69-93df-1866a6a957f2"
+        ],
+        "position": {
+          "x": 183,
+          "y": 547
+        },
+        "modifiers": []
+      },
+      {
+        "id": "8e913665-c763-5405-afb0-d865c89a0732",
+        "tlidbId": "12448",
+        "type": "medium",
+        "name": "Hushed Desolate - Lunaria",
+        "description": "In Netherrealm stages, activates Fullmoon Radiance for the Lunaria gameplay Timemark 1 or above: Confusion Card [Hushed - Lunaria] added to the Confusion Deck Timemark 1 or above: Confusion Card [Desolate - Lunaria] added to the Confusion Deck",
+        "icon": "",
+        "connections": [
+          "3499c1e9-d172-5067-867c-5e42aa10e8f5"
+        ],
+        "position": {
+          "x": 296,
+          "y": -670
+        },
+        "modifiers": []
+      },
+      {
+        "id": "094807a5-4fcc-50cf-ab3b-68345ab0da55",
+        "tlidbId": "12456",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, during the Lunaria gameplay, when a Lunar Omen event is triggered, there's a 20% chance for it to be triggered 1 additional time",
+        "icon": "",
+        "connections": [
+          "cff6ba0c-f106-5f3c-ad36-66542e6681d8"
+        ],
+        "position": {
+          "x": 678,
+          "y": -546
+        },
+        "modifiers": []
+      },
+      {
+        "id": "148e18b6-965f-5f1b-b7fd-a3de834e090a",
+        "tlidbId": "12460",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, Memory Revival materials dropped have a 10% chance to be replicated once",
+        "icon": "",
+        "connections": [
+          "00911d16-9708-5f37-b6d2-b20a63e792a4",
+          "7775f0b0-543e-5b98-90f6-1a794a3e6653",
+          "510e29f4-d693-5131-a150-af50a81158e8",
+          "b51ec537-d057-5005-b0fe-c865c1e23e0e",
+          "a0c8be97-a2b6-5508-bd5b-0f9bd69763ff",
+          "f3ee35d3-7eb5-5aa8-8e00-283fbbc8139d",
+          "1730af2d-29be-5d44-92ca-fbec310191fd",
+          "e839c94c-b922-5bc7-a7d2-8f7f230b9bfc",
+          "d19abbda-bcf2-5878-8785-86495bb6241f",
+          "442219f8-37d0-55c5-995f-ca5c7e850436",
+          "1c3577e6-5433-52f1-8e79-372d9f820001",
+          "19b8beb2-dd23-5d7c-ac35-d4c98da361ed",
+          "0b1815ec-8abe-548f-9da2-8fc9bcc47e97",
+          "c1f7fb08-9ad2-5508-b0ff-cd5a92eaeac6"
+        ],
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "modifiers": []
+      },
+      {
+        "id": "7775f0b0-543e-5b98-90f6-1a794a3e6653",
+        "tlidbId": "12461",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, Memory Revival materials (Lunar Phases) dropped are more likely to be Scent Weaver Sage's Lunar Phases",
+        "icon": "",
+        "connections": [
+          "148e18b6-965f-5f1b-b7fd-a3de834e090a"
+        ],
+        "position": {
+          "x": -92,
+          "y": -239
+        },
+        "modifiers": []
+      },
+      {
+        "id": "510e29f4-d693-5131-a150-af50a81158e8",
+        "tlidbId": "12462",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, Memory Revival materials (Lunar Phases) dropped are more likely to be Berserker Rehan's Lunar Phases",
+        "icon": "",
+        "connections": [
+          "148e18b6-965f-5f1b-b7fd-a3de834e090a"
+        ],
+        "position": {
+          "x": -234,
+          "y": -105
+        },
+        "modifiers": []
+      },
+      {
+        "id": "b51ec537-d057-5005-b0fe-c865c1e23e0e",
+        "tlidbId": "12463",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, Memory Revival materials (Lunar Phases) dropped are more likely to be Lightbringer Rosa's Lunar Phases",
+        "icon": "",
+        "connections": [
+          "148e18b6-965f-5f1b-b7fd-a3de834e090a"
+        ],
+        "position": {
+          "x": -239,
+          "y": 91
+        },
+        "modifiers": []
+      },
+      {
+        "id": "a0c8be97-a2b6-5508-bd5b-0f9bd69763ff",
+        "tlidbId": "12464",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, Memory Revival materials (Lunar Phases) dropped are more likely to be Divineshot Carino's Lunar Phases",
+        "icon": "",
+        "connections": [
+          "148e18b6-965f-5f1b-b7fd-a3de834e090a"
+        ],
+        "position": {
+          "x": -104,
+          "y": 234
+        },
+        "modifiers": []
+      },
+      {
+        "id": "f3ee35d3-7eb5-5aa8-8e00-283fbbc8139d",
+        "tlidbId": "12465",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, Memory Revival materials (Lunar Phases) dropped are more likely to be Frostfire Gemma's Lunar Phases",
+        "icon": "",
+        "connections": [
+          "148e18b6-965f-5f1b-b7fd-a3de834e090a"
+        ],
+        "position": {
+          "x": 91,
+          "y": 239
+        },
+        "modifiers": []
+      },
+      {
+        "id": "1730af2d-29be-5d44-92ca-fbec310191fd",
+        "tlidbId": "12466",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, Memory Revival materials (Lunar Phases) dropped are more likely to be Cateye Erika's Lunar Phases",
+        "icon": "",
+        "connections": [
+          "148e18b6-965f-5f1b-b7fd-a3de834e090a"
+        ],
+        "position": {
+          "x": 235,
+          "y": 104
+        },
+        "modifiers": []
+      },
+      {
+        "id": "e839c94c-b922-5bc7-a7d2-8f7f230b9bfc",
+        "tlidbId": "12467",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, Memory Revival materials (Lunar Phases) dropped are more likely to be Escapist Bing's Lunar Phases",
+        "icon": "",
+        "connections": [
+          "148e18b6-965f-5f1b-b7fd-a3de834e090a"
+        ],
+        "position": {
+          "x": 240,
+          "y": -92
+        },
+        "modifiers": []
+      },
+      {
+        "id": "d19abbda-bcf2-5878-8785-86495bb6241f",
+        "tlidbId": "12468",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, Memory Revival materials (Lunar Phases) dropped are more likely to be Spacetime Witness Youga's Lunar Phases",
+        "icon": "",
+        "connections": [
+          "148e18b6-965f-5f1b-b7fd-a3de834e090a"
+        ],
+        "position": {
+          "x": 105,
+          "y": -235
+        },
+        "modifiers": []
+      },
+      {
+        "id": "442219f8-37d0-55c5-995f-ca5c7e850436",
+        "tlidbId": "12469",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, Memory Revival materials (Lunar Phases) dropped are more likely to be Oracle Thea's Lunar Phases",
+        "icon": "",
+        "connections": [
+          "148e18b6-965f-5f1b-b7fd-a3de834e090a"
+        ],
+        "position": {
+          "x": -116,
+          "y": -124
+        },
+        "modifiers": []
+      },
+      {
+        "id": "1c3577e6-5433-52f1-8e79-372d9f820001",
+        "tlidbId": "12470",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, Memory Revival materials (Lunar Phases) dropped are more likely to be Commander Moto's Lunar Phases",
+        "icon": "",
+        "connections": [
+          "148e18b6-965f-5f1b-b7fd-a3de834e090a"
+        ],
+        "position": {
+          "x": -168,
+          "y": -5
+        },
+        "modifiers": []
+      },
+      {
+        "id": "19b8beb2-dd23-5d7c-ac35-d4c98da361ed",
+        "tlidbId": "12471",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, Memory Revival materials (Lunar Phases) dropped are more likely to be The Forsaken Iris's Lunar Phases",
+        "icon": "",
+        "connections": [
+          "148e18b6-965f-5f1b-b7fd-a3de834e090a"
+        ],
+        "position": {
+          "x": -123,
+          "y": 115
+        },
+        "modifiers": []
+      },
+      {
+        "id": "0b1815ec-8abe-548f-9da2-8fc9bcc47e97",
+        "tlidbId": "12472",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, Memory Revival materials (Lunar Phases) dropped are more likely to be Tide Whisper Selena's Lunar Phases",
+        "icon": "",
+        "connections": [
+          "148e18b6-965f-5f1b-b7fd-a3de834e090a"
+        ],
+        "position": {
+          "x": -5,
+          "y": 169
+        },
+        "modifiers": []
+      },
+      {
+        "id": "c1f7fb08-9ad2-5508-b0ff-cd5a92eaeac6",
+        "tlidbId": "12473",
+        "type": "medium",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, Memory Revival materials (Lunar Phases) dropped are more likely to be Universal Lunar Phases",
+        "icon": "",
+        "connections": [
+          "148e18b6-965f-5f1b-b7fd-a3de834e090a"
+        ],
+        "position": {
+          "x": 116,
+          "y": 122
+        },
+        "modifiers": []
+      }
+    ]
+  },
+  {
     "id": "nightmare",
     "name": "nightmare",
     "nodes": [
@@ -18601,8 +20734,8 @@
         "id": "c2cf9dd7-a513-5fd9-a6fb-9503dd875f75",
         "tlidbId": "11235",
         "type": "medium",
-        "name": "Regretful - Nightmare",
-        "description": "In Netherrealm stages, when a Sweet Dream begins, 2 additional Elite Sleepwalker(s) will appear next to the Dream Lotus Timemark 7 or above: Confusion Card [Regretful - Nightmare] added to the Confusion Deck",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, when a Sweet Dream begins, 2 additional Elite Sleepwalker(s) will appear next to the Dream Lotus",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Monster_03_128.webp",
         "connections": [
           "20537d23-6290-5fd9-93bf-12cc93697e07",
@@ -18671,8 +20804,8 @@
         "id": "9d89f934-145b-5a61-a50d-540b7042d8aa",
         "tlidbId": "11239",
         "type": "medium",
-        "name": "Repentant - Nightmare",
-        "description": "In Netherrealm stages, when selecting a Dream Omen, there is a 20% chance that all Nightmare Omens will become: +20% additional Drop Quantity. Timemark 7 or above: Confusion Card [Repentant - Nightmare] added to the Confusion Deck",
+        "name": "Medium Node",
+        "description": "In Netherrealm stages, when selecting a Dream Omen, there is a 20% chance that all Nightmare Omens will become: +20% additional Drop Quantity.",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
         "connections": [
           "3400427a-0148-5cca-877d-a563c06ab4be"
@@ -21760,8 +23893,8 @@
         "tlidbId": "30006",
         "type": "medium",
         "name": "Major Node",
-        "description": "When the number of cards in the Confusion Deck reaches 40 , +5% Drop Quantity in the Netherrealm stage When the number of cards in the Confusion Deck reaches 50 , +5% Drop Quantity in the Netherrealm stage",
-        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
+        "description": "In Netherrealm stages, monsters take -20% additional damage Increases the chance for Void Variables to appear in Netherrealm stages",
+        "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_06_128.webp",
         "connections": [
           "37769264-36f7-561f-af08-a2c3d02aa9b0"
         ],
@@ -21793,7 +23926,7 @@
         "tlidbId": "30008",
         "type": "medium",
         "name": "Major Node",
-        "description": "In Netherrealm stages, +30% Drop Quantity Netherrealm stage challenge attempts -4",
+        "description": "In Netherrealm stages, +25% Drop Quantity Netherrealm stage challenge attempts -4",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_01_128.webp",
         "connections": [
           "a90f293e-e095-57e0-98e4-cd9aa6ddf07b"
@@ -22036,7 +24169,7 @@
         "tlidbId": "30022",
         "type": "medium",
         "name": "Major Node",
-        "description": "In Netherrealm stages, Netherrealm bosses have a 7% chance to drop 1 additional Module Skill(s)",
+        "description": "In Netherrealm stages, Stage Final Bosses have a 7% chance to drop 1 additional Module Skill(s)",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Skill_01_128.webp",
         "connections": [
           "342b6bf8-4034-579c-95b4-30541d6aaf11"
@@ -23341,7 +25474,7 @@
         "tlidbId": "12235",
         "type": "medium",
         "name": "Appalling: Insane - Vorax",
-        "description": "In Netherrealm stages, +60% Drop Quantity to the Antidote Vials in Shelley's Operating Theater for every 1 Scavenger(s) defeated Timemark 1 or above: Confusion Card [Appalling - Vorax] added to the Confusion Deck Timemark 1 or above: Confusion Card [Insane - Vorax] added to the Confusion Deck",
+        "description": "In Netherrealm stages, +60% Drop Quantity to the Antidote Vials in Shelley's Operating Theater for every 1 Scavenger(s) defeated (stacks up to 3 time(s)) Timemark 1 or above: Confusion Card [Appalling - Vorax] added to the Confusion Deck Timemark 1 or above: Confusion Card [Insane - Vorax] added to the Confusion Deck",
         "icon": "/images/voidchart/UI_TalentPoint_Round_Basic_03_128.webp",
         "connections": [
           "c27c3eb2-62de-5248-83e7-ad2c57d26c12"

@@ -22,6 +22,8 @@ export {
   scrapeHeroMemory,
   mapVorax,
   scrapeVorax,
+  mapKismet,
+  scrapeKismet,
   scrapeGear,
   scrapeAffixes,
   scrapeLegendaries,

@@ -18,6 +18,7 @@ import type {
   Element,
   GearBase,
   GearSlot,
+  Kismet,
   MemoryAffix,
   MemoryAffixPools,
   MemoryRevival,
@@ -1162,4 +1163,57 @@ export async function scrapeVorax(
   const cfg: ScrapeConfig = { ...DEFAULT_CONFIG, ...overrides };
   const [master, en] = await Promise.all([fetchBundleRaw('vorax-master', cfg), fetchBundle('vorax', cfg)]);
   return mapVorax(master, en);
+}
+
+// --------------------------------- Kismet ------------------------------------
+// Unlike gear/vorax/memory affixes, kismet-master already carries its own
+// effect text (sign/valueMin/valueMax/unit/text) directly -- no separate -en
+// bundle/template-fill step needed, same shape as pactspirit's node effects.
+// ~40% of entries (74/192 in the SS13 sample) have no effects at all -- kept
+// as an empty modifiers list rather than skipped, same as every other
+// best-effort category. No `name` field exists in the scraped data.
+
+interface KismetEffectRaw {
+  sign?: string;
+  valueMin?: number;
+  valueMax?: number;
+  unit?: string;
+  text?: string;
+}
+interface KismetRaw {
+  id: string;
+  iconUrl?: string;
+  rarity?: string;
+  type?: string;
+  effects?: KismetEffectRaw[];
+}
+interface KismetMasterRaw {
+  kismets?: KismetRaw[];
+}
+
+/** `text` already embeds its own unit as a leading token (e.g. "% Fire
+ * Resistance", not just "Fire Resistance") -- confirmed against the real
+ * scrape, unlike pactspirit's clean-prose effect text. Appending `unit`
+ * separately would double it up ("18% % Fire Resistance"), breaking every
+ * regex in parseModifiers that expects "<number>% <word>". */
+function kismetEffectsToText(effects: KismetEffectRaw[] | undefined): string {
+  return (effects ?? [])
+    .map((e) => `${e.sign ?? ''}${e.valueMax ?? e.valueMin ?? ''}${e.text ?? ''}`.trim())
+    .join('\n');
+}
+
+export function mapKismet(bundle: unknown): Kismet[] {
+  const data = (Object.values(bundle as Record<string, KismetMasterRaw>)[0] ?? {}) as KismetMasterRaw;
+  return (data.kismets ?? []).map((raw) => ({
+    id: raw.id,
+    ...(raw.iconUrl != null ? { iconUrl: raw.iconUrl } : {}),
+    ...(raw.rarity != null ? { rarity: raw.rarity } : {}),
+    ...(raw.type != null ? { type: raw.type } : {}),
+    modifiers: parseModifiers(kismetEffectsToText(raw.effects))
+  }));
+}
+
+export async function scrapeKismet(overrides: Partial<ScrapeConfig> = {}): Promise<Kismet[]> {
+  const cfg: ScrapeConfig = { ...DEFAULT_CONFIG, ...overrides };
+  return mapKismet(await fetchBundleRaw('kismet-master', cfg));
 }
