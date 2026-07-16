@@ -57,10 +57,10 @@ test('mapGear skips entries with unknown/empty slot types', () => {
   assert.deepEqual(mapGear(bundle), []);
 });
 
-test('mapLegendaries infers slot from name and parses normalRawText', () => {
+test('mapLegendaries derives slot from the bundle key path and parses normalRawText', () => {
   const bundle = {
-    k: {
-      s: {
+    'legendaries/boots/dex_boots/i18n/en': {
+      items: {
         u: {
           name: 'Frostroot Greaves',
           mods: [{ normalRawText: '+40 Max Life' }, { normalRawText: '+24% Cold Resistance' }]
@@ -70,12 +70,52 @@ test('mapLegendaries infers slot from name and parses normalRawText', () => {
   };
   const legs = mapLegendaries(bundle);
   assert.equal(legs.length, 1);
-  assert.equal(legs[0].slot, 'boots'); // inferred from "Greaves"
+  assert.equal(legs[0].slot, 'boots'); // from the "boots" path segment, not the name
   // order follows rule order (resistance rule precedes the life rule)
   assert.deepEqual(legs[0].implicit, [
     { stat: 'coldResist', op: 'flat', value: 24 },
     { stat: 'life', op: 'flat', value: 40 }
   ]);
+});
+
+test('mapLegendaries uses the real slot even when the item name would misdirect a name-based guess', () => {
+  // Confirmed real false positives of the old name-regex approach: "Devouring
+  // Tide" contains "ring" as a substring (misclassified as a ring), and
+  // shield items had no matching keyword (silently defaulted to 'weapon').
+  const bundle = {
+    'legendaries/one_handed/dagger/i18n/en': {
+      items: { u1: { name: 'Devouring Tide', mods: [{ normalRawText: '+10% Attack Speed' }] } }
+    },
+    'legendaries/shield/str_shield/i18n/en': {
+      items: { u2: { name: 'Bastion Ward', mods: [{ normalRawText: '+300 Armor' }] } }
+    }
+  };
+  const legs = mapLegendaries(bundle);
+  assert.equal(legs.find((l) => l.name === 'Devouring Tide').slot, 'weapon');
+  assert.equal(legs.find((l) => l.name === 'Bastion Ward').slot, 'offhand');
+});
+
+test('mapLegendaries resolves "trinket" categories from their sub-path (belt/necklace/ring/spirit_ring)', () => {
+  const bundle = {
+    'legendaries/trinket/belt/i18n/en': { items: { u1: { name: 'Iron Cinch', mods: [{ normalRawText: '+40 Max Life' }] } } },
+    'legendaries/trinket/necklace/i18n/en': { items: { u2: { name: 'Sun Choker', mods: [{ normalRawText: '+40 Max Life' }] } } },
+    'legendaries/trinket/ring/i18n/en': { items: { u3: { name: 'Loop of Ash', mods: [{ normalRawText: '+40 Max Life' }] } } },
+    'legendaries/trinket/spirit_ring/i18n/en': { items: { u4: { name: 'Spirit Loop', mods: [{ normalRawText: '+40 Max Life' }] } } }
+  };
+  const legs = mapLegendaries(bundle);
+  assert.equal(legs.find((l) => l.name === 'Iron Cinch').slot, 'belt');
+  assert.equal(legs.find((l) => l.name === 'Sun Choker').slot, 'amulet');
+  assert.equal(legs.find((l) => l.name === 'Loop of Ash').slot, 'ring');
+  assert.equal(legs.find((l) => l.name === 'Spirit Loop').slot, 'ring');
+});
+
+test('mapLegendaries skips sections whose category has no known slot', () => {
+  const bundle = {
+    'legendaries/mystery_category/x/i18n/en': {
+      items: { u: { name: 'Unknowable Thing', mods: [{ normalRawText: '+40 Max Life' }] } }
+    }
+  };
+  assert.deepEqual(mapLegendaries(bundle), []);
 });
 
 test('mapAffixes extracts craft prefix/suffix with value range + modifier ids', () => {
@@ -167,6 +207,33 @@ test('mapAffixes unions tiers (by modifierId) for the same affix across gear sub
   assert.deepEqual(life.tiers.map((t) => t.modifierId).sort(), ['A', 'B']);
 });
 
+test('mapAffixes disambiguates ids when distinct templates normalise to the same name (confirmed live: max-life-prefix and beams-additional-damage-suffix each collided)', () => {
+  const gearMaster = {
+    'gear/boots/str_boots/master': {
+      category: 'boots',
+      craftPrefix: [
+        // "+# Max Life" (flat) and "+#% Max Life" (percentage) both strip to
+        // the name "Max Life" -- same kind, same name, genuinely different
+        // affixes.
+        { descriptionTemplate: '+# Max Life', tiers: [{ tier: '0', modifierId: 'A', weight: 100, values: [{ maxValue: 330 }] }] },
+        { descriptionTemplate: '+#% Max Life', tiers: [{ tier: '0', modifierId: 'B', weight: 100, values: [{ maxValue: 16 }] }] }
+      ]
+    }
+  };
+  const affixes = mapAffixes(gearMaster);
+  const lifeAffixes = affixes.filter((a) => a.name === 'Max Life');
+  assert.equal(lifeAffixes.length, 2);
+  const ids = lifeAffixes.map((a) => a.id);
+  assert.equal(new Set(ids).size, 2, 'ids must be unique so indexDataset can resolve both');
+  assert.deepEqual(
+    lifeAffixes.map((a) => a.modifiers).sort((x, y) => x[0].value - y[0].value),
+    [
+      [{ stat: 'increasedLife', op: 'increased', value: 16 }],
+      [{ stat: 'life', op: 'flat', value: 330 }]
+    ]
+  );
+});
+
 test('mapGearFromMaster joins tlidbId (master) with name + mods (en)', () => {
   const gearMaster = {
     'gear/boots/str/master': { category: 'boots', baseItems: [{ id: 'u1', tlidbId: '4000' }] }
@@ -212,24 +279,79 @@ test('mapSkills joins -master structure with -en names (active + support)', () =
   assert.deepEqual(support[0].modifiers, [{ stat: 'moreDamage', op: 'more', value: 0.2 }]);
 });
 
-test('mapHeroTraits uses the highest tier and strips HTML markup', () => {
+test('mapSkills sets requiresSkillId from skillTag for Magnificent/Noble supports, but not the generic Support category', () => {
+  const master = {
+    'skill/Active/master': {
+      category: 'Active',
+      skills: [{ id: 'u1', tags: ['Spell'] }]
+    },
+    'skill/Magnificent_Support/master': {
+      category: 'Magnificent_Support',
+      skills: [{ id: 'u2', tags: ['Support'], skillTag: 'Frost Nova' }]
+    },
+    'skill/Support/master': {
+      category: 'Support',
+      skills: [{ id: 'u3', tags: ['Support'] }]
+    }
+  };
+  const en = {
+    'skill/Active/i18n/en': { u1: { name: 'Frost Nova' } },
+    'skill/Magnificent_Support/i18n/en': { u2: { name: 'Frost Nova (Magnificent)', description: '+10% additional damage' } },
+    'skill/Support/i18n/en': { u3: { name: 'Generic Support', description: '+5% additional damage' } }
+  };
+  const { support } = mapSkills(master, en);
+  const magnificent = support.find((s) => s.name === 'Frost Nova (Magnificent)');
+  const generic = support.find((s) => s.name === 'Generic Support');
+  assert.equal(magnificent.requiresSkillId, 'frost-nova');
+  assert.equal('requiresSkillId' in generic, false);
+});
+
+test('mapHeroTraits scopes each trait to its real owning hero and uses the highest tier, stripping HTML markup', () => {
   const bundle = {
-    k: {
-      s: {
-        u: {
-          name: 'Fury',
-          tiers: [
-            { level: 1, description: '<span class="text-mod">10</span>% additional damage' },
-            { level: 5, description: '<span class="text-mod">78</span>% additional damage' }
-          ]
+    'hero-trait/i18n/en': {
+      heroes: {
+        'hero-uuid-1': {
+          characterName: 'Rehan',
+          traits: {
+            'trait-uuid-1': {
+              name: 'Fury',
+              tiers: [
+                { level: 1, description: '<span class="text-mod">10</span>% additional damage' },
+                { level: 5, description: '<span class="text-mod">78</span>% additional damage' }
+              ]
+            }
+          }
+        },
+        'hero-uuid-2': {
+          characterName: 'Gemma',
+          traits: {
+            'trait-uuid-2': { name: 'Molten Core', tiers: [{ level: 1, description: '+50 Max Life' }] }
+          }
         }
       }
     }
   };
   const talents = mapHeroTraits(bundle);
-  assert.equal(talents.length, 1);
+  assert.equal(talents.length, 2);
+  const fury = talents.find((t) => t.name === 'Fury');
+  const molten = talents.find((t) => t.name === 'Molten Core');
+  assert.equal(fury.heroId, 'rehan');
+  assert.deepEqual(fury.modifiers, [{ stat: 'moreDamage', op: 'more', value: 0.78 }]);
+  assert.equal(molten.heroId, 'gemma');
+});
+
+test('mapHeroTraits falls back to heroId "any" when a hero entry has no characterName', () => {
+  const bundle = {
+    k: {
+      heroes: {
+        'hero-uuid-1': {
+          traits: { 'trait-uuid-1': { name: 'Mystery Trait', tiers: [{ level: 1, description: '+10% damage' }] } }
+        }
+      }
+    }
+  };
+  const talents = mapHeroTraits(bundle);
   assert.equal(talents[0].heroId, 'any');
-  assert.deepEqual(talents[0].modifiers, [{ stat: 'moreDamage', op: 'more', value: 0.78 }]);
 });
 
 // ------------------------- buildLevelScaling ---------------------------------

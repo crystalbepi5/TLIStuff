@@ -145,6 +145,17 @@ export interface SupportSkill {
   /** Active-skill tags this support is incompatible with (raw source strings,
    * not normalised to DamageTag -- informational until cross-referenced). */
   cannotSupport?: string[];
+  /**
+   * Set only for "signature" supports scoped to one specific active skill
+   * (the game's Magnificent/Noble Support categories -- confirmed against
+   * the real scrape: every entry in both categories carries a `skillTag`
+   * naming its one active skill, while the generic Support/Activation
+   * Medium/Module/Passive categories never carry one at all). Value is the
+   * matching ActiveSkill.id (same idFromName() derivation as everywhere
+   * else). A tag-based `requiresTags` check can't express "only this one
+   * exact skill", so this is checked separately in collectModifiers.
+   */
+  requiresSkillId?: string;
   /** Per-level modifiers, best-effort (see ActiveSkill.levelScaling). */
   levelScaling?: SkillLevelEntry[];
 }

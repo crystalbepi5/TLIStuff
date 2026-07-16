@@ -251,3 +251,63 @@ test('evaluateBuild: unknown progression-tree node ids are reported, not silentl
   assert.ok(report.warnings.some((w) => /unknown talent tree node/i.test(w)));
   assert.ok(report.warnings.some((w) => /unknown void chart node/i.test(w)));
 });
+
+// A minimal hand-rolled index (not the real seedDataset) isolates this
+// specific behaviour: SupportSkill.requiresSkillId is populated only for the
+// game's Magnificent/Noble Support categories (every entry in both carries
+// a skillTag naming one specific active skill; no other category ever
+// does), and it needs its own check separate from requiresTags since a tag
+// list can't express "only this one exact skill".
+function fakeIndex({ skills, supports }) {
+  const skillMap = new Map(skills.map((s) => [s.id, s]));
+  const supportMap = new Map(supports.map((s) => [s.id, s]));
+  return {
+    hero: () => ({ id: 'h', name: 'H', baseModifiers: [] }),
+    activeSkill: (id) => skillMap.get(id),
+    supportSkill: (id) => supportMap.get(id),
+    gearBase: () => undefined,
+    affix: () => undefined,
+    talent: () => undefined,
+    pactSpirit: () => undefined,
+    memory: () => undefined,
+    voraxAffix: () => undefined,
+    voraxLegendary: () => undefined,
+    talentTreeNode: () => undefined,
+    voidChartNode: () => undefined
+  };
+}
+
+test('evaluateBuild: a support scoped to a specific skill (requiresSkillId) is dropped with a warning on any other skill', () => {
+  const focusedShot = {
+    id: 'focused-shot',
+    name: 'Focused Shot',
+    tags: ['attack'],
+    baseDamage: { physical: 100 },
+    baseRate: 1,
+    baseCritRate: 5,
+    supportSlots: 5
+  };
+  const otherSkill = { ...focusedShot, id: 'other-skill', name: 'Other Skill' };
+  const magnificentSupport = {
+    id: 'focused-shot-magnificent-1',
+    name: 'Focused Shot (Magnificent)',
+    modifiers: [{ stat: 'moreDamage', op: 'more', value: 0.5 }],
+    requiresTags: [],
+    requiresSkillId: 'focused-shot'
+  };
+  const index = fakeIndex({ skills: [focusedShot, otherSkill], supports: [magnificentSupport] });
+
+  const onWrongSkill = evaluateBuild(
+    baseBuild({ activeSkillId: 'other-skill', supportIds: ['focused-shot-magnificent-1'] }),
+    index
+  );
+  assert.ok(onWrongSkill.warnings.some((w) => /only supports 'focused-shot'/.test(w) && /Other Skill/.test(w)));
+  assert.equal(onWrongSkill.modifiers.some((m) => m.stat === 'moreDamage'), false);
+
+  const onRightSkill = evaluateBuild(
+    baseBuild({ activeSkillId: 'focused-shot', supportIds: ['focused-shot-magnificent-1'] }),
+    index
+  );
+  assert.equal(onRightSkill.warnings.length, 0);
+  assert.ok(onRightSkill.modifiers.some((m) => m.stat === 'moreDamage' && m.value === 0.5));
+});

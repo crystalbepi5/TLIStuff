@@ -2641,7 +2641,10 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 2
+        "value": 2,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "2000"
@@ -2654,7 +2657,10 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 3
+        "value": 3,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "2001"
@@ -2667,7 +2673,10 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 4
+        "value": 4,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "2002"
@@ -2680,7 +2689,10 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 5
+        "value": 5,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "2003"
@@ -2693,7 +2705,10 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 6
+        "value": 6,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "2004"
@@ -2706,7 +2721,10 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 7
+        "value": 7,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "2005"
@@ -2719,7 +2737,10 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 8
+        "value": 8,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "2006"
@@ -2732,7 +2753,10 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 9
+        "value": 9,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "2007"
@@ -2745,7 +2769,10 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 10
+        "value": 10,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "2008"
@@ -2758,7 +2785,10 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 12
+        "value": 12,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "2009"
@@ -2771,7 +2801,10 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 14
+        "value": 14,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "2010"
@@ -2784,7 +2817,10 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 16
+        "value": 16,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "2011"
@@ -2797,7 +2833,10 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 18
+        "value": 18,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "2012"
@@ -2810,7 +2849,10 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 20
+        "value": 20,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "2013"
@@ -2823,7 +2865,10 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 22
+        "value": 22,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "2014"
@@ -2836,7 +2881,10 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 24
+        "value": 24,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "2015"
@@ -2849,7 +2897,10 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 26
+        "value": 26,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "2016"
@@ -2862,7 +2913,10 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 28
+        "value": 28,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "2017"
@@ -2875,7 +2929,10 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 30
+        "value": 30,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "2018"
@@ -3919,7 +3976,10 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 4
+        "value": 4,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "1400"
@@ -3932,7 +3992,10 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 6
+        "value": 6,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "1401"
@@ -3945,7 +4008,10 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 8
+        "value": 8,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "1402"
@@ -3958,7 +4024,10 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 10
+        "value": 10,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "1403"
@@ -3971,7 +4040,10 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 12
+        "value": 12,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "1404"
@@ -3984,7 +4056,10 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 14
+        "value": 14,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "1405"
@@ -3997,7 +4072,10 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 16
+        "value": 16,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "1406"
@@ -4010,7 +4088,10 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 18
+        "value": 18,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "1407"
@@ -4023,7 +4104,10 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 20
+        "value": 20,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "1408"
@@ -4036,7 +4120,10 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 24
+        "value": 24,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "1409"
@@ -4049,7 +4136,10 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 28
+        "value": 28,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "1410"
@@ -4062,7 +4152,10 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 32
+        "value": 32,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "1411"
@@ -4075,7 +4168,10 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 36
+        "value": 36,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "1412"
@@ -4088,7 +4184,10 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 40
+        "value": 40,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "1413"
@@ -4101,7 +4200,10 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 44
+        "value": 44,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "1414"
@@ -4114,7 +4216,10 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 48
+        "value": 48,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "1415"
@@ -4127,7 +4232,10 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 52
+        "value": 52,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "1416"
@@ -4140,7 +4248,10 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 56
+        "value": 56,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "1417"
@@ -4153,7 +4264,10 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 60
+        "value": 60,
+        "tags": [
+          "spell"
+        ]
       }
     ],
     "tlidbId": "1418"
@@ -4588,19 +4702,19 @@
   {
     "id": "thunder-channeling-prosthetics",
     "name": "Thunder Channeling Prosthetics",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "wind-chasers",
     "name": "Wind Chasers",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "ralph-s-journey",
     "name": "Ralph's Journey",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
@@ -4608,11 +4722,6 @@
     "name": "Royal Guard's Boots",
     "slot": "boots",
     "implicit": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.1
-      },
       {
         "stat": "erosionResist",
         "op": "flat",
@@ -4623,13 +4732,13 @@
   {
     "id": "trickster-s-tread",
     "name": "Trickster's Tread",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "pathfinder-s-path",
     "name": "Pathfinder's Path",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
@@ -4641,17 +4750,12 @@
   {
     "id": "valerie-s-night-stroll",
     "name": "Valerie's Night Stroll",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": [
       {
         "stat": "moreDamage",
         "op": "more",
         "value": 0.0075
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.15
       },
       {
         "stat": "moreDamage",
@@ -4663,55 +4767,55 @@
   {
     "id": "blade-dancer-s-steps",
     "name": "Blade-dancer's Steps",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "ralph-s-footsteps",
     "name": "Ralph's Footsteps",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "feline-steps",
     "name": "Feline Steps",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "rat-king-s-escape-show",
     "name": "Rat King's Escape Show",
-    "slot": "helmet",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "crow-s-plume",
     "name": "Crow's Plume",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "wriggling-tango",
     "name": "Wriggling Tango",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "heels-of-hands",
     "name": "Heels of Hands",
-    "slot": "gloves",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "awaiting",
     "name": "Awaiting",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "cold-sanctuary-prosthetics",
     "name": "Cold Sanctuary Prosthetics",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
@@ -4723,7 +4827,7 @@
   {
     "id": "air-treaders",
     "name": "Air Treaders",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": [
       {
         "stat": "life",
@@ -4735,7 +4839,7 @@
   {
     "id": "fighting-stompers",
     "name": "Fighting Stompers",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
@@ -4759,37 +4863,37 @@
   {
     "id": "king-s-boon",
     "name": "King's Boon",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "shadow-dance",
     "name": "Shadow Dance",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "verdant-steps",
     "name": "Verdant Steps",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "frozen-ripples",
     "name": "Frozen Ripples",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "beneath-the-styx",
     "name": "Beneath the Styx",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "dragon-scale-shoes",
     "name": "Dragon Scale Shoes",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": [
       {
         "stat": "life",
@@ -4801,7 +4905,7 @@
   {
     "id": "fire-shielding-prosthetics",
     "name": "Fire Shielding Prosthetics",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
@@ -4813,13 +4917,13 @@
   {
     "id": "resolution-steps",
     "name": "Resolution Steps",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "final-bastion",
     "name": "Final Bastion",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": [
       {
         "stat": "fireResist",
@@ -4836,7 +4940,7 @@
   {
     "id": "mind-infusion",
     "name": "Mind Infusion",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
@@ -4865,7 +4969,7 @@
   {
     "id": "phantasm",
     "name": "Phantasm",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "life",
@@ -4877,25 +4981,19 @@
   {
     "id": "ralph-s-burial",
     "name": "Ralph's Burial",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "evil-heart-armor",
     "name": "Evil Heart Armor",
     "slot": "chest",
-    "implicit": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.4
-      }
-    ]
+    "implicit": []
   },
   {
     "id": "royal-cycle",
     "name": "Royal Cycle",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "increasedFire",
@@ -4917,7 +5015,7 @@
   {
     "id": "double-rainbow",
     "name": "Double Rainbow",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
@@ -4929,31 +5027,31 @@
   {
     "id": "lightning-striker-s-sacrum",
     "name": "Lightning Striker's Sacrum",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "trinity",
     "name": "Trinity",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "silent-monologue",
     "name": "Silent Monologue",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "israfel-s-sorrow",
     "name": "Israfel's Sorrow",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "genius-battlegear",
     "name": "Genius Battlegear",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "critDamage",
@@ -4965,7 +5063,7 @@
   {
     "id": "gauze-of-phantom-sin",
     "name": "Gauze of Phantom Sin",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "moreDamage",
@@ -4977,19 +5075,19 @@
   {
     "id": "imperious-verdict",
     "name": "Imperious Verdict",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "agony-of-lost-self",
     "name": "Agony of Lost Self",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "shattered-moonlight",
     "name": "Shattered Moonlight",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
@@ -5001,31 +5099,31 @@
   {
     "id": "iced-drinker-s-cage",
     "name": "Iced Drinker's Cage",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "undying-faith",
     "name": "Undying Faith",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "endless-fortress",
     "name": "Endless Fortress",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "corrupted-bulwark",
     "name": "Corrupted Bulwark",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "flaming-evil",
     "name": "Flaming Evil",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "fireResist",
@@ -5037,7 +5135,7 @@
   {
     "id": "frozen-path",
     "name": "Frozen Path",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "coldResist",
@@ -5049,7 +5147,7 @@
   {
     "id": "fleeting-sky",
     "name": "Fleeting Sky",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "lightningResist",
@@ -5061,7 +5159,7 @@
   {
     "id": "cicada-shell",
     "name": "Cicada Shell",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
@@ -5079,13 +5177,13 @@
   {
     "id": "blight",
     "name": "Blight",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "ruinous-star",
     "name": "Ruinous Star",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "moreDamage",
@@ -5097,13 +5195,13 @@
   {
     "id": "agony-s-embrace",
     "name": "Agony's Embrace",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "omniscient-prototype",
     "name": "Omniscient Prototype",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "life",
@@ -5115,25 +5213,25 @@
   {
     "id": "the-three-saints",
     "name": "The Three Saints",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "glorious-journey",
     "name": "Glorious Journey",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "furious-man-s-body",
     "name": "Furious Man's Body",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "magnus-jealousy",
     "name": "Magnus' Jealousy",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
@@ -5151,7 +5249,7 @@
   {
     "id": "varagon-s-lament",
     "name": "Varagon's Lament",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
@@ -5175,19 +5273,19 @@
   {
     "id": "crimson-king",
     "name": "Crimson King",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "martyr-s-staff",
     "name": "Martyr's Staff",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "void-embankment",
     "name": "Void Embankment",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "life",
@@ -5199,19 +5297,19 @@
   {
     "id": "heavyware",
     "name": "Heavyware",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "devouring-tide",
     "name": "Devouring Tide",
-    "slot": "ring",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "arrival-of-the-polar-night",
     "name": "Arrival of the Polar Night",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "increasedLife",
@@ -5223,19 +5321,19 @@
   {
     "id": "mere-eternity",
     "name": "Mere Eternity",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "friend-nemesis",
     "name": "Friend Nemesis",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "futile-tradeoff",
     "name": "Futile Tradeoff",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "increasedLife",
@@ -5247,19 +5345,19 @@
   {
     "id": "silent-avowal",
     "name": "Silent Avowal",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "uros-s-bond",
     "name": "Uros's Bond",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "berserker-bracer",
     "name": "Berserker Bracer",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
@@ -5271,55 +5369,58 @@
   {
     "id": "vendetta-s-sleeve-blade",
     "name": "Vendetta's Sleeve-Blade",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "marksman-bracers",
     "name": "Marksman Bracers",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "sea-splitter",
     "name": "Sea Splitter",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "tyrant-s-smoldering-hold",
     "name": "Tyrant's Smoldering Hold",
-    "slot": "ring",
+    "slot": "gloves",
     "implicit": [
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 110
+        "value": 110,
+        "tags": [
+          "attack"
+        ]
       }
     ]
   },
   {
     "id": "golden-touch",
     "name": "Golden Touch",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "chaos-abyss",
     "name": "Chaos Abyss",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "thunder-manipulator",
     "name": "Thunder Manipulator",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "blinding-bracers",
     "name": "Blinding Bracers",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": [
       {
         "stat": "moreDamage",
@@ -5336,25 +5437,25 @@
   {
     "id": "torturer-s-touch",
     "name": "Torturer's Touch",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "wings-of-light",
     "name": "Wings of Light",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "ralph-s-laws",
     "name": "Ralph's Laws",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "stray-bird-s-return",
     "name": "Stray Bird's Return",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
@@ -5366,19 +5467,19 @@
   {
     "id": "ice-pulse",
     "name": "Ice Pulse",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "vow-s-grasp",
     "name": "Vow's Grasp",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "providential-grace",
     "name": "Providential Grace",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
@@ -5390,13 +5491,13 @@
   {
     "id": "ice-and-fire",
     "name": "Ice and Fire",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "sage-s-insight",
     "name": "Sage's Insight",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
@@ -5420,19 +5521,19 @@
   {
     "id": "miniature-void-sea",
     "name": "Miniature Void Sea",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "israfel-s-laws",
     "name": "Israfel's Laws",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "aeterna-martyr",
     "name": "Aeterna Martyr",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
@@ -5444,7 +5545,7 @@
   {
     "id": "grasp-of-truth",
     "name": "Grasp of Truth",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
@@ -5456,19 +5557,19 @@
   {
     "id": "alloy-covenant",
     "name": "Alloy Covenant",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "praise-for-injury",
     "name": "Praise for Injury",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "ardor",
     "name": "Ardor",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": [
       {
         "stat": "life",
@@ -5480,7 +5581,7 @@
   {
     "id": "varagon-shroud",
     "name": "Varagon Shroud",
-    "slot": "chest",
+    "slot": "gloves",
     "implicit": [
       {
         "stat": "armor",
@@ -5492,43 +5593,43 @@
   {
     "id": "ghost-slaughter",
     "name": "Ghost Slaughter",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "clenched-spring",
     "name": "Clenched Spring",
-    "slot": "ring",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "blade-dancer-s-fingers",
     "name": "Blade-dancer's Fingers",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "magnus-laws",
     "name": "Magnus' Laws",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "death-s-touch",
     "name": "Death's Touch",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "blade-dancer-s-edges",
     "name": "Blade-Dancer's Edges",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "quantum-convergence",
     "name": "Quantum Convergence",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
@@ -5546,13 +5647,13 @@
   {
     "id": "demons-touch",
     "name": "Demons' Touch",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "corrupted-marrow",
     "name": "Corrupted Marrow",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": [
       {
         "stat": "life",
@@ -5564,7 +5665,7 @@
   {
     "id": "legendary-soldier-spectacles",
     "name": "Legendary Soldier Spectacles",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": [
       {
         "stat": "moreDamage",
@@ -5576,43 +5677,43 @@
   {
     "id": "machine-lord",
     "name": "Machine Lord",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "opening-heart",
     "name": "Opening Heart",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "blind-vision",
     "name": "Blind Vision",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "thunder-jawbone",
     "name": "Thunder Jawbone",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "hunting-the-eye-of-the-kraken",
     "name": "Hunting the Eye of the Kraken",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "flying-light-at-daybreak",
     "name": "Flying Light at Daybreak",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "legless-bird-s-lament",
     "name": "Legless Bird's Lament",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": [
       {
         "stat": "moreDamage",
@@ -5651,25 +5752,25 @@
   {
     "id": "siren-faceguard",
     "name": "Siren Faceguard",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "brainwave-emitter",
     "name": "Brainwave Emitter",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "cold-breath",
     "name": "Cold Breath",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "surging-inspiration",
     "name": "Surging Inspiration",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
@@ -5681,42 +5782,37 @@
   {
     "id": "webbed-arcane-headscarf",
     "name": "Webbed Arcane Headscarf",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "imperial-iron-sentry",
     "name": "Imperial Iron Sentry",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "when-winter-comes",
     "name": "When Winter Comes",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "hekate-s-vision",
     "name": "Hekate's Vision",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": [
       {
         "stat": "moreDamage",
         "op": "more",
         "value": 0.2
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.2
       }
     ]
   },
   {
     "id": "troublemaker",
     "name": "Troublemaker",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
@@ -5728,19 +5824,19 @@
   {
     "id": "solid-river",
     "name": "Solid River",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "malign-embrace",
     "name": "Malign Embrace",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "rock-lizard-s-skull",
     "name": "Rock Lizard's Skull",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": [
       {
         "stat": "armor",
@@ -5758,25 +5854,25 @@
   {
     "id": "scarlet-decree",
     "name": "Scarlet Decree",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "last-words-of-chaos",
     "name": "Last Words of Chaos",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "awakening-skull",
     "name": "Awakening Skull",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "tide-of-the-styx",
     "name": "Tide of the Styx",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": [
       {
         "stat": "increasedAttackSpeed",
@@ -5788,7 +5884,7 @@
   {
     "id": "sun-s-embrace",
     "name": "Sun's Embrace",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
@@ -5800,13 +5896,13 @@
   {
     "id": "divine-ember",
     "name": "Divine Ember",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "magnus-scar",
     "name": "Magnus' Scar",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": [
       {
         "stat": "life",
@@ -5824,19 +5920,19 @@
   {
     "id": "kragol-s-roar",
     "name": "Kragol's Roar",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "iron-and-bloom",
     "name": "Iron and Bloom",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "ralph-s-dreadcrest",
     "name": "Ralph's Dreadcrest",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
@@ -5848,7 +5944,7 @@
   {
     "id": "contained-mind",
     "name": "Contained Mind",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": [
       {
         "stat": "moreDamage",
@@ -6044,7 +6140,7 @@
   {
     "id": "spring-resurrection",
     "name": "Spring Resurrection",
-    "slot": "ring",
+    "slot": "weapon",
     "implicit": []
   },
   {
@@ -6084,7 +6180,10 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 25.5
+        "value": 25.5,
+        "tags": [
+          "spell"
+        ]
       }
     ]
   },
@@ -6102,62 +6201,65 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 60
+        "value": 60,
+        "tags": [
+          "spell"
+        ]
       }
     ]
   },
   {
     "id": "reverse-reverse-reverse-mirror",
     "name": "Reverse-Reverse-Reverse Mirror",
-    "slot": "weapon",
+    "slot": "offhand",
     "implicit": []
   },
   {
     "id": "silent-sentry-shield",
     "name": "Silent Sentry Shield",
-    "slot": "weapon",
+    "slot": "offhand",
     "implicit": []
   },
   {
     "id": "electricity-amplifier",
     "name": "Electricity Amplifier",
-    "slot": "weapon",
+    "slot": "offhand",
     "implicit": []
   },
   {
     "id": "arcane-shield",
     "name": "Arcane Shield",
-    "slot": "weapon",
+    "slot": "offhand",
     "implicit": []
   },
   {
     "id": "glacier-caster-shield",
     "name": "Glacier Caster Shield",
-    "slot": "weapon",
+    "slot": "offhand",
     "implicit": []
   },
   {
     "id": "the-coward-s-counterfire",
     "name": "The Coward's Counterfire",
-    "slot": "weapon",
+    "slot": "offhand",
     "implicit": []
   },
   {
     "id": "shield-of-judgment",
     "name": "Shield of Judgment",
-    "slot": "weapon",
+    "slot": "offhand",
     "implicit": []
   },
   {
     "id": "last-stand",
     "name": "Last Stand",
-    "slot": "weapon",
+    "slot": "offhand",
     "implicit": []
   },
   {
     "id": "cover-the-sun",
     "name": "Cover the Sun",
-    "slot": "weapon",
+    "slot": "offhand",
     "implicit": [
       {
         "stat": "fireResist",
@@ -6169,13 +6271,8 @@
   {
     "id": "heavy-soul",
     "name": "Heavy Soul",
-    "slot": "weapon",
+    "slot": "offhand",
     "implicit": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.1
-      },
       {
         "stat": "life",
         "op": "flat",
@@ -6186,7 +6283,7 @@
   {
     "id": "enamor",
     "name": "Enamor",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
@@ -6198,55 +6295,49 @@
   {
     "id": "desire-of-survival",
     "name": "Desire of Survival",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "steel-s-lament",
     "name": "Steel's Lament",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "cry-of-divinity",
     "name": "Cry of Divinity",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "call-of-souls",
     "name": "Call of Souls",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "witchdoctor-s-herb-bag",
     "name": "Witchdoctor's Herb Bag",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "entangled-root",
     "name": "Entangled Root",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "eternal-sun",
     "name": "Eternal Sun",
-    "slot": "weapon",
-    "implicit": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.2
-      }
-    ]
+    "slot": "belt",
+    "implicit": []
   },
   {
     "id": "insulation",
     "name": "Insulation",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
@@ -6264,7 +6355,7 @@
   {
     "id": "pale-mist-s-embrace",
     "name": "Pale Mist's Embrace",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": [
       {
         "stat": "life",
@@ -6276,19 +6367,19 @@
   {
     "id": "winter-of-origin",
     "name": "Winter of Origin",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "compensatory-life",
     "name": "Compensatory Life",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "everburn-thunderfire",
     "name": "Everburn Thunderfire",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
@@ -6300,19 +6391,19 @@
   {
     "id": "embrace-of-the-dark-surge",
     "name": "Embrace of the Dark Surge",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "polygonal-enclosure",
     "name": "Polygonal Enclosure",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "corrosion-of-manifolds",
     "name": "Corrosion of Manifolds",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": [
       {
         "stat": "erosionResist",
@@ -6324,37 +6415,31 @@
   {
     "id": "eternal-sea-fog",
     "name": "Eternal Sea Fog",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "formation-breaker",
     "name": "Formation Breaker",
-    "slot": "weapon",
-    "implicit": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.3
-      }
-    ]
+    "slot": "belt",
+    "implicit": []
   },
   {
     "id": "rat-herder-s-golden-rein",
     "name": "Rat Herder's Golden Rein",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "hot-night-s-embrace",
     "name": "Hot Night's Embrace",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "dawn-break",
     "name": "Dawn Break",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": [
       {
         "stat": "moreDamage",
@@ -6372,31 +6457,31 @@
   {
     "id": "silent-observer",
     "name": "Silent Observer",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "tranquil-stir",
     "name": "Tranquil Stir",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "omni-elixir-notes",
     "name": "Omni-Elixir Notes",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "eternity",
     "name": "Eternity",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "pantheon-s-elegy",
     "name": "Pantheon's Elegy",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
@@ -6408,55 +6493,55 @@
   {
     "id": "pentagram-astrolabe",
     "name": "Pentagram Astrolabe",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "despised-shadow",
     "name": "Despised Shadow",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "ownerless",
     "name": "Ownerless",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "photophobia",
     "name": "Photophobia",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "lady-s-tears",
     "name": "Lady's Tears",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "chain-of-resistance",
     "name": "Chain of Resistance",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "mercurial-torment",
     "name": "Mercurial Torment",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "sage-s-shackle",
     "name": "Sage's Shackle",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "prayer-bead-of-evil",
     "name": "Prayer Bead of Evil",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": [
       {
         "stat": "life",
@@ -6474,19 +6559,19 @@
   {
     "id": "frostbolt",
     "name": "Frostbolt",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "forlorn-crystal",
     "name": "Forlorn Crystal",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "vortex-heart",
     "name": "Vortex Heart",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": [
       {
         "stat": "moreDamage",
@@ -6504,25 +6589,25 @@
   {
     "id": "magnus-mindflame",
     "name": "Magnus' Mindflame",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "truth",
     "name": "Truth",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "warden-s-breastpin",
     "name": "Warden's Breastpin",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "ocean-of-rock",
     "name": "Ocean of Rock",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
@@ -6534,19 +6619,19 @@
   {
     "id": "phantom",
     "name": "Phantom",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "illusory-ocean-silk-iron-rain",
     "name": "Illusory Ocean Silk - Iron Rain",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "illusory-ocean-silk-ash",
     "name": "Illusory Ocean Silk - Ash",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": [
       {
         "stat": "fireResist",
@@ -6558,7 +6643,7 @@
   {
     "id": "illusory-ocean-silk-thunder",
     "name": "Illusory Ocean Silk - Thunder",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": [
       {
         "stat": "lightningResist",
@@ -6570,7 +6655,7 @@
   {
     "id": "illusory-ocean-silk-chilly",
     "name": "Illusory Ocean Silk - Chilly",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": [
       {
         "stat": "coldResist",
@@ -6582,145 +6667,145 @@
   {
     "id": "illusory-ocean-silk-unreal",
     "name": "Illusory Ocean Silk - Unreal",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "broken-sun-ring",
     "name": "Broken Sun Ring",
-    "slot": "ring",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "mother-goddess-paddock",
     "name": "Mother Goddess' Paddock",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "clarity",
     "name": "Clarity",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "chain-behind-the-curtain",
     "name": "Chain behind the Curtain",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "strange-snow",
     "name": "Strange Snow",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "false-god-s-skin",
     "name": "False God's Skin",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "rat-king-s-megagon-dice",
     "name": "Rat King's Megagon Dice",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "iron-nest",
     "name": "Iron Nest",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "elegy-of-immortality",
     "name": "Elegy of Immortality",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "howling-wind",
     "name": "Howling Wind",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "decaying-blessing",
     "name": "Decaying Blessing",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "heart-of-the-storm",
     "name": "Heart of the Storm",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "coldness-tracer-s-tear",
     "name": "Coldness Tracer's Tear",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "mortal-s-reverie",
     "name": "Mortal's Reverie",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "heart-of-animitta",
     "name": "Heart of Animitta",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "law-of-greed",
     "name": "Law of Greed",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "old-grudge",
     "name": "Old Grudge",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "broken-dream",
     "name": "Broken Dream",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "crimson-gash",
     "name": "Crimson Gash",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "lone-survivor",
     "name": "Lone Survivor",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "lonesome",
     "name": "Lonesome",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "revered-light",
     "name": "Revered Light",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "born-in-fire",
     "name": "Born in Fire",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": [
       {
         "stat": "increasedFire",
@@ -6737,7 +6822,7 @@
   {
     "id": "silver-frost",
     "name": "Silver Frost",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": [
       {
         "stat": "coldResist",
@@ -6761,13 +6846,13 @@
   {
     "id": "frozen-lightning",
     "name": "Frozen Lightning",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "clay-doll-s-broken-finger",
     "name": "Clay Doll's Broken Finger",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": [
       {
         "stat": "life",
@@ -6779,19 +6864,19 @@
   {
     "id": "fury-heart",
     "name": "Fury Heart",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "restless-glacier",
     "name": "Restless Glacier",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "chaotic-ending",
     "name": "Chaotic Ending",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": [
       {
         "stat": "increasedLife",
@@ -6803,7 +6888,7 @@
   {
     "id": "exemption-thunderhell",
     "name": "Exemption Thunderhell",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": [
       {
         "stat": "increasedLightning",
@@ -6815,43 +6900,43 @@
   {
     "id": "stream-of-steel",
     "name": "Stream of Steel",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "frozen-flame",
     "name": "Frozen Flame",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "burning-ice",
     "name": "Burning Ice",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "windbreath-convergence",
     "name": "Windbreath Convergence",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "windbreath-dispersion",
     "name": "Windbreath Dispersion",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "traceless-pain",
     "name": "Traceless Pain",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "kaleidoscope",
     "name": "Kaleidoscope",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": [
       {
         "stat": "life",
@@ -6863,7 +6948,7 @@
   {
     "id": "folklore-of-locking-fingers",
     "name": "Folklore of Locking Fingers",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": [
       {
         "stat": "increasedLife",
@@ -6875,7 +6960,7 @@
   {
     "id": "passing-of-time",
     "name": "Passing of Time",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": [
       {
         "stat": "moreDamage",
@@ -6887,7 +6972,7 @@
   {
     "id": "time-of-vow",
     "name": "Time of Vow",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": [
       {
         "stat": "moreDamage",
@@ -6899,31 +6984,31 @@
   {
     "id": "heart-of-rock",
     "name": "Heart of Rock",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "heart-of-magic",
     "name": "Heart of Magic",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "unholy-prayer-agility",
     "name": "Unholy Prayer - Agility",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "unholy-prayer-focus",
     "name": "Unholy Prayer - Focus",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "unholy-prayer-tenacity",
     "name": "Unholy Prayer - Tenacity",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
@@ -6941,7 +7026,7 @@
   {
     "id": "decayed-mind",
     "name": "Decayed Mind",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
@@ -7067,7 +7152,7 @@
   {
     "id": "circular-clearing",
     "name": "Circular Clearing",
-    "slot": "ring",
+    "slot": "weapon",
     "implicit": []
   },
   {

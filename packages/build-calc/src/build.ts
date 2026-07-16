@@ -98,6 +98,10 @@ export function collectModifiers(
       warnings.push(`unknown support skill: ${supportId}`);
       continue;
     }
+    if (support.requiresSkillId != null && support.requiresSkillId !== build.activeSkillId) {
+      warnings.push(`support '${support.name}' only supports '${support.requiresSkillId}', not ${skill.name}; ignored`);
+      continue;
+    }
     const matches =
       support.requiresTags.length === 0 ||
       support.requiresTags.some((t) => skill.tags.includes(t));

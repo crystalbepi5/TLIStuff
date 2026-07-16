@@ -2,195 +2,105 @@
   {
     "id": "702b83ee-24aa-5d53-a4b8-055f864529cf",
     "limb": "head",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251151780",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251151700",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251151701",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251151702",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
   {
     "id": "fe3cb8c4-5e65-5723-a9ab-bba637adb248",
     "limb": "head",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251153680",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251153600",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251153601",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251153602",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
   {
     "id": "0071bfaa-c210-5306-8856-5c0b47f8107b",
     "limb": "head",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251156080",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251156000",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251156001",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251156002",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
@@ -3263,195 +3173,105 @@
   {
     "id": "dec2f243-4743-5545-a7f0-307ae00b4ac4",
     "limb": "chest",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251141880",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251141800",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251141801",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251141802",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
   {
     "id": "6a1b5ae5-7d6b-5b9f-8eaa-6beb49a35a4c",
     "limb": "chest",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251143880",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251143800",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251143801",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251143802",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
   {
     "id": "23340e91-8d59-596c-87f9-b96fdd4e4a6f",
     "limb": "chest",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251145880",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251145800",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251145801",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251145802",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
@@ -6141,195 +5961,105 @@
   {
     "id": "989c23bc-fa94-5921-a222-6bc1592ca206",
     "limb": "hands",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251341880",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251341800",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251341801",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251341802",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
   {
     "id": "43505095-0af9-5385-a345-5a36bec65bc6",
     "limb": "hands",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251343880",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251343800",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251343801",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251343802",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
   {
     "id": "34b87caf-ba0f-5e08-91b4-c6bb69888ef4",
     "limb": "hands",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251345880",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251345800",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251345801",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251345802",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
@@ -9049,195 +8779,105 @@
   {
     "id": "d460d54a-41c7-5108-bae2-946e40538ed8",
     "limb": "legs",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251131580",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251131500",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251131501",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251131502",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
   {
     "id": "dc384246-3ef2-5750-80c8-2c35383e1ee8",
     "limb": "legs",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251134380",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251134300",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251134301",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251134302",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
   {
     "id": "ecf07393-6a7b-5a22-8327-1664a8ea16dc",
     "limb": "legs",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251136780",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251136700",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251136701",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251136702",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
@@ -12414,195 +12054,105 @@
   {
     "id": "bdcd6cbc-3a24-5801-9623-60471e2769a4",
     "limb": "waist",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251331580",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251331500",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251331501",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251331502",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
   {
     "id": "d4a149cf-8b66-512a-ad42-d4d5502391d9",
     "limb": "waist",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251334380",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251334300",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251334301",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251334302",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
   {
     "id": "5ba2be4b-e6e5-5634-b1c9-a96dea6b5be2",
     "limb": "waist",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251336780",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251336700",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251336701",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251336702",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
@@ -15751,195 +15301,105 @@
   {
     "id": "8a6c3fdd-00aa-5a45-99ea-317e8aa6cb57",
     "limb": "neck",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251351780",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251351700",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251351701",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251351702",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
   {
     "id": "ab7a1daf-8317-5e61-8d04-097652b76636",
     "limb": "neck",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251353680",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251353600",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251353601",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251353602",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
   {
     "id": "c6f7c6d6-8833-5b2e-ac29-46c568064ddc",
     "limb": "neck",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251356080",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251356000",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251356001",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251356002",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
@@ -18676,195 +18136,105 @@
   {
     "id": "2632506b-ce18-5920-971c-c944cca2d619",
     "limb": "digits",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251431580",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251431500",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251431501",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251431502",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
   {
     "id": "ae3d5d06-d19a-5dad-8acd-f734e09bae2b",
     "limb": "digits",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251434380",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251434300",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251434301",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251434302",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
   {
     "id": "5fa7ac50-2389-54c4-aeab-600e06c1ef80",
     "limb": "digits",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251436780",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251436700",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251436701",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251436702",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
@@ -22188,195 +21558,105 @@
   {
     "id": "a2122847-5cca-58b0-bada-476bb19edcf6",
     "limb": "aberrant legs",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251231580",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251231500",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251231501",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251231502",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
   {
     "id": "e6676054-97c0-522c-8a60-873aea05b584",
     "limb": "aberrant legs",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251234380",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251234300",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251234301",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251234302",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
   {
     "id": "f468a90a-3c42-5f37-8d0b-378157cbf538",
     "limb": "aberrant legs",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251236780",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251236700",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251236701",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251236702",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
@@ -25532,195 +24812,105 @@
   {
     "id": "d4ad87d6-d918-57a7-8d54-71ce87b0025b",
     "limb": "aberrant waist",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251531580",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251531500",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251531501",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251531502",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
   {
     "id": "7268c655-d4d5-5946-90f8-4cf87a328c49",
     "limb": "aberrant waist",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251534380",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251534300",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251534301",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251534302",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
   {
     "id": "65c94d46-f249-5eb0-9325-5c5c682a808c",
     "limb": "aberrant waist",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251536780",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251536700",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251536701",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251536702",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
@@ -28820,195 +28010,105 @@
   {
     "id": "8d75980e-a7cf-5a94-bed4-4013b1a967b1",
     "limb": "aberrant digits",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251631580",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251631500",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251631501",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251631502",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
   {
     "id": "0f17aa67-a4ad-58df-867b-117730a136e2",
     "limb": "aberrant digits",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251634380",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251634300",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251634301",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251634302",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },
   {
     "id": "6f31981e-b2f1-5f87-b998-3ae6f377e09a",
     "limb": "aberrant digits",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.45
-      }
-    ],
+    "modifiers": [],
     "tiers": [
       {
         "tier": "0+",
         "weight": 0,
         "levelRequirement": 1,
         "modifierId": "251636780",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "0",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251636700",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.45
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "1",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251636701",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "tier": "2",
         "weight": 1,
         "levelRequirement": 1,
         "modifierId": "251636702",
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.35
-          }
-        ]
+        "modifiers": []
       }
     ]
   },

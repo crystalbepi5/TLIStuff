@@ -82,7 +82,7 @@
   {
     "id": "anger",
     "name": "Anger",
-    "heroId": "any",
+    "heroId": "rehan",
     "modifiers": [
       {
         "stat": "moreDamage",
@@ -94,7 +94,7 @@
   {
     "id": "seething-silhouette",
     "name": "Seething Silhouette",
-    "heroId": "any",
+    "heroId": "rehan",
     "modifiers": [
       {
         "stat": "moreDamage",
@@ -111,13 +111,13 @@
   {
     "id": "ranger-of-glory",
     "name": "Ranger of Glory",
-    "heroId": "any",
+    "heroId": "carino",
     "modifiers": []
   },
   {
     "id": "lethal-flash",
     "name": "Lethal Flash",
-    "heroId": "any",
+    "heroId": "carino",
     "modifiers": [
       {
         "stat": "moreDamage",
@@ -129,7 +129,7 @@
   {
     "id": "zealot-of-war",
     "name": "Zealot of War",
-    "heroId": "any",
+    "heroId": "carino",
     "modifiers": [
       {
         "stat": "moreDamage",
@@ -141,7 +141,7 @@
   {
     "id": "ceasefire",
     "name": "Ceasefire",
-    "heroId": "any",
+    "heroId": "carino",
     "modifiers": [
       {
         "stat": "moreDamage",
@@ -153,7 +153,7 @@
   {
     "id": "extreme-heat",
     "name": "Extreme Heat",
-    "heroId": "any",
+    "heroId": "carino",
     "modifiers": [
       {
         "stat": "moreDamage",
@@ -170,7 +170,7 @@
   {
     "id": "eternal-flames",
     "name": "Eternal Flames",
-    "heroId": "any",
+    "heroId": "carino",
     "modifiers": [
       {
         "stat": "moreDamage",
@@ -182,13 +182,13 @@
   {
     "id": "wind-stalker",
     "name": "Wind Stalker",
-    "heroId": "any",
+    "heroId": "erika",
     "modifiers": []
   },
   {
     "id": "cat-s-punches",
     "name": "Cat's Punches",
-    "heroId": "any",
+    "heroId": "erika",
     "modifiers": [
       {
         "stat": "moreDamage",
@@ -200,19 +200,19 @@
   {
     "id": "lightning-shadow",
     "name": "Lightning Shadow",
-    "heroId": "any",
+    "heroId": "erika",
     "modifiers": []
   },
   {
     "id": "vendetta-s-sting",
     "name": "Vendetta's Sting",
-    "heroId": "any",
+    "heroId": "erika",
     "modifiers": []
   },
   {
     "id": "leisurely-stroll",
     "name": "Leisurely Stroll",
-    "heroId": "any",
+    "heroId": "erika",
     "modifiers": [
       {
         "stat": "moreDamage",
@@ -224,43 +224,37 @@
   {
     "id": "blast-nova",
     "name": "Blast Nova",
-    "heroId": "any",
+    "heroId": "bing",
     "modifiers": []
   },
   {
     "id": "creative-genius",
     "name": "Creative Genius",
-    "heroId": "any",
+    "heroId": "bing",
     "modifiers": []
   },
   {
     "id": "auto-ingenuity-program",
     "name": "Auto-Ingenuity Program",
-    "heroId": "any",
+    "heroId": "bing",
     "modifiers": []
   },
   {
     "id": "multi-coupling-equation",
     "name": "Multi-Coupling Equation",
-    "heroId": "any",
+    "heroId": "bing",
     "modifiers": []
   },
   {
     "id": "flame-of-pleasure",
     "name": "Flame of Pleasure",
-    "heroId": "any",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.76
-      }
-    ]
+    "heroId": "gemma",
+    "modifiers": []
   },
   {
     "id": "frostbitten-heart",
     "name": "Frostbitten Heart",
-    "heroId": "any",
+    "heroId": "gemma",
     "modifiers": [
       {
         "stat": "moreDamage",
@@ -272,13 +266,13 @@
   {
     "id": "glacial-night",
     "name": "Glacial Night",
-    "heroId": "any",
+    "heroId": "gemma",
     "modifiers": []
   },
   {
     "id": "ice-fire-fusion",
     "name": "Ice-Fire Fusion",
-    "heroId": "any",
+    "heroId": "gemma",
     "modifiers": [
       {
         "stat": "moreDamage",
@@ -290,7 +284,7 @@
   {
     "id": "wisdom-of-the-gods",
     "name": "Wisdom of The Gods",
-    "heroId": "any",
+    "heroId": "thea",
     "modifiers": [
       {
         "stat": "moreDamage",
@@ -302,7 +296,7 @@
   {
     "id": "incarnation-of-the-gods",
     "name": "Incarnation of the Gods",
-    "heroId": "any",
+    "heroId": "thea",
     "modifiers": [
       {
         "stat": "moreDamage",
@@ -319,7 +313,7 @@
   {
     "id": "blasphemer",
     "name": "Blasphemer",
-    "heroId": "any",
+    "heroId": "thea",
     "modifiers": [
       {
         "stat": "moreDamage",
@@ -331,19 +325,19 @@
   {
     "id": "spacetime-illusion",
     "name": "Spacetime Illusion",
-    "heroId": "any",
+    "heroId": "youga",
     "modifiers": []
   },
   {
     "id": "spacetime-elapse",
     "name": "Spacetime Elapse",
-    "heroId": "any",
+    "heroId": "youga",
     "modifiers": []
   },
   {
     "id": "order-calling",
     "name": "Order Calling",
-    "heroId": "any",
+    "heroId": "moto",
     "modifiers": [
       {
         "stat": "moreDamage",
@@ -360,13 +354,13 @@
   {
     "id": "charge-calling",
     "name": "Charge Calling",
-    "heroId": "any",
+    "heroId": "moto",
     "modifiers": []
   },
   {
     "id": "high-court-chariot",
     "name": "High Court Chariot",
-    "heroId": "any",
+    "heroId": "rosa",
     "modifiers": [
       {
         "stat": "moreDamage",
@@ -378,13 +372,13 @@
   {
     "id": "unsullied-blade",
     "name": "Unsullied Blade",
-    "heroId": "any",
+    "heroId": "rosa",
     "modifiers": []
   },
   {
     "id": "growing-breeze",
     "name": "Growing Breeze",
-    "heroId": "any",
+    "heroId": "iris",
     "modifiers": [
       {
         "stat": "moreDamage",
@@ -396,47 +390,37 @@
   {
     "id": "vigilant-breeze",
     "name": "Vigilant Breeze",
-    "heroId": "any",
+    "heroId": "iris",
     "modifiers": []
   },
   {
     "id": "sing-with-the-tide",
     "name": "Sing with the Tide",
-    "heroId": "any",
+    "heroId": "selena",
     "modifiers": [
       {
         "stat": "moreDamage",
         "op": "more",
         "value": 0.15
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.2
       }
     ]
   },
   {
     "id": "licorice-note",
     "name": "Licorice Note",
-    "heroId": "any",
+    "heroId": "sage",
     "modifiers": [
       {
         "stat": "moreDamage",
         "op": "more",
         "value": 0.14
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.1
       }
     ]
   },
   {
     "id": "licorice-tincture-blend",
     "name": "Licorice Tincture Blend",
-    "heroId": "any",
+    "heroId": "sage",
     "modifiers": [
       {
         "stat": "moreDamage",
@@ -453,13 +437,13 @@
   {
     "id": "dance-of-the-deep",
     "name": "Dance of the Deep",
-    "heroId": "any",
+    "heroId": "selena",
     "modifiers": []
   },
   {
     "id": "silencing-severance",
     "name": "Silencing Severance",
-    "heroId": "any",
+    "heroId": "selena",
     "modifiers": []
   }
 ]

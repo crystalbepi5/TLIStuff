@@ -4040,16 +4040,6 @@
         "value": 4
       },
       {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.04
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.04
-      },
-      {
         "stat": "increasedDamage",
         "op": "increased",
         "value": 1
@@ -4084,13 +4074,7 @@
         "nodeId": 3,
         "nodeType": "Medium",
         "nextNode": 4,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.04
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 4,
@@ -4108,13 +4092,7 @@
         "nodeId": 6,
         "nodeType": "Medium",
         "nextNode": 7,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.04
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 7,
@@ -4407,16 +4385,6 @@
     "description": "Increases Max Energy Shield, Mana Restoration, and XP bonus\n",
     "modifiers": [
       {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.04
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.04
-      },
-      {
         "stat": "increasedDamage",
         "op": "increased",
         "value": 1
@@ -4439,13 +4407,7 @@
         "nodeId": 3,
         "nodeType": "Medium",
         "nextNode": 4,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.04
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 4,
@@ -4463,13 +4425,7 @@
         "nodeId": 6,
         "nodeType": "Medium",
         "nextNode": 7,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.04
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 7,
@@ -4696,16 +4652,6 @@
     "description": "Increases Elemental Resistance, damage avoidance, and XP protection\n",
     "modifiers": [
       {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.04
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.04
-      },
-      {
         "stat": "increasedDamage",
         "op": "increased",
         "value": 1
@@ -4728,13 +4674,7 @@
         "nodeId": 3,
         "nodeType": "Medium",
         "nextNode": 4,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.04
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 4,
@@ -4752,13 +4692,7 @@
         "nodeId": 6,
         "nodeType": "Medium",
         "nextNode": 7,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.04
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 7,
@@ -4985,26 +4919,6 @@
     "description": "Increases Elemental Resistance, damage mitigation, and XP bonus\n",
     "modifiers": [
       {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.04
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.015
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.015
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.04
-      },
-      {
         "stat": "increasedDamage",
         "op": "increased",
         "value": 1
@@ -5027,49 +4941,25 @@
         "nodeId": 3,
         "nodeType": "Medium",
         "nextNode": 4,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.04
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 4,
         "nodeType": "Micro",
         "nextNode": 5,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.015
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 5,
         "nodeType": "Micro",
         "nextNode": 6,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.015
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 6,
         "nodeType": "Medium",
         "nextNode": 7,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.04
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 7,
@@ -5118,21 +5008,6 @@
     "description": "Increases Elemental Resistance, damage mitigation, and XP bonus\nUnlock 1 Pact Nodes in advance",
     "modifiers": [
       {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.015
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.015
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.03
-      },
-      {
         "stat": "increasedDamage",
         "op": "increased",
         "value": 1
@@ -5161,37 +5036,19 @@
         "nodeId": 4,
         "nodeType": "Micro",
         "nextNode": 5,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.015
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 5,
         "nodeType": "Micro",
         "nextNode": 6,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.015
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 6,
         "nodeType": "Medium",
         "nextNode": 7,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.03
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 7,
@@ -5240,21 +5097,6 @@
     "description": "Increases Elemental Resistance, damage mitigation, and XP bonus\nUnlock 2 Pact Nodes in advance",
     "modifiers": [
       {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.015
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.015
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.03
-      },
-      {
         "stat": "increasedDamage",
         "op": "increased",
         "value": 1
@@ -5283,37 +5125,19 @@
         "nodeId": 4,
         "nodeType": "Micro",
         "nextNode": 5,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.015
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 5,
         "nodeType": "Micro",
         "nextNode": 6,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.015
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 6,
         "nodeType": "Medium",
         "nextNode": 7,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.03
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 7,
@@ -7891,16 +7715,6 @@
     "description": "Increases Elemental Resistance, Mana Restoration, and XP bonus\n",
     "modifiers": [
       {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.04
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.04
-      },
-      {
         "stat": "increasedDamage",
         "op": "increased",
         "value": 1
@@ -7923,13 +7737,7 @@
         "nodeId": 3,
         "nodeType": "Medium",
         "nextNode": 4,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.04
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 4,
@@ -7947,13 +7755,7 @@
         "nodeId": 6,
         "nodeType": "Medium",
         "nextNode": 7,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.04
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 7,
@@ -8195,16 +7997,6 @@
         "value": 24
       },
       {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.02
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.02
-      },
-      {
         "stat": "increasedDamage",
         "op": "increased",
         "value": 24
@@ -8261,25 +8053,13 @@
         "nodeId": 4,
         "nodeType": "Micro",
         "nextNode": 5,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.02
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 5,
         "nodeType": "Micro",
         "nextNode": 6,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.02
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 6,
@@ -8361,21 +8141,6 @@
         "value": 20
       },
       {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.02
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.02
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.04
-      },
-      {
         "stat": "increasedDamage",
         "op": "increased",
         "value": 1
@@ -8422,37 +8187,19 @@
         "nodeId": 4,
         "nodeType": "Micro",
         "nextNode": 5,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.02
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 5,
         "nodeType": "Micro",
         "nextNode": 6,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.02
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 6,
         "nodeType": "Medium",
         "nextNode": 7,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.04
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 7,
@@ -8516,21 +8263,6 @@
         "value": 20
       },
       {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.02
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.02
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.04
-      },
-      {
         "stat": "increasedDamage",
         "op": "increased",
         "value": 1
@@ -8577,37 +8309,19 @@
         "nodeId": 4,
         "nodeType": "Micro",
         "nextNode": 5,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.02
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 5,
         "nodeType": "Micro",
         "nextNode": 6,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.02
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 6,
         "nodeType": "Medium",
         "nextNode": 7,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.04
-          }
-        ]
+        "modifiers": []
       },
       {
         "nodeId": 7,

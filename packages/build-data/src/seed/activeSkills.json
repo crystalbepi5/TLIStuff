@@ -2585,403 +2585,163 @@
     "levelScaling": [
       {
         "level": 1,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 2,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 3,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 4,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 5,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 6,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 7,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 8,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 9,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 10,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 11,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 12,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 13,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 14,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 15,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 16,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 17,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 18,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 19,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 20,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 21,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 22,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 23,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 24,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 25,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 26,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 27,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 28,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 29,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 30,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 31,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 32,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 33,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 34,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 35,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 36,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 37,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 38,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 39,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "level": 40,
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.1
-          }
-        ]
+        "modifiers": []
       }
     ],
     "manaCost": 8,
@@ -19454,6 +19214,11 @@
             "stat": "increasedAttackSpeed",
             "op": "increased",
             "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
+            "op": "increased",
+            "value": -15
           }
         ]
       },
@@ -19462,6 +19227,11 @@
         "modifiers": [
           {
             "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
             "op": "increased",
             "value": -15
           }
@@ -19474,6 +19244,11 @@
             "stat": "increasedAttackSpeed",
             "op": "increased",
             "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
+            "op": "increased",
+            "value": -15
           }
         ]
       },
@@ -19482,6 +19257,11 @@
         "modifiers": [
           {
             "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
             "op": "increased",
             "value": -15
           }
@@ -19494,6 +19274,11 @@
             "stat": "increasedAttackSpeed",
             "op": "increased",
             "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
+            "op": "increased",
+            "value": -15
           }
         ]
       },
@@ -19502,6 +19287,11 @@
         "modifiers": [
           {
             "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
             "op": "increased",
             "value": -15
           }
@@ -19514,6 +19304,11 @@
             "stat": "increasedAttackSpeed",
             "op": "increased",
             "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
+            "op": "increased",
+            "value": -15
           }
         ]
       },
@@ -19522,6 +19317,11 @@
         "modifiers": [
           {
             "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
             "op": "increased",
             "value": -15
           }
@@ -19534,6 +19334,11 @@
             "stat": "increasedAttackSpeed",
             "op": "increased",
             "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
+            "op": "increased",
+            "value": -15
           }
         ]
       },
@@ -19542,6 +19347,11 @@
         "modifiers": [
           {
             "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
             "op": "increased",
             "value": -15
           }
@@ -19554,6 +19364,11 @@
             "stat": "increasedAttackSpeed",
             "op": "increased",
             "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
+            "op": "increased",
+            "value": -15
           }
         ]
       },
@@ -19562,6 +19377,11 @@
         "modifiers": [
           {
             "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
             "op": "increased",
             "value": -15
           }
@@ -19574,6 +19394,11 @@
             "stat": "increasedAttackSpeed",
             "op": "increased",
             "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
+            "op": "increased",
+            "value": -15
           }
         ]
       },
@@ -19582,6 +19407,11 @@
         "modifiers": [
           {
             "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
             "op": "increased",
             "value": -15
           }
@@ -19594,6 +19424,11 @@
             "stat": "increasedAttackSpeed",
             "op": "increased",
             "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
+            "op": "increased",
+            "value": -15
           }
         ]
       },
@@ -19602,6 +19437,11 @@
         "modifiers": [
           {
             "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
             "op": "increased",
             "value": -15
           }
@@ -19614,6 +19454,11 @@
             "stat": "increasedAttackSpeed",
             "op": "increased",
             "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
+            "op": "increased",
+            "value": -15
           }
         ]
       },
@@ -19622,6 +19467,11 @@
         "modifiers": [
           {
             "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
             "op": "increased",
             "value": -15
           }
@@ -19634,6 +19484,11 @@
             "stat": "increasedAttackSpeed",
             "op": "increased",
             "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
+            "op": "increased",
+            "value": -15
           }
         ]
       },
@@ -19642,6 +19497,11 @@
         "modifiers": [
           {
             "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
             "op": "increased",
             "value": -15
           }
@@ -19654,6 +19514,11 @@
             "stat": "increasedAttackSpeed",
             "op": "increased",
             "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
+            "op": "increased",
+            "value": -15
           }
         ]
       },
@@ -19662,6 +19527,11 @@
         "modifiers": [
           {
             "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
             "op": "increased",
             "value": -15
           }
@@ -19674,6 +19544,11 @@
             "stat": "increasedAttackSpeed",
             "op": "increased",
             "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
+            "op": "increased",
+            "value": -15
           }
         ]
       },
@@ -19682,6 +19557,11 @@
         "modifiers": [
           {
             "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
             "op": "increased",
             "value": -15
           }
@@ -19694,6 +19574,11 @@
             "stat": "increasedAttackSpeed",
             "op": "increased",
             "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
+            "op": "increased",
+            "value": -15
           }
         ]
       },
@@ -19702,6 +19587,11 @@
         "modifiers": [
           {
             "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
             "op": "increased",
             "value": -15
           }
@@ -19714,6 +19604,11 @@
             "stat": "increasedAttackSpeed",
             "op": "increased",
             "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
+            "op": "increased",
+            "value": -15
           }
         ]
       },
@@ -19722,6 +19617,11 @@
         "modifiers": [
           {
             "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
             "op": "increased",
             "value": -15
           }
@@ -19734,6 +19634,11 @@
             "stat": "increasedAttackSpeed",
             "op": "increased",
             "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
+            "op": "increased",
+            "value": -15
           }
         ]
       },
@@ -19742,6 +19647,11 @@
         "modifiers": [
           {
             "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
             "op": "increased",
             "value": -15
           }
@@ -19754,6 +19664,11 @@
             "stat": "increasedAttackSpeed",
             "op": "increased",
             "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
+            "op": "increased",
+            "value": -15
           }
         ]
       },
@@ -19762,6 +19677,11 @@
         "modifiers": [
           {
             "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
             "op": "increased",
             "value": -15
           }
@@ -19774,6 +19694,11 @@
             "stat": "increasedAttackSpeed",
             "op": "increased",
             "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
+            "op": "increased",
+            "value": -15
           }
         ]
       },
@@ -19782,6 +19707,11 @@
         "modifiers": [
           {
             "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
             "op": "increased",
             "value": -15
           }
@@ -19794,6 +19724,11 @@
             "stat": "increasedAttackSpeed",
             "op": "increased",
             "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
+            "op": "increased",
+            "value": -15
           }
         ]
       },
@@ -19802,6 +19737,11 @@
         "modifiers": [
           {
             "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
             "op": "increased",
             "value": -15
           }
@@ -19814,6 +19754,11 @@
             "stat": "increasedAttackSpeed",
             "op": "increased",
             "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
+            "op": "increased",
+            "value": -15
           }
         ]
       },
@@ -19822,6 +19767,11 @@
         "modifiers": [
           {
             "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
             "op": "increased",
             "value": -15
           }
@@ -19834,6 +19784,11 @@
             "stat": "increasedAttackSpeed",
             "op": "increased",
             "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
+            "op": "increased",
+            "value": -15
           }
         ]
       },
@@ -19842,6 +19797,11 @@
         "modifiers": [
           {
             "stat": "increasedAttackSpeed",
+            "op": "increased",
+            "value": -15
+          },
+          {
+            "stat": "increasedCastSpeed",
             "op": "increased",
             "value": -15
           }

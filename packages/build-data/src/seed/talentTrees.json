@@ -104,13 +104,7 @@
           "x": 864,
           "y": 80
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.8
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "22a83ceb-6576-578a-8962-a99627c3a341",
@@ -398,13 +392,7 @@
           "x": 864,
           "y": 368
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.8
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "12ef0410-39b4-5fc0-af10-9b784f900419",
@@ -3199,13 +3187,7 @@
           "x": 736,
           "y": 176
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.03
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "78a4b1bc-1787-5f03-9140-6fda9800a223",
@@ -5679,6 +5661,11 @@
             "stat": "increasedAttackSpeed",
             "op": "increased",
             "value": 3
+          },
+          {
+            "stat": "increasedCastSpeed",
+            "op": "increased",
+            "value": 3
           }
         ]
       },
@@ -6826,13 +6813,7 @@
           "x": 864,
           "y": 80
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.4
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "8b1242a5-ba70-547c-b16e-698a9b7bd06a",
@@ -8438,13 +8419,7 @@
           "x": 608,
           "y": 272
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.04
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "3c40f40f-b7da-5955-96b5-e0c81f603243",
@@ -8459,13 +8434,7 @@
           "x": 736,
           "y": 272
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.06
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "4b0e934c-1da4-5e1f-b5a6-254ea425e0ec",
@@ -10069,13 +10038,7 @@
           "x": 864,
           "y": 368
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.15
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "794361ed-c8ad-5a23-911d-a014036e5bc3",
@@ -11399,13 +11362,7 @@
           "x": 608,
           "y": 176
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.04
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "cb59bb55-719f-5163-b050-841ac36c9fcb",
@@ -13523,13 +13480,7 @@
           "x": 864,
           "y": 176
         },
-        "modifiers": [
-          {
-            "stat": "critDamage",
-            "op": "flat",
-            "value": 25
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "42d2bf72-2675-51bd-b2a0-1a269b7996cf",
