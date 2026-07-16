@@ -2,11 +2,17 @@
   "name": "@torchlight-companion/desktop",
   "version": "0.1.0",
   "private": true,
+  "description": "Torchlight Companion loot tracker overlay",
+  "author": "Torchlight Companion",
   "main": "dist/main.js",
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "copy-web": "node scripts/copy-web-dist.mjs",
     "dev": "pnpm build && electron .",
-    "start": "pnpm build && cross-env NODE_ENV=production electron .",
+    "prestart": "pnpm --filter @torchlight-companion/web build && pnpm build && pnpm copy-web",
+    "start": "cross-env NODE_ENV=production electron .",
+    "prepackage": "pnpm --filter @torchlight-companion/web build && pnpm build && pnpm copy-web",
+    "package": "electron-builder",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test": "node --test test/*.test.mjs",
     "lint": "tsc -p tsconfig.json --noEmit"
@@ -14,6 +20,30 @@
   "devDependencies": {
     "@types/node": "^24.13.2",
     "cross-env": "^10.1.0",
-    "electron": "40.10.6"
+    "electron": "40.10.6",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.torchlightcompanion.desktop",
+    "productName": "Torchlight Companion",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "web-dist/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.utilities"
+    },
+    "linux": {
+      "target": "AppImage",
+      "category": "Utility"
+    }
   }
 }

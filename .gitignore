@@ -12,6 +12,7 @@ dist/
 *.sqlite-journal
 release/
 out/
+web-dist/
 .vite/
 .tlidb-cache/
 .bundle-cache/
