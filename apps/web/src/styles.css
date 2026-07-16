@@ -399,6 +399,34 @@ body {
   padding: 4px 2px 0;
 }
 
+.tier-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.tier-table th {
+  text-align: left;
+  color: var(--muted);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 8px 6px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.tier-table td {
+  padding: 5px 8px 5px 0;
+  border-bottom: 1px solid rgba(74, 51, 35, 0.4);
+  font-variant-numeric: tabular-nums;
+  vertical-align: top;
+}
+
+.tier-effect {
+  color: var(--muted);
+  font-variant-numeric: normal;
+}
+
 .loot-slot {
   color: var(--muted);
   font-size: 0.7rem;

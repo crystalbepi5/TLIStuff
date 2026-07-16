@@ -20,3 +20,4 @@ export {
   pickSkillLevel,
   availableLevels
 } from './tiers.js';
+export { analyticOdds, monteCarloOdds, type CraftingOdds, type MonteCarloResult } from './crafting.js';

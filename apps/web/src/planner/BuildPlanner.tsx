@@ -65,9 +65,23 @@ function encodeBuild(build: Build): string {
   return btoa(encodeURIComponent(JSON.stringify(build)));
 }
 
-/** Decode a share code, backfilling any fields older codes may lack. */
+/** Pulls the `build` param out if given a full share URL instead of a bare
+ * code (e.g. pasted from the clipboard-unavailable fallback), otherwise
+ * returns the input unchanged. */
+function extractCode(input: string): string {
+  const trimmed = input.trim();
+  try {
+    const asUrl = new URL(trimmed);
+    return asUrl.searchParams.get('build') ?? trimmed;
+  } catch {
+    return trimmed; // not a URL — treat as a bare code
+  }
+}
+
+/** Decode a share code (or a full share URL), backfilling any fields older
+ * codes may lack. */
 function decodeBuild(code: string): Build {
-  const parsed = JSON.parse(decodeURIComponent(atob(code.trim()))) as Partial<Build>;
+  const parsed = JSON.parse(decodeURIComponent(atob(extractCode(code)))) as Partial<Build>;
   return {
     ...defaultBuild(),
     ...parsed,
@@ -80,10 +94,33 @@ function decodeBuild(code: string): Build {
   };
 }
 
+/** A shareable link puts the code in the query string (`?build=...#planner`)
+ * rather than only the copy-paste textarea, so a streamer can drop one
+ * clickable link in chat/panel and a viewer lands straight on that build. */
+function shareUrl(build: Build): string {
+  const url = new URL(window.location.href);
+  url.hash = 'planner';
+  url.searchParams.set('build', encodeBuild(build));
+  return url.toString();
+}
+
+/** Reads `?build=` from the current URL, if present — used once on load so a
+ * shared link opens directly onto that build instead of the blank default. */
+function buildFromUrl(): Build | undefined {
+  const code = new URLSearchParams(window.location.search).get('build');
+  if (!code) return undefined;
+  try {
+    return decodeBuild(code);
+  } catch {
+    return undefined;
+  }
+}
+
 export function BuildPlanner() {
-  const [build, setBuild] = useState<Build>(defaultBuild);
+  const [build, setBuild] = useState<Build>(() => buildFromUrl() ?? defaultBuild());
   const [shareCode, setShareCode] = useState('');
   const [importError, setImportError] = useState<string | null>(null);
+  const [linkCopied, setLinkCopied] = useState(false);
   const [supportSearch, setSupportSearch] = useState('');
   const [talentSearch, setTalentSearch] = useState('');
 
@@ -138,6 +175,9 @@ export function BuildPlanner() {
       <header className="planner-header">
         <h1>Build Planner</h1>
         <span className="planner-badge">{seedDataset.meta.source} data</span>
+        <a className="planner-nav-link" href="#craft">
+          crafting sim
+        </a>
         <a className="planner-nav-link" href="#overlay">
           ← overlay
         </a>
@@ -427,6 +467,21 @@ export function BuildPlanner() {
       <section className="planner-panel share-panel">
         <h2>Share</h2>
         <div className="share-row">
+          <button
+            type="button"
+            onClick={async () => {
+              const url = shareUrl(build);
+              try {
+                await navigator.clipboard.writeText(url);
+                setLinkCopied(true);
+                setTimeout(() => setLinkCopied(false), 2000);
+              } catch {
+                setShareCode(url); // clipboard unavailable — fall back to the textarea
+              }
+            }}
+          >
+            {linkCopied ? 'Link copied!' : 'Copy share link'}
+          </button>
           <button type="button" onClick={() => setShareCode(encodeBuild(build))}>
             Export code
           </button>
