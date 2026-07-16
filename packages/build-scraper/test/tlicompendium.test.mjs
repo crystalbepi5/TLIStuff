@@ -180,6 +180,36 @@ test('mapAffixes falls back to considering every tier (even weight-0) only when 
   assert.deepEqual(life.modifiers, [{ stat: 'life', op: 'flat', value: 372 }]);
 });
 
+test('mapAffixes recomputes top-level modifiers across every merged slot, not just the first slot encountered', () => {
+  // Confirmed real bug: the same craft-affix template merges across gear
+  // subtypes/slots by (kind, template), but the top-level `modifiers` was
+  // only ever set from whichever slot's section was processed *first* and
+  // never revisited on merge -- e.g. boots' craftable top (+220) silently
+  // won even though the same merged affix has a craftable weapon tier at
+  // +330, undercounting weapon builds using it.
+  const gearMaster = {
+    'gear/boots/str_boots/master': {
+      category: 'boots',
+      craftPrefix: [
+        { descriptionTemplate: '+# Max Life', tiers: [{ tier: '1', modifierId: 'boots-1', weight: 100, values: [{ maxValue: 220 }] }] }
+      ]
+    },
+    'gear/weapon/sword/master': {
+      category: 'one_handed',
+      craftPrefix: [
+        { descriptionTemplate: '+# Max Life', tiers: [{ tier: '1', modifierId: 'weapon-1', weight: 100, values: [{ maxValue: 330 }] }] }
+      ]
+    }
+  };
+  const affixes = mapAffixes(gearMaster);
+  const life = affixes.find((a) => a.name === 'Max Life');
+  assert.ok(life);
+  assert.deepEqual(life.slots.slice().sort(), ['boots', 'weapon']);
+  // Regardless of which section was processed first, the recorded top-level
+  // modifiers must be the best across ALL merged slots (330, not 220).
+  assert.deepEqual(life.modifiers, [{ stat: 'life', op: 'flat', value: 330 }]);
+});
+
 test('mapAffixes unions tiers (by modifierId) for the same affix across gear subtypes', () => {
   const gearMaster = {
     'gear/boots/str_boots/master': {
@@ -277,6 +307,23 @@ test('mapSkills joins -master structure with -en names (active + support)', () =
   assert.equal(active[0].baseRate, 2); // 1 / 0.5s
   assert.equal(support.length, 1);
   assert.deepEqual(support[0].modifiers, [{ stat: 'moreDamage', op: 'more', value: 0.2 }]);
+});
+
+test('mapSkills maps the raw "Summon" tag to the minion DamageTag, so cannotSupport Summon bans are enforceable', () => {
+  // Confirmed real bug: real summon actives (e.g. "Summon Machine Guard")
+  // carry a raw "Summon" tag, but it had no DamageTag mapping -- so no
+  // summon skill's own `tags` ever contained 'minion', which meant
+  // collectModifiers's cannotSupport check (which already normalises
+  // 'Summon' -> 'minion' on the support side) could never actually trigger.
+  const master = {
+    'skill/Active/master': {
+      category: 'Active',
+      skills: [{ id: 'u1', tags: ['Spell', 'Summon', 'Persistent'] }]
+    }
+  };
+  const en = { 'skill/Active/i18n/en': { u1: { name: 'Summon Machine Guard' } } };
+  const { active } = mapSkills(master, en);
+  assert.deepEqual(active[0].tags.slice().sort(), ['minion', 'spell']);
 });
 
 test('mapSkills sets requiresSkillId from skillTag for Magnificent/Noble supports, but not the generic Support category', () => {

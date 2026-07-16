@@ -10868,7 +10868,8 @@
     "id": "summon-machine-guard",
     "name": "Summon Machine Guard",
     "tags": [
-      "spell"
+      "spell",
+      "minion"
     ],
     "baseDamage": {},
     "baseRate": 1.25,
@@ -10885,7 +10886,8 @@
     "id": "summon-spider-tank",
     "name": "Summon Spider Tank",
     "tags": [
-      "spell"
+      "spell",
+      "minion"
     ],
     "baseDamage": {},
     "baseRate": 1.25,
@@ -11033,7 +11035,8 @@
     "id": "elemental-shock",
     "name": "Elemental Shock",
     "tags": [
-      "spell"
+      "spell",
+      "minion"
     ],
     "baseDamage": {},
     "baseRate": 1.25,
@@ -11046,7 +11049,8 @@
     "id": "machine-army",
     "name": "Machine Army",
     "tags": [
-      "spell"
+      "spell",
+      "minion"
     ],
     "baseDamage": {},
     "baseRate": 1.25,
@@ -11059,7 +11063,8 @@
     "id": "prayer",
     "name": "Prayer",
     "tags": [
-      "spell"
+      "spell",
+      "minion"
     ],
     "baseDamage": {},
     "baseRate": 1,
@@ -11072,7 +11077,8 @@
     "id": "dark-gate",
     "name": "Dark Gate",
     "tags": [
-      "spell"
+      "spell",
+      "minion"
     ],
     "baseDamage": {},
     "baseRate": 1,
@@ -14534,7 +14540,8 @@
     "id": "summon-grim-phantom",
     "name": "Summon Grim Phantom",
     "tags": [
-      "spell"
+      "spell",
+      "minion"
     ],
     "baseDamage": {},
     "baseRate": 1,
@@ -17327,7 +17334,8 @@
     "name": "Nourishment of Life",
     "tags": [
       "spell",
-      "area"
+      "area",
+      "minion"
     ],
     "baseDamage": {},
     "baseRate": 1,
@@ -17340,7 +17348,8 @@
     "id": "dazzling-bloom",
     "name": "Dazzling Bloom",
     "tags": [
-      "spell"
+      "spell",
+      "minion"
     ],
     "baseDamage": {},
     "baseRate": 1,
@@ -19164,7 +19173,8 @@
     "id": "rising-edge",
     "name": "Rising Edge",
     "tags": [
-      "spell"
+      "spell",
+      "minion"
     ],
     "baseDamage": {},
     "baseRate": 1.25,

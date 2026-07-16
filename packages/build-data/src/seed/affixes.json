@@ -117,7 +117,7 @@
       {
         "stat": "life",
         "op": "flat",
-        "value": 220
+        "value": 330
       }
     ],
     "slots": [
@@ -3551,7 +3551,7 @@
       {
         "stat": "fireResist",
         "op": "flat",
-        "value": 27
+        "value": 40
       }
     ],
     "slots": [
@@ -5464,7 +5464,7 @@
       {
         "stat": "coldResist",
         "op": "flat",
-        "value": 27
+        "value": 40
       }
     ],
     "slots": [
@@ -7377,7 +7377,7 @@
       {
         "stat": "lightningResist",
         "op": "flat",
-        "value": 27
+        "value": 40
       }
     ],
     "slots": [
@@ -9290,7 +9290,7 @@
       {
         "stat": "erosionResist",
         "op": "flat",
-        "value": 27
+        "value": 40
       }
     ],
     "slots": [
@@ -11203,7 +11203,7 @@
       {
         "stat": "critDamage",
         "op": "flat",
-        "value": 60
+        "value": 180
       }
     ],
     "slots": [
@@ -15160,7 +15160,7 @@
       {
         "stat": "armor",
         "op": "flat",
-        "value": 2880
+        "value": 4320
       }
     ],
     "slots": [
@@ -15813,7 +15813,7 @@
       {
         "stat": "increasedLife",
         "op": "increased",
-        "value": 16
+        "value": 24
       }
     ],
     "slots": [
@@ -19986,7 +19986,7 @@
       {
         "stat": "addedPhysical",
         "op": "flat",
-        "value": 42
+        "value": 81
       }
     ],
     "slots": [
@@ -21895,7 +21895,7 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 147
+        "value": 181
       }
     ],
     "slots": [
@@ -23804,7 +23804,7 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 147
+        "value": 181
       }
     ],
     "slots": [
@@ -25713,7 +25713,7 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 147
+        "value": 181
       }
     ],
     "slots": [
@@ -27622,7 +27622,7 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 147
+        "value": 181
       }
     ],
     "slots": [
@@ -29531,7 +29531,7 @@
       {
         "stat": "increasedPhysical",
         "op": "increased",
-        "value": 108
+        "value": 216
       }
     ],
     "slots": [
@@ -31818,7 +31818,7 @@
       {
         "stat": "increasedErosion",
         "op": "increased",
-        "value": 108
+        "value": 216
       }
     ],
     "slots": [
@@ -35167,7 +35167,7 @@
       {
         "stat": "increasedCastSpeed",
         "op": "increased",
-        "value": 36
+        "value": 72
       }
     ],
     "slots": [
@@ -35382,7 +35382,7 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 76,
+        "value": 151.5,
         "tags": [
           "spell"
         ]
@@ -35710,7 +35710,7 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 76.5,
+        "value": 151,
         "tags": [
           "spell"
         ]
@@ -36038,7 +36038,7 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 76.5,
+        "value": 151,
         "tags": [
           "spell"
         ]
@@ -36366,7 +36366,7 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 76.5,
+        "value": 151,
         "tags": [
           "spell"
         ]
@@ -36694,7 +36694,7 @@
       {
         "stat": "addedPhysical",
         "op": "flat",
-        "value": 76.5,
+        "value": 151,
         "tags": [
           "spell"
         ]
@@ -37022,7 +37022,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.1
+        "value": 0.2
       }
     ],
     "slots": [
@@ -37125,7 +37125,7 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": 0.1
+        "value": 0.2
       }
     ],
     "slots": [

@@ -22,6 +22,7 @@ import type {
   MemoryAffix,
   MemoryAffixPools,
   MemoryRevival,
+  Modifier,
   PactSpirit,
   ProgressionNode,
   ProgressionTree,
@@ -269,7 +270,14 @@ const DAMAGE_TAG: Record<string, DamageTag> = {
   Area: 'area',
   Projectile: 'projectile',
   Channeled: 'channelled',
-  Channelled: 'channelled'
+  Channelled: 'channelled',
+  // Confirmed against the real scrape: summon actives (e.g. "Summon Machine
+  // Guard") carry a raw "Summon" tag -- without mapping it to 'minion' here,
+  // collectModifiers's cannotSupport check (build.ts's CANNOT_SUPPORT_TAG
+  // already maps 'Summon' -> 'minion') can never actually trigger for
+  // summon-restricted supports, since no summon skill's own `tags` would
+  // ever contain 'minion' to match against.
+  Summon: 'minion'
 };
 
 interface LevelProgressionRow {
@@ -673,6 +681,20 @@ function buildAffixTiers(a: CraftAffix, template: string): AffixTier[] {
  * modifierIds/tiers are retained so a future loot parser or crafting
  * simulator can map a dropped/rolled affix back to a specific tier + weight.
  */
+/**
+ * Best top-level `modifiers` across every merged tier (all slots this affix's
+ * template appears under), mirroring topTier()'s "highest craftable roll,
+ * fall back to any roll if none are craftable" rule but applied globally
+ * instead of per-slot -- see this function's caller for why per-slot wasn't
+ * enough.
+ */
+function bestModifiers(tiers: AffixTier[]): Modifier[] {
+  const craftable = tiers.filter((t) => t.weight > 0);
+  const pool = craftable.length > 0 ? craftable : tiers;
+  const best = pool.slice().sort((a, b) => (b.modifiers[0]?.value ?? 0) - (a.modifiers[0]?.value ?? 0))[0];
+  return best?.modifiers ?? [];
+}
+
 export function mapAffixes(gearMaster: unknown): Affix[] {
   const byKey = new Map<string, Affix>();
   for (const section of Object.values(gearMaster as Record<string, GearSection>)) {
@@ -710,6 +732,16 @@ export function mapAffixes(gearMaster: unknown): Affix[] {
         }
       }
     }
+  }
+  // The same template merges across gear subtypes/slots above, but each
+  // entry's top-level `modifiers` was only ever set from whichever section
+  // was encountered *first* and never revisited -- confirmed live: the
+  // merged `max-life-prefix` affix's `modifiers` showed boots' +220 even
+  // though the same merged affix has a craftable weapon/offhand tier at
+  // +330, so weapon/offhand builds using it were undercounted. Recompute
+  // from the full merged tier list once every section has been folded in.
+  for (const affix of byKey.values()) {
+    affix.modifiers = bestModifiers(affix.tiers ?? []);
   }
   return disambiguateAffixIds([...byKey.values()]);
 }
