@@ -1,16 +1,19 @@
 import { SqliteRepository } from '@torchlight-companion/db';
 import { gearByConfigBaseId } from '@torchlight-companion/build-data';
-import type { LootEvent } from '@torchlight-companion/domain';
+import type { LootEvent, MarketPriceCheck } from '@torchlight-companion/domain';
 import { diffInventorySnapshots, parseExchangeSearchPriceBlock, parseInventorySlotLine, parseUELogLine, type InventorySlotState } from '@torchlight-companion/log-parser';
 import { randomUUID } from 'node:crypto';
 import { EventEmitter } from 'node:events';
 import { existsSync } from 'node:fs';
 import { createServer, type ServerResponse } from 'node:http';
 import { tailLogFile, type LogTailerHandle } from './logTailer.js';
+import { findGameLogPath } from './findGameLogPath.js';
 
 const repository = new SqliteRepository();
 const lootEvents = new EventEmitter();
 lootEvents.setMaxListeners(0);
+const priceChecks = new EventEmitter();
+priceChecks.setMaxListeners(0);
 
 const now = () => new Date().toISOString();
 
@@ -41,6 +44,18 @@ function handleLogLine(rawLine: string): void {
       const price = parseExchangeSearchPriceBlock(priceBlock.join('\n'));
       priceBlock = null;
       if (price) {
+        // NOTE: itemGoldId is a marketplace-listing id, a different id space from
+        // configBaseId (see MarketPriceCheck's doc comment) -- so this can't be
+        // joined to a specific drop yet. Persisted and streamed on its own.
+        const check: MarketPriceCheck = {
+          id: `price_${randomUUID()}`,
+          itemGoldId: price.itemGoldId,
+          currencies: price.currencies,
+          prices: price.prices,
+          checkedAt: now()
+        };
+        repository.upsertMarketPriceCheck(check);
+        priceChecks.emit('event', check);
         console.log(
           `[price-check] item ${price.itemGoldId}: ` +
             (price.prices.length ? price.prices.join('/') : 'no listings') +
@@ -81,14 +96,23 @@ function handleLogLine(rawLine: string): void {
 }
 
 function startTailer(): LogTailerHandle | undefined {
-  const logPath = process.env.TORCHLIGHT_LOG_PATH?.trim();
-  if (!logPath) {
-    console.log('TORCHLIGHT_LOG_PATH is not set — loot tracking is idle until it is configured.');
-    return undefined;
-  }
-  if (!existsSync(logPath)) {
+  const envPath = process.env.TORCHLIGHT_LOG_PATH?.trim();
+  let logPath = envPath;
+  if (logPath && !existsSync(logPath)) {
     console.log(`TORCHLIGHT_LOG_PATH (${logPath}) does not exist yet — loot tracking is idle until the file appears.`);
     return undefined;
+  }
+  if (!logPath) {
+    logPath = findGameLogPath();
+    if (logPath) {
+      console.log(`Auto-detected game log at ${logPath} (set TORCHLIGHT_LOG_PATH to override).`);
+    } else {
+      console.log(
+        'Could not auto-detect Torchlight Infinite\'s log file — loot tracking is idle. ' +
+          'Set TORCHLIGHT_LOG_PATH to its UE_game.log path (usually under <install dir>/Saved/Logs/).'
+      );
+      return undefined;
+    }
   }
   console.log(`Tailing ${logPath} for loot events.`);
   return tailLogFile(logPath, handleLogLine);
@@ -114,6 +138,10 @@ const server = createServer((req, res) => {
       const snapshot = repository.getLootFeedSnapshot();
       const recentEvents = (since ? repository.listRecentLootEvents(since) : snapshot.recentEvents).map(enrich);
       return send(res, 200, { data: { ...snapshot, recentEvents } });
+    }
+
+    if (req.method === 'GET' && url.pathname === '/api/v1/prices/recent') {
+      return send(res, 200, { data: repository.listRecentMarketPriceChecks() });
     }
 
     if (req.method === 'GET' && url.pathname === '/api/v1/loot/events') {
@@ -145,6 +173,32 @@ const server = createServer((req, res) => {
       req.on('close', () => {
         clearInterval(heartbeat);
         lootEvents.off('event', listener);
+      });
+      return;
+    }
+
+    if (req.method === 'GET' && url.pathname === '/api/v1/prices/events') {
+      res.socket?.setNoDelay(true);
+      res.writeHead(200, {
+        'content-type': 'text/event-stream; charset=utf-8',
+        'cache-control': 'no-cache, no-transform',
+        connection: 'keep-alive',
+        'access-control-allow-origin': '*'
+      });
+      res.flushHeaders();
+
+      let seq = 0;
+      const listener = (check: MarketPriceCheck): void => {
+        seq += 1;
+        res.write(`id: ${seq}\ndata: ${JSON.stringify(check)}\n\n`);
+      };
+      priceChecks.on('event', listener);
+
+      const heartbeat = setInterval(() => res.write(': heartbeat\n\n'), 15000);
+
+      req.on('close', () => {
+        clearInterval(heartbeat);
+        priceChecks.off('event', listener);
       });
       return;
     }

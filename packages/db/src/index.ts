@@ -2,7 +2,7 @@ import { DatabaseSync } from 'node:sqlite';
 import { mkdirSync } from 'node:fs';
 import { homedir } from 'node:os';
 import { dirname, join } from 'node:path';
-import type { LootEvent, LootFeedSnapshot, MapRun, PriceEntry } from '@torchlight-companion/domain';
+import type { LootEvent, LootFeedSnapshot, MapRun, MarketPriceCheck, PriceEntry } from '@torchlight-companion/domain';
 
 export function resolveDatabasePath(): string {
   const configured = process.env.DATABASE_PATH?.trim();
@@ -27,6 +27,24 @@ interface MapRunRow {
   started_at: string;
   ended_at: string | null;
   total_value: number;
+}
+
+interface MarketPriceCheckRow {
+  id: string;
+  item_gold_id: number;
+  currencies: string;
+  prices: string;
+  checked_at: string;
+}
+
+function rowToMarketPriceCheck(row: MarketPriceCheckRow): MarketPriceCheck {
+  return {
+    id: row.id,
+    itemGoldId: row.item_gold_id,
+    currencies: JSON.parse(row.currencies) as number[],
+    prices: JSON.parse(row.prices) as number[],
+    checkedAt: row.checked_at
+  };
 }
 
 function rowToLootEvent(row: LootEventRow): LootEvent {
@@ -89,6 +107,15 @@ export class SqliteRepository {
         observed_at TEXT NOT NULL
       );
       CREATE INDEX IF NOT EXISTS idx_price_entries_config_base_id ON price_entries(config_base_id, observed_at DESC);
+
+      CREATE TABLE IF NOT EXISTS market_price_checks (
+        id TEXT PRIMARY KEY,
+        item_gold_id INTEGER NOT NULL,
+        currencies TEXT NOT NULL,
+        prices TEXT NOT NULL,
+        checked_at TEXT NOT NULL
+      );
+      CREATE INDEX IF NOT EXISTS idx_market_price_checks_checked_at ON market_price_checks(checked_at DESC);
     `);
   }
 
@@ -140,6 +167,21 @@ export class SqliteRepository {
   latestPriceForItem(configBaseId: number): number | undefined {
     const row = this.db.prepare('SELECT price FROM price_entries WHERE config_base_id = ? ORDER BY observed_at DESC LIMIT 1').get(configBaseId) as unknown as { price: number } | undefined;
     return row?.price;
+  }
+
+  upsertMarketPriceCheck(check: MarketPriceCheck): void {
+    this.db.prepare(`
+      INSERT INTO market_price_checks (id, item_gold_id, currencies, prices, checked_at)
+      VALUES (?, ?, ?, ?, ?)
+      ON CONFLICT(id) DO UPDATE SET
+        item_gold_id = excluded.item_gold_id, currencies = excluded.currencies,
+        prices = excluded.prices, checked_at = excluded.checked_at
+    `).run(check.id, check.itemGoldId, JSON.stringify(check.currencies), JSON.stringify(check.prices), check.checkedAt);
+  }
+
+  listRecentMarketPriceChecks(limit = 50): MarketPriceCheck[] {
+    const rows = this.db.prepare('SELECT * FROM market_price_checks ORDER BY checked_at DESC LIMIT ?').all(limit);
+    return (rows as unknown as MarketPriceCheckRow[]).map(rowToMarketPriceCheck);
   }
 
   computeNetWorth(): number {
