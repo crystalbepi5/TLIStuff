@@ -145,6 +145,7 @@ const CATEGORY_SLOT: Record<string, GearSlot> = {
 interface GearLeaf {
   name: string;
   slotType?: string;
+  icon?: string;
   implicits?: { rawText?: string }[];
 }
 
@@ -157,7 +158,15 @@ export function mapGear(bundle: unknown): GearBase[] {
     if (!slot) continue; // skip unknown/empty slot types
     const text = (e.implicits ?? []).map((i) => i.rawText ?? '').join('\n');
     const id = idFromName(e.name);
-    if (!byId.has(id)) byId.set(id, { id, name: e.name, slot, implicit: parseModifiers(text) });
+    if (!byId.has(id)) {
+      byId.set(id, {
+        id,
+        name: e.name,
+        slot,
+        implicit: parseModifiers(text),
+        ...(e.icon ? { icon: e.icon } : {})
+      });
+    }
   }
   return [...byId.values()];
 }
@@ -300,6 +309,7 @@ interface MasterSkill {
    * does) -- names the one active skill this "signature" support is scoped
    * to. */
   skillTag?: string;
+  icon?: string;
 }
 
 interface EnSkillEntry {
@@ -542,7 +552,8 @@ export function mapSkills(
           ...(manaMultiplier != null ? { manaMultiplier } : {}),
           ...(s.skillTag ? { requiresSkillId: idFromName(s.skillTag) } : {}),
           ...(s.cannotSupport && s.cannotSupport.length > 0 ? { cannotSupport: s.cannotSupport } : {}),
-          ...(levelScaling ? { levelScaling } : {})
+          ...(levelScaling ? { levelScaling } : {}),
+          ...(s.icon ? { icon: s.icon } : {})
         });
         continue;
       }
@@ -565,7 +576,8 @@ export function mapSkills(
         season: version,
         ...(levelScaling ? { levelScaling } : {}),
         ...(s.manaCost != null ? { manaCost: s.manaCost } : {}),
-        ...(s.mainStat && s.mainStat.length > 0 ? { mainStat: s.mainStat } : {})
+        ...(s.mainStat && s.mainStat.length > 0 ? { mainStat: s.mainStat } : {}),
+        ...(s.icon ? { icon: s.icon } : {})
       });
     }
   }
@@ -627,7 +639,7 @@ interface CraftAffix {
 }
 interface GearSection {
   category?: string;
-  baseItems?: { id?: string; tlidbId?: string | number; implicits?: unknown[] }[];
+  baseItems?: { id?: string; tlidbId?: string | number; icon?: string; implicits?: unknown[] }[];
   craftPrefix?: CraftAffix[];
   craftSuffix?: CraftAffix[];
 }
@@ -804,7 +816,8 @@ export function mapGearFromMaster(gearMaster: unknown, gearEn: unknown): GearBas
         name: en.name,
         slot,
         implicit: parseModifiers(en.texts.join('\n')),
-        ...(item.tlidbId != null ? { tlidbId: String(item.tlidbId) } : {})
+        ...(item.tlidbId != null ? { tlidbId: String(item.tlidbId) } : {}),
+        ...(item.icon ? { icon: item.icon } : {})
       });
     }
   }

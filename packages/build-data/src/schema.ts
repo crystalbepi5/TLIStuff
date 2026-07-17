@@ -131,6 +131,10 @@ export interface ActiveSkill {
   manaCost?: number;
   /** Attribute(s) this skill scales with, e.g. ["Strength"]. */
   mainStat?: string[];
+  /** Relative path into tlicompendium's image host, e.g.
+   * "/images/skill/UI_SkillIcon_..._128.webp" -- not resolved to a full URL,
+   * same convention as PactSpirit.iconUrl/Kismet.iconUrl. */
+  icon?: string;
 }
 
 export interface SupportSkill {
@@ -158,6 +162,8 @@ export interface SupportSkill {
   requiresSkillId?: string;
   /** Per-level modifiers, best-effort (see ActiveSkill.levelScaling). */
   levelScaling?: SkillLevelEntry[];
+  /** See ActiveSkill.icon. */
+  icon?: string;
 }
 
 /**
@@ -216,6 +222,11 @@ export interface GearBase {
   implicit: Modifier[];
   /** tlidb.com item id — a stable cross-reference for loot/price lookups. */
   tlidbId?: string;
+  /** See ActiveSkill.icon. Only available for regular gear bases scraped via
+   * gear-master (mapGearFromMaster) -- legendaries carry no icon field in
+   * their source bundle at all, so GearBase entries built from legendaries
+   * (mapLegendaries) never have one. */
+  icon?: string;
 }
 
 /**

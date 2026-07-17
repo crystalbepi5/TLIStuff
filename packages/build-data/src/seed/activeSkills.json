@@ -466,7 +466,8 @@
     "manaCost": 2,
     "mainStat": [
       "Strength"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_Leapslam_128.webp"
   },
   {
     "id": "ice-shot",
@@ -486,7 +487,8 @@
     "manaCost": 5,
     "mainStat": [
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_Iceshot_128.webp"
   },
   {
     "id": "hammer-of-ash",
@@ -669,7 +671,8 @@
     "manaCost": 5,
     "mainStat": [
       "Strength"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_Emberslam_128.webp"
   },
   {
     "id": "chromatic-shot",
@@ -853,7 +856,8 @@
       "Strength",
       "Dexterity",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_Prismaticbolt_128.webp"
   },
   {
     "id": "resurrection-warcry",
@@ -866,7 +870,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 10
+    "manaCost": 10,
+    "icon": "/images/skill/Icon_Skill_Bang_128.webp"
   },
   {
     "id": "whirlwind",
@@ -888,7 +893,8 @@
     "mainStat": [
       "Strength",
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_Cyclone_128.webp"
   },
   {
     "id": "focused-slash",
@@ -909,7 +915,8 @@
     "mainStat": [
       "Strength",
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_FocusedStrike_128.webp"
   },
   {
     "id": "stoneskin",
@@ -922,7 +929,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/Icon_Skill_StoneSkin_128.webp"
   },
   {
     "id": "thundercloud",
@@ -942,7 +950,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_Nimbus_128.webp"
   },
   {
     "id": "blink",
@@ -955,7 +964,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 8
+    "manaCost": 8,
+    "icon": "/images/skill/UI_SkillIcon_Skill_Blink_Icon_128.webp"
   },
   {
     "id": "bombard",
@@ -1377,7 +1387,8 @@
     "manaCost": 5,
     "mainStat": [
       "Strength"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_Strafe_128.webp"
   },
   {
     "id": "shadow-shot",
@@ -1397,7 +1408,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_Shadowbolt_128.webp"
   },
   {
     "id": "shadow-swamp",
@@ -1818,7 +1830,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_Shadowswamp_128.webp"
   },
   {
     "id": "marked-rain-of-arrows",
@@ -2000,7 +2013,8 @@
     "manaCost": 5,
     "mainStat": [
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_MarkerArrow_Icon_128.webp"
   },
   {
     "id": "bull-s-rage",
@@ -2175,7 +2189,8 @@
         "modifiers": []
       }
     ],
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/Icon_Skill_WildRage_128.webp"
   },
   {
     "id": "shadow-dash",
@@ -2188,7 +2203,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 8
+    "manaCost": 8,
+    "icon": "/images/skill/UI_SkillIcon_Skill_ShadowDash_Icon_128.webp"
   },
   {
     "id": "frost-shield",
@@ -2203,7 +2219,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/Icon_Skill_IceShield_128.webp"
   },
   {
     "id": "rocket-jump",
@@ -2384,7 +2401,8 @@
     "manaCost": 2,
     "mainStat": [
       "Strength"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_RocketJump_128.webp"
   },
   {
     "id": "split-firebolt",
@@ -2566,7 +2584,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_Fireball_128.webp"
   },
   {
     "id": "blizzard",
@@ -2747,7 +2766,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_Blizzard_128.webp"
   },
   {
     "id": "obscure",
@@ -2760,7 +2780,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_Blur_Icon_128.webp"
   },
   {
     "id": "mana-boil",
@@ -2773,7 +2794,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 0
+    "manaCost": 0,
+    "icon": "/images/skill/Icon_Skill_BoilingMana_128.webp"
   },
   {
     "id": "frost-impact",
@@ -2956,7 +2978,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_IceCrash_128.webp"
   },
   {
     "id": "path-of-flames",
@@ -3376,7 +3399,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_FlameRoad_128.webp"
   },
   {
     "id": "berserking-blade",
@@ -3397,7 +3421,8 @@
     "mainStat": [
       "Strength",
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_ViolentSweep_128.webp"
   },
   {
     "id": "charged-pummel",
@@ -3418,7 +3443,8 @@
     "manaCost": 5,
     "mainStat": [
       "Strength"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_ChargedSmash_128.webp"
   },
   {
     "id": "chain-lightning",
@@ -3599,7 +3625,8 @@
     "mainStat": [
       "Dexterity",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_LightningChain_128.webp"
   },
   {
     "id": "double-thrusts",
@@ -3781,7 +3808,8 @@
     "manaCost": 5,
     "mainStat": [
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_DoubleStab_128.webp"
   },
   {
     "id": "mind-control",
@@ -4402,7 +4430,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_LifeLeech_128.webp"
   },
   {
     "id": "ring-of-ice",
@@ -4583,7 +4612,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_IceRing_128.webp"
   },
   {
     "id": "split-shot",
@@ -4764,7 +4794,8 @@
     "manaCost": 5,
     "mainStat": [
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_SplitArrow_128.webp"
   },
   {
     "id": "icy-blade",
@@ -4785,7 +4816,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_FrostSlash_128.webp"
   },
   {
     "id": "frost-spike",
@@ -5409,7 +5441,8 @@
     "mainStat": [
       "Dexterity",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_FrostStab_128.webp"
   },
   {
     "id": "wilt-spike",
@@ -5831,7 +5864,8 @@
     "manaCost": 5,
     "mainStat": [
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_ViperStab_128.webp"
   },
   {
     "id": "lightning-shot",
@@ -6012,7 +6046,8 @@
     "manaCost": 5,
     "mainStat": [
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_LightningShoot_Icon_128.webp"
   },
   {
     "id": "corrosive-shot",
@@ -6634,7 +6669,8 @@
     "manaCost": 5,
     "mainStat": [
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_PoisonBullet_128.webp"
   },
   {
     "id": "burning-shot",
@@ -6816,7 +6852,8 @@
     "manaCost": 5,
     "mainStat": [
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_FireShoot_Icon_128.webp"
   },
   {
     "id": "electrifying-shot",
@@ -6997,7 +7034,8 @@
     "manaCost": 5,
     "mainStat": [
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_LightningBullet_128.webp"
   },
   {
     "id": "corrosive-throw",
@@ -7178,7 +7216,8 @@
     "manaCost": 5,
     "mainStat": [
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_VenomThrow_128.webp"
   },
   {
     "id": "inexhaustible-barrage",
@@ -7361,7 +7400,8 @@
     "manaCost": 5,
     "mainStat": [
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_ChargedRainOfBullets_Icon_128.webp"
   },
   {
     "id": "rain-of-arrows",
@@ -7543,7 +7583,8 @@
     "manaCost": 5,
     "mainStat": [
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_RainOfArrows_Icon_128.webp"
   },
   {
     "id": "savage-charge",
@@ -7565,7 +7606,8 @@
     "mainStat": [
       "Strength",
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_SavageCharge_128.webp"
   },
   {
     "id": "ice-lances",
@@ -7746,7 +7788,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_ConeOfCold_128.webp"
   },
   {
     "id": "sparkle",
@@ -7766,7 +7809,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_SparkBullet_128.webp"
   },
   {
     "id": "ring-of-blades",
@@ -8189,7 +8233,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SKill_DiffusionBlade_Icon_128.webp"
   },
   {
     "id": "flame-core",
@@ -8370,7 +8415,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_FirePile_Icon_128.webp"
   },
   {
     "id": "lightning-storm",
@@ -8389,7 +8435,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_ThunderStorm_128.webp"
   },
   {
     "id": "flame-jet",
@@ -8409,7 +8456,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_FlameBlast_128.webp"
   },
   {
     "id": "frost-terra",
@@ -8828,7 +8876,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_IceArea_128.webp"
   },
   {
     "id": "scorching-beam",
@@ -8848,7 +8897,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_FireRay_Icon_128.webp"
   },
   {
     "id": "wilting-beam",
@@ -9028,7 +9078,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_ChaosRay_Icon_128.webp"
   },
   {
     "id": "frigid-transmission",
@@ -9047,7 +9098,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_IceBlink_128.webp"
   },
   {
     "id": "forced-start",
@@ -9060,7 +9112,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_ForceCharge_Icon_128.webp"
   },
   {
     "id": "aegis-of-fire",
@@ -9075,7 +9128,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_FireShield_Icon_128.webp"
   },
   {
     "id": "delayed-pain",
@@ -9088,7 +9142,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_PainDelay_Icon_128.webp"
   },
   {
     "id": "defensive-buffer",
@@ -9101,7 +9156,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_BufferDefense_Icon_128.webp"
   },
   {
     "id": "brisk-wind",
@@ -9114,7 +9170,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_SwiftWind_Icon_128.webp"
   },
   {
     "id": "burst-of-anger",
@@ -9127,7 +9184,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_Bloodlust_Icon_128.webp"
   },
   {
     "id": "scorching-pulse",
@@ -9308,7 +9366,8 @@
     "manaCost": 15,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_BurningWave_Icon_128.webp"
   },
   {
     "id": "fixate",
@@ -9322,7 +9381,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_Concentrate_Icon_128.webp"
   },
   {
     "id": "secret-origin-unleash",
@@ -9335,7 +9395,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_ArcaneSurge_Icon_128.webp"
   },
   {
     "id": "aim",
@@ -9348,7 +9409,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_Aiming_Icon_128.webp"
   },
   {
     "id": "swiftness-dew",
@@ -9359,7 +9421,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 0
+    "manaCost": 0,
+    "icon": "/images/skill/UI_Skill_jisudilu_Icon_128.webp"
   },
   {
     "id": "groundshaker",
@@ -9541,7 +9604,8 @@
     "manaCost": 5,
     "mainStat": [
       "Strength"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_EarthShock_Icon_128.webp"
   },
   {
     "id": "focused-shot",
@@ -9962,7 +10026,8 @@
     "manaCost": 5,
     "mainStat": [
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_FocusedShoot_Icon_128.webp"
   },
   {
     "id": "fire-burst",
@@ -9982,7 +10047,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_FireBlast_Icon_128.webp"
   },
   {
     "id": "thunderbolt-overload",
@@ -10405,7 +10471,8 @@
     "mainStat": [
       "Dexterity",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_OverloadLightningBall_Icon_128.webp"
   },
   {
     "id": "fearless-warcry",
@@ -10418,7 +10485,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/Icon_Skill_WildCry_128.webp"
   },
   {
     "id": "raging-warcry",
@@ -10431,7 +10499,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/Icon_Skill_RageCry_128.webp"
   },
   {
     "id": "charging-warcry",
@@ -10444,7 +10513,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/Icon_Skill_AncestralCry_128.webp"
   },
   {
     "id": "black-hole",
@@ -10862,7 +10932,8 @@
         ]
       }
     ],
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/Icon_Skill_BlackHole_128.webp"
   },
   {
     "id": "summon-machine-guard",
@@ -10880,7 +10951,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SummonMechanicalGuard_Icon_128.webp"
   },
   {
     "id": "summon-spider-tank",
@@ -10898,7 +10970,8 @@
     "mainStat": [
       "Dexterity",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SummonIceSpiderTank_Icon_128.webp"
   },
   {
     "id": "timid",
@@ -10912,7 +10985,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_ElementBreak_Icon_128.webp"
   },
   {
     "id": "electrocute",
@@ -10926,7 +11000,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_Conductivity_Icon_128.webp"
   },
   {
     "id": "vulnerability",
@@ -10940,7 +11015,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_Vulnerable_Icon_128.webp"
   },
   {
     "id": "scorch",
@@ -10954,7 +11030,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_Blazing_Icon_128.webp"
   },
   {
     "id": "dazzled",
@@ -10965,7 +11042,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 0
+    "manaCost": 0,
+    "icon": "/images/skill/UI_SkillIcon_Skill_Blind_Icon_128.webp"
   },
   {
     "id": "entangled-pain",
@@ -10979,7 +11057,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_EntanglingPain_Icon_128.webp"
   },
   {
     "id": "biting-cold",
@@ -10993,7 +11072,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_ErodingCold_Icon_128.webp"
   },
   {
     "id": "corruption",
@@ -11007,7 +11087,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_ErodingEvil_Icon_128.webp"
   },
   {
     "id": "life-tonic",
@@ -11018,7 +11099,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 0
+    "manaCost": 0,
+    "icon": "/images/skill/UI_Skill_shengmingyaoshui_Icon_128.webp"
   },
   {
     "id": "mana-tonic",
@@ -11029,7 +11111,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 0
+    "manaCost": 0,
+    "icon": "/images/skill/UI_Skill_moliyaoshui_Icon_128.webp"
   },
   {
     "id": "elemental-shock",
@@ -11043,7 +11126,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_ElementShake_Icon_128.webp"
   },
   {
     "id": "machine-army",
@@ -11057,7 +11141,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_MarchOfMachines_Icon_128.webp"
   },
   {
     "id": "prayer",
@@ -11071,7 +11156,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_Pray_Icon_128.webp"
   },
   {
     "id": "dark-gate",
@@ -11085,7 +11171,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_DarkPortal_Icon_128.webp"
   },
   {
     "id": "thunderlight-bond",
@@ -11261,7 +11348,8 @@
         "modifiers": []
       }
     ],
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_Skill_ThunderArea_Icon_128.webp"
   },
   {
     "id": "arcane-circle",
@@ -11437,7 +11525,8 @@
         "modifiers": []
       }
     ],
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_Skill_SoulStealArea_Icon_128.webp"
   },
   {
     "id": "ice-bond",
@@ -11453,7 +11542,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_Skill_FrostTether_Icon_128.webp"
   },
   {
     "id": "thirst-dew",
@@ -11464,7 +11554,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 0
+    "manaCost": 0,
+    "icon": "/images/skill/UI_Skill_keyindilu_Icon_128.webp"
   },
   {
     "id": "reform",
@@ -11477,7 +11568,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_Skill_Regroup_Icon_128.webp"
   },
   {
     "id": "centralized-loading",
@@ -11652,7 +11744,8 @@
         "modifiers": []
       }
     ],
-    "manaCost": 2
+    "manaCost": 2,
+    "icon": "/images/skill/UI_Skill_QuickReload_Icon_128.webp"
   },
   {
     "id": "blink-arrow",
@@ -11833,7 +11926,8 @@
     "manaCost": 2,
     "mainStat": [
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_FlashBow_Icon_128.webp"
   },
   {
     "id": "swift-shadow-raid",
@@ -12014,7 +12108,8 @@
     "manaCost": 2,
     "mainStat": [
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_CutForward_Icon_128.webp"
   },
   {
     "id": "safeguard-ring",
@@ -12028,7 +12123,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_Skill_DesperateFormation_Icon_128.webp"
   },
   {
     "id": "icebound-beam",
@@ -12048,7 +12144,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_IceRay_Icon_128.webp"
   },
   {
     "id": "spiral-strike",
@@ -12230,7 +12327,8 @@
     "manaCost": 2,
     "mainStat": [
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_WhirlingBlade_Icon_128.webp"
   },
   {
     "id": "compound-tonic",
@@ -12241,7 +12339,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 0
+    "manaCost": 0,
+    "icon": "/images/skill/UI_Skill_fuheyaoshui_Icon_128.webp"
   },
   {
     "id": "moon-strike",
@@ -12262,7 +12361,8 @@
     "mainStat": [
       "Dexterity",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ShadowSlash_Icon_128.webp"
   },
   {
     "id": "howling-gale",
@@ -12684,7 +12784,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_Tornado_Icon_128.webp"
   },
   {
     "id": "blazing-bullet",
@@ -13107,7 +13208,8 @@
     "mainStat": [
       "Strength",
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_SabotRounds_Icon_128.webp"
   },
   {
     "id": "thunder-slash",
@@ -13127,7 +13229,8 @@
     "manaCost": 5,
     "mainStat": [
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ThunderSlash_Icon_128.webp"
   },
   {
     "id": "thunder-spike",
@@ -13309,7 +13412,8 @@
     "manaCost": 5,
     "mainStat": [
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_LightningStab_Icon_128.webp"
   },
   {
     "id": "haunting-abomination",
@@ -13730,7 +13834,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_Doom_Icon_128.webp"
   },
   {
     "id": "frost-core",
@@ -14151,7 +14256,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_FrostCore_Icon_128.webp"
   },
   {
     "id": "thunder-core",
@@ -14332,7 +14438,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ThunderCore_Icon_128.webp"
   },
   {
     "id": "ghost-blade-einherjar",
@@ -14352,7 +14459,8 @@
     "manaCost": 5,
     "mainStat": [
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_GhostBladeSpirit_Icon_128.webp"
   },
   {
     "id": "arrow-einherjar",
@@ -14534,7 +14642,8 @@
     "manaCost": 5,
     "mainStat": [
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ArrowSpirit_Icon_128.webp"
   },
   {
     "id": "summon-grim-phantom",
@@ -14551,7 +14660,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_SummonPhantom_Icon_128.webp"
   },
   {
     "id": "overpower",
@@ -14572,7 +14682,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SummonMechanicalGuard_Icon_128.webp"
   },
   {
     "id": "onslaught-punch",
@@ -14593,7 +14704,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SummonMechanicalGuard_Icon_128.webp"
   },
   {
     "id": "aimed-shot",
@@ -14613,7 +14725,8 @@
     "mainStat": [
       "Dexterity",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SummonIceSpiderTank_Icon_128.webp"
   },
   {
     "id": "blazing-dance",
@@ -14633,7 +14746,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SummonFireElement_Icon_128.webp"
   },
   {
     "id": "blazing-spin",
@@ -14651,7 +14765,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SummonFireElement_Icon_128.webp"
   },
   {
     "id": "blazing-incineration",
@@ -14669,7 +14784,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SummonFireElement_Icon_128.webp"
   },
   {
     "id": "molten-rising",
@@ -14689,7 +14805,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SummonFireElement_Icon_128.webp"
   },
   {
     "id": "glacier-ripples",
@@ -14708,7 +14825,8 @@
     "manaCost": 0,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SummonIceIceElement_Icon_128.webp"
   },
   {
     "id": "frost-release",
@@ -14889,7 +15007,8 @@
     "manaCost": 0,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SummonIceIceElement_Icon_128.webp"
   },
   {
     "id": "permafrost-cast",
@@ -15310,7 +15429,8 @@
     "manaCost": 0,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SummonIceIceElement_Icon_128.webp"
   },
   {
     "id": "ice-earthshaker",
@@ -15491,7 +15611,8 @@
     "manaCost": 0,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SummonIceIceElement_Icon_128.webp"
   },
   {
     "id": "lightning-star",
@@ -15511,7 +15632,8 @@
     "mainStat": [
       "Dexterity",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SummonThunderElement_Icon_128.webp"
   },
   {
     "id": "thunderlight-arrow",
@@ -15933,7 +16055,8 @@
     "mainStat": [
       "Dexterity",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SummonThunderElement_Icon_128.webp"
   },
   {
     "id": "thundercloud-surge",
@@ -15950,7 +16073,8 @@
     "mainStat": [
       "Dexterity",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SummonThunderElement_Icon_128.webp"
   },
   {
     "id": "lightning-surge",
@@ -16132,7 +16256,8 @@
     "mainStat": [
       "Dexterity",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SummonThunderElement_Icon_128.webp"
   },
   {
     "id": "high-energy-beam",
@@ -16151,7 +16276,8 @@
     "manaCost": 0,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_SummonPhantom_Icon_128.webp"
   },
   {
     "id": "destructive-light-cannon",
@@ -16170,7 +16296,8 @@
     "manaCost": 0,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_SummonPhantom_Icon_128.webp"
   },
   {
     "id": "whirlwind-blade",
@@ -16352,7 +16479,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_BladeRoundabout_Icon_128.webp"
   },
   {
     "id": "lightning-beam",
@@ -16533,7 +16661,8 @@
     "manaCost": 8,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ThunderstormRay_Icon_128.webp"
   },
   {
     "id": "speed-phantom",
@@ -16711,7 +16840,8 @@
         "modifiers": []
       }
     ],
-    "manaCost": 8
+    "manaCost": 8,
+    "icon": "/images/skill/UI_Skill_QuicklyPhantom_Icon_128.webp"
   },
   {
     "id": "archery-bond",
@@ -17327,7 +17457,8 @@
         ]
       }
     ],
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_Skill_ShootFetters_Icon_128.webp"
   },
   {
     "id": "nourishment-of-life",
@@ -17342,7 +17473,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_Skill_LifeNourish_Icon_128.webp"
   },
   {
     "id": "dazzling-bloom",
@@ -17356,7 +17488,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_Skill_DazzlingBloom_Icon_128.webp"
   },
   {
     "id": "star-stalker",
@@ -17371,7 +17504,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_Skill_FollowStar_Icon_128.webp"
   },
   {
     "id": "harmonious-field",
@@ -17386,7 +17520,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_Skill_TuningField_Icon_128.webp"
   },
   {
     "id": "shackles-of-malice",
@@ -17406,7 +17541,8 @@
     "mainStat": [
       "Dexterity",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_SKill_EvilChain_Icon_128.webp"
   },
   {
     "id": "shattered-stone",
@@ -17427,7 +17563,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_SummonRockElement_Icon_128.webp"
   },
   {
     "id": "gold-rush",
@@ -17445,7 +17582,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_SummonRockElement_Icon_128.webp"
   },
   {
     "id": "rock-blast",
@@ -17868,7 +18006,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_SummonRockElement_Icon_128.webp"
   },
   {
     "id": "towering-mountains",
@@ -18691,7 +18830,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_SummonRockElement_Icon_128.webp"
   },
   {
     "id": "scattered-mud",
@@ -18710,7 +18850,8 @@
     "manaCost": 0,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_SummonRotElement_Icon_128.webp"
   },
   {
     "id": "withering-payback",
@@ -18727,7 +18868,8 @@
     "manaCost": 0,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_SummonRotElement_Icon_128.webp"
   },
   {
     "id": "bleak-grass",
@@ -19148,7 +19290,8 @@
     "manaCost": 0,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_SummonRotElement_Icon_128.webp"
   },
   {
     "id": "world-of-thorns",
@@ -19167,7 +19310,8 @@
     "manaCost": 0,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_SummonRotElement_Icon_128.webp"
   },
   {
     "id": "rising-edge",
@@ -19181,7 +19325,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_Skill_MinionRising_Icon_128.webp"
   },
   {
     "id": "crescent-slash",
@@ -19201,7 +19346,8 @@
     "manaCost": 5,
     "mainStat": [
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ArcSlash_Starter1_Icon_128.webp"
   },
   {
     "id": "serpent-beam",
@@ -19822,7 +19968,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_FlameSerpent_Starter1_Icon_128.webp"
   },
   {
     "id": "gale-slash",
@@ -20445,7 +20592,8 @@
     "mainStat": [
       "Strength",
       "Dexterity"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_WindSlash_Starter1_Icon_128.webp"
   },
   {
     "id": "spectral-slash",
@@ -20465,7 +20613,8 @@
     "manaCost": 5,
     "mainStat": [
       "Strength"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_PhantomSlash_Starter1_Icon_128.webp"
   },
   {
     "id": "vendetta",
@@ -20480,7 +20629,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 0
+    "manaCost": 0,
+    "icon": "/images/skill/UI_Skill_Revenge_Icon_128.webp"
   },
   {
     "id": "shockwave-warcry",
@@ -20493,7 +20643,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_Skill_ComboBattleCry_Icon_128.webp"
   },
   {
     "id": "endless-vendetta",
@@ -20508,7 +20659,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 0
+    "manaCost": 0,
+    "icon": "/images/skill/UI_Skill_EndlessRevenge_Icon_128.webp"
   },
   {
     "id": "frostclaw",
@@ -20528,7 +20680,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularGeBuLinJiSi_Icon_128.webp"
   },
   {
     "id": "firebird",
@@ -20548,7 +20701,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularGeBuLinJiSi_Icon_128.webp"
   },
   {
     "id": "earthshatter",
@@ -20569,7 +20723,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularDiMoErJiangJun_Icon_128.webp"
   },
   {
     "id": "aember-rain",
@@ -20588,7 +20743,8 @@
     "manaCost": 0,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularAnYuBiLei_Icon_128.webp"
   },
   {
     "id": "molten-barrage",
@@ -20608,7 +20764,8 @@
     "mainStat": [
       "Dexterity",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularAiRenJiJia_Icon_128.webp"
   },
   {
     "id": "all-out-volley",
@@ -20628,7 +20785,8 @@
     "mainStat": [
       "Dexterity",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularAiRenJiJia_Icon_128.webp"
   },
   {
     "id": "rockfall",
@@ -20647,7 +20805,8 @@
     "manaCost": 0,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularDiMoFaShi_Icon_128.webp"
   },
   {
     "id": "thunderfall",
@@ -20663,7 +20822,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 0
+    "manaCost": 0,
+    "icon": "/images/skill/UI_Skill_ModularGeBuLinYuanSuDaZhangLao_Icon_128.webp"
   },
   {
     "id": "kinetic-thrust",
@@ -20684,7 +20844,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularZhongXingHuiJinJiJia_Icon_128.webp"
   },
   {
     "id": "groundslam",
@@ -20705,7 +20866,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularZhongXingHuiJinJiJia_Icon_128.webp"
   },
   {
     "id": "overstrike",
@@ -20726,7 +20888,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularJuXingHuiJinJiJia_Icon_128.webp"
   },
   {
     "id": "searing-crush",
@@ -20747,7 +20910,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularJuXingHuiJinJiJia_Icon_128.webp"
   },
   {
     "id": "sweep",
@@ -20766,7 +20930,8 @@
     "manaCost": 0,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularShuJingDaZhangLao_Icon_128.webp"
   },
   {
     "id": "rootsurge",
@@ -20786,7 +20951,8 @@
     "manaCost": 0,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularShuJingDaZhangLao_Icon_128.webp"
   },
   {
     "id": "blitz-strike",
@@ -20806,7 +20972,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularShuRenQiangXiDuiZhang_Icon_128.webp"
   },
   {
     "id": "burst-hammer",
@@ -20827,7 +20994,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularShuRenQiangXiDuiZhang_Icon_128.webp"
   },
   {
     "id": "firebomb",
@@ -20846,7 +21014,8 @@
     "manaCost": 0,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularShouXiJiXieShi_Icon_128.webp"
   },
   {
     "id": "pyromania",
@@ -20865,7 +21034,8 @@
     "manaCost": 0,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularShouXiJiXieShi_Icon_128.webp"
   },
   {
     "id": "flickering-shadow",
@@ -20886,7 +21056,8 @@
     "mainStat": [
       "Dexterity",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularLaiAnHuanYing_Icon_128.webp"
   },
   {
     "id": "sin-of-the-fallen",
@@ -20907,7 +21078,8 @@
     "mainStat": [
       "Dexterity",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularLaiAnHuanYing_Icon_128.webp"
   },
   {
     "id": "blade-of-glory",
@@ -20928,7 +21100,8 @@
     "mainStat": [
       "Dexterity",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularJianShen_Icon_128.webp"
   },
   {
     "id": "high-court-covenant",
@@ -20949,7 +21122,8 @@
     "mainStat": [
       "Dexterity",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularJianShen_Icon_128.webp"
   },
   {
     "id": "ravaging-slash",
@@ -20970,7 +21144,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularBaoNueZhe_Icon_128.webp"
   },
   {
     "id": "auric-shot",
@@ -20990,7 +21165,8 @@
     "mainStat": [
       "Dexterity",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularYiJiKuangFeng_Icon_128.webp"
   },
   {
     "id": "gravelshot",
@@ -21011,7 +21187,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularShaJuRen_Icon_128.webp"
   },
   {
     "id": "divine-judgment",
@@ -21030,7 +21207,8 @@
     "manaCost": 0,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularYingLingDaXianZhe_Icon_128.webp"
   },
   {
     "id": "javelin-of-judgment",
@@ -21049,7 +21227,8 @@
     "manaCost": 0,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularYingLingDaXianZhe_Icon_128.webp"
   },
   {
     "id": "spikeburst",
@@ -21070,7 +21249,8 @@
     "mainStat": [
       "Dexterity",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularZaiJinYiShou_Icon_128.webp"
   },
   {
     "id": "tailsweep",
@@ -21091,7 +21271,8 @@
     "mainStat": [
       "Dexterity",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularZaiJinYiShou_Icon_128.webp"
   },
   {
     "id": "impaling-thrust",
@@ -21112,7 +21293,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularChengFaZhe_Icon_128.webp"
   },
   {
     "id": "twinstrike",
@@ -21133,7 +21315,8 @@
     "mainStat": [
       "Strength",
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularChengFaZhe_Icon_128.webp"
   },
   {
     "id": "undercurrent",
@@ -21152,7 +21335,8 @@
     "manaCost": 0,
     "mainStat": [
       "Intelligence"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModularXieYingQinShiZhe_Icon_128.webp"
   },
   {
     "id": "resistance-dew",
@@ -21163,7 +21347,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 0
+    "manaCost": 0,
+    "icon": "/images/skill/UI_Skill_dikangdilu_Icon_128.webp"
   },
   {
     "id": "steadfast-dew",
@@ -21174,7 +21359,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 0
+    "manaCost": 0,
+    "icon": "/images/skill/UI_Skill_jiangudilu_Icon_128.webp"
   },
   {
     "id": "nimbleness-dew",
@@ -21185,7 +21371,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 0
+    "manaCost": 0,
+    "icon": "/images/skill/UI_Skill_lingmindilu_Icon_128.webp"
   },
   {
     "id": "tenacity-dew",
@@ -21196,7 +21383,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 0
+    "manaCost": 0,
+    "icon": "/images/skill/UI_Skill_renxingdilu_Icon_128.webp"
   },
   {
     "id": "tortoise-shell-distillate",
@@ -21207,7 +21395,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 0
+    "manaCost": 0,
+    "icon": "/images/skill/UI_Skill_luguikeningcui_Icon_128.webp"
   },
   {
     "id": "scorpion-stinger-distillate",
@@ -21218,7 +21407,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 0
+    "manaCost": 0,
+    "icon": "/images/skill/UI_Skill_xieweizhenningcui_Icon_128.webp"
   },
   {
     "id": "putrid-toad-distillate",
@@ -21229,7 +21419,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 0
+    "manaCost": 0,
+    "icon": "/images/skill/UI_Skill_fuchanchuningcui_Icon_128.webp"
   },
   {
     "id": "saltpeter-mushroom-distillate",
@@ -21240,7 +21431,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 0
+    "manaCost": 0,
+    "icon": "/images/skill/UI_Skill_xiaoshiguningcui_Icon_128.webp"
   },
   {
     "id": "fire-lizard-distillate",
@@ -21251,7 +21443,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 0
+    "manaCost": 0,
+    "icon": "/images/skill/UI_Skill_huoxiyiningcui_Icon_128.webp"
   },
   {
     "id": "white-rhino-distillate",
@@ -21262,7 +21455,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 0
+    "manaCost": 0,
+    "icon": "/images/skill/UI_Skill_baixiniuningcui_Icon_128.webp"
   },
   {
     "id": "thunder-wood-distillate",
@@ -21273,7 +21467,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 0
+    "manaCost": 0,
+    "icon": "/images/skill/UI_Skill_leijimuningcui_Icon_128.webp"
   },
   {
     "id": "ominous",
@@ -21287,7 +21482,8 @@
     "baseCritRate": 5,
     "supportSlots": 5,
     "season": "SS13",
-    "manaCost": 15
+    "manaCost": 15,
+    "icon": "/images/skill/UI_SkillIcon_Skill_Blind_Icon_128.webp"
   },
   {
     "id": "thornfield",

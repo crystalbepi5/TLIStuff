@@ -57,6 +57,16 @@ test('mapGear skips entries with unknown/empty slot types', () => {
   assert.deepEqual(mapGear(bundle), []);
 });
 
+test('mapGear carries the icon path through when present, omits the field when absent', () => {
+  const withIcon = {
+    k: { u: { name: 'Iron Greaves', slotType: 'Feet', icon: '/images/rare-gear/boots/Icon_1.webp', implicits: [] } }
+  };
+  assert.equal(mapGear(withIcon)[0].icon, '/images/rare-gear/boots/Icon_1.webp');
+
+  const withoutIcon = { k: { u: { name: 'Iron Greaves', slotType: 'Feet', implicits: [] } } };
+  assert.equal('icon' in mapGear(withoutIcon)[0], false);
+});
+
 test('mapLegendaries derives slot from the bundle key path and parses normalRawText', () => {
   const bundle = {
     'legendaries/boots/dex_boots/i18n/en': {
@@ -284,6 +294,19 @@ test('mapGearFromMaster joins tlidbId (master) with name + mods (en)', () => {
   });
 });
 
+test('mapGearFromMaster carries the icon path from gear-master baseItems (gear-en has no icon field)', () => {
+  const gearMaster = {
+    'gear/boots/str/master': {
+      category: 'boots',
+      baseItems: [{ id: 'u1', tlidbId: '4000', icon: '/images/rare-gear/boots/Icon_1.webp' }]
+    }
+  };
+  const gearEn = {
+    'gear/boots/str/i18n/en': { u1: { name: 'Iron Boots', slotType: 'Feet', implicits: [] } }
+  };
+  assert.equal(mapGearFromMaster(gearMaster, gearEn)[0].icon, '/images/rare-gear/boots/Icon_1.webp');
+});
+
 test('mapSkills joins -master structure with -en names (active + support)', () => {
   const master = {
     'skill/Active/master': {
@@ -307,6 +330,26 @@ test('mapSkills joins -master structure with -en names (active + support)', () =
   assert.equal(active[0].baseRate, 2); // 1 / 0.5s
   assert.equal(support.length, 1);
   assert.deepEqual(support[0].modifiers, [{ stat: 'moreDamage', op: 'more', value: 0.2 }]);
+});
+
+test('mapSkills carries the icon path through for both actives and supports', () => {
+  const master = {
+    'skill/Active/master': {
+      category: 'Active',
+      skills: [{ id: 'u1', tags: ['Spell'], icon: '/images/skill/UI_SkillIcon_Frost_128.webp' }]
+    },
+    'skill/Support/master': {
+      category: 'Support',
+      skills: [{ id: 'u2', tags: ['Support'] }]
+    }
+  };
+  const en = {
+    'skill/Active/i18n/en': { u1: { name: 'Frost Nova' } },
+    'skill/Support/i18n/en': { u2: { name: 'More Damage' } }
+  };
+  const { active, support } = mapSkills(master, en);
+  assert.equal(active[0].icon, '/images/skill/UI_SkillIcon_Frost_128.webp');
+  assert.equal('icon' in support[0], false); // no icon field on this entry -> omitted, not undefined
 });
 
 test('mapSkills maps the raw "Summon" tag to the minion DamageTag, so cannotSupport Summon bans are enforceable', () => {
