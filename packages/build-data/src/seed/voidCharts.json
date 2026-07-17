@@ -3774,13 +3774,7 @@
           "x": -683,
           "y": -509
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.3
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "c6496a4a-bbc2-561f-8396-e120bf5204ea",
@@ -3848,13 +3842,7 @@
           "x": 587,
           "y": 432
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": 0.3
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "a6d830b2-9352-5858-b041-89eb54fceb69",
@@ -6834,13 +6822,7 @@
           "x": 90,
           "y": -847
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.5
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "51bf2b10-6bd5-57ec-a855-4f3cc942dcbf",
@@ -16644,13 +16626,7 @@
           "x": -643,
           "y": 146
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.03
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "3e610cf2-5b83-5d4f-ba2b-55ad9235b5fb",
@@ -16853,13 +16829,7 @@
           "x": -563,
           "y": -535
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.3
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "20a11498-15d5-5882-bf3b-12021d8ce062",
@@ -16909,13 +16879,7 @@
           "x": -877,
           "y": -363
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.3
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "71c1ac28-1daf-5216-9d1d-698f0ddb731c",
@@ -17505,13 +17469,7 @@
           "x": -8,
           "y": 835
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.3
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "d1624c75-9f39-522e-9029-8507d400fb6e",
@@ -17651,13 +17609,7 @@
           "x": -372,
           "y": 555
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.3
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "68a67542-919d-5a5c-94f9-6794d0f28b3d",
@@ -21432,13 +21384,7 @@
           "x": 0,
           "y": 435
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.1
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "78791eb1-8129-5d3c-b0d3-61f9f3e63fc6",
@@ -21844,13 +21790,7 @@
           "x": -425,
           "y": -439
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.2
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "f6a55158-ba1e-5954-b2f7-56df123127be",
@@ -21919,13 +21859,7 @@
           "x": -420,
           "y": 11
         },
-        "modifiers": [
-          {
-            "stat": "moreDamage",
-            "op": "more",
-            "value": -0.2
-          }
-        ]
+        "modifiers": []
       },
       {
         "id": "872ed348-928f-550e-84cf-98d15b51971b",

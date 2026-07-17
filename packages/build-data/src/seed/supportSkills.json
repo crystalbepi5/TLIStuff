@@ -80,98 +80,112 @@
     "name": "Activation Medium: Preparation",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMPreparation_Icon_128.webp"
   },
   {
     "id": "activation-medium-perpetual-motion",
     "name": "Activation Medium: Perpetual Motion",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMPerpetualMotion_Icon_128.webp"
   },
   {
     "id": "activation-medium-elite",
     "name": "Activation Medium: Elite",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMStrongRival_Icon_128.webp"
   },
   {
     "id": "activation-medium-boss",
     "name": "Activation Medium: Boss",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMLeader_Icon_128.webp"
   },
   {
     "id": "activation-medium-life",
     "name": "Activation Medium: Life",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMLife_Icon_128.webp"
   },
   {
     "id": "activation-medium-energy-shield",
     "name": "Activation Medium: Energy Shield",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMShield_Icon_128.webp"
   },
   {
     "id": "activation-medium-severe-injury",
     "name": "Activation Medium: Severe Injury",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMHeavyHamage_Icon_128.webp"
   },
   {
     "id": "activation-medium-multistrike",
     "name": "Activation Medium: Multistrike",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMContinuousAttack_Icon_128.webp"
   },
   {
     "id": "activation-medium-demolisher",
     "name": "Activation Medium: Demolisher",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMWreck_Icon_128.webp"
   },
   {
     "id": "activation-medium-spell-burst",
     "name": "Activation Medium: Spell Burst",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMBurstOfSpells_Icon_128.webp"
   },
   {
     "id": "activation-medium-start",
     "name": "Activation Medium: Start",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMStart_Icon_128.webp"
   },
   {
     "id": "activation-medium-root",
     "name": "Activation Medium: Root",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMStop_Icon_128.webp"
   },
   {
     "id": "activation-medium-resonance-activation",
     "name": "Activation Medium: Resonance Activation",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMActivateResonance_Icon_128.webp"
   },
   {
     "id": "activation-medium-resonance",
     "name": "Activation Medium: Resonance",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMResonance_Icon_128.webp"
   },
   {
     "id": "activation-medium-rhythm",
@@ -189,7 +203,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMRhythm_Icon_128.webp"
   },
   {
     "id": "activation-medium-wind-rhythm",
@@ -202,49 +217,56 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMRhythmOftheWind_Icon_128.webp"
   },
   {
     "id": "activation-medium-root-attack",
     "name": "Activation Medium: Root Attack",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMStopAttack_Icon_128.webp"
   },
   {
     "id": "activation-medium-still-attack",
     "name": "Activation Medium: Still Attack",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMStationaryAttack_Icon_128.webp"
   },
   {
     "id": "activation-medium-sentry",
     "name": "Activation Medium: Sentry",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMSentinel_Icon_128.webp"
   },
   {
     "id": "activation-medium-minion",
     "name": "Activation Medium: Minion",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMSummon_Icon_128.webp"
   },
   {
     "id": "activation-medium-critical-strike",
     "name": "Activation Medium: Critical Strike",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMCriticalHit_Icon_128.webp"
   },
   {
     "id": "activation-medium-channel",
     "name": "Activation Medium: Channel",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMGuide_Icon_128.webp"
   },
   {
     "id": "activation-medium-instruction",
@@ -257,42 +279,48 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMArcaneSignal_Icon_128.webp"
   },
   {
     "id": "activation-medium-lock-on",
     "name": "Activation Medium: Lock On",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMLocking_Icon_128.webp"
   },
   {
     "id": "activation-medium-track",
     "name": "Activation Medium: Track",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMTrack_Icon_128.webp"
   },
   {
     "id": "activation-medium-burst-activation",
     "name": "Activation Medium: Burst Activation",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMDoppelgangerSignal_Icon_128.webp"
   },
   {
     "id": "activation-medium-motionless",
     "name": "Activation Medium: Motionless",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMStationaryUse_Icon_128.webp"
   },
   {
     "id": "activation-medium-tangle",
     "name": "Activation Medium: Tangle",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_CMEntanglement_Icon_128.webp"
   },
   {
     "id": "focused-shot-aspire-magnificent",
@@ -305,7 +333,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "focused-shot",
+    "icon": "/images/skill/UI_Skill_FocusedShoot_support01_Icon_128.webp"
   },
   {
     "id": "focused-shot-long-shot-magnificent",
@@ -318,7 +348,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "focused-shot",
+    "icon": "/images/skill/UI_Skill_FocusedShoot_support02_Icon_128.webp"
   },
   {
     "id": "burning-shot-fiery-blast-magnificent",
@@ -331,7 +363,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "burning-shot",
+    "icon": "/images/skill/UI_Skill_FireShoot_support01_Icon_128.webp"
   },
   {
     "id": "burning-shot-combustion-magnificent",
@@ -344,7 +378,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "burning-shot",
+    "icon": "/images/skill/UI_Skill_FireShoot_support02_Icon_128.webp"
   },
   {
     "id": "chain-lightning-web-of-lightning-magnificent",
@@ -357,7 +393,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "chain-lightning",
+    "icon": "/images/skill/UI_Skill_LightningChain_support01_Icon_128.webp"
   },
   {
     "id": "chain-lightning-augmentation-magnificent",
@@ -370,7 +408,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "chain-lightning",
+    "icon": "/images/skill/UI_Skill_LightningChain_support02_Icon_128.webp"
   },
   {
     "id": "focused-slash-tranquility-magnificent",
@@ -383,7 +423,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "focused-slash",
+    "icon": "/images/skill/UI_Skill_FocusedStrike_support01_Icon_128.webp"
   },
   {
     "id": "focused-slash-duel-magnificent",
@@ -396,7 +438,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "focused-slash",
+    "icon": "/images/skill/UI_Skill_FocusedStrike_support02_Icon_128.webp"
   },
   {
     "id": "icy-blade-quick-freeze-magnificent",
@@ -409,7 +453,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "icy-blade",
+    "icon": "/images/skill/UI_Skill_FrostSlash_support01_Icon_128.webp"
   },
   {
     "id": "flame-slash-immediate-threat-magnificent",
@@ -422,7 +468,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "flame-slash",
+    "icon": "/images/skill/UI_Skill_FlameSlash_support01_Icon_128.webp"
   },
   {
     "id": "corrosive-throw-augmentation-magnificent",
@@ -435,7 +483,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "corrosive-throw",
+    "icon": "/images/skill/UI_Skill_VenomThrow_support01_Icon_128.webp"
   },
   {
     "id": "blazing-bullet-fiery-blast-magnificent",
@@ -448,7 +498,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "blazing-bullet",
+    "icon": "/images/skill/UI_Skill_SabotRounds_support01_Icon_128.webp"
   },
   {
     "id": "wilt-spike-wither-magnificent",
@@ -461,7 +513,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "wilt-spike",
+    "icon": "/images/skill/UI_Skill_ViperStab_support01_Icon_128.webp"
   },
   {
     "id": "wilt-spike-languish-magnificent",
@@ -474,7 +528,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "wilt-spike",
+    "icon": "/images/skill/UI_Skill_ViperStab_support02_Icon_128.webp"
   },
   {
     "id": "hammer-of-ash-upheaval-magnificent",
@@ -487,7 +543,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "hammer-of-ash",
+    "icon": "/images/skill/UI_Skill_Emberslam_support01_Icon_128.webp"
   },
   {
     "id": "hammer-of-ash-rekindle-magnificent",
@@ -500,7 +558,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "hammer-of-ash",
+    "icon": "/images/skill/UI_Skill_Emberslam_support02_Icon_128.webp"
   },
   {
     "id": "frost-impact-ice-cluster-magnificent",
@@ -513,7 +573,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "frost-impact",
+    "icon": "/images/skill/UI_Skill_IceCrash_support01_Icon_128.webp"
   },
   {
     "id": "frost-impact-frozen-trajectory-magnificent",
@@ -526,7 +588,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "frost-impact",
+    "icon": "/images/skill/UI_Skill_IceCrash_support02_Icon_128.webp"
   },
   {
     "id": "whirlwind-endless-wind-magnificent",
@@ -539,7 +603,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "whirlwind",
+    "icon": "/images/skill/UI_Skill_Cyclone_support02_Icon_128.webp"
   },
   {
     "id": "whirlwind-wind-barrier-magnificent",
@@ -552,7 +618,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "whirlwind",
+    "icon": "/images/skill/UI_Skill_Cyclone_support01_Icon_128.webp"
   },
   {
     "id": "lightning-shot-offshoot-magnificent",
@@ -565,7 +633,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "lightning-shot",
+    "icon": "/images/skill/UI_Skill_LightningShoot_support01_Icon_128.webp"
   },
   {
     "id": "split-shot-volley-magnificent",
@@ -578,7 +648,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "split-shot",
+    "icon": "/images/skill/UI_Skill_SplitArrow_support01_Icon_128.webp"
   },
   {
     "id": "split-shot-diversion-magnificent",
@@ -591,7 +663,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "split-shot",
+    "icon": "/images/skill/UI_Skill_SplitArrow_support02_Icon_128.webp"
   },
   {
     "id": "ice-shot-ice-blast-magnificent",
@@ -604,7 +678,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "ice-shot",
+    "icon": "/images/skill/UI_Skill_Iceshot_support01_Icon_128.webp"
   },
   {
     "id": "bombard-cannon-magnificent",
@@ -617,7 +693,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "bombard",
+    "icon": "/images/skill/UI_Skill_Strafe_support01_Icon_128.webp"
   },
   {
     "id": "bombard-guided-magnificent",
@@ -630,7 +708,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "bombard",
+    "icon": "/images/skill/UI_Skill_Strafe_support02_Icon_128.webp"
   },
   {
     "id": "berserking-blade-desperation-magnificent",
@@ -648,7 +728,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "berserking-blade",
+    "icon": "/images/skill/UI_Skill_ViolentSweep_support03_Icon_128.webp"
   },
   {
     "id": "berserking-blade-sweep-magnificent",
@@ -661,7 +743,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "berserking-blade",
+    "icon": "/images/skill/UI_Skill_ViolentSweep_support01_Icon_128.webp"
   },
   {
     "id": "charged-pummel-drastic-shift-magnificent",
@@ -679,7 +763,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "charged-pummel",
+    "icon": "/images/skill/UI_Skill_ChargedSmash_support01_Icon_128.webp"
   },
   {
     "id": "charged-pummel-connected-magnificent",
@@ -692,7 +778,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "charged-pummel",
+    "icon": "/images/skill/UI_Skill_ChargedSmash_support02_Icon_128.webp"
   },
   {
     "id": "moon-strike-rainbow-magnificent",
@@ -705,7 +793,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "moon-strike",
+    "icon": "/images/skill/UI_Skill_ShadowSlash_support01_Icon_128.webp"
   },
   {
     "id": "moon-strike-lunar-ring-magnificent",
@@ -718,7 +808,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "moon-strike",
+    "icon": "/images/skill/UI_Skill_ShadowSlash_support02_Icon_128.webp"
   },
   {
     "id": "savage-charge-infuriate-magnificent",
@@ -731,7 +823,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "savage-charge",
+    "icon": "/images/skill/UI_Skill_SavageCharge_support01_Icon_128.webp"
   },
   {
     "id": "savage-charge-bulldoze-magnificent",
@@ -744,7 +838,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "savage-charge",
+    "icon": "/images/skill/UI_Skill_SavageCharge_support02_Icon_128.webp"
   },
   {
     "id": "marked-rain-of-arrows-heartpiercer-magnificent",
@@ -757,7 +853,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "marked-rain-of-arrows",
+    "icon": "/images/skill/UI_Skill_MarkerArrow_support01_Icon_128.webp"
   },
   {
     "id": "marked-rain-of-arrows-chain-reaction-magnificent",
@@ -770,7 +868,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "marked-rain-of-arrows",
+    "icon": "/images/skill/UI_Skill_MarkerArrow_support02_Icon_128.webp"
   },
   {
     "id": "corrosive-shot-swift-action-magnificent",
@@ -783,7 +883,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "corrosive-shot",
+    "icon": "/images/skill/UI_Skill_PoisonBullet_support01_Icon_128.webp"
   },
   {
     "id": "inexhaustible-barrage-bombard-magnificent",
@@ -806,7 +908,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "inexhaustible-barrage",
+    "icon": "/images/skill/UI_Skill_ChargedRainOfBullets_support01_Icon_128.webp"
   },
   {
     "id": "thunder-spike-numb-magnificent",
@@ -819,7 +923,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thunder-spike",
+    "icon": "/images/skill/UI_Skill_LightningStab_support01_Icon_128.webp"
   },
   {
     "id": "thunder-slash-keen-edge-magnificent",
@@ -832,7 +938,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thunder-slash",
+    "icon": "/images/skill/UI_Skill_ThunderSlash_support01_Icon_128.webp"
   },
   {
     "id": "thunder-slash-blade-cluster-magnificent",
@@ -845,7 +953,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thunder-slash",
+    "icon": "/images/skill/UI_Skill_ThunderSlash_support04_Icon_128.webp"
   },
   {
     "id": "ring-of-blades-blade-formation-magnificent",
@@ -858,7 +968,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "ring-of-blades",
+    "icon": "/images/skill/UI_Skill_DiffusionBlade_support02_Icon_128.webp"
   },
   {
     "id": "frost-spike-offshoot-magnificent",
@@ -871,7 +983,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "frost-spike",
+    "icon": "/images/skill/UI_Skill_FrostStab_support01_Icon_128.webp"
   },
   {
     "id": "rain-of-arrows-swift-flight-magnificent",
@@ -884,7 +998,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "rain-of-arrows",
+    "icon": "/images/skill/UI_Skill_RainOfArrows_support01_Icon_128.webp"
   },
   {
     "id": "arrow-einherjar-arrowstorm-magnificent",
@@ -897,7 +1013,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "arrow-einherjar",
+    "icon": "/images/skill/UI_Skill_ArrowSpirit_support01_Icon_128.webp"
   },
   {
     "id": "shadow-shot-eradicate-magnificent",
@@ -910,7 +1028,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "shadow-shot",
+    "icon": "/images/skill/UI_Skill_Shadowbolt_support01_Icon_128.webp"
   },
   {
     "id": "split-firebolt-split-magnificent",
@@ -923,7 +1043,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "split-firebolt",
+    "icon": "/images/skill/UI_Skill_Fireball_support01_Icon_128.webp"
   },
   {
     "id": "ice-lances-rebound-magnificent",
@@ -936,7 +1058,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "ice-lances",
+    "icon": "/images/skill/UI_Skill_ConeOfCold_support01_Icon_128.webp"
   },
   {
     "id": "ice-lances-ice-corrosion-magnificent",
@@ -949,7 +1073,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "ice-lances",
+    "icon": "/images/skill/UI_Skill_ConeOfCold_support02_Icon_128.webp"
   },
   {
     "id": "sparkle-magnetic-field-magnificent",
@@ -962,7 +1088,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "sparkle",
+    "icon": "/images/skill/UI_Skill_SparkBullet_support01_Icon_128.webp"
   },
   {
     "id": "whirlwind-blade-unsheath-magnificent",
@@ -975,7 +1103,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "whirlwind-blade",
+    "icon": "/images/skill/UI_Skill_BladeRoundabout_support01_Icon_128.webp"
   },
   {
     "id": "whirlwind-blade-swift-slash-magnificent",
@@ -988,7 +1118,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "whirlwind-blade",
+    "icon": "/images/skill/UI_Skill_BladeRoundabout_support02_Icon_128.webp"
   },
   {
     "id": "ring-of-ice-ice-seal-magnificent",
@@ -1001,7 +1133,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "ring-of-ice",
+    "icon": "/images/skill/UI_Skill_IceRing_support01_Icon_128.webp"
   },
   {
     "id": "blizzard-freezing-point-magnificent",
@@ -1014,7 +1148,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "blizzard",
+    "icon": "/images/skill/UI_Skill_Blizzard_support01_Icon_128.webp"
   },
   {
     "id": "blizzard-hail-magnificent",
@@ -1027,7 +1163,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "blizzard",
+    "icon": "/images/skill/UI_Skill_Blizzard_support02_Icon_128.webp"
   },
   {
     "id": "lightning-storm-surging-thunder-magnificent",
@@ -1045,7 +1183,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "lightning-storm",
+    "icon": "/images/skill/UI_Skill_ThunderStorm_support01_Icon_128.webp"
   },
   {
     "id": "flame-core-lone-vanguard-magnificent",
@@ -1058,7 +1198,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "flame-core",
+    "icon": "/images/skill/UI_Skill_FirePile_support01_Icon_128.webp"
   },
   {
     "id": "flame-jet-burst-magnificent",
@@ -1076,7 +1218,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "flame-jet",
+    "icon": "/images/skill/UI_Skill_FlameBlast_support01_Icon_128.webp"
   },
   {
     "id": "flame-jet-scorched-earth-magnificent",
@@ -1089,7 +1233,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "flame-jet",
+    "icon": "/images/skill/UI_Skill_FlameBlast_support02_Icon_128.webp"
   },
   {
     "id": "frost-terra-rime-magnificent",
@@ -1102,7 +1248,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "frost-terra",
+    "icon": "/images/skill/UI_Skill_IceArea_support01_Icon_128.webp"
   },
   {
     "id": "frost-terra-snow-shell-magnificent",
@@ -1115,7 +1263,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "frost-terra",
+    "icon": "/images/skill/UI_Skill_IceArea_support02_Icon_128.webp"
   },
   {
     "id": "shadow-swamp-gushing-spring-magnificent",
@@ -1128,7 +1278,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "shadow-swamp",
+    "icon": "/images/skill/UI_Skill_Shadowswamp_support01_Icon_128.webp"
   },
   {
     "id": "shadow-swamp-splatter-magnificent",
@@ -1146,7 +1298,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "shadow-swamp",
+    "icon": "/images/skill/UI_Skill_Shadowswamp_support02_Icon_128.webp"
   },
   {
     "id": "thunderbolt-overload-leap-magnificent",
@@ -1159,7 +1313,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thunderbolt-overload",
+    "icon": "/images/skill/UI_Skill_OverloadLightningBall_support01_Icon_128.webp"
   },
   {
     "id": "thunderbolt-overload-retribution-magnificent",
@@ -1172,7 +1328,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thunderbolt-overload",
+    "icon": "/images/skill/UI_Skill_OverloadLightningBall_support02_Icon_128.webp"
   },
   {
     "id": "frost-core-chase-magnificent",
@@ -1185,7 +1343,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "frost-core",
+    "icon": "/images/skill/UI_Skill_FrostCore_support01_Icon_128.webp"
   },
   {
     "id": "summon-thunder-magus-lightning-ward-magnificent",
@@ -1198,7 +1358,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-thunder-magus",
+    "icon": "/images/skill/UI_Skill_SummonThunderElement_support01_Icon_128.webp"
   },
   {
     "id": "summon-thunder-magus-continuation-magnificent",
@@ -1211,7 +1373,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-thunder-magus",
+    "icon": "/images/skill/UI_Skill_SummonThunderElement_support02_Icon_128.webp"
   },
   {
     "id": "summon-frost-magus-cold-ward-magnificent",
@@ -1224,7 +1388,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-frost-magus",
+    "icon": "/images/skill/UI_Skill_SummonIceIceElement_support01_Icon_128.webp"
   },
   {
     "id": "summon-frost-magus-piercing-cold-magnificent",
@@ -1237,7 +1403,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-frost-magus",
+    "icon": "/images/skill/UI_Skill_SummonIceIceElement_support02_Icon_128.webp"
   },
   {
     "id": "summon-frost-magus-ice-crusher-magnificent",
@@ -1250,7 +1418,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-frost-magus",
+    "icon": "/images/skill/UI_Skill_SummonIceIceElement_support03_Icon_128.webp"
   },
   {
     "id": "summon-fire-magus-fire-ward-magnificent",
@@ -1263,7 +1433,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-fire-magus",
+    "icon": "/images/skill/UI_Skill_SummonFireElement_support01_Icon_128.webp"
   },
   {
     "id": "summon-fire-magus-aflame-magnificent",
@@ -1276,7 +1448,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-fire-magus",
+    "icon": "/images/skill/UI_Skill_SummonFireElement_support02_Icon_128.webp"
   },
   {
     "id": "summon-fire-magus-flowing-flames-magnificent",
@@ -1289,7 +1463,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-fire-magus",
+    "icon": "/images/skill/UI_Skill_SummonFireElement_support03_Icon_128.webp"
   },
   {
     "id": "synthetic-troop-force-field-magnificent",
@@ -1302,7 +1478,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "synthetic-troop",
+    "icon": "/images/skill/UI_Skill_AIMachine_Field_Icon_128.webp"
   },
   {
     "id": "summon-machine-guard-iron-fist-magnificent",
@@ -1315,7 +1493,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-machine-guard",
+    "icon": "/images/skill/UI_Skill_SummonMechanicalGuard_support01_Icon_128.webp"
   },
   {
     "id": "summon-machine-guard-pummel-magnificent",
@@ -1328,7 +1508,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-machine-guard",
+    "icon": "/images/skill/UI_Skill_SummonMechanicalGuard_support02_Icon_128.webp"
   },
   {
     "id": "summon-grim-phantom-glare-magnificent",
@@ -1341,7 +1523,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-grim-phantom",
+    "icon": "/images/skill/UI_Skill_SummonPhantom_support01_Icon_128.webp"
   },
   {
     "id": "summon-grim-phantom-spur-magnificent",
@@ -1354,7 +1538,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-grim-phantom",
+    "icon": "/images/skill/UI_Skill_SummonPhantom_support02_Icon_128.webp"
   },
   {
     "id": "summon-spider-tank-steamroll-magnificent",
@@ -1367,7 +1553,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-spider-tank",
+    "icon": "/images/skill/UI_Skill_SummonIceSpiderTank_support01_Icon_128.webp"
   },
   {
     "id": "ghost-blade-einherjar-prestige-magnificent",
@@ -1380,7 +1568,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "ghost-blade-einherjar",
+    "icon": "/images/skill/UI_Skill_GhostBladeSpirit_support01_Icon_128.webp"
   },
   {
     "id": "ghost-blade-einherjar-unbroken-magnificent",
@@ -1393,7 +1583,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "ghost-blade-einherjar",
+    "icon": "/images/skill/UI_Skill_GhostBladeSpirit_support02_Icon_128.webp"
   },
   {
     "id": "groundshaker-frequent-quake-magnificent",
@@ -1406,7 +1598,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "groundshaker",
+    "icon": "/images/skill/UI_Skill_EarthShock_support01_Icon_128.webp"
   },
   {
     "id": "groundshaker-epicenter-magnificent",
@@ -1419,7 +1613,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "groundshaker",
+    "icon": "/images/skill/UI_Skill_EarthShock_support02_Icon_128.webp"
   },
   {
     "id": "howling-gale-rapid-sweep-magnificent",
@@ -1432,7 +1628,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "howling-gale",
+    "icon": "/images/skill/UI_Skill_Tornado_support01_Icon_128.webp"
   },
   {
     "id": "howling-gale-headwind-magnificent",
@@ -1445,7 +1643,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "howling-gale",
+    "icon": "/images/skill/UI_Skill_Tornado_support02_Icon_128.webp"
   },
   {
     "id": "shackles-of-malice-defile-magnificent",
@@ -1458,7 +1658,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "shackles-of-malice",
+    "icon": "/images/skill/UI_Skill_EvilChain_support01_Icon_128.webp"
   },
   {
     "id": "shackles-of-malice-vendetta-magnificent",
@@ -1471,7 +1673,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "shackles-of-malice",
+    "icon": "/images/skill/UI_Skill_EvilChain_support02_Icon_128.webp"
   },
   {
     "id": "mind-control-concentrate-magnificent",
@@ -1484,7 +1688,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "mind-control",
+    "icon": "/images/skill/UI_Skill_LifeLeech_support01_Icon_128.webp"
   },
   {
     "id": "mind-control-befuddle-magnificent",
@@ -1497,7 +1703,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "mind-control",
+    "icon": "/images/skill/UI_Skill_LifeLeech_support02_Icon_128.webp"
   },
   {
     "id": "fire-burst-heart-of-flame-magnificent",
@@ -1510,7 +1718,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "fire-burst",
+    "icon": "/images/skill/UI_Skill_FireBlast_support01_Icon_128.webp"
   },
   {
     "id": "fire-burst-violent-blast-magnificent",
@@ -1523,7 +1733,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "fire-burst",
+    "icon": "/images/skill/UI_Skill_FireBlast_support02_Icon_128.webp"
   },
   {
     "id": "icebound-beam-frostbitten-magnificent",
@@ -1536,7 +1748,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "icebound-beam",
+    "icon": "/images/skill/UI_Skill_IceRay_support01_Icon_128.webp"
   },
   {
     "id": "scorching-beam-supercharge-magnificent",
@@ -1549,7 +1763,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "scorching-beam",
+    "icon": "/images/skill/UI_Skill_FireRay_support01_Icon_128.webp"
   },
   {
     "id": "scorching-beam-shockwave-magnificent",
@@ -1562,7 +1778,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "scorching-beam",
+    "icon": "/images/skill/UI_Skill_FireRay_support02_Icon_128.webp"
   },
   {
     "id": "thunder-core-electric-field-magnificent",
@@ -1575,7 +1793,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thunder-core",
+    "icon": "/images/skill/UI_Skill_ThunderCore_support01_Icon_128.webp"
   },
   {
     "id": "thunder-core-lone-vanguard-magnificent",
@@ -1588,7 +1808,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thunder-core",
+    "icon": "/images/skill/UI_Skill_ThunderCore_support02_Icon_128.webp"
   },
   {
     "id": "path-of-flames-spontaneous-combustion-magnificent",
@@ -1601,7 +1823,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "path-of-flames",
+    "icon": "/images/skill/UI_Skill_FlameRoad_support01_Icon_128.webp"
   },
   {
     "id": "thundercloud-billowing-cloud-magnificent",
@@ -1614,7 +1838,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thundercloud",
+    "icon": "/images/skill/UI_Skill_Nimbus_support01_Icon_128.webp"
   },
   {
     "id": "thundercloud-alarmed-awakening-magnificent",
@@ -1627,7 +1853,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thundercloud",
+    "icon": "/images/skill/UI_Skill_Nimbus_support02_Icon_128.webp"
   },
   {
     "id": "summon-rock-magus-unyielding-magnificent",
@@ -1640,7 +1868,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-rock-magus",
+    "icon": "/images/skill/UI_Skill_SummonRockElement_support01_Icon_128.webp"
   },
   {
     "id": "summon-rock-magus-forging-magnificent",
@@ -1653,7 +1883,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-rock-magus",
+    "icon": "/images/skill/UI_Skill_SummonRockElement_support01_Icon_128.webp"
   },
   {
     "id": "summon-rock-magus-clustering-sand-magnificent",
@@ -1666,7 +1898,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-rock-magus",
+    "icon": "/images/skill/UI_Skill_SummonRockElement_support02_Icon_128.webp"
   },
   {
     "id": "summon-erosion-magus-plague-source-magnificent",
@@ -1679,7 +1913,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-erosion-magus",
+    "icon": "/images/skill/UI_Skill_SummonRotElement_support01_Icon_128.webp"
   },
   {
     "id": "summon-erosion-magus-wicked-magnificent",
@@ -1692,7 +1928,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-erosion-magus",
+    "icon": "/images/skill/UI_Skill_SummonRotElement_support02_Icon_128.webp"
   },
   {
     "id": "summon-erosion-magus-frequent-quake-magnificent",
@@ -1705,7 +1943,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-erosion-magus",
+    "icon": "/images/skill/UI_Skill_SummonRotElement_support03_Icon_128.webp"
   },
   {
     "id": "double-thrusts-restless-magnificent",
@@ -1718,7 +1958,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "double-thrusts",
+    "icon": "/images/skill/UI_Skill_DoubleStab_support01_Icon_128.webp"
   },
   {
     "id": "lightning-beam-aftershock-magnificent",
@@ -1731,7 +1973,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "lightning-beam",
+    "icon": "/images/skill/UI_Skill_ThunderstormRay_support01_Icon_128.webp"
   },
   {
     "id": "lightning-beam-relentless-magnificent",
@@ -1744,7 +1988,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "lightning-beam",
+    "icon": "/images/skill/UI_Skill_ThunderstormRay_support02_Icon_128.webp"
   },
   {
     "id": "wilting-beam-dispirit-magnificent",
@@ -1757,7 +2003,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "wilting-beam",
+    "icon": "/images/skill/UI_Skill_ChaosRay_support01_Icon_128.webp"
   },
   {
     "id": "wilting-beam-reflection-magnificent",
@@ -1770,7 +2018,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "wilting-beam",
+    "icon": "/images/skill/UI_Skill_ChaosRay_support02_Icon_128.webp"
   },
   {
     "id": "electrifying-shot-close-range-magnificent",
@@ -1783,7 +2033,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "electrifying-shot",
+    "icon": "/images/skill/UI_Skill_LightningBullet_support01_Icon_128.webp"
   },
   {
     "id": "haunting-abomination-misdeeds-magnificent",
@@ -1796,7 +2048,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "haunting-abomination",
+    "icon": "/images/skill/UI_Skill_Doom_support01_Icon_128.webp"
   },
   {
     "id": "haunting-abomination-feud-magnificent",
@@ -1806,15 +2060,12 @@
         "stat": "moreDamage",
         "op": "more",
         "value": 0.2
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.05
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "haunting-abomination",
+    "icon": "/images/skill/UI_Skill_Doom_support02_Icon_128.webp"
   },
   {
     "id": "thunder-focus-haste-magnificent",
@@ -1832,7 +2083,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thunder-focus",
+    "icon": "/images/skill/UI_Skill_ThunderBless_support01_Icon_128.webp"
   },
   {
     "id": "thunder-focus-quickstep-magnificent",
@@ -1845,7 +2098,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thunder-focus",
+    "icon": "/images/skill/UI_Skill_ThunderBless_support02_Icon_128.webp"
   },
   {
     "id": "flame-focus-kindling-magnificent",
@@ -1863,7 +2118,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "flame-focus",
+    "icon": "/images/skill/UI_Skill_FireBless_support01_Icon_128.webp"
   },
   {
     "id": "flame-focus-flint-magnificent",
@@ -1876,7 +2133,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "flame-focus",
+    "icon": "/images/skill/UI_Skill_FireBless_support02_Icon_128.webp"
   },
   {
     "id": "corrosion-focus-clustering-magnificent",
@@ -1889,7 +2148,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "corrosion-focus",
+    "icon": "/images/skill/UI_Skill_ChaosBless_support01_Icon_128.webp"
   },
   {
     "id": "corrosion-focus-infection-magnificent",
@@ -1902,7 +2163,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "corrosion-focus",
+    "icon": "/images/skill/UI_Skill_ChaosBless_support02_Icon_128.webp"
   },
   {
     "id": "ice-focus-shattered-ice-magnificent",
@@ -1915,7 +2178,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "ice-focus",
+    "icon": "/images/skill/UI_Skill_IceBless_support01_Icon_128.webp"
   },
   {
     "id": "ice-focus-permafrost-magnificent",
@@ -1928,7 +2193,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "ice-focus",
+    "icon": "/images/skill/UI_Skill_IceBless_support02_Icon_128.webp"
   },
   {
     "id": "acuteness-focus-piercing-agony-magnificent",
@@ -1941,7 +2208,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "acuteness-focus",
+    "icon": "/images/skill/UI_Skill_PhysicalBless_support01_Icon_128.webp"
   },
   {
     "id": "acuteness-focus-sharpening-magnificent",
@@ -1954,7 +2223,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "acuteness-focus",
+    "icon": "/images/skill/UI_Skill_PhysicalBless_support02_Icon_128.webp"
   },
   {
     "id": "crescent-slash-raid-magnificent",
@@ -1967,7 +2238,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "crescent-slash",
+    "icon": "/images/skill/UI_Skill_ArcSlash_support01_Icon_128.webp"
   },
   {
     "id": "crescent-slash-vile-magnificent",
@@ -1980,7 +2253,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "crescent-slash",
+    "icon": "/images/skill/UI_Skill_ArcSlash_support02_Icon_128.webp"
   },
   {
     "id": "serpent-beam-barrage-magnificent",
@@ -1993,7 +2268,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "serpent-beam",
+    "icon": "/images/skill/UI_Skill_FlameSerpent_support01_Icon_128.webp"
   },
   {
     "id": "serpent-beam-inferno-magnificent",
@@ -2006,7 +2283,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "serpent-beam",
+    "icon": "/images/skill/UI_Skill_FlameSerpent_support02_Icon_128.webp"
   },
   {
     "id": "gale-slash-onslaught-magnificent",
@@ -2019,7 +2298,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "gale-slash",
+    "icon": "/images/skill/UI_Skill_WindSlash_support01_Icon_128.webp"
   },
   {
     "id": "gale-slash-dominance-magnificent",
@@ -2032,7 +2313,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "gale-slash",
+    "icon": "/images/skill/UI_Skill_WindSlash_support02_Icon_128.webp"
   },
   {
     "id": "spectral-slash-detonation-magnificent",
@@ -2045,7 +2328,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "spectral-slash",
+    "icon": "/images/skill/UI_Skill_PhantomSlash_support01_Icon_128.webp"
   },
   {
     "id": "chromatic-shot-lightchaser-magnificent",
@@ -2063,7 +2348,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "chromatic-shot",
+    "icon": "/images/skill/UI_Skill_Prismaticbolt_support01_Icon_128.webp"
   },
   {
     "id": "modularization-shared-burden-magnificent",
@@ -2076,7 +2363,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "modularization",
+    "icon": "/images/skill/UI_Skill_Modular_support01_Icon_128.webp"
   },
   {
     "id": "modularization-resonance-magnificent",
@@ -2089,7 +2378,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "modularization",
+    "icon": "/images/skill/UI_Skill_Modular_support02_Icon_128.webp"
   },
   {
     "id": "modularization-cluster-magnificent",
@@ -2102,7 +2393,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "modularization",
+    "icon": "/images/skill/UI_Skill_Modular_support03_Icon_128.webp"
   },
   {
     "id": "thornfield-sacrifice-magnificent",
@@ -2120,7 +2413,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thornfield"
   },
   {
     "id": "tidewell-torrent-magnificent",
@@ -2133,7 +2427,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "tidewell"
   },
   {
     "id": "haunting-abomination-ravage-magnificent",
@@ -2146,7 +2441,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "haunting-abomination",
+    "icon": "/images/skill/UI_Skill_Doom_support04_Icon_128.webp"
   },
   {
     "id": "fallen-star-crush-magnificent",
@@ -2159,7 +2456,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "fallen-star"
   },
   {
     "id": "nether-grasp-devour-magnificent",
@@ -2177,7 +2475,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "nether-grasp"
   },
   {
     "id": "flame-jet-scorching-wave-magnificent",
@@ -2190,7 +2489,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "flame-jet",
+    "icon": "/images/skill/UI_Skill_FlameBlast_support01_Icon_128.webp"
   },
   {
     "id": "storm-field-thunderclap-magnificent",
@@ -2203,13 +2504,15 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "storm-field"
   },
   {
     "id": "module-goblin-priest",
     "name": "Module: Goblin Priest",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_ModularGeBuLinJiSi_Icon_128.webp"
   },
   {
     "id": "module-trog-2nd-general",
@@ -2221,61 +2524,71 @@
         "value": 0.01
       }
     ],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_ModularDiMoErJiangJun_Icon_128.webp"
   },
   {
     "id": "module-dwarven-automaton",
     "name": "Module: Dwarven Automaton",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_ModularAiRenJiJia_Icon_128.webp"
   },
   {
     "id": "module-trog-mage",
     "name": "Module: Trog Mage",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_ModularDiMoFaShi_Icon_128.webp"
   },
   {
     "id": "module-goblin-priest-of-elements",
     "name": "Module: Goblin Priest of Elements",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_ModularGeBuLinYuanSuDaZhangLao_Icon_128.webp"
   },
   {
     "id": "module-medium-ember-automaton",
     "name": "Module: Medium Ember Automaton",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_ModularZhongXingHuiJinJiJia_Icon_128.webp"
   },
   {
     "id": "module-huge-ember-automaton",
     "name": "Module: Huge Ember Automaton",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_ModularJuXingHuiJinJiJia_Icon_128.webp"
   },
   {
     "id": "module-ent-great-elder",
     "name": "Module: Ent Great Elder",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_ModularShuJingDaZhangLao_Icon_128.webp"
   },
   {
     "id": "module-ratlin-stormer-captain",
     "name": "Module: Ratlin Stormer Captain",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_ModularShuRenQiangXiDuiZhang_Icon_128.webp"
   },
   {
     "id": "module-chief-machinist",
     "name": "Module: Chief Machinist",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_ModularShouXiJiXieShi_Icon_128.webp"
   },
   {
     "id": "module-lean-phantom",
     "name": "Module: Lean Phantom",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_ModularLaiAnHuanYing_Icon_128.webp"
   },
   {
     "id": "module-god-of-swords",
@@ -2287,7 +2600,8 @@
         "value": 3
       }
     ],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_ModularJianShen_Icon_128.webp"
   },
   {
     "id": "module-tyrant",
@@ -2299,31 +2613,36 @@
         "value": 0.01
       }
     ],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_ModularBaoNueZhe_Icon_128.webp"
   },
   {
     "id": "module-ichi-storm",
     "name": "Module: Ichi Storm",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_ModularYiJiKuangFeng_Icon_128.webp"
   },
   {
     "id": "module-sand-giant",
     "name": "Module: Sand Giant",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_ModularShaJuRen_Icon_128.webp"
   },
   {
     "id": "module-einherjar-elder-sage",
     "name": "Module: Einherjar Elder Sage",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_ModularYingLingDaXianZhe_Icon_128.webp"
   },
   {
     "id": "module-aember-winged-beast",
     "name": "Module: Aember Winged Beast",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_ModularZaiJinYiShou_Icon_128.webp"
   },
   {
     "id": "module-punisher",
@@ -2335,7 +2654,8 @@
         "value": 0.02
       }
     ],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_ModularChengFaZhe_Icon_128.webp"
   },
   {
     "id": "focused-shot-building-momentum-noble",
@@ -2348,7 +2668,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "focused-shot",
+    "icon": "/images/skill/UI_Skill_FocusedShoot_support03_Icon_128.webp"
   },
   {
     "id": "focused-shot-power-bow-noble",
@@ -2361,7 +2683,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "focused-shot",
+    "icon": "/images/skill/UI_Skill_FocusedShoot_support04_Icon_128.webp"
   },
   {
     "id": "focused-shot-snipe-noble",
@@ -2374,7 +2698,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "focused-shot",
+    "icon": "/images/skill/UI_Skill_FocusedShoot_support05_Icon_128.webp"
   },
   {
     "id": "burning-shot-ignition-noble",
@@ -2387,7 +2713,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "burning-shot",
+    "icon": "/images/skill/UI_Skill_FireShoot_support03_Icon_128.webp"
   },
   {
     "id": "burning-shot-through-fire-noble",
@@ -2400,7 +2728,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "burning-shot",
+    "icon": "/images/skill/UI_Skill_FireShoot_support04_Icon_128.webp"
   },
   {
     "id": "chain-lightning-lucky-noble",
@@ -2413,7 +2743,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "chain-lightning",
+    "icon": "/images/skill/UI_Skill_LightningChain_support03_Icon_128.webp"
   },
   {
     "id": "chain-lightning-merge-noble",
@@ -2426,7 +2758,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "chain-lightning",
+    "icon": "/images/skill/UI_Skill_LightningChain_support04_Icon_128.webp"
   },
   {
     "id": "focused-slash-fervor-noble",
@@ -2439,7 +2773,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "focused-slash",
+    "icon": "/images/skill/UI_Skill_FocusedStrike_support03_Icon_128.webp"
   },
   {
     "id": "focused-slash-behead-noble",
@@ -2452,7 +2788,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "focused-slash",
+    "icon": "/images/skill/UI_Skill_FocusedStrike_support04_Icon_128.webp"
   },
   {
     "id": "icy-blade-hidden-edge-noble",
@@ -2465,7 +2803,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "icy-blade",
+    "icon": "/images/skill/UI_Skill_FrostSlash_support04_Icon_128.webp"
   },
   {
     "id": "flame-slash-inverted-blaze-noble",
@@ -2478,7 +2818,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "flame-slash",
+    "icon": "/images/skill/UI_Skill_FlameSlash_support02_Icon_128.webp"
   },
   {
     "id": "double-thrusts-cutthroat-noble",
@@ -2491,7 +2833,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "double-thrusts",
+    "icon": "/images/skill/UI_Skill_DoubleStab_support03_Icon_128.webp"
   },
   {
     "id": "corrosive-throw-swift-strike-noble",
@@ -2504,7 +2848,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "corrosive-throw",
+    "icon": "/images/skill/UI_Skill_VenomThrow_support02_Icon_128.webp"
   },
   {
     "id": "corrosive-throw-blitz-strike-noble",
@@ -2517,7 +2863,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "corrosive-throw",
+    "icon": "/images/skill/UI_Skill_VenomThrow_support03_Icon_128.webp"
   },
   {
     "id": "blazing-bullet-ignition-point-noble",
@@ -2530,7 +2878,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "blazing-bullet",
+    "icon": "/images/skill/UI_Skill_SabotRounds_support02_Icon_128.webp"
   },
   {
     "id": "blazing-bullet-dual-resonance-noble",
@@ -2543,7 +2893,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "blazing-bullet",
+    "icon": "/images/skill/UI_Skill_SabotRounds_support03_Icon_128.webp"
   },
   {
     "id": "wilt-spike-mirage-noble",
@@ -2556,7 +2908,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "wilt-spike",
+    "icon": "/images/skill/UI_Skill_ViperStab_support03_Icon_128.webp"
   },
   {
     "id": "wilt-spike-evanescence-noble",
@@ -2569,7 +2923,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "wilt-spike",
+    "icon": "/images/skill/UI_Skill_ViperStab_support04_Icon_128.webp"
   },
   {
     "id": "hammer-of-ash-quickfire-noble",
@@ -2582,7 +2938,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "hammer-of-ash",
+    "icon": "/images/skill/UI_Skill_Emberslam_support03_Icon_128.webp"
   },
   {
     "id": "hammer-of-ash-blast-quake-noble",
@@ -2595,7 +2953,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "hammer-of-ash",
+    "icon": "/images/skill/UI_Skill_Emberslam_support04_Icon_128.webp"
   },
   {
     "id": "frost-impact-chilling-surge-noble",
@@ -2608,7 +2968,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "frost-impact",
+    "icon": "/images/skill/UI_Skill_IceCrash_support03_Icon_128.webp"
   },
   {
     "id": "frost-impact-chilling-buildup-noble",
@@ -2621,7 +2983,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "frost-impact",
+    "icon": "/images/skill/UI_Skill_IceCrash_support04_Icon_128.webp"
   },
   {
     "id": "whirlwind-whirling-blade-noble",
@@ -2634,7 +2998,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "whirlwind",
+    "icon": "/images/skill/UI_Skill_Cyclone_support03_Icon_128.webp"
   },
   {
     "id": "lightning-shot-crossed-lightning-noble",
@@ -2647,7 +3013,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "lightning-shot",
+    "icon": "/images/skill/UI_Skill_LightningShoot_support02_Icon_128.webp"
   },
   {
     "id": "split-shot-collaboration-noble",
@@ -2660,7 +3028,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "split-shot",
+    "icon": "/images/skill/UI_Skill_SplitArrow_support03_Icon_128.webp"
   },
   {
     "id": "split-shot-rapid-advance-noble",
@@ -2673,7 +3043,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "split-shot",
+    "icon": "/images/skill/UI_Skill_SplitArrow_support04_Icon_128.webp"
   },
   {
     "id": "ice-shot-batter-noble",
@@ -2686,7 +3058,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "ice-shot",
+    "icon": "/images/skill/UI_Skill_Iceshot_support02_Icon_128.webp"
   },
   {
     "id": "bombard-fission-noble",
@@ -2699,7 +3073,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "bombard",
+    "icon": "/images/skill/UI_Skill_Strafe_support03_Icon_128.webp"
   },
   {
     "id": "bombard-grenade-noble",
@@ -2712,7 +3088,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "bombard",
+    "icon": "/images/skill/UI_Skill_Strafe_support04_Icon_128.webp"
   },
   {
     "id": "bombard-smokescreen-noble",
@@ -2725,7 +3103,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "bombard",
+    "icon": "/images/skill/UI_Skill_Strafe_support05_Icon_128.webp"
   },
   {
     "id": "berserking-blade-decimate-noble",
@@ -2738,7 +3118,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "berserking-blade",
+    "icon": "/images/skill/UI_Skill_ViolentSweep_support02_Icon_128.webp"
   },
   {
     "id": "berserking-blade-rampage-noble",
@@ -2751,7 +3133,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "berserking-blade",
+    "icon": "/images/skill/UI_Skill_ViolentSweep_support04_Icon_128.webp"
   },
   {
     "id": "charged-pummel-charge-reduction-noble",
@@ -2764,7 +3148,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "charged-pummel",
+    "icon": "/images/skill/UI_Skill_ChargedSmash_support03_Icon_128.webp"
   },
   {
     "id": "charged-pummel-electric-charge-noble",
@@ -2777,7 +3163,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "charged-pummel",
+    "icon": "/images/skill/UI_Skill_ChargedSmash_support04_Icon_128.webp"
   },
   {
     "id": "moon-strike-lunar-eclipse-noble",
@@ -2795,7 +3183,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "moon-strike",
+    "icon": "/images/skill/UI_Skill_ShadowSlash_support03_Icon_128.webp"
   },
   {
     "id": "moon-strike-wax-and-wane-noble",
@@ -2808,7 +3198,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "moon-strike",
+    "icon": "/images/skill/UI_Skill_ShadowSlash_support04_Icon_128.webp"
   },
   {
     "id": "savage-charge-raid-noble",
@@ -2821,7 +3213,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "savage-charge",
+    "icon": "/images/skill/UI_Skill_SavageCharge_support03_Icon_128.webp"
   },
   {
     "id": "marked-rain-of-arrows-hyper-blast-noble",
@@ -2834,7 +3228,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "marked-rain-of-arrows",
+    "icon": "/images/skill/UI_Skill_MarkerArrow_support03_Icon_128.webp"
   },
   {
     "id": "marked-rain-of-arrows-threads-of-arrows-noble",
@@ -2847,7 +3243,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "marked-rain-of-arrows",
+    "icon": "/images/skill/UI_Skill_MarkerArrow_support04_Icon_128.webp"
   },
   {
     "id": "corrosive-shot-degeneration-noble",
@@ -2860,7 +3258,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "corrosive-shot",
+    "icon": "/images/skill/UI_Skill_PoisonBullet_support02_Icon_128.webp"
   },
   {
     "id": "corrosive-shot-burst-of-agony-noble",
@@ -2873,7 +3273,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "corrosive-shot",
+    "icon": "/images/skill/UI_Skill_PoisonBullet_support03_Icon_128.webp"
   },
   {
     "id": "inexhaustible-barrage-fatal-pursuit-noble",
@@ -2886,7 +3288,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "inexhaustible-barrage",
+    "icon": "/images/skill/UI_Skill_ChargedRainOfBullets_support02_Icon_128.webp"
   },
   {
     "id": "inexhaustible-barrage-landslide-noble",
@@ -2899,7 +3303,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "inexhaustible-barrage",
+    "icon": "/images/skill/UI_Skill_ChargedRainOfBullets_support03_Icon_128.webp"
   },
   {
     "id": "thunder-spike-tremble-noble",
@@ -2912,7 +3318,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thunder-spike",
+    "icon": "/images/skill/UI_Skill_LightningStab_support03_Icon_128.webp"
   },
   {
     "id": "thunder-spike-rumbling-thunder-noble",
@@ -2925,7 +3333,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thunder-spike",
+    "icon": "/images/skill/UI_Skill_LightningStab_support02_Icon_128.webp"
   },
   {
     "id": "thunder-slash-flurry-noble",
@@ -2938,7 +3348,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thunder-slash",
+    "icon": "/images/skill/UI_Skill_ThunderSlash_support02_Icon_128.webp"
   },
   {
     "id": "thunder-slash-big-stride-noble",
@@ -2951,7 +3363,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thunder-slash",
+    "icon": "/images/skill/UI_Skill_ThunderSlash_support03_Icon_128.webp"
   },
   {
     "id": "ring-of-blades-razor-edge-noble",
@@ -2964,7 +3378,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "ring-of-blades",
+    "icon": "/images/skill/UI_Skill_DiffusionBlade_support03_Icon_128.webp"
   },
   {
     "id": "ring-of-blades-strength-in-numbers-noble",
@@ -2977,7 +3393,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "ring-of-blades",
+    "icon": "/images/skill/UI_Skill_DiffusionBlade_support04_Icon_128.webp"
   },
   {
     "id": "frost-spike-ice-fission-noble",
@@ -2990,7 +3408,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "frost-spike",
+    "icon": "/images/skill/UI_Skill_FrostStab_support02_Icon_128.webp"
   },
   {
     "id": "frost-spike-glaciate-noble",
@@ -3003,7 +3423,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "frost-spike",
+    "icon": "/images/skill/UI_Skill_FrostStab_support03_Icon_128.webp"
   },
   {
     "id": "rain-of-arrows-payback-noble",
@@ -3016,7 +3438,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "rain-of-arrows",
+    "icon": "/images/skill/UI_Skill_RainOfArrows_support02_Icon_128.webp"
   },
   {
     "id": "rain-of-arrows-tracking-noble",
@@ -3029,7 +3453,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "rain-of-arrows",
+    "icon": "/images/skill/UI_Skill_RainOfArrows_support03_Icon_128.webp"
   },
   {
     "id": "arrow-einherjar-advancement-noble",
@@ -3042,7 +3468,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "arrow-einherjar",
+    "icon": "/images/skill/UI_Skill_ArrowSpirit_support02_Icon_128.webp"
   },
   {
     "id": "arrow-einherjar-fellowship-noble",
@@ -3055,7 +3483,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "arrow-einherjar",
+    "icon": "/images/skill/UI_Skill_ArrowSpirit_support03_Icon_128.webp"
   },
   {
     "id": "split-firebolt-focal-point-noble",
@@ -3068,7 +3498,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "split-firebolt",
+    "icon": "/images/skill/UI_Skill_Fireball_support02_Icon_128.webp"
   },
   {
     "id": "ice-lances-bounce-noble",
@@ -3081,7 +3513,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "ice-lances",
+    "icon": "/images/skill/UI_Skill_ConeOfCold_support03_Icon_128.webp"
   },
   {
     "id": "ice-lances-permafrost-noble",
@@ -3094,7 +3528,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "ice-lances",
+    "icon": "/images/skill/UI_Skill_ConeOfCold_support04_Icon_128.webp"
   },
   {
     "id": "sparkle-strobe-noble",
@@ -3107,7 +3543,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "sparkle",
+    "icon": "/images/skill/UI_Skill_SparkBullet_support03_Icon_128.webp"
   },
   {
     "id": "sparkle-static-electricity-noble",
@@ -3125,7 +3563,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "sparkle",
+    "icon": "/images/skill/UI_Skill_SparkBullet_support04_Icon_128.webp"
   },
   {
     "id": "whirlwind-blade-sharpen-noble",
@@ -3138,7 +3578,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "whirlwind-blade",
+    "icon": "/images/skill/UI_Skill_BladeRoundabout_support03_Icon_128.webp"
   },
   {
     "id": "whirlwind-blade-circling-noble",
@@ -3151,7 +3593,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "whirlwind-blade",
+    "icon": "/images/skill/UI_Skill_BladeRoundabout_support04_Icon_128.webp"
   },
   {
     "id": "ring-of-ice-cascade-noble",
@@ -3164,7 +3608,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "ring-of-ice",
+    "icon": "/images/skill/UI_Skill_IceRing_support02_Icon_128.webp"
   },
   {
     "id": "blizzard-avalanche-noble",
@@ -3177,7 +3623,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "blizzard",
+    "icon": "/images/skill/UI_Skill_Blizzard_support03_Icon_128.webp"
   },
   {
     "id": "blizzard-numbing-cold-noble",
@@ -3190,7 +3638,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "blizzard",
+    "icon": "/images/skill/UI_Skill_Blizzard_support04_Icon_128.webp"
   },
   {
     "id": "lightning-storm-boundless-noble",
@@ -3203,7 +3653,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "lightning-storm",
+    "icon": "/images/skill/UI_Skill_ThunderStorm_support02_Icon_128.webp"
   },
   {
     "id": "lightning-storm-raging-storm-noble",
@@ -3216,7 +3668,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "lightning-storm",
+    "icon": "/images/skill/UI_Skill_ThunderStorm_support03_Icon_128.webp"
   },
   {
     "id": "flame-core-engage-noble",
@@ -3229,7 +3683,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "flame-core",
+    "icon": "/images/skill/UI_Skill_FirePile_support02_Icon_128.webp"
   },
   {
     "id": "flame-jet-offshoot-noble",
@@ -3242,7 +3698,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "flame-jet",
+    "icon": "/images/skill/UI_Skill_FlameBlast_support03_Icon_128.webp"
   },
   {
     "id": "flame-jet-furnace-noble",
@@ -3255,7 +3713,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "flame-jet",
+    "icon": "/images/skill/UI_Skill_FlameBlast_support04_Icon_128.webp"
   },
   {
     "id": "frost-terra-cohesion-noble",
@@ -3268,7 +3728,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "frost-terra",
+    "icon": "/images/skill/UI_Skill_IceArea_support03_Icon_128.webp"
   },
   {
     "id": "frost-terra-winter-s-bite-noble",
@@ -3286,7 +3748,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "frost-terra",
+    "icon": "/images/skill/UI_Skill_IceArea_support04_Icon_128.webp"
   },
   {
     "id": "shadow-swamp-overlapping-waves-noble",
@@ -3299,7 +3763,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "shadow-swamp",
+    "icon": "/images/skill/UI_Skill_Shadowswamp_support03_Icon_128.webp"
   },
   {
     "id": "shadow-swamp-still-water-noble",
@@ -3312,7 +3778,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "shadow-swamp",
+    "icon": "/images/skill/UI_Skill_Shadowswamp_support04_Icon_128.webp"
   },
   {
     "id": "thunderbolt-overload-augmentation-noble",
@@ -3325,7 +3793,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thunderbolt-overload",
+    "icon": "/images/skill/UI_Skill_OverloadLightningBall_support03_Icon_128.webp"
   },
   {
     "id": "frost-core-puncture-noble",
@@ -3338,7 +3808,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "frost-core",
+    "icon": "/images/skill/UI_Skill_FrostCore_support02_Icon_128.webp"
   },
   {
     "id": "summon-thunder-magus-heavy-arrow-noble",
@@ -3351,7 +3823,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-thunder-magus",
+    "icon": "/images/skill/UI_Skill_SummonThunderElement_support03_Icon_128.webp"
   },
   {
     "id": "summon-thunder-magus-agility-noble",
@@ -3364,7 +3838,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-thunder-magus",
+    "icon": "/images/skill/UI_Skill_SummonThunderElement_support04_Icon_128.webp"
   },
   {
     "id": "summon-frost-magus-vengeance-noble",
@@ -3377,7 +3853,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-frost-magus",
+    "icon": "/images/skill/UI_Skill_SummonIceIceElement_support04_Icon_128.webp"
   },
   {
     "id": "summon-fire-magus-wicked-spirit-noble",
@@ -3390,7 +3868,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-fire-magus",
+    "icon": "/images/skill/UI_Skill_SummonFireElement_support04_Icon_128.webp"
   },
   {
     "id": "summon-fire-magus-engulfing-flames-noble",
@@ -3403,7 +3883,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-fire-magus",
+    "icon": "/images/skill/UI_Skill_SummonFireElement_support05_Icon_128.webp"
   },
   {
     "id": "summon-machine-guard-crushing-blow-noble",
@@ -3416,7 +3898,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-machine-guard",
+    "icon": "/images/skill/UI_Skill_SummonMechanicalGuard_support03_Icon_128.webp"
   },
   {
     "id": "summon-machine-guard-discipline-noble",
@@ -3429,7 +3913,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-machine-guard",
+    "icon": "/images/skill/UI_Skill_SummonMechanicalGuard_support04_Icon_128.webp"
   },
   {
     "id": "summon-machine-guard-dead-silence-noble",
@@ -3442,7 +3928,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-machine-guard",
+    "icon": "/images/skill/UI_Skill_SummonMechanicalGuard_support05_Icon_128.webp"
   },
   {
     "id": "summon-grim-phantom-shriek-noble",
@@ -3455,7 +3943,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-grim-phantom",
+    "icon": "/images/skill/UI_Skill_SummonPhantom_support03_Icon_128.webp"
   },
   {
     "id": "summon-grim-phantom-undercurrent-noble",
@@ -3468,7 +3958,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-grim-phantom",
+    "icon": "/images/skill/UI_Skill_SummonPhantom_support04_Icon_128.webp"
   },
   {
     "id": "summon-grim-phantom-flicker-noble",
@@ -3481,7 +3973,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-grim-phantom",
+    "icon": "/images/skill/UI_Skill_SummonPhantom_support05_Icon_128.webp"
   },
   {
     "id": "summon-spider-tank-focus-fire-noble",
@@ -3494,7 +3988,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-spider-tank",
+    "icon": "/images/skill/UI_Skill_SummonIceSpiderTank_support02_Icon_128.webp"
   },
   {
     "id": "summon-spider-tank-spider-egg-noble",
@@ -3512,7 +4008,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-spider-tank",
+    "icon": "/images/skill/UI_Skill_SummonIceSpiderTank_support03_Icon_128.webp"
   },
   {
     "id": "ghost-blade-einherjar-eruption-noble",
@@ -3525,7 +4023,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "ghost-blade-einherjar",
+    "icon": "/images/skill/UI_Skill_GhostBladeSpirit_support03_Icon_128.webp"
   },
   {
     "id": "ghost-blade-einherjar-heroes-noble",
@@ -3538,7 +4038,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "ghost-blade-einherjar",
+    "icon": "/images/skill/UI_Skill_GhostBladeSpirit_support04_Icon_128.webp"
   },
   {
     "id": "groundshaker-collapse-noble",
@@ -3551,7 +4053,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "groundshaker",
+    "icon": "/images/skill/UI_Skill_EarthShock_support03_Icon_128.webp"
   },
   {
     "id": "groundshaker-cripple-noble",
@@ -3569,7 +4073,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "groundshaker",
+    "icon": "/images/skill/UI_Skill_EarthShock_support04_Icon_128.webp"
   },
   {
     "id": "groundshaker-wrathful-vault-noble",
@@ -3582,7 +4088,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "groundshaker",
+    "icon": "/images/skill/UI_Skill_EarthShock_support05_Icon_128.webp"
   },
   {
     "id": "howling-gale-furious-sweep-noble",
@@ -3595,7 +4103,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "howling-gale",
+    "icon": "/images/skill/UI_Skill_Tornado_support03_Icon_128.webp"
   },
   {
     "id": "howling-gale-eye-of-the-gale-noble",
@@ -3608,7 +4118,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "howling-gale",
+    "icon": "/images/skill/UI_Skill_Tornado_support04_Icon_128.webp"
   },
   {
     "id": "shackles-of-malice-mutual-destruction-noble",
@@ -3621,7 +4133,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "shackles-of-malice",
+    "icon": "/images/skill/UI_Skill_EvilChain_support03_Icon_128.webp"
   },
   {
     "id": "shackles-of-malice-spite-noble",
@@ -3634,7 +4148,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "shackles-of-malice",
+    "icon": "/images/skill/UI_Skill_EvilChain_support04_Icon_128.webp"
   },
   {
     "id": "mind-control-enthrall-noble",
@@ -3647,7 +4163,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "mind-control",
+    "icon": "/images/skill/UI_Skill_LifeLeech_support03_Icon_128.webp"
   },
   {
     "id": "mind-control-entice-noble",
@@ -3665,7 +4183,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "mind-control",
+    "icon": "/images/skill/UI_Skill_LifeLeech_support04_Icon_128.webp"
   },
   {
     "id": "fire-burst-prairie-fire-noble",
@@ -3678,7 +4198,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "fire-burst",
+    "icon": "/images/skill/UI_Skill_FireBlast_support03_Icon_128.webp"
   },
   {
     "id": "fire-burst-converge-noble",
@@ -3691,7 +4213,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "fire-burst",
+    "icon": "/images/skill/UI_Skill_FireBlast_support04_Icon_128.webp"
   },
   {
     "id": "icebound-beam-chilling-spike-noble",
@@ -3704,7 +4228,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "icebound-beam",
+    "icon": "/images/skill/UI_Skill_IceRay_support03_Icon_128.webp"
   },
   {
     "id": "icebound-beam-ring-blade-noble",
@@ -3717,7 +4243,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "icebound-beam",
+    "icon": "/images/skill/UI_Skill_IceRay_support04_Icon_128.webp"
   },
   {
     "id": "scorching-beam-disintegrate-noble",
@@ -3730,7 +4258,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "scorching-beam",
+    "icon": "/images/skill/UI_Skill_FireRay_support03_Icon_128.webp"
   },
   {
     "id": "scorching-beam-immolate-noble",
@@ -3743,7 +4273,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "scorching-beam",
+    "icon": "/images/skill/UI_Skill_FireRay_support04_Icon_128.webp"
   },
   {
     "id": "thunder-core-lightning-lasso-noble",
@@ -3756,7 +4288,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thunder-core",
+    "icon": "/images/skill/UI_Skill_ThunderCore_support03_Icon_128.webp"
   },
   {
     "id": "thunder-core-augmentation-noble",
@@ -3769,7 +4303,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thunder-core",
+    "icon": "/images/skill/UI_Skill_ThunderCore_support04_Icon_128.webp"
   },
   {
     "id": "path-of-flames-heat-wave-noble",
@@ -3782,7 +4318,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "path-of-flames",
+    "icon": "/images/skill/UI_Skill_FlameRoad_support03_Icon_128.webp"
   },
   {
     "id": "path-of-flames-raging-boil-noble",
@@ -3795,7 +4333,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "path-of-flames",
+    "icon": "/images/skill/UI_Skill_FlameRoad_support04_Icon_128.webp"
   },
   {
     "id": "thundercloud-heavy-cloud-noble",
@@ -3808,7 +4348,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thundercloud",
+    "icon": "/images/skill/UI_Skill_Nimbus_support03_Icon_128.webp"
   },
   {
     "id": "thundercloud-thunderous-blow-noble",
@@ -3821,7 +4363,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thundercloud",
+    "icon": "/images/skill/UI_Skill_Nimbus_support04_Icon_128.webp"
   },
   {
     "id": "summon-rock-magus-stone-refinement-noble",
@@ -3839,7 +4383,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-rock-magus",
+    "icon": "/images/skill/UI_Skill_SummonRockElement_support03_Icon_128.webp"
   },
   {
     "id": "summon-erosion-magus-malignant-noble",
@@ -3852,7 +4398,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-erosion-magus",
+    "icon": "/images/skill/UI_Skill_SummonRotElement_support04_Icon_128.webp"
   },
   {
     "id": "summon-erosion-magus-malady-noble",
@@ -3865,7 +4413,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "summon-erosion-magus",
+    "icon": "/images/skill/UI_Skill_SummonRotElement_support05_Icon_128.webp"
   },
   {
     "id": "double-thrusts-recourse-noble",
@@ -3878,7 +4428,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "double-thrusts",
+    "icon": "/images/skill/UI_Skill_DoubleStab_support04_Icon_128.webp"
   },
   {
     "id": "lightning-beam-reverberation-noble",
@@ -3891,7 +4443,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "lightning-beam",
+    "icon": "/images/skill/UI_Skill_ThunderstormRay_support03_Icon_128.webp"
   },
   {
     "id": "lightning-beam-salvo-noble",
@@ -3904,7 +4458,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "lightning-beam",
+    "icon": "/images/skill/UI_Skill_ThunderstormRay_support04_Icon_128.webp"
   },
   {
     "id": "wilting-beam-set-course-noble",
@@ -3917,7 +4473,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "wilting-beam",
+    "icon": "/images/skill/UI_Skill_ChaosRay_support03_Icon_128.webp"
   },
   {
     "id": "wilting-beam-rapid-completion-noble",
@@ -3930,7 +4488,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "wilting-beam",
+    "icon": "/images/skill/UI_Skill_ChaosRay_support04_Icon_128.webp"
   },
   {
     "id": "electrifying-shot-multishot-noble",
@@ -3943,7 +4503,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "electrifying-shot",
+    "icon": "/images/skill/UI_Skill_LightningBullet_support02_Icon_128.webp"
   },
   {
     "id": "marked-rain-of-arrows-rainfall-noble",
@@ -3956,7 +4518,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "marked-rain-of-arrows",
+    "icon": "/images/skill/UI_Skill_MarkerArrow_support04_Icon_128.webp"
   },
   {
     "id": "haunting-abomination-hail-mary-noble",
@@ -3969,7 +4533,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "haunting-abomination",
+    "icon": "/images/skill/UI_Skill_Doom_support03_Icon_128.webp"
   },
   {
     "id": "haunting-abomination-depravity-noble",
@@ -3982,7 +4548,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "haunting-abomination",
+    "icon": "/images/skill/UI_Skill_Doom_support04_Icon_128.webp"
   },
   {
     "id": "thunder-focus-tremor-noble",
@@ -3995,7 +4563,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thunder-focus",
+    "icon": "/images/skill/UI_Skill_ThunderBless_support03_Icon_128.webp"
   },
   {
     "id": "thunder-focus-overflow-noble",
@@ -4008,7 +4578,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thunder-focus",
+    "icon": "/images/skill/UI_Skill_ThunderBless_support04_Icon_128.webp"
   },
   {
     "id": "flame-focus-blast-noble",
@@ -4021,7 +4593,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "flame-focus",
+    "icon": "/images/skill/UI_Skill_FireBless_support03_Icon_128.webp"
   },
   {
     "id": "corrosion-focus-splash-noble",
@@ -4034,7 +4608,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "corrosion-focus",
+    "icon": "/images/skill/UI_Skill_ChaosBless_support03_Icon_128.webp"
   },
   {
     "id": "ice-focus-frigid-wind-noble",
@@ -4052,7 +4628,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "ice-focus",
+    "icon": "/images/skill/UI_Skill_IceBless_support03_Icon_128.webp"
   },
   {
     "id": "ice-focus-solemn-chill-noble",
@@ -4065,7 +4643,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "ice-focus",
+    "icon": "/images/skill/UI_Skill_IceBless_support04_Icon_128.webp"
   },
   {
     "id": "acuteness-focus-dull-pain-noble",
@@ -4078,7 +4658,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "acuteness-focus",
+    "icon": "/images/skill/UI_Skill_PhysicalBless_support03_Icon_128.webp"
   },
   {
     "id": "acuteness-focus-remaining-strength-noble",
@@ -4091,7 +4673,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "acuteness-focus",
+    "icon": "/images/skill/UI_Skill_PhysicalBless_support04_Icon_128.webp"
   },
   {
     "id": "crescent-slash-flash-noble",
@@ -4109,7 +4693,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "crescent-slash",
+    "icon": "/images/skill/UI_Skill_ArcSlash_support03_Icon_128.webp"
   },
   {
     "id": "crescent-slash-rising-noble",
@@ -4127,7 +4713,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "crescent-slash",
+    "icon": "/images/skill/UI_Skill_ArcSlash_support04_Icon_128.webp"
   },
   {
     "id": "serpent-beam-torrent-noble",
@@ -4140,7 +4728,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "serpent-beam",
+    "icon": "/images/skill/UI_Skill_FlameSerpent_support03_Icon_128.webp"
   },
   {
     "id": "serpent-beam-twin-blaze-noble",
@@ -4153,7 +4743,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "serpent-beam",
+    "icon": "/images/skill/UI_Skill_FlameSerpent_support04_Icon_128.webp"
   },
   {
     "id": "gale-slash-soaring-noble",
@@ -4166,7 +4758,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "gale-slash",
+    "icon": "/images/skill/UI_Skill_WindSlash_support03_Icon_128.webp"
   },
   {
     "id": "gale-slash-brutality-noble",
@@ -4179,7 +4773,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "gale-slash",
+    "icon": "/images/skill/UI_Skill_WindSlash_support04_Icon_128.webp"
   },
   {
     "id": "spectral-slash-legion-noble",
@@ -4192,7 +4788,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "spectral-slash",
+    "icon": "/images/skill/UI_Skill_PhantomSlash_support02_Icon_128.webp"
   },
   {
     "id": "spectral-slash-synchrony-noble",
@@ -4205,14 +4803,18 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "spectral-slash",
+    "icon": "/images/skill/UI_Skill_PhantomSlash_support03_Icon_128.webp"
   },
   {
     "id": "frigid-transmission-thin-ice-noble",
     "name": "Frigid Transmission: Thin Ice (Noble)",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "frigid-transmission",
+    "icon": "/images/skill/UI_Skill_IceBlink_support01_Icon_128.webp"
   },
   {
     "id": "chromatic-shot-splendor-noble",
@@ -4225,7 +4827,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "chromatic-shot",
+    "icon": "/images/skill/UI_Skill_Prismaticbolt_support02_Icon_128.webp"
   },
   {
     "id": "modularization-superconductivity-noble",
@@ -4238,7 +4842,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "modularization",
+    "icon": "/images/skill/UI_Skill_Modular_support04_Icon_128.webp"
   },
   {
     "id": "modularization-calibrate-noble",
@@ -4251,7 +4857,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "modularization",
+    "icon": "/images/skill/UI_Skill_Modular_support05_Icon_128.webp"
   },
   {
     "id": "modularization-compress-noble",
@@ -4264,7 +4872,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "modularization",
+    "icon": "/images/skill/UI_Skill_Modular_support06_Icon_128.webp"
   },
   {
     "id": "modularization-sever-noble",
@@ -4282,7 +4892,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "modularization",
+    "icon": "/images/skill/UI_Skill_Modular_support07_Icon_128.webp"
   },
   {
     "id": "haunting-abomination-misdeeds-noble",
@@ -4295,7 +4907,9 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "haunting-abomination",
+    "icon": "/images/skill/UI_Skill_Doom_support01_Icon_128.webp"
   },
   {
     "id": "thornfield-retribution-noble",
@@ -4308,7 +4922,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "thornfield"
   },
   {
     "id": "tidewell-undertow-noble",
@@ -4321,7 +4936,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "tidewell"
   },
   {
     "id": "fallen-star-starfall-noble",
@@ -4334,7 +4950,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "fallen-star"
   },
   {
     "id": "fallen-star-gravity-noble",
@@ -4347,7 +4964,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "fallen-star"
   },
   {
     "id": "nether-grasp-extermination-noble",
@@ -4360,7 +4978,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "nether-grasp"
   },
   {
     "id": "storm-field-conduction-noble",
@@ -4373,7 +4992,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "storm-field"
   },
   {
     "id": "chromatic-shot-condensed-cold-noble",
@@ -4386,7 +5006,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "chromatic-shot"
   },
   {
     "id": "chromatic-shot-condensed-fire-noble",
@@ -4399,7 +5020,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "chromatic-shot"
   },
   {
     "id": "chromatic-shot-condensed-lightning-noble",
@@ -4412,7 +5034,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "chromatic-shot"
   },
   {
     "id": "chromatic-shot-condensed-erosion-noble",
@@ -4425,13 +5048,15 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "requiresSkillId": "chromatic-shot"
   },
   {
     "id": "fearless",
     "name": "Fearless",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_Rabid_Icon_128.webp"
   },
   {
     "id": "weapon-amplification",
@@ -4443,13 +5068,15 @@
         "value": 0.35
       }
     ],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_Weapon_Icon_128.webp"
   },
   {
     "id": "rejuvenation",
     "name": "Rejuvenation",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_Regen_Icon_128.webp"
   },
   {
     "id": "electric-conversion",
@@ -4461,7 +5088,8 @@
         "value": 0.35
       }
     ],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_LightingAura_Icon_128.webp"
   },
   {
     "id": "frigid-domain",
@@ -4473,49 +5101,57 @@
         "value": 0.35
       }
     ],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_IceAura_Icon_128.webp"
   },
   {
     "id": "nimbleness",
     "name": "Nimbleness",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_Agility_Icon_128.webp"
   },
   {
     "id": "spell-amplification",
     "name": "Spell Amplification",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_ElementalEnhance_Icon_128.webp"
   },
   {
     "id": "energy-fortress",
     "name": "Energy Fortress",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_EnergyFort_Icon_128.webp"
   },
   {
     "id": "magical-source",
     "name": "Magical Source",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SourceOfMana_Icon_128.webp"
   },
   {
     "id": "precise-projectiles",
     "name": "Precise Projectiles",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_PreciseProjectile_Icon_128.webp"
   },
   {
     "id": "elemental-resistance",
     "name": "Elemental Resistance",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_ElementalResistance_Icon_128.webp"
   },
   {
     "id": "swiftness",
     "name": "Swiftness",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_Haste_Icon_128.webp"
   },
   {
     "id": "deep-pain",
@@ -4527,7 +5163,8 @@
         "value": 0.35
       }
     ],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_DeepPain_Icon_128.webp"
   },
   {
     "id": "erosion-amplification",
@@ -4539,7 +5176,8 @@
         "value": 0.35
       }
     ],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_ChaosEnhance_Icon_128.webp"
   },
   {
     "id": "charged-flames",
@@ -4551,7 +5189,8 @@
         "value": 0.35
       }
     ],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_FireAura_Icon_128.webp"
   },
   {
     "id": "steadfast",
@@ -4563,13 +5202,15 @@
         "value": 6000
       }
     ],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_Solid_Icon_128.webp"
   },
   {
     "id": "summon-fire-magus",
     "name": "Summon Fire Magus",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SummonFireElement_Icon_128.webp"
   },
   {
     "id": "summon-frost-magus",
@@ -4737,7 +5378,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SummonIceIceElement_Icon_128.webp"
   },
   {
     "id": "summon-thunder-magus",
@@ -5151,7 +5793,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SummonThunderElement_Icon_128.webp"
   },
   {
     "id": "acuteness-focus",
@@ -5565,7 +6208,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_PhysicalBless_128.webp"
   },
   {
     "id": "corrosion-focus",
@@ -5979,7 +6623,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_ChaosBless_128.webp"
   },
   {
     "id": "ice-focus",
@@ -6393,7 +7038,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_IceBless_128.webp"
   },
   {
     "id": "thunder-focus",
@@ -6807,7 +7453,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_ThunderBless_128.webp"
   },
   {
     "id": "flame-focus",
@@ -7221,7 +7868,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_FireBless_128.webp"
   },
   {
     "id": "summon-rock-magus",
@@ -7233,7 +7881,8 @@
         "value": -0.5
       }
     ],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_SummonRockElement_Icon_128.webp"
   },
   {
     "id": "summon-erosion-magus",
@@ -7242,45 +7891,46 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.0915
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
         "value": -0.5
       }
     ],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_SummonRotElement_Icon_128.webp"
   },
   {
     "id": "radical-order",
     "name": "Radical Order",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_MinionEnhance_Icon_128.webp"
   },
   {
     "id": "cruelty",
     "name": "Cruelty",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_AttackEnhance_Icon_128.webp"
   },
   {
     "id": "domain-expansion",
     "name": "Domain Expansion",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_AreaEnhance_Icon_128.webp"
   },
   {
     "id": "ailment-amplification",
     "name": "Ailment Amplification",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_AilmentEnhance_Icon_128.webp"
   },
   {
     "id": "precise-fearless",
     "name": "Precise: Fearless",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_RabidSpecial_Icon_128.webp"
   },
   {
     "id": "precise-weapon-amplification",
@@ -7292,13 +7942,15 @@
         "value": 0.4
       }
     ],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_WeaponSpecial_Icon_128.webp"
   },
   {
     "id": "precise-rejuvenation",
     "name": "Precise: Rejuvenation",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_RegenSpecial_Icon_128.webp"
   },
   {
     "id": "precise-electric-conversion",
@@ -7310,7 +7962,8 @@
         "value": 0.4
       }
     ],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_LightingAuraSpecial_Icon_128.webp"
   },
   {
     "id": "precise-frigid-domain",
@@ -7322,49 +7975,57 @@
         "value": 0.4
       }
     ],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_IceAuraSpecial_Icon_128.webp"
   },
   {
     "id": "precise-nimbleness",
     "name": "Precise: Nimbleness",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_AgilitySpecial_Icon_128.webp"
   },
   {
     "id": "precise-spell-amplification",
     "name": "Precise: Spell Amplification",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_ElementalEnhanceSpecial_Icon_128.webp"
   },
   {
     "id": "precise-energy-fortress",
     "name": "Precise: Energy Fortress",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_EnergyFortSpecial_Icon_128.webp"
   },
   {
     "id": "precise-magical-source",
     "name": "Precise: Magical Source",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SourceOfManaSpecial_Icon_128.webp"
   },
   {
     "id": "precise-precise-projectiles",
     "name": "Precise: Precise Projectiles",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_PreciseProjectileSpecial_Icon_128.webp"
   },
   {
     "id": "precise-elemental-resistance",
     "name": "Precise: Elemental Resistance",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_ElementalResistanceSpecial_Icon_128.webp"
   },
   {
     "id": "precise-swiftness",
     "name": "Precise: Swiftness",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_HasteSpecial_Icon_128.webp"
   },
   {
     "id": "precise-deep-pain",
@@ -7376,7 +8037,8 @@
         "value": 0.4
       }
     ],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_DeepPainSpecial_Icon_128.webp"
   },
   {
     "id": "precise-erosion-amplification",
@@ -7388,7 +8050,8 @@
         "value": 0.4
       }
     ],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_ChaosEnhanceSpecial_Icon_128.webp"
   },
   {
     "id": "precise-charged-flames",
@@ -7400,7 +8063,8 @@
         "value": 0.4
       }
     ],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_FireAuraSpecial_Icon_128.webp"
   },
   {
     "id": "precise-steadfast",
@@ -7412,7 +8076,8 @@
         "value": 6000
       }
     ],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_SkillIcon_Skill_SolidSpecial_Icon_128.webp"
   },
   {
     "id": "precise-acuteness-focus",
@@ -8031,7 +8696,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_PhysicalBlessSpecial_128.webp"
   },
   {
     "id": "precise-corrosion-focus",
@@ -8650,7 +9316,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_ChaosBlessSpecial_128.webp"
   },
   {
     "id": "precise-ice-focus",
@@ -9269,7 +9936,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_IceBlessSpecial_128.webp"
   },
   {
     "id": "precise-thunder-focus",
@@ -9888,7 +10556,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_ThunderBlessSpecial_128.webp"
   },
   {
     "id": "precise-flame-focus",
@@ -10507,31 +11176,36 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_FireBlessSpecial_128.webp"
   },
   {
     "id": "precise-radical-order",
     "name": "Precise: Radical Order",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_MinionEnhanceSpecial_Icon_128.webp"
   },
   {
     "id": "precise-cruelty",
     "name": "Precise: Cruelty",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_AttackEnhanceSpecial_Icon_128.webp"
   },
   {
     "id": "precise-domain-expansion",
     "name": "Precise: Domain Expansion",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_AreaEnhanceSpecial_Icon_128.webp"
   },
   {
     "id": "precise-ailment-amplification",
     "name": "Precise: Ailment Amplification",
     "modifiers": [],
-    "requiresTags": []
+    "requiresTags": [],
+    "icon": "/images/skill/UI_Skill_AilmentEnhanceSpecial_Icon_128.webp"
   },
   {
     "id": "multiple-projectiles",
@@ -10946,7 +11620,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_ExtraProjectiles_128.webp"
   },
   {
     "id": "multistrike",
@@ -11119,7 +11794,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_Multistrike_128.webp"
   },
   {
     "id": "projectile-split",
@@ -11534,7 +12210,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_Split_128.webp"
   },
   {
     "id": "increased-area",
@@ -11547,7 +12224,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/Icon_Support_IncreasedArea_128.webp"
   },
   {
     "id": "melee-knockback",
@@ -11962,7 +12640,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_MeleeKnockback_128.webp"
   },
   {
     "id": "overload",
@@ -11975,7 +12654,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_Overload_Icon_128.webp"
   },
   {
     "id": "tendonslicer",
@@ -12595,7 +13275,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_HighEnergyCrash_Icon_128.webp"
   },
   {
     "id": "glacial-freeze",
@@ -13010,14 +13691,16 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_Frozen_128.webp"
   },
   {
     "id": "additional-ignite",
     "name": "Additional Ignite",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/Icon_Support_Rekindle_128.webp"
   },
   {
     "id": "high-voltage",
@@ -13432,7 +14115,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_HighVoltage_128.webp"
   },
   {
     "id": "quick-mobility",
@@ -13601,7 +14285,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_FasterTravel_128.webp"
   },
   {
     "id": "extended-duration",
@@ -13770,7 +14455,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_IncreasedDuration_128.webp"
   },
   {
     "id": "spell-concentration",
@@ -13783,7 +14469,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/Icon_Support_SpellConcentration_128.webp"
   },
   {
     "id": "added-erosion-damage",
@@ -13796,7 +14483,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/Icon_Support_AddedChaosDamage_128.webp"
   },
   {
     "id": "critical-strike-rating-increase",
@@ -13965,7 +14653,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_IncreasedCriticalRate_128.webp"
   },
   {
     "id": "critical-strike-damage-increase",
@@ -14380,7 +15069,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_IncreasedCriticalDamage_128.webp"
   },
   {
     "id": "physical-to-fire",
@@ -14549,7 +15239,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_PhysicalToFire_128.webp"
   },
   {
     "id": "lightning-to-cold",
@@ -14964,7 +15655,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_LightningToIce_128.webp"
   },
   {
     "id": "deep-wounds",
@@ -15133,14 +15825,16 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_DeeperWound_128.webp"
   },
   {
     "id": "improved-corrosion",
     "name": "Improved Corrosion",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/Icon_Support_Hypertoxin_128.webp"
   },
   {
     "id": "passivation",
@@ -15153,7 +15847,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_Passivation_Icon_128.webp"
   },
   {
     "id": "quick-decision",
@@ -15325,14 +16020,16 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_FasterCasting_128.webp"
   },
   {
     "id": "cost-conversion",
     "name": "Cost Conversion",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 250
+    "manaMultiplier": 250,
+    "icon": "/images/skill/UI_SkillIcon_Support_BloodMagic_Icon_128.webp"
   },
   {
     "id": "jump",
@@ -15747,7 +16444,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_Bounce_128.webp"
   },
   {
     "id": "shortened-duration",
@@ -15760,7 +16458,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/Icon_Support_LessDuration_128.webp"
   },
   {
     "id": "added-fire-damage",
@@ -15773,7 +16472,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/Icon_Support_AddedFireDamage_128.webp"
   },
   {
     "id": "added-cold-damage",
@@ -15786,7 +16486,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/Icon_Support_AddedIceDamage_128.webp"
   },
   {
     "id": "added-lightning-damage",
@@ -15799,7 +16500,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/Icon_Support_AddedLightningDamage_128.webp"
   },
   {
     "id": "control-spell",
@@ -16214,7 +16916,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_ControlledSpell_128.webp"
   },
   {
     "id": "elemental-fusion",
@@ -16383,7 +17086,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_ElemetalFocus_128.webp"
   },
   {
     "id": "recklessness",
@@ -16798,7 +17502,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_Slaughter_Icon_128.webp"
   },
   {
     "id": "slow-projectile",
@@ -17213,7 +17918,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_SlowerProjectiles_128.webp"
   },
   {
     "id": "grudge",
@@ -17226,7 +17932,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_Grudge_Icon_128.webp"
   },
   {
     "id": "projectile-penetration",
@@ -17641,7 +18348,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_Pierce_128.webp"
   },
   {
     "id": "steamroll",
@@ -18056,14 +18764,16 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_Crush_128.webp"
   },
   {
     "id": "cataclysm",
     "name": "Cataclysm",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/Icon_Support_Catalyst_128.webp"
   },
   {
     "id": "hunting-tempo",
@@ -18478,7 +19188,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_EmergencyStopShot_Icon_128.webp"
   },
   {
     "id": "multifaceted-guard",
@@ -18893,7 +19604,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_MultifacetedGuard_Icon_128.webp"
   },
   {
     "id": "sentry-modification",
@@ -19062,7 +19774,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ModifiedSentinel_Icon_128.webp"
   },
   {
     "id": "fire-explosion",
@@ -19477,7 +20190,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_FireBurst_128.webp"
   },
   {
     "id": "nova-shot",
@@ -19490,7 +20204,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_Lob_Icon_128.webp"
   },
   {
     "id": "precision-strike",
@@ -19905,7 +20620,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Skill_FlameBlast_128.webp"
   },
   {
     "id": "haunt",
@@ -19918,7 +20634,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_SkillIcon_Support_PhantomStab_Icon_128.webp"
   },
   {
     "id": "guard",
@@ -20333,7 +21050,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Support_ProtectWhenChanneling_Icon_128.webp"
   },
   {
     "id": "channel-preparation",
@@ -20748,14 +21466,16 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Support_PreparedChanneling_Icon_128.webp"
   },
   {
     "id": "raging-slash",
     "name": "Raging Slash",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_FurySlah_Icon_128.webp"
   },
   {
     "id": "quick-return",
@@ -21170,7 +21890,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_FastReturn_Icon_128.webp"
   },
   {
     "id": "restrain",
@@ -21339,7 +22060,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_Enlightenment_128.webp"
   },
   {
     "id": "attack-focus",
@@ -21352,7 +22074,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/Icon_Support_AttackFocusing_128.webp"
   },
   {
     "id": "wind-projectiles",
@@ -21365,7 +22088,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/Icon_Support_WindShoot_128.webp"
   },
   {
     "id": "pain-amplification",
@@ -21780,14 +22504,16 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Support_PainIntensify_Icon_128.webp"
   },
   {
     "id": "blind",
     "name": "Blind",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/Icon_Support_Blind_128.webp"
   },
   {
     "id": "electric-punishment",
@@ -21805,7 +22531,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/Icon_Support_Conduction_128.webp"
   },
   {
     "id": "ailment-termination",
@@ -22220,7 +22947,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_AilmentFinish_128.webp"
   },
   {
     "id": "enhanced-ailment",
@@ -22389,14 +23117,16 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_AilmentEnhance_128.webp"
   },
   {
     "id": "added-physical-damage",
     "name": "Added Physical Damage",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_AddedPhysicalDamage_Icon_128.webp"
   },
   {
     "id": "cooldown-reduction",
@@ -22565,7 +23295,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_CooldownReduce_128.webp"
   },
   {
     "id": "emergency-restoration",
@@ -22734,14 +23465,16 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Support_EmergentRecover_Icon_128.webp"
   },
   {
     "id": "instant-restoration",
     "name": "Instant restoration",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_SkillIcon_Support_InstantRecover_Icon_128.webp"
   },
   {
     "id": "ground-divide",
@@ -23156,7 +23889,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_AreaSplit_Icon_128.webp"
   },
   {
     "id": "scattershot-beam",
@@ -23571,7 +24305,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_SplitRay_Icon_128.webp"
   },
   {
     "id": "focused-beam",
@@ -23584,7 +24319,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_ConcentratedRay_Icon_128.webp"
   },
   {
     "id": "refracted-prism",
@@ -23999,7 +24735,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_RefractionRay_Icon_128.webp"
   },
   {
     "id": "servant-damage",
@@ -24414,7 +25151,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Support_MinionDamage_Icon_128.webp"
   },
   {
     "id": "servant-life",
@@ -24583,7 +25321,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Support_MinionHealth_Icon_128.webp"
   },
   {
     "id": "elemental-duo",
@@ -24998,7 +25737,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Support_ElementalDouble_Icon_128.webp"
   },
   {
     "id": "maniacal-army",
@@ -25011,7 +25751,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_SkillIcon_Support_RabidArmy_Icon_128.webp"
   },
   {
     "id": "mechanical-modification",
@@ -25024,7 +25765,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_SkillIcon_Support_MachineReform_Icon_128.webp"
   },
   {
     "id": "assault-command",
@@ -25439,20 +26181,16 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Support_AttackCommand_Icon_128.webp"
   },
   {
     "id": "defense-form",
     "name": "Defense Form",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.05
-      }
-    ],
+    "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_SkillIcon_Support_DefendStance_Icon_128.webp"
   },
   {
     "id": "well-fought-battle",
@@ -25462,34 +26200,32 @@
     "manaMultiplier": 110,
     "cannotSupport": [
       "Summon"
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_BathInBlood_Icon_128.webp"
   },
   {
     "id": "fragile-resurrection",
     "name": "Fragile Resurrection",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.1
-      }
-    ],
+    "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_FragileResurrection_Icon_128.webp"
   },
   {
     "id": "residues",
     "name": "Residues",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_MedicineResidue_Icon_128.webp"
   },
   {
     "id": "all-in",
     "name": "All In",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_AtADash_Icon_128.webp"
   },
   {
     "id": "iron-fortification",
@@ -25904,14 +26640,16 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ArmourStill_Icon_128.webp"
   },
   {
     "id": "emergency-avoidance",
     "name": "Emergency Avoidance",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_EmergencyAvoidance_Icon_128.webp"
   },
   {
     "id": "concentration-warcry",
@@ -26080,21 +26818,24 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_TogatherBattleCry_Icon_128.webp"
   },
   {
     "id": "lion-s-roars",
     "name": "Lion's Roars",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_AgainBattleCry_Icon_128.webp"
   },
   {
     "id": "periodic-burst",
     "name": "Periodic Burst",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_IntermittentBursts_Icon_128.webp"
   },
   {
     "id": "terrain-of-malice",
@@ -26263,7 +27004,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_CurseArea_Icon_128.webp"
   },
   {
     "id": "electric-overload",
@@ -26878,7 +27620,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_LightingTreat_Icon_128.webp"
   },
   {
     "id": "elemental-impact",
@@ -27047,7 +27790,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_ElementBlast_Icon_128.webp"
   },
   {
     "id": "carpet-bombardment",
@@ -27065,14 +27809,16 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_Incessantly_Icon_128.webp"
   },
   {
     "id": "mass-effect",
     "name": "Mass Effect",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_MassEffect_Icon_128.webp"
   },
   {
     "id": "defense-layers",
@@ -27241,7 +27987,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_MultiLayeredDefense_Icon_128.webp"
   },
   {
     "id": "focus-acceleration",
@@ -27410,7 +28157,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_EnhanceBenefit_Icon_128.webp"
   },
   {
     "id": "focus-buff",
@@ -27579,14 +28327,16 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_EnhanceDamage_Icon_128.webp"
   },
   {
     "id": "seal-conversion",
     "name": "Seal Conversion",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_SkillIcon_Support_BloodMagic_Icon_128.webp"
   },
   {
     "id": "psychic-burst",
@@ -28001,21 +28751,24 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_Surge_Icon_128.webp"
   },
   {
     "id": "magic-dash",
     "name": "Magic Dash",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_AccelerateAfterSpell_Icon_128.webp"
   },
   {
     "id": "psychic-surge",
     "name": "Psychic Surge",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_SpellFall_Icon_128.webp"
   },
   {
     "id": "savage-growth",
@@ -28028,7 +28781,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_BrutalGrowth_Icon_128.webp"
   },
   {
     "id": "harvest-time",
@@ -28041,7 +28795,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_HarvestTime_Icon_128.webp"
   },
   {
     "id": "preparation",
@@ -28214,14 +28969,16 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_BarrierDetonate_Icon_128.webp"
   },
   {
     "id": "charge",
     "name": "Charge",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_Gathering_Icon_128.webp"
   },
   {
     "id": "gladiator-s-roar",
@@ -28390,7 +29147,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_GladiatorialRoar_Icon_128.webp"
   },
   {
     "id": "aura-amplification",
@@ -28559,14 +29317,16 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_AuraEnhance_Icon_128.webp"
   },
   {
     "id": "friend-of-spirit-magi",
     "name": "Friend of Spirit Magi",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_FriendsOfSpiritMagus_Icon_128.webp"
   },
   {
     "id": "protection-field",
@@ -28735,7 +29495,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_FieldOfShield_Icon_128.webp"
   },
   {
     "id": "hyper-metabolism",
@@ -28904,7 +29665,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_AutoCharge_Icon_128.webp"
   },
   {
     "id": "emergency-aid",
@@ -29073,7 +29835,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_EmergentCharge_Icon_128.webp"
   },
   {
     "id": "medicinal-buildup",
@@ -29242,14 +30005,16 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_PerfusedCharge_Icon_128.webp"
   },
   {
     "id": "reclusion",
     "name": "Reclusion",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_Seclusion_Icon_128.webp"
   },
   {
     "id": "willpower",
@@ -29262,7 +30027,8 @@
       }
     ],
     "requiresTags": [],
-    "manaMultiplier": 110
+    "manaMultiplier": 110,
+    "icon": "/images/skill/UI_Skill_Determination_Icon_128.webp"
   },
   {
     "id": "recuperation",
@@ -29431,7 +30197,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_Breathing_Icon_128.webp"
   },
   {
     "id": "spell-tangle",
@@ -29851,7 +30618,8 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_Entanglement_Icon_128.webp"
   },
   {
     "id": "manifold-entanglement",
@@ -30271,14 +31039,16 @@
           }
         ]
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_MultiEntanglement_Icon_128.webp"
   },
   {
     "id": "precise-seal-conversion",
     "name": "Precise: Seal Conversion",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_SkillIcon_Support_BloodMagicSpecial_Icon_128.webp"
   },
   {
     "id": "precise-selfless",
@@ -30447,7 +31217,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Support_SelflessSpecial_Icon_128.webp"
   },
   {
     "id": "precise-selfishness",
@@ -30616,21 +31387,24 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Support_SelfishSpecial_Icon_128.webp"
   },
   {
     "id": "precise-stand-as-one",
     "name": "Precise: Stand as One",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_SkillIcon_Support_MoreIsGreatSpecial_Icon_128.webp"
   },
   {
     "id": "precise-disciplined",
     "name": "Precise: Disciplined",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_SelfDisciplineSpecial_Icon_128.webp"
   },
   {
     "id": "precise-concentrated",
@@ -30799,21 +31573,24 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_AuraConcentrateSpecial_Icon_128.webp"
   },
   {
     "id": "precise-malleable",
     "name": "Precise: Malleable",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_StrongFaceStrongSpecial_Icon_128.webp"
   },
   {
     "id": "precise-safety-in-numbers",
     "name": "Precise: Safety in Numbers",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_PeopleStrongSpecial_Icon_128.webp"
   },
   {
     "id": "precise-focus-buff",
@@ -30982,7 +31759,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_EnhanceDamageSpecial_Icon_128.webp"
   },
   {
     "id": "precise-superpower",
@@ -31151,14 +31929,16 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Support_SysmbiosisSpecial_Icon_128.webp"
   },
   {
     "id": "precise-friend-of-spirit-magi",
     "name": "Precise: Friend of Spirit Magi",
     "modifiers": [],
     "requiresTags": [],
-    "manaMultiplier": 100
+    "manaMultiplier": 100,
+    "icon": "/images/skill/UI_Skill_FriendsOfSpiritMagusSpecial_Icon_128.webp"
   },
   {
     "id": "precise-protection-field",
@@ -31327,7 +32107,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_SkillIcon_Skill_FieldOfShieldSpecial_Icon_128.webp"
   },
   {
     "id": "precise-restrain",
@@ -31496,7 +32277,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/Icon_Support_EnlightenmentSpecial_128.webp"
   },
   {
     "id": "precise-harmony",
@@ -31665,7 +32447,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_MixElementSpecial_Icon_128.webp"
   },
   {
     "id": "precise-purify",
@@ -31834,7 +32617,8 @@
         "level": 40,
         "modifiers": []
       }
-    ]
+    ],
+    "icon": "/images/skill/UI_Skill_PurifySpecial_Icon_128.webp"
   },
   {
     "id": "channeled-depths",

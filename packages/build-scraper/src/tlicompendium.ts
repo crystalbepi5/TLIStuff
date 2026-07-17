@@ -22,6 +22,7 @@ import type {
   MemoryAffix,
   MemoryAffixPools,
   MemoryRevival,
+  Modifier,
   PactSpirit,
   ProgressionNode,
   ProgressionTree,
@@ -122,9 +123,29 @@ const SLOT_MAP: Record<string, GearSlot> = {
   Finger: 'ring'
 };
 
+/** Shared lowercase-underscore category vocabulary used by both gear-master's
+ * `section.category` and the legendaries-en bundle's key path (see
+ * legendarySlotFromKey below) -- confirmed the same strings appear in both. */
+const CATEGORY_SLOT: Record<string, GearSlot> = {
+  boots: 'boots',
+  chest_armor: 'chest',
+  gloves: 'gloves',
+  helmet: 'helmet',
+  one_handed: 'weapon',
+  two_handed: 'weapon',
+  shield: 'offhand',
+  amulet: 'amulet',
+  necklace: 'amulet',
+  ring: 'ring',
+  spirit_ring: 'ring',
+  belt: 'belt',
+  waist: 'belt'
+};
+
 interface GearLeaf {
   name: string;
   slotType?: string;
+  icon?: string;
   implicits?: { rawText?: string }[];
 }
 
@@ -137,7 +158,15 @@ export function mapGear(bundle: unknown): GearBase[] {
     if (!slot) continue; // skip unknown/empty slot types
     const text = (e.implicits ?? []).map((i) => i.rawText ?? '').join('\n');
     const id = idFromName(e.name);
-    if (!byId.has(id)) byId.set(id, { id, name: e.name, slot, implicit: parseModifiers(text) });
+    if (!byId.has(id)) {
+      byId.set(id, {
+        id,
+        name: e.name,
+        slot,
+        implicit: parseModifiers(text),
+        ...(e.icon ? { icon: e.icon } : {})
+      });
+    }
   }
   return [...byId.values()];
 }
@@ -147,54 +176,86 @@ interface LegendaryLeaf {
   mods?: { normalRawText?: string }[];
 }
 
-const SLOT_KEYWORDS: [RegExp, GearSlot][] = [
-  [/boots|greaves|stride|treads|sabatons/i, 'boots'],
-  [/glove|gauntlet|grip|fist|knuckle|hand/i, 'gloves'],
-  [/helm|hood|mask|crown|visage|circlet|cap/i, 'helmet'],
-  [/belt|girdle|sash|waist|buckle/i, 'belt'],
-  [/amulet|necklace|pendant|choker|collar/i, 'amulet'],
-  [/ring|band|loop|signet/i, 'ring'],
-  [/armor|armour|vest|robe|plate|garb|cloak|mantle|shroud|carapace|chest/i, 'chest']
-];
-
-/** Best-effort slot from a legendary's name (the bundle has no slot field). */
-function inferSlot(name: string): GearSlot {
-  for (const [re, slot] of SLOT_KEYWORDS) if (re.test(name)) return slot;
-  return 'weapon';
+/**
+ * Real slot from the legendaries-en bundle's own top-level key path, e.g.
+ * "legendaries/boots/dex_boots/i18n/en" -> category "boots" -- confirmed live
+ * against the SS13 bundle, every top-level key encodes its category as the
+ * 2nd path segment. "trinket" is a catch-all parent category whose real slot
+ * is the *next* segment instead (confirmed live:
+ * legendaries/trinket/{belt,necklace,ring,spirit_ring}/i18n/en), so it's
+ * special-cased to look one level deeper. Categories CATEGORY_SLOT doesn't
+ * know (i.e. not modelled by the closed GearSlot union) return undefined and
+ * are skipped, same as CATEGORY_SLOT's other call sites in this file.
+ *
+ * Replaces a previous name-based regex guess (inferSlot/SLOT_KEYWORDS) that
+ * produced confirmed false positives -- e.g. "Devouring Tide" contains "ring"
+ * as a substring and was misclassified as a ring, and shield items had no
+ * matching keyword and silently defaulted to 'weapon'.
+ */
+function legendarySlotFromKey(key: string): GearSlot | undefined {
+  const parts = key.split('/');
+  const category = parts[1] === 'trinket' ? parts[2] : parts[1];
+  return category ? CATEGORY_SLOT[category] : undefined;
 }
 
-/** Map the `legendaries` bundle to GearBase[]. NOTE: legendaries carry no slot
- * field, so slot is inferred from the name — imperfect and documented. */
+/** Map the `legendaries` bundle to GearBase[], slot derived from the bundle's
+ * own key path (see legendarySlotFromKey) rather than guessed from the name. */
 export function mapLegendaries(bundle: unknown): GearBase[] {
   const byId = new Map<string, GearBase>();
-  for (const raw of leaves(bundle)) {
-    const e = raw as unknown as LegendaryLeaf;
-    if (!Array.isArray(e.mods)) continue; // skip label-only leaves
-    const text = e.mods.map((m) => stripHtml(m.normalRawText ?? '')).join('\n');
-    const id = idFromName(e.name);
-    if (!byId.has(id)) {
-      byId.set(id, { id, name: e.name, slot: inferSlot(e.name), implicit: parseModifiers(text) });
+  for (const [key, section] of Object.entries(bundle as Record<string, unknown>)) {
+    const slot = legendarySlotFromKey(key);
+    if (!slot) continue; // unknown category (e.g. not yet in CATEGORY_SLOT)
+    for (const raw of leaves(section)) {
+      const e = raw as unknown as LegendaryLeaf;
+      if (!Array.isArray(e.mods)) continue; // skip label-only leaves
+      const text = e.mods.map((m) => stripHtml(m.normalRawText ?? '')).join('\n');
+      const id = idFromName(e.name);
+      if (!byId.has(id)) {
+        byId.set(id, { id, name: e.name, slot, implicit: parseModifiers(text) });
+      }
     }
   }
   return [...byId.values()];
 }
 
-interface TraitLeaf {
+interface TraitTierRaw {
+  level?: number;
+  description?: string;
+}
+interface TraitRaw {
   name: string;
-  tiers?: { level?: number; description?: string }[];
+  tiers?: TraitTierRaw[];
+}
+interface HeroTraitEntry {
+  characterName?: string;
+  traits?: Record<string, TraitRaw>;
 }
 
-/** Map the `hero-trait` bundle to Talent[] (heroId unknown at leaf → 'any'). */
+/**
+ * Map the `hero-trait` bundle to Talent[], scoped to the real owning hero.
+ * The bundle nests traits under each hero (`heroes[uuid].characterName` +
+ * `.traits`) -- confirmed against the real scrape (e.g. "Rehan" owns a trait
+ * named "Anger"). heroId is derived as idFromName(characterName), same
+ * convention as every other id in this file. Previously every trait got the
+ * placeholder heroId 'any' regardless of which hero it actually belongs to,
+ * so hero-specific traits could be selected (and their modifiers applied)
+ * on any hero in the planner -- a real, confirmed bug.
+ */
 export function mapHeroTraits(bundle: unknown): Talent[] {
   const byId = new Map<string, Talent>();
-  for (const raw of leaves(bundle)) {
-    const e = raw as unknown as TraitLeaf;
-    if (!Array.isArray(e.tiers) || e.tiers.length === 0) continue;
-    const top = e.tiers[e.tiers.length - 1]; // highest tier
-    const text = stripHtml(top?.description ?? '');
-    const id = idFromName(e.name);
-    if (!byId.has(id)) {
-      byId.set(id, { id, name: e.name, heroId: 'any', modifiers: parseModifiers(text) });
+  const sections = Object.values(bundle as Record<string, { heroes?: Record<string, HeroTraitEntry> }>);
+  for (const section of sections) {
+    for (const hero of Object.values(section.heroes ?? {})) {
+      const heroId = hero.characterName ? idFromName(hero.characterName) : 'any';
+      for (const trait of Object.values(hero.traits ?? {})) {
+        if (!Array.isArray(trait.tiers) || trait.tiers.length === 0) continue;
+        const top = trait.tiers[trait.tiers.length - 1]; // highest tier
+        const text = stripHtml(top?.description ?? '');
+        const id = idFromName(trait.name);
+        if (!byId.has(id)) {
+          byId.set(id, { id, name: trait.name, heroId, modifiers: parseModifiers(text) });
+        }
+      }
     }
   }
   return [...byId.values()];
@@ -218,7 +279,14 @@ const DAMAGE_TAG: Record<string, DamageTag> = {
   Area: 'area',
   Projectile: 'projectile',
   Channeled: 'channelled',
-  Channelled: 'channelled'
+  Channelled: 'channelled',
+  // Confirmed against the real scrape: summon actives (e.g. "Summon Machine
+  // Guard") carry a raw "Summon" tag -- without mapping it to 'minion' here,
+  // collectModifiers's cannotSupport check (build.ts's CANNOT_SUPPORT_TAG
+  // already maps 'Summon' -> 'minion') can never actually trigger for
+  // summon-restricted supports, since no summon skill's own `tags` would
+  // ever contain 'minion' to match against.
+  Summon: 'minion'
 };
 
 interface LevelProgressionRow {
@@ -236,6 +304,12 @@ interface MasterSkill {
   levelProgression?: LevelProgressionRow[];
   manaCost?: number;
   mainStat?: string[];
+  /** Only populated on Magnificent_Support/Noble_Support entries (confirmed:
+   * every entry in both categories carries one; no other category ever
+   * does) -- names the one active skill this "signature" support is scoped
+   * to. */
+  skillTag?: string;
+  icon?: string;
 }
 
 interface EnSkillEntry {
@@ -476,8 +550,10 @@ export function mapSkills(
           modifiers: parseModifiers(meta?.description ?? ''),
           requiresTags: [],
           ...(manaMultiplier != null ? { manaMultiplier } : {}),
+          ...(s.skillTag ? { requiresSkillId: idFromName(s.skillTag) } : {}),
           ...(s.cannotSupport && s.cannotSupport.length > 0 ? { cannotSupport: s.cannotSupport } : {}),
-          ...(levelScaling ? { levelScaling } : {})
+          ...(levelScaling ? { levelScaling } : {}),
+          ...(s.icon ? { icon: s.icon } : {})
         });
         continue;
       }
@@ -500,7 +576,8 @@ export function mapSkills(
         season: version,
         ...(levelScaling ? { levelScaling } : {}),
         ...(s.manaCost != null ? { manaCost: s.manaCost } : {}),
-        ...(s.mainStat && s.mainStat.length > 0 ? { mainStat: s.mainStat } : {})
+        ...(s.mainStat && s.mainStat.length > 0 ? { mainStat: s.mainStat } : {}),
+        ...(s.icon ? { icon: s.icon } : {})
       });
     }
   }
@@ -538,21 +615,6 @@ async function fetchBundleRaw(fullName: string, cfg: ScrapeConfig): Promise<unkn
 
 // -------------------- affixes + item ids (gear-master) -----------------------
 
-const CATEGORY_SLOT: Record<string, GearSlot> = {
-  boots: 'boots',
-  chest_armor: 'chest',
-  gloves: 'gloves',
-  helmet: 'helmet',
-  one_handed: 'weapon',
-  two_handed: 'weapon',
-  shield: 'offhand',
-  amulet: 'amulet',
-  necklace: 'amulet',
-  ring: 'ring',
-  belt: 'belt',
-  waist: 'belt'
-};
-
 interface AffixValue {
   minValue?: number;
   maxValue?: number;
@@ -577,7 +639,7 @@ interface CraftAffix {
 }
 interface GearSection {
   category?: string;
-  baseItems?: { id?: string; tlidbId?: string | number; implicits?: unknown[] }[];
+  baseItems?: { id?: string; tlidbId?: string | number; icon?: string; implicits?: unknown[] }[];
   craftPrefix?: CraftAffix[];
   craftSuffix?: CraftAffix[];
 }
@@ -631,6 +693,20 @@ function buildAffixTiers(a: CraftAffix, template: string): AffixTier[] {
  * modifierIds/tiers are retained so a future loot parser or crafting
  * simulator can map a dropped/rolled affix back to a specific tier + weight.
  */
+/**
+ * Best top-level `modifiers` across every merged tier (all slots this affix's
+ * template appears under), mirroring topTier()'s "highest craftable roll,
+ * fall back to any roll if none are craftable" rule but applied globally
+ * instead of per-slot -- see this function's caller for why per-slot wasn't
+ * enough.
+ */
+function bestModifiers(tiers: AffixTier[]): Modifier[] {
+  const craftable = tiers.filter((t) => t.weight > 0);
+  const pool = craftable.length > 0 ? craftable : tiers;
+  const best = pool.slice().sort((a, b) => (b.modifiers[0]?.value ?? 0) - (a.modifiers[0]?.value ?? 0))[0];
+  return best?.modifiers ?? [];
+}
+
 export function mapAffixes(gearMaster: unknown): Affix[] {
   const byKey = new Map<string, Affix>();
   for (const section of Object.values(gearMaster as Record<string, GearSection>)) {
@@ -669,7 +745,39 @@ export function mapAffixes(gearMaster: unknown): Affix[] {
       }
     }
   }
-  return [...byKey.values()];
+  // The same template merges across gear subtypes/slots above, but each
+  // entry's top-level `modifiers` was only ever set from whichever section
+  // was encountered *first* and never revisited -- confirmed live: the
+  // merged `max-life-prefix` affix's `modifiers` showed boots' +220 even
+  // though the same merged affix has a craftable weapon/offhand tier at
+  // +330, so weapon/offhand builds using it were undercounted. Recompute
+  // from the full merged tier list once every section has been folded in.
+  for (const affix of byKey.values()) {
+    affix.modifiers = bestModifiers(affix.tiers ?? []);
+  }
+  return disambiguateAffixIds([...byKey.values()]);
+}
+
+/**
+ * Distinct templates can normalise to the same readable name -- affixName()
+ * strips +/-/#/% symbols, so e.g. "+# Max Life" (flat) and "+#% Max Life"
+ * (percentage) both become "Max Life", and "+#% additional damage" /
+ * "-#% additional damage" both become the same name too. Confirmed live: id
+ * collisions on `max-life-prefix` and `beams-additional-damage-suffix`
+ * (each duplicated). Since indexDataset keys affixes by id in a Map, a
+ * collision silently shadows one entry entirely. Appends a stable numeric
+ * suffix to every id beyond the first sharing a base id (iteration order is
+ * deterministic given the bundle's own key order, so this is reproducible
+ * across regens).
+ */
+function disambiguateAffixIds(affixes: Affix[]): Affix[] {
+  const seen = new Map<string, number>();
+  for (const affix of affixes) {
+    const count = (seen.get(affix.id) ?? 0) + 1;
+    seen.set(affix.id, count);
+    if (count > 1) affix.id = `${affix.id}-${count}`;
+  }
+  return affixes;
 }
 
 /** uuid -> { name, implicit rawTexts } from the gear `-en` bundle. */
@@ -708,7 +816,8 @@ export function mapGearFromMaster(gearMaster: unknown, gearEn: unknown): GearBas
         name: en.name,
         slot,
         implicit: parseModifiers(en.texts.join('\n')),
-        ...(item.tlidbId != null ? { tlidbId: String(item.tlidbId) } : {})
+        ...(item.tlidbId != null ? { tlidbId: String(item.tlidbId) } : {}),
+        ...(item.icon ? { icon: item.icon } : {})
       });
     }
   }

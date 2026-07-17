@@ -994,13 +994,7 @@
     "iconUrl": "/images/kismet/UI_S9Pet_Destiny100_128.webp",
     "rarity": "Legendary",
     "type": "Medium",
-    "modifiers": [
-      {
-        "stat": "critDamage",
-        "op": "flat",
-        "value": 60
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "bff4b67e-add8-55b6-9084-66e7a0d18788",

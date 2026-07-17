@@ -265,11 +265,6 @@
         "stat": "moreDamage",
         "op": "more",
         "value": 0.2
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.2
       }
     ],
     "corrodedModifiers": [
@@ -277,11 +272,6 @@
         "stat": "moreDamage",
         "op": "more",
         "value": 0.3
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.25
       }
     ]
   },
@@ -793,14 +783,20 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 110
+        "value": 110,
+        "tags": [
+          "attack"
+        ]
       }
     ],
     "corrodedModifiers": [
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 142.5
+        "value": 142.5,
+        "tags": [
+          "attack"
+        ]
       }
     ]
   },
@@ -875,20 +871,7 @@
     "id": "1ca68dca-343a-51de-949c-045278dd53a1",
     "limb": "chest",
     "icon": "/images/legendaries/chest_armor/dex_chest_armor/Icon_Equip_Armor_Epic_201_112.webp",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.4
-      }
-    ],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.6
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "0f127ba5-9f36-5ea1-adcb-6c44890a1e77",
@@ -1565,14 +1548,20 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 110
+        "value": 110,
+        "tags": [
+          "attack"
+        ]
       }
     ],
     "corrodedModifiers": [
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 142.5
+        "value": 142.5,
+        "tags": [
+          "attack"
+        ]
       }
     ]
   },
@@ -1647,20 +1636,7 @@
     "id": "1ca68dca-343a-51de-949c-045278dd53a1",
     "limb": "hands",
     "icon": "/images/legendaries/chest_armor/dex_chest_armor/Icon_Equip_Armor_Epic_201_112.webp",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.4
-      }
-    ],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.6
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "0f127ba5-9f36-5ea1-adcb-6c44890a1e77",
@@ -2382,18 +2358,6 @@
         "stat": "erosionResist",
         "op": "flat",
         "value": 10
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.1
-      }
-    ],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.15
       }
     ]
   },
@@ -2431,14 +2395,7 @@
     "id": "9f0aa37f-418c-53d8-9321-41155bd3c683",
     "limb": "legs",
     "icon": "/images/legendaries/boots/str_boots/Icon_Equip_Shoes_Epic_403_112.webp",
-    "modifiers": [],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.15
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "d3c378b1-e6f7-54a9-ab2c-76417bdad4df",
@@ -2482,11 +2439,6 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.15
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
         "value": 0.25
       }
     ],
@@ -2495,11 +2447,6 @@
         "stat": "moreDamage",
         "op": "more",
         "value": 0.01
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.15
       },
       {
         "stat": "moreDamage",
@@ -2774,20 +2721,7 @@
     "id": "75c30177-7292-5e22-bcbb-51226b9b7410",
     "limb": "legs",
     "icon": "/images/legendaries/trinket/belt/Icon_Equip_Belt_Epic_201_112.webp",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.2
-      }
-    ],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.1
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "ac4d9477-46b6-5bbc-afb5-c6d796363f8a",
@@ -2891,20 +2825,7 @@
     "id": "a03159dd-0ee6-514b-aa3a-0f8cd762868f",
     "limb": "legs",
     "icon": "/images/legendaries/trinket/belt/Icon_Equip_Belt_Epic_214_112.webp",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.3
-      }
-    ],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.45
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "70d0012a-a2ae-526f-b8cd-c23cc325c1d0",
@@ -3209,18 +3130,6 @@
         "stat": "erosionResist",
         "op": "flat",
         "value": 10
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.1
-      }
-    ],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.15
       }
     ]
   },
@@ -3258,14 +3167,7 @@
     "id": "9f0aa37f-418c-53d8-9321-41155bd3c683",
     "limb": "waist",
     "icon": "/images/legendaries/boots/str_boots/Icon_Equip_Shoes_Epic_403_112.webp",
-    "modifiers": [],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.15
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "d3c378b1-e6f7-54a9-ab2c-76417bdad4df",
@@ -3309,11 +3211,6 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.15
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
         "value": 0.25
       }
     ],
@@ -3322,11 +3219,6 @@
         "stat": "moreDamage",
         "op": "more",
         "value": 0.01
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.15
       },
       {
         "stat": "moreDamage",
@@ -3601,20 +3493,7 @@
     "id": "75c30177-7292-5e22-bcbb-51226b9b7410",
     "limb": "waist",
     "icon": "/images/legendaries/trinket/belt/Icon_Equip_Belt_Epic_201_112.webp",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.2
-      }
-    ],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.1
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "ac4d9477-46b6-5bbc-afb5-c6d796363f8a",
@@ -3718,20 +3597,7 @@
     "id": "a03159dd-0ee6-514b-aa3a-0f8cd762868f",
     "limb": "waist",
     "icon": "/images/legendaries/trinket/belt/Icon_Equip_Belt_Epic_214_112.webp",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.3
-      }
-    ],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.45
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "70d0012a-a2ae-526f-b8cd-c23cc325c1d0",
@@ -4067,11 +3933,6 @@
         "stat": "moreDamage",
         "op": "more",
         "value": 0.2
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.2
       }
     ],
     "corrodedModifiers": [
@@ -4079,11 +3940,6 @@
         "stat": "moreDamage",
         "op": "more",
         "value": 0.3
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.25
       }
     ]
   },
@@ -4640,18 +4496,6 @@
         "stat": "erosionResist",
         "op": "flat",
         "value": 10
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.1
-      }
-    ],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.15
       }
     ]
   },
@@ -4689,14 +4533,7 @@
     "id": "9f0aa37f-418c-53d8-9321-41155bd3c683",
     "limb": "digits",
     "icon": "/images/legendaries/boots/str_boots/Icon_Equip_Shoes_Epic_403_112.webp",
-    "modifiers": [],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.15
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "d3c378b1-e6f7-54a9-ab2c-76417bdad4df",
@@ -4740,11 +4577,6 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.15
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
         "value": 0.25
       }
     ],
@@ -4753,11 +4585,6 @@
         "stat": "moreDamage",
         "op": "more",
         "value": 0.01
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.15
       },
       {
         "stat": "moreDamage",
@@ -5032,20 +4859,7 @@
     "id": "75c30177-7292-5e22-bcbb-51226b9b7410",
     "limb": "digits",
     "icon": "/images/legendaries/trinket/belt/Icon_Equip_Belt_Epic_201_112.webp",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.2
-      }
-    ],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.1
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "ac4d9477-46b6-5bbc-afb5-c6d796363f8a",
@@ -5149,20 +4963,7 @@
     "id": "a03159dd-0ee6-514b-aa3a-0f8cd762868f",
     "limb": "digits",
     "icon": "/images/legendaries/trinket/belt/Icon_Equip_Belt_Epic_214_112.webp",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.3
-      }
-    ],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.45
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "70d0012a-a2ae-526f-b8cd-c23cc325c1d0",
@@ -5467,18 +5268,6 @@
         "stat": "erosionResist",
         "op": "flat",
         "value": 10
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.1
-      }
-    ],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.15
       }
     ]
   },
@@ -5516,14 +5305,7 @@
     "id": "9f0aa37f-418c-53d8-9321-41155bd3c683",
     "limb": "aberrant legs",
     "icon": "/images/legendaries/boots/str_boots/Icon_Equip_Shoes_Epic_403_112.webp",
-    "modifiers": [],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.15
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "d3c378b1-e6f7-54a9-ab2c-76417bdad4df",
@@ -5567,11 +5349,6 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.15
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
         "value": 0.25
       }
     ],
@@ -5580,11 +5357,6 @@
         "stat": "moreDamage",
         "op": "more",
         "value": 0.01
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.15
       },
       {
         "stat": "moreDamage",
@@ -5859,20 +5631,7 @@
     "id": "75c30177-7292-5e22-bcbb-51226b9b7410",
     "limb": "aberrant legs",
     "icon": "/images/legendaries/trinket/belt/Icon_Equip_Belt_Epic_201_112.webp",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.2
-      }
-    ],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.1
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "ac4d9477-46b6-5bbc-afb5-c6d796363f8a",
@@ -5976,20 +5735,7 @@
     "id": "a03159dd-0ee6-514b-aa3a-0f8cd762868f",
     "limb": "aberrant legs",
     "icon": "/images/legendaries/trinket/belt/Icon_Equip_Belt_Epic_214_112.webp",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.3
-      }
-    ],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.45
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "70d0012a-a2ae-526f-b8cd-c23cc325c1d0",
@@ -6294,18 +6040,6 @@
         "stat": "erosionResist",
         "op": "flat",
         "value": 10
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.1
-      }
-    ],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.15
       }
     ]
   },
@@ -6343,14 +6077,7 @@
     "id": "9f0aa37f-418c-53d8-9321-41155bd3c683",
     "limb": "aberrant waist",
     "icon": "/images/legendaries/boots/str_boots/Icon_Equip_Shoes_Epic_403_112.webp",
-    "modifiers": [],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.15
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "d3c378b1-e6f7-54a9-ab2c-76417bdad4df",
@@ -6394,11 +6121,6 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.15
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
         "value": 0.25
       }
     ],
@@ -6407,11 +6129,6 @@
         "stat": "moreDamage",
         "op": "more",
         "value": 0.01
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.15
       },
       {
         "stat": "moreDamage",
@@ -6686,20 +6403,7 @@
     "id": "75c30177-7292-5e22-bcbb-51226b9b7410",
     "limb": "aberrant waist",
     "icon": "/images/legendaries/trinket/belt/Icon_Equip_Belt_Epic_201_112.webp",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.2
-      }
-    ],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.1
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "ac4d9477-46b6-5bbc-afb5-c6d796363f8a",
@@ -6803,20 +6507,7 @@
     "id": "a03159dd-0ee6-514b-aa3a-0f8cd762868f",
     "limb": "aberrant waist",
     "icon": "/images/legendaries/trinket/belt/Icon_Equip_Belt_Epic_214_112.webp",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.3
-      }
-    ],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.45
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "70d0012a-a2ae-526f-b8cd-c23cc325c1d0",
@@ -7121,18 +6812,6 @@
         "stat": "erosionResist",
         "op": "flat",
         "value": 10
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.1
-      }
-    ],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.15
       }
     ]
   },
@@ -7170,14 +6849,7 @@
     "id": "9f0aa37f-418c-53d8-9321-41155bd3c683",
     "limb": "aberrant digits",
     "icon": "/images/legendaries/boots/str_boots/Icon_Equip_Shoes_Epic_403_112.webp",
-    "modifiers": [],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.15
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "d3c378b1-e6f7-54a9-ab2c-76417bdad4df",
@@ -7221,11 +6893,6 @@
       {
         "stat": "moreDamage",
         "op": "more",
-        "value": -0.15
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
         "value": 0.25
       }
     ],
@@ -7234,11 +6901,6 @@
         "stat": "moreDamage",
         "op": "more",
         "value": 0.01
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.15
       },
       {
         "stat": "moreDamage",
@@ -7513,20 +7175,7 @@
     "id": "75c30177-7292-5e22-bcbb-51226b9b7410",
     "limb": "aberrant digits",
     "icon": "/images/legendaries/trinket/belt/Icon_Equip_Belt_Epic_201_112.webp",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.2
-      }
-    ],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.1
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "ac4d9477-46b6-5bbc-afb5-c6d796363f8a",
@@ -7630,20 +7279,7 @@
     "id": "a03159dd-0ee6-514b-aa3a-0f8cd762868f",
     "limb": "aberrant digits",
     "icon": "/images/legendaries/trinket/belt/Icon_Equip_Belt_Epic_214_112.webp",
-    "modifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.3
-      }
-    ],
-    "corrodedModifiers": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.45
-      }
-    ]
+    "modifiers": []
   },
   {
     "id": "70d0012a-a2ae-526f-b8cd-c23cc325c1d0",

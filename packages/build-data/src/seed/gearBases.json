@@ -82,168 +82,192 @@
     "name": "Rogue's Long Boots",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4000"
+    "tlidbId": "4000",
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_001_112.webp"
   },
   {
     "id": "scout-s-short-boots",
     "name": "Scout's Short Boots",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4001"
+    "tlidbId": "4001",
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_002_112.webp"
   },
   {
     "id": "skirmisher-s-leather-boots",
     "name": "Skirmisher's Leather Boots",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4002"
+    "tlidbId": "4002",
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_003_112.webp"
   },
   {
     "id": "hunter-s-leather-boots",
     "name": "Hunter's Leather Boots",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4003"
+    "tlidbId": "4003",
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_004_112.webp"
   },
   {
     "id": "prospector-s-short-boots",
     "name": "Prospector's Short Boots",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4004"
+    "tlidbId": "4004",
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_001_01_112.webp"
   },
   {
     "id": "wild-dominator-long-boots",
     "name": "Wild Dominator Long Boots",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4005"
+    "tlidbId": "4005",
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_002_01_112.webp"
   },
   {
     "id": "grand-explorer-s-heavy-boots",
     "name": "Grand Explorer's Heavy Boots",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4006"
+    "tlidbId": "4006",
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_003_01_112.webp"
   },
   {
     "id": "watcher-s-trail",
     "name": "Watcher's Trail",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4007"
+    "tlidbId": "4007",
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_004_01_112.webp"
   },
   {
     "id": "eternal-night-stalker-s-long-boots",
     "name": "Eternal Night Stalker's Long Boots",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4008"
+    "tlidbId": "4008",
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_001_02_112.webp"
   },
   {
     "id": "boots-of-calamity",
     "name": "Boots of Calamity",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4009"
+    "tlidbId": "4009",
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_002_02_112.webp"
   },
   {
     "id": "demon-slayer-s-feet",
     "name": "Demon Slayer's Feet",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4010"
+    "tlidbId": "4010",
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_003_02_112.webp"
   },
   {
     "id": "secret-shadow-s-shoes",
     "name": "Secret Shadow's Shoes",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4011"
+    "tlidbId": "4011",
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_004_02_112.webp"
   },
   {
     "id": "herbalist-s-footguards",
     "name": "Herbalist's Footguards",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4100"
+    "tlidbId": "4100",
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_001_112.webp"
   },
   {
     "id": "scribe-s-boots",
     "name": "Scribe's Boots",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4101"
+    "tlidbId": "4101",
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_002_112.webp"
   },
   {
     "id": "acolyte-s-footwraps",
     "name": "Acolyte's Footwraps",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4102"
+    "tlidbId": "4102",
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_003_112.webp"
   },
   {
     "id": "witchdoctor-s-slippers",
     "name": "Witchdoctor's Slippers",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4103"
+    "tlidbId": "4103",
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_004_112.webp"
   },
   {
     "id": "disciple-s-cloth-boots",
     "name": "Disciple's Cloth Boots",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4104"
+    "tlidbId": "4104",
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_001_01_112.webp"
   },
   {
     "id": "shaman-s-slippers",
     "name": "Shaman's Slippers",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4105"
+    "tlidbId": "4105",
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_002_01_112.webp"
   },
   {
     "id": "envoy-s-soft-shoes",
     "name": "Envoy's Soft Shoes",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4106"
+    "tlidbId": "4106",
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_003_01_112.webp"
   },
   {
     "id": "respected-tutor-s-footwraps",
     "name": "Respected Tutor's Footwraps",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4107"
+    "tlidbId": "4107",
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_004_01_112.webp"
   },
   {
     "id": "elder-sage-s-treads",
     "name": "Elder Sage's Treads",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4108"
+    "tlidbId": "4108",
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_001_02_112.webp"
   },
   {
     "id": "imperishable-feet",
     "name": "Imperishable Feet",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4109"
+    "tlidbId": "4109",
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_002_02_112.webp"
   },
   {
     "id": "all-magic-shoes",
     "name": "All Magic Shoes",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4110"
+    "tlidbId": "4110",
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_003_02_112.webp"
   },
   {
     "id": "long-night-sorcerer-s-boots",
     "name": "Long Night Sorcerer's Boots",
     "slot": "boots",
     "implicit": [],
-    "tlidbId": "4111"
+    "tlidbId": "4111",
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_004_02_112.webp"
   },
   {
     "id": "brute-s-greaves",
@@ -256,7 +280,8 @@
         "value": 168
       }
     ],
-    "tlidbId": "3900"
+    "tlidbId": "3900",
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_001_112.webp"
   },
   {
     "id": "footman-s-boots",
@@ -269,7 +294,8 @@
         "value": 235
       }
     ],
-    "tlidbId": "3901"
+    "tlidbId": "3901",
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_002_112.webp"
   },
   {
     "id": "paladin-s-iron-greaves",
@@ -282,7 +308,8 @@
         "value": 329
       }
     ],
-    "tlidbId": "3902"
+    "tlidbId": "3902",
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_003_112.webp"
   },
   {
     "id": "berserker-s-footguards",
@@ -295,7 +322,8 @@
         "value": 461
       }
     ],
-    "tlidbId": "3903"
+    "tlidbId": "3903",
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_004_112.webp"
   },
   {
     "id": "iron-sentry-s-feet",
@@ -308,7 +336,8 @@
         "value": 599
       }
     ],
-    "tlidbId": "3904"
+    "tlidbId": "3904",
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_001_01_112.webp"
   },
   {
     "id": "packleader-greaves",
@@ -321,7 +350,8 @@
         "value": 779
       }
     ],
-    "tlidbId": "3905"
+    "tlidbId": "3905",
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_002_01_112.webp"
   },
   {
     "id": "mountain-lord-s-feet",
@@ -334,7 +364,8 @@
         "value": 935
       }
     ],
-    "tlidbId": "3906"
+    "tlidbId": "3906",
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_003_01_112.webp"
   },
   {
     "id": "divine-arbiter-s-feet",
@@ -347,7 +378,8 @@
         "value": 1122
       }
     ],
-    "tlidbId": "3907"
+    "tlidbId": "3907",
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_004_01_112.webp"
   },
   {
     "id": "dragon-guardian-s-footguards",
@@ -360,7 +392,8 @@
         "value": 1346
       }
     ],
-    "tlidbId": "3908"
+    "tlidbId": "3908",
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_001_02_112.webp"
   },
   {
     "id": "fallen-knight-s-footguards",
@@ -373,7 +406,8 @@
         "value": 1615
       }
     ],
-    "tlidbId": "3909"
+    "tlidbId": "3909",
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_002_02_112.webp"
   },
   {
     "id": "old-king-s-sabatons",
@@ -386,7 +420,8 @@
         "value": 1777
       }
     ],
-    "tlidbId": "3910"
+    "tlidbId": "3910",
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_003_02_112.webp"
   },
   {
     "id": "ranger-s-dirty-boots",
@@ -399,175 +434,200 @@
         "value": 1920
       }
     ],
-    "tlidbId": "3911"
+    "tlidbId": "3911",
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_004_02_112.webp"
   },
   {
     "id": "rogue-outerwear",
     "name": "Rogue Outerwear",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3100"
+    "tlidbId": "3100",
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_001_112.webp"
   },
   {
     "id": "scout-s-tight-vest",
     "name": "Scout's Tight Vest",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3101"
+    "tlidbId": "3101",
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_002_112.webp"
   },
   {
     "id": "skirmisher-outerwear",
     "name": "Skirmisher Outerwear",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3102"
+    "tlidbId": "3102",
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_003_112.webp"
   },
   {
     "id": "hunter-s-chestguard",
     "name": "Hunter's Chestguard",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3103"
+    "tlidbId": "3103",
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_004_112.webp"
   },
   {
     "id": "prospector-outerwear",
     "name": "Prospector Outerwear",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3104"
+    "tlidbId": "3104",
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_001_01_112.webp"
   },
   {
     "id": "wild-dominator-outerwear",
     "name": "Wild Dominator Outerwear",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3105"
+    "tlidbId": "3105",
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_002_01_112.webp"
   },
   {
     "id": "grand-explorer-outerwear",
     "name": "Grand Explorer Outerwear",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3106"
+    "tlidbId": "3106",
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_003_01_112.webp"
   },
   {
     "id": "watcher-s-chest-armor",
     "name": "Watcher's Chest Armor",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3107"
+    "tlidbId": "3107",
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_004_01_112.webp"
   },
   {
     "id": "eternal-night-stalker-s-chestguard",
     "name": "Eternal Night Stalker's Chestguard",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3108"
+    "tlidbId": "3108",
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_001_02_112.webp"
   },
   {
     "id": "sanctuary-of-calamity",
     "name": "Sanctuary of Calamity",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3109"
+    "tlidbId": "3109",
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_002_02_112.webp"
   },
   {
     "id": "demon-slayer-s-skin",
     "name": "Demon Slayer's Skin",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3110"
+    "tlidbId": "3110",
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_003_02_112.webp"
   },
   {
     "id": "secret-shadow-s-protection",
     "name": "Secret Shadow's Protection",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3111"
+    "tlidbId": "3111",
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_004_02_112.webp"
   },
   {
     "id": "herbalist-s-robe",
     "name": "Herbalist's Robe",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3200"
+    "tlidbId": "3200",
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_001_112.webp"
   },
   {
     "id": "scribe-s-coat",
     "name": "Scribe's Coat",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3201"
+    "tlidbId": "3201",
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_002_112.webp"
   },
   {
     "id": "acolyte-s-robe",
     "name": "Acolyte's Robe",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3202"
+    "tlidbId": "3202",
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_003_112.webp"
   },
   {
     "id": "witchdoctor-s-robe",
     "name": "Witchdoctor's Robe",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3203"
+    "tlidbId": "3203",
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_004_112.webp"
   },
   {
     "id": "disciple-s-coat",
     "name": "Disciple's Coat",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3204"
+    "tlidbId": "3204",
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_001_01_112.webp"
   },
   {
     "id": "shaman-s-short-robe",
     "name": "Shaman's Short Robe",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3205"
+    "tlidbId": "3205",
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_002_01_112.webp"
   },
   {
     "id": "envoy-s-robe",
     "name": "Envoy's Robe",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3206"
+    "tlidbId": "3206",
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_003_01_112.webp"
   },
   {
     "id": "respected-tutor-s-robe",
     "name": "Respected Tutor's Robe",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3207"
+    "tlidbId": "3207",
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_004_01_112.webp"
   },
   {
     "id": "elder-sage-s-regalia",
     "name": "Elder Sage's Regalia",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3208"
+    "tlidbId": "3208",
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_001_02_112.webp"
   },
   {
     "id": "imperishable-black-robe",
     "name": "Imperishable Black Robe",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3209"
+    "tlidbId": "3209",
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_002_02_112.webp"
   },
   {
     "id": "all-magic-secret-robe",
     "name": "All Magic Secret Robe",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3210"
+    "tlidbId": "3210",
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_003_02_112.webp"
   },
   {
     "id": "long-night-sorcerer-s-robe",
     "name": "Long Night Sorcerer's Robe",
     "slot": "chest",
     "implicit": [],
-    "tlidbId": "3211"
+    "tlidbId": "3211",
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_004_02_112.webp"
   },
   {
     "id": "brute-s-chestguard",
@@ -580,7 +640,8 @@
         "value": 196
       }
     ],
-    "tlidbId": "3000"
+    "tlidbId": "3000",
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_001_112.webp"
   },
   {
     "id": "footman-s-chestguard",
@@ -593,7 +654,8 @@
         "value": 274
       }
     ],
-    "tlidbId": "3001"
+    "tlidbId": "3001",
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_002_112.webp"
   },
   {
     "id": "paladin-s-heavy-armor",
@@ -606,7 +668,8 @@
         "value": 384
       }
     ],
-    "tlidbId": "3002"
+    "tlidbId": "3002",
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_003_112.webp"
   },
   {
     "id": "berserker-s-chest-armor",
@@ -619,7 +682,8 @@
         "value": 538
       }
     ],
-    "tlidbId": "3003"
+    "tlidbId": "3003",
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_004_112.webp"
   },
   {
     "id": "iron-sentry-s-heavy-armor",
@@ -632,7 +696,8 @@
         "value": 699
       }
     ],
-    "tlidbId": "3004"
+    "tlidbId": "3004",
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_001_01_112.webp"
   },
   {
     "id": "packleader-chest-armor",
@@ -645,7 +710,8 @@
         "value": 909
       }
     ],
-    "tlidbId": "3005"
+    "tlidbId": "3005",
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_002_01_112.webp"
   },
   {
     "id": "mountain-lord-s-chest-armor",
@@ -658,7 +724,8 @@
         "value": 1091
       }
     ],
-    "tlidbId": "3006"
+    "tlidbId": "3006",
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_003_01_112.webp"
   },
   {
     "id": "divine-arbiter-s-defense",
@@ -671,7 +738,8 @@
         "value": 1309
       }
     ],
-    "tlidbId": "3007"
+    "tlidbId": "3007",
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_004_01_112.webp"
   },
   {
     "id": "dragon-guardian-s-lamellar-armor",
@@ -684,7 +752,8 @@
         "value": 1571
       }
     ],
-    "tlidbId": "3008"
+    "tlidbId": "3008",
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_001_02_112.webp"
   },
   {
     "id": "fallen-knight-s-armor",
@@ -697,7 +766,8 @@
         "value": 1885
       }
     ],
-    "tlidbId": "3009"
+    "tlidbId": "3009",
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_002_02_112.webp"
   },
   {
     "id": "old-king-s-armor",
@@ -710,7 +780,8 @@
         "value": 2073
       }
     ],
-    "tlidbId": "3010"
+    "tlidbId": "3010",
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_003_02_112.webp"
   },
   {
     "id": "ranger-s-rag",
@@ -723,175 +794,200 @@
         "value": 2240
       }
     ],
-    "tlidbId": "3011"
+    "tlidbId": "3011",
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_004_02_112.webp"
   },
   {
     "id": "rogue-s-gloves",
     "name": "Rogue's Gloves",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3400"
+    "tlidbId": "3400",
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_001_112.webp"
   },
   {
     "id": "scout-s-gloves",
     "name": "Scout's Gloves",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3401"
+    "tlidbId": "3401",
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_002_112.webp"
   },
   {
     "id": "skirmisher-s-gloves",
     "name": "Skirmisher's Gloves",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3402"
+    "tlidbId": "3402",
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_003_112.webp"
   },
   {
     "id": "hunter-s-gloves",
     "name": "Hunter's Gloves",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3403"
+    "tlidbId": "3403",
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_004_112.webp"
   },
   {
     "id": "prospector-handguards",
     "name": "Prospector Handguards",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3404"
+    "tlidbId": "3404",
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_001_01_112.webp"
   },
   {
     "id": "wild-dominator-handguards",
     "name": "Wild Dominator Handguards",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3405"
+    "tlidbId": "3405",
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_002_01_112.webp"
   },
   {
     "id": "grand-explorer-s-gloves",
     "name": "Grand Explorer's Gloves",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3406"
+    "tlidbId": "3406",
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_003_01_112.webp"
   },
   {
     "id": "watcher-s-hold",
     "name": "Watcher's Hold",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3407"
+    "tlidbId": "3407",
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_004_01_112.webp"
   },
   {
     "id": "eternal-night-stalker-s-hands",
     "name": "Eternal Night Stalker's Hands",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3408"
+    "tlidbId": "3408",
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_001_02_112.webp"
   },
   {
     "id": "hands-of-calamity",
     "name": "Hands of Calamity",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3409"
+    "tlidbId": "3409",
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_002_02_112.webp"
   },
   {
     "id": "demon-slayer-s-hands",
     "name": "Demon Slayer's Hands",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3410"
+    "tlidbId": "3410",
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_003_02_112.webp"
   },
   {
     "id": "secret-shadow-s-wrists",
     "name": "Secret Shadow's Wrists",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3411"
+    "tlidbId": "3411",
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_004_02_112.webp"
   },
   {
     "id": "herbalist-s-gloves",
     "name": "Herbalist's Gloves",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3500"
+    "tlidbId": "3500",
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_001_112.webp"
   },
   {
     "id": "scribe-handguards",
     "name": "Scribe Handguards",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3501"
+    "tlidbId": "3501",
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_002_112.webp"
   },
   {
     "id": "acolyte-handguards",
     "name": "Acolyte Handguards",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3502"
+    "tlidbId": "3502",
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_003_112.webp"
   },
   {
     "id": "witchdoctor-s-gloves",
     "name": "Witchdoctor's Gloves",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3503"
+    "tlidbId": "3503",
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_004_112.webp"
   },
   {
     "id": "disciple-handguards",
     "name": "Disciple Handguards",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3504"
+    "tlidbId": "3504",
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_001_01_112.webp"
   },
   {
     "id": "shaman-s-hands",
     "name": "Shaman's Hands",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3505"
+    "tlidbId": "3505",
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_002_01_112.webp"
   },
   {
     "id": "envoy-s-hands",
     "name": "Envoy's Hands",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3506"
+    "tlidbId": "3506",
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_003_01_112.webp"
   },
   {
     "id": "respected-tutor-s-gloves",
     "name": "Respected Tutor's Gloves",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3507"
+    "tlidbId": "3507",
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_004_01_112.webp"
   },
   {
     "id": "elder-sage-s-long-gloves",
     "name": "Elder Sage's Long Gloves",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3508"
+    "tlidbId": "3508",
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_001_02_112.webp"
   },
   {
     "id": "imperishable-touch",
     "name": "Imperishable Touch",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3509"
+    "tlidbId": "3509",
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_002_02_112.webp"
   },
   {
     "id": "all-magic-grip",
     "name": "All Magic Grip",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3510"
+    "tlidbId": "3510",
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_003_02_112.webp"
   },
   {
     "id": "long-night-sorcerer-s-wristband",
     "name": "Long Night Sorcerer's Wristband",
     "slot": "gloves",
     "implicit": [],
-    "tlidbId": "3511"
+    "tlidbId": "3511",
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_004_02_112.webp"
   },
   {
     "id": "brute-handguards",
@@ -904,7 +1000,8 @@
         "value": 168
       }
     ],
-    "tlidbId": "3300"
+    "tlidbId": "3300",
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_001_112.webp"
   },
   {
     "id": "footman-s-gauntlets",
@@ -917,7 +1014,8 @@
         "value": 235
       }
     ],
-    "tlidbId": "3301"
+    "tlidbId": "3301",
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_002_112.webp"
   },
   {
     "id": "paladin-s-hands",
@@ -930,7 +1028,8 @@
         "value": 329
       }
     ],
-    "tlidbId": "3302"
+    "tlidbId": "3302",
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_003_112.webp"
   },
   {
     "id": "berserker-s-hands",
@@ -943,7 +1042,8 @@
         "value": 461
       }
     ],
-    "tlidbId": "3303"
+    "tlidbId": "3303",
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_004_112.webp"
   },
   {
     "id": "iron-sentry-s-hold",
@@ -956,7 +1056,8 @@
         "value": 599
       }
     ],
-    "tlidbId": "3304"
+    "tlidbId": "3304",
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_001_01_112.webp"
   },
   {
     "id": "packleader-handguards",
@@ -969,7 +1070,8 @@
         "value": 779
       }
     ],
-    "tlidbId": "3305"
+    "tlidbId": "3305",
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_002_01_112.webp"
   },
   {
     "id": "mountain-lord-handguards",
@@ -982,7 +1084,8 @@
         "value": 935
       }
     ],
-    "tlidbId": "3306"
+    "tlidbId": "3306",
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_003_01_112.webp"
   },
   {
     "id": "divine-arbiter-s-hands",
@@ -995,7 +1098,8 @@
         "value": 1122
       }
     ],
-    "tlidbId": "3307"
+    "tlidbId": "3307",
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_004_01_112.webp"
   },
   {
     "id": "dragon-guardian-handguards",
@@ -1008,7 +1112,8 @@
         "value": 1346
       }
     ],
-    "tlidbId": "3308"
+    "tlidbId": "3308",
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_001_02_112.webp"
   },
   {
     "id": "fallen-knight-handguards",
@@ -1021,7 +1126,8 @@
         "value": 1615
       }
     ],
-    "tlidbId": "3309"
+    "tlidbId": "3309",
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_002_02_112.webp"
   },
   {
     "id": "old-king-s-rerebraces",
@@ -1034,7 +1140,8 @@
         "value": 1777
       }
     ],
-    "tlidbId": "3310"
+    "tlidbId": "3310",
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_003_02_112.webp"
   },
   {
     "id": "ranger-s-rusted-gauntlets",
@@ -1047,175 +1154,200 @@
         "value": 1920
       }
     ],
-    "tlidbId": "3311"
+    "tlidbId": "3311",
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_004_02_112.webp"
   },
   {
     "id": "rogue-s-hood",
     "name": "Rogue's Hood",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3700"
+    "tlidbId": "3700",
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_001_112.webp"
   },
   {
     "id": "scout-s-hood",
     "name": "Scout's Hood",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3701"
+    "tlidbId": "3701",
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_002_112.webp"
   },
   {
     "id": "skirmisher-s-mask",
     "name": "Skirmisher's Mask",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3702"
+    "tlidbId": "3702",
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_003_112.webp"
   },
   {
     "id": "hunter-s-hood",
     "name": "Hunter's Hood",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3703"
+    "tlidbId": "3703",
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_004_112.webp"
   },
   {
     "id": "prospector-s-hat",
     "name": "Prospector's Hat",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3704"
+    "tlidbId": "3704",
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_001_01_112.webp"
   },
   {
     "id": "wild-dominator-headdress",
     "name": "Wild Dominator Headdress",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3705"
+    "tlidbId": "3705",
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_002_01_112.webp"
   },
   {
     "id": "grand-explorer-s-fez",
     "name": "Grand Explorer's Fez",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3706"
+    "tlidbId": "3706",
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_003_01_112.webp"
   },
   {
     "id": "watcher-s-gaze",
     "name": "Watcher's Gaze",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3707"
+    "tlidbId": "3707",
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_004_01_112.webp"
   },
   {
     "id": "eternal-night-stalker-s-hood",
     "name": "Eternal Night Stalker's Hood",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3708"
+    "tlidbId": "3708",
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_001_02_112.webp"
   },
   {
     "id": "mask-of-calamity",
     "name": "Mask of Calamity",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3709"
+    "tlidbId": "3709",
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_002_02_112.webp"
   },
   {
     "id": "demon-slayer-s-eyes",
     "name": "Demon Slayer's Eyes",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3710"
+    "tlidbId": "3710",
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_003_02_112.webp"
   },
   {
     "id": "secret-shadow-s-mask",
     "name": "Secret Shadow's Mask",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3711"
+    "tlidbId": "3711",
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_004_02_112.webp"
   },
   {
     "id": "herbalist-s-headscarf",
     "name": "Herbalist's Headscarf",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3800"
+    "tlidbId": "3800",
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_001_112.webp"
   },
   {
     "id": "scribe-s-headscarf",
     "name": "Scribe's Headscarf",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3801"
+    "tlidbId": "3801",
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_002_112.webp"
   },
   {
     "id": "acolyte-s-crown",
     "name": "Acolyte's Crown",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3802"
+    "tlidbId": "3802",
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_003_112.webp"
   },
   {
     "id": "witchdoctor-s-mask",
     "name": "Witchdoctor's Mask",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3803"
+    "tlidbId": "3803",
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_004_112.webp"
   },
   {
     "id": "disciple-s-headscarf",
     "name": "Disciple's Headscarf",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3804"
+    "tlidbId": "3804",
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_001_01_112.webp"
   },
   {
     "id": "shaman-s-headdress",
     "name": "Shaman's Headdress",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3805"
+    "tlidbId": "3805",
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_002_01_112.webp"
   },
   {
     "id": "envoy-s-mask",
     "name": "Envoy's Mask",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3806"
+    "tlidbId": "3806",
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_003_01_112.webp"
   },
   {
     "id": "respected-tutor-s-face",
     "name": "Respected Tutor's Face",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3807"
+    "tlidbId": "3807",
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_004_01_112.webp"
   },
   {
     "id": "elder-sage-s-chapeau",
     "name": "Elder Sage's Chapeau",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3808"
+    "tlidbId": "3808",
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_001_02_112.webp"
   },
   {
     "id": "imperishable-miter",
     "name": "Imperishable Miter",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3809"
+    "tlidbId": "3809",
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_002_02_112.webp"
   },
   {
     "id": "all-magic-crown",
     "name": "All Magic Crown",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3810"
+    "tlidbId": "3810",
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_003_02_112.webp"
   },
   {
     "id": "long-night-sorcerer-s-mask",
     "name": "Long Night Sorcerer's Mask",
     "slot": "helmet",
     "implicit": [],
-    "tlidbId": "3811"
+    "tlidbId": "3811",
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_004_02_112.webp"
   },
   {
     "id": "brute-s-helm",
@@ -1228,7 +1360,8 @@
         "value": 168
       }
     ],
-    "tlidbId": "3600"
+    "tlidbId": "3600",
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_001_112.webp"
   },
   {
     "id": "footman-helmet",
@@ -1241,7 +1374,8 @@
         "value": 235
       }
     ],
-    "tlidbId": "3601"
+    "tlidbId": "3601",
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_002_112.webp"
   },
   {
     "id": "paladin-s-heavy-helm",
@@ -1254,7 +1388,8 @@
         "value": 329
       }
     ],
-    "tlidbId": "3602"
+    "tlidbId": "3602",
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_003_112.webp"
   },
   {
     "id": "berserker-s-spired-helm",
@@ -1267,7 +1402,8 @@
         "value": 461
       }
     ],
-    "tlidbId": "3603"
+    "tlidbId": "3603",
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_004_112.webp"
   },
   {
     "id": "iron-sentry-s-helmet",
@@ -1280,7 +1416,8 @@
         "value": 599
       }
     ],
-    "tlidbId": "3604"
+    "tlidbId": "3604",
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_001_01_112.webp"
   },
   {
     "id": "packleader-helmet",
@@ -1293,7 +1430,8 @@
         "value": 779
       }
     ],
-    "tlidbId": "3605"
+    "tlidbId": "3605",
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_002_01_112.webp"
   },
   {
     "id": "mountain-lord-helmet",
@@ -1306,7 +1444,8 @@
         "value": 935
       }
     ],
-    "tlidbId": "3606"
+    "tlidbId": "3606",
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_003_01_112.webp"
   },
   {
     "id": "divine-arbiter-s-diadem",
@@ -1319,7 +1458,8 @@
         "value": 1122
       }
     ],
-    "tlidbId": "3607"
+    "tlidbId": "3607",
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_004_01_112.webp"
   },
   {
     "id": "dragon-guardian-s-faceguard",
@@ -1332,7 +1472,8 @@
         "value": 1346
       }
     ],
-    "tlidbId": "3608"
+    "tlidbId": "3608",
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_001_02_112.webp"
   },
   {
     "id": "fallen-knight-helmet",
@@ -1345,7 +1486,8 @@
         "value": 1615
       }
     ],
-    "tlidbId": "3609"
+    "tlidbId": "3609",
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_002_02_112.webp"
   },
   {
     "id": "old-king-s-crown",
@@ -1358,7 +1500,8 @@
         "value": 1777
       }
     ],
-    "tlidbId": "3610"
+    "tlidbId": "3610",
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_003_02_112.webp"
   },
   {
     "id": "ranger-s-broken-mask",
@@ -1371,1267 +1514,1448 @@
         "value": 1920
       }
     ],
-    "tlidbId": "3611"
+    "tlidbId": "3611",
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_004_02_112.webp"
   },
   {
     "id": "wayfarer-cane",
     "name": "Wayfarer Cane",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "800"
+    "tlidbId": "800",
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "rambone-cane",
     "name": "Rambone Cane",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "801"
+    "tlidbId": "801",
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
   },
   {
     "id": "witness-cane",
     "name": "Witness Cane",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "802"
+    "tlidbId": "802",
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
   },
   {
     "id": "snake-scale-cane",
     "name": "Snake-scale Cane",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "803"
+    "tlidbId": "803",
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
   },
   {
     "id": "recluse-cane",
     "name": "Recluse Cane",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "804"
+    "tlidbId": "804",
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
   },
   {
     "id": "wolf-fang-cane",
     "name": "Wolf Fang Cane",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "805"
+    "tlidbId": "805",
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "omen-short-staff",
     "name": "Omen Short Staff",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "806"
+    "tlidbId": "806",
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
   },
   {
     "id": "thinker-cane",
     "name": "Thinker Cane",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "807"
+    "tlidbId": "807",
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
   },
   {
     "id": "leopard-jaw-cane",
     "name": "Leopard Jaw Cane",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "808"
+    "tlidbId": "808",
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
   },
   {
     "id": "traitor-cane",
     "name": "Traitor Cane",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "809"
+    "tlidbId": "809",
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
   },
   {
     "id": "lion-heart-cane",
     "name": "Lion Heart Cane",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "810"
+    "tlidbId": "810",
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "villain-cane",
     "name": "Villain Cane",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "811"
+    "tlidbId": "811",
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
   },
   {
     "id": "dragonblood-cane",
     "name": "Dragonblood Cane",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "812"
+    "tlidbId": "812",
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
   },
   {
     "id": "foreshadow-short-staff",
     "name": "Foreshadow Short Staff",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "813"
+    "tlidbId": "813",
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
   },
   {
     "id": "esoteric-cane",
     "name": "Esoteric Cane",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "814"
+    "tlidbId": "814",
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
   },
   {
     "id": "fallen-pactspirital-short-staff",
     "name": "Fallen Pactspirital Short Staff",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "815"
+    "tlidbId": "815",
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "obsidian-cane",
     "name": "Obsidian Cane",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "816"
+    "tlidbId": "816",
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
   },
   {
     "id": "blue-amber-cane",
     "name": "Blue Amber Cane",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "817"
+    "tlidbId": "817",
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "glimmering-fluorite-cane",
     "name": "Glimmering Fluorite Cane",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "818"
+    "tlidbId": "818",
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "sleeping-sage-s-cane",
     "name": "Sleeping Sage's Cane",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "819"
+    "tlidbId": "819",
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "nailclaw",
     "name": "Nailclaw",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "100"
+    "tlidbId": "100",
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_001_112.webp"
   },
   {
     "id": "shark-tooth",
     "name": "Shark Tooth",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "101"
+    "tlidbId": "101",
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_002_112.webp"
   },
   {
     "id": "pickaxe-claw",
     "name": "Pickaxe Claw",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "102"
+    "tlidbId": "102",
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_003_112.webp"
   },
   {
     "id": "black-cat-claw",
     "name": "Black Cat Claw",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "103"
+    "tlidbId": "103",
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_004_112.webp"
   },
   {
     "id": "eyestinger-claw",
     "name": "Eyestinger Claw",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "104"
+    "tlidbId": "104",
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_005_112.webp"
   },
   {
     "id": "berserker-claw",
     "name": "Berserker Claw",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "105"
+    "tlidbId": "105",
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_001_112.webp"
   },
   {
     "id": "sandstorm-katar",
     "name": "Sandstorm Katar",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "106"
+    "tlidbId": "106",
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_002_112.webp"
   },
   {
     "id": "wailing-claw",
     "name": "Wailing Claw",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "107"
+    "tlidbId": "107",
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_003_112.webp"
   },
   {
     "id": "two-headed-claw",
     "name": "Two-Headed Claw",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "108"
+    "tlidbId": "108",
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_004_112.webp"
   },
   {
     "id": "direwolf-fang",
     "name": "Direwolf Fang",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "109"
+    "tlidbId": "109",
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_005_112.webp"
   },
   {
     "id": "spinesplitter-katar",
     "name": "Spinesplitter Katar",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "110"
+    "tlidbId": "110",
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_001_112.webp"
   },
   {
     "id": "crimson-tiger-sting",
     "name": "Crimson Tiger Sting",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "111"
+    "tlidbId": "111",
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_002_112.webp"
   },
   {
     "id": "scarlet-river-claw",
     "name": "Scarlet River Claw",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "112"
+    "tlidbId": "112",
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_003_112.webp"
   },
   {
     "id": "primeval-war-claw",
     "name": "Primeval War Claw",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "113"
+    "tlidbId": "113",
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_004_112.webp"
   },
   {
     "id": "jadebone-katar",
     "name": "Jadebone Katar",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "114"
+    "tlidbId": "114",
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_005_112.webp"
   },
   {
     "id": "eagle-claw",
     "name": "Eagle Claw",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "115"
+    "tlidbId": "115",
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_001_112.webp"
   },
   {
     "id": "delusion-claw",
     "name": "Delusion Claw",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "118"
+    "tlidbId": "118",
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_005_112.webp"
   },
   {
     "id": "three-tailed-cat-claw",
     "name": "Three-tailed Cat Claw",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "119"
+    "tlidbId": "119",
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_001_112.webp"
   },
   {
     "id": "dragon-hunter-claw",
     "name": "Dragon Hunter Claw",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "120"
+    "tlidbId": "120",
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_001_112.webp"
   },
   {
     "id": "silence-piercing-claw",
     "name": "Silence Piercing Claw",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "121"
+    "tlidbId": "121",
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_001_112.webp"
   },
   {
     "id": "thief-short-dagger",
     "name": "Thief Short Dagger",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "600"
+    "tlidbId": "600",
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_001_112.webp"
   },
   {
     "id": "rusted-dagger",
     "name": "Rusted Dagger",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "601"
+    "tlidbId": "601",
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_002_112.webp"
   },
   {
     "id": "slaughter-short-dagger",
     "name": "Slaughter Short Dagger",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "602"
+    "tlidbId": "602",
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_003_112.webp"
   },
   {
     "id": "poisoned-dagger",
     "name": "Poisoned Dagger",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "603"
+    "tlidbId": "603",
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_004_112.webp"
   },
   {
     "id": "assassin-short-dagger",
     "name": "Assassin Short Dagger",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "604"
+    "tlidbId": "604",
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_005_112.webp"
   },
   {
     "id": "voodoo-dagger",
     "name": "Voodoo Dagger",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "605"
+    "tlidbId": "605",
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_001_112.webp"
   },
   {
     "id": "resentment-dirk",
     "name": "Resentment Dirk",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "606"
+    "tlidbId": "606",
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_002_112.webp"
   },
   {
     "id": "violence-short-dagger",
     "name": "Violence Short Dagger",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "607"
+    "tlidbId": "607",
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_003_112.webp"
   },
   {
     "id": "nightshade-dagger",
     "name": "Nightshade Dagger",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "608"
+    "tlidbId": "608",
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_004_112.webp"
   },
   {
     "id": "kingslayer-short-dagger",
     "name": "Kingslayer Short Dagger",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "609"
+    "tlidbId": "609",
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_005_112.webp"
   },
   {
     "id": "cursed-dagger",
     "name": "Cursed Dagger",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "610"
+    "tlidbId": "610",
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_001_112.webp"
   },
   {
     "id": "godslaughter-short-dagger",
     "name": "Godslaughter Short Dagger",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "611"
+    "tlidbId": "611",
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_002_112.webp"
   },
   {
     "id": "sorcerer-s-dagger",
     "name": "Sorcerer's Dagger",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "612"
+    "tlidbId": "612",
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_003_112.webp"
   },
   {
     "id": "hatred-dirk",
     "name": "Hatred Dirk",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "613"
+    "tlidbId": "613",
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_004_112.webp"
   },
   {
     "id": "esoteric-dagger",
     "name": "Esoteric Dagger",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "614"
+    "tlidbId": "614",
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_005_112.webp"
   },
   {
     "id": "illusory-dirk",
     "name": "Illusory Dirk",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "615"
+    "tlidbId": "615",
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_001_112.webp"
   },
   {
     "id": "disillusion-dagger",
     "name": "Disillusion Dagger",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "616"
+    "tlidbId": "616",
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_005_112.webp"
   },
   {
     "id": "fools-dagger",
     "name": "Fools' Dagger",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "617"
+    "tlidbId": "617",
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_001_112.webp"
   },
   {
     "id": "blind-faith-dagger",
     "name": "Blind Faith Dagger",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "618"
+    "tlidbId": "618",
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_001_112.webp"
   },
   {
     "id": "truth-speaker-s-dagger",
     "name": "Truth Speaker's Dagger",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "619"
+    "tlidbId": "619",
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_001_112.webp"
   },
   {
     "id": "rusted-iron-axe",
     "name": "Rusted Iron Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "500"
+    "tlidbId": "500",
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_001_112.webp"
   },
   {
     "id": "twisted-copper-axe",
     "name": "Twisted Copper Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "501"
+    "tlidbId": "501",
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_002_112.webp"
   },
   {
     "id": "iron-hatchet",
     "name": "Iron Hatchet",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "502"
+    "tlidbId": "502",
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_003_112.webp"
   },
   {
     "id": "sharpened-iron-axe",
     "name": "Sharpened Iron Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "503"
+    "tlidbId": "503",
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_004_112.webp"
   },
   {
     "id": "alloy-board-axe",
     "name": "Alloy Board Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "504"
+    "tlidbId": "504",
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_005_112.webp"
   },
   {
     "id": "war-axe",
     "name": "War Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "505"
+    "tlidbId": "505",
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_001_112.webp"
   },
   {
     "id": "scoundrel-s-axe",
     "name": "Scoundrel's Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "506"
+    "tlidbId": "506",
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_002_112.webp"
   },
   {
     "id": "earthsplitter-axe",
     "name": "Earthsplitter Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "507"
+    "tlidbId": "507",
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_003_112.webp"
   },
   {
     "id": "savage-axe",
     "name": "Savage Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "508"
+    "tlidbId": "508",
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_004_112.webp"
   },
   {
     "id": "valagon-axe",
     "name": "Valagon Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "509"
+    "tlidbId": "509",
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_005_112.webp"
   },
   {
     "id": "cursed-axe",
     "name": "Cursed Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "510"
+    "tlidbId": "510",
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_001_112.webp"
   },
   {
     "id": "bonecrusher-greataxe",
     "name": "Bonecrusher Greataxe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "511"
+    "tlidbId": "511",
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_002_112.webp"
   },
   {
     "id": "conflict-war-axe",
     "name": "Conflict War Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "512"
+    "tlidbId": "512",
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_003_112.webp"
   },
   {
     "id": "frenzy-battle-axe",
     "name": "Frenzy Battle Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "513"
+    "tlidbId": "513",
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_004_112.webp"
   },
   {
     "id": "scarlet-axe",
     "name": "Scarlet Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "514"
+    "tlidbId": "514",
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_005_112.webp"
   },
   {
     "id": "ritual-greataxe",
     "name": "Ritual Greataxe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "515"
+    "tlidbId": "515",
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_001_112.webp"
   },
   {
     "id": "vengeance-axe",
     "name": "Vengeance Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "516"
+    "tlidbId": "516",
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_005_112.webp"
   },
   {
     "id": "suppressor-axe",
     "name": "Suppressor Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "517"
+    "tlidbId": "517",
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_001_112.webp"
   },
   {
     "id": "rebel-axe",
     "name": "Rebel Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "518"
+    "tlidbId": "518",
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_001_112.webp"
   },
   {
     "id": "hollow-rift-axe",
     "name": "Hollow Rift Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "519"
+    "tlidbId": "519",
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_001_112.webp"
   },
   {
     "id": "witherbark-club",
     "name": "Witherbark Club",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "200"
+    "tlidbId": "200",
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_001_112.webp"
   },
   {
     "id": "mossy-stone-hammer",
     "name": "Mossy Stone Hammer",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "201"
+    "tlidbId": "201",
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_002_112.webp"
   },
   {
     "id": "rusted-wooden-hammer",
     "name": "Rusted Wooden Hammer",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "202"
+    "tlidbId": "202",
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_003_112.webp"
   },
   {
     "id": "black-iron-maul",
     "name": "Black Iron Maul",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "203"
+    "tlidbId": "203",
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_004_112.webp"
   },
   {
     "id": "war-hammer",
     "name": "War Hammer",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "204"
+    "tlidbId": "204",
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_005_112.webp"
   },
   {
     "id": "oblivion-maul",
     "name": "Oblivion Maul",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "205"
+    "tlidbId": "205",
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_001_112.webp"
   },
   {
     "id": "prayer-hammer",
     "name": "Prayer Hammer",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "206"
+    "tlidbId": "206",
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_002_112.webp"
   },
   {
     "id": "nightmare-hammer",
     "name": "Nightmare Hammer",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "207"
+    "tlidbId": "207",
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_003_112.webp"
   },
   {
     "id": "dragon-s-roar-hammer",
     "name": "Dragon's Roar Hammer",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "208"
+    "tlidbId": "208",
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_004_112.webp"
   },
   {
     "id": "tremor-wooden-hammer",
     "name": "Tremor Wooden Hammer",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "209"
+    "tlidbId": "209",
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_005_112.webp"
   },
   {
     "id": "thorny-hammer",
     "name": "Thorny Hammer",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "210"
+    "tlidbId": "210",
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_001_112.webp"
   },
   {
     "id": "rocksplitter-mallet",
     "name": "Rocksplitter Mallet",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "211"
+    "tlidbId": "211",
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_002_112.webp"
   },
   {
     "id": "primeval-war-hammer",
     "name": "Primeval War Hammer",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "212"
+    "tlidbId": "212",
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_003_112.webp"
   },
   {
     "id": "nature-wooden-hammer",
     "name": "Nature Wooden Hammer",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "213"
+    "tlidbId": "213",
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_004_112.webp"
   },
   {
     "id": "redgold-hammer",
     "name": "Redgold Hammer",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "214"
+    "tlidbId": "214",
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_005_112.webp"
   },
   {
     "id": "twilight-hammer",
     "name": "Twilight Hammer",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "215"
+    "tlidbId": "215",
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_001_112.webp"
   },
   {
     "id": "quinn-s-hammer",
     "name": "Quinn's Hammer",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "216"
+    "tlidbId": "216",
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_005_112.webp"
   },
   {
     "id": "general-s-war-hammer",
     "name": "General's War Hammer",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "217"
+    "tlidbId": "217",
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_001_112.webp"
   },
   {
     "id": "melted-iron-hammer",
     "name": "Melted Iron Hammer",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "218"
+    "tlidbId": "218",
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_001_112.webp"
   },
   {
     "id": "sierra-forge-light-hammer",
     "name": "Sierra Forge Light Hammer",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "219"
+    "tlidbId": "219",
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_001_112.webp"
   },
   {
     "id": "rusted-bronze-sword",
     "name": "Rusted Bronze Sword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "400"
+    "tlidbId": "400",
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_001_112.webp"
   },
   {
     "id": "crude-iron-sword",
     "name": "Crude Iron Sword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "401"
+    "tlidbId": "401",
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_002_112.webp"
   },
   {
     "id": "recruit-s-saber",
     "name": "Recruit's Saber",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "402"
+    "tlidbId": "402",
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_003_112.webp"
   },
   {
     "id": "iron-sword",
     "name": "Iron Sword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "403"
+    "tlidbId": "403",
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_004_112.webp"
   },
   {
     "id": "thorny-sword",
     "name": "Thorny Sword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "404"
+    "tlidbId": "404",
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_005_112.webp"
   },
   {
     "id": "battlefield-longsword",
     "name": "Battlefield Longsword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "405"
+    "tlidbId": "405",
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_001_112.webp"
   },
   {
     "id": "redgold-sword",
     "name": "Redgold Sword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "406"
+    "tlidbId": "406",
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_002_112.webp"
   },
   {
     "id": "cold-blade",
     "name": "Cold Blade",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "407"
+    "tlidbId": "407",
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_003_112.webp"
   },
   {
     "id": "talon-sword",
     "name": "Talon Sword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "408"
+    "tlidbId": "408",
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_004_112.webp"
   },
   {
     "id": "hurricane-short-sword",
     "name": "Hurricane Short Sword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "409"
+    "tlidbId": "409",
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_005_112.webp"
   },
   {
     "id": "blizzard-sword",
     "name": "Blizzard Sword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "410"
+    "tlidbId": "410",
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_001_112.webp"
   },
   {
     "id": "coldlight-sword",
     "name": "Coldlight Sword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "411"
+    "tlidbId": "411",
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_002_112.webp"
   },
   {
     "id": "hero-s-longsword",
     "name": "Hero's Longsword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "412"
+    "tlidbId": "412",
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_003_112.webp"
   },
   {
     "id": "gilt-longsword",
     "name": "Gilt Longsword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "413"
+    "tlidbId": "413",
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_004_112.webp"
   },
   {
     "id": "bone-stinger-sword",
     "name": "Bone Stinger Sword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "414"
+    "tlidbId": "414",
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_005_112.webp"
   },
   {
     "id": "moonlight-long-blade",
     "name": "Moonlight Long Blade",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "415"
+    "tlidbId": "415",
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_001_112.webp"
   },
   {
     "id": "nameless-sword",
     "name": "Nameless Sword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "416"
+    "tlidbId": "416",
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_005_112.webp"
   },
   {
     "id": "forgotten-iron-sword",
     "name": "Forgotten Iron Sword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "417"
+    "tlidbId": "417",
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_001_112.webp"
   },
   {
     "id": "unforgotten-long-blade",
     "name": "Unforgotten Long Blade",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "418"
+    "tlidbId": "418",
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_001_112.webp"
   },
   {
     "id": "shadowless-swordsman-s-blade",
     "name": "Shadowless Swordsman's Blade",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "419"
+    "tlidbId": "419",
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_001_112.webp"
   },
   {
     "id": "rusted-pistol",
     "name": "Rusted Pistol",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1500"
+    "tlidbId": "1500",
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_001_112.webp"
   },
   {
     "id": "blackrock-zapper",
     "name": "Blackrock Zapper",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1501"
+    "tlidbId": "1501",
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_002_112.webp"
   },
   {
     "id": "pocket-boomstick",
     "name": "Pocket Boomstick",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1502"
+    "tlidbId": "1502",
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_003_112.webp"
   },
   {
     "id": "iron-pistol",
     "name": "Iron Pistol",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1503"
+    "tlidbId": "1503",
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_004_112.webp"
   },
   {
     "id": "black-feather-zapper",
     "name": "Black Feather Zapper",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1504"
+    "tlidbId": "1504",
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_005_112.webp"
   },
   {
     "id": "rottenbone-zapper",
     "name": "Rottenbone Zapper",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1505"
+    "tlidbId": "1505",
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_001_112.webp"
   },
   {
     "id": "thorny-boomstick",
     "name": "Thorny Boomstick",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1506"
+    "tlidbId": "1506",
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_002_112.webp"
   },
   {
     "id": "warden-s-boomstick",
     "name": "Warden's Boomstick",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1507"
+    "tlidbId": "1507",
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_003_112.webp"
   },
   {
     "id": "unholy-zapper",
     "name": "Unholy Zapper",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1508"
+    "tlidbId": "1508",
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_004_112.webp"
   },
   {
     "id": "cursed-boomstick",
     "name": "Cursed Boomstick",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1509"
+    "tlidbId": "1509",
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_005_112.webp"
   },
   {
     "id": "viper-zapper",
     "name": "Viper Zapper",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1510"
+    "tlidbId": "1510",
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_001_112.webp"
   },
   {
     "id": "voodoo-boomstick",
     "name": "Voodoo Boomstick",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1511"
+    "tlidbId": "1511",
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_002_112.webp"
   },
   {
     "id": "bloodclaw-zapper",
     "name": "Bloodclaw Zapper",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1512"
+    "tlidbId": "1512",
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_003_112.webp"
   },
   {
     "id": "swarm-pistol",
     "name": "Swarm Pistol",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1513"
+    "tlidbId": "1513",
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_004_112.webp"
   },
   {
     "id": "shadow-boomstick",
     "name": "Shadow Boomstick",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1514"
+    "tlidbId": "1514",
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_005_112.webp"
   },
   {
     "id": "dragonsoul-zapper",
     "name": "Dragonsoul Zapper",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1515"
+    "tlidbId": "1515",
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_001_112.webp"
   },
   {
     "id": "final-battle-boomstick",
     "name": "Final Battle Boomstick",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1516"
+    "tlidbId": "1516",
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_005_112.webp"
   },
   {
     "id": "terminator-boomstick",
     "name": "Terminator Boomstick",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1517"
+    "tlidbId": "1517",
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_001_112.webp"
   },
   {
     "id": "kingslayer-boomstick",
     "name": "Kingslayer Boomstick",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1518"
+    "tlidbId": "1518",
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_001_112.webp"
   },
   {
     "id": "war-ender-s-boomstick",
     "name": "War Ender's Boomstick",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1519"
+    "tlidbId": "1519",
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_001_112.webp"
   },
   {
     "id": "bud-rod",
     "name": "Bud Rod",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2100"
+    "tlidbId": "2100",
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "thriving-rod",
     "name": "Thriving Rod",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2101"
+    "tlidbId": "2101",
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
   },
   {
     "id": "vine-rod",
     "name": "Vine Rod",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2102"
+    "tlidbId": "2102",
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
   },
   {
     "id": "storm-rod",
     "name": "Storm Rod",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2103"
+    "tlidbId": "2103",
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
   },
   {
     "id": "waning-moon-rod",
     "name": "Waning Moon Rod",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2104"
+    "tlidbId": "2104",
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
   },
   {
     "id": "flying-bird-rod",
     "name": "Flying Bird Rod",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2105"
+    "tlidbId": "2105",
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "swimming-fish-rod",
     "name": "Swimming Fish Rod",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2106"
+    "tlidbId": "2106",
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
   },
   {
     "id": "shepherdess-rod",
     "name": "Shepherdess Rod",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2107"
+    "tlidbId": "2107",
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
   },
   {
     "id": "river-rod",
     "name": "River Rod",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2108"
+    "tlidbId": "2108",
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
   },
   {
     "id": "harvest-rod",
     "name": "Harvest Rod",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2109"
+    "tlidbId": "2109",
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
   },
   {
     "id": "daylight-rod",
     "name": "Daylight Rod",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2110"
+    "tlidbId": "2110",
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "full-moon-rod",
     "name": "Full Moon Rod",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2111"
+    "tlidbId": "2111",
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
   },
   {
     "id": "shooting-star-rod",
     "name": "Shooting Star Rod",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2112"
+    "tlidbId": "2112",
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "beast-king-rod",
     "name": "Beast King Rod",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2113"
+    "tlidbId": "2113",
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
   },
   {
     "id": "celestial-rod",
     "name": "Celestial Rod",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2114"
+    "tlidbId": "2114",
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
   },
   {
     "id": "cosmic-rod",
     "name": "Cosmic Rod",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2115"
+    "tlidbId": "2115",
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
   },
   {
     "id": "star-ocean-rod",
     "name": "Star Ocean Rod",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2116"
+    "tlidbId": "2116",
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
   },
   {
     "id": "astrologer-rod",
     "name": "Astrologer Rod",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2117"
+    "tlidbId": "2117",
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "bard-rod",
     "name": "Bard Rod",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2118"
+    "tlidbId": "2118",
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "heart-of-all-rod",
     "name": "Heart of All Rod",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2119"
+    "tlidbId": "2119",
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "withering-scepter",
     "name": "Withering Scepter",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2200"
+    "tlidbId": "2200",
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "marsh-scepter",
     "name": "Marsh Scepter",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2201"
+    "tlidbId": "2201",
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
   },
   {
     "id": "barren-scepter",
     "name": "Barren Scepter",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2202"
+    "tlidbId": "2202",
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
   },
   {
     "id": "lamentation-scepter",
     "name": "Lamentation Scepter",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2203"
+    "tlidbId": "2203",
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
   },
   {
     "id": "disorientation-scepter",
     "name": "Disorientation Scepter",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2204"
+    "tlidbId": "2204",
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
   },
   {
     "id": "high-tower-scepter",
     "name": "High Tower Scepter",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2205"
+    "tlidbId": "2205",
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "hanging-scepter",
     "name": "Hanging Scepter",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2206"
+    "tlidbId": "2206",
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
   },
   {
     "id": "eternal-night-scepter",
     "name": "Eternal Night Scepter",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2207"
+    "tlidbId": "2207",
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
   },
   {
     "id": "red-rain-scepter",
     "name": "Red Rain Scepter",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2208"
+    "tlidbId": "2208",
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
   },
   {
     "id": "stigmata-scepter",
     "name": "Stigmata Scepter",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2209"
+    "tlidbId": "2209",
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
   },
   {
     "id": "deception-scepter",
     "name": "Deception Scepter",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2210"
+    "tlidbId": "2210",
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "sorrow-scepter",
     "name": "Sorrow Scepter",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2211"
+    "tlidbId": "2211",
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
   },
   {
     "id": "agony-scepter",
     "name": "Agony Scepter",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2212"
+    "tlidbId": "2212",
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "rotten-scepter",
     "name": "Rotten Scepter",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2213"
+    "tlidbId": "2213",
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
   },
   {
     "id": "spiral-scepter",
     "name": "Spiral Scepter",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2214"
+    "tlidbId": "2214",
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
   },
   {
     "id": "judgment-scepter",
     "name": "Judgment Scepter",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2215"
+    "tlidbId": "2215",
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
   },
   {
     "id": "reflux-scepter",
     "name": "Reflux Scepter",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2216"
+    "tlidbId": "2216",
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
   },
   {
     "id": "trickster-scepter",
     "name": "Trickster Scepter",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2217"
+    "tlidbId": "2217",
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "thorn-sea-scepter",
     "name": "Thorn Sea Scepter",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2218"
+    "tlidbId": "2218",
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "dark-gaze-scepter",
     "name": "Dark Gaze Scepter",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2219"
+    "tlidbId": "2219",
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "withervine-wand",
@@ -2641,10 +2965,14 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 2
+        "value": 2,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "2000"
+    "tlidbId": "2000",
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "rambone-wand",
@@ -2654,10 +2982,14 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 3
+        "value": 3,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "2001"
+    "tlidbId": "2001",
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
   },
   {
     "id": "carved-wooden-wand",
@@ -2667,10 +2999,14 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 4
+        "value": 4,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "2002"
+    "tlidbId": "2002",
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
   },
   {
     "id": "cuprite-wand",
@@ -2680,10 +3016,14 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 5
+        "value": 5,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "2003"
+    "tlidbId": "2003",
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
   },
   {
     "id": "spiritwood-wand",
@@ -2693,10 +3033,14 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 6
+        "value": 6,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "2004"
+    "tlidbId": "2004",
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
   },
   {
     "id": "wind-spirit-wand",
@@ -2706,10 +3050,14 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 7
+        "value": 7,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "2005"
+    "tlidbId": "2005",
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "voodoo-wand",
@@ -2719,10 +3067,14 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 8
+        "value": 8,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "2006"
+    "tlidbId": "2006",
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
   },
   {
     "id": "flower-sea-wand",
@@ -2732,10 +3084,14 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 9
+        "value": 9,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "2007"
+    "tlidbId": "2007",
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
   },
   {
     "id": "wiseman-s-wand",
@@ -2745,10 +3101,14 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 10
+        "value": 10,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "2008"
+    "tlidbId": "2008",
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
   },
   {
     "id": "white-crystal-wand",
@@ -2758,10 +3118,14 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 12
+        "value": 12,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "2009"
+    "tlidbId": "2009",
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
   },
   {
     "id": "viper-wand",
@@ -2771,10 +3135,14 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 14
+        "value": 14,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "2010"
+    "tlidbId": "2010",
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "wraith-wand",
@@ -2784,10 +3152,14 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 16
+        "value": 16,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "2011"
+    "tlidbId": "2011",
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
   },
   {
     "id": "bard-s-wand",
@@ -2797,10 +3169,14 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 18
+        "value": 18,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "2012"
+    "tlidbId": "2012",
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "sage-wand",
@@ -2810,10 +3186,14 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 20
+        "value": 20,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "2013"
+    "tlidbId": "2013",
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
   },
   {
     "id": "devout-wand",
@@ -2823,10 +3203,14 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 22
+        "value": 22,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "2014"
+    "tlidbId": "2014",
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
   },
   {
     "id": "scarlet-wand",
@@ -2836,10 +3220,14 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 24
+        "value": 24,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "2015"
+    "tlidbId": "2015",
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
   },
   {
     "id": "azure-moon-wand",
@@ -2849,10 +3237,14 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 26
+        "value": 26,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "2016"
+    "tlidbId": "2016",
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
   },
   {
     "id": "wretched-wand",
@@ -2862,10 +3254,14 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 28
+        "value": 28,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "2017"
+    "tlidbId": "2017",
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "heartflayer-wand",
@@ -2875,185 +3271,214 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 30
+        "value": 30,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "2018"
+    "tlidbId": "2018",
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "headless-cleric-wand",
     "name": "Headless Cleric Wand",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "2019"
+    "tlidbId": "2019",
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
   },
   {
     "id": "aspiration-light-shield",
     "name": "Aspiration Light Shield",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4300"
+    "tlidbId": "4300",
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_001_112.webp"
   },
   {
     "id": "griffin-buckler",
     "name": "Griffin Buckler",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4301"
+    "tlidbId": "4301",
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_002_112.webp"
   },
   {
     "id": "wind-spirit-light-shield",
     "name": "Wind Spirit Light Shield",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4302"
+    "tlidbId": "4302",
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_003_112.webp"
   },
   {
     "id": "dragonfang-buckler",
     "name": "Dragonfang Buckler",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4303"
+    "tlidbId": "4303",
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_004_112.webp"
   },
   {
     "id": "hunter-s-buckler",
     "name": "Hunter's Buckler",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4304"
+    "tlidbId": "4304",
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_001_112.webp"
   },
   {
     "id": "thunder-light-shield",
     "name": "Thunder Light Shield",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4305"
+    "tlidbId": "4305",
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_002_112.webp"
   },
   {
     "id": "cursed-light-shield",
     "name": "Cursed Light Shield",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4306"
+    "tlidbId": "4306",
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_003_112.webp"
   },
   {
     "id": "viper-buckler",
     "name": "Viper Buckler",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4307"
+    "tlidbId": "4307",
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_004_112.webp"
   },
   {
     "id": "shadow-light-shield",
     "name": "Shadow Light Shield",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4308"
+    "tlidbId": "4308",
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_001_112.webp"
   },
   {
     "id": "wind-god-s-buckler",
     "name": "Wind God's Buckler",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4309"
+    "tlidbId": "4309",
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_002_112.webp"
   },
   {
     "id": "conqueror-buckler",
     "name": "Conqueror Buckler",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4310"
+    "tlidbId": "4310",
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_003_112.webp"
   },
   {
     "id": "lost-ranger-s-light-shield",
     "name": "Lost Ranger's Light Shield",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4311"
+    "tlidbId": "4311",
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_004_112.webp"
   },
   {
     "id": "aspiration-magic-shield",
     "name": "Aspiration Magic Shield",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4400"
+    "tlidbId": "4400",
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_001_112.webp"
   },
   {
     "id": "voodoo-caster-shield",
     "name": "Voodoo Caster Shield",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4401"
+    "tlidbId": "4401",
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_002_112.webp"
   },
   {
     "id": "bard-s-square-shield",
     "name": "Bard's Square Shield",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4402"
+    "tlidbId": "4402",
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_003_112.webp"
   },
   {
     "id": "freedom-square-shield",
     "name": "Freedom Square Shield",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4403"
+    "tlidbId": "4403",
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_004_112.webp"
   },
   {
     "id": "nature-caster-shield",
     "name": "Nature Caster Shield",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4404"
+    "tlidbId": "4404",
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_001_112.webp"
   },
   {
     "id": "abyssal-square-shield",
     "name": "Abyssal Square Shield",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4405"
+    "tlidbId": "4405",
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_002_112.webp"
   },
   {
     "id": "blizzard-square-shield",
     "name": "Blizzard Square Shield",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4406"
+    "tlidbId": "4406",
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_003_112.webp"
   },
   {
     "id": "sage-s-caster-shield",
     "name": "Sage's Caster Shield",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4407"
+    "tlidbId": "4407",
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_004_112.webp"
   },
   {
     "id": "spirit-lord-s-caster-shield",
     "name": "Spirit Lord's Caster Shield",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4408"
+    "tlidbId": "4408",
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_001_112.webp"
   },
   {
     "id": "twilight-square-shield",
     "name": "Twilight Square Shield",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4409"
+    "tlidbId": "4409",
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_002_112.webp"
   },
   {
     "id": "fraudster-magic-shield",
     "name": "Fraudster Magic Shield",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4410"
+    "tlidbId": "4410",
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_003_112.webp"
   },
   {
     "id": "ninth-apostle-s-magic-shield",
     "name": "Ninth Apostle's Magic Shield",
     "slot": "offhand",
     "implicit": [],
-    "tlidbId": "4411"
+    "tlidbId": "4411",
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_004_112.webp"
   },
   {
     "id": "aspiration-tower-shield",
@@ -3066,7 +3491,8 @@
         "value": 168
       }
     ],
-    "tlidbId": "4200"
+    "tlidbId": "4200",
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_001_128.webp"
   },
   {
     "id": "starmetal-kite-shield",
@@ -3079,7 +3505,8 @@
         "value": 235
       }
     ],
-    "tlidbId": "4201"
+    "tlidbId": "4201",
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_002_128.webp"
   },
   {
     "id": "griffin-tower-shield",
@@ -3092,7 +3519,8 @@
         "value": 329
       }
     ],
-    "tlidbId": "4202"
+    "tlidbId": "4202",
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_003_128.webp"
   },
   {
     "id": "crimson-kite-shield",
@@ -3105,7 +3533,8 @@
         "value": 461
       }
     ],
-    "tlidbId": "4203"
+    "tlidbId": "4203",
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_004_128.webp"
   },
   {
     "id": "callous-kite-shield",
@@ -3118,7 +3547,8 @@
         "value": 599
       }
     ],
-    "tlidbId": "4204"
+    "tlidbId": "4204",
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_001_128.webp"
   },
   {
     "id": "falling-star-tower-shield",
@@ -3131,7 +3561,8 @@
         "value": 779
       }
     ],
-    "tlidbId": "4205"
+    "tlidbId": "4205",
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_002_128.webp"
   },
   {
     "id": "warlord-s-kite-shield",
@@ -3144,7 +3575,8 @@
         "value": 935
       }
     ],
-    "tlidbId": "4206"
+    "tlidbId": "4206",
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_003_128.webp"
   },
   {
     "id": "vindicator-s-tower-shield",
@@ -3157,7 +3589,8 @@
         "value": 1122
       }
     ],
-    "tlidbId": "4207"
+    "tlidbId": "4207",
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_004_128.webp"
   },
   {
     "id": "monarch-s-kite-shield",
@@ -3170,7 +3603,8 @@
         "value": 1346
       }
     ],
-    "tlidbId": "4208"
+    "tlidbId": "4208",
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_001_128.webp"
   },
   {
     "id": "glory-kite-shield",
@@ -3183,7 +3617,8 @@
         "value": 1615
       }
     ],
-    "tlidbId": "4209"
+    "tlidbId": "4209",
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_002_128.webp"
   },
   {
     "id": "red-pegasus-kite-shield",
@@ -3196,7 +3631,8 @@
         "value": 1777
       }
     ],
-    "tlidbId": "4210"
+    "tlidbId": "4210",
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_003_128.webp"
   },
   {
     "id": "future-warrior-s-kite-shield",
@@ -3209,707 +3645,808 @@
         "value": 1920
       }
     ],
-    "tlidbId": "4211"
+    "tlidbId": "4211",
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_004_128.webp"
   },
   {
     "id": "rottenwood-bow",
     "name": "Rottenwood Bow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1600"
+    "tlidbId": "1600",
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_001_112.webp"
   },
   {
     "id": "vitex-bow",
     "name": "Vitex Bow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1601"
+    "tlidbId": "1601",
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_002_112.webp"
   },
   {
     "id": "beastbone-bow",
     "name": "Beastbone Bow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1602"
+    "tlidbId": "1602",
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_003_112.webp"
   },
   {
     "id": "thorny-curve-bow",
     "name": "Thorny Curve Bow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1603"
+    "tlidbId": "1603",
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_004_112.webp"
   },
   {
     "id": "bonewood-hunting-bow",
     "name": "Bonewood Hunting Bow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1604"
+    "tlidbId": "1604",
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_005_112.webp"
   },
   {
     "id": "segar-hunting-bow",
     "name": "Segar Hunting Bow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1605"
+    "tlidbId": "1605",
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_001_112.webp"
   },
   {
     "id": "griffin-long-bow",
     "name": "Griffin Long Bow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1606"
+    "tlidbId": "1606",
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_002_112.webp"
   },
   {
     "id": "white-wolf-curve-bow",
     "name": "White Wolf Curve Bow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1607"
+    "tlidbId": "1607",
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_003_112.webp"
   },
   {
     "id": "raider-s-bow",
     "name": "Raider's Bow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1608"
+    "tlidbId": "1608",
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_004_112.webp"
   },
   {
     "id": "white-feather-hunting-bow",
     "name": "White Feather Hunting Bow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1609"
+    "tlidbId": "1609",
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_005_112.webp"
   },
   {
     "id": "piercer-bow",
     "name": "Piercer Bow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1610"
+    "tlidbId": "1610",
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_001_112.webp"
   },
   {
     "id": "bloody-curve-bow",
     "name": "Bloody Curve Bow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1611"
+    "tlidbId": "1611",
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_002_112.webp"
   },
   {
     "id": "black-feather-long-bow",
     "name": "Black Feather Long Bow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1612"
+    "tlidbId": "1612",
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_003_112.webp"
   },
   {
     "id": "twilight-curve-bow",
     "name": "Twilight Curve Bow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1613"
+    "tlidbId": "1613",
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_004_112.webp"
   },
   {
     "id": "unholy-hunting-bow",
     "name": "Unholy Hunting Bow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1614"
+    "tlidbId": "1614",
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_005_112.webp"
   },
   {
     "id": "thunder-long-bow",
     "name": "Thunder Long Bow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1615"
+    "tlidbId": "1615",
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_001_112.webp"
   },
   {
     "id": "starfall-long-bow",
     "name": "Starfall Long Bow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1616"
+    "tlidbId": "1616",
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_005_112.webp"
   },
   {
     "id": "demon-hunter-long-bow",
     "name": "Demon Hunter Long Bow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1617"
+    "tlidbId": "1617",
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_001_112.webp"
   },
   {
     "id": "godseeker-long-bow",
     "name": "Godseeker Long Bow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1618"
+    "tlidbId": "1618",
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_001_112.webp"
   },
   {
     "id": "lonely-hunter-s-bow",
     "name": "Lonely Hunter's Bow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1619"
+    "tlidbId": "1619",
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_001_112.webp"
   },
   {
     "id": "woodvine-light-crossbow",
     "name": "Woodvine Light Crossbow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1700"
+    "tlidbId": "1700",
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_001_112.webp"
   },
   {
     "id": "rambone-short-crossbow",
     "name": "Rambone Short Crossbow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1701"
+    "tlidbId": "1701",
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_002_112.webp"
   },
   {
     "id": "darkwoods-long-crossbow",
     "name": "Darkwoods Long Crossbow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1702"
+    "tlidbId": "1702",
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_003_112.webp"
   },
   {
     "id": "bronze-short-crossbow",
     "name": "Bronze Short Crossbow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1703"
+    "tlidbId": "1703",
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_004_112.webp"
   },
   {
     "id": "soldier-s-light-crossbow",
     "name": "Soldier's Light Crossbow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1704"
+    "tlidbId": "1704",
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_005_112.webp"
   },
   {
     "id": "black-iron-crossbow",
     "name": "Black Iron Crossbow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1705"
+    "tlidbId": "1705",
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_001_112.webp"
   },
   {
     "id": "elven-hunting-crossbow",
     "name": "Elven Hunting Crossbow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1706"
+    "tlidbId": "1706",
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_002_112.webp"
   },
   {
     "id": "beastfang-light-crossbow",
     "name": "Beastfang Light Crossbow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1707"
+    "tlidbId": "1707",
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_003_112.webp"
   },
   {
     "id": "jungle-hunting-bow",
     "name": "Jungle Hunting Bow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1708"
+    "tlidbId": "1708",
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_004_112.webp"
   },
   {
     "id": "segar-hunting-crossbow",
     "name": "Segar Hunting Crossbow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1709"
+    "tlidbId": "1709",
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_005_112.webp"
   },
   {
     "id": "muddy-long-crossbow",
     "name": "Muddy Long Crossbow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1710"
+    "tlidbId": "1710",
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_001_112.webp"
   },
   {
     "id": "cursed-war-crossbow",
     "name": "Cursed War Crossbow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1711"
+    "tlidbId": "1711",
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_002_112.webp"
   },
   {
     "id": "conflict-crossbow",
     "name": "Conflict Crossbow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1712"
+    "tlidbId": "1712",
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_003_112.webp"
   },
   {
     "id": "blue-sea-war-crossbow",
     "name": "Blue Sea War Crossbow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1713"
+    "tlidbId": "1713",
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_004_112.webp"
   },
   {
     "id": "icy-war-crossbow",
     "name": "Icy War Crossbow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1714"
+    "tlidbId": "1714",
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_005_112.webp"
   },
   {
     "id": "scarlet-crossbow",
     "name": "Scarlet Crossbow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1715"
+    "tlidbId": "1715",
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_001_112.webp"
   },
   {
     "id": "flowing-blaze-crossbow",
     "name": "Flowing Blaze Crossbow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1716"
+    "tlidbId": "1716",
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_005_112.webp"
   },
   {
     "id": "red-pegasus-war-crossbow",
     "name": "Red Pegasus War Crossbow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1717"
+    "tlidbId": "1717",
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_001_112.webp"
   },
   {
     "id": "black-pass-hunting-crossbow",
     "name": "Black Pass Hunting Crossbow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1718"
+    "tlidbId": "1718",
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_001_112.webp"
   },
   {
     "id": "war-ranger-s-crossbow",
     "name": "War Ranger's Crossbow",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1719"
+    "tlidbId": "1719",
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_001_112.webp"
   },
   {
     "id": "witherbark-staff",
     "name": "Witherbark Staff",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1300"
+    "tlidbId": "1300",
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
   },
   {
     "id": "cultivation-iron-staff",
     "name": "Cultivation Iron Staff",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1301"
+    "tlidbId": "1301",
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_002_112.webp"
   },
   {
     "id": "thorny-staff",
     "name": "Thorny Staff",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1302"
+    "tlidbId": "1302",
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_003_112.webp"
   },
   {
     "id": "ascetic-iron-staff",
     "name": "Ascetic Iron Staff",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1303"
+    "tlidbId": "1303",
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_004_112.webp"
   },
   {
     "id": "dryad-staff",
     "name": "Dryad Staff",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1304"
+    "tlidbId": "1304",
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_005_112.webp"
   },
   {
     "id": "confession-iron-staff",
     "name": "Confession Iron Staff",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1305"
+    "tlidbId": "1305",
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
   },
   {
     "id": "broken-mirror-staff",
     "name": "Broken Mirror Staff",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1306"
+    "tlidbId": "1306",
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_002_112.webp"
   },
   {
     "id": "ancestral-staff",
     "name": "Ancestral Staff",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1307"
+    "tlidbId": "1307",
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_003_112.webp"
   },
   {
     "id": "authority-iron-staff",
     "name": "Authority Iron Staff",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1308"
+    "tlidbId": "1308",
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_004_112.webp"
   },
   {
     "id": "flower-staff",
     "name": "Flower Staff",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1309"
+    "tlidbId": "1309",
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_005_112.webp"
   },
   {
     "id": "conviction-iron-staff",
     "name": "Conviction Iron Staff",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1310"
+    "tlidbId": "1310",
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
   },
   {
     "id": "sacred-tree-staff",
     "name": "Sacred Tree Staff",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1311"
+    "tlidbId": "1311",
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_002_112.webp"
   },
   {
     "id": "judge-s-iron-staff",
     "name": "Judge's Iron Staff",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1312"
+    "tlidbId": "1312",
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_003_112.webp"
   },
   {
     "id": "perishing-staff",
     "name": "Perishing Staff",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1313"
+    "tlidbId": "1313",
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_004_112.webp"
   },
   {
     "id": "esoteric-cudgel",
     "name": "Esoteric Cudgel",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1314"
+    "tlidbId": "1314",
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_005_112.webp"
   },
   {
     "id": "origin-iron-staff",
     "name": "Origin Iron Staff",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1315"
+    "tlidbId": "1315",
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
   },
   {
     "id": "reincarnation-iron-staff",
     "name": "Reincarnation Iron Staff",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1316"
+    "tlidbId": "1316",
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_005_112.webp"
   },
   {
     "id": "absolver-iron-staff",
     "name": "Absolver Iron Staff",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1317"
+    "tlidbId": "1317",
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
   },
   {
     "id": "executive-iron-staff",
     "name": "Executive Iron Staff",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1318"
+    "tlidbId": "1318",
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
   },
   {
     "id": "last-man-s-cudgel",
     "name": "Last Man's Cudgel",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1319"
+    "tlidbId": "1319",
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
   },
   {
     "id": "witherbark-cannon",
     "name": "Witherbark Cannon",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1800"
+    "tlidbId": "1800",
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_001_112.webp"
   },
   {
     "id": "rusted-blaster",
     "name": "Rusted Blaster",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1801"
+    "tlidbId": "1801",
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_002_112.webp"
   },
   {
     "id": "black-iron-cannon",
     "name": "Black Iron Cannon",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1802"
+    "tlidbId": "1802",
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_003_112.webp"
   },
   {
     "id": "iron-cannon",
     "name": "Iron Cannon",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1803"
+    "tlidbId": "1803",
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_004_112.webp"
   },
   {
     "id": "wolf-hunter-s-cannon",
     "name": "Wolf Hunter's Cannon",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1804"
+    "tlidbId": "1804",
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_005_112.webp"
   },
   {
     "id": "starmetal-cannon",
     "name": "Starmetal Cannon",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1805"
+    "tlidbId": "1805",
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_001_112.webp"
   },
   {
     "id": "unholy-blaster",
     "name": "Unholy Blaster",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1806"
+    "tlidbId": "1806",
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_002_112.webp"
   },
   {
     "id": "warden-s-blaster",
     "name": "Warden's Blaster",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1807"
+    "tlidbId": "1807",
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_003_112.webp"
   },
   {
     "id": "griffin-blaster",
     "name": "Griffin Blaster",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1808"
+    "tlidbId": "1808",
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_004_112.webp"
   },
   {
     "id": "blazing-cannon",
     "name": "Blazing Cannon",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1809"
+    "tlidbId": "1809",
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_005_112.webp"
   },
   {
     "id": "unyielding-cannon",
     "name": "Unyielding Cannon",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1810"
+    "tlidbId": "1810",
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_001_112.webp"
   },
   {
     "id": "wailing-blaster",
     "name": "Wailing Blaster",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1811"
+    "tlidbId": "1811",
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_002_112.webp"
   },
   {
     "id": "abyssal-blaster",
     "name": "Abyssal Blaster",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1812"
+    "tlidbId": "1812",
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_003_112.webp"
   },
   {
     "id": "monarch-s-cannon",
     "name": "Monarch's Cannon",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1813"
+    "tlidbId": "1813",
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_004_112.webp"
   },
   {
     "id": "solar-flame-cannon",
     "name": "Solar Flame Cannon",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1814"
+    "tlidbId": "1814",
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_005_112.webp"
   },
   {
     "id": "viking-blaster",
     "name": "Viking Blaster",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1815"
+    "tlidbId": "1815",
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_001_112.webp"
   },
   {
     "id": "dark-ravine-cannon",
     "name": "Dark Ravine Cannon",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1816"
+    "tlidbId": "1816",
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_005_112.webp"
   },
   {
     "id": "fire-worshiper-cannon",
     "name": "Fire Worshiper Cannon",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1817"
+    "tlidbId": "1817",
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_001_112.webp"
   },
   {
     "id": "fire-eater-cannon",
     "name": "Fire Eater Cannon",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1818"
+    "tlidbId": "1818",
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_001_112.webp"
   },
   {
     "id": "sun-fall-cannon",
     "name": "Sun Fall Cannon",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1819"
+    "tlidbId": "1819",
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_001_112.webp"
   },
   {
     "id": "rusted-rifle",
     "name": "Rusted Rifle",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1900"
+    "tlidbId": "1900",
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_001_112.webp"
   },
   {
     "id": "crude-iron-rifle",
     "name": "Crude Iron Rifle",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1901"
+    "tlidbId": "1901",
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_002_112.webp"
   },
   {
     "id": "recruit-s-musket",
     "name": "Recruit's Musket",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1902"
+    "tlidbId": "1902",
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_003_112.webp"
   },
   {
     "id": "iron-musket",
     "name": "Iron Musket",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1903"
+    "tlidbId": "1903",
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_004_112.webp"
   },
   {
     "id": "wolf-fang-rifle",
     "name": "Wolf Fang Rifle",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1904"
+    "tlidbId": "1904",
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_005_112.webp"
   },
   {
     "id": "blazing-rifle",
     "name": "Blazing Rifle",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1905"
+    "tlidbId": "1905",
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_001_112.webp"
   },
   {
     "id": "unpredictable-rifle",
     "name": "Unpredictable Rifle",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1906"
+    "tlidbId": "1906",
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_002_112.webp"
   },
   {
     "id": "ripple-rifle",
     "name": "Ripple Rifle",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1907"
+    "tlidbId": "1907",
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_003_112.webp"
   },
   {
     "id": "eagle-rifle",
     "name": "Eagle Rifle",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1908"
+    "tlidbId": "1908",
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_004_112.webp"
   },
   {
     "id": "toxic-rifle",
     "name": "Toxic Rifle",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1909"
+    "tlidbId": "1909",
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_005_112.webp"
   },
   {
     "id": "conflict-rifle",
     "name": "Conflict Rifle",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1910"
+    "tlidbId": "1910",
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_001_112.webp"
   },
   {
     "id": "giant-s-rifle",
     "name": "Giant's Rifle",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1911"
+    "tlidbId": "1911",
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_002_112.webp"
   },
   {
     "id": "war-rifle",
     "name": "War Rifle",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1912"
+    "tlidbId": "1912",
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_003_112.webp"
   },
   {
     "id": "scarlet-rifle",
     "name": "Scarlet Rifle",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1913"
+    "tlidbId": "1913",
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_004_112.webp"
   },
   {
     "id": "moonlight-rifle",
     "name": "Moonlight Rifle",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1914"
+    "tlidbId": "1914",
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_005_112.webp"
   },
   {
     "id": "warlord-s-musket",
     "name": "Warlord's Musket",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1915"
+    "tlidbId": "1915",
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_001_112.webp"
   },
   {
     "id": "imperial-rifle",
     "name": "Imperial Rifle",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1916"
+    "tlidbId": "1916",
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_005_112.webp"
   },
   {
     "id": "bannerlord-s-musket",
     "name": "Bannerlord's Musket",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1917"
+    "tlidbId": "1917",
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_001_112.webp"
   },
   {
     "id": "personal-guard-musket",
     "name": "Personal Guard Musket",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1918"
+    "tlidbId": "1918",
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_001_112.webp"
   },
   {
     "id": "war-repercussion-musket",
     "name": "War Repercussion Musket",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1919"
+    "tlidbId": "1919",
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_001_112.webp"
   },
   {
     "id": "withervine-staff",
@@ -3919,10 +4456,14 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 4
+        "value": 4,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "1400"
+    "tlidbId": "1400",
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
   },
   {
     "id": "bonewood-staff",
@@ -3932,10 +4473,14 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 6
+        "value": 6,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "1401"
+    "tlidbId": "1401",
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_002_112.webp"
   },
   {
     "id": "ivory-staff",
@@ -3945,10 +4490,14 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 8
+        "value": 8,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "1402"
+    "tlidbId": "1402",
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_003_112.webp"
   },
   {
     "id": "iron-staff",
@@ -3958,10 +4507,14 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 10
+        "value": 10,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "1403"
+    "tlidbId": "1403",
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_004_112.webp"
   },
   {
     "id": "viper-staff",
@@ -3971,10 +4524,14 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 12
+        "value": 12,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "1404"
+    "tlidbId": "1404",
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_005_112.webp"
   },
   {
     "id": "gilt-staff",
@@ -3984,10 +4541,14 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 14
+        "value": 14,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "1405"
+    "tlidbId": "1405",
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
   },
   {
     "id": "flower-sea-staff",
@@ -3997,10 +4558,14 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 16
+        "value": 16,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "1406"
+    "tlidbId": "1406",
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_002_112.webp"
   },
   {
     "id": "monkey-staff",
@@ -4010,10 +4575,14 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 18
+        "value": 18,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "1407"
+    "tlidbId": "1407",
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_003_112.webp"
   },
   {
     "id": "white-crystal-staff",
@@ -4023,10 +4592,14 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 20
+        "value": 20,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "1408"
+    "tlidbId": "1408",
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_004_112.webp"
   },
   {
     "id": "black-feather-staff",
@@ -4036,10 +4609,14 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 24
+        "value": 24,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "1409"
+    "tlidbId": "1409",
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_005_112.webp"
   },
   {
     "id": "twilight-staff",
@@ -4049,10 +4626,14 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 28
+        "value": 28,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "1410"
+    "tlidbId": "1410",
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
   },
   {
     "id": "voodoo-staff",
@@ -4062,10 +4643,14 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 32
+        "value": 32,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "1411"
+    "tlidbId": "1411",
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_002_112.webp"
   },
   {
     "id": "sage-s-staff",
@@ -4075,10 +4660,14 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 36
+        "value": 36,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "1412"
+    "tlidbId": "1412",
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_003_112.webp"
   },
   {
     "id": "devout-staff",
@@ -4088,10 +4677,14 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 40
+        "value": 40,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "1413"
+    "tlidbId": "1413",
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_004_112.webp"
   },
   {
     "id": "wind-god-s-staff",
@@ -4101,10 +4694,14 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 44
+        "value": 44,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "1414"
+    "tlidbId": "1414",
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_005_112.webp"
   },
   {
     "id": "warden-s-staff",
@@ -4114,10 +4711,14 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 48
+        "value": 48,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "1415"
+    "tlidbId": "1415",
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
   },
   {
     "id": "divinity-staff",
@@ -4127,10 +4728,14 @@
       {
         "stat": "addedCold",
         "op": "flat",
-        "value": 52
+        "value": 52,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "1416"
+    "tlidbId": "1416",
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_005_112.webp"
   },
   {
     "id": "southern-cross-staff",
@@ -4140,10 +4745,14 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 56
+        "value": 56,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "1417"
+    "tlidbId": "1417",
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
   },
   {
     "id": "centaur-staff",
@@ -4153,454 +4762,519 @@
       {
         "stat": "addedErosion",
         "op": "flat",
-        "value": 60
+        "value": 60,
+        "tags": [
+          "spell"
+        ]
       }
     ],
-    "tlidbId": "1418"
+    "tlidbId": "1418",
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
   },
   {
     "id": "first-man-s-scepter",
     "name": "First Man's Scepter",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1419"
+    "tlidbId": "1419",
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
   },
   {
     "id": "shattered-iron-axe",
     "name": "Shattered Iron Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1100"
+    "tlidbId": "1100",
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_001_112.webp"
   },
   {
     "id": "gigantic-stone-axe",
     "name": "Gigantic Stone Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1101"
+    "tlidbId": "1101",
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_002_112.webp"
   },
   {
     "id": "iron-battle-axe",
     "name": "Iron Battle Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1102"
+    "tlidbId": "1102",
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_003_112.webp"
   },
   {
     "id": "hardrock-stone-axe",
     "name": "Hardrock Stone Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1103"
+    "tlidbId": "1103",
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_004_112.webp"
   },
   {
     "id": "coldlight-greataxe",
     "name": "Coldlight Greataxe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1104"
+    "tlidbId": "1104",
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_005_112.webp"
   },
   {
     "id": "gilt-board-axe",
     "name": "Gilt Board Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1105"
+    "tlidbId": "1105",
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_001_112.webp"
   },
   {
     "id": "marsh-greataxe",
     "name": "Marsh Greataxe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1106"
+    "tlidbId": "1106",
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_002_112.webp"
   },
   {
     "id": "blazing-greataxe",
     "name": "Blazing Greataxe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1107"
+    "tlidbId": "1107",
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_003_112.webp"
   },
   {
     "id": "giant-s-board-axe",
     "name": "Giant's Board Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1108"
+    "tlidbId": "1108",
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_004_112.webp"
   },
   {
     "id": "doomsday-board-axe",
     "name": "Doomsday Board Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1109"
+    "tlidbId": "1109",
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_005_112.webp"
   },
   {
     "id": "redgold-greataxe",
     "name": "Redgold Greataxe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1110"
+    "tlidbId": "1110",
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_001_112.webp"
   },
   {
     "id": "unpredictable-board-axe",
     "name": "Unpredictable Board Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1111"
+    "tlidbId": "1111",
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_002_112.webp"
   },
   {
     "id": "griffin-greataxe",
     "name": "Griffin Greataxe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1112"
+    "tlidbId": "1112",
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_003_112.webp"
   },
   {
     "id": "blue-sea-greataxe",
     "name": "Blue Sea Greataxe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1113"
+    "tlidbId": "1113",
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_004_112.webp"
   },
   {
     "id": "ripping-greataxe",
     "name": "Ripping Greataxe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1114"
+    "tlidbId": "1114",
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_005_112.webp"
   },
   {
     "id": "lava-board-axe",
     "name": "Lava Board Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1115"
+    "tlidbId": "1115",
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_001_112.webp"
   },
   {
     "id": "fallen-star-greataxe",
     "name": "Fallen Star Greataxe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1116"
+    "tlidbId": "1116",
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_005_112.webp"
   },
   {
     "id": "red-pegasus-greataxe",
     "name": "Red Pegasus Greataxe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1117"
+    "tlidbId": "1117",
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_001_112.webp"
   },
   {
     "id": "black-pass-board-axe",
     "name": "Black Pass Board Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1118"
+    "tlidbId": "1118",
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_001_112.webp"
   },
   {
     "id": "earthrending-axe",
     "name": "Earthrending Axe",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1119"
+    "tlidbId": "1119",
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_001_112.webp"
   },
   {
     "id": "crude-iron-maul",
     "name": "Crude Iron Maul",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1000"
+    "tlidbId": "1000",
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_001_112.webp"
   },
   {
     "id": "hardrock-mallet",
     "name": "Hardrock Mallet",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1001"
+    "tlidbId": "1001",
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_002_112.webp"
   },
   {
     "id": "iron-maul",
     "name": "Iron Maul",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1002"
+    "tlidbId": "1002",
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_003_112.webp"
   },
   {
     "id": "icefrost-mallet",
     "name": "Icefrost Mallet",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1003"
+    "tlidbId": "1003",
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_004_112.webp"
   },
   {
     "id": "beastfang-mallet",
     "name": "Beastfang Mallet",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1004"
+    "tlidbId": "1004",
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_005_112.webp"
   },
   {
     "id": "scarlet-maul",
     "name": "Scarlet Maul",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1005"
+    "tlidbId": "1005",
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_001_112.webp"
   },
   {
     "id": "lonewolf-maul",
     "name": "Lonewolf Maul",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1006"
+    "tlidbId": "1006",
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_002_112.webp"
   },
   {
     "id": "valagon-mallet",
     "name": "Valagon Mallet",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1007"
+    "tlidbId": "1007",
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_003_112.webp"
   },
   {
     "id": "crushing-mallet",
     "name": "Crushing Mallet",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1008"
+    "tlidbId": "1008",
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_004_112.webp"
   },
   {
     "id": "devastating-mallet",
     "name": "Devastating Mallet",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1009"
+    "tlidbId": "1009",
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_005_112.webp"
   },
   {
     "id": "doomsday-maul",
     "name": "Doomsday Maul",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1010"
+    "tlidbId": "1010",
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_001_112.webp"
   },
   {
     "id": "conflict-maul",
     "name": "Conflict Maul",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1011"
+    "tlidbId": "1011",
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_002_112.webp"
   },
   {
     "id": "vindicator-maul",
     "name": "Vindicator Maul",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1012"
+    "tlidbId": "1012",
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_003_112.webp"
   },
   {
     "id": "vanquisher-mallet",
     "name": "Vanquisher Mallet",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1013"
+    "tlidbId": "1013",
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_004_112.webp"
   },
   {
     "id": "platinum-mallet",
     "name": "Platinum Mallet",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1014"
+    "tlidbId": "1014",
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_005_112.webp"
   },
   {
     "id": "lava-maul",
     "name": "Lava Maul",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1015"
+    "tlidbId": "1015",
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_001_112.webp"
   },
   {
     "id": "crumbling-maul",
     "name": "Crumbling Maul",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1016"
+    "tlidbId": "1016",
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_005_112.webp"
   },
   {
     "id": "destroyer-mallet",
     "name": "Destroyer Mallet",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1017"
+    "tlidbId": "1017",
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_001_112.webp"
   },
   {
     "id": "forger-s-maul",
     "name": "Forger's Maul",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1018"
+    "tlidbId": "1018",
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_001_112.webp"
   },
   {
     "id": "sierra-reverberation-maul",
     "name": "Sierra Reverberation Maul",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1019"
+    "tlidbId": "1019",
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_001_112.webp"
   },
   {
     "id": "crude-wooden-sword",
     "name": "Crude Wooden Sword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1200"
+    "tlidbId": "1200",
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_001_112.webp"
   },
   {
     "id": "rottenwood-greatsword",
     "name": "Rottenwood Greatsword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1201"
+    "tlidbId": "1201",
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_002_112.webp"
   },
   {
     "id": "rusted-claymore",
     "name": "Rusted Claymore",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1202"
+    "tlidbId": "1202",
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_003_112.webp"
   },
   {
     "id": "rock-claymore",
     "name": "Rock Claymore",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1203"
+    "tlidbId": "1203",
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_004_112.webp"
   },
   {
     "id": "iron-greatsword",
     "name": "Iron Greatsword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1204"
+    "tlidbId": "1204",
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_005_112.webp"
   },
   {
     "id": "conflict-greatsword",
     "name": "Conflict Greatsword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1205"
+    "tlidbId": "1205",
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_001_112.webp"
   },
   {
     "id": "ripping-claymore",
     "name": "Ripping Claymore",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1206"
+    "tlidbId": "1206",
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_002_112.webp"
   },
   {
     "id": "coldlight-claymore",
     "name": "Coldlight Claymore",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1207"
+    "tlidbId": "1207",
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_003_112.webp"
   },
   {
     "id": "gladiator-s-greatsword",
     "name": "Gladiator's Greatsword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1208"
+    "tlidbId": "1208",
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_004_112.webp"
   },
   {
     "id": "barren-greatsword",
     "name": "Barren Greatsword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1209"
+    "tlidbId": "1209",
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_005_112.webp"
   },
   {
     "id": "tidal-claymore",
     "name": "Tidal Claymore",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1210"
+    "tlidbId": "1210",
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_001_112.webp"
   },
   {
     "id": "sundering-greatsword",
     "name": "Sundering Greatsword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1211"
+    "tlidbId": "1211",
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_002_112.webp"
   },
   {
     "id": "wolfsoul-claymore",
     "name": "Wolfsoul Claymore",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1212"
+    "tlidbId": "1212",
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_003_112.webp"
   },
   {
     "id": "glory-greatsword",
     "name": "Glory Greatsword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1213"
+    "tlidbId": "1213",
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_004_112.webp"
   },
   {
     "id": "griffin-greatsword",
     "name": "Griffin Greatsword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1214"
+    "tlidbId": "1214",
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_005_112.webp"
   },
   {
     "id": "vindicator-s-greatsword",
     "name": "Vindicator's Greatsword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1215"
+    "tlidbId": "1215",
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_001_112.webp"
   },
   {
     "id": "subjugation-claymore",
     "name": "Subjugation Claymore",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1216"
+    "tlidbId": "1216",
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_005_112.webp"
   },
   {
     "id": "red-pegasus-greatsword",
     "name": "Red Pegasus Greatsword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1217"
+    "tlidbId": "1217",
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_001_112.webp"
   },
   {
     "id": "black-pass-claymore",
     "name": "Black Pass Claymore",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1218"
+    "tlidbId": "1218",
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_001_112.webp"
   },
   {
     "id": "sky-severing-sword",
     "name": "Sky Severing Sword",
     "slot": "weapon",
     "implicit": [],
-    "tlidbId": "1219"
+    "tlidbId": "1219",
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_001_112.webp"
   },
   {
     "id": "thunder-channeling-prosthetics",
     "name": "Thunder Channeling Prosthetics",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "wind-chasers",
     "name": "Wind Chasers",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "ralph-s-journey",
     "name": "Ralph's Journey",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
@@ -4608,11 +5282,6 @@
     "name": "Royal Guard's Boots",
     "slot": "boots",
     "implicit": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.1
-      },
       {
         "stat": "erosionResist",
         "op": "flat",
@@ -4623,13 +5292,13 @@
   {
     "id": "trickster-s-tread",
     "name": "Trickster's Tread",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "pathfinder-s-path",
     "name": "Pathfinder's Path",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
@@ -4641,17 +5310,12 @@
   {
     "id": "valerie-s-night-stroll",
     "name": "Valerie's Night Stroll",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": [
       {
         "stat": "moreDamage",
         "op": "more",
         "value": 0.0075
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.15
       },
       {
         "stat": "moreDamage",
@@ -4663,55 +5327,55 @@
   {
     "id": "blade-dancer-s-steps",
     "name": "Blade-dancer's Steps",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "ralph-s-footsteps",
     "name": "Ralph's Footsteps",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "feline-steps",
     "name": "Feline Steps",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "rat-king-s-escape-show",
     "name": "Rat King's Escape Show",
-    "slot": "helmet",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "crow-s-plume",
     "name": "Crow's Plume",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "wriggling-tango",
     "name": "Wriggling Tango",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "heels-of-hands",
     "name": "Heels of Hands",
-    "slot": "gloves",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "awaiting",
     "name": "Awaiting",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "cold-sanctuary-prosthetics",
     "name": "Cold Sanctuary Prosthetics",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
@@ -4723,7 +5387,7 @@
   {
     "id": "air-treaders",
     "name": "Air Treaders",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": [
       {
         "stat": "life",
@@ -4735,7 +5399,7 @@
   {
     "id": "fighting-stompers",
     "name": "Fighting Stompers",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
@@ -4759,37 +5423,37 @@
   {
     "id": "king-s-boon",
     "name": "King's Boon",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "shadow-dance",
     "name": "Shadow Dance",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "verdant-steps",
     "name": "Verdant Steps",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "frozen-ripples",
     "name": "Frozen Ripples",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "beneath-the-styx",
     "name": "Beneath the Styx",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "dragon-scale-shoes",
     "name": "Dragon Scale Shoes",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": [
       {
         "stat": "life",
@@ -4801,7 +5465,7 @@
   {
     "id": "fire-shielding-prosthetics",
     "name": "Fire Shielding Prosthetics",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
@@ -4813,13 +5477,13 @@
   {
     "id": "resolution-steps",
     "name": "Resolution Steps",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
     "id": "final-bastion",
     "name": "Final Bastion",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": [
       {
         "stat": "fireResist",
@@ -4836,7 +5500,7 @@
   {
     "id": "mind-infusion",
     "name": "Mind Infusion",
-    "slot": "weapon",
+    "slot": "boots",
     "implicit": []
   },
   {
@@ -4865,7 +5529,7 @@
   {
     "id": "phantasm",
     "name": "Phantasm",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "life",
@@ -4877,25 +5541,19 @@
   {
     "id": "ralph-s-burial",
     "name": "Ralph's Burial",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "evil-heart-armor",
     "name": "Evil Heart Armor",
     "slot": "chest",
-    "implicit": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.4
-      }
-    ]
+    "implicit": []
   },
   {
     "id": "royal-cycle",
     "name": "Royal Cycle",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "increasedFire",
@@ -4917,7 +5575,7 @@
   {
     "id": "double-rainbow",
     "name": "Double Rainbow",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
@@ -4929,31 +5587,31 @@
   {
     "id": "lightning-striker-s-sacrum",
     "name": "Lightning Striker's Sacrum",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "trinity",
     "name": "Trinity",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "silent-monologue",
     "name": "Silent Monologue",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "israfel-s-sorrow",
     "name": "Israfel's Sorrow",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "genius-battlegear",
     "name": "Genius Battlegear",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "critDamage",
@@ -4965,7 +5623,7 @@
   {
     "id": "gauze-of-phantom-sin",
     "name": "Gauze of Phantom Sin",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "moreDamage",
@@ -4977,19 +5635,19 @@
   {
     "id": "imperious-verdict",
     "name": "Imperious Verdict",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "agony-of-lost-self",
     "name": "Agony of Lost Self",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "shattered-moonlight",
     "name": "Shattered Moonlight",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
@@ -5001,31 +5659,31 @@
   {
     "id": "iced-drinker-s-cage",
     "name": "Iced Drinker's Cage",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "undying-faith",
     "name": "Undying Faith",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "endless-fortress",
     "name": "Endless Fortress",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "corrupted-bulwark",
     "name": "Corrupted Bulwark",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "flaming-evil",
     "name": "Flaming Evil",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "fireResist",
@@ -5037,7 +5695,7 @@
   {
     "id": "frozen-path",
     "name": "Frozen Path",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "coldResist",
@@ -5049,7 +5707,7 @@
   {
     "id": "fleeting-sky",
     "name": "Fleeting Sky",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "lightningResist",
@@ -5061,7 +5719,7 @@
   {
     "id": "cicada-shell",
     "name": "Cicada Shell",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
@@ -5079,13 +5737,13 @@
   {
     "id": "blight",
     "name": "Blight",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "ruinous-star",
     "name": "Ruinous Star",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "moreDamage",
@@ -5097,13 +5755,13 @@
   {
     "id": "agony-s-embrace",
     "name": "Agony's Embrace",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "omniscient-prototype",
     "name": "Omniscient Prototype",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "life",
@@ -5115,25 +5773,25 @@
   {
     "id": "the-three-saints",
     "name": "The Three Saints",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "glorious-journey",
     "name": "Glorious Journey",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "furious-man-s-body",
     "name": "Furious Man's Body",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "magnus-jealousy",
     "name": "Magnus' Jealousy",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
@@ -5151,7 +5809,7 @@
   {
     "id": "varagon-s-lament",
     "name": "Varagon's Lament",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
@@ -5175,19 +5833,19 @@
   {
     "id": "crimson-king",
     "name": "Crimson King",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "martyr-s-staff",
     "name": "Martyr's Staff",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "void-embankment",
     "name": "Void Embankment",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "life",
@@ -5199,19 +5857,19 @@
   {
     "id": "heavyware",
     "name": "Heavyware",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "devouring-tide",
     "name": "Devouring Tide",
-    "slot": "ring",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "arrival-of-the-polar-night",
     "name": "Arrival of the Polar Night",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "increasedLife",
@@ -5223,19 +5881,19 @@
   {
     "id": "mere-eternity",
     "name": "Mere Eternity",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "friend-nemesis",
     "name": "Friend Nemesis",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "futile-tradeoff",
     "name": "Futile Tradeoff",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": [
       {
         "stat": "increasedLife",
@@ -5247,19 +5905,19 @@
   {
     "id": "silent-avowal",
     "name": "Silent Avowal",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "uros-s-bond",
     "name": "Uros's Bond",
-    "slot": "weapon",
+    "slot": "chest",
     "implicit": []
   },
   {
     "id": "berserker-bracer",
     "name": "Berserker Bracer",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
@@ -5271,55 +5929,58 @@
   {
     "id": "vendetta-s-sleeve-blade",
     "name": "Vendetta's Sleeve-Blade",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "marksman-bracers",
     "name": "Marksman Bracers",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "sea-splitter",
     "name": "Sea Splitter",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "tyrant-s-smoldering-hold",
     "name": "Tyrant's Smoldering Hold",
-    "slot": "ring",
+    "slot": "gloves",
     "implicit": [
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 110
+        "value": 110,
+        "tags": [
+          "attack"
+        ]
       }
     ]
   },
   {
     "id": "golden-touch",
     "name": "Golden Touch",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "chaos-abyss",
     "name": "Chaos Abyss",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "thunder-manipulator",
     "name": "Thunder Manipulator",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "blinding-bracers",
     "name": "Blinding Bracers",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": [
       {
         "stat": "moreDamage",
@@ -5336,25 +5997,25 @@
   {
     "id": "torturer-s-touch",
     "name": "Torturer's Touch",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "wings-of-light",
     "name": "Wings of Light",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "ralph-s-laws",
     "name": "Ralph's Laws",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "stray-bird-s-return",
     "name": "Stray Bird's Return",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
@@ -5366,19 +6027,19 @@
   {
     "id": "ice-pulse",
     "name": "Ice Pulse",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "vow-s-grasp",
     "name": "Vow's Grasp",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "providential-grace",
     "name": "Providential Grace",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
@@ -5390,13 +6051,13 @@
   {
     "id": "ice-and-fire",
     "name": "Ice and Fire",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "sage-s-insight",
     "name": "Sage's Insight",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
@@ -5420,19 +6081,19 @@
   {
     "id": "miniature-void-sea",
     "name": "Miniature Void Sea",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "israfel-s-laws",
     "name": "Israfel's Laws",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "aeterna-martyr",
     "name": "Aeterna Martyr",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
@@ -5444,7 +6105,7 @@
   {
     "id": "grasp-of-truth",
     "name": "Grasp of Truth",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
@@ -5456,19 +6117,19 @@
   {
     "id": "alloy-covenant",
     "name": "Alloy Covenant",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "praise-for-injury",
     "name": "Praise for Injury",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "ardor",
     "name": "Ardor",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": [
       {
         "stat": "life",
@@ -5480,7 +6141,7 @@
   {
     "id": "varagon-shroud",
     "name": "Varagon Shroud",
-    "slot": "chest",
+    "slot": "gloves",
     "implicit": [
       {
         "stat": "armor",
@@ -5492,43 +6153,43 @@
   {
     "id": "ghost-slaughter",
     "name": "Ghost Slaughter",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "clenched-spring",
     "name": "Clenched Spring",
-    "slot": "ring",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "blade-dancer-s-fingers",
     "name": "Blade-dancer's Fingers",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "magnus-laws",
     "name": "Magnus' Laws",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "death-s-touch",
     "name": "Death's Touch",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "blade-dancer-s-edges",
     "name": "Blade-Dancer's Edges",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "quantum-convergence",
     "name": "Quantum Convergence",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
@@ -5546,13 +6207,13 @@
   {
     "id": "demons-touch",
     "name": "Demons' Touch",
-    "slot": "weapon",
+    "slot": "gloves",
     "implicit": []
   },
   {
     "id": "corrupted-marrow",
     "name": "Corrupted Marrow",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": [
       {
         "stat": "life",
@@ -5564,7 +6225,7 @@
   {
     "id": "legendary-soldier-spectacles",
     "name": "Legendary Soldier Spectacles",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": [
       {
         "stat": "moreDamage",
@@ -5576,43 +6237,43 @@
   {
     "id": "machine-lord",
     "name": "Machine Lord",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "opening-heart",
     "name": "Opening Heart",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "blind-vision",
     "name": "Blind Vision",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "thunder-jawbone",
     "name": "Thunder Jawbone",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "hunting-the-eye-of-the-kraken",
     "name": "Hunting the Eye of the Kraken",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "flying-light-at-daybreak",
     "name": "Flying Light at Daybreak",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "legless-bird-s-lament",
     "name": "Legless Bird's Lament",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": [
       {
         "stat": "moreDamage",
@@ -5651,25 +6312,25 @@
   {
     "id": "siren-faceguard",
     "name": "Siren Faceguard",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "brainwave-emitter",
     "name": "Brainwave Emitter",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "cold-breath",
     "name": "Cold Breath",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "surging-inspiration",
     "name": "Surging Inspiration",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
@@ -5681,42 +6342,37 @@
   {
     "id": "webbed-arcane-headscarf",
     "name": "Webbed Arcane Headscarf",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "imperial-iron-sentry",
     "name": "Imperial Iron Sentry",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "when-winter-comes",
     "name": "When Winter Comes",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "hekate-s-vision",
     "name": "Hekate's Vision",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": [
       {
         "stat": "moreDamage",
         "op": "more",
         "value": 0.2
-      },
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.2
       }
     ]
   },
   {
     "id": "troublemaker",
     "name": "Troublemaker",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
@@ -5728,19 +6384,19 @@
   {
     "id": "solid-river",
     "name": "Solid River",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "malign-embrace",
     "name": "Malign Embrace",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "rock-lizard-s-skull",
     "name": "Rock Lizard's Skull",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": [
       {
         "stat": "armor",
@@ -5758,25 +6414,25 @@
   {
     "id": "scarlet-decree",
     "name": "Scarlet Decree",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "last-words-of-chaos",
     "name": "Last Words of Chaos",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "awakening-skull",
     "name": "Awakening Skull",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "tide-of-the-styx",
     "name": "Tide of the Styx",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": [
       {
         "stat": "increasedAttackSpeed",
@@ -5788,7 +6444,7 @@
   {
     "id": "sun-s-embrace",
     "name": "Sun's Embrace",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
@@ -5800,13 +6456,13 @@
   {
     "id": "divine-ember",
     "name": "Divine Ember",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "magnus-scar",
     "name": "Magnus' Scar",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": [
       {
         "stat": "life",
@@ -5824,19 +6480,19 @@
   {
     "id": "kragol-s-roar",
     "name": "Kragol's Roar",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "iron-and-bloom",
     "name": "Iron and Bloom",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
     "id": "ralph-s-dreadcrest",
     "name": "Ralph's Dreadcrest",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": []
   },
   {
@@ -5848,7 +6504,7 @@
   {
     "id": "contained-mind",
     "name": "Contained Mind",
-    "slot": "weapon",
+    "slot": "helmet",
     "implicit": [
       {
         "stat": "moreDamage",
@@ -6044,7 +6700,7 @@
   {
     "id": "spring-resurrection",
     "name": "Spring Resurrection",
-    "slot": "ring",
+    "slot": "weapon",
     "implicit": []
   },
   {
@@ -6084,7 +6740,10 @@
       {
         "stat": "addedLightning",
         "op": "flat",
-        "value": 25.5
+        "value": 25.5,
+        "tags": [
+          "spell"
+        ]
       }
     ]
   },
@@ -6102,62 +6761,65 @@
       {
         "stat": "addedFire",
         "op": "flat",
-        "value": 60
+        "value": 60,
+        "tags": [
+          "spell"
+        ]
       }
     ]
   },
   {
     "id": "reverse-reverse-reverse-mirror",
     "name": "Reverse-Reverse-Reverse Mirror",
-    "slot": "weapon",
+    "slot": "offhand",
     "implicit": []
   },
   {
     "id": "silent-sentry-shield",
     "name": "Silent Sentry Shield",
-    "slot": "weapon",
+    "slot": "offhand",
     "implicit": []
   },
   {
     "id": "electricity-amplifier",
     "name": "Electricity Amplifier",
-    "slot": "weapon",
+    "slot": "offhand",
     "implicit": []
   },
   {
     "id": "arcane-shield",
     "name": "Arcane Shield",
-    "slot": "weapon",
+    "slot": "offhand",
     "implicit": []
   },
   {
     "id": "glacier-caster-shield",
     "name": "Glacier Caster Shield",
-    "slot": "weapon",
+    "slot": "offhand",
     "implicit": []
   },
   {
     "id": "the-coward-s-counterfire",
     "name": "The Coward's Counterfire",
-    "slot": "weapon",
+    "slot": "offhand",
     "implicit": []
   },
   {
     "id": "shield-of-judgment",
     "name": "Shield of Judgment",
-    "slot": "weapon",
+    "slot": "offhand",
     "implicit": []
   },
   {
     "id": "last-stand",
     "name": "Last Stand",
-    "slot": "weapon",
+    "slot": "offhand",
     "implicit": []
   },
   {
     "id": "cover-the-sun",
     "name": "Cover the Sun",
-    "slot": "weapon",
+    "slot": "offhand",
     "implicit": [
       {
         "stat": "fireResist",
@@ -6169,13 +6831,8 @@
   {
     "id": "heavy-soul",
     "name": "Heavy Soul",
-    "slot": "weapon",
+    "slot": "offhand",
     "implicit": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": -0.1
-      },
       {
         "stat": "life",
         "op": "flat",
@@ -6186,7 +6843,7 @@
   {
     "id": "enamor",
     "name": "Enamor",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
@@ -6198,55 +6855,49 @@
   {
     "id": "desire-of-survival",
     "name": "Desire of Survival",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "steel-s-lament",
     "name": "Steel's Lament",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "cry-of-divinity",
     "name": "Cry of Divinity",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "call-of-souls",
     "name": "Call of Souls",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "witchdoctor-s-herb-bag",
     "name": "Witchdoctor's Herb Bag",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "entangled-root",
     "name": "Entangled Root",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "eternal-sun",
     "name": "Eternal Sun",
-    "slot": "weapon",
-    "implicit": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.2
-      }
-    ]
+    "slot": "belt",
+    "implicit": []
   },
   {
     "id": "insulation",
     "name": "Insulation",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
@@ -6264,7 +6915,7 @@
   {
     "id": "pale-mist-s-embrace",
     "name": "Pale Mist's Embrace",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": [
       {
         "stat": "life",
@@ -6276,19 +6927,19 @@
   {
     "id": "winter-of-origin",
     "name": "Winter of Origin",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "compensatory-life",
     "name": "Compensatory Life",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "everburn-thunderfire",
     "name": "Everburn Thunderfire",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
@@ -6300,19 +6951,19 @@
   {
     "id": "embrace-of-the-dark-surge",
     "name": "Embrace of the Dark Surge",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "polygonal-enclosure",
     "name": "Polygonal Enclosure",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "corrosion-of-manifolds",
     "name": "Corrosion of Manifolds",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": [
       {
         "stat": "erosionResist",
@@ -6324,37 +6975,31 @@
   {
     "id": "eternal-sea-fog",
     "name": "Eternal Sea Fog",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "formation-breaker",
     "name": "Formation Breaker",
-    "slot": "weapon",
-    "implicit": [
-      {
-        "stat": "moreDamage",
-        "op": "more",
-        "value": 0.3
-      }
-    ]
+    "slot": "belt",
+    "implicit": []
   },
   {
     "id": "rat-herder-s-golden-rein",
     "name": "Rat Herder's Golden Rein",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "hot-night-s-embrace",
     "name": "Hot Night's Embrace",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "dawn-break",
     "name": "Dawn Break",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": [
       {
         "stat": "moreDamage",
@@ -6372,31 +7017,31 @@
   {
     "id": "silent-observer",
     "name": "Silent Observer",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "tranquil-stir",
     "name": "Tranquil Stir",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "omni-elixir-notes",
     "name": "Omni-Elixir Notes",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "eternity",
     "name": "Eternity",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
     "id": "pantheon-s-elegy",
     "name": "Pantheon's Elegy",
-    "slot": "weapon",
+    "slot": "belt",
     "implicit": []
   },
   {
@@ -6408,55 +7053,55 @@
   {
     "id": "pentagram-astrolabe",
     "name": "Pentagram Astrolabe",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "despised-shadow",
     "name": "Despised Shadow",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "ownerless",
     "name": "Ownerless",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "photophobia",
     "name": "Photophobia",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "lady-s-tears",
     "name": "Lady's Tears",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "chain-of-resistance",
     "name": "Chain of Resistance",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "mercurial-torment",
     "name": "Mercurial Torment",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "sage-s-shackle",
     "name": "Sage's Shackle",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "prayer-bead-of-evil",
     "name": "Prayer Bead of Evil",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": [
       {
         "stat": "life",
@@ -6474,19 +7119,19 @@
   {
     "id": "frostbolt",
     "name": "Frostbolt",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "forlorn-crystal",
     "name": "Forlorn Crystal",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "vortex-heart",
     "name": "Vortex Heart",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": [
       {
         "stat": "moreDamage",
@@ -6504,25 +7149,25 @@
   {
     "id": "magnus-mindflame",
     "name": "Magnus' Mindflame",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "truth",
     "name": "Truth",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "warden-s-breastpin",
     "name": "Warden's Breastpin",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "ocean-of-rock",
     "name": "Ocean of Rock",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
@@ -6534,19 +7179,19 @@
   {
     "id": "phantom",
     "name": "Phantom",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "illusory-ocean-silk-iron-rain",
     "name": "Illusory Ocean Silk - Iron Rain",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "illusory-ocean-silk-ash",
     "name": "Illusory Ocean Silk - Ash",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": [
       {
         "stat": "fireResist",
@@ -6558,7 +7203,7 @@
   {
     "id": "illusory-ocean-silk-thunder",
     "name": "Illusory Ocean Silk - Thunder",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": [
       {
         "stat": "lightningResist",
@@ -6570,7 +7215,7 @@
   {
     "id": "illusory-ocean-silk-chilly",
     "name": "Illusory Ocean Silk - Chilly",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": [
       {
         "stat": "coldResist",
@@ -6582,145 +7227,145 @@
   {
     "id": "illusory-ocean-silk-unreal",
     "name": "Illusory Ocean Silk - Unreal",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "broken-sun-ring",
     "name": "Broken Sun Ring",
-    "slot": "ring",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "mother-goddess-paddock",
     "name": "Mother Goddess' Paddock",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "clarity",
     "name": "Clarity",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "chain-behind-the-curtain",
     "name": "Chain behind the Curtain",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "strange-snow",
     "name": "Strange Snow",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "false-god-s-skin",
     "name": "False God's Skin",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "rat-king-s-megagon-dice",
     "name": "Rat King's Megagon Dice",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "iron-nest",
     "name": "Iron Nest",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "elegy-of-immortality",
     "name": "Elegy of Immortality",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "howling-wind",
     "name": "Howling Wind",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "decaying-blessing",
     "name": "Decaying Blessing",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "heart-of-the-storm",
     "name": "Heart of the Storm",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "coldness-tracer-s-tear",
     "name": "Coldness Tracer's Tear",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "mortal-s-reverie",
     "name": "Mortal's Reverie",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "heart-of-animitta",
     "name": "Heart of Animitta",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "law-of-greed",
     "name": "Law of Greed",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "old-grudge",
     "name": "Old Grudge",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "broken-dream",
     "name": "Broken Dream",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "crimson-gash",
     "name": "Crimson Gash",
-    "slot": "weapon",
+    "slot": "amulet",
     "implicit": []
   },
   {
     "id": "lone-survivor",
     "name": "Lone Survivor",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "lonesome",
     "name": "Lonesome",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "revered-light",
     "name": "Revered Light",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "born-in-fire",
     "name": "Born in Fire",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": [
       {
         "stat": "increasedFire",
@@ -6737,7 +7382,7 @@
   {
     "id": "silver-frost",
     "name": "Silver Frost",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": [
       {
         "stat": "coldResist",
@@ -6761,13 +7406,13 @@
   {
     "id": "frozen-lightning",
     "name": "Frozen Lightning",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "clay-doll-s-broken-finger",
     "name": "Clay Doll's Broken Finger",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": [
       {
         "stat": "life",
@@ -6779,19 +7424,19 @@
   {
     "id": "fury-heart",
     "name": "Fury Heart",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "restless-glacier",
     "name": "Restless Glacier",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "chaotic-ending",
     "name": "Chaotic Ending",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": [
       {
         "stat": "increasedLife",
@@ -6803,7 +7448,7 @@
   {
     "id": "exemption-thunderhell",
     "name": "Exemption Thunderhell",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": [
       {
         "stat": "increasedLightning",
@@ -6815,43 +7460,43 @@
   {
     "id": "stream-of-steel",
     "name": "Stream of Steel",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "frozen-flame",
     "name": "Frozen Flame",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "burning-ice",
     "name": "Burning Ice",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "windbreath-convergence",
     "name": "Windbreath Convergence",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "windbreath-dispersion",
     "name": "Windbreath Dispersion",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "traceless-pain",
     "name": "Traceless Pain",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "kaleidoscope",
     "name": "Kaleidoscope",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": [
       {
         "stat": "life",
@@ -6863,7 +7508,7 @@
   {
     "id": "folklore-of-locking-fingers",
     "name": "Folklore of Locking Fingers",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": [
       {
         "stat": "increasedLife",
@@ -6875,7 +7520,7 @@
   {
     "id": "passing-of-time",
     "name": "Passing of Time",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": [
       {
         "stat": "moreDamage",
@@ -6887,7 +7532,7 @@
   {
     "id": "time-of-vow",
     "name": "Time of Vow",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": [
       {
         "stat": "moreDamage",
@@ -6899,31 +7544,31 @@
   {
     "id": "heart-of-rock",
     "name": "Heart of Rock",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "heart-of-magic",
     "name": "Heart of Magic",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "unholy-prayer-agility",
     "name": "Unholy Prayer - Agility",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "unholy-prayer-focus",
     "name": "Unholy Prayer - Focus",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
     "id": "unholy-prayer-tenacity",
     "name": "Unholy Prayer - Tenacity",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
@@ -6941,7 +7586,7 @@
   {
     "id": "decayed-mind",
     "name": "Decayed Mind",
-    "slot": "weapon",
+    "slot": "ring",
     "implicit": []
   },
   {
@@ -7067,7 +7712,7 @@
   {
     "id": "circular-clearing",
     "name": "Circular Clearing",
-    "slot": "ring",
+    "slot": "weapon",
     "implicit": []
   },
   {

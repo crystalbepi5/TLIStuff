@@ -1,7 +1,15 @@
 // CLI: assemble the build-data dataset from tlicompendium bundles and write JSON.
 //
 //   node dist/cli.js [--out DIR] [--limit N] [--delay MS] [--version SSxx]
-//   pnpm --filter @torchlight-companion/build-scraper scrape -- --out ../build-data/src/seed
+//
+// This writes RAW scraped arrays with no hand-curated-fixture merge -- it's
+// for inspecting/diffing a fresh scrape, not for regenerating the checked-in
+// seed. To regenerate packages/build-data/src/seed/*.json, use
+// `node packages/build-scraper/scripts/regen-seed.mjs` instead, which merges
+// the small hand-curated seed-hand/ demo entries in front of the scraped
+// data (dedup by id) so fixed-id tests keep working. Writing straight to the
+// seed directory from this CLI would silently discard those curated entries
+// -- refused below, not just documented.
 //
 // Sources (all tlicompendium.com):
 //   - skills (active + support), gear + legendaries -> gearBases, affixes,
@@ -13,7 +21,8 @@
 // JSON file per scraped category to --out (default ./scraped).
 
 import { mkdirSync, writeFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { join, resolve, sep } from 'node:path';
+import { pathToFileURL } from 'node:url';
 import { seedDataset, validateDataset, type Dataset } from '@torchlight-companion/build-data';
 import { DEFAULT_CONFIG, type ScrapeConfig } from './scrape.js';
 import {
@@ -36,8 +45,26 @@ function arg(name: string, fallback: string): string {
   return i >= 0 && process.argv[i + 1] ? (process.argv[i + 1] as string) : fallback;
 }
 
+/** Refuses to write straight to the checked-in seed directory: this CLI has
+ * no hand-curated-fixture merge step, so doing that would silently discard
+ * the seed-hand/ entries the test suite depends on (use regen-seed.mjs
+ * instead, which does merge them). */
+export function assertNotSeedDir(outDir: string): void {
+  const parts = resolve(outDir).split(sep);
+  const i = parts.indexOf('build-data');
+  if (i >= 0 && parts[i + 1] === 'src' && parts[i + 2] === 'seed') {
+    throw new Error(
+      `refusing to write directly to ${resolve(outDir)} -- this CLI writes raw scraped ` +
+        `arrays with no hand-curated-fixture merge, which would silently discard the ` +
+        `seed-hand/ entries the test suite depends on. Use ` +
+        `\`node packages/build-scraper/scripts/regen-seed.mjs\` to regenerate the seed instead.`
+    );
+  }
+}
+
 async function main(): Promise<void> {
   const outDir = arg('out', 'scraped');
+  assertNotSeedDir(outDir);
   const cfg: Partial<ScrapeConfig> = {
     limit: Number(arg('limit', '0')),
     delayMs: Number(arg('delay', '400'))
@@ -138,7 +165,12 @@ async function main(): Promise<void> {
   );
 }
 
-main().catch((err) => {
-  console.error(err instanceof Error ? err.stack : err);
-  process.exitCode = 1;
-});
+// Guarded so importing this module (e.g. from a test, to exercise
+// assertNotSeedDir) doesn't also kick off a live scrape as a side effect.
+const isMain = process.argv[1] != null && import.meta.url === pathToFileURL(process.argv[1]).href;
+if (isMain) {
+  main().catch((err) => {
+    console.error(err instanceof Error ? err.stack : err);
+    process.exitCode = 1;
+  });
+}

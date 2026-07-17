@@ -131,6 +131,10 @@ export interface ActiveSkill {
   manaCost?: number;
   /** Attribute(s) this skill scales with, e.g. ["Strength"]. */
   mainStat?: string[];
+  /** Relative path into tlicompendium's image host, e.g.
+   * "/images/skill/UI_SkillIcon_..._128.webp" -- not resolved to a full URL,
+   * same convention as PactSpirit.iconUrl/Kismet.iconUrl. */
+  icon?: string;
 }
 
 export interface SupportSkill {
@@ -145,8 +149,21 @@ export interface SupportSkill {
   /** Active-skill tags this support is incompatible with (raw source strings,
    * not normalised to DamageTag -- informational until cross-referenced). */
   cannotSupport?: string[];
+  /**
+   * Set only for "signature" supports scoped to one specific active skill
+   * (the game's Magnificent/Noble Support categories -- confirmed against
+   * the real scrape: every entry in both categories carries a `skillTag`
+   * naming its one active skill, while the generic Support/Activation
+   * Medium/Module/Passive categories never carry one at all). Value is the
+   * matching ActiveSkill.id (same idFromName() derivation as everywhere
+   * else). A tag-based `requiresTags` check can't express "only this one
+   * exact skill", so this is checked separately in collectModifiers.
+   */
+  requiresSkillId?: string;
   /** Per-level modifiers, best-effort (see ActiveSkill.levelScaling). */
   levelScaling?: SkillLevelEntry[];
+  /** See ActiveSkill.icon. */
+  icon?: string;
 }
 
 /**
@@ -205,6 +222,11 @@ export interface GearBase {
   implicit: Modifier[];
   /** tlidb.com item id — a stable cross-reference for loot/price lookups. */
   tlidbId?: string;
+  /** See ActiveSkill.icon. Only available for regular gear bases scraped via
+   * gear-master (mapGearFromMaster) -- legendaries carry no icon field in
+   * their source bundle at all, so GearBase entries built from legendaries
+   * (mapLegendaries) never have one. */
+  icon?: string;
 }
 
 /**
