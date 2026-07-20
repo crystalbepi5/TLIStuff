@@ -1,0 +1,21 @@
+{
+  "name": "@torchlight-companion/loop-graph",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test test/*.test.mjs",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "example": "node dist/examples/ml-pipeline.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.110.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.2"
+  }
+}
