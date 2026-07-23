@@ -6982,7 +6982,13 @@
     "id": "formation-breaker",
     "name": "Formation Breaker",
     "slot": "belt",
-    "implicit": []
+    "implicit": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.3
+      }
+    ]
   },
   {
     "id": "rat-herder-s-golden-rein",

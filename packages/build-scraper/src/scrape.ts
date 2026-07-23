@@ -83,7 +83,16 @@ interface Rule {
 // mitigation, not outgoing damage -- must not feed the moreDamage/increasedDamage
 // rules below, confirmed against a real Vorax affix that was silently getting
 // the sign backwards (a defensive stat read as a player damage penalty).
-const NOT_DAMAGE_TAKEN = '(?!\\s*(?:over\\s+time\\s+)?taken\\b)';
+//
+// But "taken" isn't always about damage the player takes -- a real gear affix
+// reads "+#% additional damage taken by Nearby enemies", which is offensive
+// (enemies take more damage from you), not mitigation. Excluding it dropped
+// a real, modelled affix entirely (mapAffixes filters out anything that
+// parses to zero modifiers). So only treat "taken" as defensive when it is
+// NOT immediately followed by "by ... enemies" -- every other real "taken"
+// phrasing seen in the data ("taken", "taken at Low Mana", "taken when
+// having...") has no "by enemies" qualifier and stays excluded.
+const NOT_DAMAGE_TAKEN = '(?!\\s*(?:over\\s+time\\s+)?taken\\b(?!\\s+by\\s+(?:nearby\\s+)?enem))';
 
 // Ordered rules. Each is scanned globally over the text; every match emits
 // zero or more modifiers.
@@ -108,19 +117,23 @@ const RULES: Rule[] = [
   },
   {
     // "Adds 20-24 Cold Damage", "Adds 5-5 base Ignite Damage", and a trailing
-    // "to Spells"/"to Attacks" qualifier tags the modifier accordingly instead
-    // of silently dropping it and applying to every skill.
+    // "to Spells"/"to Attacks"/"to Attacks and Spells" qualifier tags the
+    // modifier accordingly instead of silently dropping it and applying to
+    // every skill -- confirmed real: the current seed's element-added-damage
+    // affixes read "...to Attacks and Spells" (both), and matching only the
+    // first name would wrongly tag it 'attack'-only, hiding it from spells.
     re: new RegExp(
-      `Adds\\s+(\\d+(?:\\.\\d+)?)\\s*-\\s*(\\d+(?:\\.\\d+)?)\\s+(?:base\\s+)?(${ELEMENT_WORDS})\\s+Damage(?:\\s+to\\s+(Spells|Attacks))?`,
+      `Adds\\s+(\\d+(?:\\.\\d+)?)\\s*-\\s*(\\d+(?:\\.\\d+)?)\\s+(?:base\\s+)?(${ELEMENT_WORDS})\\s+Damage(?:\\s+to\\s+((?:Spells|Attacks)(?:\\s+and\\s+(?:Spells|Attacks))?))?`,
       'gi'
     ),
     make: (m) => {
       const stat = m[3] ? ADDED_ELEMENT[capitalize(m[3])] : undefined;
       if (!stat || !m[1] || !m[2]) return null;
       const qualifier = m[4]?.toLowerCase();
-      const tags: DamageTag[] | undefined =
-        qualifier === 'spells' ? ['spell'] : qualifier === 'attacks' ? ['attack'] : undefined;
-      return [{ stat, op: 'flat', value: midpoint(m[1], m[2]), ...(tags ? { tags } : {}) }];
+      const tags: DamageTag[] = [];
+      if (qualifier?.includes('spell')) tags.push('spell');
+      if (qualifier?.includes('attack')) tags.push('attack');
+      return [{ stat, op: 'flat', value: midpoint(m[1], m[2]), ...(tags.length > 0 ? { tags } : {}) }];
     }
   },
   {

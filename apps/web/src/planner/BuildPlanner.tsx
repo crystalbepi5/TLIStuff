@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import {
   seedDataset,
   indexDataset,
@@ -9,7 +9,13 @@ import {
   type VoraxGearPiece,
   type VoraxLegendary
 } from '@torchlight-companion/build-data';
-import { evaluateBuild, MAX_PACT_SPIRITS, totalManaCost } from '@torchlight-companion/build-calc';
+import {
+  evaluateBuild,
+  marginalGearAnalysis,
+  MAX_PACT_SPIRITS,
+  totalManaCost,
+  type AffixSwapSuggestion
+} from '@torchlight-companion/build-calc';
 import { ProgressionTreeGraph } from '../progression/ProgressionTreeGraph';
 
 /** Vorax affixes/legendaries have no `name` field in the scraped data (the
@@ -179,6 +185,24 @@ export function BuildPlanner() {
       return { error: err instanceof Error ? err.message : String(err) };
     }
   }, [build]);
+
+  // On-demand (not recomputed on every build change): each run is O(equipped
+  // affixes x candidate pool per slot) evaluateBuild calls -- cheap once, but
+  // wasteful to redo on every keystroke/toggle the way the main report is.
+  const [marginal, setMarginal] = useState<AffixSwapSuggestion[] | null>(null);
+  const [marginalBusy, setMarginalBusy] = useState(false);
+  useEffect(() => {
+    setMarginal(null); // stale once the build changes -- a suggestion names a specific equipped affix to swap
+  }, [build]);
+
+  function runMarginalAnalysis() {
+    setMarginalBusy(true);
+    // Yield to a render so the "Analyzing…" state actually paints first.
+    setTimeout(() => {
+      setMarginal(marginalGearAnalysis(build, index, seedDataset.affixes, 5));
+      setMarginalBusy(false);
+    }, 0);
+  }
 
   function patch(next: Partial<Build>) {
     setBuild((prev) => ({ ...prev, ...next }));
@@ -644,6 +668,28 @@ export function BuildPlanner() {
                   </li>
                 ))}
               </ul>
+
+              <h3>Best upgrade</h3>
+              <p className="marginal-hint">
+                Which single affix swap gains the most DPS -- tries every equipped affix against every other
+                affix valid for that slot, one swap at a time.
+              </p>
+              <button type="button" onClick={runMarginalAnalysis} disabled={marginalBusy || build.gear.length === 0}>
+                {marginalBusy ? 'Analyzing…' : 'Find best upgrade'}
+              </button>
+              {marginal && marginal.length === 0 && <p className="marginal-hint">No upgrade found from the current affix pool.</p>}
+              {marginal && marginal.length > 0 && (
+                <ul className="stat-list marginal-list">
+                  {marginal.map((s, i) => (
+                    <li key={i}>
+                      <span>
+                        {s.slot}: {s.fromAffixName} → {s.toAffixName}
+                      </span>
+                      <b>+{Math.round(s.gain).toLocaleString()} dps</b>
+                    </li>
+                  ))}
+                </ul>
+              )}
 
               {report.warnings.length > 0 && (
                 <div className="warnings">

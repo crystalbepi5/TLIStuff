@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { pickAffixTier, craftableTiers, affixTierOdds, pickSkillLevel, availableLevels } from '../dist/index.js';
+import { pickAffixTier, modifiersForSlot, craftableTiers, affixTierOdds, pickSkillLevel, availableLevels } from '../dist/index.js';
 
 const lifeAffix = {
   id: 'max-life-prefix',
@@ -46,6 +46,29 @@ test('pickAffixTier disambiguates by modifierId when the same tier label appears
 
 test('pickAffixTier falls back to top-tier modifiers when modifierId is given but not found', () => {
   assert.deepEqual(pickAffixTier(lifeAffix, undefined, 'nonexistent'), lifeAffix.modifiers);
+});
+
+test('modifiersForSlot picks the best craftable tier tagged with the requested slot, not the affix-wide best', () => {
+  // Confirmed real bug: the same merged affix can roll a different range per
+  // slot (a Max Life prefix craftable to +220 on boots but +330 on a
+  // weapon) -- using affix.modifiers directly for every slot overcounts
+  // lower-range slots with a higher-range slot's roll.
+  const multiSlot = {
+    ...lifeAffix,
+    slots: ['boots', 'weapon'],
+    modifiers: [{ stat: 'life', op: 'flat', value: 330 }], // best-across-all-slots preview
+    tiers: [
+      { tier: '1', modifierId: 'boots-1', weight: 100, slot: 'boots', modifiers: [{ stat: 'life', op: 'flat', value: 220 }] },
+      { tier: '1', modifierId: 'weapon-1', weight: 100, slot: 'weapon', modifiers: [{ stat: 'life', op: 'flat', value: 330 }] }
+    ]
+  };
+  assert.deepEqual(modifiersForSlot(multiSlot, 'boots'), [{ stat: 'life', op: 'flat', value: 220 }]);
+  assert.deepEqual(modifiersForSlot(multiSlot, 'weapon'), [{ stat: 'life', op: 'flat', value: 330 }]);
+});
+
+test('modifiersForSlot falls back to affix.modifiers when no tier is tagged with the requested slot', () => {
+  // e.g. hand-curated affixes with no scraped (and therefore no slot-tagged) tier data
+  assert.deepEqual(modifiersForSlot(lifeAffix, 'boots'), lifeAffix.modifiers);
 });
 
 test('craftableTiers excludes weight-0 (disabled) tiers', () => {

@@ -15,6 +15,7 @@ export {
 } from './build.js';
 export {
   pickAffixTier,
+  modifiersForSlot,
   craftableTiers,
   affixTierOdds,
   pickSkillLevel,
@@ -22,3 +23,4 @@ export {
 } from './tiers.js';
 export { analyticOdds, monteCarloOdds, type CraftingOdds, type MonteCarloResult } from './crafting.js';
 export { totalManaCost } from './manaCost.js';
+export { marginalGearAnalysis, type AffixSwapSuggestion } from './marginal.js';

@@ -1,4 +1,12 @@
-import type { Affix, AffixTier, ActiveSkill, Modifier, SkillLevelEntry, SupportSkill } from '@torchlight-companion/build-data';
+import type {
+  Affix,
+  AffixTier,
+  ActiveSkill,
+  GearSlot,
+  Modifier,
+  SkillLevelEntry,
+  SupportSkill
+} from '@torchlight-companion/build-data';
 
 /**
  * Modifiers for one specific tier of an affix, falling back to the affix's
@@ -20,6 +28,26 @@ export function pickAffixTier(affix: Affix, tier?: string, modifierId?: string):
       ? affix.tiers?.find((t) => t.modifierId === modifierId)
       : affix.tiers?.find((t) => t.tier === tier);
   return found ? found.modifiers : affix.modifiers;
+}
+
+/**
+ * Modifiers for an affix as actually rolled on a specific gear slot. The
+ * same craft template merges across gear subtypes/slots into one Affix (see
+ * tlicompendium.ts's mapAffixes), but different slots can genuinely roll
+ * different value ranges for "the same" affix (confirmed real: a Max Life
+ * prefix craftable to +220 on boots but +330 on a weapon) -- `affix.modifiers`
+ * is only a best-across-all-slots preview value, not necessarily correct for
+ * any one slot. Prefers the best-craftable tier tagged with this slot; falls
+ * back to `affix.modifiers` when the affix has no slot-tagged tiers at all
+ * (e.g. a hand-curated affix with no scraped tier data).
+ */
+export function modifiersForSlot(affix: Affix, slot: GearSlot): Modifier[] {
+  const slotTiers = (affix.tiers ?? []).filter((t) => t.slot === slot);
+  if (slotTiers.length === 0) return affix.modifiers;
+  const craftable = slotTiers.filter((t) => t.weight > 0);
+  const pool = craftable.length > 0 ? craftable : slotTiers;
+  const best = pool.slice().sort((a, b) => (b.modifiers[0]?.value ?? 0) - (a.modifiers[0]?.value ?? 0))[0];
+  return best?.modifiers ?? affix.modifiers;
 }
 
 /**

@@ -53,6 +53,20 @@ test('parseModifiers does not read "additional Damage ... taken" (defensive miti
   ]);
 });
 
+test('parseModifiers still reads "additional damage taken by ... enemies" as outgoing (offensive, not mitigation)', () => {
+  // Real gear affix text: "taken" here means damage *enemies* take from you,
+  // not damage you take -- excluding all "taken" phrasing dropped this real,
+  // modelled affix entirely (mapAffixes filters out zero-modifier affixes).
+  assert.deepEqual(parseModifiers('+15% additional damage taken by Nearby enemies'), [
+    { stat: 'moreDamage', op: 'more', value: 0.15 }
+  ]);
+  // defensive "taken" (no "by ... enemies") still excluded
+  assert.deepEqual(
+    parseModifiers('-50% additional Damage Over Time taken when having at least 50000 Armor'),
+    []
+  );
+});
+
 test('parseModifiers tags "Adds ... Damage to Spells/Attacks" instead of applying it everywhere', () => {
   assert.deepEqual(parseModifiers('Adds 20-24 Cold Damage to Spells'), [
     { stat: 'addedCold', op: 'flat', value: 22, tags: ['spell'] }
@@ -62,6 +76,24 @@ test('parseModifiers tags "Adds ... Damage to Spells/Attacks" instead of applyin
   ]);
   // no qualifier -> untagged, applies everywhere (unchanged behaviour)
   assert.deepEqual(parseModifiers('Adds 20-24 Cold Damage'), [{ stat: 'addedCold', op: 'flat', value: 22 }]);
+});
+
+test('parseModifiers tags both "Attacks" and "Spells" when the real combined qualifier "to Attacks and Spells" is used', () => {
+  // Real affix text (current seed): "Adds - Fire Damage to Attacks and
+  // Spells" -- matching only the first name would wrongly tag it
+  // 'attack'-only, hiding it from spell skills the text says it applies to.
+  // Tag order isn't semantically meaningful (tagsAllow matches via .some()),
+  // so compare sorted.
+  const withBoth = (text) => {
+    const mods = parseModifiers(text);
+    return mods.map((m) => ({ ...m, tags: m.tags && [...m.tags].sort() }));
+  };
+  assert.deepEqual(withBoth('Adds 10-14 Fire Damage to Attacks and Spells'), [
+    { stat: 'addedFire', op: 'flat', value: 12, tags: ['attack', 'spell'] }
+  ]);
+  assert.deepEqual(withBoth('Adds 10-14 Fire Damage to Spells and Attacks'), [
+    { stat: 'addedFire', op: 'flat', value: 12, tags: ['attack', 'spell'] }
+  ]);
 });
 
 test('parseModifiers splits a shared Attack/Cast/Movement Speed list into per-stat modifiers', () => {

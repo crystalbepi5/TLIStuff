@@ -301,7 +301,7 @@ test('evaluateBuild: a support scoped to a specific skill (requiresSkillId) is d
     baseBuild({ activeSkillId: 'other-skill', supportIds: ['focused-shot-magnificent-1'] }),
     index
   );
-  assert.ok(onWrongSkill.warnings.some((w) => /only supports 'focused-shot'/.test(w) && /Other Skill/.test(w)));
+  assert.ok(onWrongSkill.warnings.some((w) => /requires 'focused-shot' to be socketed\/active/.test(w)));
   assert.equal(onWrongSkill.modifiers.some((m) => m.stat === 'moreDamage'), false);
 
   const onRightSkill = evaluateBuild(
@@ -310,4 +310,109 @@ test('evaluateBuild: a support scoped to a specific skill (requiresSkillId) is d
   );
   assert.equal(onRightSkill.warnings.length, 0);
   assert.ok(onRightSkill.modifiers.some((m) => m.stat === 'moreDamage' && m.value === 0.5));
+});
+
+test('evaluateBuild: a signature support whose requiresSkillId names another *support* (not an active skill) is satisfied when that support is also socketed', () => {
+  // Confirmed real: some scraped signature supports target another support
+  // skill rather than an active skill (e.g. "Thunder Focus: Haste
+  // (Magnificent)" requires 'thunder-focus', itself a support id). Comparing
+  // only against build.activeSkillId meant these were always dropped, even
+  // with the owning support socketed right alongside them.
+  const anySkill = {
+    id: 'any-skill',
+    name: 'Any Skill',
+    tags: ['spell'],
+    baseDamage: { physical: 100 },
+    baseRate: 1,
+    baseCritRate: 5,
+    supportSlots: 5
+  };
+  const thunderFocus = {
+    id: 'thunder-focus',
+    name: 'Thunder Focus',
+    modifiers: [{ stat: 'increasedDamage', op: 'increased', value: 10 }],
+    requiresTags: []
+  };
+  const thunderFocusHaste = {
+    id: 'thunder-focus-haste-magnificent-1',
+    name: 'Thunder Focus: Haste (Magnificent)',
+    modifiers: [{ stat: 'moreDamage', op: 'more', value: 0.3 }],
+    requiresTags: [],
+    requiresSkillId: 'thunder-focus'
+  };
+  const index = fakeIndex({ skills: [anySkill], supports: [thunderFocus, thunderFocusHaste] });
+
+  const withoutOwner = evaluateBuild(
+    baseBuild({ activeSkillId: 'any-skill', supportIds: ['thunder-focus-haste-magnificent-1'] }),
+    index
+  );
+  assert.ok(withoutOwner.warnings.some((w) => /requires 'thunder-focus' to be socketed\/active/.test(w)));
+  assert.equal(withoutOwner.modifiers.some((m) => m.stat === 'moreDamage'), false);
+
+  const withOwner = evaluateBuild(
+    baseBuild({
+      activeSkillId: 'any-skill',
+      supportIds: ['thunder-focus', 'thunder-focus-haste-magnificent-1']
+    }),
+    index
+  );
+  assert.equal(withOwner.warnings.length, 0);
+  assert.ok(withOwner.modifiers.some((m) => m.stat === 'moreDamage' && m.value === 0.3));
+});
+
+test('evaluateBuild: a gear affix merged across slots contributes its own slot-correct roll, not another slot\'s', () => {
+  // Confirmed real bug (Codex, post-merge): recomputing an affix's top-level
+  // `modifiers` as the best roll across every merged slot meant a lower-roll
+  // slot (boots +220) got credited with a higher-roll slot's value (weapon
+  // +330) whenever that affix was equipped there. collectModifiers must use
+  // the piece's own slot to pick the correct tier.
+  const anySkill = {
+    id: 'any-skill',
+    name: 'Any Skill',
+    tags: ['spell'],
+    baseDamage: { physical: 100 },
+    baseRate: 1,
+    baseCritRate: 5,
+    supportSlots: 5
+  };
+  const bootsBase = { id: 'boots-base', name: 'Boots Base', slot: 'boots', implicit: [] };
+  const weaponBase = { id: 'weapon-base', name: 'Weapon Base', slot: 'weapon', implicit: [] };
+  const maxLife = {
+    id: 'max-life-prefix',
+    name: 'Max Life',
+    kind: 'prefix',
+    modifiers: [{ stat: 'life', op: 'flat', value: 330 }], // best-across-slots preview
+    slots: ['boots', 'weapon'],
+    tiers: [
+      { tier: '1', modifierId: 'boots-1', weight: 100, slot: 'boots', modifiers: [{ stat: 'life', op: 'flat', value: 220 }] },
+      { tier: '1', modifierId: 'weapon-1', weight: 100, slot: 'weapon', modifiers: [{ stat: 'life', op: 'flat', value: 330 }] }
+    ]
+  };
+  const index = {
+    hero: () => ({ id: 'h', name: 'H', baseModifiers: [] }),
+    activeSkill: () => anySkill,
+    supportSkill: () => undefined,
+    gearBase: (id) => (id === 'boots-base' ? bootsBase : id === 'weapon-base' ? weaponBase : undefined),
+    affix: () => maxLife,
+    talent: () => undefined,
+    pactSpirit: () => undefined,
+    memory: () => undefined,
+    voraxAffix: () => undefined,
+    voraxLegendary: () => undefined,
+    talentTreeNode: () => undefined,
+    voidChartNode: () => undefined
+  };
+
+  const onBoots = evaluateBuild(
+    baseBuild({ activeSkillId: 'any-skill', gear: [{ baseId: 'boots-base', slot: 'boots', affixIds: ['max-life-prefix'] }] }),
+    index
+  );
+  assert.ok(onBoots.modifiers.some((m) => m.stat === 'life' && m.value === 220));
+  assert.equal(onBoots.modifiers.some((m) => m.stat === 'life' && m.value === 330), false);
+
+  const onWeapon = evaluateBuild(
+    baseBuild({ activeSkillId: 'any-skill', gear: [{ baseId: 'weapon-base', slot: 'weapon', affixIds: ['max-life-prefix'] }] }),
+    index
+  );
+  assert.ok(onWeapon.modifiers.some((m) => m.stat === 'life' && m.value === 330));
 });
