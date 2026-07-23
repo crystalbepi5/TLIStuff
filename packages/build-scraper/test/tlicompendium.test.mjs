@@ -218,6 +218,13 @@ test('mapAffixes recomputes top-level modifiers across every merged slot, not ju
   // Regardless of which section was processed first, the recorded top-level
   // modifiers must be the best across ALL merged slots (330, not 220).
   assert.deepEqual(life.modifiers, [{ stat: 'life', op: 'flat', value: 330 }]);
+  // Each tier is tagged with the real slot it was scraped from, so a caller
+  // that knows which slot a piece is (build-calc's modifiersForSlot) can
+  // recover the boots-correct +220 instead of the best-across-slots preview.
+  const bootsTier = life.tiers.find((t) => t.modifierId === 'boots-1');
+  const weaponTier = life.tiers.find((t) => t.modifierId === 'weapon-1');
+  assert.equal(bootsTier.slot, 'boots');
+  assert.equal(weaponTier.slot, 'weapon');
 });
 
 test('mapAffixes unions tiers (by modifierId) for the same affix across gear subtypes', () => {
@@ -425,9 +432,29 @@ test('mapHeroTraits scopes each trait to its real owning hero and uses the highe
   assert.equal(talents.length, 2);
   const fury = talents.find((t) => t.name === 'Fury');
   const molten = talents.find((t) => t.name === 'Molten Core');
+  // Rehan has no curated Hero entry yet -> raw idFromName(characterName)
   assert.equal(fury.heroId, 'rehan');
   assert.deepEqual(fury.modifiers, [{ stat: 'moreDamage', op: 'more', value: 0.78 }]);
-  assert.equal(molten.heroId, 'gemma');
+  // Gemma *does* have a curated Hero entry ("gemma-flaming-hammer") -> aliased
+  assert.equal(molten.heroId, 'gemma-flaming-hammer');
+});
+
+test('mapHeroTraits translates a scraped characterName to its curated Hero id via HERO_ID_ALIASES', () => {
+  // Confirmed real: without this, none of our 3 actual selectable heroes'
+  // regenerated traits would ever match a Hero.id in the planner, hiding
+  // every one of them -- including the game's own "Selena" spelling not
+  // even agreeing with our curated hero's "Selina".
+  const bundle = {
+    k: {
+      heroes: {
+        h1: { characterName: 'Selena', traits: { t1: { name: 'Tide Surge', tiers: [{ level: 1, description: '+50 Max Life' }] } } },
+        h2: { characterName: 'Youga', traits: { t2: { name: 'Frostbite', tiers: [{ level: 1, description: '+50 Max Life' }] } } }
+      }
+    }
+  };
+  const talents = mapHeroTraits(bundle);
+  assert.equal(talents.find((t) => t.name === 'Tide Surge').heroId, 'selina-tide-whisper');
+  assert.equal(talents.find((t) => t.name === 'Frostbite').heroId, 'youga-frostfire');
 });
 
 test('mapHeroTraits falls back to heroId "any" when a hero entry has no characterName', () => {

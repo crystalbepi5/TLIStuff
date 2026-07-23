@@ -7,6 +7,7 @@ import type {
 } from '@torchlight-companion/build-data';
 import { computeDamage, type DamageResult } from './damage.js';
 import { computeDefense, type DefenseResult } from './defense.js';
+import { modifiersForSlot } from './tiers.js';
 
 /** How many Pact Spirits a build may bind. Stand-in for the real limit. */
 export const MAX_PACT_SPIRITS = 3;
@@ -82,7 +83,7 @@ export function collectModifiers(
     for (const affixId of piece.affixIds) {
       const affix = index.affix(affixId);
       if (!affix) warnings.push(`unknown affix: ${affixId}`);
-      else raw.push(...affix.modifiers);
+      else raw.push(...modifiersForSlot(affix, piece.slot));
     }
   }
 
@@ -98,9 +99,20 @@ export function collectModifiers(
       warnings.push(`unknown support skill: ${supportId}`);
       continue;
     }
-    if (support.requiresSkillId != null && support.requiresSkillId !== build.activeSkillId) {
-      warnings.push(`support '${support.name}' only supports '${support.requiresSkillId}', not ${skill.name}; ignored`);
-      continue;
+    if (support.requiresSkillId != null) {
+      // requiresSkillId's owner isn't always an active skill -- some scraped
+      // signature supports target *another support* (e.g. "Thunder Focus:
+      // Haste (Magnificent)" requires 'thunder-focus', itself a support id,
+      // not an active skill id). Comparing only against build.activeSkillId
+      // meant those variants were dropped on every build, even when the
+      // owning support was socketed right alongside them. A match against
+      // either the active skill or another currently-socketed support
+      // satisfies it.
+      const satisfied = support.requiresSkillId === build.activeSkillId || socketed.includes(support.requiresSkillId);
+      if (!satisfied) {
+        warnings.push(`support '${support.name}' requires '${support.requiresSkillId}' to be socketed/active; ignored`);
+        continue;
+      }
     }
     const matches =
       support.requiresTags.length === 0 ||

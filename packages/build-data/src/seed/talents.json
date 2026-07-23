@@ -248,13 +248,19 @@
   {
     "id": "flame-of-pleasure",
     "name": "Flame of Pleasure",
-    "heroId": "gemma",
-    "modifiers": []
+    "heroId": "gemma-flaming-hammer",
+    "modifiers": [
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.76
+      }
+    ]
   },
   {
     "id": "frostbitten-heart",
     "name": "Frostbitten Heart",
-    "heroId": "gemma",
+    "heroId": "gemma-flaming-hammer",
     "modifiers": [
       {
         "stat": "moreDamage",
@@ -266,13 +272,13 @@
   {
     "id": "glacial-night",
     "name": "Glacial Night",
-    "heroId": "gemma",
+    "heroId": "gemma-flaming-hammer",
     "modifiers": []
   },
   {
     "id": "ice-fire-fusion",
     "name": "Ice-Fire Fusion",
-    "heroId": "gemma",
+    "heroId": "gemma-flaming-hammer",
     "modifiers": [
       {
         "stat": "moreDamage",
@@ -325,13 +331,13 @@
   {
     "id": "spacetime-illusion",
     "name": "Spacetime Illusion",
-    "heroId": "youga",
+    "heroId": "youga-frostfire",
     "modifiers": []
   },
   {
     "id": "spacetime-elapse",
     "name": "Spacetime Elapse",
-    "heroId": "youga",
+    "heroId": "youga-frostfire",
     "modifiers": []
   },
   {
@@ -396,12 +402,17 @@
   {
     "id": "sing-with-the-tide",
     "name": "Sing with the Tide",
-    "heroId": "selena",
+    "heroId": "selina-tide-whisper",
     "modifiers": [
       {
         "stat": "moreDamage",
         "op": "more",
         "value": 0.15
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.2
       }
     ]
   },
@@ -414,6 +425,11 @@
         "stat": "moreDamage",
         "op": "more",
         "value": 0.14
+      },
+      {
+        "stat": "moreDamage",
+        "op": "more",
+        "value": 0.1
       }
     ]
   },
@@ -437,13 +453,13 @@
   {
     "id": "dance-of-the-deep",
     "name": "Dance of the Deep",
-    "heroId": "selena",
+    "heroId": "selina-tide-whisper",
     "modifiers": []
   },
   {
     "id": "silencing-severance",
     "name": "Silencing Severance",
-    "heroId": "selena",
+    "heroId": "selina-tide-whisper",
     "modifiers": []
   }
 ]

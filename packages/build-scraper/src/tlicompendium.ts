@@ -232,10 +232,30 @@ interface HeroTraitEntry {
 }
 
 /**
+ * Curated Hero ids (packages/build-data/src/seed-hand/heroes.json) don't
+ * match `idFromName(characterName)` -- they carry a hand-picked epithet
+ * suffix (e.g. "gemma-flaming-hammer"), and one doesn't even agree on the
+ * base name at all: the game's own hero-trait data spells her "Selena"
+ * while our curated hero is "Selina" ("selina-tide-whisper"). Confirmed
+ * real: without this map, a regenerated trait's derived heroId would never
+ * match any of our 3 actual selectable heroes, hiding every one of their
+ * traits from the planner instead of just the (still-real, still a gap)
+ * heroes we haven't curated yet. Every other scraped hero (Rehan, Carino,
+ * Erika, ...) has no curated Hero entry at all yet, so idFromName() is the
+ * best available id for them until they get one.
+ */
+const HERO_ID_ALIASES: Record<string, string> = {
+  gemma: 'gemma-flaming-hammer',
+  selena: 'selina-tide-whisper',
+  youga: 'youga-frostfire'
+};
+
+/**
  * Map the `hero-trait` bundle to Talent[], scoped to the real owning hero.
  * The bundle nests traits under each hero (`heroes[uuid].characterName` +
  * `.traits`) -- confirmed against the real scrape (e.g. "Rehan" owns a trait
- * named "Anger"). heroId is derived as idFromName(characterName), same
+ * named "Anger"). heroId is derived as idFromName(characterName) (translated
+ * through HERO_ID_ALIASES for heroes we've actually curated), same
  * convention as every other id in this file. Previously every trait got the
  * placeholder heroId 'any' regardless of which hero it actually belongs to,
  * so hero-specific traits could be selected (and their modifiers applied)
@@ -246,7 +266,8 @@ export function mapHeroTraits(bundle: unknown): Talent[] {
   const sections = Object.values(bundle as Record<string, { heroes?: Record<string, HeroTraitEntry> }>);
   for (const section of sections) {
     for (const hero of Object.values(section.heroes ?? {})) {
-      const heroId = hero.characterName ? idFromName(hero.characterName) : 'any';
+      const rawId = hero.characterName ? idFromName(hero.characterName) : undefined;
+      const heroId = rawId ? (HERO_ID_ALIASES[rawId] ?? rawId) : 'any';
       for (const trait of Object.values(hero.traits ?? {})) {
         if (!Array.isArray(trait.tiers) || trait.tiers.length === 0) continue;
         const top = trait.tiers[trait.tiers.length - 1]; // highest tier
@@ -675,12 +696,15 @@ function topTier(a: CraftAffix): RawAffixTier | undefined {
 
 /** Map every raw tier of a craft affix into the schema's AffixTier shape,
  * parsing that tier's own filled-in text so e.g. a T0 and a T5 roll of the
- * same affix get their own (accurate, different-range) modifiers. */
-function buildAffixTiers(a: CraftAffix, template: string): AffixTier[] {
+ * same affix get their own (accurate, different-range) modifiers. Tagged
+ * with the gear slot it was scraped from, since the same merged affix can
+ * roll different ranges per slot (see AffixTier.slot's doc comment). */
+function buildAffixTiers(a: CraftAffix, template: string, slot: GearSlot): AffixTier[] {
   return (a.tiers ?? []).map((t) => ({
     tier: t.tier ?? '?',
     weight: t.weight ?? 0,
     modifiers: parseModifiers(fillTemplate(template, t.values)),
+    slot,
     ...(t.levelRequirement != null ? { levelRequirement: t.levelRequirement } : {}),
     ...(t.modifierId != null ? { modifierId: t.modifierId } : {})
   }));
@@ -696,9 +720,13 @@ function buildAffixTiers(a: CraftAffix, template: string): AffixTier[] {
 /**
  * Best top-level `modifiers` across every merged tier (all slots this affix's
  * template appears under), mirroring topTier()'s "highest craftable roll,
- * fall back to any roll if none are craftable" rule but applied globally
- * instead of per-slot -- see this function's caller for why per-slot wasn't
- * enough.
+ * fall back to any roll if none are craftable" rule but applied globally.
+ * This is a preview/summary value only (Affix.modifiers' doc comment) --
+ * different slots can roll different ranges for the same merged affix
+ * (confirmed real: a Max Life prefix craftable to +220 on boots but +330 on
+ * a weapon), so a build actually applying this affix to a specific piece of
+ * gear must use modifiersForSlot (build-calc/tiers.ts), which reads the
+ * slot-tagged tiers below instead of this single value.
  */
 function bestModifiers(tiers: AffixTier[]): Modifier[] {
   const craftable = tiers.filter((t) => t.weight > 0);
@@ -722,7 +750,7 @@ export function mapAffixes(gearMaster: unknown): Affix[] {
         const modifiers = parseModifiers(fillTemplate(template, topTier(a)?.values));
         if (modifiers.length === 0) continue; // stat the calculator doesn't model
         const ids = (a.tiers ?? []).map((t) => t.modifierId).filter((x): x is string => Boolean(x));
-        const newTiers = buildAffixTiers(a, template);
+        const newTiers = buildAffixTiers(a, template, slot);
         const key = `${kind}|${template}`;
         const existing = byKey.get(key);
         if (existing) {

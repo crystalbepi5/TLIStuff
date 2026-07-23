@@ -15,6 +15,7 @@ export {
 } from './build.js';
 export {
   pickAffixTier,
+  modifiersForSlot,
   craftableTiers,
   affixTierOdds,
   pickSkillLevel,

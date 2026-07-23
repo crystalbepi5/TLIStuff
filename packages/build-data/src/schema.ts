@@ -177,6 +177,18 @@ export interface AffixTier {
   weight: number;
   modifiers: Modifier[];
   modifierId?: string;
+  /**
+   * The gear slot this specific tier row was scraped from. The same craft
+   * template merges across gear subtypes/slots into one Affix (see
+   * tlicompendium.ts's mapAffixes), but different slots can genuinely roll
+   * different value ranges for "the same" affix (confirmed real: a Max Life
+   * prefix craftable to +220 on boots but +330 on a weapon) -- callers that
+   * know which slot a piece is (build-calc's collectModifiers, via
+   * modifiersForSlot) should prefer the tier tagged with that slot instead
+   * of the affix's single top-level `modifiers`, which is only a
+   * best-across-all-slots preview value.
+   */
+  slot?: GearSlot;
 }
 
 /** An affix that can roll on gear. */
@@ -185,8 +197,13 @@ export interface Affix {
   name: string;
   /** 'prefix' | 'suffix' — informational; not enforced by the calculator. */
   kind: 'prefix' | 'suffix';
-  /** The top (best-roll) tier's modifiers -- kept for callers that don't care
-   * which tier landed, e.g. the existing build-calc aggregation. */
+  /** The best craftable tier's modifiers across every slot this affix
+   * appears on -- a preview/summary value for callers that don't know or
+   * don't care which slot a piece is (e.g. a generic affix browser). When
+   * the actual slot is known, prefer modifiersForSlot (build-calc/tiers.ts)
+   * instead: different slots can roll different value ranges for the same
+   * affix, so this single value is not necessarily correct for every slot
+   * in `slots` below. */
   modifiers: Modifier[];
   /** Gear slots this affix can appear on. */
   slots: GearSlot[];

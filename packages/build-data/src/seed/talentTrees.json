@@ -10038,7 +10038,13 @@
           "x": 864,
           "y": 368
         },
-        "modifiers": []
+        "modifiers": [
+          {
+            "stat": "moreDamage",
+            "op": "more",
+            "value": 0.15
+          }
+        ]
       },
       {
         "id": "794361ed-c8ad-5a23-911d-a014036e5bc3",
