@@ -343,6 +343,16 @@ body {
   font-size: 0.85rem;
 }
 
+.marginal-hint {
+  margin: 4px 0 8px;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.marginal-list li b {
+  color: var(--gold);
+}
+
 .share-panel {
   margin-top: 16px;
 }
