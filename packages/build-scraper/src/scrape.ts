@@ -199,8 +199,14 @@ const RULES: Rule[] = [
 /**
  * Best-effort extraction of build-data modifiers from effect text / affix
  * templates. Only the common, cleanly-quoted combat stats are recognised;
- * anything mechanic-specific is skipped. Deduplicates identical (stat/op/value)
- * matches (source text often repeats a line across summary + detail blocks).
+ * anything mechanic-specific is skipped. Deduplicates identical
+ * (stat/op/value/tags) matches (source text often repeats a line across
+ * summary + detail blocks) -- `tags` is part of the key, not just
+ * stat/op/value: confirmed real, text like "Adds 10-14 Fire Damage to
+ * Attacks" plus "...to Spells" produces two modifiers with the same
+ * stat/op/value but different `tags`, and omitting tags from the key would
+ * collapse them to whichever match is seen last, silently losing the other
+ * skill type's copy.
  */
 export function parseModifiers(text: string): Modifier[] {
   const byKey = new Map<string, Modifier>();
@@ -210,7 +216,8 @@ export function parseModifiers(text: string): Modifier[] {
       if (!mods) continue;
       for (const mod of mods) {
         if (!Number.isFinite(mod.value) || mod.value === 0) continue;
-        byKey.set(`${mod.stat}|${mod.op}|${mod.value}`, mod);
+        const tagKey = mod.tags ? [...mod.tags].sort().join(',') : '';
+        byKey.set(`${mod.stat}|${mod.op}|${mod.value}|${tagKey}`, mod);
       }
     }
   }

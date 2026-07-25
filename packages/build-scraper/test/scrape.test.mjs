@@ -29,6 +29,20 @@ test('parseModifiers dedupes effects repeated across summary + detail blocks', (
   assert.equal(mods.length, 1);
 });
 
+test('parseModifiers keeps two same-stat/op/value modifiers with different tags distinct (dedup key must include tags)', () => {
+  // Confirmed real regression from this session's own "to Attacks and
+  // Spells" tag fix: "Adds 10-14 Fire Damage to Attacks" plus "...to
+  // Spells" produces two modifiers with identical stat/op/value but
+  // different tags -- deduping on stat/op/value alone collapsed them to
+  // whichever line matched last, silently losing the other skill type.
+  const mods = parseModifiers('Adds 10-14 Fire Damage to Attacks\nAdds 10-14 Fire Damage to Spells');
+  assert.equal(mods.length, 2);
+  assert.deepEqual(
+    mods.map((m) => m.tags).sort(),
+    [['attack'], ['spell']]
+  );
+});
+
 test('parseModifiers ignores unmodelled mechanics', () => {
   assert.deepEqual(parseModifiers('+1 Multistrike count; +13% Duration'), []);
 });

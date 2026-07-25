@@ -602,6 +602,23 @@ export function mapSkills(
       });
     }
   }
+  // requiresSkillId is persisted straight from the raw skillTag with no
+  // check that the id it names actually resolves to anything -- confirmed
+  // real: several signature supports (e.g. "Synthetic Troop Force Field
+  // (Magnificent)" -> requiresSkillId 'synthetic-troop') target a skillTag
+  // whose owning skill has no localized name and was skipped (`if (!name)
+  // continue` above), so it was never generated as an active or support
+  // entry at all. Since collectModifiers can only satisfy the requirement
+  // from the active skill or a socketed support id, an unresolvable
+  // requiresSkillId makes that support permanently, silently inert -- still
+  // selectable in the planner, never doing anything. Drop the requirement
+  // (fall back to unrestricted) rather than ship an unsatisfiable one.
+  const knownSkillIds = new Set([...active.map((a) => a.id), ...support.map((s) => s.id)]);
+  for (const s of support) {
+    if (s.requiresSkillId != null && !knownSkillIds.has(s.requiresSkillId)) {
+      delete s.requiresSkillId;
+    }
+  }
   return { active, support };
 }
 
@@ -697,14 +714,17 @@ function topTier(a: CraftAffix): RawAffixTier | undefined {
 /** Map every raw tier of a craft affix into the schema's AffixTier shape,
  * parsing that tier's own filled-in text so e.g. a T0 and a T5 roll of the
  * same affix get their own (accurate, different-range) modifiers. Tagged
- * with the gear slot it was scraped from, since the same merged affix can
- * roll different ranges per slot (see AffixTier.slot's doc comment). */
-function buildAffixTiers(a: CraftAffix, template: string, slot: GearSlot): AffixTier[] {
+ * with both the collapsed gear slot and the raw category it was scraped
+ * from (see AffixTier.slot/category's doc comments) -- the same merged
+ * affix can roll different ranges per slot, and even per raw category
+ * within one slot (one_handed vs two_handed both collapse to 'weapon'). */
+function buildAffixTiers(a: CraftAffix, template: string, slot: GearSlot, category: string): AffixTier[] {
   return (a.tiers ?? []).map((t) => ({
     tier: t.tier ?? '?',
     weight: t.weight ?? 0,
     modifiers: parseModifiers(fillTemplate(template, t.values)),
     slot,
+    category,
     ...(t.levelRequirement != null ? { levelRequirement: t.levelRequirement } : {}),
     ...(t.modifierId != null ? { modifierId: t.modifierId } : {})
   }));
@@ -739,7 +759,7 @@ export function mapAffixes(gearMaster: unknown): Affix[] {
   const byKey = new Map<string, Affix>();
   for (const section of Object.values(gearMaster as Record<string, GearSection>)) {
     const slot = section.category ? CATEGORY_SLOT[section.category] : undefined;
-    if (!slot) continue;
+    if (!slot || !section.category) continue;
     for (const [kind, list] of [
       ['prefix', section.craftPrefix],
       ['suffix', section.craftSuffix]
@@ -750,7 +770,7 @@ export function mapAffixes(gearMaster: unknown): Affix[] {
         const modifiers = parseModifiers(fillTemplate(template, topTier(a)?.values));
         if (modifiers.length === 0) continue; // stat the calculator doesn't model
         const ids = (a.tiers ?? []).map((t) => t.modifierId).filter((x): x is string => Boolean(x));
-        const newTiers = buildAffixTiers(a, template, slot);
+        const newTiers = buildAffixTiers(a, template, slot, section.category);
         const key = `${kind}|${template}`;
         const existing = byKey.get(key);
         if (existing) {
@@ -794,16 +814,30 @@ export function mapAffixes(gearMaster: unknown): Affix[] {
  * collisions on `max-life-prefix` and `beams-additional-damage-suffix`
  * (each duplicated). Since indexDataset keys affixes by id in a Map, a
  * collision silently shadows one entry entirely. Appends a stable numeric
- * suffix to every id beyond the first sharing a base id (iteration order is
+ * suffix to every id but the last sharing a base id (iteration order is
  * deterministic given the bundle's own key order, so this is reproducible
  * across regens).
+ *
+ * The *last* occurrence keeps the bare id -- not the first -- to match
+ * `indexDataset`'s own `new Map(affixes.map(a => [a.id, a]))` construction,
+ * where a later duplicate always overwrote an earlier one before this
+ * function existed. Keeping that same "last wins the bare id" outcome means
+ * a build/share link encoded before this disambiguation shipped still
+ * decodes to the same affix it always did; only the id that used to be
+ * silently unreachable (the earlier duplicate) becomes newly addressable
+ * under its own suffixed id, rather than the previously-reachable one
+ * changing meaning underneath existing links.
  */
 function disambiguateAffixIds(affixes: Affix[]): Affix[] {
-  const seen = new Map<string, number>();
+  const totalById = new Map<string, number>();
+  for (const affix of affixes) totalById.set(affix.id, (totalById.get(affix.id) ?? 0) + 1);
+  const seenById = new Map<string, number>();
   for (const affix of affixes) {
-    const count = (seen.get(affix.id) ?? 0) + 1;
-    seen.set(affix.id, count);
-    if (count > 1) affix.id = `${affix.id}-${count}`;
+    const total = totalById.get(affix.id) ?? 1;
+    if (total <= 1) continue;
+    const seen = (seenById.get(affix.id) ?? 0) + 1;
+    seenById.set(affix.id, seen);
+    if (seen < total) affix.id = `${affix.id}-${seen}`;
   }
   return affixes;
 }
@@ -845,7 +879,8 @@ export function mapGearFromMaster(gearMaster: unknown, gearEn: unknown): GearBas
         slot,
         implicit: parseModifiers(en.texts.join('\n')),
         ...(item.tlidbId != null ? { tlidbId: String(item.tlidbId) } : {}),
-        ...(item.icon ? { icon: item.icon } : {})
+        ...(item.icon ? { icon: item.icon } : {}),
+        ...(section.category ? { category: section.category } : {})
       });
     }
   }

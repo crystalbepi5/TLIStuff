@@ -83,7 +83,7 @@ export function collectModifiers(
     for (const affixId of piece.affixIds) {
       const affix = index.affix(affixId);
       if (!affix) warnings.push(`unknown affix: ${affixId}`);
-      else raw.push(...modifiersForSlot(affix, piece.slot));
+      else raw.push(...modifiersForSlot(affix, piece.slot, base?.category));
     }
   }
 

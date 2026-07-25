@@ -225,6 +225,39 @@ test('mapAffixes recomputes top-level modifiers across every merged slot, not ju
   const weaponTier = life.tiers.find((t) => t.modifierId === 'weapon-1');
   assert.equal(bootsTier.slot, 'boots');
   assert.equal(weaponTier.slot, 'weapon');
+  // Raw category (pre-collapse) is also tagged, e.g. "one_handed" not just
+  // the coarser slot 'weapon' both one- and two-handed collapse to.
+  assert.equal(weaponTier.category, 'one_handed');
+});
+
+test('mapAffixes tags tiers with the raw category, distinguishing one_handed from two_handed even though both collapse to slot "weapon"', () => {
+  // Confirmed real: one-handed and two-handed weapons roll different ranges
+  // for the same merged affix. Filtering only by the collapsed GearSlot
+  // ('weapon') mixes both subtypes' tiers together, so a caller picking
+  // "the best weapon tier" for a one-handed build could get credited with
+  // an unreachable two-handed roll -- category lets callers filter tighter
+  // than slot when they know the equipped gear base's real category.
+  const gearMaster = {
+    'gear/one_handed/dagger/master': {
+      category: 'one_handed',
+      craftPrefix: [
+        { descriptionTemplate: '+# Max Life', tiers: [{ tier: '1', modifierId: 'oh-1', weight: 100, values: [{ maxValue: 220 }] }] }
+      ]
+    },
+    'gear/two_handed/staff/master': {
+      category: 'two_handed',
+      craftPrefix: [
+        { descriptionTemplate: '+# Max Life', tiers: [{ tier: '1', modifierId: 'th-1', weight: 100, values: [{ maxValue: 330 }] }] }
+      ]
+    }
+  };
+  const affixes = mapAffixes(gearMaster);
+  const life = affixes.find((a) => a.name === 'Max Life');
+  assert.deepEqual(life.slots, ['weapon']); // both collapse to the same GearSlot
+  const ohTier = life.tiers.find((t) => t.modifierId === 'oh-1');
+  const thTier = life.tiers.find((t) => t.modifierId === 'th-1');
+  assert.equal(ohTier.category, 'one_handed');
+  assert.equal(thTier.category, 'two_handed');
 });
 
 test('mapAffixes unions tiers (by modifierId) for the same affix across gear subtypes', () => {
@@ -281,6 +314,33 @@ test('mapAffixes disambiguates ids when distinct templates normalise to the same
   );
 });
 
+test('mapAffixes disambiguation keeps the *last* colliding template on the bare id, matching indexDataset\'s pre-existing last-wins Map construction', () => {
+  // Confirmed real: indexDataset builds `new Map(affixes.map(a => [a.id, a]))`,
+  // so before disambiguateAffixIds existed, a later duplicate in the array
+  // always overwrote an earlier one -- the later one was "the" affix any
+  // existing build/share link resolving that bare id actually got. Keeping
+  // that same last-wins outcome (rather than flipping to first-wins) means
+  // disambiguation only makes the previously-unreachable earlier duplicate
+  // newly addressable, without changing what an existing link decodes to.
+  const gearMaster = {
+    'gear/boots/str_boots/master': {
+      category: 'boots',
+      craftPrefix: [
+        { descriptionTemplate: '+# Max Life', tiers: [{ tier: '0', modifierId: 'A', weight: 100, values: [{ maxValue: 330 }] }] },
+        { descriptionTemplate: '+#% Max Life', tiers: [{ tier: '0', modifierId: 'B', weight: 100, values: [{ maxValue: 16 }] }] }
+      ]
+    }
+  };
+  const affixes = mapAffixes(gearMaster);
+  const bare = affixes.find((a) => a.id === 'max-life-prefix');
+  const suffixed = affixes.find((a) => a.id === 'max-life-prefix-1');
+  assert.ok(bare, 'the bare id must still resolve to something');
+  assert.ok(suffixed, 'the earlier duplicate must get a new, previously-unused id');
+  // the *second* (last) template in array order is "+#% Max Life" -> percentage
+  assert.deepEqual(bare.modifiers, [{ stat: 'increasedLife', op: 'increased', value: 16 }]);
+  assert.deepEqual(suffixed.modifiers, [{ stat: 'life', op: 'flat', value: 330 }]);
+});
+
 test('mapGearFromMaster joins tlidbId (master) with name + mods (en)', () => {
   const gearMaster = {
     'gear/boots/str/master': { category: 'boots', baseItems: [{ id: 'u1', tlidbId: '4000' }] }
@@ -297,7 +357,8 @@ test('mapGearFromMaster joins tlidbId (master) with name + mods (en)', () => {
     name: 'Iron Boots',
     slot: 'boots',
     implicit: [{ stat: 'armor', op: 'flat', value: 329 }],
-    tlidbId: '4000'
+    tlidbId: '4000',
+    category: 'boots'
   });
 });
 
@@ -401,6 +462,35 @@ test('mapSkills sets requiresSkillId from skillTag for Magnificent/Noble support
   const generic = support.find((s) => s.name === 'Generic Support');
   assert.equal(magnificent.requiresSkillId, 'frost-nova');
   assert.equal('requiresSkillId' in generic, false);
+});
+
+test('mapSkills drops requiresSkillId when the skillTag it names never resolves to a real active or support skill', () => {
+  // Confirmed real: some signature supports' skillTag names a skill whose
+  // own entry has no localized name and gets skipped ("if (!name) continue"
+  // above), so it's never generated at all -- collectModifiers can then
+  // never satisfy the requirement (it only matches the active skill or a
+  // socketed support id), leaving the support permanently, silently inert.
+  const master = {
+    'skill/Active/master': {
+      category: 'Active',
+      skills: [{ id: 'u1', tags: ['Spell'] }]
+    },
+    'skill/Magnificent_Support/master': {
+      category: 'Magnificent_Support',
+      skills: [{ id: 'u2', tags: ['Support'], skillTag: 'Synthetic Troop' }]
+    }
+  };
+  const en = {
+    'skill/Active/i18n/en': { u1: { name: 'Frost Nova' } },
+    // "Synthetic Troop" itself has no en entry anywhere -> never generated,
+    // so 'synthetic-troop' can never appear as an active or support id.
+    'skill/Magnificent_Support/i18n/en': {
+      u2: { name: 'Synthetic Troop Force Field (Magnificent)', description: '+10% additional damage' }
+    }
+  };
+  const { support } = mapSkills(master, en);
+  const unresolvable = support.find((s) => s.name === 'Synthetic Troop Force Field (Magnificent)');
+  assert.equal('requiresSkillId' in unresolvable, false);
 });
 
 test('mapHeroTraits scopes each trait to its real owning hero and uses the highest tier, stripping HTML markup', () => {
