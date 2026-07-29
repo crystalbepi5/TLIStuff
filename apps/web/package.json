@@ -14,6 +14,7 @@
     "@torchlight-companion/build-calc": "workspace:*",
     "@torchlight-companion/build-data": "workspace:*",
     "@torchlight-companion/domain": "workspace:*",
+    "lucide-react": "^1.27.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
   },

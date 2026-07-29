@@ -1,0 +1,8 @@
+/* Entry point for the planner's design system. Import order matters: tokens
+ * must land first (everything else consumes the custom properties), then
+ * shell layout, then reusable component primitives, then the responsive
+ * overrides that adjust shell + component behavior at narrower widths. */
+@import './styles/tokens.css';
+@import './styles/shell.css';
+@import './styles/components.css';
+@import './styles/responsive.css';
