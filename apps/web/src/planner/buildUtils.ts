@@ -9,6 +9,19 @@ import {
 
 export const index = indexDataset(seedDataset);
 
+/** ActiveSkill/SupportSkill `icon` fields are relative paths into
+ * tlicompendium.com's image host (see schema.ts) -- this is real scraped
+ * game art, not a fabricated asset, so it's used as-is rather than
+ * generating a placeholder for skills. Heroes have no equivalent `icon`
+ * field in the schema at all (confirmed: `Hero` only carries id/name/
+ * description/baseModifiers/season), so hero cards fall back to a
+ * generated monogram instead -- see HeroAvatar. */
+const ICON_HOST = 'https://tlicompendium.com';
+
+export function skillIconUrl(icon: string | undefined): string | undefined {
+  return icon ? `${ICON_HOST}${icon}` : undefined;
+}
+
 export const GEAR_SLOTS: GearSlot[] = [
   'weapon',
   'offhand',

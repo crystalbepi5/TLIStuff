@@ -5,7 +5,6 @@ import {
   evaluateBuild,
   marginalGearAnalysis,
   MAX_PACT_SPIRITS,
-  totalManaCost,
   type AffixSwapSuggestion
 } from '@torchlight-companion/build-calc';
 import { ProgressionTreeGraph } from '../progression/ProgressionTreeGraph';
@@ -16,6 +15,8 @@ import { PlannerStatsRail } from './PlannerStatsRail';
 import type { PlannerSection } from './plannerSections';
 import { PlannerProvider, usePlanner } from './context/PlannerContext';
 import { GEAR_SLOTS, index, decodeBuild, encodeBuild, filterList, shareUrl, voraxAffixLabel, voraxLegendaryLabel } from './buildUtils';
+import { HeroWorkspace } from './hero/HeroWorkspace';
+import { SkillsWorkspace } from './skills/SkillsWorkspace';
 import './planner.css';
 
 export function BuildPlanner() {
@@ -48,7 +49,6 @@ function PlannerApp() {
   const [shareCode, setShareCode] = useState('');
   const [importError, setImportError] = useState<string | null>(null);
   const [linkCopied, setLinkCopied] = useState(false);
-  const [supportSearch, setSupportSearch] = useState('');
   const [talentSearch, setTalentSearch] = useState('');
 
   const [progressionCategory, setProgressionCategory] = useState<'talentTrees' | 'voidCharts'>('talentTrees');
@@ -56,13 +56,6 @@ function PlannerApp() {
 
   const hero = index.hero(build.heroId);
   const skill = index.activeSkill(build.activeSkillId);
-  const supportSlots = skill?.supportSlots ?? 0;
-  const manaCost = skill
-    ? totalManaCost(
-        skill,
-        build.supportIds.map((id) => index.supportSkill(id))
-      )
-    : 0;
 
   let report: ReturnType<typeof evaluateBuild> | { error: string };
   try {
@@ -87,15 +80,6 @@ function PlannerApp() {
       setMarginal(marginalGearAnalysis(build, index, seedDataset.affixes, 5));
       setMarginalBusy(false);
     }, 0);
-  }
-
-  function toggleSupport(id: string) {
-    patchBuild((prev) => {
-      const has = prev.supportIds.includes(id);
-      if (has) return { supportIds: prev.supportIds.filter((s) => s !== id) };
-      if (prev.supportIds.length >= supportSlots) return {}; // slots full
-      return { supportIds: [...prev.supportIds, id] };
-    });
   }
 
   function toggleInList(key: 'talentIds' | 'pactSpiritIds' | 'memoryIds', id: string, cap?: number) {
@@ -179,106 +163,9 @@ function PlannerApp() {
             <OverviewSection build={build} hero={hero?.name} skill={skill?.name} report={report} onNavigate={setActiveSection} />
           )}
 
-          {activeSection === 'hero' && (
-            <section className="pv-panel">
-              <div className="pv-panel-header">
-                <h2 className="pv-section-title">Hero</h2>
-              </div>
-              <div className="pv-panel-body">
-                <div className="pv-field">
-                  <label className="pv-field-label" htmlFor="hero-select">
-                    Hero
-                  </label>
-                  <select
-                    id="hero-select"
-                    className="pv-select"
-                    value={build.heroId}
-                    onChange={(e) => patchBuild({ heroId: e.target.value, talentIds: [] })}
-                  >
-                    {seedDataset.heroes.map((h) => (
-                      <option key={h.id} value={h.id}>
-                        {h.name}
-                        {h.season ? ` (${h.season})` : ''}
-                      </option>
-                    ))}
-                  </select>
-                </div>
-                <p className="pv-metadata" style={{ marginTop: 8 }}>
-                  Changing hero clears selected talents, since talent eligibility is hero-specific.
-                </p>
-              </div>
-            </section>
-          )}
+          {activeSection === 'hero' && <HeroWorkspace build={build} patchBuild={patchBuild} />}
 
-          {activeSection === 'skills' && (
-            <section className="pv-panel">
-              <div className="pv-panel-header">
-                <h2 className="pv-section-title">Skills</h2>
-                <span className="pv-badge">Mana cost {manaCost.toFixed(1)}</span>
-              </div>
-              <div className="pv-panel-body">
-                <div className="pv-field">
-                  <label className="pv-field-label" htmlFor="skill-select">
-                    Main skill
-                  </label>
-                  <select
-                    id="skill-select"
-                    className="pv-select"
-                    value={build.activeSkillId}
-                    onChange={(e) => patchBuild({ activeSkillId: e.target.value, supportIds: [] })}
-                  >
-                    {seedDataset.activeSkills.map((s) => (
-                      <option key={s.id} value={s.id}>
-                        {s.name} [{s.tags.join(', ')}]
-                      </option>
-                    ))}
-                  </select>
-                </div>
-
-                <hr className="pv-divider" />
-                <div className="pv-panel-header" style={{ padding: 0, border: 'none' }}>
-                  <span className="pv-panel-label">
-                    Supports ({build.supportIds.length}/{supportSlots})
-                  </span>
-                </div>
-                <div className="pv-search" style={{ margin: '8px 0' }}>
-                  <input
-                    type="search"
-                    placeholder={`Search ${seedDataset.supportSkills.length} supports…`}
-                    value={supportSearch}
-                    onChange={(e) => setSupportSearch(e.target.value)}
-                  />
-                </div>
-                {(() => {
-                  const { shown, hidden } = filterList(seedDataset.supportSkills, build.supportIds, supportSearch);
-                  return (
-                    <div className="pv-scroll-region" style={{ maxHeight: 420 }}>
-                      {shown.map((sup) => {
-                        const checked = build.supportIds.includes(sup.id);
-                        const disabled = !checked && build.supportIds.length >= supportSlots;
-                        return (
-                          <label key={sup.id} className="pv-checkbox-row" style={{ opacity: disabled ? 0.45 : 1 }}>
-                            <input
-                              type="checkbox"
-                              checked={checked}
-                              disabled={disabled}
-                              onChange={() => toggleSupport(sup.id)}
-                            />
-                            <span>{sup.name}</span>
-                            {sup.requiresTags.length > 0 && (
-                              <em className="pv-metadata">needs {sup.requiresTags.join('/')}</em>
-                            )}
-                          </label>
-                        );
-                      })}
-                      {hidden > 0 && <p className="pv-metadata">+{hidden} more — refine search</p>}
-                      {shown.length === 0 && <p className="pv-metadata">no matches</p>}
-                    </div>
-                  );
-                })()}
-              </div>
-            </section>
-          )}
+          {activeSection === 'skills' && <SkillsWorkspace build={build} patchBuild={patchBuild} />}
 
           {activeSection === 'equipment' && (
             <section className="pv-panel">
