@@ -1479,7 +1479,6 @@
     ],
     "requiresTags": [],
     "manaMultiplier": 110,
-    "requiresSkillId": "synthetic-troop",
     "icon": "/images/skill/UI_Skill_AIMachine_Field_Icon_128.webp"
   },
   {
@@ -2364,7 +2363,6 @@
     ],
     "requiresTags": [],
     "manaMultiplier": 110,
-    "requiresSkillId": "modularization",
     "icon": "/images/skill/UI_Skill_Modular_support01_Icon_128.webp"
   },
   {
@@ -2379,7 +2377,6 @@
     ],
     "requiresTags": [],
     "manaMultiplier": 110,
-    "requiresSkillId": "modularization",
     "icon": "/images/skill/UI_Skill_Modular_support02_Icon_128.webp"
   },
   {
@@ -2394,7 +2391,6 @@
     ],
     "requiresTags": [],
     "manaMultiplier": 110,
-    "requiresSkillId": "modularization",
     "icon": "/images/skill/UI_Skill_Modular_support03_Icon_128.webp"
   },
   {
@@ -4843,7 +4839,6 @@
     ],
     "requiresTags": [],
     "manaMultiplier": 110,
-    "requiresSkillId": "modularization",
     "icon": "/images/skill/UI_Skill_Modular_support04_Icon_128.webp"
   },
   {
@@ -4858,7 +4853,6 @@
     ],
     "requiresTags": [],
     "manaMultiplier": 110,
-    "requiresSkillId": "modularization",
     "icon": "/images/skill/UI_Skill_Modular_support05_Icon_128.webp"
   },
   {
@@ -4873,7 +4867,6 @@
     ],
     "requiresTags": [],
     "manaMultiplier": 110,
-    "requiresSkillId": "modularization",
     "icon": "/images/skill/UI_Skill_Modular_support06_Icon_128.webp"
   },
   {
@@ -4893,7 +4886,6 @@
     ],
     "requiresTags": [],
     "manaMultiplier": 110,
-    "requiresSkillId": "modularization",
     "icon": "/images/skill/UI_Skill_Modular_support07_Icon_128.webp"
   },
   {

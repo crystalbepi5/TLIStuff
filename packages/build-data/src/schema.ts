@@ -189,6 +189,16 @@ export interface AffixTier {
    * best-across-all-slots preview value.
    */
   slot?: GearSlot;
+  /**
+   * The game's own, finer-grained gear category this tier was scraped from
+   * (e.g. "one_handed"/"two_handed", both collapsed into the single `slot`
+   * value 'weapon') -- confirmed real: one-handed and two-handed weapons
+   * roll different ranges for the same affix, same as the slot-level split
+   * above, so filtering by `slot` alone still overcounts a one-handed
+   * weapon with a two-handed roll. Prefer this over `slot` when both the
+   * tier and the equipped GearBase carry it (see GearBase.category).
+   */
+  category?: string;
 }
 
 /** An affix that can roll on gear. */
@@ -244,6 +254,11 @@ export interface GearBase {
    * their source bundle at all, so GearBase entries built from legendaries
    * (mapLegendaries) never have one. */
   icon?: string;
+  /** See AffixTier.category -- the game's own gear category this base was
+   * scraped from (e.g. "one_handed"/"two_handed", not just the collapsed
+   * `slot` value 'weapon'). Only available for regular gear bases scraped
+   * via gear-master (mapGearFromMaster); legendaries never have one. */
+  category?: string;
 }
 
 /**

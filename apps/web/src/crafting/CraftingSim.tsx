@@ -55,7 +55,10 @@ export function CraftingSim() {
   const [affixId, setAffixId] = useState<string>(() => affixesForSlot[0]?.id ?? '');
   const affix = seedDataset.affixes.find((a) => a.id === affixId) ?? affixesForSlot[0];
 
-  const pool = useMemo(() => (affix ? craftableTiers(affix) : []), [affix]);
+  // Pass `slot` -- a multi-slot affix (mapAffixes merges the same craft
+  // template across gear subtypes) would otherwise mix in tiers from every
+  // slot it appears on, showing rolls impossible on the selected slot.
+  const pool = useMemo(() => (affix ? craftableTiers(affix, slot) : []), [affix, slot]);
   const [targetKeys, setTargetKeys] = useState<Set<string>>(new Set());
   const [mc, setMc] = useState<MonteCarloResult | null>(null);
 

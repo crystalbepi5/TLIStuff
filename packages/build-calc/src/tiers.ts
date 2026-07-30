@@ -33,37 +33,53 @@ export function pickAffixTier(affix: Affix, tier?: string, modifierId?: string):
 /**
  * Modifiers for an affix as actually rolled on a specific gear slot. The
  * same craft template merges across gear subtypes/slots into one Affix (see
- * tlicompendium.ts's mapAffixes), but different slots can genuinely roll
- * different value ranges for "the same" affix (confirmed real: a Max Life
- * prefix craftable to +220 on boots but +330 on a weapon) -- `affix.modifiers`
- * is only a best-across-all-slots preview value, not necessarily correct for
- * any one slot. Prefers the best-craftable tier tagged with this slot; falls
- * back to `affix.modifiers` when the affix has no slot-tagged tiers at all
- * (e.g. a hand-curated affix with no scraped tier data).
+ * tlicompendium.ts's mapAffixes), but different slots -- and even different
+ * raw categories *within* one slot (one_handed/two_handed both collapse to
+ * 'weapon') -- can genuinely roll different value ranges for "the same"
+ * affix (confirmed real: a Max Life prefix craftable to +220 on boots but
+ * +330 on a weapon, and a spell added-damage weapon affix rolling lower on
+ * one-handed than two-handed). `affix.modifiers` is only a
+ * best-across-everything preview value, not necessarily correct for any
+ * one slot/category.
+ *
+ * Prefers the best-craftable tier tagged with the exact `category` (e.g.
+ * "one_handed") when the equipped GearBase carries one (see
+ * GearBase.category); falls back to matching on the coarser `slot` when it
+ * doesn't (hand-curated affixes/bases have no category at all); falls back
+ * to `affix.modifiers` when neither yields a match.
  */
-export function modifiersForSlot(affix: Affix, slot: GearSlot): Modifier[] {
-  const slotTiers = (affix.tiers ?? []).filter((t) => t.slot === slot);
-  if (slotTiers.length === 0) return affix.modifiers;
-  const craftable = slotTiers.filter((t) => t.weight > 0);
-  const pool = craftable.length > 0 ? craftable : slotTiers;
-  const best = pool.slice().sort((a, b) => (b.modifiers[0]?.value ?? 0) - (a.modifiers[0]?.value ?? 0))[0];
+export function modifiersForSlot(affix: Affix, slot: GearSlot, category?: string): Modifier[] {
+  const tiers = affix.tiers ?? [];
+  const byCategory = category ? tiers.filter((t) => t.category === category) : [];
+  const pool = byCategory.length > 0 ? byCategory : tiers.filter((t) => t.slot === slot);
+  if (pool.length === 0) return affix.modifiers;
+  const craftable = pool.filter((t) => t.weight > 0);
+  const ranked = craftable.length > 0 ? craftable : pool;
+  const best = ranked.slice().sort((a, b) => (b.modifiers[0]?.value ?? 0) - (a.modifiers[0]?.value ?? 0))[0];
   return best?.modifiers ?? affix.modifiers;
 }
 
 /**
  * The affix's craftable tier pool for a crafting-odds calculation: every
  * tier with a nonzero weight (weight 0 means currently disabled/
- * unobtainable, not "equally likely as everything else").
+ * unobtainable, not "equally likely as everything else"). Pass `slot` when
+ * the affix spans multiple slots (mapAffixes merges the same craft template
+ * across gear subtypes) -- without it, a multi-slot affix's odds mix tiers
+ * from every slot it appears on, e.g. a boots ladder including impossible
+ * weapon-only rolls (confirmed real for `max-life-prefix`).
  */
-export function craftableTiers(affix: Affix): AffixTier[] {
-  return (affix.tiers ?? []).filter((t) => t.weight > 0);
+export function craftableTiers(affix: Affix, slot?: GearSlot): AffixTier[] {
+  const tiers = affix.tiers ?? [];
+  const pool = slot ? tiers.filter((t) => t.slot === slot) : tiers;
+  return pool.filter((t) => t.weight > 0);
 }
 
 /** Each tier's share of the total weight -- the crafting-odds a real
  * simulator would use (see the standalone Python crafting_sim.py tool for a
- * full Monte Carlo treatment of this same data). */
-export function affixTierOdds(affix: Affix): { tier: string; weight: number; chance: number }[] {
-  const pool = craftableTiers(affix);
+ * full Monte Carlo treatment of this same data). See craftableTiers for why
+ * `slot` matters on a multi-slot affix. */
+export function affixTierOdds(affix: Affix, slot?: GearSlot): { tier: string; weight: number; chance: number }[] {
+  const pool = craftableTiers(affix, slot);
   const total = pool.reduce((sum, t) => sum + t.weight, 0);
   return pool.map((t) => ({ tier: t.tier, weight: t.weight, chance: total > 0 ? t.weight / total : 0 }));
 }

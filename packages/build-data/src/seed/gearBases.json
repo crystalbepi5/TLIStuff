@@ -83,7 +83,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4000",
-    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_001_112.webp"
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_001_112.webp",
+    "category": "boots"
   },
   {
     "id": "scout-s-short-boots",
@@ -91,7 +92,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4001",
-    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_002_112.webp"
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_002_112.webp",
+    "category": "boots"
   },
   {
     "id": "skirmisher-s-leather-boots",
@@ -99,7 +101,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4002",
-    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_003_112.webp"
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_003_112.webp",
+    "category": "boots"
   },
   {
     "id": "hunter-s-leather-boots",
@@ -107,7 +110,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4003",
-    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_004_112.webp"
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_004_112.webp",
+    "category": "boots"
   },
   {
     "id": "prospector-s-short-boots",
@@ -115,7 +119,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4004",
-    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_001_01_112.webp"
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_001_01_112.webp",
+    "category": "boots"
   },
   {
     "id": "wild-dominator-long-boots",
@@ -123,7 +128,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4005",
-    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_002_01_112.webp"
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_002_01_112.webp",
+    "category": "boots"
   },
   {
     "id": "grand-explorer-s-heavy-boots",
@@ -131,7 +137,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4006",
-    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_003_01_112.webp"
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_003_01_112.webp",
+    "category": "boots"
   },
   {
     "id": "watcher-s-trail",
@@ -139,7 +146,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4007",
-    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_004_01_112.webp"
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_004_01_112.webp",
+    "category": "boots"
   },
   {
     "id": "eternal-night-stalker-s-long-boots",
@@ -147,7 +155,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4008",
-    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_001_02_112.webp"
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_001_02_112.webp",
+    "category": "boots"
   },
   {
     "id": "boots-of-calamity",
@@ -155,7 +164,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4009",
-    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_002_02_112.webp"
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_002_02_112.webp",
+    "category": "boots"
   },
   {
     "id": "demon-slayer-s-feet",
@@ -163,7 +173,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4010",
-    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_003_02_112.webp"
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_003_02_112.webp",
+    "category": "boots"
   },
   {
     "id": "secret-shadow-s-shoes",
@@ -171,7 +182,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4011",
-    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_004_02_112.webp"
+    "icon": "/images/rare-gear/boots/dex_boots/Icon_Equip_Shoes_Agi_Norm_004_02_112.webp",
+    "category": "boots"
   },
   {
     "id": "herbalist-s-footguards",
@@ -179,7 +191,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4100",
-    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_001_112.webp"
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_001_112.webp",
+    "category": "boots"
   },
   {
     "id": "scribe-s-boots",
@@ -187,7 +200,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4101",
-    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_002_112.webp"
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_002_112.webp",
+    "category": "boots"
   },
   {
     "id": "acolyte-s-footwraps",
@@ -195,7 +209,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4102",
-    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_003_112.webp"
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_003_112.webp",
+    "category": "boots"
   },
   {
     "id": "witchdoctor-s-slippers",
@@ -203,7 +218,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4103",
-    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_004_112.webp"
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_004_112.webp",
+    "category": "boots"
   },
   {
     "id": "disciple-s-cloth-boots",
@@ -211,7 +227,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4104",
-    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_001_01_112.webp"
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_001_01_112.webp",
+    "category": "boots"
   },
   {
     "id": "shaman-s-slippers",
@@ -219,7 +236,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4105",
-    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_002_01_112.webp"
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_002_01_112.webp",
+    "category": "boots"
   },
   {
     "id": "envoy-s-soft-shoes",
@@ -227,7 +245,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4106",
-    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_003_01_112.webp"
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_003_01_112.webp",
+    "category": "boots"
   },
   {
     "id": "respected-tutor-s-footwraps",
@@ -235,7 +254,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4107",
-    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_004_01_112.webp"
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_004_01_112.webp",
+    "category": "boots"
   },
   {
     "id": "elder-sage-s-treads",
@@ -243,7 +263,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4108",
-    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_001_02_112.webp"
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_001_02_112.webp",
+    "category": "boots"
   },
   {
     "id": "imperishable-feet",
@@ -251,7 +272,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4109",
-    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_002_02_112.webp"
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_002_02_112.webp",
+    "category": "boots"
   },
   {
     "id": "all-magic-shoes",
@@ -259,7 +281,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4110",
-    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_003_02_112.webp"
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_003_02_112.webp",
+    "category": "boots"
   },
   {
     "id": "long-night-sorcerer-s-boots",
@@ -267,7 +290,8 @@
     "slot": "boots",
     "implicit": [],
     "tlidbId": "4111",
-    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_004_02_112.webp"
+    "icon": "/images/rare-gear/boots/int_boots/Icon_Equip_Shoes_Int_Norm_004_02_112.webp",
+    "category": "boots"
   },
   {
     "id": "brute-s-greaves",
@@ -281,7 +305,8 @@
       }
     ],
     "tlidbId": "3900",
-    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_001_112.webp"
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_001_112.webp",
+    "category": "boots"
   },
   {
     "id": "footman-s-boots",
@@ -295,7 +320,8 @@
       }
     ],
     "tlidbId": "3901",
-    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_002_112.webp"
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_002_112.webp",
+    "category": "boots"
   },
   {
     "id": "paladin-s-iron-greaves",
@@ -309,7 +335,8 @@
       }
     ],
     "tlidbId": "3902",
-    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_003_112.webp"
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_003_112.webp",
+    "category": "boots"
   },
   {
     "id": "berserker-s-footguards",
@@ -323,7 +350,8 @@
       }
     ],
     "tlidbId": "3903",
-    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_004_112.webp"
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_004_112.webp",
+    "category": "boots"
   },
   {
     "id": "iron-sentry-s-feet",
@@ -337,7 +365,8 @@
       }
     ],
     "tlidbId": "3904",
-    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_001_01_112.webp"
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_001_01_112.webp",
+    "category": "boots"
   },
   {
     "id": "packleader-greaves",
@@ -351,7 +380,8 @@
       }
     ],
     "tlidbId": "3905",
-    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_002_01_112.webp"
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_002_01_112.webp",
+    "category": "boots"
   },
   {
     "id": "mountain-lord-s-feet",
@@ -365,7 +395,8 @@
       }
     ],
     "tlidbId": "3906",
-    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_003_01_112.webp"
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_003_01_112.webp",
+    "category": "boots"
   },
   {
     "id": "divine-arbiter-s-feet",
@@ -379,7 +410,8 @@
       }
     ],
     "tlidbId": "3907",
-    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_004_01_112.webp"
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_004_01_112.webp",
+    "category": "boots"
   },
   {
     "id": "dragon-guardian-s-footguards",
@@ -393,7 +425,8 @@
       }
     ],
     "tlidbId": "3908",
-    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_001_02_112.webp"
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_001_02_112.webp",
+    "category": "boots"
   },
   {
     "id": "fallen-knight-s-footguards",
@@ -407,7 +440,8 @@
       }
     ],
     "tlidbId": "3909",
-    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_002_02_112.webp"
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_002_02_112.webp",
+    "category": "boots"
   },
   {
     "id": "old-king-s-sabatons",
@@ -421,7 +455,8 @@
       }
     ],
     "tlidbId": "3910",
-    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_003_02_112.webp"
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_003_02_112.webp",
+    "category": "boots"
   },
   {
     "id": "ranger-s-dirty-boots",
@@ -435,7 +470,8 @@
       }
     ],
     "tlidbId": "3911",
-    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_004_02_112.webp"
+    "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_004_02_112.webp",
+    "category": "boots"
   },
   {
     "id": "rogue-outerwear",
@@ -443,7 +479,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3100",
-    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_001_112.webp"
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_001_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "scout-s-tight-vest",
@@ -451,7 +488,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3101",
-    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_002_112.webp"
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_002_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "skirmisher-outerwear",
@@ -459,7 +497,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3102",
-    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_003_112.webp"
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_003_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "hunter-s-chestguard",
@@ -467,7 +506,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3103",
-    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_004_112.webp"
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_004_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "prospector-outerwear",
@@ -475,7 +515,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3104",
-    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_001_01_112.webp"
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_001_01_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "wild-dominator-outerwear",
@@ -483,7 +524,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3105",
-    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_002_01_112.webp"
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_002_01_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "grand-explorer-outerwear",
@@ -491,7 +533,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3106",
-    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_003_01_112.webp"
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_003_01_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "watcher-s-chest-armor",
@@ -499,7 +542,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3107",
-    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_004_01_112.webp"
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_004_01_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "eternal-night-stalker-s-chestguard",
@@ -507,7 +551,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3108",
-    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_001_02_112.webp"
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_001_02_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "sanctuary-of-calamity",
@@ -515,7 +560,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3109",
-    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_002_02_112.webp"
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_002_02_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "demon-slayer-s-skin",
@@ -523,7 +569,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3110",
-    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_003_02_112.webp"
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_003_02_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "secret-shadow-s-protection",
@@ -531,7 +578,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3111",
-    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_004_02_112.webp"
+    "icon": "/images/rare-gear/chest_armor/dex_chest_armor/Icon_Equip_Armor_Agi_Norm_004_02_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "herbalist-s-robe",
@@ -539,7 +587,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3200",
-    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_001_112.webp"
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_001_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "scribe-s-coat",
@@ -547,7 +596,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3201",
-    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_002_112.webp"
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_002_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "acolyte-s-robe",
@@ -555,7 +605,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3202",
-    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_003_112.webp"
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_003_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "witchdoctor-s-robe",
@@ -563,7 +614,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3203",
-    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_004_112.webp"
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_004_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "disciple-s-coat",
@@ -571,7 +623,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3204",
-    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_001_01_112.webp"
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_001_01_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "shaman-s-short-robe",
@@ -579,7 +632,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3205",
-    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_002_01_112.webp"
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_002_01_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "envoy-s-robe",
@@ -587,7 +641,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3206",
-    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_003_01_112.webp"
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_003_01_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "respected-tutor-s-robe",
@@ -595,7 +650,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3207",
-    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_004_01_112.webp"
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_004_01_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "elder-sage-s-regalia",
@@ -603,7 +659,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3208",
-    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_001_02_112.webp"
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_001_02_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "imperishable-black-robe",
@@ -611,7 +668,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3209",
-    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_002_02_112.webp"
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_002_02_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "all-magic-secret-robe",
@@ -619,7 +677,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3210",
-    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_003_02_112.webp"
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_003_02_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "long-night-sorcerer-s-robe",
@@ -627,7 +686,8 @@
     "slot": "chest",
     "implicit": [],
     "tlidbId": "3211",
-    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_004_02_112.webp"
+    "icon": "/images/rare-gear/chest_armor/int_chest_armor/Icon_Equip_Armor_Int_Norm_004_02_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "brute-s-chestguard",
@@ -641,7 +701,8 @@
       }
     ],
     "tlidbId": "3000",
-    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_001_112.webp"
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_001_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "footman-s-chestguard",
@@ -655,7 +716,8 @@
       }
     ],
     "tlidbId": "3001",
-    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_002_112.webp"
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_002_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "paladin-s-heavy-armor",
@@ -669,7 +731,8 @@
       }
     ],
     "tlidbId": "3002",
-    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_003_112.webp"
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_003_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "berserker-s-chest-armor",
@@ -683,7 +746,8 @@
       }
     ],
     "tlidbId": "3003",
-    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_004_112.webp"
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_004_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "iron-sentry-s-heavy-armor",
@@ -697,7 +761,8 @@
       }
     ],
     "tlidbId": "3004",
-    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_001_01_112.webp"
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_001_01_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "packleader-chest-armor",
@@ -711,7 +776,8 @@
       }
     ],
     "tlidbId": "3005",
-    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_002_01_112.webp"
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_002_01_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "mountain-lord-s-chest-armor",
@@ -725,7 +791,8 @@
       }
     ],
     "tlidbId": "3006",
-    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_003_01_112.webp"
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_003_01_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "divine-arbiter-s-defense",
@@ -739,7 +806,8 @@
       }
     ],
     "tlidbId": "3007",
-    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_004_01_112.webp"
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_004_01_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "dragon-guardian-s-lamellar-armor",
@@ -753,7 +821,8 @@
       }
     ],
     "tlidbId": "3008",
-    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_001_02_112.webp"
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_001_02_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "fallen-knight-s-armor",
@@ -767,7 +836,8 @@
       }
     ],
     "tlidbId": "3009",
-    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_002_02_112.webp"
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_002_02_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "old-king-s-armor",
@@ -781,7 +851,8 @@
       }
     ],
     "tlidbId": "3010",
-    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_003_02_112.webp"
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_003_02_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "ranger-s-rag",
@@ -795,7 +866,8 @@
       }
     ],
     "tlidbId": "3011",
-    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_004_02_112.webp"
+    "icon": "/images/rare-gear/chest_armor/str_chest_armor/Icon_Equip_Armor_Str_Norm_004_02_112.webp",
+    "category": "chest_armor"
   },
   {
     "id": "rogue-s-gloves",
@@ -803,7 +875,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3400",
-    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_001_112.webp"
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_001_112.webp",
+    "category": "gloves"
   },
   {
     "id": "scout-s-gloves",
@@ -811,7 +884,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3401",
-    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_002_112.webp"
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_002_112.webp",
+    "category": "gloves"
   },
   {
     "id": "skirmisher-s-gloves",
@@ -819,7 +893,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3402",
-    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_003_112.webp"
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_003_112.webp",
+    "category": "gloves"
   },
   {
     "id": "hunter-s-gloves",
@@ -827,7 +902,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3403",
-    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_004_112.webp"
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_004_112.webp",
+    "category": "gloves"
   },
   {
     "id": "prospector-handguards",
@@ -835,7 +911,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3404",
-    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_001_01_112.webp"
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_001_01_112.webp",
+    "category": "gloves"
   },
   {
     "id": "wild-dominator-handguards",
@@ -843,7 +920,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3405",
-    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_002_01_112.webp"
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_002_01_112.webp",
+    "category": "gloves"
   },
   {
     "id": "grand-explorer-s-gloves",
@@ -851,7 +929,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3406",
-    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_003_01_112.webp"
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_003_01_112.webp",
+    "category": "gloves"
   },
   {
     "id": "watcher-s-hold",
@@ -859,7 +938,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3407",
-    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_004_01_112.webp"
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_004_01_112.webp",
+    "category": "gloves"
   },
   {
     "id": "eternal-night-stalker-s-hands",
@@ -867,7 +947,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3408",
-    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_001_02_112.webp"
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_001_02_112.webp",
+    "category": "gloves"
   },
   {
     "id": "hands-of-calamity",
@@ -875,7 +956,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3409",
-    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_002_02_112.webp"
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_002_02_112.webp",
+    "category": "gloves"
   },
   {
     "id": "demon-slayer-s-hands",
@@ -883,7 +965,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3410",
-    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_003_02_112.webp"
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_003_02_112.webp",
+    "category": "gloves"
   },
   {
     "id": "secret-shadow-s-wrists",
@@ -891,7 +974,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3411",
-    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_004_02_112.webp"
+    "icon": "/images/rare-gear/gloves/dex_gloves/Icon_Equip_Gloves_Agi_Norm_004_02_112.webp",
+    "category": "gloves"
   },
   {
     "id": "herbalist-s-gloves",
@@ -899,7 +983,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3500",
-    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_001_112.webp"
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_001_112.webp",
+    "category": "gloves"
   },
   {
     "id": "scribe-handguards",
@@ -907,7 +992,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3501",
-    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_002_112.webp"
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_002_112.webp",
+    "category": "gloves"
   },
   {
     "id": "acolyte-handguards",
@@ -915,7 +1001,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3502",
-    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_003_112.webp"
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_003_112.webp",
+    "category": "gloves"
   },
   {
     "id": "witchdoctor-s-gloves",
@@ -923,7 +1010,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3503",
-    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_004_112.webp"
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_004_112.webp",
+    "category": "gloves"
   },
   {
     "id": "disciple-handguards",
@@ -931,7 +1019,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3504",
-    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_001_01_112.webp"
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_001_01_112.webp",
+    "category": "gloves"
   },
   {
     "id": "shaman-s-hands",
@@ -939,7 +1028,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3505",
-    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_002_01_112.webp"
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_002_01_112.webp",
+    "category": "gloves"
   },
   {
     "id": "envoy-s-hands",
@@ -947,7 +1037,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3506",
-    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_003_01_112.webp"
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_003_01_112.webp",
+    "category": "gloves"
   },
   {
     "id": "respected-tutor-s-gloves",
@@ -955,7 +1046,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3507",
-    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_004_01_112.webp"
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_004_01_112.webp",
+    "category": "gloves"
   },
   {
     "id": "elder-sage-s-long-gloves",
@@ -963,7 +1055,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3508",
-    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_001_02_112.webp"
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_001_02_112.webp",
+    "category": "gloves"
   },
   {
     "id": "imperishable-touch",
@@ -971,7 +1064,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3509",
-    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_002_02_112.webp"
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_002_02_112.webp",
+    "category": "gloves"
   },
   {
     "id": "all-magic-grip",
@@ -979,7 +1073,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3510",
-    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_003_02_112.webp"
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_003_02_112.webp",
+    "category": "gloves"
   },
   {
     "id": "long-night-sorcerer-s-wristband",
@@ -987,7 +1082,8 @@
     "slot": "gloves",
     "implicit": [],
     "tlidbId": "3511",
-    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_004_02_112.webp"
+    "icon": "/images/rare-gear/gloves/int_gloves/Icon_Equip_Gloves_Int_Norm_004_02_112.webp",
+    "category": "gloves"
   },
   {
     "id": "brute-handguards",
@@ -1001,7 +1097,8 @@
       }
     ],
     "tlidbId": "3300",
-    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_001_112.webp"
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_001_112.webp",
+    "category": "gloves"
   },
   {
     "id": "footman-s-gauntlets",
@@ -1015,7 +1112,8 @@
       }
     ],
     "tlidbId": "3301",
-    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_002_112.webp"
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_002_112.webp",
+    "category": "gloves"
   },
   {
     "id": "paladin-s-hands",
@@ -1029,7 +1127,8 @@
       }
     ],
     "tlidbId": "3302",
-    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_003_112.webp"
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_003_112.webp",
+    "category": "gloves"
   },
   {
     "id": "berserker-s-hands",
@@ -1043,7 +1142,8 @@
       }
     ],
     "tlidbId": "3303",
-    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_004_112.webp"
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_004_112.webp",
+    "category": "gloves"
   },
   {
     "id": "iron-sentry-s-hold",
@@ -1057,7 +1157,8 @@
       }
     ],
     "tlidbId": "3304",
-    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_001_01_112.webp"
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_001_01_112.webp",
+    "category": "gloves"
   },
   {
     "id": "packleader-handguards",
@@ -1071,7 +1172,8 @@
       }
     ],
     "tlidbId": "3305",
-    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_002_01_112.webp"
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_002_01_112.webp",
+    "category": "gloves"
   },
   {
     "id": "mountain-lord-handguards",
@@ -1085,7 +1187,8 @@
       }
     ],
     "tlidbId": "3306",
-    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_003_01_112.webp"
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_003_01_112.webp",
+    "category": "gloves"
   },
   {
     "id": "divine-arbiter-s-hands",
@@ -1099,7 +1202,8 @@
       }
     ],
     "tlidbId": "3307",
-    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_004_01_112.webp"
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_004_01_112.webp",
+    "category": "gloves"
   },
   {
     "id": "dragon-guardian-handguards",
@@ -1113,7 +1217,8 @@
       }
     ],
     "tlidbId": "3308",
-    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_001_02_112.webp"
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_001_02_112.webp",
+    "category": "gloves"
   },
   {
     "id": "fallen-knight-handguards",
@@ -1127,7 +1232,8 @@
       }
     ],
     "tlidbId": "3309",
-    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_002_02_112.webp"
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_002_02_112.webp",
+    "category": "gloves"
   },
   {
     "id": "old-king-s-rerebraces",
@@ -1141,7 +1247,8 @@
       }
     ],
     "tlidbId": "3310",
-    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_003_02_112.webp"
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_003_02_112.webp",
+    "category": "gloves"
   },
   {
     "id": "ranger-s-rusted-gauntlets",
@@ -1155,7 +1262,8 @@
       }
     ],
     "tlidbId": "3311",
-    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_004_02_112.webp"
+    "icon": "/images/rare-gear/gloves/str_gloves/Icon_Equip_Gloves_Str_Norm_004_02_112.webp",
+    "category": "gloves"
   },
   {
     "id": "rogue-s-hood",
@@ -1163,7 +1271,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3700",
-    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_001_112.webp"
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_001_112.webp",
+    "category": "helmet"
   },
   {
     "id": "scout-s-hood",
@@ -1171,7 +1280,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3701",
-    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_002_112.webp"
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_002_112.webp",
+    "category": "helmet"
   },
   {
     "id": "skirmisher-s-mask",
@@ -1179,7 +1289,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3702",
-    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_003_112.webp"
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_003_112.webp",
+    "category": "helmet"
   },
   {
     "id": "hunter-s-hood",
@@ -1187,7 +1298,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3703",
-    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_004_112.webp"
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_004_112.webp",
+    "category": "helmet"
   },
   {
     "id": "prospector-s-hat",
@@ -1195,7 +1307,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3704",
-    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_001_01_112.webp"
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_001_01_112.webp",
+    "category": "helmet"
   },
   {
     "id": "wild-dominator-headdress",
@@ -1203,7 +1316,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3705",
-    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_002_01_112.webp"
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_002_01_112.webp",
+    "category": "helmet"
   },
   {
     "id": "grand-explorer-s-fez",
@@ -1211,7 +1325,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3706",
-    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_003_01_112.webp"
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_003_01_112.webp",
+    "category": "helmet"
   },
   {
     "id": "watcher-s-gaze",
@@ -1219,7 +1334,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3707",
-    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_004_01_112.webp"
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_004_01_112.webp",
+    "category": "helmet"
   },
   {
     "id": "eternal-night-stalker-s-hood",
@@ -1227,7 +1343,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3708",
-    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_001_02_112.webp"
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_001_02_112.webp",
+    "category": "helmet"
   },
   {
     "id": "mask-of-calamity",
@@ -1235,7 +1352,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3709",
-    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_002_02_112.webp"
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_002_02_112.webp",
+    "category": "helmet"
   },
   {
     "id": "demon-slayer-s-eyes",
@@ -1243,7 +1361,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3710",
-    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_003_02_112.webp"
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_003_02_112.webp",
+    "category": "helmet"
   },
   {
     "id": "secret-shadow-s-mask",
@@ -1251,7 +1370,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3711",
-    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_004_02_112.webp"
+    "icon": "/images/rare-gear/helmet/dex_helmet/Icon_Equip_Helmet_Agi_Norm_004_02_112.webp",
+    "category": "helmet"
   },
   {
     "id": "herbalist-s-headscarf",
@@ -1259,7 +1379,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3800",
-    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_001_112.webp"
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_001_112.webp",
+    "category": "helmet"
   },
   {
     "id": "scribe-s-headscarf",
@@ -1267,7 +1388,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3801",
-    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_002_112.webp"
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_002_112.webp",
+    "category": "helmet"
   },
   {
     "id": "acolyte-s-crown",
@@ -1275,7 +1397,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3802",
-    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_003_112.webp"
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_003_112.webp",
+    "category": "helmet"
   },
   {
     "id": "witchdoctor-s-mask",
@@ -1283,7 +1406,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3803",
-    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_004_112.webp"
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_004_112.webp",
+    "category": "helmet"
   },
   {
     "id": "disciple-s-headscarf",
@@ -1291,7 +1415,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3804",
-    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_001_01_112.webp"
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_001_01_112.webp",
+    "category": "helmet"
   },
   {
     "id": "shaman-s-headdress",
@@ -1299,7 +1424,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3805",
-    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_002_01_112.webp"
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_002_01_112.webp",
+    "category": "helmet"
   },
   {
     "id": "envoy-s-mask",
@@ -1307,7 +1433,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3806",
-    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_003_01_112.webp"
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_003_01_112.webp",
+    "category": "helmet"
   },
   {
     "id": "respected-tutor-s-face",
@@ -1315,7 +1442,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3807",
-    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_004_01_112.webp"
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_004_01_112.webp",
+    "category": "helmet"
   },
   {
     "id": "elder-sage-s-chapeau",
@@ -1323,7 +1451,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3808",
-    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_001_02_112.webp"
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_001_02_112.webp",
+    "category": "helmet"
   },
   {
     "id": "imperishable-miter",
@@ -1331,7 +1460,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3809",
-    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_002_02_112.webp"
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_002_02_112.webp",
+    "category": "helmet"
   },
   {
     "id": "all-magic-crown",
@@ -1339,7 +1469,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3810",
-    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_003_02_112.webp"
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_003_02_112.webp",
+    "category": "helmet"
   },
   {
     "id": "long-night-sorcerer-s-mask",
@@ -1347,7 +1478,8 @@
     "slot": "helmet",
     "implicit": [],
     "tlidbId": "3811",
-    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_004_02_112.webp"
+    "icon": "/images/rare-gear/helmet/int_helmet/Icon_Equip_Helmet_Int_Norm_004_02_112.webp",
+    "category": "helmet"
   },
   {
     "id": "brute-s-helm",
@@ -1361,7 +1493,8 @@
       }
     ],
     "tlidbId": "3600",
-    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_001_112.webp"
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_001_112.webp",
+    "category": "helmet"
   },
   {
     "id": "footman-helmet",
@@ -1375,7 +1508,8 @@
       }
     ],
     "tlidbId": "3601",
-    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_002_112.webp"
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_002_112.webp",
+    "category": "helmet"
   },
   {
     "id": "paladin-s-heavy-helm",
@@ -1389,7 +1523,8 @@
       }
     ],
     "tlidbId": "3602",
-    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_003_112.webp"
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_003_112.webp",
+    "category": "helmet"
   },
   {
     "id": "berserker-s-spired-helm",
@@ -1403,7 +1538,8 @@
       }
     ],
     "tlidbId": "3603",
-    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_004_112.webp"
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_004_112.webp",
+    "category": "helmet"
   },
   {
     "id": "iron-sentry-s-helmet",
@@ -1417,7 +1553,8 @@
       }
     ],
     "tlidbId": "3604",
-    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_001_01_112.webp"
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_001_01_112.webp",
+    "category": "helmet"
   },
   {
     "id": "packleader-helmet",
@@ -1431,7 +1568,8 @@
       }
     ],
     "tlidbId": "3605",
-    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_002_01_112.webp"
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_002_01_112.webp",
+    "category": "helmet"
   },
   {
     "id": "mountain-lord-helmet",
@@ -1445,7 +1583,8 @@
       }
     ],
     "tlidbId": "3606",
-    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_003_01_112.webp"
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_003_01_112.webp",
+    "category": "helmet"
   },
   {
     "id": "divine-arbiter-s-diadem",
@@ -1459,7 +1598,8 @@
       }
     ],
     "tlidbId": "3607",
-    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_004_01_112.webp"
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_004_01_112.webp",
+    "category": "helmet"
   },
   {
     "id": "dragon-guardian-s-faceguard",
@@ -1473,7 +1613,8 @@
       }
     ],
     "tlidbId": "3608",
-    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_001_02_112.webp"
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_001_02_112.webp",
+    "category": "helmet"
   },
   {
     "id": "fallen-knight-helmet",
@@ -1487,7 +1628,8 @@
       }
     ],
     "tlidbId": "3609",
-    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_002_02_112.webp"
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_002_02_112.webp",
+    "category": "helmet"
   },
   {
     "id": "old-king-s-crown",
@@ -1501,7 +1643,8 @@
       }
     ],
     "tlidbId": "3610",
-    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_003_02_112.webp"
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_003_02_112.webp",
+    "category": "helmet"
   },
   {
     "id": "ranger-s-broken-mask",
@@ -1515,7 +1658,8 @@
       }
     ],
     "tlidbId": "3611",
-    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_004_02_112.webp"
+    "icon": "/images/rare-gear/helmet/str_helmet/Icon_Equip_Helmet_Str_Norm_004_02_112.webp",
+    "category": "helmet"
   },
   {
     "id": "wayfarer-cane",
@@ -1523,7 +1667,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "800",
-    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "rambone-cane",
@@ -1531,7 +1676,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "801",
-    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "witness-cane",
@@ -1539,7 +1685,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "802",
-    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "snake-scale-cane",
@@ -1547,7 +1694,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "803",
-    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "recluse-cane",
@@ -1555,7 +1703,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "804",
-    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "wolf-fang-cane",
@@ -1563,7 +1712,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "805",
-    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "omen-short-staff",
@@ -1571,7 +1721,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "806",
-    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "thinker-cane",
@@ -1579,7 +1730,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "807",
-    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "leopard-jaw-cane",
@@ -1587,7 +1739,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "808",
-    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "traitor-cane",
@@ -1595,7 +1748,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "809",
-    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "lion-heart-cane",
@@ -1603,7 +1757,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "810",
-    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "villain-cane",
@@ -1611,7 +1766,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "811",
-    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "dragonblood-cane",
@@ -1619,7 +1775,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "812",
-    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "foreshadow-short-staff",
@@ -1627,7 +1784,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "813",
-    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "esoteric-cane",
@@ -1635,7 +1793,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "814",
-    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "fallen-pactspirital-short-staff",
@@ -1643,7 +1802,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "815",
-    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "obsidian-cane",
@@ -1651,7 +1811,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "816",
-    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "blue-amber-cane",
@@ -1659,7 +1820,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "817",
-    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "glimmering-fluorite-cane",
@@ -1667,7 +1829,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "818",
-    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "sleeping-sage-s-cane",
@@ -1675,7 +1838,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "819",
-    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/cane/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "nailclaw",
@@ -1683,7 +1847,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "100",
-    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "shark-tooth",
@@ -1691,7 +1856,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "101",
-    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "pickaxe-claw",
@@ -1699,7 +1865,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "102",
-    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "black-cat-claw",
@@ -1707,7 +1874,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "103",
-    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "eyestinger-claw",
@@ -1715,7 +1883,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "104",
-    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "berserker-claw",
@@ -1723,7 +1892,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "105",
-    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "sandstorm-katar",
@@ -1731,7 +1901,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "106",
-    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "wailing-claw",
@@ -1739,7 +1910,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "107",
-    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "two-headed-claw",
@@ -1747,7 +1919,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "108",
-    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "direwolf-fang",
@@ -1755,7 +1928,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "109",
-    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "spinesplitter-katar",
@@ -1763,7 +1937,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "110",
-    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "crimson-tiger-sting",
@@ -1771,7 +1946,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "111",
-    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "scarlet-river-claw",
@@ -1779,7 +1955,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "112",
-    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "primeval-war-claw",
@@ -1787,7 +1964,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "113",
-    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "jadebone-katar",
@@ -1795,7 +1973,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "114",
-    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "eagle-claw",
@@ -1803,7 +1982,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "115",
-    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "delusion-claw",
@@ -1811,7 +1991,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "118",
-    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "three-tailed-cat-claw",
@@ -1819,7 +2000,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "119",
-    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "dragon-hunter-claw",
@@ -1827,7 +2009,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "120",
-    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "silence-piercing-claw",
@@ -1835,7 +2018,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "121",
-    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/claw/Icon_Equip_Weapon_Claw_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "thief-short-dagger",
@@ -1843,7 +2027,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "600",
-    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "rusted-dagger",
@@ -1851,7 +2036,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "601",
-    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "slaughter-short-dagger",
@@ -1859,7 +2045,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "602",
-    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "poisoned-dagger",
@@ -1867,7 +2054,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "603",
-    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "assassin-short-dagger",
@@ -1875,7 +2063,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "604",
-    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "voodoo-dagger",
@@ -1883,7 +2072,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "605",
-    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "resentment-dirk",
@@ -1891,7 +2081,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "606",
-    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "violence-short-dagger",
@@ -1899,7 +2090,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "607",
-    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "nightshade-dagger",
@@ -1907,7 +2099,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "608",
-    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "kingslayer-short-dagger",
@@ -1915,7 +2108,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "609",
-    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "cursed-dagger",
@@ -1923,7 +2117,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "610",
-    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "godslaughter-short-dagger",
@@ -1931,7 +2126,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "611",
-    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "sorcerer-s-dagger",
@@ -1939,7 +2135,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "612",
-    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "hatred-dirk",
@@ -1947,7 +2144,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "613",
-    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "esoteric-dagger",
@@ -1955,7 +2153,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "614",
-    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "illusory-dirk",
@@ -1963,7 +2162,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "615",
-    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "disillusion-dagger",
@@ -1971,7 +2171,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "616",
-    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "fools-dagger",
@@ -1979,7 +2180,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "617",
-    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "blind-faith-dagger",
@@ -1987,7 +2189,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "618",
-    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "truth-speaker-s-dagger",
@@ -1995,7 +2198,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "619",
-    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/dagger/Icon_Equip_Weapon_Dagger_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "rusted-iron-axe",
@@ -2003,7 +2207,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "500",
-    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "twisted-copper-axe",
@@ -2011,7 +2216,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "501",
-    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "iron-hatchet",
@@ -2019,7 +2225,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "502",
-    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "sharpened-iron-axe",
@@ -2027,7 +2234,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "503",
-    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "alloy-board-axe",
@@ -2035,7 +2243,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "504",
-    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "war-axe",
@@ -2043,7 +2252,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "505",
-    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "scoundrel-s-axe",
@@ -2051,7 +2261,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "506",
-    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "earthsplitter-axe",
@@ -2059,7 +2270,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "507",
-    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "savage-axe",
@@ -2067,7 +2279,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "508",
-    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "valagon-axe",
@@ -2075,7 +2288,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "509",
-    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "cursed-axe",
@@ -2083,7 +2297,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "510",
-    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "bonecrusher-greataxe",
@@ -2091,7 +2306,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "511",
-    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "conflict-war-axe",
@@ -2099,7 +2315,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "512",
-    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "frenzy-battle-axe",
@@ -2107,7 +2324,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "513",
-    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "scarlet-axe",
@@ -2115,7 +2333,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "514",
-    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "ritual-greataxe",
@@ -2123,7 +2342,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "515",
-    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "vengeance-axe",
@@ -2131,7 +2351,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "516",
-    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "suppressor-axe",
@@ -2139,7 +2360,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "517",
-    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "rebel-axe",
@@ -2147,7 +2369,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "518",
-    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "hollow-rift-axe",
@@ -2155,7 +2378,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "519",
-    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_axe/Icon_Equip_Weapon_1HAxe_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "witherbark-club",
@@ -2163,7 +2387,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "200",
-    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "mossy-stone-hammer",
@@ -2171,7 +2396,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "201",
-    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "rusted-wooden-hammer",
@@ -2179,7 +2405,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "202",
-    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "black-iron-maul",
@@ -2187,7 +2414,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "203",
-    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "war-hammer",
@@ -2195,7 +2423,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "204",
-    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "oblivion-maul",
@@ -2203,7 +2432,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "205",
-    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "prayer-hammer",
@@ -2211,7 +2441,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "206",
-    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "nightmare-hammer",
@@ -2219,7 +2450,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "207",
-    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "dragon-s-roar-hammer",
@@ -2227,7 +2459,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "208",
-    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "tremor-wooden-hammer",
@@ -2235,7 +2468,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "209",
-    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "thorny-hammer",
@@ -2243,7 +2477,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "210",
-    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "rocksplitter-mallet",
@@ -2251,7 +2486,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "211",
-    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "primeval-war-hammer",
@@ -2259,7 +2495,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "212",
-    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "nature-wooden-hammer",
@@ -2267,7 +2504,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "213",
-    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "redgold-hammer",
@@ -2275,7 +2513,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "214",
-    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "twilight-hammer",
@@ -2283,7 +2522,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "215",
-    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "quinn-s-hammer",
@@ -2291,7 +2531,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "216",
-    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "general-s-war-hammer",
@@ -2299,7 +2540,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "217",
-    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "melted-iron-hammer",
@@ -2307,7 +2549,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "218",
-    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "sierra-forge-light-hammer",
@@ -2315,7 +2558,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "219",
-    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_hammer/Icon_Equip_Weapon_1HMace_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "rusted-bronze-sword",
@@ -2323,7 +2567,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "400",
-    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "crude-iron-sword",
@@ -2331,7 +2576,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "401",
-    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "recruit-s-saber",
@@ -2339,7 +2585,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "402",
-    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "iron-sword",
@@ -2347,7 +2594,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "403",
-    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "thorny-sword",
@@ -2355,7 +2603,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "404",
-    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "battlefield-longsword",
@@ -2363,7 +2612,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "405",
-    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "redgold-sword",
@@ -2371,7 +2621,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "406",
-    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "cold-blade",
@@ -2379,7 +2630,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "407",
-    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "talon-sword",
@@ -2387,7 +2639,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "408",
-    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "hurricane-short-sword",
@@ -2395,7 +2648,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "409",
-    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "blizzard-sword",
@@ -2403,7 +2657,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "410",
-    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "coldlight-sword",
@@ -2411,7 +2666,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "411",
-    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "hero-s-longsword",
@@ -2419,7 +2675,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "412",
-    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "gilt-longsword",
@@ -2427,7 +2684,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "413",
-    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "bone-stinger-sword",
@@ -2435,7 +2693,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "414",
-    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "moonlight-long-blade",
@@ -2443,7 +2702,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "415",
-    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "nameless-sword",
@@ -2451,7 +2711,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "416",
-    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "forgotten-iron-sword",
@@ -2459,7 +2720,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "417",
-    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "unforgotten-long-blade",
@@ -2467,7 +2729,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "418",
-    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "shadowless-swordsman-s-blade",
@@ -2475,7 +2738,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "419",
-    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/one-handed_sword/Icon_Equip_Weapon_1HSword_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "rusted-pistol",
@@ -2483,7 +2747,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1500",
-    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "blackrock-zapper",
@@ -2491,7 +2756,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1501",
-    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "pocket-boomstick",
@@ -2499,7 +2765,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1502",
-    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "iron-pistol",
@@ -2507,7 +2774,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1503",
-    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "black-feather-zapper",
@@ -2515,7 +2783,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1504",
-    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "rottenbone-zapper",
@@ -2523,7 +2792,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1505",
-    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "thorny-boomstick",
@@ -2531,7 +2801,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1506",
-    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "warden-s-boomstick",
@@ -2539,7 +2810,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1507",
-    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "unholy-zapper",
@@ -2547,7 +2819,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1508",
-    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "cursed-boomstick",
@@ -2555,7 +2828,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1509",
-    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "viper-zapper",
@@ -2563,7 +2837,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1510",
-    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "voodoo-boomstick",
@@ -2571,7 +2846,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1511",
-    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "bloodclaw-zapper",
@@ -2579,7 +2855,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1512",
-    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "swarm-pistol",
@@ -2587,7 +2864,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1513",
-    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "shadow-boomstick",
@@ -2595,7 +2873,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1514",
-    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "dragonsoul-zapper",
@@ -2603,7 +2882,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1515",
-    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "final-battle-boomstick",
@@ -2611,7 +2891,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1516",
-    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "terminator-boomstick",
@@ -2619,7 +2900,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1517",
-    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "kingslayer-boomstick",
@@ -2627,7 +2909,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1518",
-    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "war-ender-s-boomstick",
@@ -2635,7 +2918,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1519",
-    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/pistol/Icon_Equip_Weapon_Pistol_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "bud-rod",
@@ -2643,7 +2927,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2100",
-    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "thriving-rod",
@@ -2651,7 +2936,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2101",
-    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "vine-rod",
@@ -2659,7 +2945,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2102",
-    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "storm-rod",
@@ -2667,7 +2954,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2103",
-    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "waning-moon-rod",
@@ -2675,7 +2963,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2104",
-    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "flying-bird-rod",
@@ -2683,7 +2972,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2105",
-    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "swimming-fish-rod",
@@ -2691,7 +2981,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2106",
-    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "shepherdess-rod",
@@ -2699,7 +2990,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2107",
-    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "river-rod",
@@ -2707,7 +2999,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2108",
-    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "harvest-rod",
@@ -2715,7 +3008,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2109",
-    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "daylight-rod",
@@ -2723,7 +3017,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2110",
-    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "full-moon-rod",
@@ -2731,7 +3026,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2111",
-    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "shooting-star-rod",
@@ -2739,7 +3035,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2112",
-    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "beast-king-rod",
@@ -2747,7 +3044,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2113",
-    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "celestial-rod",
@@ -2755,7 +3053,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2114",
-    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "cosmic-rod",
@@ -2763,7 +3062,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2115",
-    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "star-ocean-rod",
@@ -2771,7 +3071,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2116",
-    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "astrologer-rod",
@@ -2779,7 +3080,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2117",
-    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "bard-rod",
@@ -2787,7 +3089,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2118",
-    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "heart-of-all-rod",
@@ -2795,7 +3098,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2119",
-    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/rod/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "withering-scepter",
@@ -2803,7 +3107,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2200",
-    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "marsh-scepter",
@@ -2811,7 +3116,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2201",
-    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "barren-scepter",
@@ -2819,7 +3125,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2202",
-    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "lamentation-scepter",
@@ -2827,7 +3134,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2203",
-    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "disorientation-scepter",
@@ -2835,7 +3143,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2204",
-    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "high-tower-scepter",
@@ -2843,7 +3152,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2205",
-    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "hanging-scepter",
@@ -2851,7 +3161,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2206",
-    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "eternal-night-scepter",
@@ -2859,7 +3170,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2207",
-    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "red-rain-scepter",
@@ -2867,7 +3179,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2208",
-    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "stigmata-scepter",
@@ -2875,7 +3188,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2209",
-    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "deception-scepter",
@@ -2883,7 +3197,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2210",
-    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "sorrow-scepter",
@@ -2891,7 +3206,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2211",
-    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "agony-scepter",
@@ -2899,7 +3215,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2212",
-    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "rotten-scepter",
@@ -2907,7 +3224,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2213",
-    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "spiral-scepter",
@@ -2915,7 +3233,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2214",
-    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "judgment-scepter",
@@ -2923,7 +3242,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2215",
-    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "reflux-scepter",
@@ -2931,7 +3251,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2216",
-    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "trickster-scepter",
@@ -2939,7 +3260,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2217",
-    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "thorn-sea-scepter",
@@ -2947,7 +3269,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2218",
-    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "dark-gaze-scepter",
@@ -2955,7 +3278,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2219",
-    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/scepter/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "withervine-wand",
@@ -2972,7 +3296,8 @@
       }
     ],
     "tlidbId": "2000",
-    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "rambone-wand",
@@ -2989,7 +3314,8 @@
       }
     ],
     "tlidbId": "2001",
-    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "carved-wooden-wand",
@@ -3006,7 +3332,8 @@
       }
     ],
     "tlidbId": "2002",
-    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "cuprite-wand",
@@ -3023,7 +3350,8 @@
       }
     ],
     "tlidbId": "2003",
-    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "spiritwood-wand",
@@ -3040,7 +3368,8 @@
       }
     ],
     "tlidbId": "2004",
-    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "wind-spirit-wand",
@@ -3057,7 +3386,8 @@
       }
     ],
     "tlidbId": "2005",
-    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "voodoo-wand",
@@ -3074,7 +3404,8 @@
       }
     ],
     "tlidbId": "2006",
-    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "flower-sea-wand",
@@ -3091,7 +3422,8 @@
       }
     ],
     "tlidbId": "2007",
-    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "wiseman-s-wand",
@@ -3108,7 +3440,8 @@
       }
     ],
     "tlidbId": "2008",
-    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "white-crystal-wand",
@@ -3125,7 +3458,8 @@
       }
     ],
     "tlidbId": "2009",
-    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "viper-wand",
@@ -3142,7 +3476,8 @@
       }
     ],
     "tlidbId": "2010",
-    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "wraith-wand",
@@ -3159,7 +3494,8 @@
       }
     ],
     "tlidbId": "2011",
-    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "bard-s-wand",
@@ -3176,7 +3512,8 @@
       }
     ],
     "tlidbId": "2012",
-    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "sage-wand",
@@ -3193,7 +3530,8 @@
       }
     ],
     "tlidbId": "2013",
-    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_002_112.webp"
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_002_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "devout-wand",
@@ -3210,7 +3548,8 @@
       }
     ],
     "tlidbId": "2014",
-    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_003_112.webp"
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_003_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "scarlet-wand",
@@ -3227,7 +3566,8 @@
       }
     ],
     "tlidbId": "2015",
-    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_004_112.webp"
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_004_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "azure-moon-wand",
@@ -3244,7 +3584,8 @@
       }
     ],
     "tlidbId": "2016",
-    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_005_112.webp"
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_005_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "wretched-wand",
@@ -3261,7 +3602,8 @@
       }
     ],
     "tlidbId": "2017",
-    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "heartflayer-wand",
@@ -3278,7 +3620,8 @@
       }
     ],
     "tlidbId": "2018",
-    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "headless-cleric-wand",
@@ -3286,7 +3629,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "2019",
-    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_112.webp"
+    "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_112.webp",
+    "category": "one_handed"
   },
   {
     "id": "aspiration-light-shield",
@@ -3294,7 +3638,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4300",
-    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_001_112.webp"
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_001_112.webp",
+    "category": "shield"
   },
   {
     "id": "griffin-buckler",
@@ -3302,7 +3647,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4301",
-    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_002_112.webp"
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_002_112.webp",
+    "category": "shield"
   },
   {
     "id": "wind-spirit-light-shield",
@@ -3310,7 +3656,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4302",
-    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_003_112.webp"
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_003_112.webp",
+    "category": "shield"
   },
   {
     "id": "dragonfang-buckler",
@@ -3318,7 +3665,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4303",
-    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_004_112.webp"
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_004_112.webp",
+    "category": "shield"
   },
   {
     "id": "hunter-s-buckler",
@@ -3326,7 +3674,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4304",
-    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_001_112.webp"
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_001_112.webp",
+    "category": "shield"
   },
   {
     "id": "thunder-light-shield",
@@ -3334,7 +3683,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4305",
-    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_002_112.webp"
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_002_112.webp",
+    "category": "shield"
   },
   {
     "id": "cursed-light-shield",
@@ -3342,7 +3692,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4306",
-    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_003_112.webp"
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_003_112.webp",
+    "category": "shield"
   },
   {
     "id": "viper-buckler",
@@ -3350,7 +3701,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4307",
-    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_004_112.webp"
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_004_112.webp",
+    "category": "shield"
   },
   {
     "id": "shadow-light-shield",
@@ -3358,7 +3710,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4308",
-    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_001_112.webp"
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_001_112.webp",
+    "category": "shield"
   },
   {
     "id": "wind-god-s-buckler",
@@ -3366,7 +3719,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4309",
-    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_002_112.webp"
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_002_112.webp",
+    "category": "shield"
   },
   {
     "id": "conqueror-buckler",
@@ -3374,7 +3728,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4310",
-    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_003_112.webp"
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_003_112.webp",
+    "category": "shield"
   },
   {
     "id": "lost-ranger-s-light-shield",
@@ -3382,7 +3737,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4311",
-    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_004_112.webp"
+    "icon": "/images/rare-gear/shield/dex_shield/Icon_Equip_Shield_Agi_Norm_004_112.webp",
+    "category": "shield"
   },
   {
     "id": "aspiration-magic-shield",
@@ -3390,7 +3746,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4400",
-    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_001_112.webp"
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_001_112.webp",
+    "category": "shield"
   },
   {
     "id": "voodoo-caster-shield",
@@ -3398,7 +3755,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4401",
-    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_002_112.webp"
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_002_112.webp",
+    "category": "shield"
   },
   {
     "id": "bard-s-square-shield",
@@ -3406,7 +3764,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4402",
-    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_003_112.webp"
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_003_112.webp",
+    "category": "shield"
   },
   {
     "id": "freedom-square-shield",
@@ -3414,7 +3773,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4403",
-    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_004_112.webp"
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_004_112.webp",
+    "category": "shield"
   },
   {
     "id": "nature-caster-shield",
@@ -3422,7 +3782,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4404",
-    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_001_112.webp"
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_001_112.webp",
+    "category": "shield"
   },
   {
     "id": "abyssal-square-shield",
@@ -3430,7 +3791,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4405",
-    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_002_112.webp"
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_002_112.webp",
+    "category": "shield"
   },
   {
     "id": "blizzard-square-shield",
@@ -3438,7 +3800,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4406",
-    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_003_112.webp"
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_003_112.webp",
+    "category": "shield"
   },
   {
     "id": "sage-s-caster-shield",
@@ -3446,7 +3809,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4407",
-    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_004_112.webp"
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_004_112.webp",
+    "category": "shield"
   },
   {
     "id": "spirit-lord-s-caster-shield",
@@ -3454,7 +3818,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4408",
-    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_001_112.webp"
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_001_112.webp",
+    "category": "shield"
   },
   {
     "id": "twilight-square-shield",
@@ -3462,7 +3827,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4409",
-    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_002_112.webp"
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_002_112.webp",
+    "category": "shield"
   },
   {
     "id": "fraudster-magic-shield",
@@ -3470,7 +3836,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4410",
-    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_003_112.webp"
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_003_112.webp",
+    "category": "shield"
   },
   {
     "id": "ninth-apostle-s-magic-shield",
@@ -3478,7 +3845,8 @@
     "slot": "offhand",
     "implicit": [],
     "tlidbId": "4411",
-    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_004_112.webp"
+    "icon": "/images/rare-gear/shield/int_shield/Icon_Equip_Shield_Int_Norm_004_112.webp",
+    "category": "shield"
   },
   {
     "id": "aspiration-tower-shield",
@@ -3492,7 +3860,8 @@
       }
     ],
     "tlidbId": "4200",
-    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_001_128.webp"
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_001_128.webp",
+    "category": "shield"
   },
   {
     "id": "starmetal-kite-shield",
@@ -3506,7 +3875,8 @@
       }
     ],
     "tlidbId": "4201",
-    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_002_128.webp"
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_002_128.webp",
+    "category": "shield"
   },
   {
     "id": "griffin-tower-shield",
@@ -3520,7 +3890,8 @@
       }
     ],
     "tlidbId": "4202",
-    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_003_128.webp"
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_003_128.webp",
+    "category": "shield"
   },
   {
     "id": "crimson-kite-shield",
@@ -3534,7 +3905,8 @@
       }
     ],
     "tlidbId": "4203",
-    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_004_128.webp"
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_004_128.webp",
+    "category": "shield"
   },
   {
     "id": "callous-kite-shield",
@@ -3548,7 +3920,8 @@
       }
     ],
     "tlidbId": "4204",
-    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_001_128.webp"
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_001_128.webp",
+    "category": "shield"
   },
   {
     "id": "falling-star-tower-shield",
@@ -3562,7 +3935,8 @@
       }
     ],
     "tlidbId": "4205",
-    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_002_128.webp"
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_002_128.webp",
+    "category": "shield"
   },
   {
     "id": "warlord-s-kite-shield",
@@ -3576,7 +3950,8 @@
       }
     ],
     "tlidbId": "4206",
-    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_003_128.webp"
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_003_128.webp",
+    "category": "shield"
   },
   {
     "id": "vindicator-s-tower-shield",
@@ -3590,7 +3965,8 @@
       }
     ],
     "tlidbId": "4207",
-    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_004_128.webp"
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_004_128.webp",
+    "category": "shield"
   },
   {
     "id": "monarch-s-kite-shield",
@@ -3604,7 +3980,8 @@
       }
     ],
     "tlidbId": "4208",
-    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_001_128.webp"
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_001_128.webp",
+    "category": "shield"
   },
   {
     "id": "glory-kite-shield",
@@ -3618,7 +3995,8 @@
       }
     ],
     "tlidbId": "4209",
-    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_002_128.webp"
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_002_128.webp",
+    "category": "shield"
   },
   {
     "id": "red-pegasus-kite-shield",
@@ -3632,7 +4010,8 @@
       }
     ],
     "tlidbId": "4210",
-    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_003_128.webp"
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_003_128.webp",
+    "category": "shield"
   },
   {
     "id": "future-warrior-s-kite-shield",
@@ -3646,7 +4025,8 @@
       }
     ],
     "tlidbId": "4211",
-    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_004_128.webp"
+    "icon": "/images/rare-gear/shield/str_shield/Icon_Equip_Shield_Str_Norm_004_128.webp",
+    "category": "shield"
   },
   {
     "id": "rottenwood-bow",
@@ -3654,7 +4034,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1600",
-    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "vitex-bow",
@@ -3662,7 +4043,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1601",
-    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "beastbone-bow",
@@ -3670,7 +4052,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1602",
-    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "thorny-curve-bow",
@@ -3678,7 +4061,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1603",
-    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "bonewood-hunting-bow",
@@ -3686,7 +4070,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1604",
-    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "segar-hunting-bow",
@@ -3694,7 +4079,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1605",
-    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "griffin-long-bow",
@@ -3702,7 +4088,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1606",
-    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "white-wolf-curve-bow",
@@ -3710,7 +4097,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1607",
-    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "raider-s-bow",
@@ -3718,7 +4106,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1608",
-    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "white-feather-hunting-bow",
@@ -3726,7 +4115,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1609",
-    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "piercer-bow",
@@ -3734,7 +4124,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1610",
-    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "bloody-curve-bow",
@@ -3742,7 +4133,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1611",
-    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "black-feather-long-bow",
@@ -3750,7 +4142,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1612",
-    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "twilight-curve-bow",
@@ -3758,7 +4151,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1613",
-    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "unholy-hunting-bow",
@@ -3766,7 +4160,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1614",
-    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "thunder-long-bow",
@@ -3774,7 +4169,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1615",
-    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "starfall-long-bow",
@@ -3782,7 +4178,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1616",
-    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "demon-hunter-long-bow",
@@ -3790,7 +4187,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1617",
-    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "godseeker-long-bow",
@@ -3798,7 +4196,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1618",
-    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "lonely-hunter-s-bow",
@@ -3806,7 +4205,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1619",
-    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/bow/Icon_Equip_Weapon_Bow_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "woodvine-light-crossbow",
@@ -3814,7 +4214,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1700",
-    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "rambone-short-crossbow",
@@ -3822,7 +4223,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1701",
-    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "darkwoods-long-crossbow",
@@ -3830,7 +4232,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1702",
-    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "bronze-short-crossbow",
@@ -3838,7 +4241,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1703",
-    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "soldier-s-light-crossbow",
@@ -3846,7 +4250,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1704",
-    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "black-iron-crossbow",
@@ -3854,7 +4259,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1705",
-    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "elven-hunting-crossbow",
@@ -3862,7 +4268,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1706",
-    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "beastfang-light-crossbow",
@@ -3870,7 +4277,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1707",
-    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "jungle-hunting-bow",
@@ -3878,7 +4286,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1708",
-    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "segar-hunting-crossbow",
@@ -3886,7 +4295,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1709",
-    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "muddy-long-crossbow",
@@ -3894,7 +4304,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1710",
-    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "cursed-war-crossbow",
@@ -3902,7 +4313,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1711",
-    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "conflict-crossbow",
@@ -3910,7 +4322,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1712",
-    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "blue-sea-war-crossbow",
@@ -3918,7 +4331,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1713",
-    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "icy-war-crossbow",
@@ -3926,7 +4340,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1714",
-    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "scarlet-crossbow",
@@ -3934,7 +4349,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1715",
-    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "flowing-blaze-crossbow",
@@ -3942,7 +4358,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1716",
-    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "red-pegasus-war-crossbow",
@@ -3950,7 +4367,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1717",
-    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "black-pass-hunting-crossbow",
@@ -3958,7 +4376,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1718",
-    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "war-ranger-s-crossbow",
@@ -3966,7 +4385,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1719",
-    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/crossbow/Icon_Equip_Weapon_Crossbow_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "witherbark-staff",
@@ -3974,7 +4394,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1300",
-    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "cultivation-iron-staff",
@@ -3982,7 +4403,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1301",
-    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "thorny-staff",
@@ -3990,7 +4412,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1302",
-    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "ascetic-iron-staff",
@@ -3998,7 +4421,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1303",
-    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "dryad-staff",
@@ -4006,7 +4430,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1304",
-    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "confession-iron-staff",
@@ -4014,7 +4439,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1305",
-    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "broken-mirror-staff",
@@ -4022,7 +4448,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1306",
-    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "ancestral-staff",
@@ -4030,7 +4457,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1307",
-    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "authority-iron-staff",
@@ -4038,7 +4466,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1308",
-    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "flower-staff",
@@ -4046,7 +4475,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1309",
-    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "conviction-iron-staff",
@@ -4054,7 +4484,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1310",
-    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "sacred-tree-staff",
@@ -4062,7 +4493,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1311",
-    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "judge-s-iron-staff",
@@ -4070,7 +4502,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1312",
-    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "perishing-staff",
@@ -4078,7 +4511,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1313",
-    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "esoteric-cudgel",
@@ -4086,7 +4520,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1314",
-    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "origin-iron-staff",
@@ -4094,7 +4529,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1315",
-    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "reincarnation-iron-staff",
@@ -4102,7 +4538,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1316",
-    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "absolver-iron-staff",
@@ -4110,7 +4547,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1317",
-    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "executive-iron-staff",
@@ -4118,7 +4556,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1318",
-    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "last-man-s-cudgel",
@@ -4126,7 +4565,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1319",
-    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/cudgel/Icon_Equip_Weapon_Staff_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "witherbark-cannon",
@@ -4134,7 +4574,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1800",
-    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "rusted-blaster",
@@ -4142,7 +4583,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1801",
-    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "black-iron-cannon",
@@ -4150,7 +4592,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1802",
-    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "iron-cannon",
@@ -4158,7 +4601,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1803",
-    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "wolf-hunter-s-cannon",
@@ -4166,7 +4610,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1804",
-    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "starmetal-cannon",
@@ -4174,7 +4619,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1805",
-    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "unholy-blaster",
@@ -4182,7 +4628,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1806",
-    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "warden-s-blaster",
@@ -4190,7 +4637,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1807",
-    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "griffin-blaster",
@@ -4198,7 +4646,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1808",
-    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "blazing-cannon",
@@ -4206,7 +4655,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1809",
-    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "unyielding-cannon",
@@ -4214,7 +4664,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1810",
-    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "wailing-blaster",
@@ -4222,7 +4673,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1811",
-    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "abyssal-blaster",
@@ -4230,7 +4682,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1812",
-    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "monarch-s-cannon",
@@ -4238,7 +4691,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1813",
-    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "solar-flame-cannon",
@@ -4246,7 +4700,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1814",
-    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "viking-blaster",
@@ -4254,7 +4709,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1815",
-    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "dark-ravine-cannon",
@@ -4262,7 +4718,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1816",
-    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "fire-worshiper-cannon",
@@ -4270,7 +4727,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1817",
-    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "fire-eater-cannon",
@@ -4278,7 +4736,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1818",
-    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "sun-fall-cannon",
@@ -4286,7 +4745,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1819",
-    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/fire_cannon/Icon_Equip_Weapon_Cannon_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "rusted-rifle",
@@ -4294,7 +4754,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1900",
-    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "crude-iron-rifle",
@@ -4302,7 +4763,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1901",
-    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "recruit-s-musket",
@@ -4310,7 +4772,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1902",
-    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "iron-musket",
@@ -4318,7 +4781,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1903",
-    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "wolf-fang-rifle",
@@ -4326,7 +4790,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1904",
-    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "blazing-rifle",
@@ -4334,7 +4799,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1905",
-    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "unpredictable-rifle",
@@ -4342,7 +4808,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1906",
-    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "ripple-rifle",
@@ -4350,7 +4817,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1907",
-    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "eagle-rifle",
@@ -4358,7 +4826,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1908",
-    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "toxic-rifle",
@@ -4366,7 +4835,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1909",
-    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "conflict-rifle",
@@ -4374,7 +4844,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1910",
-    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "giant-s-rifle",
@@ -4382,7 +4853,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1911",
-    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "war-rifle",
@@ -4390,7 +4862,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1912",
-    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "scarlet-rifle",
@@ -4398,7 +4871,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1913",
-    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "moonlight-rifle",
@@ -4406,7 +4880,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1914",
-    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "warlord-s-musket",
@@ -4414,7 +4889,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1915",
-    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "imperial-rifle",
@@ -4422,7 +4898,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1916",
-    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "bannerlord-s-musket",
@@ -4430,7 +4907,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1917",
-    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "personal-guard-musket",
@@ -4438,7 +4916,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1918",
-    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "war-repercussion-musket",
@@ -4446,7 +4925,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1919",
-    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/musket/Icon_Equip_Weapon_Shotgun_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "withervine-staff",
@@ -4463,7 +4943,8 @@
       }
     ],
     "tlidbId": "1400",
-    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "bonewood-staff",
@@ -4480,7 +4961,8 @@
       }
     ],
     "tlidbId": "1401",
-    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "ivory-staff",
@@ -4497,7 +4979,8 @@
       }
     ],
     "tlidbId": "1402",
-    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "iron-staff",
@@ -4514,7 +4997,8 @@
       }
     ],
     "tlidbId": "1403",
-    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "viper-staff",
@@ -4531,7 +5015,8 @@
       }
     ],
     "tlidbId": "1404",
-    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "gilt-staff",
@@ -4548,7 +5033,8 @@
       }
     ],
     "tlidbId": "1405",
-    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "flower-sea-staff",
@@ -4565,7 +5051,8 @@
       }
     ],
     "tlidbId": "1406",
-    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "monkey-staff",
@@ -4582,7 +5069,8 @@
       }
     ],
     "tlidbId": "1407",
-    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "white-crystal-staff",
@@ -4599,7 +5087,8 @@
       }
     ],
     "tlidbId": "1408",
-    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "black-feather-staff",
@@ -4616,7 +5105,8 @@
       }
     ],
     "tlidbId": "1409",
-    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "twilight-staff",
@@ -4633,7 +5123,8 @@
       }
     ],
     "tlidbId": "1410",
-    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "voodoo-staff",
@@ -4650,7 +5141,8 @@
       }
     ],
     "tlidbId": "1411",
-    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "sage-s-staff",
@@ -4667,7 +5159,8 @@
       }
     ],
     "tlidbId": "1412",
-    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "devout-staff",
@@ -4684,7 +5177,8 @@
       }
     ],
     "tlidbId": "1413",
-    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "wind-god-s-staff",
@@ -4701,7 +5195,8 @@
       }
     ],
     "tlidbId": "1414",
-    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "warden-s-staff",
@@ -4718,7 +5213,8 @@
       }
     ],
     "tlidbId": "1415",
-    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "divinity-staff",
@@ -4735,7 +5231,8 @@
       }
     ],
     "tlidbId": "1416",
-    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "southern-cross-staff",
@@ -4752,7 +5249,8 @@
       }
     ],
     "tlidbId": "1417",
-    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "centaur-staff",
@@ -4769,7 +5267,8 @@
       }
     ],
     "tlidbId": "1418",
-    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "first-man-s-scepter",
@@ -4777,7 +5276,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1419",
-    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/tin_staff/Icon_Equip_Weapon_Staff_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "shattered-iron-axe",
@@ -4785,7 +5285,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1100",
-    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "gigantic-stone-axe",
@@ -4793,7 +5294,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1101",
-    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "iron-battle-axe",
@@ -4801,7 +5303,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1102",
-    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "hardrock-stone-axe",
@@ -4809,7 +5312,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1103",
-    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "coldlight-greataxe",
@@ -4817,7 +5321,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1104",
-    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "gilt-board-axe",
@@ -4825,7 +5330,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1105",
-    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "marsh-greataxe",
@@ -4833,7 +5339,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1106",
-    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "blazing-greataxe",
@@ -4841,7 +5348,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1107",
-    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "giant-s-board-axe",
@@ -4849,7 +5357,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1108",
-    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "doomsday-board-axe",
@@ -4857,7 +5366,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1109",
-    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "redgold-greataxe",
@@ -4865,7 +5375,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1110",
-    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "unpredictable-board-axe",
@@ -4873,7 +5384,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1111",
-    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "griffin-greataxe",
@@ -4881,7 +5393,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1112",
-    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "blue-sea-greataxe",
@@ -4889,7 +5402,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1113",
-    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "ripping-greataxe",
@@ -4897,7 +5411,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1114",
-    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "lava-board-axe",
@@ -4905,7 +5420,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1115",
-    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "fallen-star-greataxe",
@@ -4913,7 +5429,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1116",
-    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "red-pegasus-greataxe",
@@ -4921,7 +5438,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1117",
-    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "black-pass-board-axe",
@@ -4929,7 +5447,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1118",
-    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "earthrending-axe",
@@ -4937,7 +5456,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1119",
-    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_axe/Icon_Equip_Weapon_2HAxe_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "crude-iron-maul",
@@ -4945,7 +5465,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1000",
-    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "hardrock-mallet",
@@ -4953,7 +5474,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1001",
-    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "iron-maul",
@@ -4961,7 +5483,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1002",
-    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "icefrost-mallet",
@@ -4969,7 +5492,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1003",
-    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "beastfang-mallet",
@@ -4977,7 +5501,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1004",
-    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "scarlet-maul",
@@ -4985,7 +5510,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1005",
-    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "lonewolf-maul",
@@ -4993,7 +5519,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1006",
-    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "valagon-mallet",
@@ -5001,7 +5528,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1007",
-    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "crushing-mallet",
@@ -5009,7 +5537,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1008",
-    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "devastating-mallet",
@@ -5017,7 +5546,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1009",
-    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "doomsday-maul",
@@ -5025,7 +5555,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1010",
-    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "conflict-maul",
@@ -5033,7 +5564,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1011",
-    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "vindicator-maul",
@@ -5041,7 +5573,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1012",
-    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "vanquisher-mallet",
@@ -5049,7 +5582,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1013",
-    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "platinum-mallet",
@@ -5057,7 +5591,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1014",
-    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "lava-maul",
@@ -5065,7 +5600,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1015",
-    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "crumbling-maul",
@@ -5073,7 +5609,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1016",
-    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "destroyer-mallet",
@@ -5081,7 +5618,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1017",
-    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "forger-s-maul",
@@ -5089,7 +5627,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1018",
-    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "sierra-reverberation-maul",
@@ -5097,7 +5636,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1019",
-    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_hammer/Icon_Equip_Weapon_2HMace_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "crude-wooden-sword",
@@ -5105,7 +5645,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1200",
-    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "rottenwood-greatsword",
@@ -5113,7 +5654,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1201",
-    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "rusted-claymore",
@@ -5121,7 +5663,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1202",
-    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "rock-claymore",
@@ -5129,7 +5672,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1203",
-    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "iron-greatsword",
@@ -5137,7 +5681,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1204",
-    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "conflict-greatsword",
@@ -5145,7 +5690,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1205",
-    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "ripping-claymore",
@@ -5153,7 +5699,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1206",
-    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "coldlight-claymore",
@@ -5161,7 +5708,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1207",
-    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "gladiator-s-greatsword",
@@ -5169,7 +5717,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1208",
-    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "barren-greatsword",
@@ -5177,7 +5726,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1209",
-    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "tidal-claymore",
@@ -5185,7 +5735,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1210",
-    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "sundering-greatsword",
@@ -5193,7 +5744,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1211",
-    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_002_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_002_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "wolfsoul-claymore",
@@ -5201,7 +5753,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1212",
-    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_003_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_003_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "glory-greatsword",
@@ -5209,7 +5762,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1213",
-    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_004_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_004_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "griffin-greatsword",
@@ -5217,7 +5771,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1214",
-    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "vindicator-s-greatsword",
@@ -5225,7 +5780,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1215",
-    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "subjugation-claymore",
@@ -5233,7 +5789,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1216",
-    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_005_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_005_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "red-pegasus-greatsword",
@@ -5241,7 +5798,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1217",
-    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "black-pass-claymore",
@@ -5249,7 +5807,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1218",
-    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "sky-severing-sword",
@@ -5257,7 +5816,8 @@
     "slot": "weapon",
     "implicit": [],
     "tlidbId": "1219",
-    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_001_112.webp"
+    "icon": "/images/rare-gear/two_handed/two-handed_sword/Icon_Equip_Weapon_2HSword_Norm_001_112.webp",
+    "category": "two_handed"
   },
   {
     "id": "thunder-channeling-prosthetics",

@@ -71,10 +71,53 @@ test('modifiersForSlot falls back to affix.modifiers when no tier is tagged with
   assert.deepEqual(modifiersForSlot(lifeAffix, 'boots'), lifeAffix.modifiers);
 });
 
+test('modifiersForSlot prefers the exact category over the coarser slot, distinguishing one_handed from two_handed weapons', () => {
+  // Confirmed real: one_handed and two_handed both collapse to slot
+  // 'weapon', but roll different ranges for the same affix -- filtering by
+  // slot alone would return the two-handed roll (usually higher) for a
+  // one-handed weapon too, overcounting one-handed builds.
+  const weaponAffix = {
+    ...lifeAffix,
+    slots: ['weapon'],
+    tiers: [
+      { tier: '1', modifierId: 'oh-1', weight: 100, slot: 'weapon', category: 'one_handed', modifiers: [{ stat: 'life', op: 'flat', value: 220 }] },
+      { tier: '1', modifierId: 'th-1', weight: 100, slot: 'weapon', category: 'two_handed', modifiers: [{ stat: 'life', op: 'flat', value: 330 }] }
+    ]
+  };
+  assert.deepEqual(modifiersForSlot(weaponAffix, 'weapon', 'one_handed'), [{ stat: 'life', op: 'flat', value: 220 }]);
+  assert.deepEqual(modifiersForSlot(weaponAffix, 'weapon', 'two_handed'), [{ stat: 'life', op: 'flat', value: 330 }]);
+  // No category known (e.g. a hand-curated GearBase with no category field)
+  // -> falls back to slot-level matching, same as before category existed.
+  const bySlotOnly = modifiersForSlot(weaponAffix, 'weapon');
+  assert.ok(
+    bySlotOnly[0].value === 220 || bySlotOnly[0].value === 330,
+    'falls back to ranking across all weapon-tagged tiers when no category is given'
+  );
+});
+
 test('craftableTiers excludes weight-0 (disabled) tiers', () => {
   const craftable = craftableTiers(lifeAffix);
   assert.equal(craftable.length, 2);
   assert.ok(craftable.every((t) => t.weight > 0));
+});
+
+test('craftableTiers filters to the given slot when the affix spans multiple slots', () => {
+  // Confirmed real: mapAffixes merges the same craft template across gear
+  // subtypes, so a multi-slot affix's tiers mix rolls from every slot it
+  // appears on -- the crafting sim's tier ladder/odds for one slot must not
+  // include another slot's impossible rolls.
+  const multiSlot = {
+    ...lifeAffix,
+    slots: ['boots', 'weapon'],
+    tiers: [
+      { tier: '1', modifierId: 'boots-1', weight: 100, slot: 'boots', modifiers: [{ stat: 'life', op: 'flat', value: 220 }] },
+      { tier: '1', modifierId: 'weapon-1', weight: 100, slot: 'weapon', modifiers: [{ stat: 'life', op: 'flat', value: 330 }] }
+    ]
+  };
+  assert.deepEqual(craftableTiers(multiSlot, 'boots').map((t) => t.modifierId), ['boots-1']);
+  assert.deepEqual(craftableTiers(multiSlot, 'weapon').map((t) => t.modifierId), ['weapon-1']);
+  // no slot given -> unfiltered, same as before slot filtering existed
+  assert.equal(craftableTiers(multiSlot).length, 2);
 });
 
 test('affixTierOdds computes each tier\'s share of total weight, excluding disabled tiers', () => {
@@ -88,6 +131,22 @@ test('affixTierOdds computes each tier\'s share of total weight, excluding disab
 
 test('affixTierOdds returns [] for an affix with no craftable tiers', () => {
   assert.deepEqual(affixTierOdds({ ...lifeAffix, tiers: [] }), []);
+});
+
+test('affixTierOdds computes odds only within the given slot for a multi-slot affix', () => {
+  const multiSlot = {
+    ...lifeAffix,
+    slots: ['boots', 'weapon'],
+    tiers: [
+      { tier: '1', modifierId: 'boots-1', weight: 100, slot: 'boots', modifiers: [{ stat: 'life', op: 'flat', value: 220 }] },
+      { tier: '2', modifierId: 'boots-2', weight: 300, slot: 'boots', modifiers: [{ stat: 'life', op: 'flat', value: 150 }] },
+      { tier: '1', modifierId: 'weapon-1', weight: 999, slot: 'weapon', modifiers: [{ stat: 'life', op: 'flat', value: 330 }] }
+    ]
+  };
+  const odds = affixTierOdds(multiSlot, 'boots');
+  assert.equal(odds.length, 2);
+  const t1 = odds.find((o) => o.tier === '1');
+  assert.equal(t1.chance, 100 / 400); // weapon's weight-999 tier must not be in the pool
 });
 
 const skillWithScaling = {
