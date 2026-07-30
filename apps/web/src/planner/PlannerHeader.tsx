@@ -1,4 +1,4 @@
-import { PanelLeft, PanelRight, Beaker, ExternalLink, Check } from 'lucide-react';
+import { PanelLeft, PanelRight, Beaker, ExternalLink, Check, Undo2, Redo2, FilePlus2 } from 'lucide-react';
 
 interface PlannerHeaderProps {
   buildName: string;
@@ -8,6 +8,11 @@ interface PlannerHeaderProps {
   onToggleNav: () => void;
   onToggleRail: () => void;
   saveStatus: 'saved' | 'saving' | 'unsaved';
+  canUndo: boolean;
+  canRedo: boolean;
+  onUndo: () => void;
+  onRedo: () => void;
+  onNewBuild: () => void;
 }
 
 const SAVE_STATUS_LABEL: Record<PlannerHeaderProps['saveStatus'], string> = {
@@ -25,7 +30,12 @@ export function PlannerHeader({
   navCollapsed,
   onToggleNav,
   onToggleRail,
-  saveStatus
+  saveStatus,
+  canUndo,
+  canRedo,
+  onUndo,
+  onRedo,
+  onNewBuild
 }: PlannerHeaderProps) {
   return (
     <header className="pv-topbar">
@@ -58,6 +68,16 @@ export function PlannerHeader({
         {saveStatus === 'saved' && <Check size={12} />}
         {SAVE_STATUS_LABEL[saveStatus]}
       </span>
+
+      <button type="button" className="pv-icon-btn" onClick={onUndo} disabled={!canUndo} aria-label="Undo">
+        <Undo2 size={16} />
+      </button>
+      <button type="button" className="pv-icon-btn" onClick={onRedo} disabled={!canRedo} aria-label="Redo">
+        <Redo2 size={16} />
+      </button>
+      <button type="button" className="pv-icon-btn" onClick={onNewBuild} aria-label="New build">
+        <FilePlus2 size={16} />
+      </button>
 
       <span className="pv-nav-spacer" />
 

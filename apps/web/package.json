@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "test": "node --test test/*.test.mjs",
+    "test": "node --test test/*.test.mjs && node --experimental-strip-types --test test/*.test.ts",
     "lint": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
