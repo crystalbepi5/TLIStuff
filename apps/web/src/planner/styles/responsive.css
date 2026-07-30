@@ -179,4 +179,16 @@
     min-width: 0;
     max-width: none;
   }
+
+  /* The spatial equipment canvas's 3-column paperdoll grid has no room to
+   * keep a 120px column floor at phone widths -- let columns shrink freely
+   * instead of forcing horizontal overflow. */
+  .pv-equip-canvas {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--pv-space-2);
+  }
+
+  .pv-equip-slot-card {
+    min-height: 76px;
+  }
 }

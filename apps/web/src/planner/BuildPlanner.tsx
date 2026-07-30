@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { CheckCircle2, Circle, Copy, Download, Upload } from 'lucide-react';
-import { seedDataset, type Build, type GearPiece, type GearSlot, type VoraxGearPiece } from '@torchlight-companion/build-data';
+import { seedDataset, type Build, type VoraxGearPiece } from '@torchlight-companion/build-data';
 import {
   evaluateBuild,
   marginalGearAnalysis,
@@ -14,9 +14,11 @@ import { PlannerNavigation } from './PlannerNavigation';
 import { PlannerStatsRail } from './PlannerStatsRail';
 import type { PlannerSection } from './plannerSections';
 import { PlannerProvider, usePlanner } from './context/PlannerContext';
-import { GEAR_SLOTS, index, decodeBuild, encodeBuild, filterList, shareUrl, voraxAffixLabel, voraxLegendaryLabel } from './buildUtils';
+import { index, decodeBuild, encodeBuild, filterList, shareUrl, voraxAffixLabel, voraxLegendaryLabel } from './buildUtils';
 import { HeroWorkspace } from './hero/HeroWorkspace';
 import { SkillsWorkspace } from './skills/SkillsWorkspace';
+import { EquipmentWorkspace } from './equipment/EquipmentWorkspace';
+import { SLOT_INSTANCES } from './equipment/gearSlots';
 import './planner.css';
 
 export function BuildPlanner() {
@@ -91,15 +93,6 @@ function PlannerApp() {
     });
   }
 
-  function setGear(slot: GearSlot, piece: GearPiece | null) {
-    patchBuild((prev) => {
-      const rest = prev.gear.filter((g) => g.slot !== slot);
-      return { gear: piece ? [...rest, piece] : rest };
-    });
-  }
-
-  const gearBySlot = (slot: GearSlot) => build.gear.find((g) => g.slot === slot);
-
   function setVoraxGear(limb: string, piece: VoraxGearPiece | null) {
     patchBuild((prev) => {
       const rest = prev.voraxGear.filter((g) => g.limb !== limb);
@@ -167,75 +160,7 @@ function PlannerApp() {
 
           {activeSection === 'skills' && <SkillsWorkspace build={build} patchBuild={patchBuild} />}
 
-          {activeSection === 'equipment' && (
-            <section className="pv-panel">
-              <div className="pv-panel-header">
-                <h2 className="pv-section-title">Equipment</h2>
-              </div>
-              <div className="pv-panel-body" style={{ display: 'grid', gap: 12 }}>
-                {GEAR_SLOTS.map((slot) => {
-                  const bases = seedDataset.gearBases.filter((g) => g.slot === slot);
-                  if (bases.length === 0) return null;
-                  const piece = gearBySlot(slot);
-                  const affixes = seedDataset.affixes.filter((a) => a.slots.includes(slot));
-                  return (
-                    <div key={slot} className="pv-card" style={{ padding: 10 }}>
-                      <div className="pv-field-label" style={{ marginBottom: 6, textTransform: 'capitalize' }}>
-                        {slot}
-                        {slot === 'ring' && (
-                          <span className="pv-metadata" style={{ textTransform: 'none', marginLeft: 6 }}>
-                            (single ring slot — see known limitations)
-                          </span>
-                        )}
-                      </div>
-                      <select
-                        className="pv-select"
-                        value={piece?.baseId ?? ''}
-                        onChange={(e) => {
-                          const baseId = e.target.value;
-                          setGear(slot, baseId ? { slot, baseId, affixIds: piece?.affixIds ?? [] } : null);
-                        }}
-                      >
-                        <option value="">— none —</option>
-                        {bases.map((b) => (
-                          <option key={b.id} value={b.id}>
-                            {b.name}
-                          </option>
-                        ))}
-                      </select>
-                      {piece && affixes.length > 0 && (
-                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 8 }}>
-                          {affixes.map((a) => {
-                            const on = piece.affixIds.includes(a.id);
-                            return (
-                              <label
-                                key={a.id}
-                                className="pv-badge pv-badge-btn"
-                                style={on ? { color: 'var(--pv-accent)', borderColor: 'var(--pv-accent)' } : undefined}
-                              >
-                                <input
-                                  type="checkbox"
-                                  checked={on}
-                                  className="pv-visually-hidden"
-                                  onChange={() =>
-                                    setGear(slot, {
-                                      ...piece,
-                                      affixIds: on ? piece.affixIds.filter((x) => x !== a.id) : [...piece.affixIds, a.id]
-                                    })
-                                  }
-                                />
-                                {a.name}
-                              </label>
-                            );
-                          })}
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
-            </section>
-          )}
+          {activeSection === 'equipment' && <EquipmentWorkspace build={build} patchBuild={patchBuild} />}
 
           {activeSection === 'talents' && (
             <section className="pv-panel">
@@ -566,7 +491,7 @@ function OverviewSection({
   const checklist: { label: string; done: boolean; section: PlannerSection }[] = [
     { label: `Hero selected (${hero ?? 'none'})`, done: Boolean(hero), section: 'hero' },
     { label: `Main skill selected (${skill ?? 'none'})`, done: Boolean(skill), section: 'skills' },
-    { label: `Equipment: ${build.gear.length}/${GEAR_SLOTS.length} slots filled`, done: build.gear.length > 0, section: 'equipment' },
+    { label: `Equipment: ${build.gear.length}/${SLOT_INSTANCES.length} slots filled`, done: build.gear.length > 0, section: 'equipment' },
     { label: `Talents: ${build.talentIds.length} selected`, done: build.talentIds.length > 0, section: 'talents' },
     {
       label: `Pact spirits: ${build.pactSpiritIds.length}/${MAX_PACT_SPIRITS}`,

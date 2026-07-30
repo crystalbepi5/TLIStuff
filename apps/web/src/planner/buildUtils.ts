@@ -18,9 +18,14 @@ export const index = indexDataset(seedDataset);
  * generated monogram instead -- see HeroAvatar. */
 const ICON_HOST = 'https://tlicompendium.com';
 
-export function skillIconUrl(icon: string | undefined): string | undefined {
+/** Resolves any of ActiveSkill/SupportSkill/GearBase's relative `icon` paths
+ * to a full URL. GearBase.icon is only present for bases scraped via
+ * gear-master (see its schema.ts doc comment) -- legendaries have none. */
+export function resolveIconUrl(icon: string | undefined): string | undefined {
   return icon ? `${ICON_HOST}${icon}` : undefined;
 }
+
+export const skillIconUrl = resolveIconUrl;
 
 export const GEAR_SLOTS: GearSlot[] = [
   'weapon',
@@ -151,6 +156,13 @@ export function describeVoraxModifiers(modifiers: { stat: string; op: string; va
     })
     .join(', ');
 }
+
+/** Generic alias: describeVoraxModifiers doesn't actually reference
+ * anything Vorax-specific (it's structurally typed on {stat, op, value}),
+ * so it's reused as-is for regular gear-affix modifiers too rather than
+ * duplicating the same "more is a x100 decimal multiplier" scaling logic
+ * a third time in this codebase. */
+export const describeModifiers = describeVoraxModifiers;
 
 export function voraxAffixLabel(a: VoraxAffix): string {
   return describeVoraxModifiers(a.modifiers);
