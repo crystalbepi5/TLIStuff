@@ -16,7 +16,12 @@ function baseBuild(overrides = {}) {
     id: 'b',
     name: 'B',
     heroId: 'selina-tide-whisper',
-    activeSkillId: 'dance-of-the-deep',
+    // Thundercloud is real scraped data (spell/channelled/area, same tag
+    // set the old dance-of-the-deep hand-fixture used) -- that fixture was
+    // removed because "Dance of the Deep" is actually Selina's hero trait
+    // (see seed/talents.json), not a slottable active skill; it had been
+    // hand-invented with made-up numbers under the same id/name by mistake.
+    activeSkillId: 'thundercloud',
     supportIds: [],
     gear: [],
     voraxGear: [],
@@ -120,7 +125,7 @@ test('computeDefense: resistances cap and health pool', () => {
   assert.equal(def.resists.cold, 50);
 });
 
-test('evaluateBuild: Selina + Dance of the Deep produces positive dps, no fatal warnings', () => {
+test('evaluateBuild: a full Selina build produces positive dps, no fatal warnings', () => {
   const index = indexDataset(seedDataset);
   const build = baseBuild({
     name: 'Cold Selina',
@@ -151,7 +156,7 @@ test('evaluateBuild: a support whose cannotSupport conflicts with the active ski
   const index = indexDataset(seedDataset);
   // Real scraped data: Spell Tangle has cannotSupport ['Channeled', 'Sentry',
   // 'Summon'] and a +15.5% moreDamage modifier; the default build's active
-  // skill (dance-of-the-deep) is tagged 'channelled'.
+  // skill (thundercloud) is tagged 'channelled'.
   const bare = evaluateBuild(baseBuild(), index);
   const withConflict = evaluateBuild(baseBuild({ supportIds: ['spell-tangle'] }), index);
   assert.equal(withConflict.damage.dps, bare.damage.dps, 'the conflicting support must not affect dps');

@@ -1,22 +1,5 @@
 [
   {
-    "id": "dance-of-the-deep",
-    "name": "Dance of the Deep",
-    "season": "SS13",
-    "tags": [
-      "spell",
-      "area",
-      "channelled"
-    ],
-    "baseDamage": {
-      "cold": 420,
-      "physical": 60
-    },
-    "baseRate": 3,
-    "baseCritRate": 6,
-    "supportSlots": 5
-  },
-  {
     "id": "flame-slash",
     "name": "Flame Slash",
     "tags": [

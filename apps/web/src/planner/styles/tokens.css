@@ -1,0 +1,140 @@
+/* ============================================================================
+ * Planner design tokens.
+ *
+ * Scoped to `.planner-shell` (not the document `:root`) so this system never
+ * collides with the transparent loot overlay's own `--bg-panel`/`--accent`/
+ * etc. tokens in ../styles.css -- the overlay and the planner never mount at
+ * the same time (hash-routed in Root.tsx), but keeping them namespaced means
+ * that stays true by construction, not by convention.
+ * ========================================================================== */
+
+.planner-shell {
+  /* ---- Surfaces (near-black charcoal base, cool graphite panels) ---- */
+  --pv-bg-app: #0b0c0e;
+  --pv-bg-panel: #131417;
+  --pv-bg-panel-raised: #191b1f;
+  --pv-bg-elevated: #202329;
+  --pv-bg-hover: rgba(255, 255, 255, 0.04);
+  --pv-bg-active: rgba(255, 255, 255, 0.07);
+  --pv-bg-input: #0e0f12;
+
+  /* ---- Borders ---- */
+  --pv-border: #2a2d33;
+  --pv-border-strong: #3a3e46;
+  --pv-border-hairline: rgba(255, 255, 255, 0.06);
+
+  /* ---- Accents ---- */
+  --pv-accent: #e2803f;
+  --pv-accent-hover: #f0904f;
+  --pv-accent-soft: rgba(226, 128, 63, 0.14);
+  --pv-accent-2: #7fa3c9;
+  --pv-accent-2-soft: rgba(127, 163, 201, 0.14);
+  --pv-gold: #d8b567;
+  --pv-gold-soft: rgba(216, 181, 103, 0.14);
+
+  /* ---- Semantic ---- */
+  --pv-success: #5fb87a;
+  --pv-success-soft: rgba(95, 184, 122, 0.14);
+  --pv-warning: #d9a441;
+  --pv-warning-soft: rgba(217, 164, 65, 0.14);
+  --pv-danger: #d9614f;
+  --pv-danger-soft: rgba(217, 97, 79, 0.14);
+
+  /* ---- Text hierarchy ---- */
+  --pv-text-primary: #eef0f3;
+  --pv-text-secondary: #a8adb6;
+  --pv-text-muted: #6d7280;
+  --pv-text-on-accent: #1a1006;
+
+  /* ---- Elemental damage colors (shared meaning with the rest of the app) ---- */
+  --pv-el-physical: #c9cdd3;
+  --pv-el-fire: #e8734a;
+  --pv-el-cold: #5fb4d9;
+  --pv-el-lightning: #dfc855;
+  --pv-el-erosion: #8fbf7a;
+
+  /* ---- Rarity ---- */
+  --pv-rarity-common: #9096a1;
+  --pv-rarity-magic: #6f9bd6;
+  --pv-rarity-rare: #d9c34a;
+  --pv-rarity-legendary: #e2803f;
+
+  /* ---- Spacing scale ---- */
+  --pv-space-1: 4px;
+  --pv-space-2: 8px;
+  --pv-space-3: 12px;
+  --pv-space-4: 16px;
+  --pv-space-5: 20px;
+  --pv-space-6: 24px;
+  --pv-space-7: 32px;
+  --pv-space-8: 40px;
+
+  /* ---- Radius scale ---- */
+  --pv-radius-sm: 4px;
+  --pv-radius-md: 7px;
+  --pv-radius-lg: 12px;
+  --pv-radius-pill: 999px;
+
+  /* ---- Shadow scale ---- */
+  --pv-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --pv-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --pv-shadow-lg: 0 12px 36px rgba(0, 0, 0, 0.5);
+  --pv-shadow-inset: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+
+  /* ---- Typography scale ---- */
+  --pv-font-ui: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --pv-font-mono: 'Cascadia Code', ui-monospace, 'SFMono-Regular', monospace;
+  --pv-text-2xs: 0.68rem;
+  --pv-text-xs: 0.74rem;
+  --pv-text-sm: 0.82rem;
+  --pv-text-base: 0.9rem;
+  --pv-text-md: 1rem;
+  --pv-text-lg: 1.15rem;
+  --pv-text-xl: 1.5rem;
+  --pv-text-2xl: 2rem;
+
+  /* ---- Motion ---- */
+  --pv-duration-micro: 140ms;
+  --pv-duration-panel: 200ms;
+  --pv-duration-page: 160ms;
+  --pv-ease-standard: cubic-bezier(0.2, 0.6, 0.2, 1);
+
+  /* ---- Layout ---- */
+  --pv-nav-width: 216px;
+  --pv-nav-width-collapsed: 60px;
+  --pv-rail-width: 320px;
+  --pv-topbar-height: 52px;
+  --pv-bottom-nav-height: 56px;
+
+  color-scheme: dark;
+  background: var(--pv-bg-app);
+  color: var(--pv-text-primary);
+  font-family: var(--pv-font-ui);
+}
+
+.planner-shell,
+.planner-shell * {
+  box-sizing: border-box;
+}
+
+.planner-shell :focus-visible {
+  outline: 2px solid var(--pv-accent);
+  outline-offset: 2px;
+  border-radius: var(--pv-radius-sm);
+}
+
+.planner-shell ::selection {
+  background: var(--pv-accent-soft);
+}
+
+.pv-tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .planner-shell * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

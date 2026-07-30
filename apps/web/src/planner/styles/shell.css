@@ -1,0 +1,177 @@
+/* ============================================================================
+ * Application shell: four-region grid (top bar / left nav / main workspace /
+ * right rail) plus an optional bottom drawer. Desktop-first; see
+ * responsive.css for the breakpoint collapses.
+ * ========================================================================== */
+
+.planner-shell {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  grid-template-columns: var(--pv-nav-width) minmax(0, 1fr) var(--pv-rail-width);
+  grid-template-rows: var(--pv-topbar-height) minmax(0, 1fr);
+  overflow: hidden;
+}
+
+.planner-shell.is-nav-collapsed {
+  grid-template-columns: var(--pv-nav-width-collapsed) minmax(0, 1fr) var(--pv-rail-width);
+}
+
+.planner-shell.is-rail-collapsed {
+  grid-template-columns: var(--pv-nav-width) minmax(0, 1fr) 0;
+}
+
+.planner-shell.is-nav-collapsed.is-rail-collapsed {
+  grid-template-columns: var(--pv-nav-width-collapsed) minmax(0, 1fr) 0;
+}
+
+.planner-shell.has-drawer {
+  grid-template-rows: var(--pv-topbar-height) minmax(0, 1fr) auto;
+}
+
+/* ---- Top command bar ---- */
+.pv-topbar {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  gap: var(--pv-space-3);
+  padding: 0 var(--pv-space-4);
+  background: var(--pv-bg-panel);
+  border-bottom: 1px solid var(--pv-border);
+  min-width: 0;
+}
+
+/* ---- Left navigation rail ---- */
+.pv-nav {
+  grid-column: 1;
+  grid-row: 2;
+  background: var(--pv-bg-panel);
+  border-right: 1px solid var(--pv-border);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: var(--pv-space-3) var(--pv-space-2);
+  gap: var(--pv-space-1);
+  min-width: 0;
+}
+
+/* ---- Main workspace ---- */
+.pv-main {
+  grid-column: 2;
+  grid-row: 2;
+  overflow-y: auto;
+  min-width: 0;
+  background: var(--pv-bg-app);
+  position: relative;
+}
+
+.pv-main-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: var(--pv-space-6) var(--pv-space-6) var(--pv-space-8);
+}
+
+/* ---- Right analysis rail ---- */
+.pv-rail {
+  grid-column: 3;
+  grid-row: 2;
+  background: var(--pv-bg-panel);
+  border-left: 1px solid var(--pv-border);
+  overflow-y: auto;
+  min-width: 0;
+}
+
+.planner-shell.is-rail-collapsed .pv-rail {
+  display: none;
+}
+
+/* ---- Bottom drawer ---- */
+.pv-drawer {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  background: var(--pv-bg-panel-raised);
+  border-top: 1px solid var(--pv-border);
+  max-height: 42vh;
+  overflow-y: auto;
+  animation: pv-drawer-in var(--pv-duration-panel) var(--pv-ease-standard);
+}
+
+@keyframes pv-drawer-in {
+  from { transform: translateY(8px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* ---- Nav items ---- */
+.pv-nav-section-label {
+  font-size: var(--pv-text-2xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--pv-text-muted);
+  font-weight: 600;
+  padding: var(--pv-space-3) var(--pv-space-2) var(--pv-space-1);
+}
+
+.planner-shell.is-nav-collapsed .pv-nav-section-label {
+  display: none;
+}
+
+.pv-nav-item {
+  display: flex;
+  align-items: center;
+  gap: var(--pv-space-2);
+  padding: 7px var(--pv-space-2);
+  border-radius: var(--pv-radius-sm);
+  border: none;
+  background: transparent;
+  color: var(--pv-text-secondary);
+  font: inherit;
+  font-size: var(--pv-text-sm);
+  cursor: pointer;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: background var(--pv-duration-micro) var(--pv-ease-standard), color var(--pv-duration-micro) var(--pv-ease-standard);
+}
+
+.pv-nav-item svg {
+  flex-shrink: 0;
+}
+
+.pv-nav-item span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.planner-shell.is-nav-collapsed .pv-nav-item span {
+  display: none;
+}
+
+.planner-shell.is-nav-collapsed .pv-nav-item {
+  justify-content: center;
+}
+
+.pv-nav-item:hover {
+  background: var(--pv-bg-hover);
+  color: var(--pv-text-primary);
+}
+
+.pv-nav-item.is-active {
+  background: var(--pv-accent-soft);
+  color: var(--pv-accent);
+  font-weight: 500;
+}
+
+.pv-nav-spacer {
+  flex: 1;
+}
+
+/* ---- Workspace transition ---- */
+.pv-workspace-enter {
+  animation: pv-workspace-in var(--pv-duration-page) var(--pv-ease-standard);
+}
+
+@keyframes pv-workspace-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,194 @@
+/* ============================================================================
+ * Responsive breakpoint collapses for the planner shell.
+ *
+ * Desktop-first: shell.css defines the >=1440px baseline. Each breakpoint
+ * below progressively collapses regions rather than reflowing them into a
+ * generic stacked layout, so the app keeps its IDE-like structure down to
+ * tablet width, then switches to a bottom-tab mobile layout.
+ * ========================================================================== */
+
+/* ---- 1024px - 1439px: narrow desktop / small laptop ----
+ * Right rail shrinks and the nav defaults to icon-only (collapsed) unless
+ * the user explicitly pinned it open. */
+@media (max-width: 1439px) {
+  .planner-shell {
+    grid-template-columns: var(--pv-nav-width) minmax(0, 1fr) 280px;
+  }
+
+  .planner-shell.is-nav-collapsed {
+    grid-template-columns: var(--pv-nav-width-collapsed) minmax(0, 1fr) 280px;
+  }
+
+  .planner-shell.is-rail-collapsed {
+    grid-template-columns: var(--pv-nav-width) minmax(0, 1fr) 0;
+  }
+
+  .planner-shell.is-nav-collapsed.is-rail-collapsed {
+    grid-template-columns: var(--pv-nav-width-collapsed) minmax(0, 1fr) 0;
+  }
+
+  .pv-main-inner {
+    max-width: none;
+  }
+}
+
+/* ---- 768px - 1023px: tablet ----
+ * Nav collapses to icon rail by default; the analysis rail becomes an
+ * on-demand overlay drawer instead of a permanent column. */
+@media (max-width: 1023px) {
+  .planner-shell,
+  .planner-shell.is-nav-collapsed,
+  .planner-shell.is-rail-collapsed,
+  .planner-shell.is-nav-collapsed.is-rail-collapsed {
+    grid-template-columns: var(--pv-nav-width-collapsed) minmax(0, 1fr);
+  }
+
+  /* The nav track narrows to icon-only width regardless of the pinned
+   * collapse state above 1023px, so the label text needs to hide too --
+   * otherwise it clips to an unreadable sliver instead of a clean icon
+   * rail (see PlannerNavigation / .is-nav-collapsed in shell.css). */
+  .pv-nav-item span,
+  .pv-nav-section-label {
+    display: none;
+  }
+
+  .pv-rail {
+    position: fixed;
+    inset: var(--pv-topbar-height) 0 0 auto;
+    width: min(360px, 100vw);
+    z-index: 40;
+    box-shadow: var(--pv-shadow-lg);
+    transform: translateX(100%);
+    transition: transform var(--pv-duration-panel) var(--pv-ease-standard);
+  }
+
+  .planner-shell.is-rail-open .pv-rail {
+    transform: translateX(0);
+  }
+
+  .planner-shell:not(.is-rail-open) .pv-rail {
+    display: block;
+    visibility: hidden;
+  }
+
+  .pv-main-inner {
+    padding: var(--pv-space-5) var(--pv-space-4) var(--pv-space-7);
+  }
+
+  /* Not enough room for the full command bar alongside an editable build
+   * title -- shed the secondary nav links and data-source badge first. */
+  .pv-topbar > a.pv-btn,
+  .pv-topbar .pv-badge {
+    display: none;
+  }
+}
+
+/* ---- <768px: mobile ----
+ * Left nav becomes a bottom tab bar; main workspace takes the full screen;
+ * both rail and drawer become full-screen panels triggered from the top bar. */
+@media (max-width: 767px) {
+  .planner-shell {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: var(--pv-topbar-height) minmax(0, 1fr) var(--pv-bottom-nav-height);
+  }
+
+  .planner-shell.has-drawer {
+    grid-template-rows: var(--pv-topbar-height) minmax(0, 1fr) var(--pv-bottom-nav-height);
+  }
+
+  .pv-nav {
+    grid-column: 1;
+    grid-row: 3;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: var(--pv-space-1) var(--pv-space-2);
+    border-right: none;
+    border-top: 1px solid var(--pv-border);
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .pv-main {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .pv-main-inner {
+    padding: var(--pv-space-4) var(--pv-space-3) var(--pv-space-6);
+  }
+
+  .pv-rail,
+  .pv-drawer {
+    position: fixed;
+    inset: var(--pv-topbar-height) 0 0 0;
+    width: auto;
+    max-height: none;
+    z-index: 50;
+    transform: translateY(100%);
+    transition: transform var(--pv-duration-panel) var(--pv-ease-standard);
+  }
+
+  .planner-shell.is-rail-open .pv-rail {
+    transform: translateY(0);
+  }
+
+  .planner-shell:not(.is-rail-open) .pv-rail {
+    visibility: hidden;
+  }
+
+  .planner-shell.is-drawer-open .pv-drawer {
+    transform: translateY(0);
+  }
+
+  .planner-shell:not(.is-drawer-open) .pv-drawer {
+    visibility: hidden;
+  }
+
+  /* Touch targets grow to the accessibility minimum on mobile. */
+  .pv-nav-item,
+  .pv-btn,
+  .pv-icon-btn {
+    min-height: 40px;
+  }
+
+  /* Top bar sheds secondary chrome so the build title never gets crushed --
+   * the bottom tab bar already covers navigation, so the hamburger toggle
+   * is redundant here too. */
+  .pv-topbar {
+    gap: var(--pv-space-2);
+    padding: 0 var(--pv-space-3);
+  }
+
+  .pv-topbar > .pv-app-title,
+  .pv-topbar > .pv-icon-btn:first-child,
+  .pv-topbar > a.pv-btn {
+    display: none;
+  }
+
+  .pv-topbar .pv-badge {
+    display: none;
+  }
+
+  .pv-topbar .pv-save-status {
+    display: none;
+  }
+
+  .pv-build-title {
+    flex: 1;
+    min-width: 0;
+    max-width: none;
+  }
+
+  /* The spatial equipment canvas's 3-column paperdoll grid has no room to
+   * keep a 120px column floor at phone widths -- let columns shrink freely
+   * instead of forcing horizontal overflow. */
+  .pv-equip-canvas {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--pv-space-2);
+  }
+
+  .pv-equip-slot-card {
+    min-height: 76px;
+  }
+}

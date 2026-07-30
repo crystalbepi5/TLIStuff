@@ -3,7 +3,7 @@
     "id": "selina-tide-whisper",
     "name": "Tide Whisper Selina",
     "season": "SS13",
-    "description": "SS13 'Afterlight' water-magic caster. Signature skill 'Dance of the Deep'. NOTE: seed approximation — numbers not verified against the game.",
+    "description": "SS13 'Afterlight' water-magic caster. Hero trait 'Dance of the Deep' (see Talents). NOTE: seed approximation — numbers not verified against the game.",
     "baseModifiers": [
       { "stat": "increasedSpell", "op": "increased", "value": 20 },
       { "stat": "increasedCold", "op": "increased", "value": 15 },
