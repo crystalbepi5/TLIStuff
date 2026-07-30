@@ -7,14 +7,23 @@ import {
   MAX_PACT_SPIRITS,
   type AffixSwapSuggestion
 } from '@torchlight-companion/build-calc';
-import { ProgressionTreeGraph } from '../progression/ProgressionTreeGraph';
+import { ProgressionTreeCanvas } from './progression/ProgressionTreeCanvas';
 import { PlannerShell } from './PlannerShell';
 import { PlannerHeader } from './PlannerHeader';
 import { PlannerNavigation } from './PlannerNavigation';
 import { PlannerStatsRail } from './PlannerStatsRail';
 import type { PlannerSection } from './plannerSections';
 import { PlannerProvider, usePlanner } from './context/PlannerContext';
-import { index, decodeBuild, encodeBuild, filterList, shareUrl, voraxAffixLabel, voraxLegendaryLabel } from './buildUtils';
+import {
+  index,
+  decodeBuild,
+  describeModifiers,
+  encodeBuild,
+  filterList,
+  shareUrl,
+  voraxAffixLabel,
+  voraxLegendaryLabel
+} from './buildUtils';
 import { HeroWorkspace } from './hero/HeroWorkspace';
 import { SkillsWorkspace } from './skills/SkillsWorkspace';
 import { EquipmentWorkspace } from './equipment/EquipmentWorkspace';
@@ -182,14 +191,22 @@ function PlannerApp() {
                   return (
                     <div className="pv-scroll-region" style={{ maxHeight: 520 }}>
                       {shown.map((t) => (
-                        <label key={t.id} className="pv-checkbox-row">
+                        <label key={t.id} className="pv-checkbox-row" style={{ alignItems: 'flex-start' }}>
                           <input
                             type="checkbox"
                             checked={build.talentIds.includes(t.id)}
                             onChange={() => toggleInList('talentIds', t.id)}
+                            style={{ marginTop: 3 }}
                           />
-                          <span>{t.name}</span>
-                          {t.heroId === 'any' && <em className="pv-metadata">shared</em>}
+                          <span>
+                            {t.name}
+                            {t.heroId === 'any' && (
+                              <em className="pv-metadata" style={{ marginLeft: 6 }}>
+                                shared
+                              </em>
+                            )}
+                            <div className="pv-metadata">{describeModifiers(t.modifiers)}</div>
+                          </span>
                         </label>
                       ))}
                       {hidden > 0 && <p className="pv-metadata">+{hidden} more — refine search</p>}
@@ -213,24 +230,27 @@ function PlannerApp() {
                   point-budget or prerequisite gating is enforced since neither is confirmed against
                   the real game — every node stays freely toggleable.
                 </p>
-                <div className="pv-field">
-                  <label className="pv-field-label" htmlFor="progression-category">
-                    Category
-                  </label>
-                  <select
-                    id="progression-category"
-                    className="pv-select"
-                    value={progressionCategory}
-                    onChange={(e) => {
-                      setProgressionCategory(e.target.value as 'talentTrees' | 'voidCharts');
+                <div className="pv-segmented" style={{ marginBottom: 10 }}>
+                  <button
+                    type="button"
+                    className={progressionCategory === 'talentTrees' ? 'is-active' : ''}
+                    onClick={() => {
+                      setProgressionCategory('talentTrees');
                       setProgressionTreeId('');
                     }}
                   >
-                    <option value="talentTrees">
-                      Talent Trees ({(seedDataset.talentTrees ?? []).length})
-                    </option>
-                    <option value="voidCharts">Void Chart ({(seedDataset.voidCharts ?? []).length})</option>
-                  </select>
+                    Talent Trees ({(seedDataset.talentTrees ?? []).length})
+                  </button>
+                  <button
+                    type="button"
+                    className={progressionCategory === 'voidCharts' ? 'is-active' : ''}
+                    onClick={() => {
+                      setProgressionCategory('voidCharts');
+                      setProgressionTreeId('');
+                    }}
+                  >
+                    Void Chart ({(seedDataset.voidCharts ?? []).length})
+                  </button>
                 </div>
                 {(() => {
                   const trees = seedDataset[progressionCategory] ?? [];
@@ -240,31 +260,31 @@ function PlannerApp() {
                   );
                   return (
                     <>
-                      <div className="pv-field" style={{ marginTop: 10 }}>
-                        <label className="pv-field-label" htmlFor="progression-tree">
-                          Tree
-                        </label>
-                        <select
-                          id="progression-tree"
-                          className="pv-select"
-                          value={tree?.id ?? ''}
-                          onChange={(e) => setProgressionTreeId(e.target.value)}
-                        >
+                      {trees.length > 1 && (
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 10 }}>
                           {trees.map((t) => (
-                            <option key={t.id} value={t.id}>
-                              {t.name} ({t.nodes.length} nodes)
-                            </option>
+                            <button
+                              key={t.id}
+                              type="button"
+                              className="pv-badge pv-badge-btn"
+                              style={
+                                t.id === (tree?.id ?? '')
+                                  ? { color: 'var(--pv-accent)', borderColor: 'var(--pv-accent)' }
+                                  : undefined
+                              }
+                              onClick={() => setProgressionTreeId(t.id)}
+                            >
+                              {t.name} ({t.nodes.length})
+                            </button>
                           ))}
-                        </select>
-                      </div>
-                      {tree && (
-                        <div style={{ marginTop: 10 }}>
-                          <ProgressionTreeGraph
-                            tree={tree}
-                            selectedIds={selectedIds}
-                            onToggle={(nodeId) => toggleProgressionNode(progressionCategory, nodeId)}
-                          />
                         </div>
+                      )}
+                      {tree && (
+                        <ProgressionTreeCanvas
+                          tree={tree}
+                          selectedIds={selectedIds}
+                          onToggle={(nodeId) => toggleProgressionNode(progressionCategory, nodeId)}
+                        />
                       )}
                     </>
                   );

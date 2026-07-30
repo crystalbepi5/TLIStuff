@@ -294,3 +294,71 @@
   height: 24px;
   padding: 0 6px;
 }
+
+/* ---- Progression tree canvas (pan/zoom chrome around ProgressionTreeGraph) ---- */
+.pv-progression-canvas {
+  display: grid;
+  gap: var(--pv-space-2);
+}
+
+.pv-progression-toolbar {
+  display: flex;
+  align-items: center;
+  gap: var(--pv-space-2);
+}
+
+.pv-progression-search-results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.pv-progression-viewport {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--pv-border);
+  border-radius: var(--pv-radius-md);
+  background: var(--pv-bg-input);
+  height: 480px;
+  touch-action: none;
+}
+
+.pv-progression-pan-zoom {
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  transform-origin: center center;
+  transition: transform 80ms linear;
+  padding: var(--pv-space-3);
+}
+
+.pv-progression-pan-zoom:active {
+  cursor: grabbing;
+}
+
+.pv-progression-pan-zoom .progression-graph-svg {
+  background: transparent;
+  border: none;
+}
+
+.pv-progression-minimap {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  border-radius: var(--pv-radius-sm);
+  box-shadow: var(--pv-shadow-md);
+  pointer-events: none;
+}
+
+.pv-progression-minimap-bg {
+  fill: var(--pv-bg-panel-raised);
+  stroke: var(--pv-border-strong);
+}
+
+.pv-progression-minimap-node {
+  fill: var(--pv-text-muted);
+}
+
+.pv-progression-minimap-node.is-selected {
+  fill: var(--pv-accent);
+}
