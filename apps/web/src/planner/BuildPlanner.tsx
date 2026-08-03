@@ -18,6 +18,7 @@ import {
   type AffixSwapSuggestion
 } from '@torchlight-companion/build-calc';
 import { ProgressionTreeGraph } from '../progression/ProgressionTreeGraph';
+import { setOverlayGoal } from '../overlayGoal';
 
 /** Vorax affixes/legendaries have no `name` field in the scraped data (the
  * game never labels them individually the way regular affixes are) -- these
@@ -760,6 +761,16 @@ export function BuildPlanner() {
             }}
           >
             Import Compendium export
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              setOverlayGoal(encodeBuild(build));
+              setImportError(null);
+              setCompendiumInfo(['Set as overlay goal — it shows in the in-game overlay.']);
+            }}
+          >
+            Set as overlay goal
           </button>
         </div>
         <textarea
