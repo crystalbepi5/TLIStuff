@@ -495,3 +495,12 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
+
+/* Compendium-import coverage/warnings under the share panel. */
+.compendium-info {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  font-size: 0.78rem;
+  color: var(--muted, #ad9678);
+}
+.compendium-info li { margin: 2px 0; }
