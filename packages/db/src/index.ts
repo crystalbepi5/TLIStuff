@@ -116,7 +116,32 @@ export class SqliteRepository {
         checked_at TEXT NOT NULL
       );
       CREATE INDEX IF NOT EXISTS idx_market_price_checks_checked_at ON market_price_checks(checked_at DESC);
+
+      CREATE TABLE IF NOT EXISTS app_settings (
+        key TEXT PRIMARY KEY,
+        value TEXT NOT NULL
+      );
     `);
+  }
+
+  /** Read a single app setting (e.g. the overlay goal), or undefined if unset. */
+  getSetting(key: string): string | undefined {
+    const row = this.db.prepare('SELECT value FROM app_settings WHERE key = ?').get(key) as
+      | { value: string }
+      | undefined;
+    return row?.value;
+  }
+
+  /** Upsert an app setting. */
+  setSetting(key: string, value: string): void {
+    this.db
+      .prepare('INSERT INTO app_settings (key, value) VALUES (?, ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value')
+      .run(key, value);
+  }
+
+  /** Remove an app setting, if present. */
+  deleteSetting(key: string): void {
+    this.db.prepare('DELETE FROM app_settings WHERE key = ?').run(key);
   }
 
   upsertLootEvent(event: LootEvent): void {

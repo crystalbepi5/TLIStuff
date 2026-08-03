@@ -3,7 +3,7 @@ import type { LootFeedSnapshot } from '@torchlight-companion/domain';
 import { seedDataset, indexDataset, type Build } from '@torchlight-companion/build-data';
 import { evaluateBuild } from '@torchlight-companion/build-calc';
 import { fetchLootRecent, subscribeToLootEvents } from './api';
-import { getOverlayGoal, OVERLAY_GOAL_KEY } from './overlayGoal';
+import { getOverlayGoal, fetchOverlayGoal, subscribeOverlayGoal } from './overlayGoal';
 
 const datasetIndex = indexDataset(seedDataset);
 
@@ -41,11 +41,17 @@ export function App() {
   const [goal, setGoal] = useState<Build | null>(() => getOverlayGoal());
 
   useEffect(() => {
-    const onStorage = (e: StorageEvent) => {
-      if (e.key === OVERLAY_GOAL_KEY || e.key === null) setGoal(getOverlayGoal());
+    // Instant paint used the localStorage cache; sync from the agent, then
+    // follow live changes (agent SSE + same-origin storage events).
+    let cancelled = false;
+    fetchOverlayGoal().then((g) => {
+      if (!cancelled) setGoal(g);
+    });
+    const unsubscribe = subscribeOverlayGoal((g) => setGoal(g));
+    return () => {
+      cancelled = true;
+      unsubscribe();
     };
-    window.addEventListener('storage', onStorage);
-    return () => window.removeEventListener('storage', onStorage);
   }, []);
 
   useEffect(() => {

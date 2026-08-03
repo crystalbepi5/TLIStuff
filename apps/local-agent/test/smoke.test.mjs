@@ -134,3 +134,71 @@ test('GET /loot/events streams a real SSE frame for a loot pickup as it happens'
   assert.match(received, /^id: \d+\ndata: /m);
   assert.match(received, /"configBaseId":6002/);
 });
+
+test('GET /goal returns null before any goal has been set', async () => {
+  const res = await fetch(`${baseUrl}/goal`);
+  assert.equal(res.status, 200);
+  const body = await res.json();
+  assert.equal(body.data.code, null);
+});
+
+test('PUT /goal persists a code, GET reads it back, and null clears it', async () => {
+  const put = await fetch(`${baseUrl}/goal`, {
+    method: 'PUT',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ code: 'ABC123' })
+  });
+  assert.equal(put.status, 200);
+  assert.equal((await put.json()).data.code, 'ABC123');
+
+  const get = await fetch(`${baseUrl}/goal`);
+  assert.equal((await get.json()).data.code, 'ABC123');
+
+  const clear = await fetch(`${baseUrl}/goal`, {
+    method: 'PUT',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ code: null })
+  });
+  assert.equal((await clear.json()).data.code, null);
+  assert.equal((await (await fetch(`${baseUrl}/goal`)).json()).data.code, null);
+});
+
+test('GET /goal/events streams the current goal on connect and pushes changes live', async () => {
+  await fetch(`${baseUrl}/goal`, {
+    method: 'PUT',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ code: 'INITIAL' })
+  });
+
+  const controller = new AbortController();
+  const res = await fetch(`${baseUrl}/goal/events`, { signal: controller.signal });
+  assert.equal(res.status, 200);
+  const reader = res.body.getReader();
+  const decoder = new TextDecoder();
+
+  const readFrame = async () => {
+    const deadline = Date.now() + 3000;
+    let buf = '';
+    while (Date.now() < deadline) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      buf += decoder.decode(value, { stream: true });
+      const m = buf.match(/data: (.+)\n\n/);
+      if (m) return JSON.parse(m[1]);
+    }
+    throw new Error('no SSE frame');
+  };
+
+  // First frame is the current goal, sent immediately on connect.
+  assert.equal((await readFrame()).code, 'INITIAL');
+
+  // A subsequent PUT is pushed to the open stream.
+  await fetch(`${baseUrl}/goal`, {
+    method: 'PUT',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ code: 'UPDATED' })
+  });
+  assert.equal((await readFrame()).code, 'UPDATED');
+
+  controller.abort();
+});

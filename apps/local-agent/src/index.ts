@@ -14,6 +14,35 @@ const lootEvents = new EventEmitter();
 lootEvents.setMaxListeners(0);
 const priceChecks = new EventEmitter();
 priceChecks.setMaxListeners(0);
+// The overlay "goal": a build the planner marks as your target, surfaced in the
+// in-game overlay. Persisted so it survives restarts, and streamed so the
+// overlay updates live even when the planner runs in a different process/origin.
+const goalChanges = new EventEmitter();
+goalChanges.setMaxListeners(0);
+const OVERLAY_GOAL_KEY = 'overlayGoal';
+
+/** Read and JSON-parse a request body (empty body -> {}). */
+function readJsonBody(req: import('node:http').IncomingMessage): Promise<unknown> {
+  return new Promise((resolve, reject) => {
+    const chunks: Buffer[] = [];
+    let size = 0;
+    req.on('data', (c: Buffer) => {
+      size += c.length;
+      if (size > 1_000_000) reject(new Error('request body too large'));
+      else chunks.push(c);
+    });
+    req.on('end', () => {
+      const raw = Buffer.concat(chunks).toString('utf-8').trim();
+      if (!raw) return resolve({});
+      try {
+        resolve(JSON.parse(raw));
+      } catch {
+        reject(new Error('invalid JSON body'));
+      }
+    });
+    req.on('error', reject);
+  });
+}
 
 const now = () => new Date().toISOString();
 
@@ -120,7 +149,7 @@ function startTailer(): LogTailerHandle | undefined {
 const tailerHandle = startTailer();
 
 function send(res: ServerResponse, status: number, body: unknown): void {
-  res.writeHead(status, { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'access-control-allow-methods': 'GET,POST,OPTIONS', 'access-control-allow-headers': 'content-type' });
+  res.writeHead(status, { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'access-control-allow-methods': 'GET,POST,PUT,OPTIONS', 'access-control-allow-headers': 'content-type' });
   res.end(JSON.stringify(body, null, 2));
 }
 
@@ -199,6 +228,55 @@ const server = createServer((req, res) => {
       req.on('close', () => {
         clearInterval(heartbeat);
         priceChecks.off('event', listener);
+      });
+      return;
+    }
+
+    if (url.pathname === '/api/v1/goal' && (req.method === 'GET' || req.method === 'PUT')) {
+      if (req.method === 'GET') {
+        return send(res, 200, { data: { code: repository.getSetting(OVERLAY_GOAL_KEY) ?? null } });
+      }
+      // PUT: set the goal to { code } (a planner share code), or clear it when
+      // code is null/empty. Read the body, persist, then broadcast the change.
+      readJsonBody(req)
+        .then((body) => {
+          const code = (body as { code?: unknown })?.code;
+          if (typeof code === 'string' && code.length > 0) {
+            repository.setSetting(OVERLAY_GOAL_KEY, code);
+            goalChanges.emit('event', code);
+            send(res, 200, { data: { code } });
+          } else {
+            repository.deleteSetting(OVERLAY_GOAL_KEY);
+            goalChanges.emit('event', null);
+            send(res, 200, { data: { code: null } });
+          }
+        })
+        .catch((err) => send(res, 400, { error: { code: 'BAD_REQUEST', message: err instanceof Error ? err.message : 'Unknown error' } }));
+      return;
+    }
+
+    if (req.method === 'GET' && url.pathname === '/api/v1/goal/events') {
+      res.socket?.setNoDelay(true);
+      res.writeHead(200, {
+        'content-type': 'text/event-stream; charset=utf-8',
+        'cache-control': 'no-cache, no-transform',
+        connection: 'keep-alive',
+        'access-control-allow-origin': '*'
+      });
+      res.flushHeaders();
+      // Emit the current goal immediately so a freshly-opened overlay syncs.
+      res.write(`data: ${JSON.stringify({ code: repository.getSetting(OVERLAY_GOAL_KEY) ?? null })}\n\n`);
+
+      let seq = 0;
+      const listener = (code: string | null): void => {
+        seq += 1;
+        res.write(`id: ${seq}\ndata: ${JSON.stringify({ code })}\n\n`);
+      };
+      goalChanges.on('event', listener);
+      const heartbeat = setInterval(() => res.write(': heartbeat\n\n'), 15000);
+      req.on('close', () => {
+        clearInterval(heartbeat);
+        goalChanges.off('event', listener);
       });
       return;
     }
