@@ -504,3 +504,17 @@ body {
   color: var(--muted, #ad9678);
 }
 .compendium-info li { margin: 2px 0; }
+
+/* Overlay "building toward" goal panel (set from the planner). */
+.goal-panel {
+  display: grid;
+  gap: 2px;
+  border-left: 3px solid var(--gold, #e3b94d);
+}
+.goal-name { font-size: 1rem; color: var(--gold, #e3b94d); }
+.goal-sub { font-size: 0.76rem; color: var(--text, #f3e8da); }
+.goal-dps {
+  font-size: 0.72rem;
+  color: var(--accent, #ff8340);
+  font-variant-numeric: tabular-nums;
+}
