@@ -1,0 +1,2688 @@
+{
+  "id": "build_1779823700905_5b4sucbht",
+  "name": "Pharma",
+  "notes": "",
+  "patch": "SS12",
+  "createdAt": 1783885978194,
+  "updatedAt": 1783885978194,
+  "loadouts": {
+    "loadouts": [
+      {
+        "id": "loadout_1777814031472_eohht3wjq",
+        "name": "Pharmacology",
+        "order": 0,
+        "hero": {
+          "heroGuid": "618ece88-0e1a-4861-bdf6-c64bd86381a5",
+          "heroId": "Sage: Licorice Note",
+          "traits": {
+            "level1": "43f4e446-7856-419a-a9e5-e7d8610d2756",
+            "level45": "2bec3749-681a-42be-acbe-c4a68dac8d21",
+            "level60": "b4461555-070d-41bc-8f13-2f5eaa929637",
+            "level75": "440065ae-2857-4d43-b2d3-01d06b094746"
+          }
+        },
+        "heroMemories": {
+          "equipped": {
+            "slot45": "memory-1783158072077-igkclfeid",
+            "slot60": "memory-1777819222832-yjynutz0p",
+            "slot75": "memory-1777815319784-az7f3cxpm",
+            "slotLevel1Special": null
+          },
+          "inventory": [
+            {
+              "memoryType": "Progress",
+              "baseStat": {
+                "guid": "3b9cbe9f-73d3-4e8c-a415-e8f98ba846ff",
+                "value": 44,
+                "sign": "+",
+                "unit": "%",
+                "tier": -9
+              },
+              "fixedAffixes": [
+                {
+                  "guid": "5eed2a09-26b1-480c-bd52-3d090c40de91",
+                  "value": 14,
+                  "sign": "+",
+                  "unit": "%",
+                  "tier": 1,
+                  "values": [
+                    {
+                      "value": 14,
+                      "sign": "+",
+                      "unit": "%",
+                      "minValue": 10,
+                      "maxValue": 14
+                    }
+                  ]
+                },
+                {
+                  "guid": "66d6bfa5-9edd-4940-b404-04d763a449d7",
+                  "value": 52,
+                  "sign": "+",
+                  "unit": "%",
+                  "tier": 1,
+                  "values": [
+                    {
+                      "value": 52,
+                      "sign": "+",
+                      "unit": "%",
+                      "minValue": 44,
+                      "maxValue": 52
+                    }
+                  ]
+                }
+              ],
+              "randomAffixes": [
+                {
+                  "guid": "da9034cd-773c-4367-8b9a-9cc266baa396",
+                  "value": 18,
+                  "sign": "+",
+                  "unit": "%",
+                  "tier": 0,
+                  "values": [
+                    {
+                      "value": 18,
+                      "sign": "+",
+                      "unit": "%",
+                      "minValue": 14,
+                      "maxValue": 20
+                    }
+                  ]
+                },
+                {
+                  "guid": "f7a88746-b4cc-41a3-a2bd-8e1e00264568",
+                  "value": 52,
+                  "sign": "+",
+                  "unit": "%",
+                  "tier": 0
+                }
+              ],
+              "waxAndWane": false,
+              "id": "memory-1777815319784-az7f3cxpm",
+              "revivedAffixLunarPhase": {
+                "guid": "630a2148-2c2e-44eb-82c9-ae41729c546a",
+                "name": "Basic Pharmacology Manuscript"
+              },
+              "rarity": "Ultimate"
+            },
+            {
+              "memoryType": "Discipline",
+              "baseStat": {
+                "guid": "d51f64d5-38c8-4948-a793-c590a5820c23",
+                "value": 403,
+                "sign": "+",
+                "unit": null,
+                "tier": -9
+              },
+              "fixedAffixes": [
+                {
+                  "guid": "d35d5900-b08d-4edd-8363-892602500982",
+                  "value": 30,
+                  "sign": "+",
+                  "unit": "%",
+                  "tier": 1
+                },
+                {
+                  "guid": "41f9035b-7f05-4c43-b455-135094caf1f3",
+                  "value": 13,
+                  "sign": "+",
+                  "unit": "%",
+                  "tier": 1,
+                  "values": [
+                    {
+                      "value": 13,
+                      "sign": "+",
+                      "unit": "%",
+                      "minValue": 10,
+                      "maxValue": 14
+                    }
+                  ]
+                }
+              ],
+              "randomAffixes": [
+                {
+                  "guid": "a79e61e7-f01a-4cfb-b61d-66c3df29a5d0",
+                  "value": 51,
+                  "sign": "+",
+                  "unit": "%",
+                  "tier": 1,
+                  "values": [
+                    {
+                      "value": 51,
+                      "sign": "+",
+                      "unit": "%",
+                      "minValue": 43,
+                      "maxValue": 53
+                    }
+                  ]
+                },
+                {
+                  "guid": "0bd92bf1-5239-4795-bebc-bd3453601cf4",
+                  "value": 19,
+                  "sign": "+",
+                  "unit": "%",
+                  "tier": 1,
+                  "values": [
+                    {
+                      "value": 19,
+                      "sign": "+",
+                      "unit": "%",
+                      "minValue": 16,
+                      "maxValue": 24
+                    }
+                  ]
+                }
+              ],
+              "waxAndWane": false,
+              "id": "memory-1777819222832-yjynutz0p",
+              "rarity": "Ultimate"
+            },
+            {
+              "memoryType": "Origin",
+              "baseStat": {
+                "guid": "af1fdd5b-dc19-4a48-952c-6851149e9017",
+                "value": 110,
+                "sign": "+",
+                "unit": null,
+                "tier": -9
+              },
+              "fixedAffixes": [
+                {
+                  "guid": "0b9fd422-c531-4be3-84b3-a46b95b0b044",
+                  "value": 42,
+                  "sign": "+",
+                  "unit": "%",
+                  "tier": 1,
+                  "values": [
+                    {
+                      "value": 42,
+                      "sign": "+",
+                      "unit": "%",
+                      "minValue": 38,
+                      "maxValue": 42
+                    }
+                  ]
+                },
+                {
+                  "guid": "905cd5c7-a573-419e-8454-6817e2b61310",
+                  "value": 14,
+                  "sign": "+",
+                  "unit": "%",
+                  "tier": 1,
+                  "values": [
+                    {
+                      "value": 14,
+                      "sign": "+",
+                      "unit": "%",
+                      "minValue": 10,
+                      "maxValue": 14
+                    }
+                  ]
+                }
+              ],
+              "randomAffixes": [
+                {
+                  "guid": "869b0b99-1659-45f1-a831-f4ac998e33a0",
+                  "value": 65,
+                  "sign": "+",
+                  "unit": "%",
+                  "tier": 0,
+                  "values": [
+                    {
+                      "value": 65,
+                      "sign": "+",
+                      "unit": "%",
+                      "minValue": 55,
+                      "maxValue": 65
+                    }
+                  ]
+                },
+                {
+                  "guid": "22d8b4ba-caa6-4f12-8c77-a8dfd14c3e2b",
+                  "value": 65,
+                  "sign": "+",
+                  "unit": "%",
+                  "tier": 0,
+                  "values": [
+                    {
+                      "value": 65,
+                      "sign": "+",
+                      "unit": "%",
+                      "minValue": 55,
+                      "maxValue": 65
+                    }
+                  ]
+                }
+              ],
+              "waxAndWane": false,
+              "id": "memory-1783158072077-igkclfeid",
+              "rarity": "Ultimate"
+            }
+          ]
+        },
+        "etherealPrisms": {
+          "equipped": {
+            "slot1": null,
+            "slot2": null,
+            "slot3": null
+          },
+          "inventory": [
+            {
+              "id": "prism-1777819456505-3t66w1zha",
+              "baseId": "inverse_image",
+              "prismType": "inverse",
+              "randomAffixes": [],
+              "inverseModValues": [
+                {
+                  "name": "Micro Talent Effect Range",
+                  "value": 104
+                },
+                {
+                  "name": "Medium Talent Effect Range",
+                  "value": 35
+                },
+                {
+                  "name": "Legendary Medium Talent Effect Range",
+                  "value": -34
+                }
+              ]
+            },
+            {
+              "id": "prism-1777819525850-a3uywig64",
+              "baseId": "331062f7-4d8a-44e3-9af8-4dba8bbb2b58",
+              "prismType": "ethereal",
+              "randomAffixes": [
+                "8d5e4147-ce79-4e6d-94ab-cf0dbdf6e833",
+                "0ec0b87b-1eab-4223-b7be-f04e0633bcd7",
+                "8a5509ec-dfd3-4373-b936-ca6aa7dd32c3"
+              ]
+            }
+          ]
+        },
+        "gear": {
+          "equipped": {
+            "helmet": "vorax-1779823187345-2kdcd6zgd",
+            "chest": "gear-1779823202740-sj5j8gkxi",
+            "gloves": "gear-1779823216867-wi4zn394m",
+            "boots": "gear-1777819945386-fs5yiqh7v",
+            "belt": "gear-1777819356037-8khbc76lf",
+            "ring1": "gear-1777820024060-f0mxiqdgv",
+            "ring2": "356731cb-1a1e-4d3b-bd13-bfcc815dc08d",
+            "necklace": "gear-1777819869331-yfbi4ecdl",
+            "mainHand": "gear-1777820229446-wk6ng9evd",
+            "offHand": "c01671cd-fac2-423a-a829-9e95ce034bc4"
+          },
+          "inventory": [
+            {
+              "id": "gear-1777819356037-8khbc76lf",
+              "rarity": "Legendary",
+              "gearCategory": "trinket",
+              "gearSubType": "belt",
+              "legendaryItem": {
+                "legendaryId": "eadb8afb-0041-4944-9431-3c9a4db1f4e9",
+                "name": "Omni-Elixir Notes",
+                "icon": "/images/legendaries/trinket/belt/IconEquipBeltEpic226128",
+                "requiredLevel": 1
+              },
+              "legendaryMods": [
+                {
+                  "modId": "09023889-7750-44f2-811d-f50290447e68",
+                  "description": "+30% Max Life and Max Mana",
+                  "variant": "normal",
+                  "rolledValues": [
+                    {
+                      "value": 30,
+                      "minValue": 25,
+                      "maxValue": 30,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "modId": "620cf576-c73a-4bc8-bf09-77d12e9794b4",
+                  "description": "+20% Defense",
+                  "variant": "normal",
+                  "rolledValues": [
+                    {
+                      "value": 20,
+                      "minValue": 16,
+                      "maxValue": 20,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "modId": "ec0645da-3252-4c1a-96f8-913c4a55b89b",
+                  "description": "+77% Elixir Skill Effect",
+                  "variant": "corroded",
+                  "rolledValues": [
+                    {
+                      "value": 77,
+                      "minValue": 70,
+                      "maxValue": 80,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "modId": "dee475a4-a119-493a-8b4f-e0f7e42f06db",
+                  "description": "Elixir Skills gain 4 Charging Progress every second",
+                  "variant": "normal",
+                  "rolledValues": [
+                    {
+                      "value": 4,
+                      "minValue": 3,
+                      "maxValue": 4
+                    }
+                  ]
+                },
+                {
+                  "modId": "11cef590-4af7-4598-a401-3325df62a039",
+                  "description": "+15% additional damage for you and your Minions for every Elixir Skill cast recently. Stacks up to 5 time(s)",
+                  "variant": "normal",
+                  "rolledValues": [
+                    {
+                      "value": 15,
+                      "minValue": 13,
+                      "maxValue": 15,
+                      "sign": "+",
+                      "unit": "%"
+                    },
+                    {
+                      "value": 5,
+                      "minValue": 5,
+                      "maxValue": 5
+                    }
+                  ]
+                }
+              ],
+              "corrosionImplicit": null,
+              "beltBlend": {
+                "blendId": "a271d81e-294b-4ce9-bd0d-91dbab1f633a",
+                "description": "Divine Grace",
+                "rolledValues": [],
+                "type": "Aromatic Talent Lv.0",
+                "modifierId": "3704000"
+              },
+              "displayName": "Omni-Elixir Notes",
+              "displayIcon": "/images/legendaries/trinket/belt/IconEquipBeltEpic226128"
+            },
+            {
+              "id": "gear-1777819869331-yfbi4ecdl",
+              "rarity": "Rare",
+              "gearCategory": "trinket",
+              "gearSubType": "necklace",
+              "baseItem": {
+                "baseItemId": "9560bc62-7ec8-4ca1-8b5d-401a303c676f",
+                "name": "Sacrificer's Necklace",
+                "icon": "/images/rare-gear/trinket/necklace/Icon_Equip_Amulet_Norm_005_03_128.webp",
+                "requiredLevel": 1,
+                "implicits": [
+                  {
+                    "description": "+24 Intelligence",
+                    "rawText": "+24 Intelligence",
+                    "values": [
+                      {
+                        "value": 24,
+                        "minValue": 24,
+                        "maxValue": 24,
+                        "sign": "+"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "beltBlend": null,
+              "towerSequence": null,
+              "sweetDreamAffix": {
+                "affixId": "7c210b47-993f-48c5-908f-ff14d65561b3",
+                "description": "+7% Sealed Mana Compensation",
+                "rolledValues": [
+                  {
+                    "value": 7,
+                    "minValue": 6,
+                    "maxValue": 8,
+                    "sign": "+",
+                    "unit": "%"
+                  }
+                ],
+                "tier": "1"
+              },
+              "baseAffix": null,
+              "baseAffix2": null,
+              "corrosionImplicit": null,
+              "prefixes": [
+                {
+                  "affixId": "f260e1ed-fc8e-4af0-9bfd-d9c754958eb2",
+                  "tierId": "3eee7d1d-22ab-49c7-8553-b1e59be0477c",
+                  "modifierDescription": "+# Intelligence",
+                  "rolledValues": [
+                    {
+                      "value": 73,
+                      "minValue": 61,
+                      "maxValue": 78,
+                      "sign": "+"
+                    }
+                  ],
+                  "tier": "0"
+                },
+                {
+                  "affixId": "7b43ca46-ad27-4491-a383-310004ffae9d",
+                  "tierId": "279133dd-db79-4b97-a425-5d2daebd8e89",
+                  "modifierDescription": "You can apply # additional Tangle(s) to enemies+#% Tangle Damage Enhancement",
+                  "rolledValues": [
+                    {
+                      "value": 1,
+                      "minValue": 1,
+                      "maxValue": 1
+                    },
+                    {
+                      "value": 7,
+                      "minValue": 5,
+                      "maxValue": 8,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "1"
+                },
+                {
+                  "affixId": "db5fa61b-e40a-418d-8e61-9670bf50a311",
+                  "tierId": "25358965-54a3-4681-8ad2-abc4e3eb790c",
+                  "modifierDescription": "Gains Spell Aggression when casting a Spell Skill+#% Spell Aggression Effect",
+                  "rolledValues": [
+                    {
+                      "value": 45,
+                      "minValue": 40,
+                      "maxValue": 60,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "0"
+                }
+              ],
+              "suffixes": [
+                {
+                  "affixId": "0095d35d-0eb2-47a3-862b-c8e4107c6891",
+                  "tierId": "22c8af65-879b-4d4d-b155-0f956648e9fa",
+                  "modifierDescription": "+#% Projectile Speed",
+                  "rolledValues": [
+                    {
+                      "value": 55,
+                      "minValue": 46,
+                      "maxValue": 59,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "0"
+                },
+                {
+                  "affixId": "6998aab0-14c8-4668-a88c-a2d21fe44632",
+                  "tierId": "92957ad3-f6f9-4251-afe5-fa14d6b27c8e",
+                  "modifierDescription": "+#% Sealed Mana Compensation",
+                  "rolledValues": [
+                    {
+                      "value": 25,
+                      "minValue": 21,
+                      "maxValue": 26,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "0"
+                },
+                {
+                  "affixId": "50c032a7-148d-4bc9-a02a-aa57fdce4048",
+                  "tierId": "87fe97e0-6aea-405e-8ecb-e179442da136",
+                  "modifierDescription": "+#% Lightning Resistance",
+                  "rolledValues": [
+                    {
+                      "value": 32,
+                      "minValue": 25,
+                      "maxValue": 35,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "0"
+                }
+              ],
+              "displayName": "Sacrificer's Necklace",
+              "displayIcon": "/images/rare-gear/trinket/necklace/Icon_Equip_Amulet_Norm_005_03_128.webp"
+            },
+            {
+              "id": "gear-1777819945386-fs5yiqh7v",
+              "rarity": "Rare",
+              "gearCategory": "boots",
+              "gearSubType": "str_boots",
+              "baseItem": {
+                "baseItemId": "d7820fc9-d273-4181-bb82-b4bcbba04bfa",
+                "name": "Ranger's Dirty Boots",
+                "icon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_004_02_128.webp",
+                "requiredLevel": 1,
+                "implicits": [
+                  {
+                    "description": "+1920 Gear Armor",
+                    "rawText": "+1920 Gear Armor",
+                    "values": [
+                      {
+                        "value": 1920,
+                        "minValue": 1920,
+                        "maxValue": 1920,
+                        "sign": "+"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "beltBlend": null,
+              "towerSequence": null,
+              "sweetDreamAffix": null,
+              "baseAffix": {
+                "affixId": "f8542ab4-eecb-43c0-aa22-4a087cea7083",
+                "description": "+8% Elemental and Erosion Resistance Penetration\n+8% Elemental and Erosion Resistance Penetration for Minions",
+                "rolledValues": [
+                  {
+                    "value": 8,
+                    "minValue": 6,
+                    "maxValue": 8,
+                    "sign": "+",
+                    "unit": "%"
+                  },
+                  {
+                    "value": 8,
+                    "minValue": 6,
+                    "maxValue": 8,
+                    "sign": "+",
+                    "unit": "%"
+                  }
+                ],
+                "tier": "1"
+              },
+              "baseAffix2": null,
+              "corrosionImplicit": null,
+              "prefixes": [
+                {
+                  "affixId": "e6acfe87-0a35-40a6-aae8-1f471a7186c6",
+                  "tierId": "1caa263e-8022-43bc-a07c-b53ca8b6f9e1",
+                  "modifierDescription": "+# Fire Skill Level",
+                  "rolledValues": [
+                    {
+                      "value": 2,
+                      "minValue": 2,
+                      "maxValue": 2,
+                      "sign": "+"
+                    }
+                  ],
+                  "tier": "0"
+                },
+                {
+                  "affixId": "cf1d24ec-f275-4be1-ac99-8533bb80efa5",
+                  "tierId": "0d25dc7d-79e7-4532-813d-c2118696b055",
+                  "modifierDescription": "+#% additional Max Life",
+                  "rolledValues": [
+                    {
+                      "value": 14,
+                      "minValue": 12,
+                      "maxValue": 15,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "1"
+                },
+                {
+                  "affixId": "09e3cba8-b496-4b8f-8afd-04d3cdf60a6d",
+                  "tierId": "21af69a3-059a-4dc2-bc27-09fcfeb3c320",
+                  "modifierDescription": "+# Max Life",
+                  "rolledValues": [
+                    {
+                      "value": 286,
+                      "minValue": 221,
+                      "maxValue": 286,
+                      "sign": "+"
+                    }
+                  ],
+                  "tier": "0"
+                }
+              ],
+              "suffixes": [
+                {
+                  "affixId": "d1fb6a07-8537-4163-a13b-0b5791f28c81",
+                  "tierId": "53cb15b3-5adc-44d1-8583-a8a8160bda2f",
+                  "modifierDescription": "+#% Movement Speed",
+                  "rolledValues": [
+                    {
+                      "value": 50,
+                      "minValue": 41,
+                      "maxValue": 52,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "0"
+                },
+                {
+                  "affixId": "fa513d4b-0fad-4742-990f-0f331067dac1",
+                  "tierId": "e3d4afc3-7ed4-436a-8ca0-b99798a254a5",
+                  "modifierDescription": "For every # m moved, gains # stack(s) of Deflection",
+                  "rolledValues": [
+                    {
+                      "value": 6,
+                      "minValue": 6,
+                      "maxValue": 6
+                    },
+                    {
+                      "value": 1,
+                      "minValue": 1,
+                      "maxValue": 1
+                    }
+                  ],
+                  "tier": "1"
+                },
+                {
+                  "affixId": "dca0b90e-3cea-4ce8-89a4-6697e23977d8",
+                  "tierId": "5c4015d8-1813-4ad1-9e00-1475fd5a1bcf",
+                  "modifierDescription": "+#% Fire Resistance",
+                  "rolledValues": [
+                    {
+                      "value": 32,
+                      "minValue": 25,
+                      "maxValue": 35,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "0"
+                }
+              ],
+              "displayName": "(Priceless): Ranger's Dirty Boots",
+              "displayIcon": "/images/rare-gear/boots/str_boots/Icon_Equip_Shoes_Str_Norm_004_02_128.webp"
+            },
+            {
+              "id": "gear-1777820024060-f0mxiqdgv",
+              "rarity": "Rare",
+              "gearCategory": "trinket",
+              "gearSubType": "ring",
+              "baseItem": {
+                "baseItemId": "bfe2979e-cd81-442c-809a-6c295da8febb",
+                "name": "Eternal Sleep Ice Ring",
+                "icon": "/images/rare-gear/trinket/ring/Icon_Equip_Ring_Norm_002_02_128.webp",
+                "requiredLevel": 1,
+                "implicits": [
+                  {
+                    "description": "+12% Cold Resistance",
+                    "rawText": "+12% Cold Resistance",
+                    "values": [
+                      {
+                        "value": 12,
+                        "minValue": 12,
+                        "maxValue": 12,
+                        "sign": "+",
+                        "unit": "%"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "beltBlend": null,
+              "towerSequence": null,
+              "sweetDreamAffix": {
+                "affixId": "e16bc7e6-3eea-47a2-8ae1-f232703a76a9",
+                "description": "+8% Attack and Cast Speed",
+                "rolledValues": [
+                  {
+                    "value": 8,
+                    "minValue": 6,
+                    "maxValue": 8,
+                    "sign": "+",
+                    "unit": "%"
+                  }
+                ],
+                "tier": "2"
+              },
+              "baseAffix": null,
+              "baseAffix2": null,
+              "corrosionImplicit": null,
+              "prefixes": [
+                {
+                  "affixId": "55ebb7ea-3b3c-4f04-9a81-be519b04aebd",
+                  "tierId": "357ef89b-66af-4056-ac1f-79c7bd8b10d0",
+                  "modifierDescription": "+# Max Life",
+                  "rolledValues": [
+                    {
+                      "value": 236,
+                      "minValue": 221,
+                      "maxValue": 286,
+                      "sign": "+"
+                    }
+                  ],
+                  "tier": "0"
+                },
+                {
+                  "affixId": "d509db16-6c8a-4baf-b13f-201f691114e1",
+                  "tierId": "e2126f35-7a92-4b6b-9590-24f678886da2",
+                  "modifierDescription": "+#% Armor DMG Mitigation Penetration",
+                  "rolledValues": [
+                    {
+                      "value": 17,
+                      "minValue": 13,
+                      "maxValue": 17,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "1"
+                },
+                {
+                  "affixId": "be8570bc-4557-4ba4-a8b6-6d90d84097a3",
+                  "tierId": "b5067a06-b074-4165-a20c-8581a03a1655",
+                  "modifierDescription": "+#% Attack and Spell Block Chance",
+                  "rolledValues": [
+                    {
+                      "value": 16,
+                      "minValue": 16,
+                      "maxValue": 20,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "0"
+                }
+              ],
+              "suffixes": [
+                {
+                  "affixId": "be9dcb8b-40d0-4306-a399-1c68cf022627",
+                  "tierId": "7ce96770-e338-413a-838f-b6068a3b5315",
+                  "modifierDescription": "+#% chance to deal Double Damage",
+                  "rolledValues": [
+                    {
+                      "value": 30,
+                      "minValue": 27,
+                      "maxValue": 34,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "0"
+                },
+                {
+                  "affixId": "c6368778-b4b0-4f40-bf01-d4adaf1e3464",
+                  "tierId": "a100847d-5799-4ae3-bd82-775e21727830",
+                  "modifierDescription": "#% chance to gain a Barrier for every # m you move",
+                  "rolledValues": [
+                    {
+                      "value": 100,
+                      "minValue": 100,
+                      "maxValue": 100,
+                      "unit": "%"
+                    },
+                    {
+                      "value": 5,
+                      "minValue": 5,
+                      "maxValue": 5
+                    }
+                  ],
+                  "tier": "1"
+                },
+                {
+                  "affixId": "3b57ed05-5ebd-4a0d-be7c-2306e47ed856",
+                  "tierId": "59c12b87-1f14-47c7-a5ee-0fb15a77ecde",
+                  "modifierDescription": "+#% Erosion Resistance",
+                  "rolledValues": [
+                    {
+                      "value": 28,
+                      "minValue": 25,
+                      "maxValue": 35,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "0"
+                }
+              ],
+              "displayName": "Eternal Sleep Ice Ring",
+              "displayIcon": "/images/rare-gear/trinket/ring/Icon_Equip_Ring_Norm_002_02_128.webp"
+            },
+            {
+              "id": "356731cb-1a1e-4d3b-bd13-bfcc815dc08d",
+              "rarity": "Rare",
+              "gearCategory": "trinket",
+              "gearSubType": "ring",
+              "baseItem": {
+                "baseItemId": "bfe2979e-cd81-442c-809a-6c295da8febb",
+                "name": "Eternal Sleep Ice Ring",
+                "icon": "/images/rare-gear/trinket/ring/Icon_Equip_Ring_Norm_002_02_128.webp",
+                "requiredLevel": 1,
+                "implicits": [
+                  {
+                    "description": "+12% Cold Resistance",
+                    "rawText": "+12% Cold Resistance",
+                    "values": [
+                      {
+                        "value": 12,
+                        "minValue": 12,
+                        "maxValue": 12,
+                        "sign": "+",
+                        "unit": "%"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "beltBlend": null,
+              "towerSequence": null,
+              "sweetDreamAffix": {
+                "affixId": "3d40a451-6fcb-423d-a00f-3ef3f9734fc1",
+                "description": "+74 Max Life",
+                "rolledValues": [
+                  {
+                    "value": 74,
+                    "minValue": 54,
+                    "maxValue": 74,
+                    "sign": "+"
+                  }
+                ],
+                "tier": "2"
+              },
+              "baseAffix": {
+                "affixId": "ae90b208-3ca0-4cab-aa5e-1cb57c7fa9a3",
+                "description": "+74 Max Life",
+                "rolledValues": [
+                  {
+                    "value": 74,
+                    "minValue": 54,
+                    "maxValue": 74,
+                    "sign": "+"
+                  }
+                ],
+                "tier": "2"
+              },
+              "baseAffix2": null,
+              "corrosionImplicit": null,
+              "prefixes": [
+                {
+                  "affixId": "55ebb7ea-3b3c-4f04-9a81-be519b04aebd",
+                  "tierId": "357ef89b-66af-4056-ac1f-79c7bd8b10d0",
+                  "modifierDescription": "+# Max Life",
+                  "rolledValues": [
+                    {
+                      "value": 272,
+                      "minValue": 221,
+                      "maxValue": 286,
+                      "sign": "+"
+                    }
+                  ],
+                  "tier": "0"
+                },
+                {
+                  "affixId": "d889d5b7-2e83-4b2c-a480-c3c6a5eeb930",
+                  "tierId": "c588d166-c832-463a-9c5c-a9dd595624a1",
+                  "modifierDescription": "+# Intelligence",
+                  "rolledValues": [
+                    {
+                      "value": 74,
+                      "minValue": 61,
+                      "maxValue": 78,
+                      "sign": "+"
+                    }
+                  ],
+                  "tier": "0"
+                },
+                {
+                  "affixId": "c4466a0b-60ee-41c5-b5e6-65fbc22b4050",
+                  "tierId": "919f16f5-7429-416c-a333-5972ea135b2c",
+                  "modifierDescription": "+#% Elemental and Erosion Resistance Penetration",
+                  "rolledValues": [
+                    {
+                      "value": 19,
+                      "minValue": 15,
+                      "maxValue": 20,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "1"
+                }
+              ],
+              "suffixes": [
+                {
+                  "affixId": "be9dcb8b-40d0-4306-a399-1c68cf022627",
+                  "tierId": "7ce96770-e338-413a-838f-b6068a3b5315",
+                  "modifierDescription": "+#% chance to deal Double Damage",
+                  "rolledValues": [
+                    {
+                      "value": 32,
+                      "minValue": 27,
+                      "maxValue": 34,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "0"
+                },
+                {
+                  "affixId": "f81e3a37-a468-482b-bfee-0d5b954158da",
+                  "tierId": "8b9b29d8-613f-4d9c-9c4e-154a6391282b",
+                  "modifierDescription": "+#% Critical Strike Damage",
+                  "rolledValues": [
+                    {
+                      "value": 74,
+                      "minValue": 61,
+                      "maxValue": 78,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "0"
+                },
+                {
+                  "affixId": "3b57ed05-5ebd-4a0d-be7c-2306e47ed856",
+                  "tierId": "59c12b87-1f14-47c7-a5ee-0fb15a77ecde",
+                  "modifierDescription": "+#% Erosion Resistance",
+                  "rolledValues": [
+                    {
+                      "value": 33,
+                      "minValue": 25,
+                      "maxValue": 35,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "0"
+                }
+              ],
+              "displayName": "(Priceless): Eternal Sleep Ice Ring",
+              "displayIcon": "/images/rare-gear/trinket/ring/Icon_Equip_Ring_Norm_002_02_128.webp"
+            },
+            {
+              "id": "gear-1777820229446-wk6ng9evd",
+              "rarity": "Rare",
+              "gearCategory": "one_handed",
+              "gearSubType": "wand",
+              "baseItem": {
+                "baseItemId": "1a96253f-48ba-423f-89a6-d655b25184c5",
+                "name": "Headless Cleric Wand",
+                "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_128.webp",
+                "requiredLevel": 1,
+                "implicits": [
+                  {
+                    "description": "500 Critical Strike Rating",
+                    "rawText": "500 Critical Strike Rating",
+                    "values": [
+                      {
+                        "value": 500,
+                        "minValue": 500,
+                        "maxValue": 500
+                      }
+                    ]
+                  },
+                  {
+                    "description": "1.2 Attack Speed",
+                    "rawText": "1.2 Attack Speed",
+                    "values": [
+                      {
+                        "value": 1.2,
+                        "minValue": 1.2,
+                        "maxValue": 1.2
+                      }
+                    ]
+                  },
+                  {
+                    "description": "+40% Spell Damage",
+                    "rawText": "+40% Spell Damage",
+                    "values": [
+                      {
+                        "value": 40,
+                        "minValue": 40,
+                        "maxValue": 40,
+                        "sign": "+",
+                        "unit": "%"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "beltBlend": null,
+              "towerSequence": {
+                "sequenceId": "7bff853a-cfc6-432e-a3da-de45fab4512a",
+                "description": "+35% additional damage-10% additional Cast Speed",
+                "sequenceType": "Advanced Sequence 4|4|5|6",
+                "modifierId": "",
+                "chips": [
+                  4,
+                  4,
+                  5,
+                  6
+                ]
+              },
+              "sweetDreamAffix": {
+                "affixId": "8a9c5fdf-449d-4a8c-bd98-e887dfdb50d1",
+                "description": "Projectile Quantity +1",
+                "rolledValues": [
+                  {
+                    "value": 1,
+                    "minValue": 1,
+                    "maxValue": 1,
+                    "sign": "+"
+                  }
+                ],
+                "tier": "1"
+              },
+              "baseAffix": {
+                "affixId": "2bb3df0e-24a0-4d50-9971-bbec7c02b84d",
+                "description": "Projectile Quantity +1",
+                "rolledValues": [
+                  {
+                    "value": 1,
+                    "minValue": 1,
+                    "maxValue": 1,
+                    "sign": "+"
+                  }
+                ],
+                "tier": "1"
+              },
+              "baseAffix2": null,
+              "corrosionImplicit": null,
+              "prefixes": [
+                {
+                  "affixId": "66c4e095-50bb-4604-adca-8de969ca529d",
+                  "tierId": "0c62bad8-46a9-4358-9900-5d66b47d5255",
+                  "modifierDescription": "Adds # - # Fire Damage to Spells",
+                  "rolledValues": [
+                    {
+                      "value": 84,
+                      "minValue": 82,
+                      "maxValue": 84
+                    },
+                    {
+                      "value": 113,
+                      "minValue": 106,
+                      "maxValue": 113
+                    }
+                  ],
+                  "tier": "0"
+                },
+                {
+                  "affixId": "57849f5c-acb8-4125-9ca8-ca7ccac42ffc",
+                  "tierId": "365f9837-957a-4b30-ab6f-ab60ad69c2a6",
+                  "modifierDescription": "+# Spell Skill Level",
+                  "rolledValues": [
+                    {
+                      "value": 4,
+                      "minValue": 3,
+                      "maxValue": 4,
+                      "sign": "+"
+                    }
+                  ],
+                  "tier": "0"
+                },
+                {
+                  "affixId": "0ee6dbfa-e475-445a-a240-a72e1dcfdd1b",
+                  "tierId": "c298ba2e-6d5e-4475-8a34-d56b574756a4",
+                  "modifierDescription": "+# Lightning Skill Level",
+                  "rolledValues": [
+                    {
+                      "value": 3,
+                      "minValue": 2,
+                      "maxValue": 3,
+                      "sign": "+"
+                    }
+                  ],
+                  "tier": "0"
+                }
+              ],
+              "suffixes": [
+                {
+                  "affixId": "7f572a5b-74e1-4d96-8a6c-dd432457b104",
+                  "tierId": "8d7f718a-155e-4610-8f6a-02d53f5bc311",
+                  "modifierDescription": "+#% Tangle Damage Enhancement",
+                  "rolledValues": [
+                    {
+                      "value": 57,
+                      "minValue": 55,
+                      "maxValue": 65,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "0"
+                },
+                {
+                  "affixId": "f5060e58-223f-4126-ae7f-a6136d7cba6a",
+                  "tierId": "def41f4d-d307-48aa-b1c2-ad79d4f3ecb5",
+                  "modifierDescription": "+#% Elemental Damage",
+                  "rolledValues": [
+                    {
+                      "value": 135,
+                      "minValue": 109,
+                      "maxValue": 140,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "0"
+                },
+                {
+                  "affixId": "515880cf-7369-4565-bd94-3e42e85d0be0",
+                  "tierId": "680e6289-1377-42d2-b9ae-56f456b95154",
+                  "modifierDescription": "+#% Spell Critical Strike Damage",
+                  "rolledValues": [
+                    {
+                      "value": 109,
+                      "minValue": 91,
+                      "maxValue": 117,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "0"
+                }
+              ],
+              "displayName": "(Priceless): Headless Cleric Wand",
+              "displayIcon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_128.webp"
+            },
+            {
+              "id": "c01671cd-fac2-423a-a829-9e95ce034bc4",
+              "rarity": "Rare",
+              "gearCategory": "one_handed",
+              "gearSubType": "wand",
+              "baseItem": {
+                "baseItemId": "1a96253f-48ba-423f-89a6-d655b25184c5",
+                "name": "Headless Cleric Wand",
+                "icon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_128.webp",
+                "requiredLevel": 1,
+                "implicits": [
+                  {
+                    "description": "500 Critical Strike Rating",
+                    "rawText": "500 Critical Strike Rating",
+                    "values": [
+                      {
+                        "value": 500,
+                        "minValue": 500,
+                        "maxValue": 500
+                      }
+                    ]
+                  },
+                  {
+                    "description": "1.2 Attack Speed",
+                    "rawText": "1.2 Attack Speed",
+                    "values": [
+                      {
+                        "value": 1.2,
+                        "minValue": 1.2,
+                        "maxValue": 1.2
+                      }
+                    ]
+                  },
+                  {
+                    "description": "+40% Spell Damage",
+                    "rawText": "+40% Spell Damage",
+                    "values": [
+                      {
+                        "value": 40,
+                        "minValue": 40,
+                        "maxValue": 40,
+                        "sign": "+",
+                        "unit": "%"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "beltBlend": null,
+              "towerSequence": {
+                "sequenceId": "9c62d528-2458-4f21-ad52-2b04dce93c86",
+                "description": "+120% Spell Amplification Aura-20% additional Spell Amplification Sealed Mana Compensation",
+                "sequenceType": "Advanced Sequence 3|3|6|7",
+                "modifierId": "",
+                "chips": [
+                  3,
+                  3,
+                  6,
+                  7
+                ]
+              },
+              "sweetDreamAffix": {
+                "affixId": "8a9c5fdf-449d-4a8c-bd98-e887dfdb50d1",
+                "description": "Projectile Quantity +1",
+                "rolledValues": [
+                  {
+                    "value": 1,
+                    "minValue": 1,
+                    "maxValue": 1,
+                    "sign": "+"
+                  }
+                ],
+                "tier": "1"
+              },
+              "baseAffix": {
+                "affixId": "2bb3df0e-24a0-4d50-9971-bbec7c02b84d",
+                "description": "Projectile Quantity +1",
+                "rolledValues": [
+                  {
+                    "value": 1,
+                    "minValue": 1,
+                    "maxValue": 1,
+                    "sign": "+"
+                  }
+                ],
+                "tier": "1"
+              },
+              "baseAffix2": null,
+              "corrosionImplicit": null,
+              "prefixes": [
+                {
+                  "affixId": "294c542c-c15c-42d4-bbfd-b8bb4a0596fa",
+                  "tierId": "4e7cd4a2-4c0e-4277-a6f7-6669371ada67",
+                  "modifierDescription": "Adds # - # Lightning Damage to Spells",
+                  "rolledValues": [
+                    {
+                      "value": 11,
+                      "minValue": 9,
+                      "maxValue": 11
+                    },
+                    {
+                      "value": 186,
+                      "minValue": 184,
+                      "maxValue": 186
+                    }
+                  ],
+                  "tier": "0"
+                },
+                {
+                  "affixId": "57849f5c-acb8-4125-9ca8-ca7ccac42ffc",
+                  "tierId": "365f9837-957a-4b30-ab6f-ab60ad69c2a6",
+                  "modifierDescription": "+# Spell Skill Level",
+                  "rolledValues": [
+                    {
+                      "value": 4,
+                      "minValue": 3,
+                      "maxValue": 4,
+                      "sign": "+"
+                    }
+                  ],
+                  "tier": "0"
+                },
+                {
+                  "affixId": "0693bf42-c85e-44f0-83f6-eac7c3be795d",
+                  "tierId": "2016ea70-0f7e-44c1-8997-772168760c40",
+                  "modifierDescription": "+# Cold Skill Level",
+                  "rolledValues": [
+                    {
+                      "value": 3,
+                      "minValue": 2,
+                      "maxValue": 3,
+                      "sign": "+"
+                    }
+                  ],
+                  "tier": "0"
+                }
+              ],
+              "suffixes": [
+                {
+                  "affixId": "7f572a5b-74e1-4d96-8a6c-dd432457b104",
+                  "tierId": "8d7f718a-155e-4610-8f6a-02d53f5bc311",
+                  "modifierDescription": "+#% Tangle Damage Enhancement",
+                  "rolledValues": [
+                    {
+                      "value": 62,
+                      "minValue": 55,
+                      "maxValue": 65,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "0"
+                },
+                {
+                  "affixId": "a66ebebb-588c-4b61-b396-37924889e9fb",
+                  "tierId": "f2b7b62f-ee92-48cd-a592-5984cf14853c",
+                  "modifierDescription": "+#% Cast Speed+#% Minion Cast Speed",
+                  "rolledValues": [
+                    {
+                      "value": 44,
+                      "minValue": 34,
+                      "maxValue": 47,
+                      "sign": "+",
+                      "unit": "%"
+                    },
+                    {
+                      "value": 44,
+                      "minValue": 34,
+                      "maxValue": 47,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "0"
+                },
+                {
+                  "affixId": "515880cf-7369-4565-bd94-3e42e85d0be0",
+                  "tierId": "680e6289-1377-42d2-b9ae-56f456b95154",
+                  "modifierDescription": "+#% Spell Critical Strike Damage",
+                  "rolledValues": [
+                    {
+                      "value": 110,
+                      "minValue": 91,
+                      "maxValue": 117,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "0"
+                }
+              ],
+              "displayName": "(Priceless): Headless Cleric Wand",
+              "displayIcon": "/images/rare-gear/one_handed/wand/Icon_Equip_Weapon_Wand_Norm_001_128.webp"
+            },
+            {
+              "id": "gear-1779823202740-sj5j8gkxi",
+              "rarity": "Legendary",
+              "gearCategory": "chest_armor",
+              "gearSubType": "dex_chest_armor",
+              "legendaryItem": {
+                "legendaryId": "dc412fe2-03a5-4848-b62d-0389f0e7590f",
+                "name": "Double Rainbow",
+                "icon": "/images/legendaries/chest_armor/dex_chest_armor/Icon_Equip_Armor_Epic_423_128.webp",
+                "requiredLevel": 1
+              },
+              "legendaryMods": [
+                {
+                  "modId": "b2840dbe-9254-4aa5-af93-5f9b03146de0",
+                  "description": "+1% all stats",
+                  "variant": "normal",
+                  "rolledValues": [
+                    {
+                      "value": 1,
+                      "minValue": 1,
+                      "maxValue": 1,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "modId": "91a65711-36a3-4b31-9bb2-d5ef8bb33354",
+                  "description": "+10% Elemental Resistance",
+                  "variant": "normal",
+                  "rolledValues": [
+                    {
+                      "value": 10,
+                      "minValue": 6,
+                      "maxValue": 10,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "modId": "5dccae26-9218-4b6a-b984-80f7d2fe7fe1",
+                  "description": "+12% additional damage for every 2 types of Resistance with identical values (multiplies)",
+                  "variant": "corroded",
+                  "rolledValues": [
+                    {
+                      "value": 12,
+                      "minValue": 12,
+                      "maxValue": 13,
+                      "sign": "+",
+                      "unit": "%"
+                    },
+                    {
+                      "value": 2,
+                      "minValue": 2,
+                      "maxValue": 2
+                    }
+                  ]
+                },
+                {
+                  "modId": "9a2be9af-216a-4b0e-8026-3c9498c005c7",
+                  "description": "-5% additional damage taken for every 2 types of Resistance with identical values (multiplies)",
+                  "variant": "corroded",
+                  "rolledValues": [
+                    {
+                      "value": -5,
+                      "minValue": -6,
+                      "maxValue": -5,
+                      "sign": "-",
+                      "unit": "%"
+                    },
+                    {
+                      "value": 2,
+                      "minValue": 2,
+                      "maxValue": 2
+                    }
+                  ]
+                }
+              ],
+              "corrosionImplicit": null,
+              "beltBlend": null,
+              "displayName": "Double Rainbow",
+              "displayIcon": "/images/legendaries/chest_armor/dex_chest_armor/Icon_Equip_Armor_Epic_423_128.webp"
+            },
+            {
+              "id": "gear-1779823216867-wi4zn394m",
+              "rarity": "Legendary",
+              "gearCategory": "gloves",
+              "gearSubType": "dex_gloves",
+              "legendaryItem": {
+                "legendaryId": "b636961d-a8ed-4df9-96d7-f084fcb0ba3d",
+                "name": "Stray Bird's Return",
+                "icon": "/images/legendaries/gloves/dex_gloves/Icon_Equip_Gloves_Epic_428_128.webp",
+                "requiredLevel": 1
+              },
+              "legendaryMods": [
+                {
+                  "modId": "42f65562-5193-4a1a-8200-8cff73b14bf0",
+                  "description": "+3456 gear Evasion",
+                  "variant": "normal",
+                  "rolledValues": [
+                    {
+                      "value": 3456,
+                      "minValue": 1880,
+                      "maxValue": 3456,
+                      "sign": "+"
+                    }
+                  ]
+                },
+                {
+                  "modId": "1fe76e6b-be1d-4abc-97db-e76867bfb938",
+                  "description": "-1 Attack Projectile Skill Level",
+                  "variant": "normal",
+                  "rolledValues": [
+                    {
+                      "value": 1,
+                      "minValue": -1,
+                      "maxValue": 1,
+                      "sign": "-"
+                    }
+                  ]
+                },
+                {
+                  "modId": "68b0485c-6530-443f-8870-b8f6f273e005",
+                  "description": "Normal Projectiles will return after reaching their max range and will hit enemies on their path again",
+                  "variant": "corroded",
+                  "rolledValues": []
+                },
+                {
+                  "modId": "97fac0bc-d01d-4512-b286-bde9cfa0bab1",
+                  "description": "Stray Bird\n+93% additional Returning Projectile Damage",
+                  "variant": "corroded",
+                  "rolledValues": [
+                    {
+                      "value": 93,
+                      "minValue": 80,
+                      "maxValue": 100,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ],
+              "corrosionImplicit": null,
+              "beltBlend": null,
+              "displayName": "Stray Bird's Return",
+              "displayIcon": "/images/legendaries/gloves/dex_gloves/Icon_Equip_Gloves_Epic_428_128.webp"
+            }
+          ]
+        },
+        "vorax": {
+          "equipped": {
+            "chest": null,
+            "head": null,
+            "hands": null,
+            "legs": null,
+            "neck": null,
+            "digits": null,
+            "waist": null
+          },
+          "inventory": [
+            {
+              "id": "vorax-1779823187345-2kdcd6zgd",
+              "limbType": "head",
+              "baseAffix": {
+                "affixId": "f85ae010-2944-4d42-8cf9-ab7fcdb5e4b5",
+                "description": "Adds 10 - 10 Base Ailment Damage",
+                "rolledValues": [
+                  {
+                    "value": 10,
+                    "minValue": 10,
+                    "maxValue": 10
+                  },
+                  {
+                    "value": 10,
+                    "minValue": 10,
+                    "maxValue": 10
+                  }
+                ],
+                "tier": "1"
+              },
+              "affixes": [
+                {
+                  "affixId": "b244f443-ae0e-4bda-9bac-2915a89eb057",
+                  "tierId": "a4fee027-8837-488f-aedb-4abd063b46be",
+                  "modifierDescription": "You can apply 1 additional Tangle(s) to enemies+15% Tangle Damage Enhancement",
+                  "rolledValues": [
+                    {
+                      "value": 1,
+                      "minValue": 1,
+                      "maxValue": 1
+                    },
+                    {
+                      "value": 15,
+                      "minValue": 12,
+                      "maxValue": 15,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "0",
+                  "affixType": "Ultimate",
+                  "isLegendary": false,
+                  "descriptionTemplate": "You can apply # additional Tangle(s) to enemies+#% Tangle Damage Enhancement",
+                  "fullRange": [
+                    {
+                      "minValue": 1,
+                      "maxValue": 1
+                    },
+                    {
+                      "minValue": 1,
+                      "maxValue": 25,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "affixId": "cb62c5ac-f448-473b-a668-d99a16fbdd9c",
+                  "tierId": "6950932c-002a-44d4-b700-7850bf9d985f",
+                  "modifierDescription": "+35% Projectile Speed",
+                  "rolledValues": [
+                    {
+                      "value": 35,
+                      "minValue": 8,
+                      "maxValue": 76,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "1",
+                  "affixType": "Advanced",
+                  "isLegendary": false,
+                  "descriptionTemplate": "+#% Projectile Speed",
+                  "fullRange": [
+                    {
+                      "minValue": 8,
+                      "maxValue": 76,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "affixId": "6313cf6e-8276-43ca-b069-e266d0e20b00",
+                  "modifierDescription": "[Malign Embrace] - +2 Max Tangle Quantity",
+                  "rolledValues": [
+                    {
+                      "value": 2,
+                      "minValue": 2,
+                      "maxValue": 2,
+                      "sign": "+"
+                    }
+                  ],
+                  "tier": "1",
+                  "affixType": "Legendary",
+                  "isLegendary": true,
+                  "legendaryId": "8643bf68-ba34-422d-9bd6-6be4123f0812"
+                },
+                {
+                  "affixId": "251c9dbf-3457-496b-9dec-6bfed52de08e",
+                  "modifierDescription": "[Malign Embrace] - Dormant Entanglement gains an additional effect: +(100–120) Spell Critical Strike Rating and +(12–15)% additional damage on Critical Strike for each activated Tangle",
+                  "rolledValues": [
+                    {
+                      "value": 120,
+                      "minValue": 100,
+                      "maxValue": 120,
+                      "sign": "+"
+                    },
+                    {
+                      "value": 15,
+                      "minValue": 12,
+                      "maxValue": 15,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "1",
+                  "affixType": "Legendary",
+                  "isLegendary": true,
+                  "legendaryId": "8643bf68-ba34-422d-9bd6-6be4123f0812"
+                },
+                {
+                  "affixId": "4caabcdf-5e8f-4e91-afa5-fed302e42949",
+                  "tierId": "d5ace1ca-eb1c-4910-8a52-22ac31351c0c",
+                  "modifierDescription": "+25% Sealed Mana Compensation",
+                  "rolledValues": [
+                    {
+                      "value": 25,
+                      "minValue": 11,
+                      "maxValue": 34,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "0",
+                  "affixType": "Ultimate",
+                  "isLegendary": false,
+                  "descriptionTemplate": "+#% Sealed Mana Compensation",
+                  "fullRange": [
+                    {
+                      "minValue": 11,
+                      "maxValue": 34,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ]
+                },
+                {
+                  "affixId": "4b4da42e-fabf-49e1-b4b2-ad4777ed8754",
+                  "tierId": "2a992fe5-4abe-4441-8ded-4d307df0eb84",
+                  "modifierDescription": "+23% Attack and Cast Speed+23% Minion Attack and Cast Speed",
+                  "rolledValues": [
+                    {
+                      "value": 23,
+                      "minValue": 5,
+                      "maxValue": 41,
+                      "sign": "+",
+                      "unit": "%"
+                    },
+                    {
+                      "value": 23,
+                      "minValue": 5,
+                      "maxValue": 41,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ],
+                  "tier": "1",
+                  "affixType": "Advanced",
+                  "isLegendary": false,
+                  "descriptionTemplate": "+#% Attack and Cast Speed+#% Minion Attack and Cast Speed",
+                  "fullRange": [
+                    {
+                      "minValue": 5,
+                      "maxValue": 41,
+                      "sign": "+",
+                      "unit": "%"
+                    },
+                    {
+                      "minValue": 5,
+                      "maxValue": 41,
+                      "sign": "+",
+                      "unit": "%"
+                    }
+                  ]
+                }
+              ],
+              "displayName": "Head",
+              "displayIcon": "/images/rare-gear/vorax/UI_S13_Equipment_02.webp"
+            }
+          ]
+        },
+        "skills": {
+          "activeSkills": [
+            {
+              "skillGuid": "0d6eec2a-e7ba-4b90-bf27-84bb5fc28331",
+              "enabled": true,
+              "level": 20,
+              "supports": [
+                {
+                  "supportGuid": "e79f1106-da5b-4326-b31a-82129aa3482a",
+                  "type": "activation_medium",
+                  "icon": "/images/skill/UI_Skill_CMEntanglement_Icon_128.webp",
+                  "tier": 2
+                },
+                {
+                  "supportGuid": "8c106fa7-d268-4590-81d6-cd69236e5d94",
+                  "type": "support",
+                  "icon": "/images/skill/Icon_Support_IncreasedCriticalDamage_128.webp",
+                  "level": 20
+                },
+                {
+                  "supportGuid": "85182d40-ed9d-43ad-a589-b60bb0ed164a",
+                  "type": "magnificent_support",
+                  "icon": "/images/skill/UI_Skill_Prismaticbolt_support01_Icon_128.webp",
+                  "tier": 2,
+                  "rank": 1
+                },
+                {
+                  "supportGuid": "b2bcc71a-78bc-4f18-90a7-e7802d959bc0",
+                  "type": "support",
+                  "icon": "/images/skill/Icon_Support_ExtraProjectiles_128.webp",
+                  "level": 20
+                },
+                {
+                  "supportGuid": "239d685d-a94b-4a96-b822-9c594674736f",
+                  "type": "noble_support",
+                  "icon": "/images/skill/UI_Skill_Prismaticbolt_support02_Icon_128.webp",
+                  "tier": 2,
+                  "rank": 1
+                }
+              ]
+            },
+            {
+              "skillGuid": "3c552fa0-5b15-4a17-a1c8-0d2cadff265c",
+              "enabled": true,
+              "level": 20,
+              "supports": [
+                {
+                  "supportGuid": "d38cba08-7bf3-461d-a5b5-915411040058",
+                  "type": "activation_medium",
+                  "icon": "/images/skill/UI_Skill_CMPerpetualMotion_Icon_128.webp",
+                  "tier": 2
+                },
+                null,
+                null,
+                null,
+                null
+              ]
+            },
+            {
+              "skillGuid": "50f6143f-8790-4b9c-a244-c92f0ed42300",
+              "enabled": true,
+              "level": 20,
+              "supports": [
+                {
+                  "supportGuid": "d38cba08-7bf3-461d-a5b5-915411040058",
+                  "type": "activation_medium",
+                  "icon": "/images/skill/UI_Skill_CMPerpetualMotion_Icon_128.webp",
+                  "tier": 2
+                },
+                {
+                  "supportGuid": "3d847ece-b916-4f68-9ddc-7a0cdc7bd873",
+                  "type": "support",
+                  "icon": "/images/skill/UI_Skill_AutoCharge_Icon_128.webp",
+                  "level": 20
+                },
+                null,
+                null,
+                null
+              ]
+            },
+            {
+              "skillGuid": "af3e5661-73ed-4754-80b8-900da37d72a7",
+              "enabled": true,
+              "level": 20,
+              "supports": [
+                {
+                  "supportGuid": "d38cba08-7bf3-461d-a5b5-915411040058",
+                  "type": "activation_medium",
+                  "icon": "/images/skill/UI_Skill_CMPerpetualMotion_Icon_128.webp",
+                  "tier": 2
+                },
+                {
+                  "supportGuid": "3d847ece-b916-4f68-9ddc-7a0cdc7bd873",
+                  "type": "support",
+                  "icon": "/images/skill/UI_Skill_AutoCharge_Icon_128.webp",
+                  "level": 20
+                },
+                {
+                  "supportGuid": "5be3b9a0-1554-4bc2-b291-5143d1c19884",
+                  "type": "support",
+                  "icon": "/images/skill/UI_Skill_PerfusedCharge_Icon_128.webp",
+                  "level": 20
+                },
+                {
+                  "supportGuid": "373ebab8-acf3-4167-a7f5-e2f98325d3bf",
+                  "type": "support",
+                  "icon": "/images/skill/UI_Skill_MedicineResidue_Icon_128.webp",
+                  "level": 20
+                },
+                {
+                  "supportGuid": "5d4e64e7-d941-434c-9df9-ae37c2105d65",
+                  "type": "support",
+                  "icon": "/images/skill/UI_Skill_MixElementSpecial_Icon_128.webp",
+                  "level": 20
+                }
+              ]
+            },
+            {
+              "skillGuid": "d8da46fe-d9da-484b-b670-a5f61c40e00d",
+              "enabled": true,
+              "level": 20,
+              "supports": [
+                {
+                  "supportGuid": "b7da6016-ccf7-4817-9498-d9f12c99b225",
+                  "type": "support",
+                  "icon": "/images/skill/UI_Skill_CurseArea_Icon_128.webp",
+                  "level": 20
+                },
+                {
+                  "supportGuid": "4d17864f-0310-420d-b4ca-6898a831a89a",
+                  "type": "support",
+                  "icon": "/images/skill/Icon_Support_IncreasedDuration_128.webp",
+                  "level": 20
+                },
+                {
+                  "supportGuid": "e298733d-4e4c-45c9-a41b-059f7e772c0a",
+                  "type": "support",
+                  "icon": "/images/skill/Icon_Support_CooldownReduce_128.webp",
+                  "level": 20
+                },
+                null,
+                null
+              ]
+            }
+          ],
+          "passiveSkills": [
+            {
+              "skillGuid": "4a708fa3-2cfe-4525-9fee-c5ef383061e1",
+              "enabled": true,
+              "level": 20,
+              "supports": [
+                {
+                  "supportGuid": "ba9c8330-cde2-4856-b69c-4a854bc292b7",
+                  "type": "support",
+                  "icon": "/images/skill/Icon_Support_Enlightenment_128.webp",
+                  "level": 20
+                },
+                {
+                  "supportGuid": "93f86186-f847-4ed2-89fe-c54e08761c03",
+                  "type": "support",
+                  "icon": "/images/skill/UI_Skill_AuraEnhance_Icon_128.webp",
+                  "level": 20
+                },
+                {
+                  "supportGuid": "f6717934-9579-4514-85f3-d3c7482ef86f",
+                  "type": "support",
+                  "icon": "/images/skill/UI_Skill_AuraConcentrateSpecial_Icon_128.webp",
+                  "level": 20
+                },
+                null,
+                null
+              ]
+            },
+            {
+              "skillGuid": "64031fb1-e6f6-4abc-8dca-a8a1c77b5c26",
+              "enabled": true,
+              "level": 20,
+              "supports": [
+                {
+                  "supportGuid": "ba9c8330-cde2-4856-b69c-4a854bc292b7",
+                  "type": "support",
+                  "icon": "/images/skill/Icon_Support_Enlightenment_128.webp",
+                  "level": 20
+                },
+                {
+                  "supportGuid": "93f86186-f847-4ed2-89fe-c54e08761c03",
+                  "type": "support",
+                  "icon": "/images/skill/UI_Skill_AuraEnhance_Icon_128.webp",
+                  "level": 20
+                },
+                {
+                  "supportGuid": "f6717934-9579-4514-85f3-d3c7482ef86f",
+                  "type": "support",
+                  "icon": "/images/skill/UI_Skill_AuraConcentrateSpecial_Icon_128.webp",
+                  "level": 20
+                },
+                null,
+                null
+              ]
+            },
+            {
+              "skillGuid": "a3e4f8cc-d57e-4aa1-a1e5-0c719889c1f6",
+              "enabled": true,
+              "level": 20,
+              "supports": [
+                {
+                  "supportGuid": "ba9c8330-cde2-4856-b69c-4a854bc292b7",
+                  "type": "support",
+                  "icon": "/images/skill/Icon_Support_Enlightenment_128.webp",
+                  "level": 20
+                },
+                {
+                  "supportGuid": "4af6e3b0-9e29-4059-b13f-7032d1561235",
+                  "type": "support",
+                  "icon": "/images/skill/UI_Skill_FriendsOfSpiritMagus_Icon_128.webp",
+                  "level": 20
+                },
+                {
+                  "supportGuid": "8f689a31-b44b-4241-800d-84b89b0f0148",
+                  "type": "support",
+                  "icon": "/images/skill/UI_SkillIcon_Support_SysmbiosisSpecial_Icon_128.webp",
+                  "level": 20
+                },
+                null,
+                null
+              ]
+            },
+            {
+              "skillGuid": "c73e5d5f-3714-45e9-a5e1-32e9ecc81eb9",
+              "enabled": true,
+              "level": 20,
+              "supports": [
+                {
+                  "supportGuid": "ba9c8330-cde2-4856-b69c-4a854bc292b7",
+                  "type": "support",
+                  "icon": "/images/skill/Icon_Support_Enlightenment_128.webp",
+                  "level": 20
+                },
+                {
+                  "supportGuid": "4af6e3b0-9e29-4059-b13f-7032d1561235",
+                  "type": "support",
+                  "icon": "/images/skill/UI_Skill_FriendsOfSpiritMagus_Icon_128.webp",
+                  "level": 20
+                },
+                {
+                  "supportGuid": "8f689a31-b44b-4241-800d-84b89b0f0148",
+                  "type": "support",
+                  "icon": "/images/skill/UI_SkillIcon_Support_SysmbiosisSpecial_Icon_128.webp",
+                  "level": 20
+                },
+                null,
+                null
+              ]
+            }
+          ]
+        },
+        "skillTree": {
+          "slots": [
+            {
+              "treeId": "goddess_of_knowledge",
+              "nodePoints": {
+                "eb45d276-e663-4c88-a708-fcc06a431ee1": 3,
+                "448eb82c-3738-4dea-b773-1c2bea794743": 3,
+                "23702e20-72a6-4aea-bfe6-2b3055e3f614": 3,
+                "95422dbe-673b-4f9d-83be-f29f1d36fbc9": 3,
+                "c4c74efc-a89a-4945-8719-3dde5f65baac": 1,
+                "f4cf01b9-2c2f-4833-b14d-4d85b7b8747a": 3,
+                "9cdf3ec6-bbed-4415-b240-58d10a5eb5ca": 3,
+                "38623154-37f1-4ee4-983d-5660f059b321": 3,
+                "55d8a077-a009-476c-9aae-b96104526ba7": 3
+              },
+              "selectedNotable12": "f2b56d51-9bcd-4b79-82e8-ae7cae5eb9ac",
+              "selectedNotable24": "8d1ccba0-aba4-4f6b-8fe4-68c4bf00adfb",
+              "prismId": null,
+              "equippedPrism": null,
+              "prismCoreTalentOverride": null,
+              "inverseImageState": null
+            },
+            {
+              "treeId": "elementalist",
+              "nodePoints": {
+                "004cf1e9-c9ee-464f-a820-147d3196536a": 3,
+                "7f227bed-be10-4563-bf0c-3c2a91d70d20": 3,
+                "5bbd525c-e034-4475-89f3-7d251878c048": 1,
+                "4c57e692-6e28-4e3b-9683-bf74ac58cd2a": 3,
+                "442f6306-591f-48e7-a6ae-91f515f2b3d8": 3,
+                "86f88a31-5189-4f63-b6a7-d13043c4ee8f": 1,
+                "973dde89-0317-47aa-9f55-ae0ae863cf7f": 1,
+                "f7bde225-2d96-49c0-815f-c05cc8ba6d4e": 1,
+                "61efa5b3-5751-4eba-8c83-c52017712b12": 3
+              },
+              "selectedNotable12": null,
+              "selectedNotable24": "39f46b56-39b7-43db-aff3-cd3c5fc4c6bd",
+              "prismId": "prism-1777819456505-3t66w1zha",
+              "equippedPrism": {
+                "prismId": "prism-1777819456505-3t66w1zha",
+                "nodeId": "56f3bd9a-5584-41bc-9637-5109769b5d5d",
+                "affectedNodeIds": [
+                  "004cf1e9-c9ee-464f-a820-147d3196536a",
+                  "7f227bed-be10-4563-bf0c-3c2a91d70d20",
+                  "86f88a31-5189-4f63-b6a7-d13043c4ee8f",
+                  "56f3bd9a-5584-41bc-9637-5109769b5d5d",
+                  "f7bde225-2d96-49c0-815f-c05cc8ba6d4e",
+                  "4c57e692-6e28-4e3b-9683-bf74ac58cd2a",
+                  "5bbd525c-e034-4475-89f3-7d251878c048",
+                  "973dde89-0317-47aa-9f55-ae0ae863cf7f"
+                ],
+                "replacesCoreTalent": false
+              },
+              "prismCoreTalentOverride": null,
+              "inverseImageState": {
+                "centerNodeId": "56f3bd9a-5584-41bc-9637-5109769b5d5d",
+                "radiusNodeIds": [
+                  "004cf1e9-c9ee-464f-a820-147d3196536a",
+                  "7f227bed-be10-4563-bf0c-3c2a91d70d20",
+                  "86f88a31-5189-4f63-b6a7-d13043c4ee8f",
+                  "56f3bd9a-5584-41bc-9637-5109769b5d5d",
+                  "f7bde225-2d96-49c0-815f-c05cc8ba6d4e",
+                  "4c57e692-6e28-4e3b-9683-bf74ac58cd2a",
+                  "5bbd525c-e034-4475-89f3-7d251878c048",
+                  "973dde89-0317-47aa-9f55-ae0ae863cf7f"
+                ],
+                "mirroredNodes": [
+                  {
+                    "originalNodeId": "004cf1e9-c9ee-464f-a820-147d3196536a",
+                    "mirroredNodeId": "mirrored_004cf1e9-c9ee-464f-a820-147d3196536a_1_M9",
+                    "tier": 2,
+                    "position": 2,
+                    "svgPosition": {
+                      "cx": 352,
+                      "cy": 272
+                    },
+                    "mNumber": 9
+                  },
+                  {
+                    "originalNodeId": "7f227bed-be10-4563-bf0c-3c2a91d70d20",
+                    "mirroredNodeId": "mirrored_7f227bed-be10-4563-bf0c-3c2a91d70d20_1_M8",
+                    "tier": 2,
+                    "position": 1,
+                    "svgPosition": {
+                      "cx": 224,
+                      "cy": 272
+                    },
+                    "mNumber": 8
+                  },
+                  {
+                    "originalNodeId": "86f88a31-5189-4f63-b6a7-d13043c4ee8f",
+                    "mirroredNodeId": "mirrored_86f88a31-5189-4f63-b6a7-d13043c4ee8f_1_M7",
+                    "tier": 2,
+                    "position": 0,
+                    "svgPosition": {
+                      "cx": 96,
+                      "cy": 272
+                    },
+                    "mNumber": 7
+                  },
+                  {
+                    "originalNodeId": "56f3bd9a-5584-41bc-9637-5109769b5d5d",
+                    "mirroredNodeId": "mirrored_56f3bd9a-5584-41bc-9637-5109769b5d5d_1_M5",
+                    "tier": 1,
+                    "position": 1,
+                    "svgPosition": {
+                      "cx": 224,
+                      "cy": 176
+                    },
+                    "mNumber": 5
+                  },
+                  {
+                    "originalNodeId": "f7bde225-2d96-49c0-815f-c05cc8ba6d4e",
+                    "mirroredNodeId": "mirrored_f7bde225-2d96-49c0-815f-c05cc8ba6d4e_1_M4",
+                    "tier": 1,
+                    "position": 0,
+                    "svgPosition": {
+                      "cx": 96,
+                      "cy": 176
+                    },
+                    "mNumber": 4
+                  },
+                  {
+                    "originalNodeId": "4c57e692-6e28-4e3b-9683-bf74ac58cd2a",
+                    "mirroredNodeId": "mirrored_4c57e692-6e28-4e3b-9683-bf74ac58cd2a_1_M3",
+                    "tier": 0,
+                    "position": 2,
+                    "svgPosition": {
+                      "cx": 352,
+                      "cy": 80
+                    },
+                    "mNumber": 3
+                  },
+                  {
+                    "originalNodeId": "5bbd525c-e034-4475-89f3-7d251878c048",
+                    "mirroredNodeId": "mirrored_5bbd525c-e034-4475-89f3-7d251878c048_1_M2",
+                    "tier": 0,
+                    "position": 1,
+                    "svgPosition": {
+                      "cx": 224,
+                      "cy": 80
+                    },
+                    "mNumber": 2
+                  },
+                  {
+                    "originalNodeId": "973dde89-0317-47aa-9f55-ae0ae863cf7f",
+                    "mirroredNodeId": "mirrored_973dde89-0317-47aa-9f55-ae0ae863cf7f_1_M1",
+                    "tier": 0,
+                    "position": 0,
+                    "svgPosition": {
+                      "cx": 96,
+                      "cy": 80
+                    },
+                    "mNumber": 1
+                  }
+                ],
+                "mirroredNodePoints": {
+                  "mirrored_973dde89-0317-47aa-9f55-ae0ae863cf7f_1_M1": 1,
+                  "mirrored_f7bde225-2d96-49c0-815f-c05cc8ba6d4e_1_M4": 1,
+                  "mirrored_86f88a31-5189-4f63-b6a7-d13043c4ee8f_1_M7": 1,
+                  "mirrored_5bbd525c-e034-4475-89f3-7d251878c048_1_M2": 1,
+                  "mirrored_4c57e692-6e28-4e3b-9683-bf74ac58cd2a_1_M3": 3,
+                  "mirrored_56f3bd9a-5584-41bc-9637-5109769b5d5d_1_M5": 3,
+                  "mirrored_7f227bed-be10-4563-bf0c-3c2a91d70d20_1_M8": 3,
+                  "mirrored_004cf1e9-c9ee-464f-a820-147d3196536a_1_M9": 3
+                }
+              }
+            },
+            {
+              "treeId": "marksman",
+              "nodePoints": {
+                "ea86ceba-7a57-45dc-9d44-171ad6b0ed8d": 3,
+                "7c79b6ee-1048-4790-82a4-694c6fba97b5": 3,
+                "789bc77a-4b00-4483-9962-eca38bb0962e": 3,
+                "40b3f967-7066-44ab-a4f1-e96e9c290437": 1,
+                "c413cd08-f669-4667-ac0a-2454b7e0af03": 3,
+                "d6787173-065b-4f43-baf1-270d991d325c": 1,
+                "d01dbcc3-c0ac-479c-b308-04fb06d43743": 3,
+                "1451b3c5-0e67-43be-8ea1-8a7f65b47163": 3,
+                "45229cf0-9b45-4fa9-8fe3-35f97458e4f6": 3,
+                "b44975e3-1a85-4131-ba87-7e5b0803cea5": 3
+              },
+              "selectedNotable12": null,
+              "selectedNotable24": "f1abc47b-565d-4ab3-a9cb-4a191983547d",
+              "prismId": null,
+              "equippedPrism": null,
+              "prismCoreTalentOverride": null,
+              "inverseImageState": null
+            },
+            {
+              "treeId": "warlock",
+              "nodePoints": {
+                "0b32838e-79e6-450c-a5ba-869749dac726": 3,
+                "ca53142a-8c1e-42e9-81ea-39329c977f63": 3,
+                "7abe2de1-07bc-4321-aa2b-6a2e14396e2e": 3,
+                "5c4ded75-333a-40fd-ac32-d2e709ec0b17": 3,
+                "4a542459-001f-41db-b60c-0387e9501996": 1,
+                "bfab298b-6a16-4c7a-bf7e-27fcb17b9823": 3,
+                "f358174f-058b-4b82-8082-dac756a46dab": 1,
+                "67bbeb5c-a501-457f-8a65-bcf17f9309e1": 3,
+                "be86231f-b3d6-432e-8c8d-bc60fd960084": 1,
+                "1787e527-f924-4fda-9d58-427d26874b7d": 1,
+                "e15f4751-b1ea-4cba-9240-3420876d06b1": 1,
+                "e1b4bbde-86c5-4716-8542-7e9cca52095b": 3,
+                "0c0f889b-6b5b-4876-bba7-6f3b63b8f0cc": 1,
+                "5f821595-80ed-4def-ae94-dbf0b00710b2": 2
+              },
+              "selectedNotable12": null,
+              "selectedNotable24": "e3dc6f22-0fb2-4e68-ba3f-f495142e6902",
+              "prismId": "prism-1777819525850-a3uywig64",
+              "equippedPrism": {
+                "prismId": "prism-1777819525850-a3uywig64",
+                "nodeId": "fb4ab3e9-ea9a-4998-a177-700a1f820a4b",
+                "affectedNodeIds": [
+                  "f358174f-058b-4b82-8082-dac756a46dab",
+                  "fb4ab3e9-ea9a-4998-a177-700a1f820a4b",
+                  "1787e527-f924-4fda-9d58-427d26874b7d",
+                  "67bbeb5c-a501-457f-8a65-bcf17f9309e1",
+                  "be86231f-b3d6-432e-8c8d-bc60fd960084"
+                ],
+                "replacesCoreTalent": false
+              },
+              "prismCoreTalentOverride": {
+                "name": "Miraculous Touch",
+                "description": "释放灵药技能时，触发<e id=814>妙手偶得</e><br/>灵药技能每秒获得 1 充能进度",
+                "iconUrl": "/images/ethereal-prism/UI_S12_LengJing_Purple19.webp"
+              },
+              "inverseImageState": null
+            }
+          ],
+          "allocationOrder": [],
+          "recordOrder": true
+        },
+        "divinity": {
+          "inventory": [
+            {
+              "id": "slate-1777821342606-d7cuvz",
+              "type": "legendary",
+              "shapeId": "O1",
+              "orientation": {
+                "rotation": 270,
+                "flipH": false,
+                "flipV": false
+              },
+              "affixes": [
+                {
+                  "modGuid": "c52720c5-7054-47ef-be1f-07dc005d1141",
+                  "nodeType": "Insight",
+                  "slateType": "Goddess of Knowledge",
+                  "description": "+30 % additional Spell Damage\n+25 % additional Skill Cost",
+                  "icon": "/images/divinity-slate/UI_CoreTalentIcon_biejuhuiyan_Icon_128.webp",
+                  "slotIndex": 2
+                },
+                {
+                  "modGuid": "6fefe3cf-4568-4e7b-8370-832b6e1d89e4",
+                  "nodeType": "Three Birds with One Stone",
+                  "slateType": "Goddess of Hunting",
+                  "description": "Projectile Quantity +2\n+2 to Parabolic Projectile Splits quantity\n+10 % additional Projectile Damage",
+                  "icon": "/images/divinity-slate/UI_CoreTalentIcon_yijiansandiao_Icon_128.webp",
+                  "slotIndex": 3
+                }
+              ],
+              "legendaryTemplate": "Pedigree of Gods",
+              "legendaryTemplateId": "3f96e0e3-d729-4eee-a5fa-fd26d6bdc639",
+              "legendaryIcon": "/images/divinity-slate/UI_MI_TalantNG_Gold_ZZ1_0_Icon_128.webp"
+            },
+            {
+              "id": "slate-1777821387419-j07gwh",
+              "type": "rare",
+              "shapeId": "T1",
+              "orientation": {
+                "rotation": 0,
+                "flipH": true,
+                "flipV": true
+              },
+              "god": "Knowledge",
+              "affixes": [
+                {
+                  "modGuid": "cb32217f-d9a9-4f86-98c9-7555d27a7cde",
+                  "nodeType": "Legendary Medium Talent",
+                  "slateType": "Magister",
+                  "description": "Gains 1 stack(s) of Focus Blessing when activating Spell Burst or generating Tangle",
+                  "icon": "",
+                  "slotIndex": 0
+                },
+                {
+                  "modGuid": "03d13b07-959c-40f3-97bb-f25081435d8c",
+                  "nodeType": "Legendary Medium Talent",
+                  "slateType": "Elementalist",
+                  "description": "+1 Cold Skill Level",
+                  "icon": "",
+                  "slotIndex": 1
+                },
+                {
+                  "modGuid": "e3d2d4c1-d089-4c5f-be63-f1a0ca85d0a0",
+                  "nodeType": "Medium Talent",
+                  "slateType": "Arcanist",
+                  "description": "+3 % Sealed Mana Compensation",
+                  "icon": "",
+                  "slotIndex": 2
+                },
+                {
+                  "modGuid": "95128ef1-75c0-48cf-b886-8878865b575e",
+                  "nodeType": "Legendary Medium Talent",
+                  "slateType": "Goddess of Knowledge",
+                  "description": "+1 Spell Skill Level",
+                  "icon": "",
+                  "slotIndex": 3
+                },
+                {
+                  "modGuid": "732297f2-a1a6-4fa8-88ff-f4383f87217e",
+                  "nodeType": "Legendary Medium Talent",
+                  "slateType": "Elementalist",
+                  "description": "+1 Fire Skill Level",
+                  "icon": "",
+                  "slotIndex": 4
+                }
+              ]
+            },
+            {
+              "id": "slate-1777821544868-h3pzxz",
+              "type": "legendary",
+              "shapeId": "O1",
+              "orientation": {
+                "rotation": 0,
+                "flipH": false,
+                "flipV": false
+              },
+              "affixes": [
+                {
+                  "modGuid": "fixed-0",
+                  "nodeType": "Fixed",
+                  "slateType": "When Sparks Set the Prairie Ablaze",
+                  "description": "Copies the last Talent on all adjacent slates. Unable to copy Core Talents.",
+                  "icon": "/images/divinity-slate/UI_MI_TalantNG_Gold_O3_0_Icon_128.webp"
+                }
+              ],
+              "legendaryTemplate": "When Sparks Set the Prairie Ablaze",
+              "legendaryTemplateId": "363c6f7a-5367-4e58-a2c4-2fba26a53528",
+              "legendaryIcon": "/images/divinity-slate/UI_MI_TalantNG_Gold_O3_0_Icon_128.webp",
+              "copyDirections": [
+                "Above"
+              ],
+              "selectedCopyModIndex": 0
+            },
+            {
+              "id": "slate-1777821565814-fimlwn",
+              "type": "legendary",
+              "shapeId": "O1",
+              "orientation": {
+                "rotation": 0,
+                "flipH": true,
+                "flipV": false
+              },
+              "affixes": [
+                {
+                  "modGuid": "95128ef1-75c0-48cf-b886-8878865b575e",
+                  "nodeType": "Legendary Medium Talent",
+                  "slateType": "Goddess of Knowledge",
+                  "description": "+1 Spell Skill Level",
+                  "icon": "",
+                  "slotIndex": 0
+                },
+                {
+                  "modGuid": "03d13b07-959c-40f3-97bb-f25081435d8c",
+                  "nodeType": "Legendary Medium Talent",
+                  "slateType": "Elementalist",
+                  "description": "+1 Cold Skill Level",
+                  "icon": "",
+                  "slotIndex": 1
+                }
+              ],
+              "legendaryTemplate": "A Corner of Divinity",
+              "legendaryTemplateId": "17d8befa-e918-4ee7-9112-d68984797a56",
+              "legendaryIcon": "/images/divinity-slate/UI_MI_TalantNG_Gold_V1_0_Icon_128.webp"
+            },
+            {
+              "id": "34e73555-4fe2-4cba-8ef1-51e698e0446d",
+              "type": "legendary",
+              "shapeId": "O1",
+              "orientation": {
+                "rotation": 180,
+                "flipH": true,
+                "flipV": false
+              },
+              "affixes": [
+                {
+                  "modGuid": "8775715f-aba3-47b8-b723-bb05c1b8549e",
+                  "nodeType": "Legendary Medium Talent",
+                  "slateType": "Magister",
+                  "description": "Inflicts Frail on Spell hit",
+                  "icon": "",
+                  "slotIndex": 0
+                },
+                {
+                  "modGuid": "d8a19fc7-0809-45c3-8630-28b5a52d74b5",
+                  "nodeType": "Legendary Medium Talent",
+                  "slateType": "Elementalist",
+                  "description": "+1 Lightning Skill Level",
+                  "icon": "",
+                  "slotIndex": 1
+                }
+              ],
+              "legendaryTemplate": "A Corner of Divinity",
+              "legendaryTemplateId": "17d8befa-e918-4ee7-9112-d68984797a56",
+              "legendaryIcon": "/images/divinity-slate/UI_MI_TalantNG_Gold_V1_0_Icon_128.webp"
+            },
+            {
+              "id": "slate-1777821601725-5n9spz",
+              "type": "legendary",
+              "shapeId": "O1",
+              "orientation": {
+                "rotation": 270,
+                "flipH": false,
+                "flipV": false
+              },
+              "affixes": [
+                {
+                  "modGuid": "91ec03c6-4466-486a-af50-dd561c5a95f3",
+                  "nodeType": "Legendary Medium Talent",
+                  "slateType": "Warlock",
+                  "description": "Upon dealing damage to a Cursed target, there is a +25 % chance to Paralyze it",
+                  "icon": "",
+                  "slotIndex": 2
+                },
+                {
+                  "modGuid": "93e20905-ddf9-4b47-b781-f50b9004a76e",
+                  "nodeType": "Legendary Medium Talent",
+                  "slateType": "Ranger",
+                  "description": "+25 % chance to Mark the enemy on Critical Strike\n+20 % Mark effect",
+                  "icon": "",
+                  "slotIndex": 3
+                }
+              ],
+              "legendaryTemplate": "Fallen Starlight",
+              "legendaryTemplateId": "696b4f39-fbec-43ce-9279-97cf33d4ad35",
+              "legendaryIcon": "/images/divinity-slate/UI_MI_TalantNG_Gold_I1_0_Icon_128.webp"
+            },
+            {
+              "id": "slate-1777821636761-he5ypx",
+              "type": "rare",
+              "shapeId": "L1",
+              "orientation": {
+                "rotation": 0,
+                "flipH": true,
+                "flipV": true
+              },
+              "god": "Knowledge",
+              "affixes": [
+                {
+                  "modGuid": "03d13b07-959c-40f3-97bb-f25081435d8c",
+                  "nodeType": "Legendary Medium Talent",
+                  "slateType": "Elementalist",
+                  "description": "+1 Cold Skill Level",
+                  "icon": "",
+                  "slotIndex": 0
+                },
+                {
+                  "modGuid": "732297f2-a1a6-4fa8-88ff-f4383f87217e",
+                  "nodeType": "Legendary Medium Talent",
+                  "slateType": "Elementalist",
+                  "description": "+1 Fire Skill Level",
+                  "icon": "",
+                  "slotIndex": 1
+                },
+                {
+                  "modGuid": "69633985-aa21-47b4-b7b7-e7de659d0fba",
+                  "nodeType": "Medium Talent",
+                  "slateType": "Goddess of Knowledge",
+                  "description": "+6 % Max Life\n+6 % Max Energy Shield",
+                  "icon": "",
+                  "slotIndex": 2
+                },
+                {
+                  "modGuid": "95128ef1-75c0-48cf-b886-8878865b575e",
+                  "nodeType": "Legendary Medium Talent",
+                  "slateType": "Goddess of Knowledge",
+                  "description": "+1 Spell Skill Level",
+                  "icon": "",
+                  "slotIndex": 3
+                },
+                {
+                  "modGuid": "e1ae9e6f-cfb6-416d-89d3-b01a39570f40",
+                  "nodeType": "Legendary Medium Talent",
+                  "slateType": "Elementalist",
+                  "description": "Upon inflicting damage, penetrates 3 % of Elemental Resistance for each type of Elemental Ailment the enemy has",
+                  "icon": "",
+                  "slotIndex": 4
+                }
+              ]
+            }
+          ],
+          "placements": [
+            {
+              "slateId": "slate-1777821342606-d7cuvz",
+              "row": 3,
+              "col": 2
+            },
+            {
+              "slateId": "slate-1777821387419-j07gwh",
+              "row": 3,
+              "col": 0
+            },
+            {
+              "slateId": "slate-1777821544868-h3pzxz",
+              "row": 2,
+              "col": 2
+            },
+            {
+              "slateId": "slate-1777821565814-fimlwn",
+              "row": 1,
+              "col": 0
+            },
+            {
+              "slateId": "34e73555-4fe2-4cba-8ef1-51e698e0446d",
+              "row": 0,
+              "col": 2
+            },
+            {
+              "slateId": "slate-1777821601725-5n9spz",
+              "row": 1,
+              "col": 3
+            },
+            {
+              "slateId": "slate-1777821636761-he5ypx",
+              "row": 2,
+              "col": 3
+            }
+          ]
+        },
+        "pactspirits": [
+          {
+            "guid": "f8706091-4d86-4b14-a925-a0b09a8c5330",
+            "level": 1,
+            "allocatedNodes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11"
+            ],
+            "expansions": {
+              "11": {
+                "type": "1_Medium",
+                "virtualNodes": [
+                  {
+                    "nodeId": "virt_0_11_0",
+                    "type": "Medium"
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "guid": "0325055a-1852-4d62-8f84-4a83231df5a3",
+            "level": 1,
+            "allocatedNodes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11"
+            ],
+            "expansions": {}
+          },
+          {
+            "guid": "76a715a7-1957-4175-8d1a-bb85d6c89732",
+            "level": 1,
+            "allocatedNodes": [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8",
+              "9",
+              "10",
+              "11"
+            ],
+            "expansions": {}
+          }
+        ],
+        "kismets": [
+          {
+            "pactspritIndex": 2,
+            "nodeId": "slot_2_9",
+            "kismetGuid": "fadb60eb-1a4f-4123-bb86-0ba81964af62"
+          },
+          {
+            "pactspritIndex": 0,
+            "nodeId": "slot_0_6",
+            "kismetGuid": "fadb60eb-1a4f-4123-bb86-0ba81964af62"
+          },
+          {
+            "pactspritIndex": 1,
+            "nodeId": "slot_1_3",
+            "kismetGuid": "0d55138f-fc85-4734-8e3e-bee20611af57"
+          },
+          {
+            "pactspritIndex": 0,
+            "nodeId": "slot_0_1",
+            "kismetGuid": "95ae4652-2a6f-47ca-b6ca-3cfcbefb18ed"
+          },
+          {
+            "pactspritIndex": 0,
+            "nodeId": "slot_0_2",
+            "kismetGuid": "95ae4652-2a6f-47ca-b6ca-3cfcbefb18ed"
+          },
+          {
+            "pactspritIndex": 1,
+            "nodeId": "slot_1_1",
+            "kismetGuid": "d36208df-a7d6-4579-ac3c-bc6da979aee2"
+          },
+          {
+            "pactspritIndex": 2,
+            "nodeId": "slot_2_1",
+            "kismetGuid": "8309a026-b570-4b14-81ec-df9820b34754"
+          },
+          {
+            "pactspritIndex": 2,
+            "nodeId": "slot_2_2",
+            "kismetGuid": "cb16df91-edd1-49e7-8299-fff768571a46"
+          },
+          {
+            "pactspritIndex": 0,
+            "nodeId": "slot_0_7",
+            "kismetGuid": "1eb9278d-39bd-44c4-93ca-617d8b367bed"
+          },
+          {
+            "pactspritIndex": 0,
+            "nodeId": "slot_0_virt_0_11_0",
+            "kismetGuid": "01a592ab-9da2-4374-ae8c-b4c6d9ddfe76"
+          },
+          {
+            "pactspritIndex": 1,
+            "nodeId": "slot_1_2",
+            "kismetGuid": "1eb9278d-39bd-44c4-93ca-617d8b367bed"
+          },
+          {
+            "pactspritIndex": 1,
+            "nodeId": "slot_1_9",
+            "kismetGuid": "01a592ab-9da2-4374-ae8c-b4c6d9ddfe76"
+          },
+          {
+            "pactspritIndex": 2,
+            "nodeId": "slot_2_7",
+            "kismetGuid": "8309a026-b570-4b14-81ec-df9820b34754"
+          },
+          {
+            "pactspritIndex": 2,
+            "nodeId": "slot_2_8",
+            "kismetGuid": "95ae4652-2a6f-47ca-b6ca-3cfcbefb18ed"
+          }
+        ],
+        "scentBottle": {
+          "activeScent": "basic",
+          "basic": {
+            "skillGuid": "3c552fa0-5b15-4a17-a1c8-0d2cadff265c",
+            "damageIngredient": "afc4eabc-87cd-4fce-9c97-940140fadc87",
+            "defenseIngredient": "72dda500-966b-4da4-a494-1eaca9b4c1b5",
+            "functionalIngredient": "f414485a-2c7a-45a4-b120-91b528636210",
+            "specialIngredients": [
+              null,
+              null
+            ]
+          },
+          "special": {
+            "skillGuid": null,
+            "damageIngredient": null,
+            "defenseIngredient": null,
+            "functionalIngredient": null,
+            "specialIngredients": [
+              null,
+              null
+            ]
+          }
+        }
+      }
+    ],
+    "currentLoadoutId": "loadout_1777814031472_eohht3wjq"
+  }
+}

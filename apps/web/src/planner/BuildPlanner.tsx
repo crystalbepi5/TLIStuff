@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import {
   seedDataset,
   indexDataset,
+  parseCompendiumExport,
   type Build,
   type GearPiece,
   type GearSlot,
@@ -163,6 +164,7 @@ export function BuildPlanner() {
   const [shareCode, setShareCode] = useState('');
   const [importError, setImportError] = useState<string | null>(null);
   const [linkCopied, setLinkCopied] = useState(false);
+  const [compendiumInfo, setCompendiumInfo] = useState<string[] | null>(null);
   const [supportSearch, setSupportSearch] = useState('');
   const [talentSearch, setTalentSearch] = useState('');
 
@@ -731,6 +733,7 @@ export function BuildPlanner() {
             type="button"
             onClick={() => {
               setImportError(null);
+              setCompendiumInfo(null);
               try {
                 setBuild(decodeBuild(shareCode));
               } catch {
@@ -740,14 +743,39 @@ export function BuildPlanner() {
           >
             Import code
           </button>
+          <button
+            type="button"
+            onClick={() => {
+              setImportError(null);
+              setCompendiumInfo(null);
+              try {
+                const { build: imported, warnings } = parseCompendiumExport(shareCode);
+                // Keep the current hero/skill; fold the export's gear + divinity
+                // stats in as extra modifiers so DPS reflects your chosen skill.
+                setBuild((prev) => ({ ...prev, extraModifiers: imported.extraModifiers }));
+                setCompendiumInfo(warnings);
+              } catch {
+                setImportError('That doesn’t look like a TLI Compendium build export (JSON).');
+              }
+            }}
+          >
+            Import Compendium export
+          </button>
         </div>
         <textarea
           className="share-code"
           value={shareCode}
-          placeholder="Export to generate a share code, or paste one here and Import."
+          placeholder="Paste a native share code and Import code — or paste a TLI Compendium build-export JSON and Import Compendium export (adds its gear + divinity stats to the current build)."
           onChange={(e) => setShareCode(e.target.value)}
         />
         {importError && <p className="results-error">{importError}</p>}
+        {compendiumInfo && (
+          <ul className="compendium-info">
+            {compendiumInfo.map((w, i) => (
+              <li key={i}>{w}</li>
+            ))}
+          </ul>
+        )}
       </section>
     </div>
   );
