@@ -9,6 +9,7 @@ Architected to mirror the conventions of a separate ChaOS Forge IDE project: a p
 - **Loot tracking**: tails the game's own `UE_game.log` file, infers pickups by diffing inventory-slot state, and persists them locally. No memory reading, no process hooking, no injection — purely reading a log file the game already writes for its own diagnostics.
 - **Overlay**: a transparent, always-on-top, click-through window layered over the game. A global hotkey toggles it into an interactive mode (for scrolling/settings) and back.
 - **Real-time updates**: the overlay UI updates via Server-Sent Events as new loot is parsed — no polling.
+- **Overlay goal**: mark a build as your target in the planner ("Set as overlay goal") and the overlay shows a compact *"Building toward"* panel (hero · main skill · target DPS). It's persisted on the local-agent (`/api/v1/goal` + an SSE stream), so it bridges the planner and overlay even across separate processes/origins — an external browser planner and the Electron overlay — with a `localStorage` cache for instant paint and offline fallback.
 
 ## What it explicitly does *not* do yet
 
